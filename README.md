@@ -59,6 +59,10 @@ npx serve .
 
 (Serve un server locale: i moduli ES e `fetch` non funzionano da `file://`.)
 
+## Struttura del corso
+
+La progressione didattica completa (A0 → B1, moduli, grammatica, obiettivi lessicali) è definita in [SYLLABUS.md](SYLLABUS.md), il documento di riferimento del progetto.
+
 ## Roadmap
 
 - **Fase 2** — quiz di fine modulo, dettato, riordino frasi, statistiche estese
