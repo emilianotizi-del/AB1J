@@ -1,0 +1,26 @@
+{
+  "id": "l032",
+  "title": "Oggi, domani, ieri",
+  "vocab": [
+    { "hy": "այսօր", "tr": "aysōr", "ipa": "[ɑjˈsɔɾ]", "it": "oggi" },
+    { "hy": "վաղը", "tr": "vaghə", "ipa": "[ˈvɑʁə]", "it": "domani" },
+    { "hy": "երեկ", "tr": "yerek", "ipa": "[jɛˈɾɛk]", "it": "ieri" },
+    { "hy": "առավոտ", "tr": "aṙavot", "ipa": "[ɑrɑˈvɔt]", "it": "mattina" },
+    { "hy": "երեկո", "tr": "yereko", "ipa": "[jɛɾɛˈkɔ]", "it": "sera" },
+    { "hy": "գիշեր", "tr": "gisher", "ipa": "[ɡiˈʃɛɾ]", "it": "notte" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "այսօր", "tr": "aysōr", "ipa": "[ɑjˈsɔɾ]", "it": "oggi" }, "note": "Dentro c'è օր (giorno): «questo giorno»." },
+    { "type": "teach", "kind": "word", "word": { "hy": "վաղը", "tr": "vaghə", "ipa": "[ˈvɑʁə]", "it": "domani" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "երեկ", "tr": "yerek", "ipa": "[jɛˈɾɛk]", "it": "ieri" }, "note": "Attenzione alla trappola: երեկ = ieri, երեկո = sera. Una vocale di differenza." },
+    { "type": "teach", "kind": "word", "word": { "hy": "երեկո", "tr": "yereko", "ipa": "[jɛɾɛˈkɔ]", "it": "sera" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "առավոտ", "tr": "aṙavot", "ipa": "[ɑrɑˈvɔt]", "it": "mattina" }, "extra": true },
+    { "type": "teach", "kind": "word", "word": { "hy": "գիշեր", "tr": "gisher", "ipa": "[ɡiˈʃɛɾ]", "it": "notte" }, "extra": true },
+    { "type": "mcq", "prompt": "Ascolta bene: che cosa significa?", "promptHy": "երեկ", "speakText": "երեկ", "options": ["ieri", "sera", "tre"], "answer": "ieri" },
+    { "type": "order", "it": "oggi è lunedì", "tokens": ["Այսօր", "երկուշաբթի", "է"], "speakText": "Այսօր երկուշաբթի է" },
+    { "type": "mcq", "prompt": "«Domani è sabato» si dice:", "options": ["Վաղը շաբաթ է", "Երեկ շաբաթ է", "Այսօր շաբաթ է"], "answer": "Վաղը շաբաթ է", "optionsAreHy": true },
+    { "type": "dictation", "word": { "hy": "այսօր", "tr": "aysōr", "ipa": "[ɑjˈsɔɾ]", "it": "oggi" }, "distractors": ["ո", "ե"] },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["այսօր", "oggi"], ["վաղը", "domani"], ["երեկ", "ieri"], ["գիշեր", "notte"]] },
+    { "type": "order", "it": "domani vado a casa", "tokens": ["Վաղը", "ես", "տուն", "եմ", "գնում"], "speakText": "Վաղը ես տուն եմ գնում", "extra": true }
+  ]
+}

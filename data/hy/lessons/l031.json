@@ -1,0 +1,193 @@
+{
+  "id": "l031",
+  "title": "I giorni della settimana",
+  "vocab": [
+    {
+      "hy": "երկուշաբթի",
+      "tr": "yerkushabt'i",
+      "ipa": "[jɛɾkuʃɑpʰˈtʰi]",
+      "it": "lunedì"
+    },
+    {
+      "hy": "երեքշաբթի",
+      "tr": "yerek'shabt'i",
+      "ipa": "[jɛɾɛkʰʃɑpʰˈtʰi]",
+      "it": "martedì"
+    },
+    {
+      "hy": "չորեքշաբթի",
+      "tr": "chorek'shabt'i",
+      "ipa": "[t͡ʃʰɔɾɛkʰʃɑpʰˈtʰi]",
+      "it": "mercoledì"
+    },
+    {
+      "hy": "հինգշաբթի",
+      "tr": "hingshabt'i",
+      "ipa": "[hinɡʃɑpʰˈtʰi]",
+      "it": "giovedì"
+    },
+    {
+      "hy": "ուրբաթ",
+      "tr": "urbat'",
+      "ipa": "[uɾˈbɑtʰ]",
+      "it": "venerdì"
+    },
+    {
+      "hy": "շաբաթ",
+      "tr": "shabat'",
+      "ipa": "[ʃɑˈbɑtʰ]",
+      "it": "sabato"
+    },
+    {
+      "hy": "կիրակի",
+      "tr": "kiraki",
+      "ipa": "[kiɾɑˈki]",
+      "it": "domenica"
+    }
+  ],
+  "steps": [
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "շաբաթ",
+        "tr": "shabat'",
+        "ipa": "[ʃɑˈbɑtʰ]",
+        "it": "sabato; settimana"
+      },
+      "note": "La chiave di tutto: i giorni si contano DAL sabato."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "երկուշաբթի",
+        "tr": "yerkushabt'i",
+        "ipa": "[jɛɾkuʃɑpʰˈtʰi]",
+        "it": "lunedì"
+      },
+      "note": "երկու + շաբթի = «secondo giorno dal sabato». La բ davanti a թ si pronuncia quasi p."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "երեքշաբթի",
+        "tr": "yerek'shabt'i",
+        "ipa": "[jɛɾɛkʰʃɑpʰˈtʰi]",
+        "it": "martedì"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "չորեքշաբթի",
+        "tr": "chorek'shabt'i",
+        "ipa": "[t͡ʃʰɔɾɛkʰʃɑpʰˈtʰi]",
+        "it": "mercoledì"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "հինգշաբթի",
+        "tr": "hingshabt'i",
+        "ipa": "[hinɡʃɑpʰˈtʰi]",
+        "it": "giovedì"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ուրբաթ",
+        "tr": "urbat'",
+        "ipa": "[uɾˈbɑtʰ]",
+        "it": "venerdì"
+      },
+      "extra": true
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "կիրակի",
+        "tr": "kiraki",
+        "ipa": "[kiɾɑˈki]",
+        "it": "domenica"
+      },
+      "extra": true
+    },
+    {
+      "type": "mcq",
+      "prompt": "«Quarto giorno dal sabato»: quale giorno è չորեքշաբթի?",
+      "options": [
+        "mercoledì",
+        "giovedì",
+        "martedì"
+      ],
+      "answer": "mercoledì"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Quale giorno NON è costruito con un numero?",
+      "options": [
+        "կիրակի",
+        "երկուշաբթի",
+        "հինգշաբթի"
+      ],
+      "answer": "կիրակի",
+      "optionsAreHy": true
+    },
+    {
+      "type": "dictation",
+      "word": {
+        "hy": "շաբաթ",
+        "tr": "shabat'",
+        "ipa": "[ʃɑˈbɑtʰ]",
+        "it": "sabato"
+      },
+      "distractors": [
+        "տ",
+        "ե"
+      ]
+    },
+    {
+      "type": "match",
+      "prompt": "Abbina armeno e italiano",
+      "pairs": [
+        [
+          "երկուշաբթի",
+          "lunedì"
+        ],
+        [
+          "ուրբաթ",
+          "venerdì"
+        ],
+        [
+          "շաբաթ",
+          "sabato"
+        ],
+        [
+          "կիրակի",
+          "domenica"
+        ]
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Come si legge questa parola?",
+      "promptHy": "ուրբաթ",
+      "speakText": "ուրբաթ",
+      "options": [
+        "urbat'",
+        "vurbat'",
+        "urpan"
+      ],
+      "answer": "urbat'",
+      "extra": true
+    }
+  ]
+}

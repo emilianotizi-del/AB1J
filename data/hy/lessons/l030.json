@@ -1,0 +1,21 @@
+{
+  "id": "l030",
+  "title": "I numeri da 11 a 20",
+  "vocab": [
+    { "hy": "տասնմեկ", "tr": "tasnmek", "ipa": "[tɑsnəˈmɛk]", "it": "undici" },
+    { "hy": "տասնհինգ", "tr": "tasnhing", "ipa": "[tɑsnəˈhinɡ]", "it": "quindici" },
+    { "hy": "քսան", "tr": "k'san", "ipa": "[kʰəˈsɑn]", "it": "venti" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "տասնմեկ", "tr": "tasnmek", "ipa": "[tɑsnəˈmɛk]", "it": "undici" }, "note": "La regola è generosa: տասն (dieci) + մեկ (uno) = 11. Vale per tutti i numeri fino al 19." },
+    { "type": "teach", "kind": "word", "word": { "hy": "տասնհինգ", "tr": "tasnhing", "ipa": "[tɑsnəˈhinɡ]", "it": "quindici" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "քսան", "tr": "k'san", "ipa": "[kʰəˈsɑn]", "it": "venti" }, "note": "Il 20 fa storia a sé, come in italiano." },
+    { "type": "mcq", "prompt": "Applica la regola: come si dice 13?", "options": ["տասներեք", "երեքտասն", "քսաներեք"], "answer": "տասներեք", "optionsAreHy": true },
+    { "type": "mcq", "prompt": "E il 17?", "options": ["տասնյոթ", "յոթտասն", "տասնութ"], "answer": "տասնյոթ", "optionsAreHy": true },
+    { "type": "mcq", "prompt": "Che numero è «տասնչորս»?", "speakText": "տասնչորս", "options": ["14", "4", "40"], "answer": "14" },
+    { "type": "dictation", "word": { "hy": "քսան", "tr": "k'san", "ipa": "[kʰəˈsɑn]", "it": "venti" }, "distractors": ["կ", "ե"] },
+    { "type": "match", "prompt": "Abbina numero e valore", "pairs": [["տասնմեկ", "11"], ["տասնհինգ", "15"], ["տասնինը", "19"], ["քսան", "20"]] },
+    { "type": "mcq", "prompt": "Che numero è «տասնութ»?", "speakText": "տասնութ", "options": ["18", "8", "80"], "answer": "18", "extra": true },
+    { "type": "mcq", "prompt": "Conta: տասնութ, տասնինը, … cosa viene dopo?", "options": ["քսան", "տասնտաս", "մեկ"], "answer": "քսան", "optionsAreHy": true, "extra": true }
+  ]
+}

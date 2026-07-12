@@ -1,0 +1,17 @@
+{
+  "id": "l034",
+  "title": "Verifica del modulo",
+  "vocab": [],
+  "steps": [
+    { "type": "mcq", "prompt": "Che numero è «տասնվեց»?", "speakText": "տասնվեց", "options": ["16", "6", "60"], "answer": "16" },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["երկուշաբթի", "lunedì"], ["չորեքշաբթի", "mercoledì"], ["ուրբաթ", "venerdì"], ["կիրակի", "domenica"]] },
+    { "type": "order", "it": "oggi è lunedì", "tokens": ["Այսօր", "երկուշաբթի", "է"], "speakText": "Այսօր երկուշաբթի է" },
+    { "type": "mcq", "prompt": "Ascolta: significa «ieri» o «sera»?", "promptHy": "երեկո", "speakText": "երեկո", "options": ["sera", "ieri"], "answer": "sera" },
+    { "type": "dictation", "word": { "hy": "վաղը", "tr": "vaghə", "ipa": "[ˈvɑʁə]", "it": "domani" }, "distractors": ["խ", "ե"] },
+    { "type": "order", "it": "sono le cinque e mezza", "tokens": ["Ժամը", "հինգն", "անց", "կես", "է"], "speakText": "Ժամը հինգն անց կես է" },
+    { "type": "mcq", "prompt": "«Sono le due»:", "options": ["Ժամը երկուսն է", "Ժամը երկու է", "Երկու ժամ է"], "answer": "Ժամը երկուսն է", "optionsAreHy": true },
+    { "type": "order", "it": "vado a casa alle cinque", "tokens": ["Ես", "ժամը", "հինգին", "տուն", "եմ", "գնում"], "speakText": "Ես ժամը հինգին տուն եմ գնում" },
+    { "type": "mcq", "prompt": "«Venti» si dice:", "options": ["քսան", "տասնտաս", "տասնինը"], "answer": "քսան", "optionsAreHy": true, "extra": true },
+    { "type": "mcq", "prompt": "I giorni della settimana armeni si contano:", "options": ["dal sabato", "dal lunedì", "dalla domenica"], "answer": "dal sabato", "extra": true }
+  ]
+}

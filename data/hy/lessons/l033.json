@@ -1,0 +1,22 @@
+{
+  "id": "l033",
+  "title": "Che ora è?",
+  "vocab": [
+    { "hy": "Ժամը հինգն է", "tr": "zhamə hingn e", "ipa": "[ˈʒɑmə hinɡn ɛ]", "it": "sono le cinque" },
+    { "hy": "կես", "tr": "kes", "ipa": "[kɛs]", "it": "mezzo, mezza" },
+    { "hy": "անց", "tr": "ants'", "ipa": "[ɑnt͡sʰ]", "it": "e (passate, per l'ora)" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "Ժամը հինգն է", "tr": "zhamə hingn e", "ipa": "[ˈʒɑmə hinɡn ɛ]", "it": "sono le cinque" }, "note": "La risposta a Ժամը քանի՞սն է (l016): Ժամը + numero + ն է." },
+    { "type": "teach", "kind": "word", "word": { "hy": "Ժամը երկուսն է", "tr": "zhamə yerkusn e", "ipa": "[ˈʒɑmə jɛɾˈkusn ɛ]", "it": "sono le due" }, "note": "Unico irregolare: երկու diventa երկուս quando sta da solo." },
+    { "type": "teach", "kind": "word", "word": { "hy": "կես", "tr": "kes", "ipa": "[kɛs]", "it": "mezzo, mezza" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "անց", "tr": "ants'", "ipa": "[ɑnt͡sʰ]", "it": "e (passate, per l'ora)" }, "note": "Ժամը հինգն անց կես է = le cinque e mezza (lett. «cinque passate di mezzo»)." },
+    { "type": "teach", "kind": "word", "word": { "hy": "ժամը հինգին", "tr": "zhamə hingin", "ipa": "[ˈʒɑmə hinˈɡin]", "it": "alle cinque" }, "note": "Il primo assaggio del dativo: -ին = «alle». Lo studieremo per bene nel modulo 11." },
+    { "type": "mcq", "prompt": "Ժամը քանի՞սն է — e sono le tre. Rispondi:", "speakText": "Ժամը քանի՞սն է", "options": ["Ժամը երեքն է", "Ժամը երեք է", "Երեք ժամն է"], "answer": "Ժամը երեքն է", "optionsAreHy": true },
+    { "type": "order", "it": "sono le cinque e mezza", "tokens": ["Ժամը", "հինգն", "անց", "կես", "է"], "speakText": "Ժամը հինգն անց կես է" },
+    { "type": "mcq", "prompt": "«Sono le due»:", "options": ["Ժամը երկուսն է", "Ժամը երկուն է", "Ժամը երկու է"], "answer": "Ժամը երկուսն է", "optionsAreHy": true },
+    { "type": "order", "it": "vado a casa alle cinque", "tokens": ["Ես", "ժամը", "հինգին", "տուն", "եմ", "գնում"], "speakText": "Ես ժամը հինգին տուն եմ գնում" },
+    { "type": "dictation", "word": { "hy": "կես", "tr": "kes", "ipa": "[kɛs]", "it": "mezzo, mezza" }, "distractors": ["ց", "ա"], "extra": true },
+    { "type": "mcq", "prompt": "«ժամը հինգին» significa:", "speakText": "ժամը հինգին", "options": ["alle cinque", "sono le cinque", "cinque ore"], "answer": "alle cinque", "extra": true }
+  ]
+}

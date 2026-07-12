@@ -302,6 +302,48 @@
           "letters": []
         }
       ]
+    },
+    {
+      "id": "m07",
+      "title": "Giorni e ore",
+      "level": "A1",
+      "lessons": [
+        {
+          "id": "l030",
+          "title": "I numeri da 11 a 20",
+          "subtitle": "տասն + … e la regola generosa",
+          "glyph": "20",
+          "letters": []
+        },
+        {
+          "id": "l031",
+          "title": "I giorni della settimana",
+          "subtitle": "Si conta dal sabato",
+          "glyph": "📅",
+          "letters": []
+        },
+        {
+          "id": "l032",
+          "title": "Oggi, domani, ieri",
+          "subtitle": "այսօր · վաղը · երեկ",
+          "glyph": "☀️",
+          "letters": []
+        },
+        {
+          "id": "l033",
+          "title": "Che ora è?",
+          "subtitle": "Ժամը հինգն է — e il primo dativo",
+          "glyph": "🕐",
+          "letters": []
+        },
+        {
+          "id": "l034",
+          "title": "Verifica del modulo",
+          "subtitle": "Quiz: tutto il modulo in 10 domande",
+          "glyph": "✓",
+          "letters": []
+        }
+      ]
     }
   ]
 }

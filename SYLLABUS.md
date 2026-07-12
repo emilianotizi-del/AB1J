@@ -3,7 +3,7 @@
 Documento di riferimento per la struttura didattica del corso.
 Ogni nuovo modulo deve rispettare questo piano; le deviazioni vanno registrate qui.
 
-Stato: aggiornato al 12/07/2026 · Moduli pubblicati: 1–6
+Stato: aggiornato al 12/07/2026 · Moduli pubblicati: 1–7
 
 ---
 
@@ -44,6 +44,7 @@ Stato: aggiornato al 12/07/2026 · Moduli pubblicati: 1–6
 | 4 | L'alfabeto completo | l016–l021 | Ջ Ժ Խ Ձ Ռ Ծ Ճ Փ Օ Ֆ Ւ և | ՞ interrogativo | 18 |
 | 5 | La prima grammatica | l022–l025 | — | plurale -եր/-ներ; articolo -ը/-ն; presente -ում + եմ | 8 |
 | 6 | Leggere e parlare | l026–l029 | — | են (3ª plur.); domande con ի՞նչ | 2 |
+| 7 | Giorni e ore | l030–l034 | — | numeri 11–20; ora (X-ն է, անց); primo dativo -ին | 19 |
 
 ## 4. Piano A1 — moduli 7–12 (da produrre)
 
@@ -110,3 +111,20 @@ debutta nel modulo indicato, poi resta disponibile.
 3. `node tools/lint_content.js` → coerenza (lettere, audio, distrattori, ambiguità).
 4. Push → l'Action genera l'audio mancante → verifica integrità tracce.
 5. Aggiornare la tabella "Moduli pubblicati" di questo documento.
+
+---
+
+## 9. Punti aperti dalla revisione rispetto agli standard (12/07/2026)
+
+Confronto effettuato con CEFR/Companion Volume 2020 e con il modello prototipale
+dell'Accademia Nazionale delle Scienze RA per l'armeno L2. Esito: impianto
+curricolare e pedagogia dello script allineati o sopra standard; deficit da
+rivalutare più avanti, in ordine di costo crescente:
+
+1. Obiettivi "can-do" per modulo e autovalutazione dello studente — basso costo
+2. Note culturali sistematiche nelle lezioni — basso costo
+3. Seconda voce audio (varietà di input) — basso costo (variabile ELEVENLABS_VOICE_ID per sottoinsiemi)
+4. Ascolto senza testo anticipato rispetto a m19 — medio
+5. Forme corsive manoscritte nel tracciamento — medio
+6. Approccio task-based (compiti simulati: ordinare, comprare) — medio, previsto da m08/m10
+7. Interazione in tempo reale e mediazione — limite strutturale del formato, dichiarato
