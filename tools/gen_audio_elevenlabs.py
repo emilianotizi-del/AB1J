@@ -22,6 +22,9 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 AUDIO = ROOT / "data/hy/audio"
 AUDIO.mkdir(parents=True, exist_ok=True)
 IDX = AUDIO / "index.json"
+META = AUDIO / "meta.json"
+ERR_SAMPLES = []
+MODEL_COUNTS = {}
 
 def collect_texts():
     texts = set()
@@ -79,9 +82,11 @@ def tts(text):
     errs = []
     for attempt in range(3):
         for variant in speak_variants(text):
-            audio = _tts_once(variant, errs)
-            if audio and len(audio) > 500:
-                return audio
+            got = _tts_once(variant, errs)
+            if got:
+                audio, model = got
+                MODEL_COUNTS[model] = MODEL_COUNTS.get(model, 0) + 1
+                return audio, model
         time.sleep(1.5 * (attempt + 1))
     raise RuntimeError(f"TTS senza audio per {text!r}: " + (" | ".join(errs) or "risposte vuote"))
 
@@ -120,10 +125,14 @@ def _tts_once(text, errs):
             with urllib.request.urlopen(req, timeout=120) as r:
                 audio = r.read()
             if len(audio) > 500 and _valid(audio, text):
-                return audio
-            errs.append(f"{model}: audio degenere o vuoto ({len(audio)} B) per {text!r}")
+                return audio, model
+            msg = f"{model}: audio degenere o vuoto ({len(audio)} B) per {text!r}"
+            errs.append(msg)
+            if len(ERR_SAMPLES) < 12: ERR_SAMPLES.append(msg)
         except urllib.error.HTTPError as e:
-            errs.append(f"{model}: HTTP {e.code} {e.read()[:300].decode(errors='replace')}")
+            msg = f"{model}: HTTP {e.code} {e.read()[:300].decode(errors='replace')}"
+            errs.append(msg)
+            if len(ERR_SAMPLES) < 12: ERR_SAMPLES.append(msg)
     return None
 
 def main():
@@ -142,10 +151,14 @@ def main():
         path = AUDIO / file
         if path.exists() and not FORCE and path.stat().st_size > 0 and index.get("_engine") == "elevenlabs":
             continue
-        audio = tts(text)
+        audio, model = tts(text)
         path.write_bytes(audio)
+        meta = json.loads(META.read_text()) if META.exists() else {}
+        meta[file] = {"model": model}
+        meta["_last_run"] = {"models": MODEL_COUNTS, "error_samples": ERR_SAMPLES}
+        META.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n")
         changed += 1
-        print(f"{file} ← {text} ({len(audio)} B)")
+        print(f"{file} ← {text} [{model}] ({len(audio)} B)")
         time.sleep(0.5)  # cortesia verso l'API
     index["_engine"] = "elevenlabs"
     IDX.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n")
