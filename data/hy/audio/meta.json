@@ -4,33 +4,23 @@
   },
   "_last_run": {
     "models": {
-      "eleven_v3": 27
+      "eleven_v3": 9
     },
     "error_samples": [
-      "eleven_v3: audio degenere o vuoto (0 B) per 'ա։'",
-      "eleven_v3: audio degenere o vuoto (1167 B) per 'գը։'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'ե։'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'ե.'",
       "eleven_v3: audio degenere o vuoto (0 B) per 'եմ'",
       "eleven_v3: audio degenere o vuoto (0 B) per 'եմ։'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'եմ'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'եմ։'",
-      "eleven_v3: audio degenere o vuoto (1167 B) per 'եմ'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'եմ։'",
-      "eleven_v3: audio degenere o vuoto (1167 B) per 'եմ'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'եմ։'"
+      "eleven_v3: audio degenere o vuoto (0 B) per 'էր'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'ժը։'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'ժը'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'ծը։'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'ծը'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'րը։'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'րը'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'փը։'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'փը'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'ֆը։'"
     ],
-    "skipped": [
-      "եմ",
-      "էր",
-      "ժ",
-      "ծ",
-      "ով",
-      "տ",
-      "ր",
-      "փ",
-      "ֆ"
-    ]
+    "skipped": []
   },
   "w165.mp3": {
     "model": "eleven_v3"
@@ -1008,6 +998,33 @@
     "model": "eleven_v3"
   },
   "w062.mp3": {
+    "model": "eleven_v3"
+  },
+  "w076.mp3": {
+    "model": "eleven_v3"
+  },
+  "w323.mp3": {
+    "model": "eleven_v3"
+  },
+  "w019.mp3": {
+    "model": "eleven_v3"
+  },
+  "w024.mp3": {
+    "model": "eleven_v3"
+  },
+  "w096.mp3": {
+    "model": "eleven_v3"
+  },
+  "w051.mp3": {
+    "model": "eleven_v3"
+  },
+  "w055.mp3": {
+    "model": "eleven_v3"
+  },
+  "w058.mp3": {
+    "model": "eleven_v3"
+  },
+  "w061.mp3": {
     "model": "eleven_v3"
   }
 }
