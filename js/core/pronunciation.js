@@ -42,3 +42,45 @@ export function similarity(a, b) {
       m[i][j] = Math.min(m[i - 1][j] + 1, m[i][j - 1] + 1, m[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
   return 1 - m[a.length][b.length] / Math.max(a.length, b.length);
 }
+
+/* ===== Riconoscimento remoto: ElevenLabs Scribe (opzionale, chiave dell'utente) =====
+   La chiave vive solo in localStorage sul dispositivo; l'audio va direttamente
+   dal browser ad api.elevenlabs.io, mai su altri server. */
+
+export async function recordClip(maxMs = 4000, onStop = null) {
+  const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+  const mime = MediaRecorder.isTypeSupported('audio/webm') ? 'audio/webm'
+             : MediaRecorder.isTypeSupported('audio/mp4') ? 'audio/mp4' : '';
+  const rec = new MediaRecorder(stream, mime ? { mimeType: mime } : undefined);
+  const chunks = [];
+  rec.ondataavailable = e => { if (e.data.size) chunks.push(e.data); };
+
+  const done = new Promise(resolve => {
+    rec.onstop = () => {
+      stream.getTracks().forEach(t => t.stop());
+      resolve(new Blob(chunks, { type: rec.mimeType }));
+    };
+  });
+  rec.start();
+  const timer = setTimeout(() => { if (rec.state === 'recording') rec.stop(); }, maxMs);
+  const stop = () => { clearTimeout(timer); if (rec.state === 'recording') rec.stop(); };
+  if (onStop) onStop(stop);
+  return { blob: await done, mime: rec.mimeType, stop };
+}
+
+export async function transcribeScribe(blob, mime, apiKey) {
+  const ext = (mime || '').includes('mp4') ? 'mp4' : 'webm';
+  const fd = new FormData();
+  fd.append('file', blob, 'clip.' + ext);
+  fd.append('model_id', 'scribe_v1');
+  fd.append('language_code', 'hy');
+  const res = await fetch('https://api.elevenlabs.io/v1/speech-to-text', {
+    method: 'POST',
+    headers: { 'xi-api-key': apiKey },
+    body: fd
+  });
+  if (res.status === 401) throw new Error('bad-key');
+  if (!res.ok) throw new Error('http-' + res.status);
+  const data = await res.json();
+  return data.text || '';
+}

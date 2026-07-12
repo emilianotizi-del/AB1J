@@ -43,6 +43,34 @@ export function render(mount) {
 
   mount.append(card);
 
+  // Riconoscimento vocale (opzionale)
+  const sttCard = el('div', { class: 'card', style: 'margin-top:14px' });
+  sttCard.append(el('h2', { style: 'margin-bottom:8px' }, 'Riconoscimento vocale (opzionale)'));
+  sttCard.append(el('p', { style: 'font-size:.85rem;color:var(--ink-soft);margin-bottom:10px' },
+    'Con una chiave API ElevenLabs, l\u2019allenamento di pronuncia riconosce ciò che dici ' +
+    'anche su iPhone. La chiave resta salvata SOLO su questo dispositivo e l\u2019audio va ' +
+    'direttamente a ElevenLabs. Consumo: pochi crediti per clip.'));
+  const keyInput = el('input', {
+    type: 'password', placeholder: 'Chiave API ElevenLabs',
+    value: s ? '' : '', autocomplete: 'off',
+    style: 'width:100%;min-height:44px;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);font:inherit'
+  });
+  keyInput.value = getSettings().sttKey || '';
+  const keyMsg = el('p', { style: 'font-size:.8rem;margin-top:8px;color:var(--ink-soft)' },
+    getSettings().sttKey ? 'Chiave salvata su questo dispositivo.' : '');
+  sttCard.append(keyInput,
+    el('div', { style: 'display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px' },
+      el('button', { class: 'btn', onclick: () => {
+        const st = getSettings(); st.sttKey = keyInput.value.trim(); saveSettings(st);
+        keyMsg.textContent = st.sttKey ? 'Chiave salvata su questo dispositivo.' : 'Chiave rimossa.';
+      } }, 'Salva'),
+      el('button', { class: 'btn btn-secondary', onclick: () => {
+        const st = getSettings(); st.sttKey = ''; saveSettings(st);
+        keyInput.value = ''; keyMsg.textContent = 'Chiave rimossa.';
+      } }, 'Rimuovi')),
+    keyMsg);
+  mount.append(sttCard);
+
   // Dati
   const dataCard = el('div', { class: 'card', style: 'margin-top:14px' });
   dataCard.append(el('h2', { style: 'margin-bottom:10px' }, 'I tuoi dati'));

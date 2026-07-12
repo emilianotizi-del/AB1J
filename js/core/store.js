@@ -16,7 +16,8 @@ const DEFAULT_SETTINGS = {
   theme: 'light',        // light | dark
   showTr: true,          // traslitterazione
   showIpa: true,         // IPA
-  duration: 30           // 30 | 10 minuti
+  duration: 30,          // 30 | 10 minuti
+  sttKey: ''             // chiave ElevenLabs per il riconoscimento vocale (solo locale)
 };
 export function getSettings() { return { ...DEFAULT_SETTINGS, ...get('settings', {}) }; }
 export function saveSettings(s) { set('settings', s); applySettings(s); }

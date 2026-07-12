@@ -130,6 +130,9 @@ rivalutare più avanti, in ordine di costo crescente:
 2. Note culturali sistematiche nelle lezioni — basso costo
 3. Seconda voce audio (varietà di input) — basso costo (variabile ELEVENLABS_VOICE_ID per sottoinsiemi)
 4. Ascolto senza testo anticipato rispetto a m19 — medio
+   (12/07/2026: riconoscimento vocale reale AGGIUNTO come opzione via ElevenLabs
+   Scribe con chiave dell'utente — anticipa il modello "funzione opzionale con
+   chiave" previsto per la correzione B1)
 5. Forme corsive manoscritte nel tracciamento — medio
 6. Approccio task-based (compiti simulati: ordinare, comprare) — medio, previsto da m08/m10
 7. Interazione in tempo reale e mediazione — limite strutturale del formato, dichiarato
