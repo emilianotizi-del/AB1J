@@ -15,7 +15,8 @@ if not API_KEY:
     sys.exit("ERRORE: il secret ELEVENLABS_API_KEY non è impostato nel repository "
              "(Settings → Secrets and variables → Actions).")
 VOICE_ID = os.environ.get("ELEVENLABS_VOICE_ID") or None  # se assente: prima voce dell'account
-MODELS = ["eleven_v3", "eleven_multilingual_v2"]  # v3 supporta l'armeno; fallback
+MODELS = ["eleven_v3"]  # SOLO v3: l'armeno è supportato solo qui; un ripiego su v2
+                        # produce pronunce inaffidabili con durata plausibile (peggio di un errore)
 FORCE = os.environ.get("FORCE") == "1"
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -80,14 +81,14 @@ def pick_voice():
 
 def tts(text):
     errs = []
-    for attempt in range(3):
+    for attempt in range(5):
         for variant in speak_variants(text):
             got = _tts_once(variant, errs)
             if got:
                 audio, model = got
                 MODEL_COUNTS[model] = MODEL_COUNTS.get(model, 0) + 1
                 return audio, model
-        time.sleep(1.5 * (attempt + 1))
+        time.sleep(3.0 * (attempt + 1))
     raise RuntimeError(f"TTS senza audio per {text!r}: " + (" | ".join(errs) or "risposte vuote"))
 
 def _valid(audio, text):
