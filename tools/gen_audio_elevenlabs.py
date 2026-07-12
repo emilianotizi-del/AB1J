@@ -26,6 +26,7 @@ IDX = AUDIO / "index.json"
 META = AUDIO / "meta.json"
 ERR_SAMPLES = []
 MODEL_COUNTS = {}
+SKIPPED = []
 
 def collect_texts():
     texts = set()
@@ -152,17 +153,28 @@ def main():
         path = AUDIO / file
         if path.exists() and not FORCE and path.stat().st_size > 0 and index.get("_engine") == "elevenlabs":
             continue
-        audio, model = tts(text)
+        try:
+            audio, model = tts(text)
+        except RuntimeError as e:
+            print("SALTATO:", e)
+            SKIPPED.append(text)
+            continue
         path.write_bytes(audio)
         meta = json.loads(META.read_text()) if META.exists() else {}
         meta[file] = {"model": model}
-        meta["_last_run"] = {"models": MODEL_COUNTS, "error_samples": ERR_SAMPLES}
+        meta["_last_run"] = {"models": MODEL_COUNTS, "error_samples": ERR_SAMPLES, "skipped": SKIPPED}
         META.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n")
         changed += 1
         print(f"{file} ← {text} [{model}] ({len(audio)} B)")
         time.sleep(0.5)  # cortesia verso l'API
     index["_engine"] = "elevenlabs"
     IDX.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n")
+    if SKIPPED:
+        meta = json.loads(META.read_text()) if META.exists() else {}
+        meta["_last_run"] = {"models": MODEL_COUNTS, "error_samples": ERR_SAMPLES, "skipped": SKIPPED}
+        META.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n")
+        print(f"\nATTENZIONE: {len(SKIPPED)} testi saltati (v3 non ha prodotto audio): {SKIPPED}")
+        print("Verranno ritentati al prossimo run.")
     print(f"\n{changed} tracce generate/aggiornate, {len(index)-1} totali")
 
 if __name__ == "__main__":
