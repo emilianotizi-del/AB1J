@@ -61,8 +61,10 @@ def speak_variants(text):
     if len(text) == 1 or text == "ու":
         base = SPECIAL.get(text, text)
         if text in VOWELS:
-            return [base + "։", base + ".", base * 2]
-        return [base + "ը։", base + "ը"]
+            return [base + "։", base + ".", base * 2, base + ", " + base + "։"]
+        return [base + "ը։", base + "ը", base + "ը, " + base + "ը։"]
+    if len(text) <= 3:
+        return [text, text + "։", text + ", " + text + "։"]
     return [text, text + "։"]
 
 def pick_voice():
