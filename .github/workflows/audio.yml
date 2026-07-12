@@ -16,6 +16,7 @@ on:
       - "data/hy/alphabet.json"
       - "data/hy/course.json"
       - "tools/gen_audio_elevenlabs.py"
+      - "data/hy/audio/**"
       - ".github/workflows/audio.yml"
 
 permissions:
