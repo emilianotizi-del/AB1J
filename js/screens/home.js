@@ -12,13 +12,26 @@ export async function render(mount) {
 
   mount.innerHTML = '';
 
+  // Prossima lezione da fare: la prima non completata
+  let nextLesson = null;
+  for (const mod of course.modules) {
+    for (const les of mod.lessons) {
+      if (!done.includes(les.id)) { nextLesson = les; break; }
+    }
+    if (nextLesson) break;
+  }
+
   const hero = el('div', { class: 'hero' },
     el('div', { class: 'hero-glyph', 'aria-hidden': 'true' }, 'Ձ'),
     el('div', { class: 'hero-kicker' }, 'Armeno orientale · verso il B1'),
     el('h1', {}, 'Բարի գալուստ'),
     el('div', { class: 'hero-sub' },
       `${done.length} lezioni completate · streak di ${streak} giorn${streak === 1 ? 'o' : 'i'}` +
-      (due ? ` · ${due} carte da ripassare` : '')));
+      (due ? ` · ${due} carte da ripassare` : '')),
+    nextLesson
+      ? el('a', { class: 'btn btn-accent', href: '#/lesson/' + nextLesson.id, style: 'margin-top:14px' },
+          '▶ Continua: ' + nextLesson.title)
+      : el('div', { style: 'margin-top:14px;font-weight:600' }, '🎓 Corso completato!'));
   mount.append(hero);
 
   mount.append(el('a', {
