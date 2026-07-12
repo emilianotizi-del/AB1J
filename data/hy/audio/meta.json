@@ -1,0 +1,1030 @@
+{
+  "w001.mp3": {
+    "model": "eleven_v3"
+  },
+  "_last_run": {
+    "models": {
+      "eleven_v3": 300,
+      "eleven_multilingual_v2": 36
+    },
+    "error_samples": [
+      "eleven_v3: audio degenere o vuoto (4302 B) per 'Շնորհակալություն'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'ա։'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'գը։'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'գալ'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'ե։'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'եմ'",
+      "eleven_v3: audio degenere o vuoto (1167 B) per 'ենք'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'զը։'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'է։'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'էր'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'ը։'",
+      "eleven_v3: audio degenere o vuoto (1167 B) per 'թը։'"
+    ]
+  },
+  "w165.mp3": {
+    "model": "eleven_v3"
+  },
+  "w284.mp3": {
+    "model": "eleven_v3"
+  },
+  "w285.mp3": {
+    "model": "eleven_v3"
+  },
+  "w286.mp3": {
+    "model": "eleven_v3"
+  },
+  "w227.mp3": {
+    "model": "eleven_v3"
+  },
+  "w228.mp3": {
+    "model": "eleven_v3"
+  },
+  "w065.mp3": {
+    "model": "eleven_v3"
+  },
+  "w107.mp3": {
+    "model": "eleven_v3"
+  },
+  "w141.mp3": {
+    "model": "eleven_v3"
+  },
+  "w142.mp3": {
+    "model": "eleven_v3"
+  },
+  "w002.mp3": {
+    "model": "eleven_v3"
+  },
+  "w003.mp3": {
+    "model": "eleven_v3"
+  },
+  "w143.mp3": {
+    "model": "eleven_v3"
+  },
+  "w193.mp3": {
+    "model": "eleven_v3"
+  },
+  "w229.mp3": {
+    "model": "eleven_v3"
+  },
+  "w144.mp3": {
+    "model": "eleven_v3"
+  },
+  "w230.mp3": {
+    "model": "eleven_v3"
+  },
+  "w287.mp3": {
+    "model": "eleven_v3"
+  },
+  "w288.mp3": {
+    "model": "eleven_v3"
+  },
+  "w145.mp3": {
+    "model": "eleven_v3"
+  },
+  "w289.mp3": {
+    "model": "eleven_v3"
+  },
+  "w108.mp3": {
+    "model": "eleven_v3"
+  },
+  "w194.mp3": {
+    "model": "eleven_v3"
+  },
+  "w231.mp3": {
+    "model": "eleven_v3"
+  },
+  "w232.mp3": {
+    "model": "eleven_v3"
+  },
+  "w146.mp3": {
+    "model": "eleven_v3"
+  },
+  "w290.mp3": {
+    "model": "eleven_v3"
+  },
+  "w291.mp3": {
+    "model": "eleven_v3"
+  },
+  "w292.mp3": {
+    "model": "eleven_v3"
+  },
+  "w166.mp3": {
+    "model": "eleven_v3"
+  },
+  "w066.mp3": {
+    "model": "eleven_v3"
+  },
+  "w147.mp3": {
+    "model": "eleven_v3"
+  },
+  "w148.mp3": {
+    "model": "eleven_v3"
+  },
+  "w149.mp3": {
+    "model": "eleven_v3"
+  },
+  "w233.mp3": {
+    "model": "eleven_v3"
+  },
+  "w109.mp3": {
+    "model": "eleven_v3"
+  },
+  "w150.mp3": {
+    "model": "eleven_v3"
+  },
+  "w195.mp3": {
+    "model": "eleven_v3"
+  },
+  "w293.mp3": {
+    "model": "eleven_v3"
+  },
+  "w110.mp3": {
+    "model": "eleven_v3"
+  },
+  "w151.mp3": {
+    "model": "eleven_v3"
+  },
+  "w234.mp3": {
+    "model": "eleven_v3"
+  },
+  "w196.mp3": {
+    "model": "eleven_v3"
+  },
+  "w294.mp3": {
+    "model": "eleven_v3"
+  },
+  "w295.mp3": {
+    "model": "eleven_v3"
+  },
+  "w296.mp3": {
+    "model": "eleven_v3"
+  },
+  "w297.mp3": {
+    "model": "eleven_v3"
+  },
+  "w298.mp3": {
+    "model": "eleven_v3"
+  },
+  "w299.mp3": {
+    "model": "eleven_v3"
+  },
+  "w300.mp3": {
+    "model": "eleven_v3"
+  },
+  "w301.mp3": {
+    "model": "eleven_v3"
+  },
+  "w302.mp3": {
+    "model": "eleven_v3"
+  },
+  "w197.mp3": {
+    "model": "eleven_v3"
+  },
+  "w167.mp3": {
+    "model": "eleven_v3"
+  },
+  "w168.mp3": {
+    "model": "eleven_v3"
+  },
+  "w169.mp3": {
+    "model": "eleven_v3"
+  },
+  "w111.mp3": {
+    "model": "eleven_v3"
+  },
+  "w198.mp3": {
+    "model": "eleven_v3"
+  },
+  "w199.mp3": {
+    "model": "eleven_v3"
+  },
+  "w235.mp3": {
+    "model": "eleven_v3"
+  },
+  "w152.mp3": {
+    "model": "eleven_v3"
+  },
+  "w153.mp3": {
+    "model": "eleven_v3"
+  },
+  "w067.mp3": {
+    "model": "eleven_v3"
+  },
+  "w154.mp3": {
+    "model": "eleven_v3"
+  },
+  "w155.mp3": {
+    "model": "eleven_v3"
+  },
+  "w156.mp3": {
+    "model": "eleven_v3"
+  },
+  "w157.mp3": {
+    "model": "eleven_v3"
+  },
+  "w158.mp3": {
+    "model": "eleven_v3"
+  },
+  "w159.mp3": {
+    "model": "eleven_v3"
+  },
+  "w160.mp3": {
+    "model": "eleven_v3"
+  },
+  "w068.mp3": {
+    "model": "eleven_v3"
+  },
+  "w004.mp3": {
+    "model": "eleven_v3"
+  },
+  "w161.mp3": {
+    "model": "eleven_v3"
+  },
+  "w236.mp3": {
+    "model": "eleven_v3"
+  },
+  "w200.mp3": {
+    "model": "eleven_v3"
+  },
+  "w201.mp3": {
+    "model": "eleven_v3"
+  },
+  "w202.mp3": {
+    "model": "eleven_v3"
+  },
+  "w112.mp3": {
+    "model": "eleven_v3"
+  },
+  "w113.mp3": {
+    "model": "eleven_v3"
+  },
+  "w237.mp3": {
+    "model": "eleven_v3"
+  },
+  "w238.mp3": {
+    "model": "eleven_v3"
+  },
+  "w303.mp3": {
+    "model": "eleven_v3"
+  },
+  "w203.mp3": {
+    "model": "eleven_v3"
+  },
+  "w304.mp3": {
+    "model": "eleven_v3"
+  },
+  "w305.mp3": {
+    "model": "eleven_v3"
+  },
+  "w306.mp3": {
+    "model": "eleven_v3"
+  },
+  "w307.mp3": {
+    "model": "eleven_v3"
+  },
+  "w239.mp3": {
+    "model": "eleven_v3"
+  },
+  "w240.mp3": {
+    "model": "eleven_v3"
+  },
+  "w241.mp3": {
+    "model": "eleven_v3"
+  },
+  "w308.mp3": {
+    "model": "eleven_v3"
+  },
+  "w242.mp3": {
+    "model": "eleven_v3"
+  },
+  "w309.mp3": {
+    "model": "eleven_v3"
+  },
+  "w310.mp3": {
+    "model": "eleven_v3"
+  },
+  "w243.mp3": {
+    "model": "eleven_v3"
+  },
+  "w244.mp3": {
+    "model": "eleven_v3"
+  },
+  "w069.mp3": {
+    "model": "eleven_v3"
+  },
+  "w162.mp3": {
+    "model": "eleven_v3"
+  },
+  "w005.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w204.mp3": {
+    "model": "eleven_v3"
+  },
+  "w245.mp3": {
+    "model": "eleven_v3"
+  },
+  "w246.mp3": {
+    "model": "eleven_v3"
+  },
+  "w311.mp3": {
+    "model": "eleven_v3"
+  },
+  "w006.mp3": {
+    "model": "eleven_v3"
+  },
+  "w312.mp3": {
+    "model": "eleven_v3"
+  },
+  "w247.mp3": {
+    "model": "eleven_v3"
+  },
+  "w248.mp3": {
+    "model": "eleven_v3"
+  },
+  "w313.mp3": {
+    "model": "eleven_v3"
+  },
+  "w170.mp3": {
+    "model": "eleven_v3"
+  },
+  "w249.mp3": {
+    "model": "eleven_v3"
+  },
+  "w007.mp3": {
+    "model": "eleven_v3"
+  },
+  "w250.mp3": {
+    "model": "eleven_v3"
+  },
+  "w314.mp3": {
+    "model": "eleven_v3"
+  },
+  "w205.mp3": {
+    "model": "eleven_v3"
+  },
+  "w008.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w009.mp3": {
+    "model": "eleven_v3"
+  },
+  "w010.mp3": {
+    "model": "eleven_v3"
+  },
+  "w251.mp3": {
+    "model": "eleven_v3"
+  },
+  "w252.mp3": {
+    "model": "eleven_v3"
+  },
+  "w171.mp3": {
+    "model": "eleven_v3"
+  },
+  "w253.mp3": {
+    "model": "eleven_v3"
+  },
+  "w070.mp3": {
+    "model": "eleven_v3"
+  },
+  "w172.mp3": {
+    "model": "eleven_v3"
+  },
+  "w315.mp3": {
+    "model": "eleven_v3"
+  },
+  "w173.mp3": {
+    "model": "eleven_v3"
+  },
+  "w254.mp3": {
+    "model": "eleven_v3"
+  },
+  "w011.mp3": {
+    "model": "eleven_v3"
+  },
+  "w071.mp3": {
+    "model": "eleven_v3"
+  },
+  "w072.mp3": {
+    "model": "eleven_v3"
+  },
+  "w316.mp3": {
+    "model": "eleven_v3"
+  },
+  "w012.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w317.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w206.mp3": {
+    "model": "eleven_v3"
+  },
+  "w174.mp3": {
+    "model": "eleven_v3"
+  },
+  "w255.mp3": {
+    "model": "eleven_v3"
+  },
+  "w256.mp3": {
+    "model": "eleven_v3"
+  },
+  "w257.mp3": {
+    "model": "eleven_v3"
+  },
+  "w258.mp3": {
+    "model": "eleven_v3"
+  },
+  "w073.mp3": {
+    "model": "eleven_v3"
+  },
+  "w318.mp3": {
+    "model": "eleven_v3"
+  },
+  "w319.mp3": {
+    "model": "eleven_v3"
+  },
+  "w013.mp3": {
+    "model": "eleven_v3"
+  },
+  "w074.mp3": {
+    "model": "eleven_v3"
+  },
+  "w320.mp3": {
+    "model": "eleven_v3"
+  },
+  "w259.mp3": {
+    "model": "eleven_v3"
+  },
+  "w260.mp3": {
+    "model": "eleven_v3"
+  },
+  "w261.mp3": {
+    "model": "eleven_v3"
+  },
+  "w321.mp3": {
+    "model": "eleven_v3"
+  },
+  "w207.mp3": {
+    "model": "eleven_v3"
+  },
+  "w014.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w322.mp3": {
+    "model": "eleven_v3"
+  },
+  "w075.mp3": {
+    "model": "eleven_v3"
+  },
+  "w076.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w163.mp3": {
+    "model": "eleven_v3"
+  },
+  "w262.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w077.mp3": {
+    "model": "eleven_v3"
+  },
+  "w175.mp3": {
+    "model": "eleven_v3"
+  },
+  "w176.mp3": {
+    "model": "eleven_v3"
+  },
+  "w208.mp3": {
+    "model": "eleven_v3"
+  },
+  "w078.mp3": {
+    "model": "eleven_v3"
+  },
+  "w177.mp3": {
+    "model": "eleven_v3"
+  },
+  "w079.mp3": {
+    "model": "eleven_v3"
+  },
+  "w178.mp3": {
+    "model": "eleven_v3"
+  },
+  "w263.mp3": {
+    "model": "eleven_v3"
+  },
+  "w015.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w080.mp3": {
+    "model": "eleven_v3"
+  },
+  "w016.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w323.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w017.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w081.mp3": {
+    "model": "eleven_v3"
+  },
+  "w018.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w209.mp3": {
+    "model": "eleven_v3"
+  },
+  "w019.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w114.mp3": {
+    "model": "eleven_v3"
+  },
+  "w115.mp3": {
+    "model": "eleven_v3"
+  },
+  "w179.mp3": {
+    "model": "eleven_v3"
+  },
+  "w020.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w021.mp3": {
+    "model": "eleven_v3"
+  },
+  "w082.mp3": {
+    "model": "eleven_v3"
+  },
+  "w064.mp3": {
+    "model": "eleven_v3"
+  },
+  "w083.mp3": {
+    "model": "eleven_v3"
+  },
+  "w210.mp3": {
+    "model": "eleven_v3"
+  },
+  "w164.mp3": {
+    "model": "eleven_v3"
+  },
+  "w084.mp3": {
+    "model": "eleven_v3"
+  },
+  "w022.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w085.mp3": {
+    "model": "eleven_v3"
+  },
+  "w023.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w264.mp3": {
+    "model": "eleven_v3"
+  },
+  "w265.mp3": {
+    "model": "eleven_v3"
+  },
+  "w116.mp3": {
+    "model": "eleven_v3"
+  },
+  "w324.mp3": {
+    "model": "eleven_v3"
+  },
+  "w325.mp3": {
+    "model": "eleven_v3"
+  },
+  "w211.mp3": {
+    "model": "eleven_v3"
+  },
+  "w212.mp3": {
+    "model": "eleven_v3"
+  },
+  "w117.mp3": {
+    "model": "eleven_v3"
+  },
+  "w118.mp3": {
+    "model": "eleven_v3"
+  },
+  "w326.mp3": {
+    "model": "eleven_v3"
+  },
+  "w266.mp3": {
+    "model": "eleven_v3"
+  },
+  "w327.mp3": {
+    "model": "eleven_v3"
+  },
+  "w267.mp3": {
+    "model": "eleven_v3"
+  },
+  "w024.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w119.mp3": {
+    "model": "eleven_v3"
+  },
+  "w120.mp3": {
+    "model": "eleven_v3"
+  },
+  "w268.mp3": {
+    "model": "eleven_v3"
+  },
+  "w121.mp3": {
+    "model": "eleven_v3"
+  },
+  "w122.mp3": {
+    "model": "eleven_v3"
+  },
+  "w025.mp3": {
+    "model": "eleven_v3"
+  },
+  "w213.mp3": {
+    "model": "eleven_v3"
+  },
+  "w328.mp3": {
+    "model": "eleven_v3"
+  },
+  "w180.mp3": {
+    "model": "eleven_v3"
+  },
+  "w214.mp3": {
+    "model": "eleven_v3"
+  },
+  "w026.mp3": {
+    "model": "eleven_v3"
+  },
+  "w181.mp3": {
+    "model": "eleven_v3"
+  },
+  "w027.mp3": {
+    "model": "eleven_v3"
+  },
+  "w086.mp3": {
+    "model": "eleven_v3"
+  },
+  "w087.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w088.mp3": {
+    "model": "eleven_v3"
+  },
+  "w269.mp3": {
+    "model": "eleven_v3"
+  },
+  "w215.mp3": {
+    "model": "eleven_v3"
+  },
+  "w216.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w089.mp3": {
+    "model": "eleven_v3"
+  },
+  "w090.mp3": {
+    "model": "eleven_v3"
+  },
+  "w182.mp3": {
+    "model": "eleven_v3"
+  },
+  "w217.mp3": {
+    "model": "eleven_v3"
+  },
+  "w218.mp3": {
+    "model": "eleven_v3"
+  },
+  "w028.mp3": {
+    "model": "eleven_v3"
+  },
+  "w123.mp3": {
+    "model": "eleven_v3"
+  },
+  "w124.mp3": {
+    "model": "eleven_v3"
+  },
+  "w219.mp3": {
+    "model": "eleven_v3"
+  },
+  "w029.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w030.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w125.mp3": {
+    "model": "eleven_v3"
+  },
+  "w126.mp3": {
+    "model": "eleven_v3"
+  },
+  "w031.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w032.mp3": {
+    "model": "eleven_v3"
+  },
+  "w091.mp3": {
+    "model": "eleven_v3"
+  },
+  "w127.mp3": {
+    "model": "eleven_v3"
+  },
+  "w270.mp3": {
+    "model": "eleven_v3"
+  },
+  "w033.mp3": {
+    "model": "eleven_v3"
+  },
+  "w034.mp3": {
+    "model": "eleven_v3"
+  },
+  "w128.mp3": {
+    "model": "eleven_v3"
+  },
+  "w035.mp3": {
+    "model": "eleven_v3"
+  },
+  "w271.mp3": {
+    "model": "eleven_v3"
+  },
+  "w272.mp3": {
+    "model": "eleven_v3"
+  },
+  "w036.mp3": {
+    "model": "eleven_v3"
+  },
+  "w220.mp3": {
+    "model": "eleven_v3"
+  },
+  "w273.mp3": {
+    "model": "eleven_v3"
+  },
+  "w037.mp3": {
+    "model": "eleven_v3"
+  },
+  "w092.mp3": {
+    "model": "eleven_v3"
+  },
+  "w038.mp3": {
+    "model": "eleven_v3"
+  },
+  "w039.mp3": {
+    "model": "eleven_v3"
+  },
+  "w093.mp3": {
+    "model": "eleven_v3"
+  },
+  "w094.mp3": {
+    "model": "eleven_v3"
+  },
+  "w274.mp3": {
+    "model": "eleven_v3"
+  },
+  "w040.mp3": {
+    "model": "eleven_v3"
+  },
+  "w183.mp3": {
+    "model": "eleven_v3"
+  },
+  "w095.mp3": {
+    "model": "eleven_v3"
+  },
+  "w275.mp3": {
+    "model": "eleven_v3"
+  },
+  "w041.mp3": {
+    "model": "eleven_v3"
+  },
+  "w096.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w276.mp3": {
+    "model": "eleven_v3"
+  },
+  "w042.mp3": {
+    "model": "eleven_v3"
+  },
+  "w277.mp3": {
+    "model": "eleven_v3"
+  },
+  "w097.mp3": {
+    "model": "eleven_v3"
+  },
+  "w221.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w222.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w223.mp3": {
+    "model": "eleven_v3"
+  },
+  "w329.mp3": {
+    "model": "eleven_v3"
+  },
+  "w129.mp3": {
+    "model": "eleven_v3"
+  },
+  "w098.mp3": {
+    "model": "eleven_v3"
+  },
+  "w184.mp3": {
+    "model": "eleven_v3"
+  },
+  "w043.mp3": {
+    "model": "eleven_v3"
+  },
+  "w185.mp3": {
+    "model": "eleven_v3"
+  },
+  "w099.mp3": {
+    "model": "eleven_v3"
+  },
+  "w044.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w224.mp3": {
+    "model": "eleven_v3"
+  },
+  "w100.mp3": {
+    "model": "eleven_v3"
+  },
+  "w330.mp3": {
+    "model": "eleven_v3"
+  },
+  "w045.mp3": {
+    "model": "eleven_v3"
+  },
+  "w130.mp3": {
+    "model": "eleven_v3"
+  },
+  "w046.mp3": {
+    "model": "eleven_v3"
+  },
+  "w047.mp3": {
+    "model": "eleven_v3"
+  },
+  "w048.mp3": {
+    "model": "eleven_v3"
+  },
+  "w331.mp3": {
+    "model": "eleven_v3"
+  },
+  "w332.mp3": {
+    "model": "eleven_v3"
+  },
+  "w049.mp3": {
+    "model": "eleven_v3"
+  },
+  "w131.mp3": {
+    "model": "eleven_v3"
+  },
+  "w132.mp3": {
+    "model": "eleven_v3"
+  },
+  "w225.mp3": {
+    "model": "eleven_v3"
+  },
+  "w050.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w226.mp3": {
+    "model": "eleven_v3"
+  },
+  "w186.mp3": {
+    "model": "eleven_v3"
+  },
+  "w333.mp3": {
+    "model": "eleven_v3"
+  },
+  "w101.mp3": {
+    "model": "eleven_v3"
+  },
+  "w278.mp3": {
+    "model": "eleven_v3"
+  },
+  "w051.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w334.mp3": {
+    "model": "eleven_v3"
+  },
+  "w335.mp3": {
+    "model": "eleven_v3"
+  },
+  "w052.mp3": {
+    "model": "eleven_v3"
+  },
+  "w102.mp3": {
+    "model": "eleven_v3"
+  },
+  "w187.mp3": {
+    "model": "eleven_v3"
+  },
+  "w188.mp3": {
+    "model": "eleven_v3"
+  },
+  "w189.mp3": {
+    "model": "eleven_v3"
+  },
+  "w190.mp3": {
+    "model": "eleven_v3"
+  },
+  "w191.mp3": {
+    "model": "eleven_v3"
+  },
+  "w103.mp3": {
+    "model": "eleven_v3"
+  },
+  "w053.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w133.mp3": {
+    "model": "eleven_v3"
+  },
+  "w134.mp3": {
+    "model": "eleven_v3"
+  },
+  "w279.mp3": {
+    "model": "eleven_v3"
+  },
+  "w054.mp3": {
+    "model": "eleven_v3"
+  },
+  "w104.mp3": {
+    "model": "eleven_v3"
+  },
+  "w280.mp3": {
+    "model": "eleven_v3"
+  },
+  "w135.mp3": {
+    "model": "eleven_v3"
+  },
+  "w336.mp3": {
+    "model": "eleven_v3"
+  },
+  "w055.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w056.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w057.mp3": {
+    "model": "eleven_v3"
+  },
+  "w058.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w136.mp3": {
+    "model": "eleven_v3"
+  },
+  "w281.mp3": {
+    "model": "eleven_v3"
+  },
+  "w137.mp3": {
+    "model": "eleven_v3"
+  },
+  "w059.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w282.mp3": {
+    "model": "eleven_v3"
+  },
+  "w337.mp3": {
+    "model": "eleven_v3"
+  },
+  "w105.mp3": {
+    "model": "eleven_v3"
+  },
+  "w106.mp3": {
+    "model": "eleven_v3"
+  },
+  "w283.mp3": {
+    "model": "eleven_v3"
+  },
+  "w192.mp3": {
+    "model": "eleven_v3"
+  },
+  "w060.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w138.mp3": {
+    "model": "eleven_v3"
+  },
+  "w139.mp3": {
+    "model": "eleven_v3"
+  },
+  "w061.mp3": {
+    "model": "eleven_multilingual_v2"
+  },
+  "w140.mp3": {
+    "model": "eleven_v3"
+  },
+  "w062.mp3": {
+    "model": "eleven_multilingual_v2"
+  }
+}
