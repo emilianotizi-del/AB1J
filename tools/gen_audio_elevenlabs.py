@@ -40,6 +40,22 @@ def collect_texts():
                     texts.add(s["speakText"])
     return texts
 
+
+VOWELS = {"ա", "ե", "է", "ը", "ի", "օ", "ու"}
+SPECIAL = {"ւ": "վը"}  # hyun: da sola non è pronunciabile, il suono è [v]
+
+def speak_variants(text):
+    """Varianti da provare in ordine: la prima che produce audio vince.
+    Le lettere singole spesso restituiscono audio vuoto: per le consonanti si
+    aggiunge la vocale neutra ը (è la pronuncia didattica standard: b→bə),
+    per le vocali si aggiunge il punto armeno ։ come contesto."""
+    if len(text) == 1 or text == "ու":
+        base = SPECIAL.get(text, text)
+        if text in VOWELS:
+            return [base + "։", base + ".", base * 2]
+        return [base + "ը։", base + "ը"]
+    return [text, text + "։"]
+
 def pick_voice():
     req = urllib.request.Request(
         "https://api.elevenlabs.io/v1/voices",
@@ -57,6 +73,15 @@ def pick_voice():
 
 def tts(text):
     errs = []
+    for attempt in range(3):
+        for variant in speak_variants(text):
+            audio = _tts_once(variant, errs)
+            if audio and len(audio) > 500:
+                return audio
+        time.sleep(1.5 * (attempt + 1))
+    raise RuntimeError(f"TTS senza audio per {text!r}: " + (" | ".join(errs) or "risposte vuote"))
+
+def _tts_once(text, errs):
     for model in MODELS:
         body = json.dumps({
             "text": text,
@@ -70,10 +95,13 @@ def tts(text):
         )
         try:
             with urllib.request.urlopen(req, timeout=120) as r:
-                return r.read()
+                audio = r.read()
+            if len(audio) > 500:
+                return audio
+            errs.append(f"{model}: risposta vuota ({len(audio)} B) per {text!r}")
         except urllib.error.HTTPError as e:
-            errs.append(f"{model}: HTTP {e.code} {e.read()[:500].decode(errors='replace')}")
-    raise RuntimeError(f"TTS fallita per {text!r}: " + " | ".join(errs))
+            errs.append(f"{model}: HTTP {e.code} {e.read()[:300].decode(errors='replace')}")
+    return None
 
 def main():
     global VOICE_ID
