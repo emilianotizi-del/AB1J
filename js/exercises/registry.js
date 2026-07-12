@@ -5,8 +5,10 @@ import * as teach from './teach.js';
 import * as mcq from './mcq.js';
 import * as match from './match.js';
 import * as trace from './trace.js';
+import * as dictation from './dictation.js';
+import * as order from './order.js';
 
-const types = { teach, mcq, match, trace };
+const types = { teach, mcq, match, trace, dictation, order };
 
 export function renderStep(step, mount, ctx) {
   const mod = types[step.type];

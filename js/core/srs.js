@@ -1,6 +1,6 @@
 // Ripetizione dilazionata — SM-2 semplificato.
 // Voti: 1 = Di nuovo · 3 = Difficile · 4 = Bene · 5 = Facile
-import { getDeck, saveDeck, touchActivity } from './store.js';
+import { getDeck, saveDeck, recordEvent } from './store.js';
 
 const DAY = 86400000;
 
@@ -40,5 +40,5 @@ export function grade(cardId, q) {
   }
   c.ef = Math.max(1.3, c.ef + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02)));
   saveDeck(deck);
-  touchActivity();
+  recordEvent();
 }

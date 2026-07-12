@@ -34,7 +34,7 @@ def collect_texts():
             L = json.loads((ROOT / f"data/hy/lessons/{les['id']}.json").read_text())
             texts.update(w["hy"] for w in L.get("vocab", []))
             for s in L["steps"]:
-                if s.get("type") == "teach" and s.get("word"):
+                if s.get("word"):
                     texts.add(s["word"]["hy"])
                 if s.get("speakText"):
                     texts.add(s["speakText"])

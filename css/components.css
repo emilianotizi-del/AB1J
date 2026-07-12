@@ -210,3 +210,42 @@
 .seg { display: flex; border: 1.5px solid var(--line); border-radius: var(--radius-sm); overflow: hidden; }
 .seg button { flex: 1; padding: 8px 14px; background: transparent; border: none; cursor: pointer; min-height: 40px; }
 .seg button.active { background: var(--garnet); color: #fff; }
+
+/* Tessere (dettato e riordino) */
+.tile-answer {
+  min-height: 58px;
+  display: flex; flex-wrap: wrap; gap: 6px;
+  align-items: center; justify-content: center;
+  border-bottom: 2px dashed var(--line);
+  padding: 8px 4px;
+  margin-top: 14px;
+}
+.tile-answer.tile-ok { border-color: var(--ok); }
+.tile-answer.tile-err { border-color: var(--err); }
+.tile-bank {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  justify-content: center;
+  margin-top: 16px;
+  min-height: 50px;
+}
+.tile {
+  min-width: 44px; min-height: 48px;
+  padding: 8px 12px;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  font-size: 1.25rem;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+.tile:active { transform: scale(.94); }
+.tile:disabled { cursor: default; opacity: .85; }
+.tile-answer .tile { border-color: var(--blue); }
+
+/* Grafici a barre delle statistiche */
+.bar-row { display: flex; align-items: center; gap: 10px; margin: 7px 0; }
+.bar-row .b-lbl { width: 42px; font-size: .78rem; color: var(--ink-soft); text-align: right; flex-shrink: 0; }
+.bar-row .b-track { flex: 1; height: 14px; background: var(--paper); border-radius: 7px; overflow: hidden; }
+.bar-row .b-fill { height: 100%; background: var(--accent); border-radius: 7px; min-width: 2px; }
+.bar-row .b-fill.b-blue { background: var(--blue); }
+.bar-row .b-num { width: 30px; font-size: .8rem; font-weight: 600; flex-shrink: 0; }

@@ -1,0 +1,19 @@
+{
+  "id": "l006",
+  "title": "Verifica del modulo",
+  "vocab": [],
+  "steps": [
+    { "type": "mcq", "prompt": "Che cosa significa questa parola?", "promptHy": "կին", "speakText": "կին", "options": ["donna, moglie", "amore", "anno"], "answer": "donna, moglie" },
+    { "type": "dictation", "word": { "hy": "մեկ", "tr": "mek", "ipa": "[mɛk]", "it": "uno" }, "distractors": ["ա", "ս"] },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["սեր", "amore"], ["մատ", "dito"], ["տարի", "anno"], ["Այո", "sì"]] },
+    { "type": "order", "it": "salve (formale)", "tokens": ["Բարև", "ձեզ"], "speakText": "Բարև ձեզ" },
+    { "type": "mcq", "prompt": "Quale lettera si legge [s]?", "options": ["Ս", "Մ", "Կ"], "answer": "Ս", "optionsAreHy": true },
+    { "type": "dictation", "word": { "hy": "սեր", "tr": "ser", "ipa": "[sɛɾ]", "it": "amore" }, "distractors": ["մ", "ա"] },
+    { "type": "order", "it": "la mia donna / mia moglie", "tokens": ["իմ", "կին"], "speakText": "իմ կին" },
+    { "type": "mcq", "prompt": "Come si legge questa parola?", "promptHy": "տաս", "speakText": "տաս", "options": ["tas", "mas", "sat"], "answer": "tas" },
+    { "type": "dictation", "word": { "hy": "Բարև", "tr": "barev", "ipa": "[bɑˈɾɛv]", "it": "ciao" }, "distractors": ["մ", "ս"], "extra": true },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["Ոչ", "no"], ["մամա", "mamma"], ["իմ", "mio"], ["ամիս", "mese"]], "extra": true },
+    { "type": "order", "it": "sto bene", "tokens": ["Լավ", "եմ"], "speakText": "Լավ եմ" },
+    { "type": "mcq", "prompt": "Ti presentano una persona anziana. La saluti con:", "options": ["Բարև ձեզ", "Բարև", "Ցտեսություն"], "answer": "Բարև ձեզ", "optionsAreHy": true }
+  ]
+}

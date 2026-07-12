@@ -1,7 +1,7 @@
 // Player della lezione: sequenza di passi, barra di avanzamento, riepilogo finale.
 import { el } from '../utils/dom.js';
 import { getLesson, getLetter } from '../core/data.js';
-import { getSettings, markCompleted } from '../core/store.js';
+import { getSettings, markCompleted, recordEvent } from '../core/store.js';
 import { addCards } from '../core/srs.js';
 import { renderStep } from '../exercises/registry.js';
 import { navigate } from '../core/router.js';
@@ -36,6 +36,7 @@ export async function render(mount, params) {
       if (steps[i].type !== 'teach') {
         evaluated++;
         if (ok) correct++;
+        recordEvent();
       }
       i++;
       next();

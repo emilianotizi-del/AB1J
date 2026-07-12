@@ -44,6 +44,16 @@ export function touchActivity() {
   const today = new Date().toISOString().slice(0, 10);
   if (!days.includes(today)) { days.push(today); set('activity', days); }
 }
+// Contatore di azioni di studio (risposte + ripassi) per giorno.
+export function recordEvent() {
+  const ev = get('events', {});
+  const today = new Date().toISOString().slice(0, 10);
+  ev[today] = (ev[today] || 0) + 1;
+  set('events', ev);
+  touchActivity();
+}
+export function getEvents() { return get('events', {}); }
+
 export function getStreak() {
   const days = new Set(get('activity', []));
   let streak = 0;
