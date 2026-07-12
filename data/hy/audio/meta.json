@@ -4,22 +4,32 @@
   },
   "_last_run": {
     "models": {
-      "eleven_v3": 300,
-      "eleven_multilingual_v2": 36
+      "eleven_v3": 27
     },
     "error_samples": [
-      "eleven_v3: audio degenere o vuoto (4302 B) per 'Շնորհակալություն'",
       "eleven_v3: audio degenere o vuoto (0 B) per 'ա։'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'գը։'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'գալ'",
+      "eleven_v3: audio degenere o vuoto (1167 B) per 'գը։'",
       "eleven_v3: audio degenere o vuoto (0 B) per 'ե։'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'ե.'",
       "eleven_v3: audio degenere o vuoto (0 B) per 'եմ'",
-      "eleven_v3: audio degenere o vuoto (1167 B) per 'ենք'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'զը։'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'է։'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'էր'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'ը։'",
-      "eleven_v3: audio degenere o vuoto (1167 B) per 'թը։'"
+      "eleven_v3: audio degenere o vuoto (0 B) per 'եմ։'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'եմ'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'եմ։'",
+      "eleven_v3: audio degenere o vuoto (1167 B) per 'եմ'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'եմ։'",
+      "eleven_v3: audio degenere o vuoto (1167 B) per 'եմ'",
+      "eleven_v3: audio degenere o vuoto (0 B) per 'եմ։'"
+    ],
+    "skipped": [
+      "եմ",
+      "էր",
+      "ժ",
+      "ծ",
+      "ով",
+      "տ",
+      "ր",
+      "փ",
+      "ֆ"
     ]
   },
   "w165.mp3": {
@@ -917,6 +927,87 @@
     "model": "eleven_v3"
   },
   "w140.mp3": {
+    "model": "eleven_v3"
+  },
+  "w005.mp3": {
+    "model": "eleven_v3"
+  },
+  "w008.mp3": {
+    "model": "eleven_v3"
+  },
+  "w012.mp3": {
+    "model": "eleven_v3"
+  },
+  "w317.mp3": {
+    "model": "eleven_v3"
+  },
+  "w014.mp3": {
+    "model": "eleven_v3"
+  },
+  "w262.mp3": {
+    "model": "eleven_v3"
+  },
+  "w015.mp3": {
+    "model": "eleven_v3"
+  },
+  "w016.mp3": {
+    "model": "eleven_v3"
+  },
+  "w017.mp3": {
+    "model": "eleven_v3"
+  },
+  "w018.mp3": {
+    "model": "eleven_v3"
+  },
+  "w020.mp3": {
+    "model": "eleven_v3"
+  },
+  "w022.mp3": {
+    "model": "eleven_v3"
+  },
+  "w023.mp3": {
+    "model": "eleven_v3"
+  },
+  "w087.mp3": {
+    "model": "eleven_v3"
+  },
+  "w216.mp3": {
+    "model": "eleven_v3"
+  },
+  "w029.mp3": {
+    "model": "eleven_v3"
+  },
+  "w030.mp3": {
+    "model": "eleven_v3"
+  },
+  "w031.mp3": {
+    "model": "eleven_v3"
+  },
+  "w221.mp3": {
+    "model": "eleven_v3"
+  },
+  "w222.mp3": {
+    "model": "eleven_v3"
+  },
+  "w044.mp3": {
+    "model": "eleven_v3"
+  },
+  "w050.mp3": {
+    "model": "eleven_v3"
+  },
+  "w053.mp3": {
+    "model": "eleven_v3"
+  },
+  "w056.mp3": {
+    "model": "eleven_v3"
+  },
+  "w059.mp3": {
+    "model": "eleven_v3"
+  },
+  "w060.mp3": {
+    "model": "eleven_v3"
+  },
+  "w062.mp3": {
     "model": "eleven_v3"
   }
 }
