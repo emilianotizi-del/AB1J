@@ -1,0 +1,38 @@
+{
+  "id": "l059",
+  "title": "Esame A1",
+  "exam": true,
+  "passScore": 80,
+  "doneText": "Livello A1 superato! Շնորհավո՜ր",
+  "vocab": [],
+  "steps": [
+    { "type": "notice", "icon": "🎓", "title": "Esame A1", "text": "Venti domande su tutto il livello. Soglia: 80%. In bocca al lupo — հաջողություն։" },
+    { "type": "mcq", "prompt": "Come si legge questa parola?", "promptHy": "ջուր", "speakText": "ջուր", "options": ["jur", "zhur", "chur"], "answer": "jur" },
+    { "type": "dictation", "word": { "hy": "հայերեն", "tr": "hayeren", "ipa": "[hɑjɛˈɾɛn]", "it": "armeno (lingua)" }, "distractors": ["մ", "ո"] },
+    { "type": "conjugate", "prompt": "Il presente di խոսել (parlare)", "stem": "խոսում", "rows": [
+      { "label": "ես", "answer": "եմ" },
+      { "label": "դու", "answer": "ես" },
+      { "label": "նա", "answer": "է" },
+      { "label": "մենք", "answer": "ենք" },
+      { "label": "դուք", "answer": "եք" },
+      { "label": "նրանք", "answer": "են" }
+    ]},
+    { "type": "cloze", "it": "noi stiamo imparando l'armeno", "text": "Մենք հայերեն ___ սովորում", "options": ["ենք", "եք", "են"], "answer": "ենք", "speakText": "Մենք հայերեն ենք սովորում" },
+    { "type": "mcq", "prompt": "«Due mele» si dice:", "options": ["երկու խնձոր", "երկու խնձորներ", "խնձորներ երկու"], "answer": "երկու խնձոր", "optionsAreHy": true },
+    { "type": "order", "it": "il mio nome è Anna", "tokens": ["Իմ", "անունը", "Աննա", "է"], "speakText": "Իմ անունը Աննա է" },
+    { "type": "mcq", "prompt": "Che ora indica «Ժամը հինգն անց կես է»?", "speakText": "Ժամը հինգն անց կես է", "options": ["le 5:30", "le 5:00", "le 4:30"], "answer": "le 5:30" },
+    { "type": "cloze", "it": "la casa di Davide", "text": "___ տունը", "options": ["Դավիթի", "Դավիթին", "Դավիթը"], "answer": "Դավիթի", "speakText": "Դավիթի տունը" },
+    { "type": "mcq", "prompt": "Quale giorno è «չորեքշաբթի»?", "speakText": "չորեքշաբթի", "options": ["mercoledì", "giovedì", "martedì"], "answer": "mercoledì" },
+    { "type": "cloze", "it": "do il pane ad Anna", "text": "Ես ___ հաց եմ տալիս", "options": ["Աննային", "Աննայի", "Աննան"], "answer": "Աննային", "speakText": "Ես Աննային հաց եմ տալիս" },
+    { "type": "mcq", "prompt": "«Ho una sorella»:", "options": ["Ես մեկ քույր ունեմ", "Ես մեկ քույր եմ ունում", "Ես քույր մեկ ունի"], "answer": "Ես մեկ քույր ունեմ", "optionsAreHy": true },
+    { "type": "order", "it": "dov'è il negozio?", "tokens": ["Որտե՞ղ", "է", "խանութը"], "speakText": "Որտե՞ղ է խանութը" },
+    { "type": "cloze", "it": "ieri ho bevuto un caffè", "text": "Երեկ ես սուրճ ___", "options": ["խմեցի", "եմ խմում", "խմի՛ր"], "answer": "խմեցի", "speakText": "Երեկ ես սուրճ խմեցի" },
+    { "type": "mcq", "prompt": "L'imperativo di գնալ:", "options": ["գնա՛", "գնի՛ր", "գնաց"], "answer": "գնա՛", "optionsAreHy": true },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["այսօր", "oggi"], ["վաղը", "domani"], ["երեկ", "ieri"], ["հիմա", "adesso"]] },
+    { "type": "cloze", "it": "mia madre è medico", "text": "Մայրս ___ է", "options": ["բժիշկ", "բժիշկը", "բժիշկին"], "answer": "բժիշկ", "speakText": "Մայրս բժիշկ է" },
+    { "type": "mcq", "prompt": "«Il mercato è lì, vicino alla scuola»:", "options": ["Շուկան այնտեղ է, դպրոցի մոտ", "Շուկան այստեղ է, դպրոց մոտ", "Շուկա այնտեղ են, դպրոցի մեջ"], "answer": "Շուկան այնտեղ է, դպրոցի մոտ", "optionsAreHy": true },
+    { "type": "cloze", "it": "Anna è venuta a casa", "text": "Աննան տուն ___", "options": ["եկավ", "եկա", "գալիս"], "answer": "եկավ", "speakText": "Աննան տուն եկավ" },
+    { "type": "order", "it": "sto imparando l'armeno", "tokens": ["Ես", "հայերեն", "եմ", "սովորում"], "speakText": "Ես հայերեն եմ սովորում" },
+    { "type": "mcq", "prompt": "Ti dicono Շնորհակալություն։ Rispondi:", "options": ["Խնդրեմ", "Խնդրում եմ", "Բարի գալուստ"], "answer": "Խնդրեմ", "optionsAreHy": true }
+  ]
+}

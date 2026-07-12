@@ -1,0 +1,23 @@
+{
+  "id": "l057",
+  "title": "Lettura: la giornata di ieri",
+  "vocab": [
+    { "hy": "էր", "tr": "er", "ipa": "[ɛɾ]", "it": "era" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "էր", "tr": "er", "ipa": "[ɛɾ]", "it": "era" }, "note": "Il passato di է: Հացը հարյուր դրամ էր = il pane costava (era) cento dram." },
+    { "type": "reading", "title": "Երեկվա օրս", "sentences": [
+      { "hy": "Երեկ ես շուկա գնացի։", "tr": "yerek yes shuka gnats'i", "it": "Ieri sono andato al mercato." },
+      { "hy": "Շուկան մեծ է և նոր։", "tr": "shukan mets e yev nor", "it": "Il mercato è grande e nuovo." },
+      { "hy": "Ես պանիր և հաց ուզեցի։", "tr": "yes panir yev hats' uzets'i", "it": "Ho chiesto formaggio e pane." },
+      { "hy": "Հացը հարյուր դրամ էր։", "tr": "hats'ə haryur dram er", "it": "Il pane costava cento dram." },
+      { "hy": "Ես տուն եկա և սուրճ խմեցի։", "tr": "yes tun yeka yev surch khmets'i", "it": "Sono tornato a casa e ho bevuto un caffè." },
+      { "hy": "Երեկոն լավ էր։", "tr": "yerekon lav er", "it": "La serata è stata bella." }
+    ]},
+    { "type": "mcq", "prompt": "Dove è andato ieri?", "options": ["al mercato", "a scuola", "in centro"], "answer": "al mercato" },
+    { "type": "mcq", "prompt": "Quanto costava il pane?", "options": ["100 դրամ", "200 դրամ", "50 դրամ"], "answer": "100 դրամ" },
+    { "type": "mcq", "prompt": "Che cosa ha bevuto a casa?", "options": ["un caffè", "un tè", "del vino"], "answer": "un caffè" },
+    { "type": "cloze", "it": "la serata è stata bella", "text": "Երեկոն լավ ___", "options": ["էր", "է", "են"], "answer": "էր", "speakText": "Երեկոն լավ էր" },
+    { "type": "order", "it": "sono tornato a casa e ho bevuto un caffè", "tokens": ["Ես", "տուն", "եկա", "և", "սուրճ", "խմեցի"], "speakText": "Ես տուն եկա և սուրճ խմեցի", "extra": true }
+  ]
+}

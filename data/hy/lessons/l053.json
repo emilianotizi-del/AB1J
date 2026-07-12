@@ -1,0 +1,24 @@
+{
+  "id": "l053",
+  "title": "La casa e le stanze",
+  "vocab": [
+    { "hy": "սենյակ", "tr": "senyak", "ipa": "[sɛnˈjɑk]", "it": "stanza" },
+    { "hy": "խոհանոց", "tr": "khohanots'", "ipa": "[χɔhɑˈnɔt͡sʰ]", "it": "cucina" },
+    { "hy": "դուռ", "tr": "duṙ", "ipa": "[dur]", "it": "porta" },
+    { "hy": "պատուհան", "tr": "patuhan", "ipa": "[pɑtuˈhɑn]", "it": "finestra" },
+    { "hy": "սեղան", "tr": "seghan", "ipa": "[sɛˈʁɑn]", "it": "tavolo" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "սենյակ", "tr": "senyak", "ipa": "[sɛnˈjɑk]", "it": "stanza" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "խոհանոց", "tr": "khohanots'", "ipa": "[χɔhɑˈnɔt͡sʰ]", "it": "cucina" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "սեղան", "tr": "seghan", "ipa": "[sɛˈʁɑn]", "it": "tavolo" }, "note": "Finalmente il classico: սեղանի վրա = sul tavolo." },
+    { "type": "teach", "kind": "word", "word": { "hy": "դուռ", "tr": "duṙ", "ipa": "[dur]", "it": "porta" }, "extra": true },
+    { "type": "teach", "kind": "word", "word": { "hy": "պատուհան", "tr": "patuhan", "ipa": "[pɑtuˈhɑn]", "it": "finestra" }, "extra": true },
+    { "type": "cloze", "it": "il pane è sul tavolo", "text": "Հացը սեղանի ___ է", "options": ["վրա", "մեջ", "մոտ"], "answer": "վրա", "speakText": "Հացը սեղանի վրա է" },
+    { "type": "cloze", "it": "la mamma è in cucina... anzi: dentro la cucina", "text": "Մաման խոհանոցի ___ է", "options": ["մեջ", "վրա", "մոտ"], "answer": "մեջ", "speakText": "Մաման խոհանոցի մեջ է" },
+    { "type": "order", "it": "la stanza ha due finestre", "tokens": ["Սենյակը", "երկու", "պատուհան", "ունի"], "speakText": "Սենյակը երկու պատուհան ունի" },
+    { "type": "dictation", "word": { "hy": "սեղան", "tr": "seghan", "ipa": "[sɛˈʁɑn]", "it": "tavolo" }, "distractors": ["խ", "ի"] },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["սենյակ", "stanza"], ["խոհանոց", "cucina"], ["դուռ", "porta"], ["պատուհան", "finestra"]] },
+    { "type": "mcq", "prompt": "«La porta della cucina»:", "options": ["խոհանոցի դուռը", "խոհանոց դուռի", "դուռի խոհանոցը"], "answer": "խոհանոցի դուռը", "optionsAreHy": true, "extra": true }
+  ]
+}

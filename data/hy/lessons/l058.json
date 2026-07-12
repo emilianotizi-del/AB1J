@@ -1,0 +1,147 @@
+{
+  "id": "l058",
+  "title": "Ripasso generale A1",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "notice",
+      "icon": "🎯",
+      "title": "Ci siamo quasi",
+      "text": "Questo ripasso attraversa tutto il livello A1: alfabeto, presente, passato, casi e situazioni pratiche. Dopo, ti aspetta l'esame: serve almeno l'80%. Nessuna fretta — puoi rifare questo ripasso quante volte vuoi."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Quale lettera si legge [ʁ] (r francese)?",
+      "options": [
+        "Ղ",
+        "Ռ",
+        "Ր"
+      ],
+      "answer": "Ղ",
+      "optionsAreHy": true
+    },
+    {
+      "type": "conjugate",
+      "prompt": "Il presente di սովորել (imparare)",
+      "stem": "սովորում",
+      "rows": [
+        {
+          "label": "ես",
+          "answer": "եմ"
+        },
+        {
+          "label": "դու",
+          "answer": "ես"
+        },
+        {
+          "label": "նա",
+          "answer": "է"
+        },
+        {
+          "label": "մենք",
+          "answer": "ենք"
+        },
+        {
+          "label": "դուք",
+          "answer": "եք"
+        },
+        {
+          "label": "նրանք",
+          "answer": "են"
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "it": "ieri sono andato al mercato",
+      "text": "Երեկ ես շուկա ___",
+      "options": [
+        "գնացի",
+        "գնում եմ",
+        "գնա՛"
+      ],
+      "answer": "գնացի",
+      "speakText": "Երեկ ես շուկա գնացի"
+    },
+    {
+      "type": "order",
+      "it": "quanto costa la mela?",
+      "tokens": [
+        "Ի՞նչ",
+        "արժե",
+        "խնձորը"
+      ],
+      "speakText": "Ի՞նչ արժե խնձորը"
+    },
+    {
+      "type": "dictation",
+      "word": {
+        "hy": "ընտանիք",
+        "tr": "əntanik'",
+        "ipa": "[əntɑˈnikʰ]",
+        "it": "famiglia"
+      },
+      "distractors": [
+        "է",
+        "ո"
+      ]
+    },
+    {
+      "type": "cloze",
+      "it": "il pane è sul tavolo",
+      "text": "Հացը սեղանի ___ է",
+      "options": [
+        "վրա",
+        "մեջ",
+        "մոտ"
+      ],
+      "answer": "վրա",
+      "speakText": "Հացը սեղանի վրա է"
+    },
+    {
+      "type": "match",
+      "prompt": "Abbina armeno e italiano",
+      "pairs": [
+        [
+          "երկուշաբթի",
+          "lunedì"
+        ],
+        [
+          "բժիշկ",
+          "medico"
+        ],
+        [
+          "խոհանոց",
+          "cucina"
+        ],
+        [
+          "քսան",
+          "venti"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "it": "sto imparando l'armeno",
+      "tokens": [
+        "Ես",
+        "հայերեն",
+        "եմ",
+        "սովորում"
+      ],
+      "speakText": "Ես հայերեն եմ սովորում"
+    },
+    {
+      "type": "cloze",
+      "it": "sai l'armeno?",
+      "text": "Հայերեն ___",
+      "options": [
+        "գիտե՞ս",
+        "գիտե՞մ",
+        "ունե՞ս"
+      ],
+      "answer": "գիտե՞ս",
+      "speakText": "Հայերեն գիտե՞ս"
+    }
+  ]
+}

@@ -11,7 +11,7 @@ export async function render(mount, params) {
   const settings = getSettings();
 
   // Modalità 10 minuti: si saltano i passi marcati "extra".
-  const steps = settings.duration === 10
+  const steps = (settings.duration === 10 && !lesson.exam)
     ? lesson.steps.filter(s => !s.extra)
     : lesson.steps;
 
@@ -51,15 +51,31 @@ export async function render(mount, params) {
   }
 
   function finish() {
+    const pct = evaluated ? Math.round(correct / evaluated * 100) : 100;
+    const passScore = lesson.passScore ?? 0;
+    if (lesson.exam && pct < passScore) {
+      area.innerHTML = '';
+      area.append(el('div', { class: 'lesson-done' },
+        el('div', { class: 'done-glyph' }, '📚'),
+        el('h2', {}, 'Esame non superato'),
+        el('p', {}, `Hai totalizzato il ${pct}%: per superarlo serve almeno il ${passScore}%.`),
+        el('p', { style: 'color:var(--ink-soft);font-size:.9rem;margin-top:6px' },
+          'Nessun problema: ripassa i moduli e riprova quando vuoi.'),
+        el('div', { style: 'margin-top:24px;display:grid;gap:10px' },
+          el('button', { class: 'btn btn-block', onclick: () => location.reload() }, 'Riprova ora'),
+          el('a', { class: 'btn btn-secondary btn-block', href: '#/review' }, 'Vai al ripasso'),
+          el('a', { class: 'btn-ghost', href: '#/home' }, 'Torna al corso'))));
+      bar.firstChild.style.width = '100%';
+      return;
+    }
     markCompleted(lesson.id);
     if (lesson.vocab?.length) {
       addCards(lesson.vocab.map(w => ({ id: lesson.id + ':' + w.hy, ...w })));
     }
-    const pct = evaluated ? Math.round(correct / evaluated * 100) : 100;
     area.innerHTML = '';
     area.append(el('div', { class: 'lesson-done' },
       el('div', { class: 'done-glyph' }, pct >= 80 ? '🏆' : '👏'),
-      el('h2', {}, 'Lezione completata!'),
+      el('h2', {}, lesson.exam ? (lesson.doneText || 'Esame superato!') : 'Lezione completata!'),
       el('p', {}, `Risposte corrette: ${pct}%`),
       lesson.vocab?.length
         ? el('p', { style: 'color:var(--ink-soft);font-size:.9rem;margin-top:6px' },

@@ -1,0 +1,20 @@
+{
+  "id": "l050",
+  "title": "Il genitivo: di chi? di cosa?",
+  "vocab": [
+    { "hy": "կենտրոն", "tr": "kentron", "ipa": "[kɛntˈɾɔn]", "it": "centro" },
+    { "hy": "տան մեջ", "tr": "tan mej", "ipa": "[tɑn mɛd͡ʒ]", "it": "in casa" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "Դավիթի տունը", "tr": "Davit'i tunə", "ipa": "[dɑvitʰˈi ˈtunə]", "it": "la casa di Davide" }, "note": "Il genitivo è la -ի che usavi già con le postposizioni (դպրոցի մոտ): Դավիթ + ի = di Davide. La semina di l047 germoglia." },
+    { "type": "teach", "kind": "word", "word": { "hy": "Աննայի մայրը", "tr": "Annayi mayrə", "ipa": "[ɑnnɑˈji ˈmɑjɾə]", "it": "la madre di Anna" }, "note": "Dopo vocale si aggiunge -յի: Աննա → Աննայի." },
+    { "type": "teach", "kind": "word", "word": { "hy": "կենտրոն", "tr": "kentron", "ipa": "[kɛntˈɾɔn]", "it": "centro" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "տան մեջ", "tr": "tan mej", "ipa": "[tɑn mɛd͡ʒ]", "it": "in casa" }, "note": "Primo genitivo irregolare: տուն → տան. Le parole più antiche hanno forme proprie." },
+    { "type": "cloze", "it": "la casa di Davide è grande", "text": "___ տունը մեծ է", "options": ["Դավիթի", "Դավիթ", "Դավիթին"], "answer": "Դավիթի", "speakText": "Դավիթի տունը մեծ է" },
+    { "type": "cloze", "it": "la madre di Anna è medico... anzi: la madre di Anna sta bene", "text": "___ մայրը լավ է", "options": ["Աննայի", "Աննաի", "Աննան"], "answer": "Աննայի", "speakText": "Աննայի մայրը լավ է" },
+    { "type": "cloze", "it": "il centro della città", "text": "քաղաքի ___", "options": ["կենտրոնը", "կենտրոնի", "կենտրոններ"], "answer": "կենտրոնը", "speakText": "քաղաքի կենտրոնը" },
+    { "type": "order", "it": "il centro della città è nuovo", "tokens": ["Քաղաքի", "կենտրոնը", "նոր", "է"], "speakText": "Քաղաքի կենտրոնը նոր է" },
+    { "type": "mcq", "prompt": "«In casa» si dice:", "options": ["տան մեջ", "տունի մեջ", "տունը մեջ"], "answer": "տան մեջ", "optionsAreHy": true },
+    { "type": "mcq", "prompt": "Regola del genitivo:", "options": ["-ի dopo consonante, -յի dopo vocale", "-ն dopo consonante, -ը dopo vocale", "sempre -ի"], "answer": "-ի dopo consonante, -յի dopo vocale", "extra": true }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "l052",
+  "title": "Le professioni",
+  "vocab": [
+    { "hy": "ուսուցիչ", "tr": "usuts'ich", "ipa": "[usuˈt͡sʰit͡ʃʰ]", "it": "insegnante" },
+    { "hy": "բժիշկ", "tr": "bzhishk", "ipa": "[bəˈʒiʃk]", "it": "medico" },
+    { "hy": "վարորդ", "tr": "varord", "ipa": "[vɑˈɾɔɾd]", "it": "autista" },
+    { "hy": "գործ", "tr": "gorts", "ipa": "[ɡɔɾt͡s]", "it": "lavoro" },
+    { "hy": "աշխատել", "tr": "ashkhatel", "ipa": "[ɑʃχɑˈtɛl]", "it": "lavorare" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "ուսուցիչ", "tr": "usuts'ich", "ipa": "[usuˈt͡sʰit͡ʃʰ]", "it": "insegnante" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "բժիշկ", "tr": "bzhishk", "ipa": "[bəˈʒiʃk]", "it": "medico" }, "note": "Con la solita ə d'appoggio: bə-zhishk. Մայրս բժիշկ է = mia madre è medico (senza articolo, come in italiano)." },
+    { "type": "teach", "kind": "word", "word": { "hy": "վարորդ", "tr": "varord", "ipa": "[vɑˈɾɔɾd]", "it": "autista" }, "extra": true },
+    { "type": "teach", "kind": "word", "word": { "hy": "գործ", "tr": "gorts", "ipa": "[ɡɔɾt͡s]", "it": "lavoro" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "աշխատել", "tr": "ashkhatel", "ipa": "[ɑʃχɑˈtɛl]", "it": "lavorare" }, "note": "Որտե՞ղ ես աշխատում — dove lavori?" },
+    { "type": "cloze", "it": "mia madre è medico", "text": "Մայրս ___ է", "options": ["բժիշկ", "բժիշկը", "բժիշկի"], "answer": "բժիշկ", "speakText": "Մայրս բժիշկ է" },
+    { "type": "cloze", "it": "dove lavori?", "text": "Որտե՞ղ ես ___", "options": ["աշխատում", "աշխատել", "գործ"], "answer": "աշխատում", "speakText": "Որտե՞ղ ես աշխատում" },
+    { "type": "order", "it": "mio padre è autista", "tokens": ["Հայրս", "վարորդ", "է"], "speakText": "Հայրս վարորդ է" },
+    { "type": "dictation", "word": { "hy": "գործ", "tr": "gorts", "ipa": "[ɡɔɾt͡s]", "it": "lavoro" }, "distractors": ["կ", "ա"] },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["ուսուցիչ", "insegnante"], ["բժիշկ", "medico"], ["վարորդ", "autista"], ["գործ", "lavoro"]], "extra": true },
+    { "type": "cloze", "it": "l'insegnante della scuola", "text": "դպրոցի ___", "options": ["ուսուցիչը", "ուսուցիչի", "ուսուցիչներ"], "answer": "ուսուցիչը", "speakText": "դպրոցի ուսուցիչը", "extra": true }
+  ]
+}

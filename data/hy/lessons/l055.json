@@ -1,0 +1,24 @@
+{
+  "id": "l055",
+  "title": "Ieri: il passato regolare",
+  "vocab": [
+    { "hy": "խմեցի", "tr": "khmets'i", "ipa": "[χəmɛˈt͡sʰi]", "it": "ho bevuto, bevvi" },
+    { "hy": "խոսեցի", "tr": "khosets'i", "ipa": "[χɔsɛˈt͡sʰi]", "it": "ho parlato, parlai" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "խմեցի", "tr": "khmets'i", "ipa": "[χəmɛˈt͡sʰi]", "it": "ho bevuto" }, "note": "Il passato dei verbi in -ել: radice + -եցի. Երեկ ես սուրճ խմեցի = ieri ho bevuto un caffè. E nota: niente verbo essere — il passato è una parola sola." },
+    { "type": "teach", "kind": "word", "word": { "hy": "խմեցիր", "tr": "khmets'ir", "ipa": "[χəmɛˈt͡sʰiɾ]", "it": "hai bevuto" }, "note": "Le tre persone singolari: -եցի (io), -եցիր (tu), -եց (lui/lei)." },
+    { "type": "teach", "kind": "word", "word": { "hy": "խոսեցի", "tr": "khosets'i", "ipa": "[χɔsɛˈt͡sʰi]", "it": "ho parlato" } },
+    { "type": "conjugate", "prompt": "Il passato di խմել (bere), singolare", "rows": [
+      { "label": "ես", "answer": "խմեցի" },
+      { "label": "դու", "answer": "խմեցիր" },
+      { "label": "նա", "answer": "խմեց" }
+    ], "note": "Il plurale arriverà nel livello A2: per ora le tre persone che usi di più." },
+    { "type": "cloze", "it": "ieri ho bevuto un caffè", "text": "Երեկ ես սուրճ ___", "options": ["խմեցի", "խմեցիր", "եմ խմում"], "answer": "խմեցի", "speakText": "Երեկ ես սուրճ խմեցի" },
+    { "type": "cloze", "it": "lei ha parlato armeno", "text": "Նա հայերեն ___", "options": ["խոսեց", "խոսեցի", "խոսում"], "answer": "խոսեց", "speakText": "Նա հայերեն խոսեց" },
+    { "type": "mcq", "prompt": "Applica la regola: «ho lavorato» (աշխատել)?", "options": ["աշխատեցի", "աշխատեցիր", "աշխատում եմ"], "answer": "աշխատեցի", "optionsAreHy": true },
+    { "type": "order", "it": "ieri hai parlato con Anna... anzi: ieri hai parlato armeno", "tokens": ["Երեկ", "դու", "հայերեն", "խոսեցիր"], "speakText": "Երեկ դու հայերեն խոսեցիր" },
+    { "type": "mcq", "prompt": "Differenza chiave col presente:", "options": ["il passato non usa il verbo essere", "il passato usa -ում", "il passato è sempre irregolare"], "answer": "il passato non usa il verbo essere", "extra": true },
+    { "type": "cloze", "it": "hai voluto dell'acqua", "text": "Դու ջուր ___", "options": ["ուզեցիր", "ուզեցի", "ես ուզում"], "answer": "ուզեցիր", "speakText": "Դու ջուր ուզեցիր", "extra": true }
+  ]
+}

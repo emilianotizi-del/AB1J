@@ -470,6 +470,90 @@
           "letters": []
         }
       ]
+    },
+    {
+      "id": "m11",
+      "title": "Genitivo e dativo",
+      "level": "A1",
+      "lessons": [
+        {
+          "id": "l050",
+          "title": "Il genitivo: di chi? di cosa?",
+          "subtitle": "-ի / -յի — la semina germoglia",
+          "glyph": "ի",
+          "letters": []
+        },
+        {
+          "id": "l051",
+          "title": "Il dativo — e dare, venire",
+          "subtitle": "-ին, տալիս, գալիս",
+          "glyph": "ին",
+          "letters": []
+        },
+        {
+          "id": "l052",
+          "title": "Le professioni",
+          "subtitle": "Մայրս բժիշկ է",
+          "glyph": "⚕",
+          "letters": []
+        },
+        {
+          "id": "l053",
+          "title": "La casa e le stanze",
+          "subtitle": "սեղանի վրա — finalmente",
+          "glyph": "🏠",
+          "letters": []
+        },
+        {
+          "id": "l054",
+          "title": "Verifica del modulo",
+          "subtitle": "Quiz: tutto il modulo in 10 domande",
+          "glyph": "✓",
+          "letters": []
+        }
+      ]
+    },
+    {
+      "id": "m12",
+      "title": "Il primo passato — ed esame A1",
+      "level": "A1",
+      "lessons": [
+        {
+          "id": "l055",
+          "title": "Ieri: il passato regolare",
+          "subtitle": "-եցի, -եցիր, -եց",
+          "glyph": "ցի",
+          "letters": []
+        },
+        {
+          "id": "l056",
+          "title": "Andai, venni, diedi",
+          "subtitle": "գնացի, եկա, տվեցի",
+          "glyph": "🕰",
+          "letters": []
+        },
+        {
+          "id": "l057",
+          "title": "Lettura: la giornata di ieri",
+          "subtitle": "Il primo testo al passato",
+          "glyph": "📖",
+          "letters": []
+        },
+        {
+          "id": "l058",
+          "title": "Ripasso generale A1",
+          "subtitle": "Tutto il livello, prima dell'esame",
+          "glyph": "🎯",
+          "letters": []
+        },
+        {
+          "id": "l059",
+          "title": "Esame A1",
+          "subtitle": "20 domande · soglia 80%",
+          "glyph": "🎓",
+          "letters": []
+        }
+      ]
     }
   ]
 }

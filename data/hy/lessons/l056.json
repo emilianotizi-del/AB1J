@@ -1,0 +1,25 @@
+{
+  "id": "l056",
+  "title": "Andai, venni, diedi",
+  "vocab": [
+    { "hy": "գնացի", "tr": "gnats'i", "ipa": "[ɡənɑˈt͡sʰi]", "it": "sono andato/a" },
+    { "hy": "եկա", "tr": "yeka", "ipa": "[jɛˈkɑ]", "it": "sono venuto/a" },
+    { "hy": "տվեցի", "tr": "tvets'i", "ipa": "[təvɛˈt͡sʰi]", "it": "ho dato" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "գնացի", "tr": "gnats'i", "ipa": "[ɡənɑˈt͡sʰi]", "it": "sono andato/a" }, "note": "I verbi in -ալ fanno -ացի: գնալ → գնացի, գնացիր, գնաց." },
+    { "type": "teach", "kind": "word", "word": { "hy": "եկա", "tr": "yeka", "ipa": "[jɛˈkɑ]", "it": "sono venuto/a" }, "note": "Irregolare, dalla famiglia di գալ e արի՛: եկա, եկար, եկավ." },
+    { "type": "teach", "kind": "word", "word": { "hy": "տվեցի", "tr": "tvets'i", "ipa": "[təvɛˈt͡sʰi]", "it": "ho dato" }, "note": "Da տալ: տվեցի, տվեցիր, տվեց." },
+    { "type": "cloze", "it": "ieri sono andato al mercato", "text": "Երեկ ես շուկա ___", "options": ["գնացի", "գնամ", "եմ գնում"], "answer": "գնացի", "speakText": "Երեկ ես շուկա գնացի" },
+    { "type": "cloze", "it": "Anna è venuta a casa", "text": "Աննան տուն ___", "options": ["եկավ", "եկա", "գալիս"], "answer": "եկավ", "speakText": "Աննան տուն եկավ" },
+    { "type": "cloze", "it": "ho dato il pane a Davide", "text": "Ես Դավիթին հաց ___", "options": ["տվեցի", "տվեց", "եմ տալիս"], "answer": "տվեցի", "speakText": "Ես Դավիթին հաց տվեցի" },
+    { "type": "conjugate", "prompt": "Il passato di գնալ (andare), singolare", "rows": [
+      { "label": "ես", "answer": "գնացի" },
+      { "label": "դու", "answer": "գնացիր" },
+      { "label": "նա", "answer": "գնաց" }
+    ]},
+    { "type": "order", "it": "ieri sei venuto al mercato... anzi: ieri sei venuto a casa", "tokens": ["Երեկ", "դու", "տուն", "եկար"], "speakText": "Երեկ դու տուն եկար" },
+    { "type": "mcq", "prompt": "«Lui è andato a scuola»:", "options": ["Նա դպրոց գնաց", "Նա դպրոց գնացի", "Նա դպրոց է գնում"], "answer": "Նա դպրոց գնաց", "optionsAreHy": true, "extra": true },
+    { "type": "match", "prompt": "Abbina presente e passato", "pairs": [["գնում եմ", "գնացի"], ["գալիս եմ", "եկա"], ["տալիս եմ", "տվեցի"]], "extra": true }
+  ]
+}

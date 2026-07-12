@@ -1,0 +1,17 @@
+{
+  "id": "l054",
+  "title": "Verifica del modulo",
+  "vocab": [],
+  "steps": [
+    { "type": "cloze", "it": "la casa di Davide", "text": "___ տունը", "options": ["Դավիթի", "Դավիթին", "Դավիթ"], "answer": "Դավիթի", "speakText": "Դավիթի տունը" },
+    { "type": "cloze", "it": "do il pane ad Anna", "text": "Ես ___ հաց եմ տալիս", "options": ["Աննային", "Աննայի", "Աննա"], "answer": "Աննային", "speakText": "Ես Աննային հաց եմ տալիս" },
+    { "type": "mcq", "prompt": "«In casa»:", "options": ["տան մեջ", "տունի մեջ", "տան մոտ"], "answer": "տան մեջ", "optionsAreHy": true },
+    { "type": "cloze", "it": "il pane è sul tavolo", "text": "Հացը սեղանի ___ է", "options": ["վրա", "մեջ", "մոտ"], "answer": "վրա", "speakText": "Հացը սեղանի վրա է" },
+    { "type": "order", "it": "mio padre è autista", "tokens": ["Հայրս", "վարորդ", "է"], "speakText": "Հայրս վարորդ է" },
+    { "type": "cloze", "it": "lui viene a casa", "text": "Նա տուն է ___", "options": ["գալիս", "գնում է", "գալում"], "answer": "գալիս", "speakText": "Նա տուն է գալիս" },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["բժիշկ", "medico"], ["խոհանոց", "cucina"], ["սեղան", "tavolo"], ["գործ", "lavoro"]] },
+    { "type": "cloze", "it": "vedo Davide", "text": "Ես ___ եմ տեսնում", "options": ["Դավիթին", "Դավիթի", "Դավիթը"], "answer": "Դավիթին", "speakText": "Ես Դավիթին եմ տեսնում" },
+    { "type": "mcq", "prompt": "Il genitivo dopo vocale (Աննա):", "options": ["Աննայի", "Աննաի", "Աննային"], "answer": "Աննայի", "optionsAreHy": true, "extra": true },
+    { "type": "order", "it": "la stanza ha due finestre", "tokens": ["Սենյակը", "երկու", "պատուհան", "ունի"], "speakText": "Սենյակը երկու պատուհան ունի", "extra": true }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "l051",
+  "title": "Il dativo — e dare, venire",
+  "vocab": [
+    { "hy": "տալ", "tr": "tal", "ipa": "[tɑl]", "it": "dare" },
+    { "hy": "գալ", "tr": "gal", "ipa": "[ɡɑl]", "it": "venire" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "տալ", "tr": "tal", "ipa": "[tɑl]", "it": "dare" }, "note": "Presente irregolare in -իս: տալիս եմ. Solo tre verbi lo fanno: տալ, գալ, լալ (piangere)." },
+    { "type": "teach", "kind": "word", "word": { "hy": "գալ", "tr": "gal", "ipa": "[ɡɑl]", "it": "venire" }, "note": "գալիս եմ = vengo / sto venendo. È il verbo di արի՛ (vieni!, l048)." },
+    { "type": "teach", "kind": "word", "word": { "hy": "Ես Աննային հաց եմ տալիս", "tr": "yes Annayin hats' em talis", "ipa": "[jɛs ɑnnɑˈjin hɑt͡sʰ ɛm tɑˈlis]", "it": "do il pane ad Anna" }, "note": "Il dativo è -ին: la «a qualcuno». L'avevi già visto nell'ora: ժամը հինգին = alle cinque (l033)." },
+    { "type": "teach", "kind": "word", "word": { "hy": "Ես Դավիթին եմ տեսնում", "tr": "yes Davit'in em tesnum", "ipa": "[jɛs dɑvitʰˈin ɛm tɛsˈnum]", "it": "vedo Davide" }, "note": "Particolarità armena: anche il complemento oggetto, se è una PERSONA, prende -ին." },
+    { "type": "cloze", "it": "do il pane ad Anna", "text": "Ես ___ հաց եմ տալիս", "options": ["Աննային", "Աննայի", "Աննան"], "answer": "Աննային", "speakText": "Ես Աննային հաց եմ տալիս" },
+    { "type": "cloze", "it": "lui viene a casa", "text": "Նա տուն է ___", "options": ["գալիս", "գալում", "գնում"], "answer": "գալիս", "speakText": "Նա տուն է գալիս" },
+    { "type": "cloze", "it": "vedo Davide", "text": "Ես ___ եմ տեսնում", "options": ["Դավիթին", "Դավիթի", "Դավիթ"], "answer": "Դավիթին", "speakText": "Ես Դավիթին եմ տեսնում" },
+    { "type": "order", "it": "diamo il latte alla mamma", "tokens": ["Մենք", "մամային", "կաթ", "ենք", "տալիս"], "speakText": "Մենք մամային կաթ ենք տալիս" },
+    { "type": "mcq", "prompt": "«Vedo la casa» (una cosa, non una persona):", "options": ["Ես տունն եմ տեսնում", "Ես տանն եմ տեսնում", "Ես տունին եմ տեսնում"], "answer": "Ես տունն եմ տեսնում", "optionsAreHy": true, "extra": true },
+    { "type": "mcq", "prompt": "Il presente di տալ e գալ finisce in:", "options": ["-իս (տալիս, գալիս)", "-ում come tutti", "-ել"], "answer": "-իս (տալիս, գալիս)", "extra": true }
+  ]
+}
