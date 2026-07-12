@@ -14,7 +14,7 @@ API_KEY = os.environ.get("ELEVENLABS_API_KEY")
 if not API_KEY:
     sys.exit("ERRORE: il secret ELEVENLABS_API_KEY non è impostato nel repository "
              "(Settings → Secrets and variables → Actions).")
-VOICE_ID = os.environ.get("ELEVENLABS_VOICE_ID", "21m00Tcm4TlvDq8ikWAM")  # Rachel
+VOICE_ID = os.environ.get("ELEVENLABS_VOICE_ID") or None  # se assente: prima voce dell'account
 MODELS = ["eleven_v3", "eleven_multilingual_v2"]  # v3 supporta l'armeno; fallback
 FORCE = os.environ.get("FORCE") == "1"
 
@@ -40,8 +40,23 @@ def collect_texts():
                     texts.add(s["speakText"])
     return texts
 
+def pick_voice():
+    req = urllib.request.Request(
+        "https://api.elevenlabs.io/v1/voices",
+        headers={"xi-api-key": API_KEY},
+    )
+    with urllib.request.urlopen(req, timeout=60) as r:
+        voices = json.load(r).get("voices", [])
+    if not voices:
+        sys.exit("Nessuna voce disponibile nell'account ElevenLabs.")
+    print("Voci disponibili:", ", ".join(f"{v['name']} ({v['voice_id']})" for v in voices[:8]))
+    v = voices[0]
+    print(f"Voce scelta: {v['name']} ({v['voice_id']}) — per cambiarla, imposta la variabile "
+          "di repository ELEVENLABS_VOICE_ID")
+    return v["voice_id"]
+
 def tts(text):
-    last_err = None
+    errs = []
     for model in MODELS:
         body = json.dumps({
             "text": text,
@@ -57,10 +72,13 @@ def tts(text):
             with urllib.request.urlopen(req, timeout=120) as r:
                 return r.read()
         except urllib.error.HTTPError as e:
-            last_err = f"{model}: HTTP {e.code} {e.read()[:500].decode(errors='replace')}"
-    raise RuntimeError(f"TTS fallita per {text!r}: {last_err}")
+            errs.append(f"{model}: HTTP {e.code} {e.read()[:500].decode(errors='replace')}")
+    raise RuntimeError(f"TTS fallita per {text!r}: " + " | ".join(errs))
 
 def main():
+    global VOICE_ID
+    if not VOICE_ID:
+        VOICE_ID = pick_voice()
     index = json.loads(IDX.read_text()) if IDX.exists() else {}
     n = len(index)
     changed = 0
