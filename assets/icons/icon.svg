@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#8E2A3C"/>
+  <text x="256" y="332" font-family="Noto Serif Armenian, serif" font-size="300" font-weight="700"
+        text-anchor="middle" fill="#FAF6EF">Ա</text>
+  <circle cx="404" cy="120" r="34" fill="#E08A2E"/>
+</svg>

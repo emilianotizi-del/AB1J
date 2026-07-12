@@ -1,0 +1,48 @@
+{
+  "lang": "hy",
+  "title": "Armeno orientale",
+  "modules": [
+    {
+      "id": "m01",
+      "title": "Primi passi",
+      "level": "A0",
+      "lessons": [
+        {
+          "id": "l001",
+          "title": "Le prime tre lettere",
+          "subtitle": "Ա · Մ · Ն — e le prime parole",
+          "glyph": "Ա",
+          "letters": ["Ա", "Մ", "Ն"]
+        },
+        {
+          "id": "l002",
+          "title": "Suoni s e t",
+          "subtitle": "Ս · Տ — questo, parte, dito",
+          "glyph": "Ս",
+          "letters": ["Ս", "Տ"]
+        },
+        {
+          "id": "l003",
+          "title": "La r leggera e la e",
+          "subtitle": "Ր · Ե — amore, nostro",
+          "glyph": "Ր",
+          "letters": ["Ր", "Ե"]
+        },
+        {
+          "id": "l004",
+          "title": "k, i, l",
+          "subtitle": "Կ · Ի · Լ — uno, donna, anno",
+          "glyph": "Կ",
+          "letters": ["Կ", "Ի", "Լ"]
+        },
+        {
+          "id": "l005",
+          "title": "Saluti e cortesia",
+          "subtitle": "Ciao, grazie, sì, no",
+          "glyph": "Բ",
+          "letters": []
+        }
+      ]
+    }
+  ]
+}

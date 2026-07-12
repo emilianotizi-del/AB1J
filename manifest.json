@@ -1,0 +1,17 @@
+{
+  "name": "AB1J — Armeno orientale",
+  "short_name": "AB1J",
+  "description": "Impara l'armeno orientale, da zero al livello B1. Gratuito e offline.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FAF6EF",
+  "theme_color": "#8E2A3C",
+  "lang": "it",
+  "icons": [
+    { "src": "assets/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

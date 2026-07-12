@@ -1,0 +1,28 @@
+{
+  "id": "l005",
+  "title": "Saluti e cortesia",
+  "vocab": [
+    { "hy": "Բարև", "tr": "barev", "ipa": "[bɑˈɾɛv]", "it": "ciao" },
+    { "hy": "Բարև ձեզ", "tr": "barev dzez", "ipa": "[bɑˈɾɛv d͡zɛz]", "it": "salve (formale)" },
+    { "hy": "Այո", "tr": "ayo", "ipa": "[ɑˈjɔ]", "it": "sì" },
+    { "hy": "Ոչ", "tr": "voch'", "ipa": "[vɔt͡ʃʰ]", "it": "no" },
+    { "hy": "Շնորհակալություն", "tr": "shnorhakalut'yun", "ipa": "[ʃnɔɾhɑkɑlutʰˈjun]", "it": "grazie" },
+    { "hy": "Ցտեսություն", "tr": "ts'tesut'yun", "ipa": "[t͡sʰtɛsutʰˈjun]", "it": "arrivederci" },
+    { "hy": "Լավ եմ", "tr": "lav em", "ipa": "[lɑv ɛm]", "it": "sto bene" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "Բարև", "tr": "barev", "ipa": "[bɑˈɾɛv]", "it": "ciao" }, "note": "In questa lezione impari le frasi come blocchi: le lettere nuove (Բ, և, ձ…) arriveranno nelle prossime lezioni." },
+    { "type": "teach", "kind": "word", "word": { "hy": "Բարև ձեզ", "tr": "barev dzez", "ipa": "[bɑˈɾɛv d͡zɛz]", "it": "salve (formale)" }, "note": "Letteralmente «ciao a voi»: si usa con sconosciuti e persone anziane." },
+    { "type": "mcq", "prompt": "Come saluti il tuo medico?", "options": ["Բարև ձեզ", "Բարև"], "answer": "Բարև ձեզ", "optionsAreHy": true },
+    { "type": "teach", "kind": "word", "word": { "hy": "Այո", "tr": "ayo", "ipa": "[ɑˈjɔ]", "it": "sì" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "Ոչ", "tr": "voch'", "ipa": "[vɔt͡ʃʰ]", "it": "no" }, "note": "La Ո a inizio parola si legge [vɔ]: per questo «no» suona voch'." },
+    { "type": "mcq", "prompt": "Come si legge «Ոչ»?", "speakText": "Ոչ", "options": ["voch'", "och'", "noch'"], "answer": "voch'" },
+    { "type": "teach", "kind": "word", "word": { "hy": "Շնորհակալություն", "tr": "shnorhakalut'yun", "ipa": "[ʃnɔɾhɑkɑlutʰˈjun]", "it": "grazie" }, "note": "Lunga ma regolare: shnor-ha-ka-lu-t'yun. Versione informale: մերսի (mersi, dal francese)." },
+    { "type": "teach", "kind": "word", "word": { "hy": "Ցտեսություն", "tr": "ts'tesut'yun", "ipa": "[t͡sʰtɛsutʰˈjun]", "it": "arrivederci" }, "extra": true },
+    { "type": "teach", "kind": "word", "word": { "hy": "Լավ եմ", "tr": "lav em", "ipa": "[lɑv ɛm]", "it": "sto bene" }, "note": "Risposta a Ինչպե՞ս ես (inchpes es) = «come stai?»." },
+    { "type": "mcq", "prompt": "Che cosa significa «Շնորհակալություն»?", "speakText": "Շնորհակալություն", "options": ["grazie", "arrivederci", "prego"], "answer": "grazie" },
+    { "type": "mcq", "prompt": "Ti chiedono Ինչպե՞ս ես («come stai?»). Rispondi:", "options": ["Լավ եմ", "Ոչ", "Ցտեսություն"], "answer": "Լավ եմ", "optionsAreHy": true },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["Բարև", "ciao"], ["Այո", "sì"], ["Ոչ", "no"], ["Ցտեսություն", "arrivederci"]] },
+    { "type": "mcq", "prompt": "Come si dice «sì»?", "options": ["Այո", "Ոչ", "Բարև"], "answer": "Այո", "optionsAreHy": true, "extra": true }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "l004",
+  "title": "k, i, l",
+  "vocab": [
+    { "hy": "մեկ", "tr": "mek", "ipa": "[mɛk]", "it": "uno" },
+    { "hy": "կին", "tr": "kin", "ipa": "[kin]", "it": "donna, moglie" },
+    { "hy": "իմ", "tr": "im", "ipa": "[im]", "it": "mio" },
+    { "hy": "տարի", "tr": "tari", "ipa": "[tɑˈɾi]", "it": "anno" },
+    { "hy": "ամիս", "tr": "amis", "ipa": "[ɑˈmis]", "it": "mese" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "letter", "ref": "Կ" },
+    { "type": "trace", "letter": "Կ" },
+    { "type": "teach", "kind": "letter", "ref": "Ի" },
+    { "type": "teach", "kind": "letter", "ref": "Լ" },
+    { "type": "trace", "letter": "Լ", "extra": true },
+    { "type": "mcq", "prompt": "Quale lettera si legge [i]?", "options": ["Ի", "Լ", "Կ"], "answer": "Ի", "optionsAreHy": true },
+    { "type": "teach", "kind": "word", "word": { "hy": "մեկ", "tr": "mek", "ipa": "[mɛk]", "it": "uno" }, "note": "Il tuo primo numero: մեկ, երկու, երեք… (1, 2, 3…)." },
+    { "type": "teach", "kind": "word", "word": { "hy": "կին", "tr": "kin", "ipa": "[kin]", "it": "donna, moglie" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "իմ", "tr": "im", "ipa": "[im]", "it": "mio" }, "note": "իմ մամա = la mia mamma. Il possessivo precede il nome." },
+    { "type": "teach", "kind": "word", "word": { "hy": "տարի", "tr": "tari", "ipa": "[tɑˈɾi]", "it": "anno" }, "extra": true },
+    { "type": "teach", "kind": "word", "word": { "hy": "ամիս", "tr": "amis", "ipa": "[ɑˈmis]", "it": "mese" }, "extra": true },
+    { "type": "mcq", "prompt": "Come si legge questa parola?", "promptHy": "կին", "speakText": "կին", "options": ["kin", "kim", "nik"], "answer": "kin" },
+    { "type": "mcq", "prompt": "Che cosa significa «իմ»?", "speakText": "իմ", "options": ["mio", "uno", "anno"], "answer": "mio" },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["մեկ", "uno"], ["կին", "donna"], ["տարի", "anno"], ["ամիս", "mese"]] },
+    { "type": "mcq", "prompt": "Come si dice «la mia donna / mia moglie»?", "options": ["իմ կին", "կին իմ", "մեկ կին"], "answer": "իմ կին", "optionsAreHy": true, "extra": true }
+  ]
+}

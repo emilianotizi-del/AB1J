@@ -1,0 +1,23 @@
+{
+  "id": "l003",
+  "title": "La r leggera e la e",
+  "vocab": [
+    { "hy": "սեր", "tr": "ser", "ipa": "[sɛɾ]", "it": "amore" },
+    { "hy": "մեր", "tr": "mer", "ipa": "[mɛɾ]", "it": "nostro" },
+    { "hy": "տեր", "tr": "ter", "ipa": "[tɛɾ]", "it": "padrone, signore" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "letter", "ref": "Ր" },
+    { "type": "trace", "letter": "Ր" },
+    { "type": "teach", "kind": "letter", "ref": "Ե" },
+    { "type": "trace", "letter": "Ե", "extra": true },
+    { "type": "mcq", "prompt": "A inizio parola, come si legge Ե?", "options": ["[jɛ] (ye)", "[ɛ] (e)", "[i]"], "answer": "[jɛ] (ye)" },
+    { "type": "teach", "kind": "word", "word": { "hy": "սեր", "tr": "ser", "ipa": "[sɛɾ]", "it": "amore" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "մեր", "tr": "mer", "ipa": "[mɛɾ]", "it": "nostro" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "տեր", "tr": "ter", "ipa": "[tɛɾ]", "it": "padrone, signore" }, "extra": true },
+    { "type": "mcq", "prompt": "Come si legge questa parola?", "promptHy": "սեր", "speakText": "սեր", "options": ["ser", "mer", "res"], "answer": "ser" },
+    { "type": "mcq", "prompt": "Quale parola significa «nostro»?", "options": ["մեր", "սեր", "տեր"], "answer": "մեր", "optionsAreHy": true },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["սեր", "amore"], ["մեր", "nostro"], ["տեր", "padrone"]] },
+    { "type": "mcq", "prompt": "Quale lettera è la r «leggera», con un solo colpo di lingua?", "options": ["Ր", "Ե", "Ս"], "answer": "Ր", "optionsAreHy": true, "extra": true }
+  ]
+}

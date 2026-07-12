@@ -1,0 +1,64 @@
+/* ===== AB1J · stili specifici delle schermate ===== */
+
+/* Home / corso */
+.hero {
+  padding: 22px 18px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--garnet), #5A1F3E);
+  color: #FBEEDF;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.hero .hero-glyph {
+  position: absolute; right: -14px; bottom: -30px;
+  font-family: var(--font-hy-display);
+  font-size: 7.5rem; font-weight: 700;
+  opacity: .16; line-height: 1;
+  pointer-events: none;
+}
+.hero .hero-kicker { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; opacity: .85; }
+.hero h1 { margin: 4px 0 2px; }
+.hero .hero-sub { font-size: .9rem; opacity: .9; }
+
+.module-title { margin: 22px 0 10px; display: flex; align-items: baseline; gap: 8px; }
+.module-title small { color: var(--ink-soft); font-weight: 400; }
+
+/* Lezione */
+.lesson-top {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 20px;
+}
+.step-area { animation: stepIn .25s ease; }
+@keyframes stepIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+.teach-card { text-align: center; padding: 28px 16px; }
+.teach-card .big-glyph {
+  font-family: var(--font-hy-display);
+  font-size: 6rem; font-weight: 700; line-height: 1.1;
+  color: var(--garnet);
+}
+[data-theme="dark"] .teach-card .big-glyph { color: var(--accent); }
+.teach-card .glyph-pair { font-size: 2rem; color: var(--ink-soft); font-family: var(--font-hy); }
+.teach-card .letter-name { font-size: 1.1rem; font-weight: 600; margin-top: 8px; }
+.teach-card .letter-sound { color: var(--ink-soft); }
+.teach-note { margin-top: 12px; font-size: .9rem; color: var(--ink-soft); text-align: center; }
+
+.lesson-footer { margin-top: 22px; }
+
+.lesson-done { text-align: center; padding: 40px 0; }
+.lesson-done .done-glyph { font-size: 4rem; }
+.lesson-done h2 { margin: 12px 0 6px; }
+
+/* Ripasso */
+.review-empty { text-align: center; padding: 60px 16px; color: var(--ink-soft); }
+.review-empty .big-glyph { font-family: var(--font-hy-display); font-size: 4rem; color: var(--line); }
+
+/* Dettaglio lettera (modale) */
+.letter-detail { text-align: center; }
+.letter-detail .big-glyph {
+  font-family: var(--font-hy-display);
+  font-size: 5rem; font-weight: 700; color: var(--garnet); line-height: 1.15;
+}
+[data-theme="dark"] .letter-detail .big-glyph { color: var(--accent); }
+.letter-detail .detail-actions { display: flex; gap: 10px; justify-content: center; margin-top: 16px; }
