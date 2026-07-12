@@ -8,7 +8,7 @@ Eseguito dalla GitHub Action .github/workflows/audio.yml.
 - Env: ELEVENLABS_API_KEY (obbligatoria), ELEVENLABS_VOICE_ID (opzionale),
   FORCE=1 per rigenerare anche le tracce già presenti.
 """
-import json, os, pathlib, sys, time, urllib.request
+import json, os, pathlib, re, subprocess, sys, tempfile, time, urllib.request
 
 API_KEY = os.environ.get("ELEVENLABS_API_KEY")
 if not API_KEY:
@@ -85,6 +85,25 @@ def tts(text):
         time.sleep(1.5 * (attempt + 1))
     raise RuntimeError(f"TTS senza audio per {text!r}: " + (" | ".join(errs) or "risposte vuote"))
 
+def _valid(audio, text):
+    """L'audio è accettabile solo se la durata è proporzionata al testo.
+    ElevenLabs talvolta restituisce un blob degenere (~0.24 s) identico
+    per richieste diverse: questo controllo lo intercetta."""
+    clean = re.sub(r"[՞՜՛։,.\s]", "", text)
+    min_dur = max(0.35, 0.07 * len(clean))
+    with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as tmp:
+        tmp.write(audio)
+        path = tmp.name
+    try:
+        r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                            "-of", "csv=p=0", path], capture_output=True, text=True)
+        dur = float(r.stdout.strip())
+    except Exception:
+        dur = len(audio) / 4000.0     # ripiego: ~4 kB/s a 32 kbps
+    finally:
+        os.unlink(path)
+    return dur >= min_dur
+
 def _tts_once(text, errs):
     for model in MODELS:
         body = json.dumps({
@@ -100,9 +119,9 @@ def _tts_once(text, errs):
         try:
             with urllib.request.urlopen(req, timeout=120) as r:
                 audio = r.read()
-            if len(audio) > 500:
+            if len(audio) > 500 and _valid(audio, text):
                 return audio
-            errs.append(f"{model}: risposta vuota ({len(audio)} B) per {text!r}")
+            errs.append(f"{model}: audio degenere o vuoto ({len(audio)} B) per {text!r}")
         except urllib.error.HTTPError as e:
             errs.append(f"{model}: HTTP {e.code} {e.read()[:300].decode(errors='replace')}")
     return None
