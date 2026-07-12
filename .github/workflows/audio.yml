@@ -1,0 +1,53 @@
+# Genera/aggiorna le tracce audio del corso con ElevenLabs e le committa.
+# Parte automaticamente quando cambiano i contenuti del corso, oppure a mano
+# dalla scheda Actions ("Run workflow"; spuntare force per rigenerare tutto).
+name: Genera audio (ElevenLabs)
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Rigenera anche le tracce esistenti"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - "data/hy/lessons/**"
+      - "data/hy/alphabet.json"
+      - "data/hy/course.json"
+      - "tools/gen_audio_elevenlabs.py"
+      - ".github/workflows/audio.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audio
+  cancel-in-progress: false
+
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Genera tracce
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ vars.ELEVENLABS_VOICE_ID }}
+          FORCE: ${{ inputs.force && '1' || '' }}
+        run: python tools/gen_audio_elevenlabs.py
+
+      - name: Committa se ci sono novità
+        run: |
+          git config user.name "ab1j-audio-bot"
+          git config user.email "ab1j-audio-bot@users.noreply.github.com"
+          git add data/hy/audio
+          git diff --cached --quiet && echo "Nessuna modifica" && exit 0
+          git commit -m "Audio: tracce rigenerate con ElevenLabs"
+          git push
