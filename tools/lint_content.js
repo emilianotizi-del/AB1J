@@ -28,7 +28,8 @@ function readable(hy) {
   let s = hy.toLowerCase().replace(/[՞՜՛։,]/g, '');
   for (const w of s.split(' ')) if (chunks.has(w)) s = s.replace(w, '');
   if (taught.has('ու')) s = s.replace(/ու/g, '');
-  return [...new Set(Array.from(s.replace(/ /g, '')))].filter(ch => !taught.has(ch));
+  return [...new Set(Array.from(s.replace(/ /g, '')))]
+    .filter(ch => /[\u0531-\u058F]/.test(ch) && !taught.has(ch));
 }
 
 for (const mod of course.modules) {
@@ -48,7 +49,7 @@ for (const mod of course.modules) {
     for (const w of L.vocab || []) check(w.hy, 'vocab');
     L.steps.forEach((s, i) => {
       if (!types.has(s.type)) err(`${les.id} passo ${i}: tipo sconosciuto ${s.type}`);
-      if (s.word) { check(s.word.hy, `passo ${i}`); if (!audioIdx[s.word.hy]) noAudio.add(s.word.hy); }
+      if (s.word) { check(s.word.hy, `passo ${i}`); const sp = s.word.speak || s.word.hy; if (!audioIdx[sp]) noAudio.add(sp); }
       if (s.type === 'teach' && s.kind === 'letter' && !allGlyphs.has(s.ref)) err(`${les.id} passo ${i}: ref ${s.ref} non in alfabeto`);
       if (s.type === 'trace' && !allGlyphs.has(s.letter)) err(`${les.id} passo ${i}: letter ${s.letter} non in alfabeto`);
       if (s.type === 'mcq') {

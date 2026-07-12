@@ -21,7 +21,7 @@ for (const mod of course.modules) {
     const L = JSON.parse(fs.readFileSync(`data/hy/lessons/${les.id}.json`));
     for (const w of L.vocab || []) texts.add(w.hy);
     for (const s of L.steps) {
-      if (s.word) texts.add(s.word.hy);
+      if (s.word) texts.add(s.word.speak || s.word.hy);
       if (s.speakText) texts.add(s.speakText);
     }
   }

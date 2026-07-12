@@ -1,0 +1,17 @@
+{
+  "id": "l025",
+  "title": "Verifica del modulo",
+  "vocab": [],
+  "steps": [
+    { "type": "mcq", "prompt": "«ծով» → plurale:", "options": ["ծովեր", "ծովներ", "ծովը"], "answer": "ծովեր", "optionsAreHy": true },
+    { "type": "mcq", "prompt": "«ժամանակ» → plurale:", "options": ["ժամանակներ", "ժամանակեր", "ժամանակը"], "answer": "ժամանակներ", "optionsAreHy": true },
+    { "type": "order", "it": "il mare è grande", "tokens": ["Ծովը", "մեծ", "է"], "speakText": "Ծովը մեծ է" },
+    { "type": "mcq", "prompt": "«Il cavallo» (ձի finisce per vocale):", "options": ["ձին", "ձիը", "ձիներ"], "answer": "ձին", "optionsAreHy": true },
+    { "type": "order", "it": "sto bevendo acqua", "tokens": ["Ես", "ջուր", "եմ", "խմում"], "speakText": "Ես ջուր եմ խմում" },
+    { "type": "dictation", "word": { "hy": "սովորել", "tr": "sovorel", "ipa": "[sɔvɔˈɾɛl]", "it": "imparare, studiare" }, "distractors": ["ը", "ա"] },
+    { "type": "mcq", "prompt": "In «Ես հայերեն եմ սովորում», dove sta եմ?", "options": ["dopo la parola in evidenza", "sempre alla fine", "sempre dopo Ես"], "answer": "dopo la parola in evidenza" },
+    { "type": "order", "it": "sto imparando l'armeno", "tokens": ["Ես", "հայերեն", "եմ", "սովորում"], "speakText": "Ես հայերեն եմ սովորում" },
+    { "type": "match", "prompt": "Abbina singolare e plurale", "pairs": [["օր", "օրեր"], ["տարի", "տարիներ"], ["խնձոր", "խնձորներ"]], "extra": true },
+    { "type": "mcq", "prompt": "«La casa è piccola» si dice:", "options": ["Տունը փոքր է", "Տուն փոքր է", "Փոքր տունը է"], "answer": "Տունը փոքր է", "optionsAreHy": true }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "l019",
+  "title": "Pranzo, giusto, piccolo e grande",
+  "vocab": [
+    { "hy": "ճաշ", "tr": "chash", "ipa": "[t͡ʃɑʃ]", "it": "pranzo" },
+    { "hy": "ճիշտ", "tr": "chisht", "ipa": "[t͡ʃiʃt]", "it": "giusto, corretto" },
+    { "hy": "փոքր", "tr": "p'ok'r", "ipa": "[ˈpʰɔkʰɾ]", "it": "piccolo" },
+    { "hy": "մեծ", "tr": "mets", "ipa": "[mɛt͡s]", "it": "grande" },
+    { "hy": "փող", "tr": "p'ogh", "ipa": "[pʰɔʁ]", "it": "soldi" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "letter", "ref": "Ճ" },
+    { "type": "trace", "letter": "Ճ" },
+    { "type": "teach", "kind": "letter", "ref": "Փ" },
+    { "type": "trace", "letter": "Փ", "extra": true },
+    { "type": "mcq", "prompt": "Ճ e Չ si distinguono perché:", "options": ["Չ è aspirata, Ճ no", "Ճ è aspirata, Չ no", "Sono identiche"], "answer": "Չ è aspirata, Ճ no" },
+    { "type": "teach", "kind": "word", "word": { "hy": "ճաշ", "tr": "chash", "ipa": "[t͡ʃɑʃ]", "it": "pranzo" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "ճիշտ", "tr": "chisht", "ipa": "[t͡ʃiʃt]", "it": "giusto, corretto" }, "note": "Ճիշտ է! = giusto! Lo dirai spesso facendo gli esercizi." },
+    { "type": "teach", "kind": "word", "word": { "hy": "փոքր", "tr": "p'ok'r", "ipa": "[ˈpʰɔkʰɾ]", "it": "piccolo" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "մեծ", "tr": "mets", "ipa": "[mɛt͡s]", "it": "grande" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "փող", "tr": "p'ogh", "ipa": "[pʰɔʁ]", "it": "soldi" }, "extra": true },
+    { "type": "mcq", "prompt": "Il contrario di «մեծ» è:", "options": ["փոքր", "ճիշտ", "նոր"], "answer": "փոքր", "optionsAreHy": true },
+    { "type": "dictation", "word": { "hy": "մեծ", "tr": "mets", "ipa": "[mɛt͡s]", "it": "grande" }, "distractors": ["ց", "ա"] },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["ճաշ", "pranzo"], ["ճիշտ", "giusto"], ["փոքր", "piccolo"], ["մեծ", "grande"]] },
+    { "type": "mcq", "prompt": "«Casa grande» si dice:", "options": ["մեծ տուն", "տուն մեծ", "փոքր տուն"], "answer": "մեծ տուն", "optionsAreHy": true, "extra": true }
+  ]
+}

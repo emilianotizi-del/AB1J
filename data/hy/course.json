@@ -166,6 +166,107 @@
           "letters": []
         }
       ]
+    },
+    {
+      "id": "m04",
+      "title": "L'alfabeto completo",
+      "level": "A1",
+      "lessons": [
+        {
+          "id": "l016",
+          "title": "Acqua, ore e tempo",
+          "subtitle": "Ջ · Ժ — Ժամը քանի՞սն է",
+          "glyph": "Ջ",
+          "letters": [
+            "Ջ",
+            "Ժ"
+          ]
+        },
+        {
+          "id": "l017",
+          "title": "Mela, cavallo, neve",
+          "subtitle": "Խ · Ձ — khndzor, dzi, dzyun",
+          "glyph": "Խ",
+          "letters": [
+            "Խ",
+            "Ձ"
+          ]
+        },
+        {
+          "id": "l018",
+          "title": "Albero, mare, albicocca",
+          "subtitle": "Ռ · Ծ — la r forte",
+          "glyph": "Ծ",
+          "letters": [
+            "Ռ",
+            "Ծ"
+          ]
+        },
+        {
+          "id": "l019",
+          "title": "Pranzo, giusto, piccolo e grande",
+          "subtitle": "Ճ · Փ — mets e p'ok'r",
+          "glyph": "Ճ",
+          "letters": [
+            "Ճ",
+            "Փ"
+          ]
+        },
+        {
+          "id": "l020",
+          "title": "Le ultime lettere — e Բարև svelato",
+          "subtitle": "Օ · Ֆ · ւ · և — alfabeto completo!",
+          "glyph": "և",
+          "letters": [
+            "Օ",
+            "Ֆ",
+            "Ւ",
+            "ԵՎ"
+          ]
+        },
+        {
+          "id": "l021",
+          "title": "Verifica del modulo",
+          "subtitle": "Quiz: tutto il modulo in 10 domande",
+          "glyph": "✓",
+          "letters": []
+        }
+      ]
+    },
+    {
+      "id": "m05",
+      "title": "La prima grammatica",
+      "level": "A1",
+      "lessons": [
+        {
+          "id": "l022",
+          "title": "Il plurale",
+          "subtitle": "-եր e -ներ",
+          "glyph": "եր",
+          "letters": []
+        },
+        {
+          "id": "l023",
+          "title": "L'articolo -ը / -ն",
+          "subtitle": "La prima frase completa",
+          "glyph": "ը",
+          "letters": []
+        },
+        {
+          "id": "l024",
+          "title": "Il presente: sto facendo",
+          "subtitle": "-ում + եմ",
+          "glyph": "ում",
+          "letters": []
+        },
+        {
+          "id": "l025",
+          "title": "Verifica del modulo",
+          "subtitle": "Quiz: tutto il modulo in 10 domande",
+          "glyph": "✓",
+          "letters": []
+        }
+      ]
     }
   ]
 }

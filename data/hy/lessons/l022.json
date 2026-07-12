@@ -1,0 +1,154 @@
+{
+  "id": "l022",
+  "title": "Il plurale",
+  "vocab": [
+    {
+      "hy": "ծառեր",
+      "tr": "tsaṙer",
+      "ipa": "[t͡sɑˈrɛɾ]",
+      "it": "alberi"
+    },
+    {
+      "hy": "խնձորներ",
+      "tr": "khndzorner",
+      "ipa": "[χənd͡zɔɾˈnɛɾ]",
+      "it": "mele"
+    }
+  ],
+  "steps": [
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ծառ → ծառեր",
+        "tr": "tsaṙ → tsaṙer",
+        "ipa": "[t͡sɑˈrɛɾ]",
+        "it": "albero → alberi",
+        "speak": "ծառեր"
+      },
+      "note": "La regola del plurale: le parole di UNA sillaba aggiungono -եր."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "խնձոր → խնձորներ",
+        "tr": "khndzor → khndzorner",
+        "ipa": "[χənd͡zɔɾˈnɛɾ]",
+        "it": "mela → mele",
+        "speak": "խնձորներ"
+      },
+      "note": "Le parole di DUE O PIÙ sillabe aggiungono -ներ."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "օրեր",
+        "tr": "ōrer",
+        "ipa": "[ɔˈɾɛɾ]",
+        "it": "giorni"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "տարիներ",
+        "tr": "tariner",
+        "ipa": "[tɑɾiˈnɛɾ]",
+        "it": "anni"
+      }
+    },
+    {
+      "type": "mcq",
+      "prompt": "«ժամ» (ora) ha una sillaba. Il plurale è:",
+      "options": [
+        "ժամեր",
+        "ժամներ",
+        "ժամի"
+      ],
+      "answer": "ժամեր",
+      "optionsAreHy": true
+    },
+    {
+      "type": "mcq",
+      "prompt": "«ընտանիք» (famiglia) ha più sillabe. Il plurale è:",
+      "options": [
+        "ընտանիքներ",
+        "ընտանիքեր",
+        "ընտանիք"
+      ],
+      "answer": "ընտանիքներ",
+      "optionsAreHy": true
+    },
+    {
+      "type": "mcq",
+      "prompt": "«ծով» (mare) → plurale:",
+      "options": [
+        "ծովեր",
+        "ծովներ",
+        "ծովի"
+      ],
+      "answer": "ծովեր",
+      "optionsAreHy": true
+    },
+    {
+      "type": "dictation",
+      "word": {
+        "hy": "օրեր",
+        "tr": "ōrer",
+        "ipa": "[ɔˈɾɛɾ]",
+        "it": "giorni"
+      },
+      "distractors": [
+        "ն",
+        "ա"
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "«ձի» (cavallo) → plurale:",
+      "options": [
+        "ձիեր",
+        "ձիներ",
+        "ձիի"
+      ],
+      "answer": "ձիեր",
+      "optionsAreHy": true,
+      "extra": true
+    },
+    {
+      "type": "match",
+      "prompt": "Abbina singolare e plurale",
+      "pairs": [
+        [
+          "ծառ",
+          "ծառեր"
+        ],
+        [
+          "խնձոր",
+          "խնձորներ"
+        ],
+        [
+          "տարի",
+          "տարիներ"
+        ],
+        [
+          "օր",
+          "օրեր"
+        ]
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Regola generale del plurale:",
+      "options": [
+        "1 sillaba → -եր, di più → -ներ",
+        "1 sillaba → -ներ, di più → -եր",
+        "sempre -եր"
+      ],
+      "answer": "1 sillaba → -եր, di più → -ներ"
+    }
+  ]
+}

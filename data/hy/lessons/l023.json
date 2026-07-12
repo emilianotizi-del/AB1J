@@ -1,0 +1,132 @@
+{
+  "id": "l023",
+  "title": "L'articolo -ը / -ն",
+  "vocab": [
+    {
+      "hy": "տունը",
+      "tr": "tunə",
+      "ipa": "[ˈtunə]",
+      "it": "la casa"
+    },
+    {
+      "hy": "տարին",
+      "tr": "tarin",
+      "ipa": "[tɑˈɾin]",
+      "it": "l'anno"
+    }
+  ],
+  "steps": [
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "տուն → տունը",
+        "tr": "tun → tunə",
+        "ipa": "[ˈtunə]",
+        "it": "casa → la casa",
+        "speak": "տունը"
+      },
+      "note": "L'articolo determinativo si ATTACCA in fondo: -ը dopo consonante."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "տարի → տարին",
+        "tr": "tari → tarin",
+        "ipa": "[tɑˈɾin]",
+        "it": "anno → l'anno",
+        "speak": "տարին"
+      },
+      "note": "Dopo vocale si usa -ն: tari + n."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "Ծովը մեծ է",
+        "tr": "tsovə mets e",
+        "ipa": "[ˈt͡sɔvə mɛt͡s ɛ]",
+        "it": "il mare è grande"
+      },
+      "note": "La tua prima frase completa: soggetto + aggettivo + է."
+    },
+    {
+      "type": "mcq",
+      "prompt": "«ջուր» finisce per consonante. «L'acqua» è:",
+      "options": [
+        "ջուրը",
+        "ջուրն",
+        "ջուրի"
+      ],
+      "answer": "ջուրը",
+      "optionsAreHy": true
+    },
+    {
+      "type": "mcq",
+      "prompt": "«ձի» finisce per vocale. «Il cavallo» è:",
+      "options": [
+        "ձին",
+        "ձիը",
+        "ձիներ"
+      ],
+      "answer": "ձին",
+      "optionsAreHy": true
+    },
+    {
+      "type": "order",
+      "it": "il mare è grande",
+      "tokens": [
+        "Ծովը",
+        "մեծ",
+        "է"
+      ],
+      "speakText": "Ծովը մեծ է"
+    },
+    {
+      "type": "order",
+      "it": "la mela è piccola",
+      "tokens": [
+        "Խնձորը",
+        "փոքր",
+        "է"
+      ],
+      "speakText": "Խնձորը փոքր է"
+    },
+    {
+      "type": "mcq",
+      "prompt": "«Il giorno è nuovo» si dice:",
+      "options": [
+        "Օրը նոր է",
+        "Օրն նոր է",
+        "Նոր օրը է"
+      ],
+      "answer": "Օրը նոր է",
+      "optionsAreHy": true,
+      "extra": true
+    },
+    {
+      "type": "dictation",
+      "word": {
+        "hy": "տունը",
+        "tr": "tunə",
+        "ipa": "[ˈtunə]",
+        "it": "la casa"
+      },
+      "distractors": [
+        "մ",
+        "ի"
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ricorda l014: in «Իմ անունը Աննա է», la -ը di անունը è:",
+      "options": [
+        "l'articolo determinativo",
+        "il plurale",
+        "un errore"
+      ],
+      "answer": "l'articolo determinativo"
+    }
+  ]
+}

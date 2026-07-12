@@ -35,7 +35,7 @@ def collect_texts():
             texts.update(w["hy"] for w in L.get("vocab", []))
             for s in L["steps"]:
                 if s.get("word"):
-                    texts.add(s["word"]["hy"])
+                    texts.add(s["word"].get("speak") or s["word"]["hy"])
                 if s.get("speakText"):
                     texts.add(s["speakText"])
     return texts

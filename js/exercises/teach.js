@@ -20,7 +20,7 @@ export async function render(step, mount, ctx) {
     card.append(wordBlock(step.word));
     if (step.note) card.append(el('p', { class: 'teach-note' }, step.note));
     card.append(el('div', { style: 'margin-top:14px' },
-      el('button', { class: 'btn-audio', 'aria-label': 'Ascolta', onclick: () => speak(step.word.hy) }, '🔊')));
+      el('button', { class: 'btn-audio', 'aria-label': 'Ascolta', onclick: () => speak(step.word.speak || step.word.hy) }, '🔊')));
   }
 
   mount.append(card,

@@ -1,0 +1,17 @@
+{
+  "id": "l021",
+  "title": "Verifica del modulo",
+  "vocab": [],
+  "steps": [
+    { "type": "mcq", "prompt": "Che cosa significa questa parola?", "promptHy": "ջուր", "speakText": "ջուր", "options": ["acqua", "neve", "mare"], "answer": "acqua" },
+    { "type": "dictation", "word": { "hy": "ծիրան", "tr": "tsiran", "ipa": "[t͡siˈɾɑn]", "it": "albicocca" }, "distractors": ["ձ", "ո"] },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["ժամ", "ora"], ["ձի", "cavallo"], ["ծով", "mare"], ["ճաշ", "pranzo"]] },
+    { "type": "order", "it": "madre e padre", "tokens": ["մայր", "և", "հայր"], "speakText": "մայր և հայր" },
+    { "type": "mcq", "prompt": "Il contrario di «փոքր» è:", "options": ["մեծ", "նոր", "ճիշտ"], "answer": "մեծ", "optionsAreHy": true },
+    { "type": "dictation", "word": { "hy": "ձյուն", "tr": "dzyun", "ipa": "[d͡zjun]", "it": "neve" }, "distractors": ["ծ", "ա"] },
+    { "type": "mcq", "prompt": "Օ e Ո:", "options": ["suonano uguali; Օ a inizio parola, Ո all'interno", "Օ è lunga, Ո è breve", "Օ = [u], Ո = [ɔ]"], "answer": "suonano uguali; Օ a inizio parola, Ո all'interno" },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["խնձոր", "mela"], ["ծառ", "albero"], ["օր", "giorno"], ["փող", "soldi"]], "extra": true },
+    { "type": "order", "it": "buongiorno", "tokens": ["Բարի", "լույս"], "speakText": "Բարի լույս" },
+    { "type": "mcq", "prompt": "Come si legge questa parola?", "promptHy": "ճիշտ", "speakText": "ճիշտ", "options": ["chisht", "ch'isht", "jisht"], "answer": "chisht" }
+  ]
+}

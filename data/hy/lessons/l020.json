@@ -1,0 +1,26 @@
+{
+  "id": "l020",
+  "title": "Le ultime lettere — e Բարև svelato",
+  "vocab": [
+    { "hy": "օր", "tr": "ōr", "ipa": "[ɔɾ]", "it": "giorno" },
+    { "hy": "ֆիլմ", "tr": "film", "ipa": "[film]", "it": "film" },
+    { "hy": "և", "tr": "yev", "ipa": "[jɛv]", "it": "e (congiunzione)" },
+    { "hy": "Բարի լույս", "tr": "bari luys", "ipa": "[bɑˈɾi lujs]", "it": "buongiorno" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "letter", "ref": "Օ" },
+    { "type": "teach", "kind": "letter", "ref": "Ֆ" },
+    { "type": "teach", "kind": "letter", "ref": "Ւ", "extra": true },
+    { "type": "teach", "kind": "letter", "ref": "ԵՎ" },
+    { "type": "trace", "letter": "ԵՎ", "form": "lower" },
+    { "type": "mcq", "prompt": "Ora puoi leggerla per intero: բ-ա-ր-և. Che parola è?", "promptHy": "Բարև", "speakText": "Բարև", "options": ["ciao", "grazie", "arrivederci"], "answer": "ciao" },
+    { "type": "teach", "kind": "word", "word": { "hy": "օր", "tr": "ōr", "ipa": "[ɔɾ]", "it": "giorno" }, "note": "Օ e Ո suonano uguali [ɔ]: Օ si usa a inizio parola, Ո all'interno." },
+    { "type": "teach", "kind": "word", "word": { "hy": "և", "tr": "yev", "ipa": "[jɛv]", "it": "e (congiunzione)" }, "note": "մայր և հայր = madre e padre. È l'unica lettera che da sola è una parola." },
+    { "type": "teach", "kind": "word", "word": { "hy": "ֆիլմ", "tr": "film", "ipa": "[film]", "it": "film" }, "extra": true },
+    { "type": "teach", "kind": "word", "word": { "hy": "Բարի լույս", "tr": "bari luys", "ipa": "[bɑˈɾi lujs]", "it": "buongiorno" }, "note": "Letteralmente «buona luce»." },
+    { "type": "order", "it": "madre e padre", "tokens": ["մայր", "և", "հայր"], "speakText": "մայր և հայր" },
+    { "type": "dictation", "word": { "hy": "օր", "tr": "ōr", "ipa": "[ɔɾ]", "it": "giorno" }, "distractors": ["ո", "վ"] },
+    { "type": "order", "it": "buongiorno", "tokens": ["Բարի", "լույս"], "speakText": "Բարի լույս" },
+    { "type": "mcq", "prompt": "Hai completato l'alfabeto: 39 lettere. Quale NON esiste in armeno?", "options": ["W", "Ֆ", "Օ"], "answer": "W", "extra": true }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "l016",
+  "title": "Acqua, ore e tempo",
+  "vocab": [
+    { "hy": "ջուր", "tr": "jur", "ipa": "[d͡ʒuɾ]", "it": "acqua" },
+    { "hy": "ժամ", "tr": "zham", "ipa": "[ʒɑm]", "it": "ora" },
+    { "hy": "ժամանակ", "tr": "zhamanak", "ipa": "[ʒɑmɑˈnɑk]", "it": "tempo" },
+    { "hy": "Ժամը քանի՞սն է", "tr": "zhamə k'anisn e", "ipa": "[ˈʒɑmə kʰɑˈnisn ɛ]", "it": "che ora è?" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "letter", "ref": "Ջ" },
+    { "type": "trace", "letter": "Ջ" },
+    { "type": "teach", "kind": "letter", "ref": "Ժ" },
+    { "type": "trace", "letter": "Ժ", "extra": true },
+    { "type": "mcq", "prompt": "Quale lettera suona come la «j» francese di «jour»?", "options": ["Ժ", "Ջ", "Շ"], "answer": "Ժ", "optionsAreHy": true },
+    { "type": "teach", "kind": "word", "word": { "hy": "ջուր", "tr": "jur", "ipa": "[d͡ʒuɾ]", "it": "acqua" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "ժամ", "tr": "zham", "ipa": "[ʒɑm]", "it": "ora" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "ժամանակ", "tr": "zhamanak", "ipa": "[ʒɑmɑˈnɑk]", "it": "tempo" }, "extra": true },
+    { "type": "teach", "kind": "word", "word": { "hy": "Ժամը քանի՞սն է", "tr": "zhamə k'anisn e", "ipa": "[ˈʒɑmə kʰɑˈnisn ɛ]", "it": "che ora è?" }, "note": "Il segno ՞ è il punto interrogativo armeno: si mette sopra la parola su cui cade la domanda." },
+    { "type": "dictation", "word": { "hy": "ջուր", "tr": "jur", "ipa": "[d͡ʒuɾ]", "it": "acqua" }, "distractors": ["ժ", "ա"] },
+    { "type": "mcq", "prompt": "Come si legge questa parola?", "promptHy": "ժամ", "speakText": "ժամ", "options": ["zham", "jam", "sham"], "answer": "zham" },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["ջուր", "acqua"], ["ժամ", "ora"], ["ժամանակ", "tempo"]] },
+    { "type": "order", "it": "che ora è?", "tokens": ["Ժամը", "քանի՞սն", "է"], "speakText": "Ժամը քանի՞սն է", "extra": true }
+  ]
+}
