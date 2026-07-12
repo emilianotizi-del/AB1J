@@ -344,6 +344,48 @@
           "letters": []
         }
       ]
+    },
+    {
+      "id": "m08",
+      "title": "Cibo e al mercato",
+      "level": "A1",
+      "lessons": [
+        {
+          "id": "l035",
+          "title": "Cibi e bevande",
+          "subtitle": "հաց, պանիր, սուրճ…",
+          "glyph": "🍞",
+          "letters": []
+        },
+        {
+          "id": "l036",
+          "title": "Avere: ունեմ",
+          "subtitle": "E la regola del singolare dopo i numeri",
+          "glyph": "ու",
+          "letters": []
+        },
+        {
+          "id": "l037",
+          "title": "I numeri fino a 100 — e i dram",
+          "subtitle": "Le decine in -սուն",
+          "glyph": "100",
+          "letters": []
+        },
+        {
+          "id": "l038",
+          "title": "Al mercato",
+          "subtitle": "Il tuo primo compito reale: comprare",
+          "glyph": "🛒",
+          "letters": []
+        },
+        {
+          "id": "l039",
+          "title": "Verifica del modulo",
+          "subtitle": "Quiz: tutto il modulo in 10 domande",
+          "glyph": "✓",
+          "letters": []
+        }
+      ]
     }
   ]
 }

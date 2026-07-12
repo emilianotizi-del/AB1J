@@ -1,0 +1,17 @@
+{
+  "id": "l039",
+  "title": "Verifica del modulo",
+  "vocab": [],
+  "steps": [
+    { "type": "mcq", "prompt": "Che cosa significa questa parola?", "promptHy": "կաթ", "speakText": "կաթ", "options": ["latte", "formaggio", "tè"], "answer": "latte" },
+    { "type": "order", "it": "ho una sorella", "tokens": ["Ես", "մեկ", "քույր", "ունեմ"], "speakText": "Ես մեկ քույր ունեմ" },
+    { "type": "mcq", "prompt": "Che numero è «վաթսուն»?", "speakText": "վաթսուն", "options": ["60", "16", "6"], "answer": "60" },
+    { "type": "dictation", "word": { "hy": "սուրճ", "tr": "surch", "ipa": "[suɾt͡ʃ]", "it": "caffè" }, "distractors": ["չ", "ա"] },
+    { "type": "order", "it": "quanto costa la mela?", "tokens": ["Ի՞նչ", "արժե", "խնձորը"], "speakText": "Ի՞նչ արժե խնձորը" },
+    { "type": "mcq", "prompt": "«Tre uova» si dice:", "options": ["երեք ձու", "երեք ձուներ", "ձու երեքն"], "answer": "երեք ձու", "optionsAreHy": true },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["հաց", "pane"], ["գինի", "vino"], ["միս", "carne"], ["դրամ", "dram"]] },
+    { "type": "mcq", "prompt": "«Lui ha soldi»:", "options": ["Նա փող ունի", "Նա փող ունեմ", "Նա փող է ունում"], "answer": "Նա փող ունի", "optionsAreHy": true },
+    { "type": "order", "it": "per favore, due chili di mele", "tokens": ["Խնդրում", "եմ", "երկու", "կիլո", "խնձոր"], "speakText": "Խնդրում եմ, երկու կիլո խնձոր", "extra": true },
+    { "type": "mcq", "prompt": "45 si scrive:", "options": ["քառասունհինգ", "հինգքառասուն", "քառասուն և հինգ"], "answer": "քառասունհինգ", "optionsAreHy": true, "extra": true }
+  ]
+}

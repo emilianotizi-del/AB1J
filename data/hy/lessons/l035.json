@@ -1,0 +1,29 @@
+{
+  "id": "l035",
+  "title": "Cibi e bevande",
+  "vocab": [
+    { "hy": "հաց", "tr": "hats'", "ipa": "[hɑt͡sʰ]", "it": "pane" },
+    { "hy": "պանիր", "tr": "panir", "ipa": "[pɑˈniɾ]", "it": "formaggio" },
+    { "hy": "միս", "tr": "mis", "ipa": "[mis]", "it": "carne" },
+    { "hy": "ձու", "tr": "dzu", "ipa": "[d͡zu]", "it": "uovo" },
+    { "hy": "կաթ", "tr": "kat'", "ipa": "[kɑtʰ]", "it": "latte" },
+    { "hy": "թեյ", "tr": "t'ey", "ipa": "[tʰɛj]", "it": "tè" },
+    { "hy": "սուրճ", "tr": "surch", "ipa": "[suɾt͡ʃ]", "it": "caffè" },
+    { "hy": "գինի", "tr": "gini", "ipa": "[ɡiˈni]", "it": "vino" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "հաց", "tr": "hats'", "ipa": "[hɑt͡sʰ]", "it": "pane" }, "note": "Parola sacra in Armenia: հաց ուտել («mangiare pane») significa proprio «mangiare», in generale." },
+    { "type": "teach", "kind": "word", "word": { "hy": "պանիր", "tr": "panir", "ipa": "[pɑˈniɾ]", "it": "formaggio" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "միս", "tr": "mis", "ipa": "[mis]", "it": "carne" }, "extra": true },
+    { "type": "teach", "kind": "word", "word": { "hy": "ձու", "tr": "dzu", "ipa": "[d͡zu]", "it": "uovo" }, "extra": true },
+    { "type": "teach", "kind": "word", "word": { "hy": "կաթ", "tr": "kat'", "ipa": "[kɑtʰ]", "it": "latte" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "թեյ", "tr": "t'ey", "ipa": "[tʰɛj]", "it": "tè" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "սուրճ", "tr": "surch", "ipa": "[suɾt͡ʃ]", "it": "caffè" }, "note": "Il caffè armeno si prepara nel ջեզվե, come quello turco: denso e non filtrato." },
+    { "type": "teach", "kind": "word", "word": { "hy": "գինի", "tr": "gini", "ipa": "[ɡiˈni]", "it": "vino" }, "extra": true },
+    { "type": "mcq", "prompt": "Che cosa significa questa parola?", "promptHy": "պանիր", "speakText": "պանիր", "options": ["formaggio", "pane", "carne"], "answer": "formaggio" },
+    { "type": "order", "it": "sto bevendo caffè", "tokens": ["Ես", "սուրճ", "եմ", "խմում"], "speakText": "Ես սուրճ եմ խմում" },
+    { "type": "dictation", "word": { "hy": "հաց", "tr": "hats'", "ipa": "[hɑt͡sʰ]", "it": "pane" }, "distractors": ["ձ", "ե"] },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["հաց", "pane"], ["կաթ", "latte"], ["թեյ", "tè"], ["սուրճ", "caffè"], ["ձու", "uovo"]] },
+    { "type": "mcq", "prompt": "«Sto mangiando pane e formaggio»:", "options": ["Ես հաց և պանիր եմ ուտում", "Ես հաց և պանիր ուտում եմ", "Հաց և պանիր ես եմ ուտում"], "answer": "Ես հաց և պանիր եմ ուտում", "optionsAreHy": true, "extra": true }
+  ]
+}

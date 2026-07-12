@@ -1,0 +1,23 @@
+{
+  "id": "l037",
+  "title": "I numeri fino a 100 — e i dram",
+  "vocab": [
+    { "hy": "երեսուն", "tr": "yeresun", "ipa": "[jɛɾɛˈsun]", "it": "trenta" },
+    { "hy": "հիսուն", "tr": "hisun", "ipa": "[hiˈsun]", "it": "cinquanta" },
+    { "hy": "հարյուր", "tr": "haryur", "ipa": "[hɑɾˈjuɾ]", "it": "cento" },
+    { "hy": "դրամ", "tr": "dram", "ipa": "[dɾɑm]", "it": "dram (valuta armena)" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "երեսուն", "tr": "yeresun", "ipa": "[jɛɾɛˈsun]", "it": "trenta" }, "note": "Le decine finiscono in -սուն: քառասուն 40, հիսուն 50, վաթսուն 60, յոթանասուն 70, ութսուն 80, իննսուն 90." },
+    { "type": "teach", "kind": "word", "word": { "hy": "հիսուն", "tr": "hisun", "ipa": "[hiˈsun]", "it": "cinquanta" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "հարյուր", "tr": "haryur", "ipa": "[hɑɾˈjuɾ]", "it": "cento" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "դրամ", "tr": "dram", "ipa": "[dɾɑm]", "it": "dram (valuta armena)" }, "note": "La moneta dell'Armenia. Un caffè al bar: 500–800 դրամ." },
+    { "type": "mcq", "prompt": "I numeri composti si attaccano: 21 = քսան + մեկ =", "options": ["քսանմեկ", "մեկքսան", "քսան և մեկ"], "answer": "քսանմեկ", "optionsAreHy": true },
+    { "type": "mcq", "prompt": "E 32?", "options": ["երեսուներկու", "երկուերեսուն", "երեսուն երկուս"], "answer": "երեսուներկու", "optionsAreHy": true },
+    { "type": "mcq", "prompt": "Che numero è «հիսունհինգ»?", "speakText": "հիսունհինգ", "options": ["55", "15", "50"], "answer": "55" },
+    { "type": "dictation", "word": { "hy": "դրամ", "tr": "dram", "ipa": "[dɾɑm]", "it": "dram" }, "distractors": ["տ", "ե"] },
+    { "type": "match", "prompt": "Abbina numero e valore", "pairs": [["երեսուն", "30"], ["քառասուն", "40"], ["հիսուն", "50"], ["հարյուր", "100"]] },
+    { "type": "mcq", "prompt": "«Duecento dram»:", "options": ["երկու հարյուր դրամ", "հարյուր երկու դրամ", "երկու հարյուր դրամներ"], "answer": "երկու հարյուր դրամ", "optionsAreHy": true },
+    { "type": "mcq", "prompt": "Che numero è «իննսուն»?", "speakText": "իննսուն", "options": ["90", "9", "19"], "answer": "90", "extra": true }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "l036",
+  "title": "Avere: ունեմ",
+  "vocab": [
+    { "hy": "ունեմ", "tr": "unem", "ipa": "[uˈnɛm]", "it": "ho" },
+    { "hy": "ունես", "tr": "unes", "ipa": "[uˈnɛs]", "it": "hai" },
+    { "hy": "ունի", "tr": "uni", "ipa": "[uˈni]", "it": "ha" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "ունեմ", "tr": "unem", "ipa": "[uˈnɛm]", "it": "ho" }, "note": "Verbo speciale: niente -ում. Ես մեկ քույր ունեմ = ho una sorella." },
+    { "type": "teach", "kind": "word", "word": { "hy": "ունես", "tr": "unes", "ipa": "[uˈnɛs]", "it": "hai" }, "note": "Դու փող ունե՞ս = hai soldi?" },
+    { "type": "teach", "kind": "word", "word": { "hy": "ունի", "tr": "uni", "ipa": "[uˈni]", "it": "ha" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "Քանի՞ խնձոր ունես", "tr": "k'ani khndzor unes", "ipa": "[kʰɑˈni χənˈd͡zɔɾ uˈnɛs]", "it": "quante mele hai?" }, "note": "Regola importante: dopo i numeri e dopo քանի՞ il nome resta SINGOLARE: երկու խնձոր (due mele), non երկու խնձորներ." },
+    { "type": "mcq", "prompt": "«Ho una casa»:", "options": ["Ես տուն ունեմ", "Ես տուն եմ ունում", "Ես ունեմ եմ տուն"], "answer": "Ես տուն ունեմ", "optionsAreHy": true },
+    { "type": "order", "it": "ho una sorella", "tokens": ["Ես", "մեկ", "քույր", "ունեմ"], "speakText": "Ես մեկ քույր ունեմ" },
+    { "type": "mcq", "prompt": "«Due mele» si dice:", "options": ["երկու խնձոր", "երկու խնձորներ", "խնձոր երկուս"], "answer": "երկու խնձոր", "optionsAreHy": true },
+    { "type": "mcq", "prompt": "«Lei ha una casa grande»:", "options": ["Նա մեծ տուն ունի", "Նա մեծ տուն ունես", "Նա ունի մեծ տուն է"], "answer": "Նա մեծ տուն ունի", "optionsAreHy": true },
+    { "type": "order", "it": "hai soldi?", "tokens": ["Դու", "փող", "ունե՞ս"], "speakText": "Դու փող ունե՞ս", "extra": true },
+    { "type": "dictation", "word": { "hy": "ունեմ", "tr": "unem", "ipa": "[uˈnɛm]", "it": "ho" }, "distractors": ["ի", "ա"], "extra": true },
+    { "type": "mcq", "prompt": "Perché «ունեմ» è speciale?", "options": ["non usa -ում al presente", "si scrive con lettere rare", "va sempre a fine frase"], "answer": "non usa -ում al presente" }
+  ]
+}

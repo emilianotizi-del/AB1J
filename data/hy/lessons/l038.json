@@ -1,0 +1,29 @@
+{
+  "id": "l038",
+  "title": "Al mercato",
+  "vocab": [
+    { "hy": "Ի՞նչ արժե", "tr": "inch arzhe", "ipa": "[int͡ʃʰ ɑɾˈʒɛ]", "it": "quanto costa?" },
+    { "hy": "կիլո", "tr": "kilo", "ipa": "[kiˈlɔ]", "it": "chilo" },
+    { "hy": "խնդրում եմ", "tr": "khndrum em", "ipa": "[χənˈdɾum ɛm]", "it": "per favore" },
+    { "hy": "խնդրեմ", "tr": "khndrem", "ipa": "[χənˈdɾɛm]", "it": "prego" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "Ի՞նչ արժե", "tr": "inch arzhe", "ipa": "[int͡ʃʰ ɑɾˈʒɛ]", "it": "quanto costa?" }, "note": "Letteralmente «cosa vale?». Ի՞նչ արժե խնձորը = quanto costa la mela?" },
+    { "type": "teach", "kind": "word", "word": { "hy": "խնդրում եմ", "tr": "khndrum em", "ipa": "[χənˈdɾum ɛm]", "it": "per favore" }, "note": "Letteralmente «chiedo». La risposta di cortesia è խնդրեմ = prego." },
+    { "type": "teach", "kind": "word", "word": { "hy": "կիլո", "tr": "kilo", "ipa": "[kiˈlɔ]", "it": "chilo" }, "extra": true },
+    { "type": "dialog", "title": "Al mercato", "lines": [
+      { "who": "A", "hy": "Բարև ձեզ։ Ի՞նչ արժե խնձորը։", "tr": "barev dzez. inch arzhe khndzorə", "ipa": "[bɑˈɾɛv d͡zɛz int͡ʃʰ ɑɾˈʒɛ χənˈd͡zɔɾə]", "it": "Salve! Quanto costa la mela?" },
+      { "who": "B", "hy": "Հարյուր դրամ է։", "tr": "haryur dram e", "ipa": "[hɑɾˈjuɾ dɾɑm ɛ]", "it": "Cento dram." },
+      { "who": "A", "hy": "Խնդրում եմ, երկու կիլո խնձոր։", "tr": "khndrum em, yerku kilo khndzor", "ipa": "[χənˈdɾum ɛm jɛɾˈku kiˈlɔ χənˈd͡zɔɾ]", "it": "Per favore, due chili di mele." },
+      { "who": "B", "hy": "Երկու հարյուր դրամ է։", "tr": "yerku haryur dram e", "ipa": "[jɛɾˈku hɑɾˈjuɾ dɾɑm ɛ]", "it": "Sono duecento dram." },
+      { "who": "A", "hy": "Շնորհակալություն։", "tr": "shnorhakalut'yun", "ipa": "[ʃnɔɾhɑkɑlutʰˈjun]", "it": "Grazie!" },
+      { "who": "B", "hy": "Խնդրեմ։", "tr": "khndrem", "ipa": "[χənˈdɾɛm]", "it": "Prego!" }
+    ]},
+    { "type": "mcq", "prompt": "Quanto costa UN chilo di mele nel dialogo?", "options": ["100 դրամ", "200 դրամ", "50 դրամ"], "answer": "100 դրամ" },
+    { "type": "mcq", "prompt": "Nota la regola: «due chili» è երկու կիլո, non երկու կիլոներ. Perché?", "options": ["dopo i numeri il nome resta singolare", "կիլո è invariabile per eccezione", "è un errore del venditore"], "answer": "dopo i numeri il nome resta singolare" },
+    { "type": "order", "it": "quanto costa la mela?", "tokens": ["Ի՞նչ", "արժե", "խնձորը"], "speakText": "Ի՞նչ արժե խնձորը" },
+    { "type": "order", "it": "per favore, due chili di mele", "tokens": ["Խնդրում", "եմ", "երկու", "կիլո", "խնձոր"], "speakText": "Խնդրում եմ, երկու կիլո խնձոր" },
+    { "type": "mcq", "prompt": "Ora tocca a te: chiedi il prezzo del formaggio.", "options": ["Ի՞նչ արժե պանիրը", "Պանիր խնդրեմ է", "Քանի՞ պանիր ունես"], "answer": "Ի՞նչ արժե պանիրը", "optionsAreHy": true },
+    { "type": "mcq", "prompt": "Ti dicono Շնորհակալություն։ Rispondi:", "options": ["Խնդրեմ", "Խնդրում եմ", "Այո"], "answer": "Խնդրեմ", "optionsAreHy": true, "extra": true }
+  ]
+}
