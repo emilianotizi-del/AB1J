@@ -4,22 +4,9 @@
   },
   "_last_run": {
     "models": {
-      "eleven_v3": 9
+      "eleven_v3": 2
     },
-    "error_samples": [
-      "eleven_v3: audio degenere o vuoto (0 B) per 'եմ'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'եմ։'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'էր'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'ժը։'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'ժը'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'ծը։'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'ծը'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'րը։'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'րը'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'փը։'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'փը'",
-      "eleven_v3: audio degenere o vuoto (0 B) per 'ֆը։'"
-    ],
+    "error_samples": [],
     "skipped": []
   },
   "w165.mp3": {
