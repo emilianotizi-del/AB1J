@@ -3,7 +3,7 @@ import { el } from '../utils/dom.js';
 import { getLesson, getLetter } from '../core/data.js';
 import { getSettings, markCompleted, recordEvent } from '../core/store.js';
 import { addCards } from '../core/srs.js';
-import { renderStep } from '../exercises/registry.js';
+import { renderStep, UNGRADED } from '../exercises/registry.js';
 import { navigate } from '../core/router.js';
 
 export async function render(mount, params) {
@@ -33,7 +33,7 @@ export async function render(mount, params) {
   const ctx = {
     letter: getLetter,
     onDone(ok) {
-      if (steps[i].type !== 'teach') {
+      if (!UNGRADED.has(steps[i].type)) {
         evaluated++;
         if (ok) correct++;
         recordEvent();

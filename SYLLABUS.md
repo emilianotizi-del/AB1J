@@ -81,14 +81,27 @@ lessico cumulativo ~500 voci.
 - **27** Testi lunghi (300+ parole) e registro formale/informale · lettere ed e-mail
 - **28** Verifica B1 finale · lessico cumulativo ~2800
 
-## 7. Evoluzioni del motore legate al syllabus
+## 7. Roadmap degli strumenti didattici
 
-| Necessità didattica | Modulo | Intervento tecnico |
+Gli strumenti attuali (SRS, scelta multipla, abbinamento, tracciamento, dettato
+a tessere, riordino, dialoghi, letture, pronuncia) coprono il fabbisogno fino a
+fine A1: sono strumenti di *riconoscimento*. Dall'A2 il baricentro CEFR passa
+alla *produzione* e subentrano strumenti nuovi. Ogni strumento è un plugin:
+debutta nel modulo indicato, poi resta disponibile.
+
+| Strumento | Debutto | Note |
 |---|---|---|
-| Coniugazioni da esercitare in serie | 9, 13 | esercizio `conjugate` (tabella a riempimento con tessere) |
-| Esame di livello con soglia | 12, 20, 28 | punteggio minimo (es. 80%) per il completamento |
-| Testi lunghi | 27 | `reading` con paragrafi ripiegabili e glossario a tocco |
-| Ascolto esteso | 19+ | dialoghi con domande a audio-solo (senza testo a schermo) |
+| `notice` — avviso informativo in lezione | disponibile da subito | passo non valutato; obbligatorio in testa alle lezioni indicate sotto |
+| `cloze` a tessere — frase con lacuna | m09 | lo strumento principe per casi e coniugazioni |
+| `conjugate` — tabella delle 6 persone da completare | m09 | riusato per ogni tempo verbale nuovo |
+| Esami con soglia di superamento (80%) | m12, m20, m28 | verifica di livello, non semplice quiz |
+| Scrittura digitata (tastiera armena di sistema) | m13 | cloze e dettato senza tessere; su iOS: Impostazioni → Tastiere |
+| SRS a frasi e cloze-card; gestione "sanguisughe" | m13 | il mazzo smette di essere solo parole isolate |
+| Ascolto cieco — audio senza testo a schermo | m19 | comprensione orale vera |
+| Shadowing — pronuncia a livello di frase | m21 | sull'infrastruttura audio esistente |
+| Produzione scritta libera con auto-confronto | m24 | risposte modello da confrontare; nessuna correzione automatica |
+| `reading` esteso: paragrafi lunghi + glossario a tocco | m27 | testi 300+ parole |
+| **Correzione della produzione libera via API** (LLM) | m26–27 | **decisione registrata**: si svilupperà arrivati a quel punto, come funzione OPZIONALE (richiede una chiave API dell'utente e rompe il vincolo "nessuna dipendenza esterna"). Le lezioni che la usano DEVONO aprirsi con un passo `notice` che avvisa: senza chiave si procede in modalità auto-confronto. |
 
 ## 8. Processo di produzione di un modulo
 

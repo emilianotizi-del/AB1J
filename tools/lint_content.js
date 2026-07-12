@@ -16,7 +16,7 @@ const EXEMPT = new Set(['l005']);   // lezioni che insegnano frasi come blocchi
 const lowerOf = {}; alpha.letters.forEach(l => { lowerOf[l.upper] = l.lower; });
 (alpha.digraphs || []).forEach(l => { lowerOf[l.upper] = l.lower; });
 const allGlyphs = new Set(Object.values(lowerOf).concat(Object.keys(lowerOf)));
-const types = new Set(['teach', 'mcq', 'match', 'trace', 'dictation', 'order', 'dialog', 'reading']);
+const types = new Set(['teach', 'mcq', 'match', 'trace', 'dictation', 'order', 'dialog', 'reading', 'notice']);
 
 let errors = 0;
 const err = m => { console.log('✗', m); errors++; };

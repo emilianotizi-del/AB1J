@@ -9,8 +9,12 @@ import * as dictation from './dictation.js';
 import * as order from './order.js';
 import * as dialog from './dialog.js';
 import * as reading from './reading.js';
+import * as notice from './notice.js';
 
-const types = { teach, mcq, match, trace, dictation, order, dialog, reading };
+const types = { teach, mcq, match, trace, dictation, order, dialog, reading, notice };
+
+// Tipi che presentano contenuto senza valutare l'utente
+export const UNGRADED = new Set(['teach', 'dialog', 'reading', 'notice']);
 
 export function renderStep(step, mount, ctx) {
   const mod = types[step.type];
