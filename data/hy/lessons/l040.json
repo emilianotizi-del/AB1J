@@ -1,0 +1,30 @@
+{
+  "id": "l040",
+  "title": "Noi, voi, loro",
+  "vocab": [
+    { "hy": "մենք", "tr": "menk'", "ipa": "[mɛnkʰ]", "it": "noi" },
+    { "hy": "դուք", "tr": "duk'", "ipa": "[dukʰ]", "it": "voi; Lei (formale)" },
+    { "hy": "նրանք", "tr": "nrank'", "ipa": "[nəˈɾɑnkʰ]", "it": "loro" },
+    { "hy": "ենք", "tr": "enk'", "ipa": "[ɛnkʰ]", "it": "siamo" },
+    { "hy": "եք", "tr": "ek'", "ipa": "[ɛkʰ]", "it": "siete" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "մենք", "tr": "menk'", "ipa": "[mɛnkʰ]", "it": "noi" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "դուք", "tr": "duk'", "ipa": "[dukʰ]", "it": "voi; Lei (formale)" }, "note": "Come il francese «vous»: plurale e forma di cortesia insieme. Da qui il Բարև ձեզ della lezione 5." },
+    { "type": "teach", "kind": "word", "word": { "hy": "նրանք", "tr": "nrank'", "ipa": "[nəˈɾɑnkʰ]", "it": "loro" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "ենք", "tr": "enk'", "ipa": "[ɛnkʰ]", "it": "siamo" }, "note": "Con եք (siete) e են (sono, già vista) il verbo essere è completo. Tutte senza y iniziale." },
+    { "type": "conjugate", "prompt": "Completa: il presente di սովորել (imparare)", "stem": "սովորում", "rows": [
+      { "label": "ես", "answer": "եմ" },
+      { "label": "դու", "answer": "ես" },
+      { "label": "նա", "answer": "է" },
+      { "label": "մենք", "answer": "ենք" },
+      { "label": "դուք", "answer": "եք" },
+      { "label": "նրանք", "answer": "են" }
+    ], "note": "Le sei persone del verbo essere: la spina dorsale di tutto il presente." },
+    { "type": "cloze", "it": "noi stiamo imparando l'armeno", "text": "Մենք հայերեն ___ սովորում", "options": ["ենք", "եք", "են"], "answer": "ենք", "speakText": "Մենք հայերեն ենք սովորում" },
+    { "type": "cloze", "it": "loro vanno a casa", "text": "Նրանք տուն ___ գնում", "options": ["են", "ենք", "եմ"], "answer": "են", "speakText": "Նրանք տուն են գնում" },
+    { "type": "cloze", "it": "voi state bevendo caffè", "text": "Դուք սուրճ ___ խմում", "options": ["եք", "ես", "ենք"], "answer": "եք", "speakText": "Դուք սուրճ եք խմում", "extra": true },
+    { "type": "match", "prompt": "Abbina pronome e verbo essere", "pairs": [["մենք", "ենք"], ["դուք", "եք"], ["նրանք", "են"], ["ես", "եմ"]] },
+    { "type": "mcq", "prompt": "Saluti un gruppo di persone. Usi:", "options": ["Բարև ձեզ", "Բարև քեզ", "Բարև նա"], "answer": "Բարև ձեզ", "optionsAreHy": true, "extra": true }
+  ]
+}

@@ -301,3 +301,38 @@
   0%, 100% { box-shadow: 0 0 0 0 rgba(142, 42, 60, .4); }
   50% { box-shadow: 0 0 0 14px rgba(142, 42, 60, 0); }
 }
+
+/* Cloze */
+.cloze-text { text-align: center; font-size: 1.35rem; line-height: 2; margin-top: 16px; }
+.cloze-gap {
+  display: inline-block; min-width: 64px;
+  border-bottom: 2px dashed var(--accent);
+  color: var(--ink-soft);
+  margin: 0 4px; text-align: center;
+}
+.cloze-gap.cloze-filled { color: var(--ink); font-weight: 600; }
+.cloze-gap.cloze-ok { border-color: var(--ok); color: var(--ok); }
+.cloze-gap.cloze-err { border-color: var(--err); color: var(--err); }
+
+/* Coniugatore */
+.conj-table { margin-top: 14px; }
+.conj-row {
+  display: flex; align-items: center; gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 1.1rem;
+}
+.conj-row:last-child { border-bottom: none; }
+.conj-pron { width: 72px; color: var(--ink-soft); flex-shrink: 0; }
+.conj-slot {
+  flex: 1; min-height: 44px;
+  border: 1.5px dashed var(--line);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--ink-soft);
+  font: inherit;
+  cursor: pointer;
+}
+.conj-slot.conj-filled { border-style: solid; border-color: var(--blue); color: var(--ink); font-weight: 600; }
+.conj-slot.conj-ok { border-color: var(--ok); background: var(--ok-bg); color: var(--ok); }
+.conj-slot.conj-err { border-color: var(--err); background: var(--err-bg); color: var(--err); }

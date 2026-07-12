@@ -10,8 +10,10 @@ import * as order from './order.js';
 import * as dialog from './dialog.js';
 import * as reading from './reading.js';
 import * as notice from './notice.js';
+import * as cloze from './cloze.js';
+import * as conjugate from './conjugate.js';
 
-const types = { teach, mcq, match, trace, dictation, order, dialog, reading, notice };
+const types = { teach, mcq, match, trace, dictation, order, dialog, reading, notice, cloze, conjugate };
 
 // Tipi che presentano contenuto senza valutare l'utente
 export const UNGRADED = new Set(['teach', 'dialog', 'reading', 'notice']);

@@ -1,0 +1,20 @@
+{
+  "id": "l043",
+  "title": "Mio e tuo in una lettera: -ս e -դ",
+  "vocab": [
+    { "hy": "մայրս", "tr": "mayrs", "ipa": "[ˈmɑjɾəs]", "it": "mia madre" },
+    { "hy": "հայրս", "tr": "hayrs", "ipa": "[ˈhɑjɾəs]", "it": "mio padre" },
+    { "hy": "տունդ", "tr": "tund", "ipa": "[ˈtunəd]", "it": "la tua casa" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "մայրս", "tr": "mayrs", "ipa": "[ˈmɑjɾəs]", "it": "mia madre" }, "note": "Il possessivo in una lettera sola: -ս = mio. մայրս = իմ մայրը, ma più naturale nel parlato." },
+    { "type": "teach", "kind": "word", "word": { "hy": "տունդ", "tr": "tund", "ipa": "[ˈtunəd]", "it": "la tua casa" }, "note": "-դ = tuo. Nella pronuncia spunta la solita ə: tunə-d." },
+    { "type": "teach", "kind": "word", "word": { "hy": "Անունս Աննա է", "tr": "anuns Anna e", "ipa": "[ɑˈnunəs ɑnˈnɑ ɛ]", "it": "mi chiamo Anna" }, "note": "La versione compatta di Իմ անունը Աննա է (l014). Da oggi puoi presentarti in tre parole." },
+    { "type": "mcq", "prompt": "«Mio padre» in una parola sola:", "options": ["հայրս", "հայրդ", "իմ հայրս"], "answer": "հայրս", "optionsAreHy": true },
+    { "type": "cloze", "it": "mia madre sta bene", "text": "___ լավ է", "options": ["Մայրս", "Մայրդ", "Մայր"], "answer": "Մայրս", "speakText": "Մայրս լավ է" },
+    { "type": "cloze", "it": "la tua casa è grande", "text": "___ մեծ է", "options": ["Տունդ", "Տունս", "Տունը"], "answer": "Տունդ", "speakText": "Տունդ մեծ է" },
+    { "type": "order", "it": "mi chiamo Anna", "tokens": ["Անունս", "Աննա", "է"], "speakText": "Անունս Աննա է" },
+    { "type": "mcq", "prompt": "«քույրդ» significa:", "speakText": "քույրդ", "options": ["tua sorella", "mia sorella", "la sorella"], "answer": "tua sorella" },
+    { "type": "mcq", "prompt": "Riepilogo: -ս e -դ sono:", "options": ["possessivi attaccati in fondo (mio, tuo)", "plurali", "articoli"], "answer": "possessivi attaccati in fondo (mio, tuo)", "extra": true }
+  ]
+}

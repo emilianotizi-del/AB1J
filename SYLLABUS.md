@@ -3,7 +3,7 @@
 Documento di riferimento per la struttura didattica del corso.
 Ogni nuovo modulo deve rispettare questo piano; le deviazioni vanno registrate qui.
 
-Stato: aggiornato al 12/07/2026 · Moduli pubblicati: 1–8
+Stato: aggiornato al 12/07/2026 · Moduli pubblicati: 1–10
 
 ---
 
@@ -46,6 +46,8 @@ Stato: aggiornato al 12/07/2026 · Moduli pubblicati: 1–8
 | 6 | Leggere e parlare | l026–l029 | — | են (3ª plur.); domande con ի՞նչ | 2 |
 | 7 | Giorni e ore | l030–l034 | — | numeri 11–20; ora (X-ն է, անց); primo dativo -ին | 19 |
 | 8 | Cibo e al mercato | l035–l039 | — | ունեմ/ունես/ունի; singolare dopo i numeri; decine -սուն | 19 |
+| 9 | Le persone del verbo | l040–l044 | — | presente completo (6 persone); գիտեմ; possessivi -ս/-դ | 16 |
+| 10 | La città | l045–l049 | — | որտեղ; articolo -ն pre-vocalico; postposizioni + -ի; imperativo sing. | 14 |
 
 ## 4. Piano A1 — moduli 7–12 (da produrre)
 

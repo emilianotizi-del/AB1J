@@ -1,0 +1,23 @@
+{
+  "id": "l045",
+  "title": "La città",
+  "vocab": [
+    { "hy": "քաղաք", "tr": "k'aghak'", "ipa": "[kʰɑˈʁɑkʰ]", "it": "città" },
+    { "hy": "փողոց", "tr": "p'oghots'", "ipa": "[pʰɔˈʁɔt͡sʰ]", "it": "strada, via" },
+    { "hy": "խանութ", "tr": "khanut'", "ipa": "[χɑˈnutʰ]", "it": "negozio" },
+    { "hy": "դպրոց", "tr": "dprots'", "ipa": "[dəpˈɾɔt͡sʰ]", "it": "scuola" },
+    { "hy": "շուկա", "tr": "shuka", "ipa": "[ʃuˈkɑ]", "it": "mercato" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "քաղաք", "tr": "k'aghak'", "ipa": "[kʰɑˈʁɑkʰ]", "it": "città" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "փողոց", "tr": "p'oghots'", "ipa": "[pʰɔˈʁɔt͡sʰ]", "it": "strada, via" }, "note": "Attenzione alla coppia: փողոց (strada) e փող (soldi, l019). Una sillaba di differenza." },
+    { "type": "teach", "kind": "word", "word": { "hy": "խանութ", "tr": "khanut'", "ipa": "[χɑˈnutʰ]", "it": "negozio" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "դպրոց", "tr": "dprots'", "ipa": "[dəpˈɾɔt͡sʰ]", "it": "scuola" }, "note": "Ancora la ə non scritta: də-prots." },
+    { "type": "teach", "kind": "word", "word": { "hy": "շուկա", "tr": "shuka", "ipa": "[ʃuˈkɑ]", "it": "mercato" }, "extra": true },
+    { "type": "mcq", "prompt": "Che cosa significa questa parola?", "promptHy": "փողոց", "speakText": "փողոց", "options": ["strada", "soldi", "negozio"], "answer": "strada" },
+    { "type": "dictation", "word": { "hy": "քաղաք", "tr": "k'aghak'", "ipa": "[kʰɑˈʁɑkʰ]", "it": "città" }, "distractors": ["կ", "ե"] },
+    { "type": "cloze", "it": "la città è grande", "text": "___ մեծ է", "options": ["Քաղաքը", "Քաղաք", "Քաղաքներ"], "answer": "Քաղաքը", "speakText": "Քաղաքը մեծ է" },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["քաղաք", "città"], ["խանութ", "negozio"], ["դպրոց", "scuola"], ["շուկա", "mercato"]] },
+    { "type": "mcq", "prompt": "«Un negozio nuovo»:", "options": ["նոր խանութ", "խանութ նոր", "նոր խանութներ"], "answer": "նոր խանութ", "optionsAreHy": true, "extra": true }
+  ]
+}

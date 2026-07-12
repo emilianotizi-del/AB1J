@@ -1,0 +1,26 @@
+{
+  "id": "l047",
+  "title": "Dentro, sopra, vicino",
+  "vocab": [
+    { "hy": "մեջ", "tr": "mej", "ipa": "[mɛd͡ʒ]", "it": "dentro, in" },
+    { "hy": "վրա", "tr": "vra", "ipa": "[vəˈɾɑ]", "it": "sopra, su" },
+    { "hy": "մոտ", "tr": "mot", "ipa": "[mɔt]", "it": "vicino a, presso" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "մոտ", "tr": "mot", "ipa": "[mɔt]", "it": "vicino a, presso" }, "note": "In armeno queste parole vengono DOPO il nome, che prende -ի: դպրոցի մոտ = vicino alla scuola. La -ի è il genitivo: la studieremo nel modulo 11." },
+    { "type": "teach", "kind": "word", "word": { "hy": "մեջ", "tr": "mej", "ipa": "[mɛd͡ʒ]", "it": "dentro, in" }, "note": "խանութի մեջ = dentro il negozio." },
+    { "type": "teach", "kind": "word", "word": { "hy": "վրա", "tr": "vra", "ipa": "[vəˈɾɑ]", "it": "sopra, su" }, "note": "ծառի վրա = sull'albero." },
+    { "type": "cloze", "it": "vicino alla scuola", "text": "դպրոցի ___", "options": ["մոտ", "մեջ", "վրա"], "answer": "մոտ", "speakText": "դպրոցի մոտ" },
+    { "type": "cloze", "it": "dentro il negozio", "text": "խանութի ___", "options": ["մեջ", "մոտ", "վրա"], "answer": "մեջ", "speakText": "խանութի մեջ" },
+    { "type": "cloze", "it": "sull'albero", "text": "ծառի ___", "options": ["վրա", "մեջ", "մոտ"], "answer": "վրա", "speakText": "ծառի վրա" },
+    { "type": "dialog", "title": "Per strada", "lines": [
+      { "who": "A", "hy": "Բարև ձեզ։ Որտե՞ղ է շուկան։", "tr": "barev dzez. vortegh e shukan", "ipa": "[bɑˈɾɛv d͡zɛz vɔɾˈtɛʁ ɛ ʃuˈkɑn]", "it": "Salve! Dov'è il mercato?" },
+      { "who": "B", "hy": "Շուկան այնտեղ է, դպրոցի մոտ։", "tr": "shukan ayntegh e, dprots'i mot", "ipa": "[ʃuˈkɑn ɑjnˈtɛʁ ɛ dəpɾɔˈt͡sʰi mɔt]", "it": "Il mercato è lì, vicino alla scuola." },
+      { "who": "A", "hy": "Շնորհակալություն։", "tr": "shnorhakalut'yun", "ipa": "[ʃnɔɾhɑkɑlutʰˈjun]", "it": "Grazie!" },
+      { "who": "B", "hy": "Խնդրեմ։", "tr": "khndrem", "ipa": "[χənˈdɾɛm]", "it": "Prego!" }
+    ]},
+    { "type": "mcq", "prompt": "Nel dialogo, dov'è il mercato?", "options": ["vicino alla scuola", "dentro la scuola", "vicino al negozio"], "answer": "vicino alla scuola" },
+    { "type": "order", "it": "il mercato è lì, vicino alla scuola", "tokens": ["Շուկան", "այնտեղ", "է", "դպրոցի", "մոտ"], "speakText": "Շուկան այնտեղ է, դպրոցի մոտ", "extra": true },
+    { "type": "mcq", "prompt": "«Sul tavolo... anzi: sull'albero» — ordine giusto:", "options": ["ծառի վրա", "վրա ծառի", "ծառ վրա"], "answer": "ծառի վրա", "optionsAreHy": true, "extra": true }
+  ]
+}

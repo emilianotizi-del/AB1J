@@ -386,6 +386,90 @@
           "letters": []
         }
       ]
+    },
+    {
+      "id": "m09",
+      "title": "Le persone del verbo",
+      "level": "A1",
+      "lessons": [
+        {
+          "id": "l040",
+          "title": "Noi, voi, loro",
+          "subtitle": "Il verbo essere al completo",
+          "glyph": "ենք",
+          "letters": []
+        },
+        {
+          "id": "l041",
+          "title": "Fare, vedere, volere, parlare",
+          "subtitle": "I verbi che usi ogni giorno",
+          "glyph": "ում",
+          "letters": []
+        },
+        {
+          "id": "l042",
+          "title": "Sapere: գիտեմ",
+          "subtitle": "Il secondo verbo speciale",
+          "glyph": "գ",
+          "letters": []
+        },
+        {
+          "id": "l043",
+          "title": "Mio e tuo in una lettera: -ս e -դ",
+          "subtitle": "Անունս Աննա է",
+          "glyph": "ս",
+          "letters": []
+        },
+        {
+          "id": "l044",
+          "title": "Verifica del modulo",
+          "subtitle": "Quiz: tutto il modulo in 10 domande",
+          "glyph": "✓",
+          "letters": []
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "title": "La città",
+      "level": "A1",
+      "lessons": [
+        {
+          "id": "l045",
+          "title": "La città",
+          "subtitle": "քաղաք, փողոց, խանութ…",
+          "glyph": "🏙",
+          "letters": []
+        },
+        {
+          "id": "l046",
+          "title": "Dove? Qui e lì",
+          "subtitle": "Որտե՞ղ է խանութը",
+          "glyph": "📍",
+          "letters": []
+        },
+        {
+          "id": "l047",
+          "title": "Dentro, sopra, vicino",
+          "subtitle": "Le postposizioni — e chiedere la strada",
+          "glyph": "մեջ",
+          "letters": []
+        },
+        {
+          "id": "l048",
+          "title": "L'imperativo: vai, vieni, parla",
+          "subtitle": "գնա՛, արի՛, խոսի՛ր",
+          "glyph": "՛",
+          "letters": []
+        },
+        {
+          "id": "l049",
+          "title": "Verifica del modulo",
+          "subtitle": "Quiz: tutto il modulo in 10 domande",
+          "glyph": "✓",
+          "letters": []
+        }
+      ]
     }
   ]
 }

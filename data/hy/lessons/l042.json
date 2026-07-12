@@ -1,0 +1,27 @@
+{
+  "id": "l042",
+  "title": "Sapere: գիտեմ",
+  "vocab": [
+    { "hy": "գիտեմ", "tr": "gitem", "ipa": "[ɡiˈtɛm]", "it": "so" },
+    { "hy": "գիտես", "tr": "gites", "ipa": "[ɡiˈtɛs]", "it": "sai" },
+    { "hy": "գիտի", "tr": "giti", "ipa": "[ɡiˈti]", "it": "sa" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "գիտեմ", "tr": "gitem", "ipa": "[ɡiˈtɛm]", "it": "so" }, "note": "Secondo verbo speciale dopo ունեմ: niente -ում. Ես հայերեն գիտեմ = so l'armeno." },
+    { "type": "teach", "kind": "word", "word": { "hy": "գիտես", "tr": "gites", "ipa": "[ɡiˈtɛs]", "it": "sai" }, "note": "Հայերեն գիտե՞ս — sai l'armeno? Ora puoi rispondere di sì." },
+    { "type": "teach", "kind": "word", "word": { "hy": "գիտի", "tr": "giti", "ipa": "[ɡiˈti]", "it": "sa" } },
+    { "type": "conjugate", "prompt": "Completa: sapere (verbo speciale)", "rows": [
+      { "label": "ես", "answer": "գիտեմ" },
+      { "label": "դու", "answer": "գիտես" },
+      { "label": "նա", "answer": "գիտի" },
+      { "label": "մենք", "answer": "գիտենք" },
+      { "label": "դուք", "answer": "գիտեք" },
+      { "label": "նրանք", "answer": "գիտեն" }
+    ], "note": "Le desinenze sono quelle del verbo essere, attaccate a գիտ-." },
+    { "type": "cloze", "it": "sai l'armeno?", "text": "Հայերեն ___", "options": ["գիտե՞ս", "գիտե՞մ", "գիտի՞"], "answer": "գիտե՞ս", "speakText": "Հայերեն գիտե՞ս" },
+    { "type": "cloze", "it": "lei sa dove è il negozio... anzi: lei sa l'armeno", "text": "Նա հայերեն ___", "options": ["գիտի", "գիտես", "գիտում է"], "answer": "գիտի", "speakText": "Նա հայերեն գիտի" },
+    { "type": "mcq", "prompt": "Quali verbi NON usano -ում al presente?", "options": ["ունեմ e գիտեմ", "խոսել e անել", "ուտել e խմել"], "answer": "ունեմ e գիտեմ" },
+    { "type": "order", "it": "so l'armeno", "tokens": ["Ես", "հայերեն", "գիտեմ"], "speakText": "Ես հայերեն գիտեմ", "extra": true },
+    { "type": "dictation", "word": { "hy": "գիտեմ", "tr": "gitem", "ipa": "[ɡiˈtɛm]", "it": "so" }, "distractors": ["կ", "ա"], "extra": true }
+  ]
+}

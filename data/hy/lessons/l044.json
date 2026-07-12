@@ -1,0 +1,24 @@
+{
+  "id": "l044",
+  "title": "Verifica del modulo",
+  "vocab": [],
+  "steps": [
+    { "type": "conjugate", "prompt": "Il presente di ուտել (mangiare)", "stem": "ուտում", "rows": [
+      { "label": "ես", "answer": "եմ" },
+      { "label": "դու", "answer": "ես" },
+      { "label": "նա", "answer": "է" },
+      { "label": "մենք", "answer": "ենք" },
+      { "label": "դուք", "answer": "եք" },
+      { "label": "նրանք", "answer": "են" }
+    ]},
+    { "type": "cloze", "it": "loro parlano armeno", "text": "Նրանք հայերեն են ___", "options": ["խոսում", "խոսել", "գիտեն"], "answer": "խոսում", "speakText": "Նրանք հայերեն են խոսում" },
+    { "type": "mcq", "prompt": "«Sappiamo» si dice:", "options": ["գիտենք", "գիտում ենք", "ունենք"], "answer": "գիտենք", "optionsAreHy": true },
+    { "type": "cloze", "it": "mia madre sta bene", "text": "___ լավ է", "options": ["Մայրս", "Մայրդ", "Մայրը"], "answer": "Մայրս", "speakText": "Մայրս լավ է" },
+    { "type": "order", "it": "voglio dell'acqua", "tokens": ["Ես", "ջուր", "եմ", "ուզում"], "speakText": "Ես ջուր եմ ուզում" },
+    { "type": "match", "prompt": "Abbina pronome e verbo essere", "pairs": [["մենք", "ենք"], ["դուք", "եք"], ["նրանք", "են"], ["դու", "ես"]] },
+    { "type": "mcq", "prompt": "«Ի՞նչ ես անում» si usa anche come:", "speakText": "Ի՞նչ ես անում", "options": ["saluto informale («che fai?»)", "domanda sull'ora", "richiesta di prezzo"], "answer": "saluto informale («che fai?»)" },
+    { "type": "order", "it": "mi chiamo Anna", "tokens": ["Անունս", "Աննա", "է"], "speakText": "Անունս Աննա է" },
+    { "type": "cloze", "it": "voi state mangiando pane", "text": "Դուք հաց ___ ուտում", "options": ["եք", "ենք", "են"], "answer": "եք", "speakText": "Դուք հաց եք ուտում", "extra": true },
+    { "type": "mcq", "prompt": "«տունդ» significa:", "options": ["la tua casa", "la mia casa", "le case"], "answer": "la tua casa", "extra": true }
+  ]
+}

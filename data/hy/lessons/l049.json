@@ -1,0 +1,17 @@
+{
+  "id": "l049",
+  "title": "Verifica del modulo",
+  "vocab": [],
+  "steps": [
+    { "type": "mcq", "prompt": "Che cosa significa questa parola?", "promptHy": "խանութ", "speakText": "խանութ", "options": ["negozio", "scuola", "mercato"], "answer": "negozio" },
+    { "type": "order", "it": "dov'è il negozio?", "tokens": ["Որտե՞ղ", "է", "խանութը"], "speakText": "Որտե՞ղ է խանութը" },
+    { "type": "cloze", "it": "vicino alla scuola", "text": "դպրոցի ___", "options": ["մոտ", "մեջ", "վրա"], "answer": "մոտ", "speakText": "դպրոցի մոտ" },
+    { "type": "mcq", "prompt": "«Il mercato è qui»:", "options": ["Շուկան այստեղ է", "Շուկան այնտեղ է", "Շուկա այստեղ են"], "answer": "Շուկան այստեղ է", "optionsAreHy": true },
+    { "type": "cloze", "it": "dentro il negozio", "text": "խանութի ___", "options": ["մեջ", "մոտ", "վրա"], "answer": "մեջ", "speakText": "խանութի մեջ" },
+    { "type": "mcq", "prompt": "L'imperativo di գնալ (andare):", "options": ["գնա՛", "գնի՛ր", "գնում"], "answer": "գնա՛", "optionsAreHy": true },
+    { "type": "order", "it": "vieni qui!", "tokens": ["Արի՛", "այստեղ"], "speakText": "Արի՛ այստեղ" },
+    { "type": "dictation", "word": { "hy": "շուկա", "tr": "shuka", "ipa": "[ʃuˈkɑ]", "it": "mercato" }, "distractors": ["ս", "ե"] },
+    { "type": "mcq", "prompt": "Perché si scrive «Խանութն այստեղ է»?", "options": ["l'articolo è -ն davanti a vocale", "խանութ è plurale", "così è più formale"], "answer": "l'articolo è -ն davanti a vocale", "extra": true },
+    { "type": "order", "it": "il mercato è lì, vicino alla scuola", "tokens": ["Շուկան", "այնտեղ", "է", "դպրոցի", "մոտ"], "speakText": "Շուկան այնտեղ է, դպրոցի մոտ", "extra": true }
+  ]
+}

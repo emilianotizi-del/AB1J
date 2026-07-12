@@ -1,0 +1,21 @@
+{
+  "id": "l046",
+  "title": "Dove? Qui e lì",
+  "vocab": [
+    { "hy": "որտեղ", "tr": "vortegh", "ipa": "[vɔɾˈtɛʁ]", "it": "dove" },
+    { "hy": "այստեղ", "tr": "aystegh", "ipa": "[ɑjsˈtɛʁ]", "it": "qui" },
+    { "hy": "այնտեղ", "tr": "ayntegh", "ipa": "[ɑjnˈtɛʁ]", "it": "lì, là" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "որտեղ", "tr": "vortegh", "ipa": "[vɔɾˈtɛʁ]", "it": "dove" }, "note": "Il «dove» delle posizioni: Որտե՞ղ է խանութը = dov'è il negozio? (ուր, che conosci da l007, chiede piuttosto «verso dove»)." },
+    { "type": "teach", "kind": "word", "word": { "hy": "այստեղ", "tr": "aystegh", "ipa": "[ɑjsˈtɛʁ]", "it": "qui" }, "note": "այս = questo → «questo luogo». Come այսօր = questo giorno." },
+    { "type": "teach", "kind": "word", "word": { "hy": "այնտեղ", "tr": "ayntegh", "ipa": "[ɑjnˈtɛʁ]", "it": "lì, là" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "Խանութն այստեղ է", "tr": "khanut'n aystegh e", "ipa": "[χɑˈnutʰn ɑjsˈtɛʁ ɛ]", "it": "il negozio è qui" }, "note": "Sottigliezza: l'articolo diventa -ն anche dopo consonante quando la parola dopo inizia per vocale: խանութՆ այստեղ." },
+    { "type": "cloze", "it": "dov'è la scuola?", "text": "___ է դպրոցը", "options": ["Որտե՞ղ", "Ու՞ր", "Ի՞նչ"], "answer": "Որտե՞ղ", "speakText": "Որտե՞ղ է դպրոցը" },
+    { "type": "mcq", "prompt": "«Il mercato è lì»:", "options": ["Շուկան այնտեղ է", "Շուկան այստեղ է", "Շուկա այնտեղ է"], "answer": "Շուկան այնտեղ է", "optionsAreHy": true },
+    { "type": "order", "it": "dov'è il negozio?", "tokens": ["Որտե՞ղ", "է", "խանութը"], "speakText": "Որտե՞ղ է խանութը" },
+    { "type": "cloze", "it": "il negozio è qui", "text": "Խանութն ___ է", "options": ["այստեղ", "այնտեղ", "որտեղ"], "answer": "այստեղ", "speakText": "Խանութն այստեղ է" },
+    { "type": "mcq", "prompt": "Perché «Խանութն» e non «Խանութը»?", "options": ["la parola dopo inizia per vocale", "è un plurale", "è un errore comune"], "answer": "la parola dopo inizia per vocale", "extra": true },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["որտեղ", "dove"], ["այստեղ", "qui"], ["այնտեղ", "lì"]], "extra": true }
+  ]
+}

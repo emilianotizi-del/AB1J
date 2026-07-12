@@ -1,0 +1,20 @@
+{
+  "id": "l048",
+  "title": "L'imperativo: vai, vieni, parla",
+  "vocab": [
+    { "hy": "գնա՛", "tr": "gna", "ipa": "[ɡəˈnɑ]", "it": "vai!" },
+    { "hy": "արի՛", "tr": "ari", "ipa": "[ɑˈɾi]", "it": "vieni!" },
+    { "hy": "խոսի՛ր", "tr": "khosir", "ipa": "[χɔˈsiɾ]", "it": "parla!" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "գնա՛", "tr": "gna", "ipa": "[ɡəˈnɑ]", "it": "vai!" }, "note": "Il segno ՛ (sheshd) marca l'ordine. I verbi in -ալ fanno l'imperativo in -ա՛: գնալ → գնա՛." },
+    { "type": "teach", "kind": "word", "word": { "hy": "խոսի՛ր", "tr": "khosir", "ipa": "[χɔˈsiɾ]", "it": "parla!" }, "note": "I verbi in -ել fanno -ի՛ր: խոսել → խոսի՛ր, խմել → խմի՛ր." },
+    { "type": "teach", "kind": "word", "word": { "hy": "արի՛", "tr": "ari", "ipa": "[ɑˈɾi]", "it": "vieni!" }, "note": "Irregolare, e frequentissimo: Արի՛ այստեղ = vieni qui!" },
+    { "type": "mcq", "prompt": "Applica la regola: l'imperativo di խմել (bere)?", "options": ["խմի՛ր", "խմա՛", "խմու՛մ"], "answer": "խմի՛ր", "optionsAreHy": true },
+    { "type": "order", "it": "vieni qui!", "tokens": ["Արի՛", "այստեղ"], "speakText": "Արի՛ այստեղ" },
+    { "type": "order", "it": "vai a casa!", "tokens": ["Գնա՛", "տուն"], "speakText": "Գնա՛ տուն" },
+    { "type": "cloze", "it": "parla armeno!", "text": "Հայերեն ___", "options": ["խոսի՛ր", "խոսում", "խոսել"], "answer": "խոսի՛ր", "speakText": "Հայերեն խոսի՛ր" },
+    { "type": "mcq", "prompt": "«Vieni al mercato!»:", "options": ["Արի՛ շուկա", "Գնա՛ արի շուկա", "Շուկա արի՛ է"], "answer": "Արի՛ շուկա", "optionsAreHy": true, "extra": true },
+    { "type": "mcq", "prompt": "Il segno ՛ serve a:", "options": ["marcare un ordine o un'enfasi", "fare una domanda", "indicare il plurale"], "answer": "marcare un ordine o un'enfasi", "extra": true }
+  ]
+}

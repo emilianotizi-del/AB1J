@@ -1,0 +1,30 @@
+{
+  "id": "l041",
+  "title": "Fare, vedere, volere, parlare",
+  "vocab": [
+    { "hy": "անել", "tr": "anel", "ipa": "[ɑˈnɛl]", "it": "fare" },
+    { "hy": "տեսնել", "tr": "tesnel", "ipa": "[tɛsˈnɛl]", "it": "vedere" },
+    { "hy": "ուզել", "tr": "uzel", "ipa": "[uˈzɛl]", "it": "volere" },
+    { "hy": "խոսել", "tr": "khosel", "ipa": "[χɔˈsɛl]", "it": "parlare" },
+    { "hy": "Ի՞նչ ես անում", "tr": "inch es anum", "ipa": "[int͡ʃʰ ɛs ɑˈnum]", "it": "cosa fai? / che fai?" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "անել", "tr": "anel", "ipa": "[ɑˈnɛl]", "it": "fare" }, "note": "Presente: անում + essere. Ի՞նչ ես անում = che fai? (anche come saluto informale)." },
+    { "type": "teach", "kind": "word", "word": { "hy": "տեսնել", "tr": "tesnel", "ipa": "[tɛsˈnɛl]", "it": "vedere" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "ուզել", "tr": "uzel", "ipa": "[uˈzɛl]", "it": "volere" }, "note": "Ես ջուր եմ ուզում = voglio dell'acqua. Utilissimo ovunque." },
+    { "type": "teach", "kind": "word", "word": { "hy": "խոսել", "tr": "khosel", "ipa": "[χɔˈsɛl]", "it": "parlare" } },
+    { "type": "cloze", "it": "cosa fai?", "text": "Ի՞նչ ես ___", "options": ["անում", "անել", "ուտում"], "answer": "անում", "speakText": "Ի՞նչ ես անում" },
+    { "type": "cloze", "it": "loro parlano armeno", "text": "Նրանք հայերեն են ___", "options": ["խոսում", "խոսել", "սովորում"], "answer": "խոսում", "speakText": "Նրանք հայերեն են խոսում" },
+    { "type": "order", "it": "voglio dell'acqua", "tokens": ["Ես", "ջուր", "եմ", "ուզում"], "speakText": "Ես ջուր եմ ուզում" },
+    { "type": "conjugate", "prompt": "Il presente di խոսել (parlare)", "stem": "խոսում", "rows": [
+      { "label": "ես", "answer": "եմ" },
+      { "label": "դու", "answer": "ես" },
+      { "label": "նա", "answer": "է" },
+      { "label": "մենք", "answer": "ենք" },
+      { "label": "դուք", "answer": "եք" },
+      { "label": "նրանք", "answer": "են" }
+    ], "extra": true },
+    { "type": "cloze", "it": "vediamo il mare", "text": "Մենք ծովը ___ տեսնում", "options": ["ենք", "են", "եմ"], "answer": "ենք", "speakText": "Մենք ծովը ենք տեսնում", "extra": true },
+    { "type": "match", "prompt": "Abbina infinito e significato", "pairs": [["անել", "fare"], ["տեսնել", "vedere"], ["ուզել", "volere"], ["խոսել", "parlare"]] }
+  ]
+}
