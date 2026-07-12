@@ -16,7 +16,7 @@ const EXEMPT = new Set(['l005']);   // lezioni che insegnano frasi come blocchi
 const lowerOf = {}; alpha.letters.forEach(l => { lowerOf[l.upper] = l.lower; });
 (alpha.digraphs || []).forEach(l => { lowerOf[l.upper] = l.lower; });
 const allGlyphs = new Set(Object.values(lowerOf).concat(Object.keys(lowerOf)));
-const types = new Set(['teach', 'mcq', 'match', 'trace', 'dictation', 'order']);
+const types = new Set(['teach', 'mcq', 'match', 'trace', 'dictation', 'order', 'dialog', 'reading']);
 
 let errors = 0;
 const err = m => { console.log('✗', m); errors++; };
@@ -66,6 +66,8 @@ for (const mod of course.modules) {
         check(s.tokens.join(' '), `passo ${i} (order)`);
       }
       if (s.speakText && !audioIdx[s.speakText]) noAudio.add(s.speakText);
+      for (const l of s.lines || []) { check(l.hy, `passo ${i} (dialogo)`); if (!audioIdx[l.hy]) noAudio.add(l.hy); }
+      for (const x of s.sentences || []) { check(x.hy, `passo ${i} (lettura)`); if (!audioIdx[x.hy]) noAudio.add(x.hy); }
     });
     if (exempt) for (const w of L.vocab || []) {
       chunks.add(w.hy.toLowerCase());

@@ -1,0 +1,23 @@
+{
+  "id": "l026",
+  "title": "Dialogo: il primo incontro",
+  "vocab": [],
+  "steps": [
+    { "type": "dialog", "title": "Il primo incontro", "lines": [
+      { "who": "A", "hy": "Բարև ձեզ։", "tr": "barev dzez", "ipa": "[bɑˈɾɛv d͡zɛz]", "it": "Salve!" },
+      { "who": "B", "hy": "Բարև։ Ինչպե՞ս ես։", "tr": "barev. inchpes es", "ipa": "[bɑˈɾɛv int͡ʃʰˈpɛs ɛs]", "it": "Ciao! Come stai?" },
+      { "who": "A", "hy": "Լավ եմ, շնորհակալություն։", "tr": "lav em, shnorhakalut'yun", "ipa": "[lɑv ɛm ʃnɔɾhɑkɑlutʰˈjun]", "it": "Sto bene, grazie." },
+      { "who": "B", "hy": "Իմ անունը Դավիթ է։", "tr": "im anunə Davit' e", "ipa": "[im ɑˈnunə dɑˈvitʰ ɛ]", "it": "Il mio nome è Davide." },
+      { "who": "A", "hy": "Ես Աննա եմ։ Ես իտալացի եմ։", "tr": "yes Anna em. yes italats'i em", "ipa": "[jɛs ɑnˈnɑ ɛm jɛs itɑlɑˈt͡sʰi ɛm]", "it": "Io sono Anna. Sono italiana." },
+      { "who": "B", "hy": "Շատ լավ։", "tr": "shat lav", "ipa": "[ʃɑt lɑv]", "it": "Benissimo!" }
+    ]},
+    { "type": "mcq", "prompt": "Come si chiama lui?", "options": ["Դավիթ", "Աննա", "Բարև"], "answer": "Դավիթ", "optionsAreHy": true },
+    { "type": "mcq", "prompt": "Anna è:", "options": ["italiana", "armena", "non lo dice"], "answer": "italiana" },
+    { "type": "order", "it": "il mio nome è Davide", "tokens": ["Իմ", "անունը", "Դավիթ", "է"], "speakText": "Իմ անունը Դավիթ է" },
+    { "type": "dialog", "title": "Rileggi e ripeti ad alta voce", "lines": [
+      { "who": "A", "hy": "Բարև ձեզ։", "tr": "barev dzez", "ipa": "[bɑˈɾɛv d͡zɛz]", "it": "Salve!" },
+      { "who": "B", "hy": "Իմ անունը Դավիթ է։", "tr": "im anunə Davit' e", "ipa": "[im ɑˈnunə dɑˈvitʰ ɛ]", "it": "Il mio nome è Davide." }
+    ], "extra": true },
+    { "type": "mcq", "prompt": "«Ինչպե՞ս ես» significa:", "speakText": "Ինչպե՞ս ես", "options": ["come stai?", "chi sei?", "dove sei?"], "answer": "come stai?" }
+  ]
+}

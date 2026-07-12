@@ -249,3 +249,55 @@
 .bar-row .b-fill { height: 100%; background: var(--accent); border-radius: 7px; min-width: 2px; }
 .bar-row .b-fill.b-blue { background: var(--blue); }
 .bar-row .b-num { width: 30px; font-size: .8rem; font-weight: 600; flex-shrink: 0; }
+
+/* Dialoghi */
+.dlg-line {
+  display: block; width: 88%;
+  text-align: left;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper);
+  padding: 10px 14px;
+  margin: 8px 0;
+  cursor: pointer;
+  font: inherit; color: inherit;
+}
+.dlg-line.dlg-b { margin-left: auto; background: color-mix(in srgb, var(--blue) 10%, var(--surface)); }
+.dlg-line.dlg-a { background: color-mix(in srgb, var(--accent) 10%, var(--surface)); }
+.dlg-hy { font-size: 1.15rem; font-weight: 600; }
+.dlg-tr { color: var(--accent-ink); font-size: .85rem; }
+.dlg-ipa { color: var(--ink-soft); font-size: .78rem; }
+.dlg-it { color: var(--ink-soft); font-size: .85rem; font-style: italic; margin-top: 2px; }
+[data-hide-tr="1"] .dlg-tr, [data-hide-ipa="1"] .dlg-ipa { display: none; }
+
+/* Lettura */
+.read-line {
+  display: block; width: 100%;
+  text-align: left;
+  border: none; border-left: 3px solid var(--line);
+  background: transparent;
+  padding: 6px 12px;
+  margin: 4px 0;
+  cursor: pointer;
+  font: inherit; color: inherit;
+}
+.read-line:active { border-left-color: var(--accent); }
+.read-hy { font-size: 1.2rem; line-height: 1.7; }
+
+/* Microfono */
+.mic-btn {
+  width: 76px; height: 76px;
+  border-radius: 50%;
+  border: none;
+  background: var(--garnet);
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+.mic-btn:active { transform: scale(.95); }
+.mic-btn.mic-live { animation: micPulse 1s infinite; }
+@keyframes micPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(142, 42, 60, .4); }
+  50% { box-shadow: 0 0 0 14px rgba(142, 42, 60, 0); }
+}

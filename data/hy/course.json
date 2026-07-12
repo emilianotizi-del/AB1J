@@ -267,6 +267,41 @@
           "letters": []
         }
       ]
+    },
+    {
+      "id": "m06",
+      "title": "Leggere e parlare",
+      "level": "A1",
+      "lessons": [
+        {
+          "id": "l026",
+          "title": "Dialogo: il primo incontro",
+          "subtitle": "Բարև ձեզ, ինչպե՞ս ես",
+          "glyph": "💬",
+          "letters": []
+        },
+        {
+          "id": "l027",
+          "title": "Lettura: la mia famiglia",
+          "subtitle": "Il tuo primo testo in armeno",
+          "glyph": "📖",
+          "letters": []
+        },
+        {
+          "id": "l028",
+          "title": "Dialogo: a pranzo",
+          "subtitle": "Ի՞նչ ես ուտում",
+          "glyph": "💬",
+          "letters": []
+        },
+        {
+          "id": "l029",
+          "title": "Verifica del modulo",
+          "subtitle": "Quiz: tutto il modulo in 10 domande",
+          "glyph": "✓",
+          "letters": []
+        }
+      ]
     }
   ]
 }

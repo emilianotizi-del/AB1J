@@ -23,6 +23,8 @@ for (const mod of course.modules) {
     for (const s of L.steps) {
       if (s.word) texts.add(s.word.speak || s.word.hy);
       if (s.speakText) texts.add(s.speakText);
+      for (const l of s.lines || []) texts.add(l.hy);
+      for (const x of s.sentences || []) texts.add(x.hy);
     }
   }
 }

@@ -7,8 +7,10 @@ import * as match from './match.js';
 import * as trace from './trace.js';
 import * as dictation from './dictation.js';
 import * as order from './order.js';
+import * as dialog from './dialog.js';
+import * as reading from './reading.js';
 
-const types = { teach, mcq, match, trace, dictation, order };
+const types = { teach, mcq, match, trace, dictation, order, dialog, reading };
 
 export function renderStep(step, mount, ctx) {
   const mod = types[step.type];

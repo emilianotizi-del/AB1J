@@ -21,6 +21,15 @@ export async function render(mount) {
       (due ? ` · ${due} carte da ripassare` : '')));
   mount.append(hero);
 
+  mount.append(el('a', {
+    class: 'card', href: '#/pronounce',
+    style: 'display:flex;align-items:center;gap:12px;margin-bottom:6px;padding:12px 16px'
+  },
+    el('span', { style: 'font-size:1.5rem' }, '🎙️'),
+    el('div', {},
+      el('div', { style: 'font-weight:600' }, 'Allenamento di pronuncia'),
+      el('div', { style: 'font-size:.82rem;color:var(--ink-soft)' }, 'Parla, ti ascolto — 10 parole dal tuo mazzo'))));
+
   let unlocked = true; // la prima lezione non completata è disponibile, le successive bloccate
   for (const mod of course.modules) {
     mount.append(el('h2', { class: 'module-title' }, mod.title, el('small', {}, mod.level)));

@@ -7,6 +7,7 @@ import * as review from './screens/review.js';
 import * as alphabet from './screens/alphabet.js';
 import * as stats from './screens/stats.js';
 import * as settings from './screens/settings.js';
+import * as pronounce from './screens/pronounce.js';
 import { updateBadge } from './screens/review.js';
 
 const screen = document.getElementById('screen');
@@ -19,6 +20,7 @@ route('/review',      () => review.render(screen));
 route('/alphabet',    () => alphabet.render(screen));
 route('/stats',       () => stats.render(screen));
 route('/settings',    () => settings.render(screen));
+route('/pronounce',   () => pronounce.render(screen));
 
 startRouter();
 updateBadge();

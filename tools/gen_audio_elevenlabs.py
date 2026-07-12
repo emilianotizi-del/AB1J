@@ -38,6 +38,10 @@ def collect_texts():
                     texts.add(s["word"].get("speak") or s["word"]["hy"])
                 if s.get("speakText"):
                     texts.add(s["speakText"])
+                for line in s.get("lines", []):
+                    texts.add(line["hy"])
+                for sent in s.get("sentences", []):
+                    texts.add(sent["hy"])
     return texts
 
 

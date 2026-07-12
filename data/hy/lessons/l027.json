@@ -1,0 +1,23 @@
+{
+  "id": "l027",
+  "title": "Lettura: la mia famiglia",
+  "vocab": [
+    { "hy": "են", "tr": "en", "ipa": "[ɛn]", "it": "sono (essi)" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "են", "tr": "en", "ipa": "[ɛn]", "it": "sono (essi)" }, "note": "Il plurale di է: Իմ մայրը և իմ հայրը լավ են = mia madre e mio padre stanno bene. Come եմ e ես, si legge senza y." },
+    { "type": "reading", "title": "Իմ ընտանիքը", "sentences": [
+      { "hy": "Իմ անունը Աննա է։", "tr": "im anunə Anna e", "it": "Il mio nome è Anna." },
+      { "hy": "Ես իտալացի եմ։", "tr": "yes italats'i em", "it": "Sono italiana." },
+      { "hy": "Իմ ընտանիքը մեծ է։", "tr": "im əntanik'ə mets e", "it": "La mia famiglia è grande." },
+      { "hy": "Իմ մայրը և իմ հայրը լավ են։", "tr": "im mayrə yev im hayrə lav en", "it": "Mia madre e mio padre stanno bene." },
+      { "hy": "Իմ քույրը փոքր է։", "tr": "im k'uyrə p'ok'r e", "it": "Mia sorella è piccola." },
+      { "hy": "Ես հայերեն եմ սովորում։", "tr": "yes hayeren em sovorum", "it": "Sto imparando l'armeno." }
+    ]},
+    { "type": "mcq", "prompt": "La famiglia di Anna è:", "options": ["grande", "piccola", "nuova"], "answer": "grande" },
+    { "type": "mcq", "prompt": "Chi è piccola?", "options": ["la sorella", "la madre", "la famiglia"], "answer": "la sorella" },
+    { "type": "mcq", "prompt": "Che lingua sta imparando Anna?", "options": ["l'armeno", "l'italiano", "non lo dice"], "answer": "l'armeno" },
+    { "type": "order", "it": "la mia famiglia è grande", "tokens": ["Իմ", "ընտանիքը", "մեծ", "է"], "speakText": "Իմ ընտանիքը մեծ է" },
+    { "type": "mcq", "prompt": "Perché «լավ են» e non «լավ է»?", "options": ["il soggetto è plurale (madre e padre)", "dopo և si usa sempre են", "è un'eccezione da imparare"], "answer": "il soggetto è plurale (madre e padre)", "extra": true }
+  ]
+}

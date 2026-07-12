@@ -1,0 +1,22 @@
+{
+  "id": "l028",
+  "title": "Dialogo: a pranzo",
+  "vocab": [
+    { "hy": "ինչ", "tr": "inch", "ipa": "[int͡ʃʰ]", "it": "cosa, che" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "ինչ", "tr": "inch", "ipa": "[int͡ʃʰ]", "it": "cosa, che" }, "note": "Ի՞նչ = cosa? Il ՞ va sulla sillaba della domanda. Lo conoscevi già dentro Ինչպե՞ս (come?)." },
+    { "type": "dialog", "title": "A pranzo", "lines": [
+      { "who": "A", "hy": "Բարի լույս։", "tr": "bari luys", "ipa": "[bɑˈɾi lujs]", "it": "Buongiorno!" },
+      { "who": "B", "hy": "Բարի լույս։ Ի՞նչ ես ուտում։", "tr": "bari luys. inch es utum", "ipa": "[bɑˈɾi lujs int͡ʃʰ ɛs uˈtum]", "it": "Buongiorno! Cosa stai mangiando?" },
+      { "who": "A", "hy": "Ես խնձոր եմ ուտում։", "tr": "yes khndzor em utum", "ipa": "[jɛs χənˈd͡zɔɾ ɛm uˈtum]", "it": "Sto mangiando una mela." },
+      { "who": "B", "hy": "Դու ի՞նչ ես խմում։", "tr": "du inch es khmum", "ipa": "[du int͡ʃʰ ɛs χəˈmum]", "it": "E tu cosa stai bevendo?" },
+      { "who": "A", "hy": "Ես ջուր եմ խմում։", "tr": "yes jur em khmum", "ipa": "[jɛs d͡ʒuɾ ɛm χəˈmum]", "it": "Sto bevendo acqua." }
+    ]},
+    { "type": "mcq", "prompt": "Che cosa mangia A?", "options": ["una mela", "un pranzo", "acqua"], "answer": "una mela" },
+    { "type": "mcq", "prompt": "Che cosa beve A?", "options": ["acqua", "non lo dice", "ջուր e խնձոր"], "answer": "acqua" },
+    { "type": "order", "it": "cosa stai mangiando?", "tokens": ["Ի՞նչ", "ես", "ուտում"], "speakText": "Ի՞նչ ես ուտում" },
+    { "type": "order", "it": "sto mangiando una mela", "tokens": ["Ես", "խնձոր", "եմ", "ուտում"], "speakText": "Ես խնձոր եմ ուտում" },
+    { "type": "mcq", "prompt": "In «Դու ի՞նչ ես խմում», ես è:", "options": ["il verbo essere (2ª persona)", "il pronome «io»", "un errore"], "answer": "il verbo essere (2ª persona)", "extra": true }
+  ]
+}

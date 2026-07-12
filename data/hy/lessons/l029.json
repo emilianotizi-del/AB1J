@@ -1,0 +1,17 @@
+{
+  "id": "l029",
+  "title": "Verifica del modulo",
+  "vocab": [],
+  "steps": [
+    { "type": "mcq", "prompt": "«Ի՞նչ ես խմում» significa:", "speakText": "Ի՞նչ ես խմում", "options": ["cosa stai bevendo?", "cosa stai mangiando?", "come stai?"], "answer": "cosa stai bevendo?" },
+    { "type": "order", "it": "il mio nome è Davide", "tokens": ["Իմ", "անունը", "Դավիթ", "է"], "speakText": "Իմ անունը Դավիթ է" },
+    { "type": "mcq", "prompt": "«Mia madre e mio padre stanno bene»: quale verbo?", "options": ["են (plurale)", "է (singolare)", "եմ (io)"], "answer": "են (plurale)" },
+    { "type": "order", "it": "sto bevendo acqua", "tokens": ["Ես", "ջուր", "եմ", "խմում"], "speakText": "Ես ջուր եմ խմում" },
+    { "type": "dictation", "word": { "hy": "ինչ", "tr": "inch", "ipa": "[int͡ʃʰ]", "it": "cosa, che" }, "distractors": ["ճ", "ե"] },
+    { "type": "mcq", "prompt": "Come rispondi a «Ինչպե՞ս ես»?", "options": ["Լավ եմ, շնորհակալություն", "Իմ անունը Աննա է", "Բարի գալուստ"], "answer": "Լավ եմ, շնորհակալություն", "optionsAreHy": true },
+    { "type": "order", "it": "la mia famiglia è grande", "tokens": ["Իմ", "ընտանիքը", "մեծ", "է"], "speakText": "Իմ ընտանիքը մեծ է" },
+    { "type": "mcq", "prompt": "«Cosa?» in armeno:", "options": ["ինչ", "ուր", "ով"], "answer": "ինչ", "optionsAreHy": true },
+    { "type": "mcq", "prompt": "Nel dialogo a pranzo, chi beve acqua?", "options": ["A", "B", "nessuno"], "answer": "A", "extra": true },
+    { "type": "order", "it": "cosa stai mangiando?", "tokens": ["Ի՞նչ", "ես", "ուտում"], "speakText": "Ի՞նչ ես ուտում", "extra": true }
+  ]
+}
