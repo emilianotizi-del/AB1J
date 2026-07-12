@@ -1,13 +1,28 @@
-// Sintesi vocale (Web Speech API). Interfaccia pensata per accogliere in futuro
-// file audio preregistrati e un PronunciationProvider con riconoscimento vocale.
-//
-// Nota piattaforme: iOS non include alcuna voce armena di sistema, quindi su
-// iPhone/iPad la sintesi non è disponibile; su Android la voce va installata
-// nelle impostazioni di sistema. In assenza di voce, speak() non pronuncia
-// nulla (evita la lettura dell'armeno con una voce sbagliata) e mostra un
-// avviso una sola volta per sessione.
+// Audio del corso.
+// Priorità: 1) file mp3 preregistrati nel repository (funzionano ovunque,
+// anche offline e su iOS) → 2) sintesi vocale di sistema, se esiste una voce
+// armena → 3) avviso all'utente, una volta per sessione.
+// L'interfaccia resta un'unica funzione speak(text): il resto dell'app non
+// conosce la sorgente. In futuro qui si innesterà anche il riconoscimento
+// vocale (PronunciationProvider).
+
+const AUDIO_BASE = 'data/hy/audio/';
+let index = null;               // mappa testo → file, caricata al primo uso
+let indexLoading = null;
 let hyVoice = null;
 let warned = false;
+let player = null;
+
+function loadIndex() {
+  if (!indexLoading) {
+    indexLoading = fetch(AUDIO_BASE + 'index.json')
+      .then(r => (r.ok ? r.json() : {}))
+      .catch(() => ({}))
+      .then(j => { index = j; return j; });
+  }
+  return indexLoading;
+}
+loadIndex();
 
 function pickVoice() {
   const voices = speechSynthesis.getVoices();
@@ -20,21 +35,15 @@ if ('speechSynthesis' in window) {
 
 export function isIOS() {
   return /iPad|iPhone|iPod/.test(navigator.userAgent) ||
-    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1); // iPad con "Richiedi sito desktop"
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 }
 
 export function hasArmenianVoice() { return !!hyVoice; }
 
-// Testo di aiuto adatto alla piattaforma corrente.
 export function voiceHelp() {
-  if (isIOS()) {
-    return 'iOS non include una voce armena di sistema, quindi per ora l\u2019audio ' +
-      'non è disponibile su iPhone e iPad. Stiamo preparando file audio registrati, ' +
-      'che funzioneranno su qualunque dispositivo, anche offline.';
-  }
-  return 'Su questo dispositivo manca una voce armena per la sintesi vocale. ' +
-    'Su Android: Impostazioni → Sistema → Lingua → Output sintesi vocale → ' +
-    'installa la lingua armena, poi riapri l\u2019app.';
+  return 'Per questa parola manca la traccia audio e il dispositivo non ha ' +
+    'una voce armena di sistema' +
+    (isIOS() ? ' (iOS non ne include una).' : '.');
 }
 
 function toast(msg) {
@@ -49,13 +58,10 @@ function toast(msg) {
   setTimeout(() => t.remove(), 6000);
 }
 
-export function speak(text) {
+function speakTTS(text) {
   if (!('speechSynthesis' in window)) return false;
-  if (!hyVoice) pickVoice();          // le voci possono arrivare in ritardo
-  if (!hyVoice) {
-    if (!warned) { warned = true; toast('🔇 ' + voiceHelp()); }
-    return false;
-  }
+  if (!hyVoice) pickVoice();
+  if (!hyVoice) return false;
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text);
   u.lang = 'hy-AM';
@@ -63,4 +69,20 @@ export function speak(text) {
   u.rate = 0.85;
   speechSynthesis.speak(u);
   return true;
+}
+
+export async function speak(text) {
+  const idx = index || await loadIndex();
+  const file = idx[text];
+  if (file) {
+    try {
+      if (player) player.pause();
+      player = new Audio(AUDIO_BASE + file);
+      await player.play();
+      return true;
+    } catch { /* riproduzione negata o file mancante: si passa alla TTS */ }
+  }
+  if (speakTTS(text)) return true;
+  if (!warned) { warned = true; toast('🔇 ' + voiceHelp()); }
+  return false;
 }
