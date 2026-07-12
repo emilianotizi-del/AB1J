@@ -1,7 +1,7 @@
 // Impostazioni: tema, traslitterazione/IPA, durata lezione, esporta/importa/azzeramento.
 import { el } from '../utils/dom.js';
 import { getSettings, saveSettings, exportAll, importAll, resetAll } from '../core/store.js';
-import { hasArmenianVoice } from '../core/audio.js';
+import { hasArmenianVoice, voiceHelp } from '../core/audio.js';
 
 export function render(mount) {
   const s = getSettings();
@@ -84,10 +84,9 @@ export function render(mount) {
   dataCard.append(row);
   mount.append(dataCard);
 
-  // Nota sull'audio
+  // Nota sull'audio (adatta alla piattaforma: iOS non ha una voce armena di sistema)
   if (!hasArmenianVoice()) {
     mount.append(el('p', { style: 'margin-top:14px;font-size:.8rem;color:var(--ink-soft)' },
-      'Nota: su questo dispositivo non è installata una voce armena per la sintesi vocale. ' +
-      'Su Android: Impostazioni → Sistema → Lingua → Output sintesi vocale → aggiungi l\u2019armeno.'));
+      '\uD83D\uDD07 ' + voiceHelp()));
   }
 }
