@@ -12,7 +12,8 @@ import json, os, pathlib, sys, time, urllib.request
 
 API_KEY = os.environ.get("ELEVENLABS_API_KEY")
 if not API_KEY:
-    sys.exit("ELEVENLABS_API_KEY mancante")
+    sys.exit("ERRORE: il secret ELEVENLABS_API_KEY non è impostato nel repository "
+             "(Settings → Secrets and variables → Actions).")
 VOICE_ID = os.environ.get("ELEVENLABS_VOICE_ID", "21m00Tcm4TlvDq8ikWAM")  # Rachel
 MODELS = ["eleven_v3", "eleven_multilingual_v2"]  # v3 supporta l'armeno; fallback
 FORCE = os.environ.get("FORCE") == "1"
@@ -45,7 +46,7 @@ def tts(text):
         body = json.dumps({
             "text": text,
             "model_id": model,
-            "voice_settings": {"stability": 0.6, "similarity_boost": 0.8},
+            "voice_settings": {"stability": 0.5, "similarity_boost": 0.8},
         }).encode()
         req = urllib.request.Request(
             f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}?output_format=mp3_22050_32",
@@ -56,7 +57,7 @@ def tts(text):
             with urllib.request.urlopen(req, timeout=120) as r:
                 return r.read()
         except urllib.error.HTTPError as e:
-            last_err = f"{model}: HTTP {e.code} {e.read()[:200]!r}"
+            last_err = f"{model}: HTTP {e.code} {e.read()[:500].decode(errors='replace')}"
     raise RuntimeError(f"TTS fallita per {text!r}: {last_err}")
 
 def main():

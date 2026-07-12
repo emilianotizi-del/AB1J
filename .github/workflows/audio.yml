@@ -1,6 +1,5 @@
 # Genera/aggiorna le tracce audio del corso con ElevenLabs e le committa.
-# Parte automaticamente quando cambiano i contenuti del corso, oppure a mano
-# dalla scheda Actions ("Run workflow"; spuntare force per rigenerare tutto).
+# In caso di errore apre una Issue con il log del passo fallito.
 name: Genera audio (ElevenLabs)
 
 on:
@@ -21,6 +20,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: audio
@@ -37,11 +37,14 @@ jobs:
           python-version: "3.12"
 
       - name: Genera tracce
+        id: gen
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           ELEVENLABS_VOICE_ID: ${{ vars.ELEVENLABS_VOICE_ID }}
           FORCE: ${{ inputs.force && '1' || '' }}
-        run: python tools/gen_audio_elevenlabs.py
+        run: |
+          set -o pipefail
+          python tools/gen_audio_elevenlabs.py 2>&1 | tee /tmp/gen.log
 
       - name: Committa se ci sono novità
         run: |
@@ -51,3 +54,13 @@ jobs:
           git diff --cached --quiet && echo "Nessuna modifica" && exit 0
           git commit -m "Audio: tracce rigenerate con ElevenLabs"
           git push
+
+      - name: Apri una Issue in caso di errore
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAIL=$(tail -c 2000 /tmp/gen.log 2>/dev/null || echo "nessun log disponibile")
+          gh issue create \
+            --title "Audio: generazione fallita (run ${{ github.run_id }})" \
+            --body "$(printf 'Ultime righe del log:\n\n```\n%s\n```' "$TAIL")"
