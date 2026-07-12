@@ -1,0 +1,26 @@
+{
+  "id": "l010",
+  "title": "I numeri da 1 a 5",
+  "vocab": [
+    { "hy": "երկու", "tr": "yerku", "ipa": "[jɛɾˈku]", "it": "due" },
+    { "hy": "երեք", "tr": "yerek'", "ipa": "[jɛˈɾɛkʰ]", "it": "tre" },
+    { "hy": "չորս", "tr": "chors", "ipa": "[t͡ʃʰɔɾs]", "it": "quattro" },
+    { "hy": "հինգ", "tr": "hing", "ipa": "[hinɡ]", "it": "cinque" },
+    { "hy": "քանի", "tr": "k'ani", "ipa": "[kʰɑˈni]", "it": "quanti" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "letter", "ref": "Ք" },
+    { "type": "trace", "letter": "Ք" },
+    { "type": "teach", "kind": "letter", "ref": "Չ" },
+    { "type": "mcq", "prompt": "Ք e Կ: qual è la differenza?", "options": ["Ք è aspirata, Կ no", "Կ è aspirata, Ք no", "Si leggono uguali"], "answer": "Ք è aspirata, Կ no" },
+    { "type": "teach", "kind": "word", "word": { "hy": "երկու", "tr": "yerku", "ipa": "[jɛɾˈku]", "it": "due" }, "note": "Ե a inizio parola = ye: yer-ku." },
+    { "type": "teach", "kind": "word", "word": { "hy": "երեք", "tr": "yerek'", "ipa": "[jɛˈɾɛkʰ]", "it": "tre" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "չորս", "tr": "chors", "ipa": "[t͡ʃʰɔɾs]", "it": "quattro" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "հինգ", "tr": "hing", "ipa": "[hinɡ]", "it": "cinque" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "քանի", "tr": "k'ani", "ipa": "[kʰɑˈni]", "it": "quanti" }, "note": "Քանի՞ տարի — quanti anni?", "extra": true },
+    { "type": "mcq", "prompt": "Conta: մեկ, երկու, … cosa viene dopo?", "options": ["երեք", "չորս", "հինգ"], "answer": "երեք", "optionsAreHy": true },
+    { "type": "dictation", "word": { "hy": "չորս", "tr": "chors", "ipa": "[t͡ʃʰɔɾs]", "it": "quattro" }, "distractors": ["ք", "ա"] },
+    { "type": "match", "prompt": "Abbina numero e valore", "pairs": [["մեկ", "1"], ["երկու", "2"], ["երեք", "3"], ["չորս", "4"], ["հինգ", "5"]] },
+    { "type": "mcq", "prompt": "Che cosa significa «քանի»?", "speakText": "քանի", "options": ["quanti", "cinque", "quando"], "answer": "quanti", "extra": true }
+  ]
+}

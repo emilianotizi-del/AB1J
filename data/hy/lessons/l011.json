@@ -1,0 +1,17 @@
+{
+  "id": "l011",
+  "title": "Verifica del modulo",
+  "vocab": [],
+  "steps": [
+    { "type": "mcq", "prompt": "Che cosa significa questa parola?", "promptHy": "տուն", "speakText": "տուն", "options": ["casa", "dove", "nuovo"], "answer": "casa" },
+    { "type": "dictation", "word": { "hy": "հայերեն", "tr": "hayeren", "ipa": "[hɑjɛˈɾɛn]", "it": "armeno (lingua)" }, "distractors": ["մ", "ո"] },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["ով", "chi"], ["ուր", "dove"], ["դու", "tu"], ["հիմա", "adesso"]] },
+    { "type": "order", "it": "benvenuto/a", "tokens": ["Բարի", "գալուստ"], "speakText": "Բարի գալուստ" },
+    { "type": "mcq", "prompt": "Quale numero è «չորս»?", "speakText": "չորս", "options": ["4", "3", "5"], "answer": "4" },
+    { "type": "dictation", "word": { "hy": "երկու", "tr": "yerku", "ipa": "[jɛɾˈku]", "it": "due" }, "distractors": ["մ", "ա"] },
+    { "type": "mcq", "prompt": "In «ով» la Ո si legge:", "options": ["[ɔ] — è un'eccezione", "[vɔ] come sempre a inizio parola", "[u]"], "answer": "[ɔ] — è un'eccezione" },
+    { "type": "match", "prompt": "Abbina numero e valore", "pairs": [["հինգ", "5"], ["երեք", "3"], ["մեկ", "1"], ["երկու", "2"]], "extra": true },
+    { "type": "mcq", "prompt": "Come si legge questa parola?", "promptHy": "գնալ", "speakText": "գնալ", "options": ["gənal — con la ə non scritta", "gnal — tutto attaccato", "ganal"], "answer": "gənal — con la ə non scritta" },
+    { "type": "mcq", "prompt": "«Nuova casa» si dice:", "options": ["նոր տուն", "տուն նոր", "լավ տուն"], "answer": "նոր տուն", "optionsAreHy": true }
+  ]
+}

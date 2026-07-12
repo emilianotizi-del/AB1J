@@ -1,0 +1,27 @@
+{
+  "id": "l009",
+  "title": "b, g, z — e un benvenuto",
+  "vocab": [
+    { "hy": "բարի", "tr": "bari", "ipa": "[bɑˈɾi]", "it": "buono, gentile" },
+    { "hy": "բան", "tr": "ban", "ipa": "[bɑn]", "it": "cosa" },
+    { "hy": "գնալ", "tr": "gnal", "ipa": "[ɡəˈnɑl]", "it": "andare" },
+    { "hy": "զանգ", "tr": "zang", "ipa": "[zɑnɡ]", "it": "campana; chiamata" },
+    { "hy": "Բարի գալուստ", "tr": "bari galust", "ipa": "[bɑˈɾi ɡɑˈlust]", "it": "benvenuto/a" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "letter", "ref": "Բ" },
+    { "type": "trace", "letter": "Բ" },
+    { "type": "teach", "kind": "letter", "ref": "Գ" },
+    { "type": "teach", "kind": "letter", "ref": "Զ" },
+    { "type": "trace", "letter": "Գ", "extra": true },
+    { "type": "teach", "kind": "word", "word": { "hy": "բարի", "tr": "bari", "ipa": "[bɑˈɾi]", "it": "buono, gentile" }, "note": "È l'inizio di Բարև: bari + arev, «buon sole»." },
+    { "type": "teach", "kind": "word", "word": { "hy": "բան", "tr": "ban", "ipa": "[bɑn]", "it": "cosa" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "գնալ", "tr": "gnal", "ipa": "[ɡəˈnɑl]", "it": "andare" }, "note": "Tra գ e ն si pronuncia una ə non scritta: gə-nal. Succede spesso tra consonanti." },
+    { "type": "teach", "kind": "word", "word": { "hy": "զանգ", "tr": "zang", "ipa": "[zɑnɡ]", "it": "campana; chiamata" }, "extra": true },
+    { "type": "teach", "kind": "word", "word": { "hy": "Բարի գալուստ", "tr": "bari galust", "ipa": "[bɑˈɾi ɡɑˈlust]", "it": "benvenuto/a" }, "note": "Il saluto che l'app ti fa in copertina: ora sai leggerlo." },
+    { "type": "mcq", "prompt": "Come si legge questa parola?", "promptHy": "բան", "speakText": "բան", "options": ["ban", "pan", "van"], "answer": "ban" },
+    { "type": "dictation", "word": { "hy": "բարի", "tr": "bari", "ipa": "[bɑˈɾi]", "it": "buono, gentile" }, "distractors": ["ե", "ն"] },
+    { "type": "order", "it": "benvenuto/a", "tokens": ["Բարի", "գալուստ"], "speakText": "Բարի գալուստ" },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["բան", "cosa"], ["գնալ", "andare"], ["զանգ", "campana"], ["բարի", "buono"]], "extra": true }
+  ]
+}

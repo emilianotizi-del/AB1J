@@ -64,6 +64,108 @@
           "letters": []
         }
       ]
+    },
+    {
+      "id": "m02",
+      "title": "Suoni nuovi",
+      "level": "A0",
+      "lessons": [
+        {
+          "id": "l007",
+          "title": "Casa, bene, chi, dove",
+          "subtitle": "Ո · ու · Վ — e l'eccezione di ով",
+          "glyph": "Ո",
+          "letters": [
+            "Ո",
+            "ՈՒ",
+            "Վ"
+          ]
+        },
+        {
+          "id": "l008",
+          "title": "Tu e l'armeno",
+          "subtitle": "Դ · Հ · Յ — hayeren!",
+          "glyph": "Հ",
+          "letters": [
+            "Դ",
+            "Հ",
+            "Յ"
+          ]
+        },
+        {
+          "id": "l009",
+          "title": "b, g, z — e un benvenuto",
+          "subtitle": "Բ · Գ · Զ — Բարի գալուստ",
+          "glyph": "Բ",
+          "letters": [
+            "Բ",
+            "Գ",
+            "Զ"
+          ]
+        },
+        {
+          "id": "l010",
+          "title": "I numeri da 1 a 5",
+          "subtitle": "Ք · Չ — le aspirate",
+          "glyph": "Ք",
+          "letters": [
+            "Ք",
+            "Չ"
+          ]
+        },
+        {
+          "id": "l011",
+          "title": "Verifica del modulo",
+          "subtitle": "Quiz: tutto il modulo in 10 domande",
+          "glyph": "✓",
+          "letters": []
+        }
+      ]
+    },
+    {
+      "id": "m03",
+      "title": "Numeri, famiglia, presentazioni",
+      "level": "A1 · inizio",
+      "lessons": [
+        {
+          "id": "l012",
+          "title": "I numeri da 6 a 10",
+          "subtitle": "Թ · Ց · Ը — e la ə scritta",
+          "glyph": "Թ",
+          "letters": [
+            "Թ",
+            "Ց",
+            "Ը"
+          ]
+        },
+        {
+          "id": "l013",
+          "title": "La famiglia",
+          "subtitle": "Ղ · Պ — mayr, hayr, k'uyr…",
+          "glyph": "Ղ",
+          "letters": [
+            "Ղ",
+            "Պ"
+          ]
+        },
+        {
+          "id": "l014",
+          "title": "Presentarsi",
+          "subtitle": "Է · Շ — Ես … եմ",
+          "glyph": "Է",
+          "letters": [
+            "Է",
+            "Շ"
+          ]
+        },
+        {
+          "id": "l015",
+          "title": "Verifica del modulo",
+          "subtitle": "Quiz: tutto il modulo in 10 domande",
+          "glyph": "✓",
+          "letters": []
+        }
+      ]
     }
   ]
 }

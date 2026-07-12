@@ -1,0 +1,17 @@
+{
+  "id": "l015",
+  "title": "Verifica del modulo",
+  "vocab": [],
+  "steps": [
+    { "type": "mcq", "prompt": "Quale numero è «յոթ»?", "speakText": "յոթ", "options": ["7", "8", "6"], "answer": "7" },
+    { "type": "dictation", "word": { "hy": "քույր", "tr": "k'uyr", "ipa": "[kʰujɾ]", "it": "sorella" }, "distractors": ["կ", "ա"] },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["մայր", "madre"], ["հայր", "padre"], ["քույր", "sorella"], ["եղբայր", "fratello"]] },
+    { "type": "order", "it": "il mio nome è Anna", "tokens": ["Իմ", "անունը", "Աննա", "է"], "speakText": "Իմ անունը Աննա է" },
+    { "type": "mcq", "prompt": "Nel pronome «ես» (io) e nel verbo «ես» (sei), la pronuncia è:", "options": ["yes il pronome, es il verbo", "uguale: yes", "uguale: es"], "answer": "yes il pronome, es il verbo" },
+    { "type": "dictation", "word": { "hy": "տասը", "tr": "tasə", "ipa": "[ˈtɑsə]", "it": "dieci" }, "distractors": ["թ", "ի"] },
+    { "type": "match", "prompt": "Abbina numero e valore", "pairs": [["վեց", "6"], ["ութ", "8"], ["ինը", "9"], ["տասը", "10"]] },
+    { "type": "order", "it": "io sono italiano", "tokens": ["Ես", "իտալացի", "եմ"], "speakText": "Ես իտալացի եմ" },
+    { "type": "mcq", "prompt": "Che cosa significa questa parola?", "promptHy": "ընտանիք", "speakText": "ընտանիք", "options": ["famiglia", "nonna", "nome"], "answer": "famiglia", "extra": true },
+    { "type": "mcq", "prompt": "«Molto bene» si dice:", "options": ["Շատ լավ", "Լավ շատ", "Շատ նոր"], "answer": "Շատ լավ", "optionsAreHy": true }
+  ]
+}

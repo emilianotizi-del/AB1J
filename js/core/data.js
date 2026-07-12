@@ -18,5 +18,6 @@ export const getLesson   = id => load(`data/${LANG}/lessons/${id}.json`);
 
 export async function getLetter(glyph) {
   const alpha = await getAlphabet();
-  return alpha.letters.find(l => l.upper === glyph || l.lower === glyph);
+  return alpha.letters.find(l => l.upper === glyph || l.lower === glyph)
+      || (alpha.digraphs || []).find(l => l.upper === glyph || l.lower === glyph);
 }

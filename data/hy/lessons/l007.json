@@ -1,0 +1,184 @@
+{
+  "id": "l007",
+  "title": "Casa, bene, chi, dove",
+  "vocab": [
+    {
+      "hy": "տուն",
+      "tr": "tun",
+      "ipa": "[tun]",
+      "it": "casa"
+    },
+    {
+      "hy": "լավ",
+      "tr": "lav",
+      "ipa": "[lɑv]",
+      "it": "bene, buono"
+    },
+    {
+      "hy": "ով",
+      "tr": "ov",
+      "ipa": "[ɔv]",
+      "it": "chi"
+    },
+    {
+      "hy": "ուր",
+      "tr": "ur",
+      "ipa": "[uɾ]",
+      "it": "dove"
+    },
+    {
+      "hy": "նոր",
+      "tr": "nor",
+      "ipa": "[nɔɾ]",
+      "it": "nuovo"
+    }
+  ],
+  "steps": [
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Ո"
+    },
+    {
+      "type": "trace",
+      "letter": "Ո"
+    },
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "ՈՒ"
+    },
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Վ"
+    },
+    {
+      "type": "trace",
+      "letter": "Վ",
+      "extra": true
+    },
+    {
+      "type": "mcq",
+      "prompt": "Il digramma ու si legge:",
+      "options": [
+        "[u]",
+        "[ɔ]",
+        "[v]"
+      ],
+      "answer": "[u]"
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "տուն",
+        "tr": "tun",
+        "ipa": "[tun]",
+        "it": "casa"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "լավ",
+        "tr": "lav",
+        "ipa": "[lɑv]",
+        "it": "bene, buono"
+      },
+      "note": "La conoscevi già da Լավ եմ (sto bene)."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ով",
+        "tr": "ov",
+        "ipa": "[ɔv]",
+        "it": "chi"
+      },
+      "note": "Eccezione: in ով la Ո si legge semplicemente [ɔ], non [vɔ]."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ուր",
+        "tr": "ur",
+        "ipa": "[uɾ]",
+        "it": "dove"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "նոր",
+        "tr": "nor",
+        "ipa": "[nɔɾ]",
+        "it": "nuovo"
+      },
+      "extra": true
+    },
+    {
+      "type": "dictation",
+      "word": {
+        "hy": "տուն",
+        "tr": "tun",
+        "ipa": "[tun]",
+        "it": "casa"
+      },
+      "distractors": [
+        "մ",
+        "ա"
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Come si legge questa parola?",
+      "promptHy": "նոր",
+      "speakText": "նոր",
+      "options": [
+        "nor",
+        "vor",
+        "nur"
+      ],
+      "answer": "nor"
+    },
+    {
+      "type": "match",
+      "prompt": "Abbina armeno e italiano",
+      "pairs": [
+        [
+          "տուն",
+          "casa"
+        ],
+        [
+          "ով",
+          "chi"
+        ],
+        [
+          "ուր",
+          "dove"
+        ],
+        [
+          "լավ",
+          "bene"
+        ]
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Che cosa significa «նոր տուն»?",
+      "speakText": "նոր տուն",
+      "options": [
+        "casa nuova",
+        "casa grande",
+        "chi è a casa?"
+      ],
+      "answer": "casa nuova",
+      "extra": true
+    }
+  ]
+}
