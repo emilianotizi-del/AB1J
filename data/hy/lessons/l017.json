@@ -2,22 +2,144 @@
   "id": "l017",
   "title": "Mela, cavallo, neve",
   "vocab": [
-    { "hy": "խնձոր", "tr": "khndzor", "ipa": "[χənˈd͡zɔɾ]", "it": "mela" },
-    { "hy": "ձի", "tr": "dzi", "ipa": "[d͡zi]", "it": "cavallo" },
-    { "hy": "ձյուն", "tr": "dzyun", "ipa": "[d͡zjun]", "it": "neve" }
+    {
+      "hy": "խնձոր",
+      "tr": "khndzor",
+      "ipa": "[χənˈd͡zɔɾ]",
+      "it": "mela"
+    },
+    {
+      "hy": "ձի",
+      "tr": "dzi",
+      "ipa": "[d͡zi]",
+      "it": "cavallo"
+    },
+    {
+      "hy": "ձյուն",
+      "tr": "dzyun",
+      "ipa": "[d͡zjun]",
+      "it": "neve"
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "letter", "ref": "Խ" },
-    { "type": "trace", "letter": "Խ" },
-    { "type": "teach", "kind": "letter", "ref": "Ձ" },
-    { "type": "trace", "letter": "Ձ", "extra": true },
-    { "type": "mcq", "prompt": "La Խ suona come:", "options": ["la «j» spagnola (Bach)", "la «c» di casa", "la «g» di gatto"], "answer": "la «j» spagnola (Bach)" },
-    { "type": "teach", "kind": "word", "word": { "hy": "խնձոր", "tr": "khndzor", "ipa": "[χənˈd͡zɔɾ]", "it": "mela" }, "note": "Ancora la ə non scritta: khə-ndzor. E dentro c'è la ձ appena imparata." },
-    { "type": "teach", "kind": "word", "word": { "hy": "ձի", "tr": "dzi", "ipa": "[d͡zi]", "it": "cavallo" } },
-    { "type": "teach", "kind": "word", "word": { "hy": "ձյուն", "tr": "dzyun", "ipa": "[d͡zjun]", "it": "neve" }, "extra": true },
-    { "type": "mcq", "prompt": "Che cosa significa questa parola?", "promptHy": "ձի", "speakText": "ձի", "options": ["cavallo", "neve", "mela"], "answer": "cavallo" },
-    { "type": "dictation", "word": { "hy": "խնձոր", "tr": "khndzor", "ipa": "[χənˈd͡zɔɾ]", "it": "mela" }, "distractors": ["ժ", "ա"] },
-    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["խնձոր", "mela"], ["ձի", "cavallo"], ["ձյուն", "neve"]] },
-    { "type": "mcq", "prompt": "Come si legge questa parola?", "promptHy": "ձյուն", "speakText": "ձյուն", "options": ["dzyun", "dziun", "zyun"], "answer": "dzyun", "extra": true }
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Խ"
+    },
+    {
+      "type": "trace",
+      "letter": "Խ",
+      "form": "lower"
+    },
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Ձ"
+    },
+    {
+      "type": "trace",
+      "letter": "Ձ",
+      "extra": true,
+      "form": "lower"
+    },
+    {
+      "type": "mcq",
+      "prompt": "La Խ suona come:",
+      "options": [
+        "la «j» spagnola (Bach)",
+        "la «c» di casa",
+        "la «g» di gatto"
+      ],
+      "answer": "la «j» spagnola (Bach)"
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "խնձոր",
+        "tr": "khndzor",
+        "ipa": "[χənˈd͡zɔɾ]",
+        "it": "mela"
+      },
+      "note": "Ancora la ə non scritta: khə-ndzor. E dentro c'è la ձ appena imparata."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ձի",
+        "tr": "dzi",
+        "ipa": "[d͡zi]",
+        "it": "cavallo"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ձյուն",
+        "tr": "dzyun",
+        "ipa": "[d͡zjun]",
+        "it": "neve"
+      },
+      "extra": true
+    },
+    {
+      "type": "mcq",
+      "prompt": "Che cosa significa questa parola?",
+      "promptHy": "ձի",
+      "speakText": "ձի",
+      "options": [
+        "cavallo",
+        "neve",
+        "mela"
+      ],
+      "answer": "cavallo"
+    },
+    {
+      "type": "dictation",
+      "word": {
+        "hy": "խնձոր",
+        "tr": "khndzor",
+        "ipa": "[χənˈd͡zɔɾ]",
+        "it": "mela"
+      },
+      "distractors": [
+        "ժ",
+        "ա"
+      ]
+    },
+    {
+      "type": "match",
+      "prompt": "Abbina armeno e italiano",
+      "pairs": [
+        [
+          "խնձոր",
+          "mela"
+        ],
+        [
+          "ձի",
+          "cavallo"
+        ],
+        [
+          "ձյուն",
+          "neve"
+        ]
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Come si legge questa parola?",
+      "promptHy": "ձյուն",
+      "speakText": "ձյուն",
+      "options": [
+        "dzyun",
+        "dziun",
+        "zyun"
+      ],
+      "answer": "dzyun",
+      "extra": true
+    }
   ]
 }

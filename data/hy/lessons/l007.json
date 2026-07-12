@@ -41,7 +41,8 @@
     },
     {
       "type": "trace",
-      "letter": "Ո"
+      "letter": "Ո",
+      "form": "lower"
     },
     {
       "type": "teach",
@@ -56,7 +57,8 @@
     {
       "type": "trace",
       "letter": "Վ",
-      "extra": true
+      "extra": true,
+      "form": "lower"
     },
     {
       "type": "mcq",

@@ -2,22 +2,142 @@
   "id": "l018",
   "title": "Albero, mare, albicocca",
   "vocab": [
-    { "hy": "ծառ", "tr": "tsaṙ", "ipa": "[t͡sɑr]", "it": "albero" },
-    { "hy": "ծով", "tr": "tsov", "ipa": "[t͡sɔv]", "it": "mare" },
-    { "hy": "ծիրան", "tr": "tsiran", "ipa": "[t͡siˈɾɑn]", "it": "albicocca" }
+    {
+      "hy": "ծառ",
+      "tr": "tsaṙ",
+      "ipa": "[t͡sɑr]",
+      "it": "albero"
+    },
+    {
+      "hy": "ծով",
+      "tr": "tsov",
+      "ipa": "[t͡sɔv]",
+      "it": "mare"
+    },
+    {
+      "hy": "ծիրան",
+      "tr": "tsiran",
+      "ipa": "[t͡siˈɾɑn]",
+      "it": "albicocca"
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "letter", "ref": "Ռ" },
-    { "type": "trace", "letter": "Ռ" },
-    { "type": "teach", "kind": "letter", "ref": "Ծ" },
-    { "type": "trace", "letter": "Ծ", "extra": true },
-    { "type": "mcq", "prompt": "Ռ e Ր: qual è la r forte, come in «carro»?", "options": ["Ռ", "Ր"], "answer": "Ռ", "optionsAreHy": true },
-    { "type": "teach", "kind": "word", "word": { "hy": "ծառ", "tr": "tsaṙ", "ipa": "[t͡sɑr]", "it": "albero" }, "note": "Finisce con la Ռ forte: tsarr." },
-    { "type": "teach", "kind": "word", "word": { "hy": "ծով", "tr": "tsov", "ipa": "[t͡sɔv]", "it": "mare" } },
-    { "type": "teach", "kind": "word", "word": { "hy": "ծիրան", "tr": "tsiran", "ipa": "[t͡siˈɾɑn]", "it": "albicocca" }, "note": "Il frutto nazionale armeno — e il colore arancione di questa app." },
-    { "type": "dictation", "word": { "hy": "ծով", "tr": "tsov", "ipa": "[t͡sɔv]", "it": "mare" }, "distractors": ["ր", "ա"] },
-    { "type": "mcq", "prompt": "Come si legge questa parola?", "promptHy": "ծիրան", "speakText": "ծիրան", "options": ["tsiran", "dziran", "tsirran"], "answer": "tsiran" },
-    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["ծառ", "albero"], ["ծով", "mare"], ["ծիրան", "albicocca"]] },
-    { "type": "mcq", "prompt": "Che cosa significa «նոր ծառ»?", "options": ["albero nuovo", "mare nuovo", "grande albero"], "answer": "albero nuovo", "extra": true }
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Ռ"
+    },
+    {
+      "type": "trace",
+      "letter": "Ռ",
+      "form": "lower"
+    },
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Ծ"
+    },
+    {
+      "type": "trace",
+      "letter": "Ծ",
+      "extra": true,
+      "form": "lower"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ռ e Ր: qual è la r forte, come in «carro»?",
+      "options": [
+        "Ռ",
+        "Ր"
+      ],
+      "answer": "Ռ",
+      "optionsAreHy": true
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ծառ",
+        "tr": "tsaṙ",
+        "ipa": "[t͡sɑr]",
+        "it": "albero"
+      },
+      "note": "Finisce con la Ռ forte: tsarr."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ծով",
+        "tr": "tsov",
+        "ipa": "[t͡sɔv]",
+        "it": "mare"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ծիրան",
+        "tr": "tsiran",
+        "ipa": "[t͡siˈɾɑn]",
+        "it": "albicocca"
+      },
+      "note": "Il frutto nazionale armeno — e il colore arancione di questa app."
+    },
+    {
+      "type": "dictation",
+      "word": {
+        "hy": "ծով",
+        "tr": "tsov",
+        "ipa": "[t͡sɔv]",
+        "it": "mare"
+      },
+      "distractors": [
+        "ր",
+        "ա"
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Come si legge questa parola?",
+      "promptHy": "ծիրան",
+      "speakText": "ծիրան",
+      "options": [
+        "tsiran",
+        "dziran",
+        "tsirran"
+      ],
+      "answer": "tsiran"
+    },
+    {
+      "type": "match",
+      "prompt": "Abbina armeno e italiano",
+      "pairs": [
+        [
+          "ծառ",
+          "albero"
+        ],
+        [
+          "ծով",
+          "mare"
+        ],
+        [
+          "ծիրան",
+          "albicocca"
+        ]
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Che cosa significa «նոր ծառ»?",
+      "options": [
+        "albero nuovo",
+        "mare nuovo",
+        "grande albero"
+      ],
+      "answer": "albero nuovo",
+      "extra": true
+    }
   ]
 }

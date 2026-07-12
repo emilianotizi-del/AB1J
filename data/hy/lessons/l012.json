@@ -2,27 +2,188 @@
   "id": "l012",
   "title": "I numeri da 6 a 10",
   "vocab": [
-    { "hy": "վեց", "tr": "vets'", "ipa": "[vɛt͡sʰ]", "it": "sei" },
-    { "hy": "յոթ", "tr": "yot'", "ipa": "[jɔtʰ]", "it": "sette" },
-    { "hy": "ութ", "tr": "ut'", "ipa": "[utʰ]", "it": "otto" },
-    { "hy": "ինը", "tr": "inə", "ipa": "[ˈinə]", "it": "nove" },
-    { "hy": "տասը", "tr": "tasə", "ipa": "[ˈtɑsə]", "it": "dieci" }
+    {
+      "hy": "վեց",
+      "tr": "vets'",
+      "ipa": "[vɛt͡sʰ]",
+      "it": "sei"
+    },
+    {
+      "hy": "յոթ",
+      "tr": "yot'",
+      "ipa": "[jɔtʰ]",
+      "it": "sette"
+    },
+    {
+      "hy": "ութ",
+      "tr": "ut'",
+      "ipa": "[utʰ]",
+      "it": "otto"
+    },
+    {
+      "hy": "ինը",
+      "tr": "inə",
+      "ipa": "[ˈinə]",
+      "it": "nove"
+    },
+    {
+      "hy": "տասը",
+      "tr": "tasə",
+      "ipa": "[ˈtɑsə]",
+      "it": "dieci"
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "letter", "ref": "Թ" },
-    { "type": "trace", "letter": "Թ" },
-    { "type": "teach", "kind": "letter", "ref": "Ց" },
-    { "type": "teach", "kind": "letter", "ref": "Ը" },
-    { "type": "trace", "letter": "Ը", "extra": true },
-    { "type": "mcq", "prompt": "Թ e Տ: qual è l'aspirata?", "options": ["Թ", "Տ"], "answer": "Թ", "optionsAreHy": true },
-    { "type": "teach", "kind": "word", "word": { "hy": "վեց", "tr": "vets'", "ipa": "[vɛt͡sʰ]", "it": "sei" } },
-    { "type": "teach", "kind": "word", "word": { "hy": "յոթ", "tr": "yot'", "ipa": "[jɔtʰ]", "it": "sette" } },
-    { "type": "teach", "kind": "word", "word": { "hy": "ութ", "tr": "ut'", "ipa": "[utʰ]", "it": "otto" } },
-    { "type": "teach", "kind": "word", "word": { "hy": "ինը", "tr": "inə", "ipa": "[ˈinə]", "it": "nove" }, "note": "Qui la Ը si vede scritta: succede a inizio e fine parola." },
-    { "type": "teach", "kind": "word", "word": { "hy": "տասը", "tr": "tasə", "ipa": "[ˈtɑsə]", "it": "dieci" }, "note": "La forma piena di տաս che conoscevi già." },
-    { "type": "mcq", "prompt": "Conta: հինգ, վեց, … cosa viene dopo?", "options": ["յոթ", "ութ", "ինը"], "answer": "յոթ", "optionsAreHy": true },
-    { "type": "dictation", "word": { "hy": "ութ", "tr": "ut'", "ipa": "[utʰ]", "it": "otto" }, "distractors": ["տ", "ե"] },
-    { "type": "match", "prompt": "Abbina numero e valore", "pairs": [["վեց", "6"], ["յոթ", "7"], ["ութ", "8"], ["ինը", "9"], ["տասը", "10"]] },
-    { "type": "mcq", "prompt": "Come si legge questa parola?", "promptHy": "վեց", "speakText": "վեց", "options": ["vets'", "vech", "vek"], "answer": "vets'", "extra": true }
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Թ"
+    },
+    {
+      "type": "trace",
+      "letter": "Թ",
+      "form": "lower"
+    },
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Ց"
+    },
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Ը"
+    },
+    {
+      "type": "trace",
+      "letter": "Ը",
+      "extra": true,
+      "form": "lower"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Թ e Տ: qual è l'aspirata?",
+      "options": [
+        "Թ",
+        "Տ"
+      ],
+      "answer": "Թ",
+      "optionsAreHy": true
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "վեց",
+        "tr": "vets'",
+        "ipa": "[vɛt͡sʰ]",
+        "it": "sei"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "յոթ",
+        "tr": "yot'",
+        "ipa": "[jɔtʰ]",
+        "it": "sette"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ութ",
+        "tr": "ut'",
+        "ipa": "[utʰ]",
+        "it": "otto"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ինը",
+        "tr": "inə",
+        "ipa": "[ˈinə]",
+        "it": "nove"
+      },
+      "note": "Qui la Ը si vede scritta: succede a inizio e fine parola."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "տասը",
+        "tr": "tasə",
+        "ipa": "[ˈtɑsə]",
+        "it": "dieci"
+      },
+      "note": "La forma piena di տաս che conoscevi già."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Conta: հինգ, վեց, … cosa viene dopo?",
+      "options": [
+        "յոթ",
+        "ութ",
+        "ինը"
+      ],
+      "answer": "յոթ",
+      "optionsAreHy": true
+    },
+    {
+      "type": "dictation",
+      "word": {
+        "hy": "ութ",
+        "tr": "ut'",
+        "ipa": "[utʰ]",
+        "it": "otto"
+      },
+      "distractors": [
+        "տ",
+        "ե"
+      ]
+    },
+    {
+      "type": "match",
+      "prompt": "Abbina numero e valore",
+      "pairs": [
+        [
+          "վեց",
+          "6"
+        ],
+        [
+          "յոթ",
+          "7"
+        ],
+        [
+          "ութ",
+          "8"
+        ],
+        [
+          "ինը",
+          "9"
+        ],
+        [
+          "տասը",
+          "10"
+        ]
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Come si legge questa parola?",
+      "promptHy": "վեց",
+      "speakText": "վեց",
+      "options": [
+        "vets'",
+        "vech",
+        "vek"
+      ],
+      "answer": "vets'",
+      "extra": true
+    }
   ]
 }

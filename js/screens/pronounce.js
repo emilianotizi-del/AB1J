@@ -16,7 +16,9 @@ export function render(mount) {
     el('a', { class: 'btn-ghost', href: '#/home', 'aria-label': 'Torna al corso' }, '←'),
     el('h1', {}, 'Pronuncia')));
 
-  const cards = shuffle(Object.values(getDeck())).slice(0, 10);
+  const seen = new Set();
+  const unique = Object.values(getDeck()).filter(c => !seen.has(c.hy) && seen.add(c.hy));
+  const cards = shuffle(unique).slice(0, 10);
   if (!cards.length) {
     mount.append(el('div', { class: 'card review-empty' },
       el('h2', {}, 'Ancora niente da pronunciare'),

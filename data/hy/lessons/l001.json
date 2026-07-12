@@ -2,25 +2,157 @@
   "id": "l001",
   "title": "Le prime tre lettere",
   "vocab": [
-    { "hy": "մամա", "tr": "mama", "ipa": "[mɑˈmɑ]", "it": "mamma" },
-    { "hy": "նա", "tr": "na", "ipa": "[nɑ]", "it": "lui / lei" },
-    { "hy": "աման", "tr": "aman", "ipa": "[ɑˈmɑn]", "it": "piatto, recipiente" }
+    {
+      "hy": "մամա",
+      "tr": "mama",
+      "ipa": "[mɑˈmɑ]",
+      "it": "mamma"
+    },
+    {
+      "hy": "նա",
+      "tr": "na",
+      "ipa": "[nɑ]",
+      "it": "lui / lei"
+    },
+    {
+      "hy": "աման",
+      "tr": "aman",
+      "ipa": "[ɑˈmɑn]",
+      "it": "piatto, recipiente"
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "letter", "ref": "Ա" },
-    { "type": "trace", "letter": "Ա" },
-    { "type": "trace", "letter": "Ա", "form": "lower", "extra": true },
-    { "type": "teach", "kind": "letter", "ref": "Մ" },
-    { "type": "trace", "letter": "Մ" },
-    { "type": "mcq", "prompt": "Quale lettera si legge [m]?", "options": ["Մ", "Ա"], "answer": "Մ", "optionsAreHy": true },
-    { "type": "teach", "kind": "letter", "ref": "Ն" },
-    { "type": "trace", "letter": "Ն", "extra": true },
-    { "type": "mcq", "prompt": "Quale lettera si legge [n]?", "options": ["Ն", "Մ", "Ա"], "answer": "Ն", "optionsAreHy": true },
-    { "type": "teach", "kind": "word", "word": { "hy": "մամա", "tr": "mama", "ipa": "[mɑˈmɑ]", "it": "mamma" }, "note": "La tua prima parola armena: si legge esattamente come si scrive." },
-    { "type": "teach", "kind": "word", "word": { "hy": "նա", "tr": "na", "ipa": "[nɑ]", "it": "lui / lei" }, "note": "In armeno non c'è distinzione di genere nei pronomi: նա vale sia «lui» sia «lei»." },
-    { "type": "teach", "kind": "word", "word": { "hy": "աման", "tr": "aman", "ipa": "[ɑˈmɑn]", "it": "piatto, recipiente" }, "extra": true },
-    { "type": "mcq", "prompt": "Come si legge questa parola?", "promptHy": "մամա", "speakText": "մամա", "options": ["mama", "nana", "mana"], "answer": "mama" },
-    { "type": "mcq", "prompt": "Che cosa significa «նա»?", "speakText": "նա", "options": ["lui / lei", "mamma", "piatto"], "answer": "lui / lei" },
-    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["մամա", "mamma"], ["նա", "lui / lei"], ["աման", "piatto"]] }
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Ա"
+    },
+    {
+      "type": "trace",
+      "letter": "Ա",
+      "form": "lower"
+    },
+    {
+      "type": "trace",
+      "letter": "Ա",
+      "form": "upper",
+      "extra": true
+    },
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Մ"
+    },
+    {
+      "type": "trace",
+      "letter": "Մ",
+      "form": "lower"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Quale lettera si legge [m]?",
+      "options": [
+        "Մ",
+        "Ա"
+      ],
+      "answer": "Մ",
+      "optionsAreHy": true
+    },
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Ն"
+    },
+    {
+      "type": "trace",
+      "letter": "Ն",
+      "extra": true,
+      "form": "lower"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Quale lettera si legge [n]?",
+      "options": [
+        "Ն",
+        "Մ",
+        "Ա"
+      ],
+      "answer": "Ն",
+      "optionsAreHy": true
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "մամա",
+        "tr": "mama",
+        "ipa": "[mɑˈmɑ]",
+        "it": "mamma"
+      },
+      "note": "La tua prima parola armena: si legge esattamente come si scrive."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "նա",
+        "tr": "na",
+        "ipa": "[nɑ]",
+        "it": "lui / lei"
+      },
+      "note": "In armeno non c'è distinzione di genere nei pronomi: նա vale sia «lui» sia «lei»."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "աման",
+        "tr": "aman",
+        "ipa": "[ɑˈmɑn]",
+        "it": "piatto, recipiente"
+      },
+      "extra": true
+    },
+    {
+      "type": "mcq",
+      "prompt": "Come si legge questa parola?",
+      "promptHy": "մամա",
+      "speakText": "մամա",
+      "options": [
+        "mama",
+        "nana",
+        "mana"
+      ],
+      "answer": "mama"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Che cosa significa «նա»?",
+      "speakText": "նա",
+      "options": [
+        "lui / lei",
+        "mamma",
+        "piatto"
+      ],
+      "answer": "lui / lei"
+    },
+    {
+      "type": "match",
+      "prompt": "Abbina armeno e italiano",
+      "pairs": [
+        [
+          "մամա",
+          "mamma"
+        ],
+        [
+          "նա",
+          "lui / lei"
+        ],
+        [
+          "աման",
+          "piatto"
+        ]
+      ]
+    }
   ]
 }

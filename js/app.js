@@ -8,11 +8,14 @@ import * as alphabet from './screens/alphabet.js';
 import * as stats from './screens/stats.js';
 import * as settings from './screens/settings.js';
 import * as pronounce from './screens/pronounce.js';
+import * as sounds from './screens/sounds.js';
+import { migrateDeck } from './core/srs.js';
 import { updateBadge } from './screens/review.js';
 
 const screen = document.getElementById('screen');
 
 applySettings();
+migrateDeck();
 
 route('/home',        () => home.render(screen));
 route('/lesson/:id',  p  => lesson.render(screen, p));
@@ -21,6 +24,7 @@ route('/alphabet',    () => alphabet.render(screen));
 route('/stats',       () => stats.render(screen));
 route('/settings',    () => settings.render(screen));
 route('/pronounce',   () => pronounce.render(screen));
+route('/sounds',      () => sounds.render(screen));
 
 startRouter();
 updateBadge();

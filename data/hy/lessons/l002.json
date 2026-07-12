@@ -2,24 +2,163 @@
   "id": "l002",
   "title": "Suoni s e t",
   "vocab": [
-    { "hy": "սա", "tr": "sa", "ipa": "[sɑ]", "it": "questo" },
-    { "hy": "մաս", "tr": "mas", "ipa": "[mɑs]", "it": "parte" },
-    { "hy": "մատ", "tr": "mat", "ipa": "[mɑt]", "it": "dito" },
-    { "hy": "տաս", "tr": "tas", "ipa": "[tɑs]", "it": "dieci" }
+    {
+      "hy": "սա",
+      "tr": "sa",
+      "ipa": "[sɑ]",
+      "it": "questo"
+    },
+    {
+      "hy": "մաս",
+      "tr": "mas",
+      "ipa": "[mɑs]",
+      "it": "parte"
+    },
+    {
+      "hy": "մատ",
+      "tr": "mat",
+      "ipa": "[mɑt]",
+      "it": "dito"
+    },
+    {
+      "hy": "տաս",
+      "tr": "tas",
+      "ipa": "[tɑs]",
+      "it": "dieci"
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "letter", "ref": "Ս" },
-    { "type": "trace", "letter": "Ս" },
-    { "type": "teach", "kind": "letter", "ref": "Տ" },
-    { "type": "trace", "letter": "Տ", "extra": true },
-    { "type": "mcq", "prompt": "Quale lettera si legge [s]?", "options": ["Ս", "Տ", "Մ"], "answer": "Ս", "optionsAreHy": true },
-    { "type": "teach", "kind": "word", "word": { "hy": "սա", "tr": "sa", "ipa": "[sɑ]", "it": "questo" }, "note": "Parola chiave per indicare: «սա մամա է» = questo/a è la mamma." },
-    { "type": "teach", "kind": "word", "word": { "hy": "մաս", "tr": "mas", "ipa": "[mɑs]", "it": "parte" }, "extra": true },
-    { "type": "teach", "kind": "word", "word": { "hy": "մատ", "tr": "mat", "ipa": "[mɑt]", "it": "dito" } },
-    { "type": "teach", "kind": "word", "word": { "hy": "տաս", "tr": "tas", "ipa": "[tɑs]", "it": "dieci" }, "note": "Forma colloquiale di տասը (tasə)." },
-    { "type": "mcq", "prompt": "Come si legge questa parola?", "promptHy": "մատ", "speakText": "մատ", "options": ["mat", "mas", "tam"], "answer": "mat" },
-    { "type": "mcq", "prompt": "Quale parola significa «dieci»?", "options": ["տաս", "մաս", "սա"], "answer": "տաս", "optionsAreHy": true },
-    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["սա", "questo"], ["մաս", "parte"], ["մատ", "dito"], ["տաս", "dieci"]] },
-    { "type": "mcq", "prompt": "Che cosa significa «մաս»?", "speakText": "մաս", "options": ["parte", "dito", "questo"], "answer": "parte", "extra": true }
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Ս"
+    },
+    {
+      "type": "trace",
+      "letter": "Ս",
+      "form": "lower"
+    },
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Տ"
+    },
+    {
+      "type": "trace",
+      "letter": "Տ",
+      "extra": true,
+      "form": "lower"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Quale lettera si legge [s]?",
+      "options": [
+        "Ս",
+        "Տ",
+        "Մ"
+      ],
+      "answer": "Ս",
+      "optionsAreHy": true
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "սա",
+        "tr": "sa",
+        "ipa": "[sɑ]",
+        "it": "questo"
+      },
+      "note": "Parola chiave per indicare: «սա մամա է» = questo/a è la mamma."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "մաս",
+        "tr": "mas",
+        "ipa": "[mɑs]",
+        "it": "parte"
+      },
+      "extra": true
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "մատ",
+        "tr": "mat",
+        "ipa": "[mɑt]",
+        "it": "dito"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "տաս",
+        "tr": "tas",
+        "ipa": "[tɑs]",
+        "it": "dieci"
+      },
+      "note": "Forma colloquiale di տասը (tasə)."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Come si legge questa parola?",
+      "promptHy": "մատ",
+      "speakText": "մատ",
+      "options": [
+        "mat",
+        "mas",
+        "tam"
+      ],
+      "answer": "mat"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Quale parola significa «dieci»?",
+      "options": [
+        "տաս",
+        "մաս",
+        "սա"
+      ],
+      "answer": "տաս",
+      "optionsAreHy": true
+    },
+    {
+      "type": "match",
+      "prompt": "Abbina armeno e italiano",
+      "pairs": [
+        [
+          "սա",
+          "questo"
+        ],
+        [
+          "մաս",
+          "parte"
+        ],
+        [
+          "մատ",
+          "dito"
+        ],
+        [
+          "տաս",
+          "dieci"
+        ]
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Che cosa significa «մաս»?",
+      "speakText": "մաս",
+      "options": [
+        "parte",
+        "dito",
+        "questo"
+      ],
+      "answer": "parte",
+      "extra": true
+    }
   ]
 }

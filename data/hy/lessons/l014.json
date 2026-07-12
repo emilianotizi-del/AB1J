@@ -2,28 +2,202 @@
   "id": "l014",
   "title": "Presentarsi",
   "vocab": [
-    { "hy": "ես", "tr": "yes", "ipa": "[jɛs]", "it": "io" },
-    { "hy": "եմ", "tr": "em", "ipa": "[ɛm]", "it": "sono (io)" },
-    { "hy": "է", "tr": "e", "ipa": "[ɛ]", "it": "è" },
-    { "hy": "անուն", "tr": "anun", "ipa": "[ɑˈnun]", "it": "nome" },
-    { "hy": "շատ", "tr": "shat", "ipa": "[ʃɑt]", "it": "molto" },
-    { "hy": "իտալացի", "tr": "italats'i", "ipa": "[itɑlɑˈt͡sʰi]", "it": "italiano/a (persona)" }
+    {
+      "hy": "ես",
+      "tr": "yes",
+      "ipa": "[jɛs]",
+      "it": "io"
+    },
+    {
+      "hy": "եմ",
+      "tr": "em",
+      "ipa": "[ɛm]",
+      "it": "sono (io)"
+    },
+    {
+      "hy": "է",
+      "tr": "e",
+      "ipa": "[ɛ]",
+      "it": "è"
+    },
+    {
+      "hy": "անուն",
+      "tr": "anun",
+      "ipa": "[ɑˈnun]",
+      "it": "nome"
+    },
+    {
+      "hy": "շատ",
+      "tr": "shat",
+      "ipa": "[ʃɑt]",
+      "it": "molto"
+    },
+    {
+      "hy": "իտալացի",
+      "tr": "italats'i",
+      "ipa": "[itɑlɑˈt͡sʰi]",
+      "it": "italiano/a (persona)"
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "letter", "ref": "Է" },
-    { "type": "teach", "kind": "letter", "ref": "Շ" },
-    { "type": "trace", "letter": "Շ", "extra": true },
-    { "type": "teach", "kind": "word", "word": { "hy": "ես", "tr": "yes", "ipa": "[jɛs]", "it": "io" }, "note": "Attenzione: ես pronome = yes; ma ես nel verbo (Ինչպե՞ս ես) = es. I verbi «essere» sono l'eccezione alla regola della Ե iniziale." },
-    { "type": "teach", "kind": "word", "word": { "hy": "եմ", "tr": "em", "ipa": "[ɛm]", "it": "sono (io)" }, "note": "Stessa eccezione: si legge em, non yem. Va dopo il nome: Ես Աննա եմ = io sono Anna." },
-    { "type": "teach", "kind": "word", "word": { "hy": "է", "tr": "e", "ipa": "[ɛ]", "it": "è" } },
-    { "type": "teach", "kind": "word", "word": { "hy": "անուն", "tr": "anun", "ipa": "[ɑˈnun]", "it": "nome" }, "note": "Իմ անունը… = il mio nome… (la -ը finale è l'articolo)." },
-    { "type": "teach", "kind": "word", "word": { "hy": "շատ", "tr": "shat", "ipa": "[ʃɑt]", "it": "molto" } },
-    { "type": "teach", "kind": "word", "word": { "hy": "իտալացի", "tr": "italats'i", "ipa": "[itɑlɑˈt͡sʰi]", "it": "italiano/a (persona)" }, "extra": true },
-    { "type": "mcq", "prompt": "«Io sono italiano» si dice:", "options": ["Ես իտալացի եմ", "Ես եմ իտալացի", "Իտալացի ես եմ"], "answer": "Ես իտալացի եմ", "optionsAreHy": true },
-    { "type": "order", "it": "il mio nome è Anna", "tokens": ["Իմ", "անունը", "Աննա", "է"], "speakText": "Իմ անունը Աննա է" },
-    { "type": "dictation", "word": { "hy": "անուն", "tr": "anun", "ipa": "[ɑˈnun]", "it": "nome" }, "distractors": ["մ", "ե"] },
-    { "type": "order", "it": "molto bene", "tokens": ["Շատ", "լավ"], "speakText": "Շատ լավ" },
-    { "type": "mcq", "prompt": "Ինչպե՞ս ես — e tu rispondi:", "speakText": "Ինչպե՞ս ես", "options": ["Շատ լավ եմ", "Ես անուն եմ", "Բարի գալուստ"], "answer": "Շատ լավ եմ", "optionsAreHy": true },
-    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["ես", "io"], ["անուն", "nome"], ["շատ", "molto"], ["իտալացի", "italiano/a"]], "extra": true }
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Է"
+    },
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Շ"
+    },
+    {
+      "type": "trace",
+      "letter": "Շ",
+      "extra": true,
+      "form": "lower"
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ես",
+        "tr": "yes",
+        "ipa": "[jɛs]",
+        "it": "io"
+      },
+      "note": "Attenzione: ես pronome = yes; ma ես nel verbo (Ինչպե՞ս ես) = es. I verbi «essere» sono l'eccezione alla regola della Ե iniziale."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "եմ",
+        "tr": "em",
+        "ipa": "[ɛm]",
+        "it": "sono (io)"
+      },
+      "note": "Stessa eccezione: si legge em, non yem. Va dopo il nome: Ես Աննա եմ = io sono Anna."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "է",
+        "tr": "e",
+        "ipa": "[ɛ]",
+        "it": "è"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "անուն",
+        "tr": "anun",
+        "ipa": "[ɑˈnun]",
+        "it": "nome"
+      },
+      "note": "Իմ անունը… = il mio nome… (la -ը finale è l'articolo)."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "շատ",
+        "tr": "shat",
+        "ipa": "[ʃɑt]",
+        "it": "molto"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "իտալացի",
+        "tr": "italats'i",
+        "ipa": "[itɑlɑˈt͡sʰi]",
+        "it": "italiano/a (persona)"
+      },
+      "extra": true
+    },
+    {
+      "type": "mcq",
+      "prompt": "«Io sono italiano» si dice:",
+      "options": [
+        "Ես իտալացի եմ",
+        "Ես եմ իտալացի",
+        "Իտալացի ես եմ"
+      ],
+      "answer": "Ես իտալացի եմ",
+      "optionsAreHy": true
+    },
+    {
+      "type": "order",
+      "it": "il mio nome è Anna",
+      "tokens": [
+        "Իմ",
+        "անունը",
+        "Աննա",
+        "է"
+      ],
+      "speakText": "Իմ անունը Աննա է"
+    },
+    {
+      "type": "dictation",
+      "word": {
+        "hy": "անուն",
+        "tr": "anun",
+        "ipa": "[ɑˈnun]",
+        "it": "nome"
+      },
+      "distractors": [
+        "մ",
+        "ե"
+      ]
+    },
+    {
+      "type": "order",
+      "it": "molto bene",
+      "tokens": [
+        "Շատ",
+        "լավ"
+      ],
+      "speakText": "Շատ լավ"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ինչպե՞ս ես — e tu rispondi:",
+      "speakText": "Ինչպե՞ս ես",
+      "options": [
+        "Շատ լավ եմ",
+        "Ես անուն եմ",
+        "Բարի գալուստ"
+      ],
+      "answer": "Շատ լավ եմ",
+      "optionsAreHy": true
+    },
+    {
+      "type": "match",
+      "prompt": "Abbina armeno e italiano",
+      "pairs": [
+        [
+          "ես",
+          "io"
+        ],
+        [
+          "անուն",
+          "nome"
+        ],
+        [
+          "շատ",
+          "molto"
+        ],
+        [
+          "իտալացի",
+          "italiano/a"
+        ]
+      ],
+      "extra": true
+    }
   ]
 }

@@ -6,13 +6,36 @@ const DAY = 86400000;
 
 export function addCards(items) {
   // items: [{ id, hy, tr, ipa, it }]
+  // Ogni voce genera DUE carte: lettura (read) e significato (mean),
+  // programmate separatamente dall'algoritmo.
   const deck = getDeck();
   for (const it of items) {
-    if (!deck[it.id]) {
-      deck[it.id] = { ...it, ef: 2.5, reps: 0, interval: 0, due: Date.now() };
+    for (const kind of ['read', 'mean']) {
+      const id = it.id + ':' + kind[0];
+      if (!deck[id]) {
+        deck[id] = { ...it, id, kind, ef: 2.5, reps: 0, interval: 0, due: Date.now() };
+      }
     }
   }
   saveDeck(deck);
+}
+
+// Migrazione: le carte create prima dello sdoppiamento diventano due,
+// ereditando lo stato di ripasso (nessun progresso perso).
+export function migrateDeck() {
+  const deck = getDeck();
+  let changed = false;
+  for (const [id, c] of Object.entries(deck)) {
+    if (!c.kind) {
+      delete deck[id];
+      for (const kind of ['read', 'mean']) {
+        const nid = id + ':' + kind[0];
+        deck[nid] = { ...c, id: nid, kind };
+      }
+      changed = true;
+    }
+  }
+  if (changed) saveDeck(deck);
 }
 
 export function dueCards(now = Date.now()) {

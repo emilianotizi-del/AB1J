@@ -25,6 +25,10 @@ export async function render(mount) {
     el('p', { style: 'color:var(--ink-soft);margin-bottom:14px;font-size:.9rem' },
       `39 lettere · ${known.size} apprese. Le altre si sbloccano avanzando nel corso, ma puoi già esplorarle.`));
 
+  mount.append(el('a', {
+    class: 'btn btn-block', href: '#/sounds', style: 'margin-bottom:14px'
+  }, '🔊 Allena i suoni'));
+
   const grid = el('div', { class: 'alpha-grid' });
   for (const L of alpha.letters) {
     const cell = el('button', {
@@ -49,12 +53,21 @@ export async function render(mount) {
         el('button', {
           class: 'btn btn-accent', onclick: () => {
             modal.innerHTML = '';
-            renderStep({ type: 'trace', letter: L.upper }, modal, {
+            renderStep({ type: 'trace', letter: L.upper, form: 'lower' }, modal, {
               letter: getLetter,
               onDone: () => backdrop.remove()
             });
           }
-        }, '✍️ Esercita la scrittura'),
+        }, '✍️ ' + L.lower + ' minuscola'),
+        el('button', {
+          class: 'btn btn-accent', onclick: () => {
+            modal.innerHTML = '';
+            renderStep({ type: 'trace', letter: L.upper, form: 'upper' }, modal, {
+              letter: getLetter,
+              onDone: () => backdrop.remove()
+            });
+          }
+        }, '✍️ ' + L.upper + ' maiuscola'),
         el('button', { class: 'btn btn-secondary', onclick: () => backdrop.remove() }, 'Chiudi')));
     backdrop.append(modal);
     document.body.append(backdrop);

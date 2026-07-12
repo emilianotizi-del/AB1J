@@ -1,7 +1,11 @@
-// Ripasso SRS con flashcard: fronte in armeno, retro con traslitterazione, IPA e italiano.
-import { el, wordBlock } from '../utils/dom.js';
+// Ripasso SRS. Ogni parola ha due carte separate:
+// - lettura (read): fronte in armeno → retro con traslitterazione, IPA e audio
+// - significato (mean): fronte in armeno (+audio) → retro con la traduzione
+import { el, vibrate } from '../utils/dom.js';
 import { dueCards, grade, deckSize } from '../core/srs.js';
 import { speak } from '../core/audio.js';
+
+const KIND_LABEL = { read: 'Come si legge?', mean: 'Che cosa significa?' };
 
 export function render(mount) {
   mount.innerHTML = '';
@@ -27,7 +31,7 @@ export function render(mount) {
     if (idx >= queue.length) {
       holder.innerHTML = '';
       holder.append(el('div', { class: 'card review-empty' },
-        el('div', { class: 'done-glyph', style: 'font-size:3rem' }, '🎉'),
+        el('div', { style: 'font-size:3rem' }, '🎉'),
         el('h2', {}, 'Sessione conclusa!'),
         el('p', {}, 'Ottimo lavoro. Le carte torneranno secondo il loro intervallo.')));
       counter.textContent = '';
@@ -35,6 +39,7 @@ export function render(mount) {
       return;
     }
     const card = queue[idx];
+    const kind = card.kind || 'mean';
     counter.textContent = `Carta ${idx + 1} di ${queue.length}`;
     holder.innerHTML = '';
 
@@ -43,30 +48,54 @@ export function render(mount) {
 
     function paint() {
       face.innerHTML = '';
+      face.append(el('div', {
+        style: 'font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft)'
+      }, KIND_LABEL[kind]));
+      face.append(el('div', {
+        class: 'w-hy hy-display', lang: 'hy',
+        style: 'font-size:2.4rem;font-weight:700;margin-top:6px'
+      }, card.hy));
       if (!flipped) {
+        // Sul fronte della carta di significato l'audio è un indizio lecito;
+        // su quella di lettura rivelerebbe la risposta.
+        if (kind === 'mean') {
+          face.append(el('button', {
+            class: 'btn-audio', style: 'margin-top:12px', 'aria-label': 'Ascolta',
+            onclick: e => { e.stopPropagation(); speak(card.hy); }
+          }, '🔊'));
+        }
+        face.append(el('p', { style: 'color:var(--ink-soft);font-size:.85rem;margin-top:14px' }, 'Tocca per girare'));
+      } else if (kind === 'read') {
         face.append(
-          el('div', { class: 'w-hy hy-display', lang: 'hy', style: 'font-size:2.6rem;font-weight:700' }, card.hy),
-          el('p', { style: 'color:var(--ink-soft);font-size:.85rem;margin-top:14px' }, 'Tocca per girare'));
+          el('div', { class: 'w-tr', style: 'margin-top:10px;font-size:1.2rem' }, card.tr),
+          card.ipa ? el('div', { class: 'w-ipa' }, card.ipa) : null,
+          el('button', {
+            class: 'btn-audio', style: 'margin-top:12px', 'aria-label': 'Ascolta',
+            onclick: e => { e.stopPropagation(); speak(card.hy); }
+          }, '🔊'));
       } else {
-        face.append(wordBlock(card));
+        face.append(el('div', { class: 'w-it', style: 'margin-top:12px;font-size:1.25rem;font-weight:600' }, card.it));
       }
     }
     paint();
-    face.addEventListener('click', () => { flipped = true; paint(); grades.hidden = false; });
-
-    const audioRow = el('div', { style: 'text-align:center;margin-top:12px' },
-      el('button', { class: 'btn-audio', 'aria-label': 'Ascolta', onclick: e => { e.stopPropagation(); speak(card.hy); } }, '🔊'));
+    face.addEventListener('click', () => {
+      if (flipped) return;
+      flipped = true;
+      paint();
+      grades.hidden = false;
+      if (kind === 'read') speak(card.hy);
+    });
 
     const grades = el('div', { class: 'grade-row', hidden: '' });
     const opts = [[1, 'Di nuovo', 'g-again'], [3, 'Difficile', 'g-hard'], [4, 'Bene', 'g-good'], [5, 'Facile', 'g-easy']];
     for (const [q, label, cls] of opts) {
       grades.append(el('button', {
-        class: 'btn ' + cls, onclick: () => { grade(card.id, q); idx++; show(); }
+        class: 'btn ' + cls, onclick: () => { vibrate(15); grade(card.id, q); idx++; show(); }
       }, label));
     }
     grades.hidden = true;
 
-    holder.append(face, audioRow, grades);
+    holder.append(face, grades);
   }
 
   show();

@@ -2,29 +2,205 @@
   "id": "l013",
   "title": "La famiglia",
   "vocab": [
-    { "hy": "մայր", "tr": "mayr", "ipa": "[mɑjɾ]", "it": "madre" },
-    { "hy": "հայր", "tr": "hayr", "ipa": "[hɑjɾ]", "it": "padre" },
-    { "hy": "քույր", "tr": "k'uyr", "ipa": "[kʰujɾ]", "it": "sorella" },
-    { "hy": "եղբայր", "tr": "yeghbayr", "ipa": "[jɛʁˈbɑjɾ]", "it": "fratello" },
-    { "hy": "տատ", "tr": "tat", "ipa": "[tɑt]", "it": "nonna" },
-    { "hy": "պապ", "tr": "pap", "ipa": "[pɑp]", "it": "nonno" },
-    { "hy": "ընտանիք", "tr": "əntanik'", "ipa": "[əntɑˈnikʰ]", "it": "famiglia" }
+    {
+      "hy": "մայր",
+      "tr": "mayr",
+      "ipa": "[mɑjɾ]",
+      "it": "madre"
+    },
+    {
+      "hy": "հայր",
+      "tr": "hayr",
+      "ipa": "[hɑjɾ]",
+      "it": "padre"
+    },
+    {
+      "hy": "քույր",
+      "tr": "k'uyr",
+      "ipa": "[kʰujɾ]",
+      "it": "sorella"
+    },
+    {
+      "hy": "եղբայր",
+      "tr": "yeghbayr",
+      "ipa": "[jɛʁˈbɑjɾ]",
+      "it": "fratello"
+    },
+    {
+      "hy": "տատ",
+      "tr": "tat",
+      "ipa": "[tɑt]",
+      "it": "nonna"
+    },
+    {
+      "hy": "պապ",
+      "tr": "pap",
+      "ipa": "[pɑp]",
+      "it": "nonno"
+    },
+    {
+      "hy": "ընտանիք",
+      "tr": "əntanik'",
+      "ipa": "[əntɑˈnikʰ]",
+      "it": "famiglia"
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "letter", "ref": "Ղ" },
-    { "type": "trace", "letter": "Ղ" },
-    { "type": "teach", "kind": "letter", "ref": "Պ" },
-    { "type": "trace", "letter": "Պ", "extra": true },
-    { "type": "teach", "kind": "word", "word": { "hy": "մայր", "tr": "mayr", "ipa": "[mɑjɾ]", "it": "madre" }, "note": "Formale; in famiglia si dice մամա, che conosci dalla prima lezione." },
-    { "type": "teach", "kind": "word", "word": { "hy": "հայր", "tr": "hayr", "ipa": "[hɑjɾ]", "it": "padre" } },
-    { "type": "teach", "kind": "word", "word": { "hy": "քույր", "tr": "k'uyr", "ipa": "[kʰujɾ]", "it": "sorella" } },
-    { "type": "teach", "kind": "word", "word": { "hy": "եղբայր", "tr": "yeghbayr", "ipa": "[jɛʁˈbɑjɾ]", "it": "fratello" }, "note": "Ե iniziale = ye, e la Ղ è la r «francese»: yegh-bayr." },
-    { "type": "teach", "kind": "word", "word": { "hy": "տատ", "tr": "tat", "ipa": "[tɑt]", "it": "nonna" }, "extra": true },
-    { "type": "teach", "kind": "word", "word": { "hy": "պապ", "tr": "pap", "ipa": "[pɑp]", "it": "nonno" }, "extra": true },
-    { "type": "teach", "kind": "word", "word": { "hy": "ընտանիք", "tr": "əntanik'", "ipa": "[əntɑˈnikʰ]", "it": "famiglia" }, "note": "Inizia con la Ը scritta." },
-    { "type": "mcq", "prompt": "Che cosa significa questa parola?", "promptHy": "քույր", "speakText": "քույր", "options": ["sorella", "fratello", "madre"], "answer": "sorella" },
-    { "type": "dictation", "word": { "hy": "մայր", "tr": "mayr", "ipa": "[mɑjɾ]", "it": "madre" }, "distractors": ["հ", "ե"] },
-    { "type": "order", "it": "la mia famiglia", "tokens": ["իմ", "ընտանիք"], "speakText": "իմ ընտանիք" },
-    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["մայր", "madre"], ["հայր", "padre"], ["եղբայր", "fratello"], ["տատ", "nonna"], ["պապ", "nonno"]] }
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Ղ"
+    },
+    {
+      "type": "trace",
+      "letter": "Ղ",
+      "form": "lower"
+    },
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Պ"
+    },
+    {
+      "type": "trace",
+      "letter": "Պ",
+      "extra": true,
+      "form": "lower"
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "մայր",
+        "tr": "mayr",
+        "ipa": "[mɑjɾ]",
+        "it": "madre"
+      },
+      "note": "Formale; in famiglia si dice մամա, che conosci dalla prima lezione."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "հայր",
+        "tr": "hayr",
+        "ipa": "[hɑjɾ]",
+        "it": "padre"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "քույր",
+        "tr": "k'uyr",
+        "ipa": "[kʰujɾ]",
+        "it": "sorella"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "եղբայր",
+        "tr": "yeghbayr",
+        "ipa": "[jɛʁˈbɑjɾ]",
+        "it": "fratello"
+      },
+      "note": "Ե iniziale = ye, e la Ղ è la r «francese»: yegh-bayr."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "տատ",
+        "tr": "tat",
+        "ipa": "[tɑt]",
+        "it": "nonna"
+      },
+      "extra": true
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "պապ",
+        "tr": "pap",
+        "ipa": "[pɑp]",
+        "it": "nonno"
+      },
+      "extra": true
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ընտանիք",
+        "tr": "əntanik'",
+        "ipa": "[əntɑˈnikʰ]",
+        "it": "famiglia"
+      },
+      "note": "Inizia con la Ը scritta."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Che cosa significa questa parola?",
+      "promptHy": "քույր",
+      "speakText": "քույր",
+      "options": [
+        "sorella",
+        "fratello",
+        "madre"
+      ],
+      "answer": "sorella"
+    },
+    {
+      "type": "dictation",
+      "word": {
+        "hy": "մայր",
+        "tr": "mayr",
+        "ipa": "[mɑjɾ]",
+        "it": "madre"
+      },
+      "distractors": [
+        "հ",
+        "ե"
+      ]
+    },
+    {
+      "type": "order",
+      "it": "la mia famiglia",
+      "tokens": [
+        "իմ",
+        "ընտանիք"
+      ],
+      "speakText": "իմ ընտանիք"
+    },
+    {
+      "type": "match",
+      "prompt": "Abbina armeno e italiano",
+      "pairs": [
+        [
+          "մայր",
+          "madre"
+        ],
+        [
+          "հայր",
+          "padre"
+        ],
+        [
+          "եղբայր",
+          "fratello"
+        ],
+        [
+          "տատ",
+          "nonna"
+        ],
+        [
+          "պապ",
+          "nonno"
+        ]
+      ]
+    }
   ]
 }

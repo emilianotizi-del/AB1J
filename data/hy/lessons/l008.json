@@ -2,25 +2,170 @@
   "id": "l008",
   "title": "Tu e l'armeno",
   "vocab": [
-    { "hy": "դու", "tr": "du", "ipa": "[du]", "it": "tu" },
-    { "hy": "հայ", "tr": "hay", "ipa": "[hɑj]", "it": "armeno/a (persona)" },
-    { "hy": "հայերեն", "tr": "hayeren", "ipa": "[hɑjɛˈɾɛn]", "it": "armeno (lingua)" },
-    { "hy": "հիմա", "tr": "hima", "ipa": "[hiˈmɑ]", "it": "adesso" }
+    {
+      "hy": "դու",
+      "tr": "du",
+      "ipa": "[du]",
+      "it": "tu"
+    },
+    {
+      "hy": "հայ",
+      "tr": "hay",
+      "ipa": "[hɑj]",
+      "it": "armeno/a (persona)"
+    },
+    {
+      "hy": "հայերեն",
+      "tr": "hayeren",
+      "ipa": "[hɑjɛˈɾɛn]",
+      "it": "armeno (lingua)"
+    },
+    {
+      "hy": "հիմա",
+      "tr": "hima",
+      "ipa": "[hiˈmɑ]",
+      "it": "adesso"
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "letter", "ref": "Դ" },
-    { "type": "trace", "letter": "Դ" },
-    { "type": "teach", "kind": "letter", "ref": "Հ" },
-    { "type": "teach", "kind": "letter", "ref": "Յ" },
-    { "type": "trace", "letter": "Յ", "extra": true },
-    { "type": "mcq", "prompt": "Quale lettera è l'h aspirata?", "options": ["Հ", "Յ", "Դ"], "answer": "Հ", "optionsAreHy": true },
-    { "type": "teach", "kind": "word", "word": { "hy": "դու", "tr": "du", "ipa": "[du]", "it": "tu" } },
-    { "type": "teach", "kind": "word", "word": { "hy": "հայ", "tr": "hay", "ipa": "[hɑj]", "it": "armeno/a (persona)" } },
-    { "type": "teach", "kind": "word", "word": { "hy": "հայերեն", "tr": "hayeren", "ipa": "[hɑjɛˈɾɛn]", "it": "armeno (lingua)" }, "note": "-երեն è il suffisso delle lingue: իտալերեն = italiano." },
-    { "type": "teach", "kind": "word", "word": { "hy": "հիմա", "tr": "hima", "ipa": "[hiˈmɑ]", "it": "adesso" }, "extra": true },
-    { "type": "mcq", "prompt": "Ora sai leggerla: che parola è?", "promptHy": "այո", "speakText": "Այո", "options": ["sì", "no", "ciao"], "answer": "sì" },
-    { "type": "dictation", "word": { "hy": "հայ", "tr": "hay", "ipa": "[hɑj]", "it": "armeno/a (persona)" }, "distractors": ["մ", "ի"] },
-    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["դու", "tu"], ["հայերեն", "armeno (lingua)"], ["հիմա", "adesso"], ["հայ", "armeno (persona)"]] },
-    { "type": "mcq", "prompt": "Come si legge questa parola?", "promptHy": "հիմա", "speakText": "հիմա", "options": ["hima", "nima", "hama"], "answer": "hima", "extra": true }
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Դ"
+    },
+    {
+      "type": "trace",
+      "letter": "Դ",
+      "form": "lower"
+    },
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Հ"
+    },
+    {
+      "type": "teach",
+      "kind": "letter",
+      "ref": "Յ"
+    },
+    {
+      "type": "trace",
+      "letter": "Յ",
+      "extra": true,
+      "form": "lower"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Quale lettera è l'h aspirata?",
+      "options": [
+        "Հ",
+        "Յ",
+        "Դ"
+      ],
+      "answer": "Հ",
+      "optionsAreHy": true
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "դու",
+        "tr": "du",
+        "ipa": "[du]",
+        "it": "tu"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "հայ",
+        "tr": "hay",
+        "ipa": "[hɑj]",
+        "it": "armeno/a (persona)"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "հայերեն",
+        "tr": "hayeren",
+        "ipa": "[hɑjɛˈɾɛn]",
+        "it": "armeno (lingua)"
+      },
+      "note": "-երեն è il suffisso delle lingue: իտալերեն = italiano."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "հիմա",
+        "tr": "hima",
+        "ipa": "[hiˈmɑ]",
+        "it": "adesso"
+      },
+      "extra": true
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ora sai leggerla: che parola è?",
+      "promptHy": "այո",
+      "speakText": "Այո",
+      "options": [
+        "sì",
+        "no",
+        "ciao"
+      ],
+      "answer": "sì"
+    },
+    {
+      "type": "dictation",
+      "word": {
+        "hy": "հայ",
+        "tr": "hay",
+        "ipa": "[hɑj]",
+        "it": "armeno/a (persona)"
+      },
+      "distractors": [
+        "մ",
+        "ի"
+      ]
+    },
+    {
+      "type": "match",
+      "prompt": "Abbina armeno e italiano",
+      "pairs": [
+        [
+          "դու",
+          "tu"
+        ],
+        [
+          "հայերեն",
+          "armeno (lingua)"
+        ],
+        [
+          "հիմա",
+          "adesso"
+        ],
+        [
+          "հայ",
+          "armeno (persona)"
+        ]
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Come si legge questa parola?",
+      "promptHy": "հիմա",
+      "speakText": "հիմա",
+      "options": [
+        "hima",
+        "nima",
+        "hama"
+      ],
+      "answer": "hima",
+      "extra": true
+    }
   ]
 }

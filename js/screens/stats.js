@@ -30,7 +30,7 @@ export function render(mount) {
 
   const cells = [
     [getCompleted().length, 'Lezioni completate'],
-    [deckSize(), 'Parole nel mazzo'],
+    [deckSize(), 'Carte nel mazzo'],
     [dueCards().length, 'Da ripassare ora'],
     [getStreak(), 'Giorni di fila']
   ];
