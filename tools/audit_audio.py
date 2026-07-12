@@ -22,7 +22,8 @@ for t, f in idx.items():
         except ValueError:
             pass
     clean = re.sub(r"[՞՜՛։,.\s]", "", t)
-    if dur < max(MIN_ABS, PER_CHAR * len(clean)):
+    floor = 0.28 if len(clean) <= 1 else MIN_ABS
+    if dur < max(floor, PER_CHAR * len(clean)):
         bad.append((t, f, dur))
 
 print(f"tracce: {sum(1 for k in idx if k != '_engine')} | difettose: {len(bad)}")
