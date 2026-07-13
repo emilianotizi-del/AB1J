@@ -11,7 +11,7 @@ import { available, recognize, matchScore, recordClip, transcribeScribe } from '
 const PASS = 0.62;     // ✓ corretto
 const NEAR = 0.42;     // ~ quasi: vale la pena riprovare
 const CLIP_MS = 6000;
-const SHORT = 5;       // parole fino a 5 lettere: si chiede di ripeterle due volte
+const SHORT = 8;       // testi brevi (fino a 8 lettere): si chiede la doppia ripetizione
 let nativeBroken = false;   // il riconoscimento nativo ha fallito per lingua non supportata
 
 export function render(mount) {

@@ -40,14 +40,32 @@ export function stripArticle(w) {
 }
 
 export function matchScore(transcript, target) {
+  // Il bersaglio può essere una parola o una frase; la trascrizione può
+  // contenerlo ripetuto (chiediamo la doppia ripetizione sulle parole corte),
+  // preceduto/seguito da altro, o con l'articolo aggiunto dal modello.
+  // Strategia: si confronta il bersaglio con TUTTE le finestre contigue di
+  // parole della trascrizione e si prende la corrispondenza migliore.
+  const targetWords = String(target).split(/\s+/u).filter(Boolean).length;
   const t = normalize(target);
   const tStripped = stripArticle(t);
-  const whole = Math.max(similarity(transcript, t), similarity(transcript, tStripped));
   const tokens = String(transcript).split(/[\s,.;։՞՜՛!?]+/u).filter(Boolean);
-  let best = whole;
-  for (const tok of tokens) {
-    const n = normalize(tok);
-    best = Math.max(best, similarity(n, t), similarity(stripArticle(n), tStripped));
+  if (!tokens.length) return 0;
+
+  let best = 0;
+  const maxWin = Math.min(tokens.length, targetWords + 1);
+  for (let win = 1; win <= maxWin; win++) {
+    for (let i = 0; i + win <= tokens.length; i++) {
+      const chunk = normalize(tokens.slice(i, i + win).join(''));
+      const chunkStripped = stripArticle(chunk);
+      best = Math.max(
+        best,
+        similarity(chunk, t),
+        similarity(chunkStripped, t),
+        similarity(chunk, tStripped),
+        similarity(chunkStripped, tStripped)
+      );
+      if (best === 1) return 1;
+    }
   }
   return best;
 }
