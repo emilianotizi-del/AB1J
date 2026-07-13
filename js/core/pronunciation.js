@@ -32,6 +32,26 @@ export function normalize(s) {
   return s.toLowerCase().replace(/[՞՜՛։,.?!\s]/g, '');
 }
 
+// Confronto robusto per il riconoscimento vocale: la trascrizione viene
+// spezzata in parole, si cerca la corrispondenza migliore col bersaglio e si
+// ignora l'articolo determinativo (-ը/-ն) che il modello spesso aggiunge.
+export function stripArticle(w) {
+  return w.replace(/[ըն]$/u, '');
+}
+
+export function matchScore(transcript, target) {
+  const t = normalize(target);
+  const tStripped = stripArticle(t);
+  const whole = Math.max(similarity(transcript, t), similarity(transcript, tStripped));
+  const tokens = String(transcript).split(/[\s,.;։՞՜՛!?]+/u).filter(Boolean);
+  let best = whole;
+  for (const tok of tokens) {
+    const n = normalize(tok);
+    best = Math.max(best, similarity(n, t), similarity(stripArticle(n), tStripped));
+  }
+  return best;
+}
+
 export function similarity(a, b) {
   a = normalize(a); b = normalize(b);
   if (!a.length || !b.length) return 0;

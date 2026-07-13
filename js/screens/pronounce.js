@@ -6,10 +6,12 @@
 import { el, shuffle, wordBlock, vibrate } from '../utils/dom.js';
 import { getDeck, getSettings, recordEvent } from '../core/store.js';
 import { speak } from '../core/audio.js';
-import { available, recognize, similarity, recordClip, transcribeScribe } from '../core/pronunciation.js';
+import { available, recognize, matchScore, recordClip, transcribeScribe } from '../core/pronunciation.js';
 
-const PASS = 0.65;
-const CLIP_MS = 4000;
+const PASS = 0.62;     // ✓ corretto
+const NEAR = 0.42;     // ~ quasi: vale la pena riprovare
+const CLIP_MS = 6000;
+const SHORT = 5;       // parole fino a 5 lettere: si chiede di ripeterle due volte
 let nativeBroken = false;   // il riconoscimento nativo ha fallito per lingua non supportata
 
 export function render(mount) {
@@ -64,18 +66,37 @@ export function render(mount) {
     const m = mode();
 
     function showResult(transcripts) {
-      const best = Math.max(...transcripts.map(t => similarity(t, card.hy)));
-      const ok = best >= PASS;
+      const best = Math.max(...transcripts.map(t => matchScore(t, card.hy)));
+      const heard = (transcripts[0] || '').trim();
       recordEvent();
-      vibrate(ok ? 30 : [60, 40, 60]);
       status.textContent = '';
       result.innerHTML = '';
-      result.append(el('div', { class: 'feedback ' + (ok ? 'ok' : 'err') },
-        ok ? `✓ Ottimo! (${Math.round(best * 100)}%)`
-           : `✗ Ho capito «${transcripts[0] || '…'}» — riprova`));
+      if (best >= PASS) {
+        vibrate(30);
+        result.append(el('div', { class: 'feedback ok' }, `✓ Ottimo! (${Math.round(best * 100)}%)`));
+      } else if (best >= NEAR) {
+        vibrate(20);
+        result.append(el('div', { class: 'feedback', style: 'background:var(--paper);border:1.5px solid var(--accent);color:var(--accent-ink)' },
+          `~ Ci siamo quasi (${Math.round(best * 100)}%)` + (heard ? ` — ho sentito «${heard}»` : '')));
+      } else {
+        vibrate([60, 40, 60]);
+        result.append(el('div', { class: 'feedback err' },
+          heard ? `✗ Ho sentito «${heard}»` : '✗ Non ho sentito nulla di chiaro'));
+      }
+      if (best < PASS) {
+        result.append(el('p', { style: 'font-size:.8rem;color:var(--ink-soft);margin-top:8px;text-align:center' },
+          'Le parole corte sono difficili da riconoscere: riprova scandendo, o passa avanti — ' +
+          'il giudizio della macchina non è la verità.'));
+      }
     }
 
+    const isShort = card.hy.replace(/\s/g, '').length <= SHORT;
+
     if (m === 'scribe') {
+      face.append(el('p', { class: 'teach-note', style: 'margin-top:14px' },
+        isShort
+          ? 'Parola corta: pronunciala DUE VOLTE, con una breve pausa. Il riconoscimento è molto più affidabile.'
+          : 'Tocca il microfono e pronuncia la parola.'));
       const mic = el('button', { class: 'mic-btn', 'aria-label': 'Registra' }, '🎙️');
       let stopFn = null;
       let busy = false;
@@ -141,7 +162,9 @@ export function render(mount) {
     }
 
     holder.append(face, actions);
-    speak(card.hy);
+    // L'audio di riferimento non parte da solo in modalità microfono:
+    // finirebbe nella registrazione. Lo si ascolta col pulsante 🔊.
+    if (m === 'echo') speak(card.hy);
   }
 
   show();
