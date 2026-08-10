@@ -51,6 +51,12 @@ def collect_texts():
 
 
 VOWELS = {"ա", "ե", "է", "ը", "ի", "օ", "ու"}
+# Lettere il cui suono isolato il TTS sbaglia: si pronuncia una parola-àncora
+# che contiene la lettera col suono giusto (l'indice resta la lettera nuda).
+OVERRIDE = {
+    "ո": "ո՜, ո՜",      # [ɔ] isolato — evita la lettura "well"
+    "Ո": "ո՜, ո՜",
+}
 SPECIAL = {"ւ": "վը"}  # hyun: da sola non è pronunciabile, il suono è [v]
 
 def speak_variants(text):
@@ -58,6 +64,8 @@ def speak_variants(text):
     Le lettere singole spesso restituiscono audio vuoto: per le consonanti si
     aggiunge la vocale neutra ը (è la pronuncia didattica standard: b→bə),
     per le vocali si aggiunge il punto armeno ։ come contesto."""
+    if text in OVERRIDE:
+        return [OVERRIDE[text]]
     if len(text) == 1 or text == "ու":
         base = SPECIAL.get(text, text)
         if text in VOWELS:
