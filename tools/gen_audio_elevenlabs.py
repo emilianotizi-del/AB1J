@@ -54,8 +54,8 @@ VOWELS = {"ա", "ե", "է", "ը", "ի", "օ", "ու"}
 # Lettere il cui suono isolato il TTS sbaglia: si pronuncia una parola-àncora
 # che contiene la lettera col suono giusto (l'indice resta la lettera nuda).
 OVERRIDE = {
-    "ո": "ո՜, ո՜",      # [ɔ] isolato — evita la lettura "well"
-    "Ո": "ո՜, ո՜",
+    "ո": "ո, ո, ո։",   # [ɔ] isolato — evita la lettura "well"
+    "Ո": "ո, ո, ո։",
 }
 SPECIAL = {"ւ": "վը"}  # hyun: da sola non è pronunciabile, il suono è [v]
 
