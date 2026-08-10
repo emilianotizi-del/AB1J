@@ -75,13 +75,36 @@ def speak_variants(text):
         return [text, text + "։", text + ", " + text + "։"]
     return [text, text + "։"]
 
+def check_quota():
+    """Legge il credito residuo; un 4xx qui è quasi sempre quota esaurita."""
+    try:
+        req = urllib.request.Request(
+            "https://api.elevenlabs.io/v1/user/subscription",
+            headers={"xi-api-key": API_KEY})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            sub = json.load(r)
+        used = sub.get("character_count", 0)
+        cap = sub.get("character_limit", 0)
+        print(f"Credito ElevenLabs: {used}/{cap} caratteri usati questo ciclo.")
+        if cap and used >= cap:
+            sys.exit("QUOTA ESAURITA: il credito ElevenLabs del mese è finito. "
+                     "Si rinnova a inizio ciclo; riprova allora o aumenta il piano.")
+    except urllib.error.HTTPError as e:
+        print(f"Nota: impossibile leggere il credito (HTTP {e.code}).")
+
 def pick_voice():
     req = urllib.request.Request(
         "https://api.elevenlabs.io/v1/voices",
         headers={"xi-api-key": API_KEY},
     )
-    with urllib.request.urlopen(req, timeout=60) as r:
-        voices = json.load(r).get("voices", [])
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            voices = json.load(r).get("voices", [])
+    except urllib.error.HTTPError as e:
+        body = e.read()[:300].decode(errors="replace")
+        sys.exit(f"Elenco voci non accessibile (HTTP {e.code}): {body}\n"
+                 "Cause tipiche: quota esaurita, oppure chiave senza permesso 'Voices'. "
+                 "Imposta la variabile di repo ELEVENLABS_VOICE_ID per saltare questo passo.")
     if not voices:
         sys.exit("Nessuna voce disponibile nell'account ElevenLabs.")
     print("Voci disponibili:", ", ".join(f"{v['name']} ({v['voice_id']})" for v in voices[:8]))
@@ -149,6 +172,7 @@ def _tts_once(text, errs):
 
 def main():
     global VOICE_ID
+    check_quota()
     if not VOICE_ID:
         VOICE_ID = pick_voice()
     index = json.loads(IDX.read_text()) if IDX.exists() else {}
