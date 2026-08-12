@@ -1,7 +1,4 @@
 Nota: impossibile leggere il credito (HTTP 401).
-SALTATO: TTS senza audio per 'ո': eleven_v3: HTTP 402 {"detail":{"type":"payment_required","code":"paid_plan_required","message":"Free users cannot use library voices via the API. Please upgrade your subscription to use this voice.","status":"payment_required","request_id":"513affb1deb38a07ba34dc4ec09ee1b6"}} | eleven_v3: HTTP 402 {"detail":{"type":"payment_required","code":"paid_plan_required","message":"Free users cannot use library voices via the API. Please upgrade your subscription to use this voice.","status":"payment_required","request_id":"2ecfb7a1591606dfe86fe4fd63147d5a"}} | eleven_v3: HTTP 402 {"detail":{"type":"payment_required","code":"paid_plan_required","message":"Free users cannot use library voices via the API. Please upgrade your subscription to use this voice.","status":"payment_required","request_id":"ac6eeb9ccbfed6e7204b79f32f71a572"}} | eleven_v3: HTTP 402 {"detail":{"type":"payment_required","code":"paid_plan_required","message":"Free users cannot use library voices via the API. Please upgrade your subscription to use this voice.","status":"payment_required","request_id":"783d0971bb5cc0baafd2b5307eb8f6c9"}} | eleven_v3: HTTP 402 {"detail":{"type":"payment_required","code":"paid_plan_required","message":"Free users cannot use library voices via the API. Please upgrade your subscription to use this voice.","status":"payment_required","request_id":"80304ca536833c4619144585bb35db4c"}}
+w041.mp3 ← ո [eleven_v3] (10676 B)
 
-ATTENZIONE: 1 testi saltati (v3 non ha prodotto audio): ['ո']
-Verranno ritentati al prossimo run.
-
-0 tracce generate/aggiornate, 336 totali
+1 tracce generate/aggiornate, 336 totali
