@@ -1,3 +1,3 @@
 Nota: impossibile leggere il credito (HTTP 400).
-Elenco voci non accessibile (HTTP 400): {"detail":{"type":"authentication_error","code":"invalid_api_key","message":"API key ID used as API key - only valid API keys can be used. API keys start with 'sk_' and are shown when the key is created or rotated.","status":"api_key_id_used_as_api_key","request_id":"69d9c4d11c6ef532bc6171b3517ff3d5
+Elenco voci non accessibile (HTTP 400): {"detail":{"type":"authentication_error","code":"invalid_api_key","message":"API key ID used as API key - only valid API keys can be used. API keys start with 'sk_' and are shown when the key is created or rotated.","status":"api_key_id_used_as_api_key","request_id":"dbe916dda8f2c72acfd9c4c748c5079e
 Cause tipiche: quota esaurita, oppure chiave senza permesso 'Voices'. Imposta la variabile di repo ELEVENLABS_VOICE_ID per saltare questo passo.
