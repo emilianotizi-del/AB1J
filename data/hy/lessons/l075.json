@@ -1,0 +1,19 @@
+{
+  "id": "l075",
+  "title": "In quale luogo: il locativo -ում",
+  "vocab": [
+    { "hy": "քաղաքում", "tr": "k'aghak'um", "ipa": "[kʰɑʁɑˈkʰum]", "it": "in città" },
+    { "hy": "տանը", "tr": "tanə", "ipa": "[ˈtɑnə]", "it": "a casa, in casa" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "քաղաքում", "tr": "k'aghak'um", "ipa": "[kʰɑʁɑˈkʰum]", "it": "in città" }, "note": "Il locativo -ում = «dentro, in un luogo». Attenzione: è la stessa desinenza del participio presente (խմ-ում), ma qui è sui nomi." },
+    { "type": "teach", "kind": "word", "word": { "hy": "տանը", "tr": "tanə", "ipa": "[ˈtɑnə]", "it": "a casa" }, "note": "Irregolare importante: տուն non fa *տունում ma տանը (da usare così com'è). Ես տանն եմ = sono a casa." },
+    { "type": "cloze", "it": "vivo in città", "text": "Ես ___ եմ ապրում", "options": ["քաղաքում", "քաղաք", "քաղաքից"], "answer": "քաղաքում", "speakText": "Ես քաղաքում եմ ապրում" },
+    { "type": "teach", "kind": "word", "word": { "hy": "ապրել", "tr": "aprel", "ipa": "[ɑpˈɾɛl]", "it": "vivere, abitare" }, "note": "Որտե՞ղ ես ապրում = dove vivi?" },
+    { "type": "cloze", "it": "sono a casa", "text": "Ես ___ եմ", "options": ["տանն", "տունում", "տանից"], "answer": "տանն", "speakText": "Ես տանն եմ" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "քաղաքում", "answer": "քաղաքում", "it": "in città" },
+    { "type": "listen", "question": "Dove vive?", "speakText": "Ես Երևանում եմ ապրում", "it": "Vivo a Yerevan", "reveal": "Ես Երևանում եմ ապրում", "options": ["a Yerevan", "in Italia", "a casa"], "answer": "a Yerevan" },
+    { "type": "write", "prompt": "Traduci e scrivi: «dove vivi?»", "it": "dove vivi?", "answer": "Որտե՞ղ ես ապրում", "hint": "dove + vivi", "extra": true },
+    { "type": "mcq", "prompt": "«A Yerevan» (Երևան + um):", "options": ["Երևանում", "Երևանից", "Երևանով"], "answer": "Երևանում", "optionsAreHy": true, "extra": true }
+  ]
+}

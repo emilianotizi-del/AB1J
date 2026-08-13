@@ -1,0 +1,16 @@
+{
+  "id": "l077",
+  "title": "Verifica del modulo",
+  "vocab": [],
+  "steps": [
+    { "type": "cloze", "it": "sono dall'Italia", "text": "Ես ___ եմ", "options": ["Իտալիայից", "Իտալիայում", "Իտալիայով"], "answer": "Իտալիայից", "speakText": "Ես Իտալիայից եմ" },
+    { "type": "cloze", "it": "vado in macchina", "text": "___ եմ գնում", "options": ["Մեքենայով", "Մեքենայից", "Մեքենայում"], "answer": "Մեքենայով", "speakText": "Մեքենայով եմ գնում" },
+    { "type": "cloze", "it": "vivo in città", "text": "Ես ___ եմ ապրում", "options": ["քաղաքում", "քաղաքից", "քաղաքով"], "answer": "քաղաքում", "speakText": "Ես քաղաքում եմ ապրում" },
+    { "type": "mcq", "prompt": "Abbina il caso al senso — «da dove» è:", "options": ["-ից", "-ով", "-ում"], "answer": "-ից" },
+    { "type": "mcq", "prompt": "«con che cosa / mezzo» è:", "options": ["-ով", "-ից", "-ում"], "answer": "-ով" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "ոտքով", "answer": "ոտքով", "it": "a piedi" },
+    { "type": "listen", "question": "Di dove è e dove vive?", "speakText": "Ես Իտալիայից եմ, բայց Երևանում եմ ապրում", "it": "Sono dall'Italia ma vivo a Yerevan", "reveal": "Ես Իտալիայից եմ, բայց Երևանում եմ ապրում", "options": ["Italia → Yerevan", "Yerevan → Italia", "Roma → Roma"], "answer": "Italia → Yerevan" },
+    { "type": "write", "prompt": "Traduci e scrivi: «vivo a Yerevan»", "it": "vivo a Yerevan", "answer": "Ես Երևանում եմ ապրում", "hint": "io + a Yerevan + vivo", "extra": true },
+    { "type": "cloze", "it": "sono a casa", "text": "Ես ___ եմ", "options": ["տանն", "տանից", "տանով"], "answer": "տանն", "speakText": "Ես տանն եմ", "extra": true }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "l080",
+  "title": "Com'è fatta una persona",
+  "vocab": [
+    { "hy": "բարձր", "tr": "bardzr", "ipa": "[bɑɾd͡zɾ]", "it": "alto" },
+    { "hy": "ցածր", "tr": "ts'atsr", "ipa": "[t͡sʰɑt͡sɾ]", "it": "basso" },
+    { "hy": "երիտասարդ", "tr": "yeritasard", "ipa": "[jɛɾitɑˈsɑɾd]", "it": "giovane" },
+    { "hy": "գեղեցիկ", "tr": "geghets'ik", "ipa": "[ɡɛʁɛˈt͡sik]", "it": "bello" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "բարձր", "tr": "bardzr", "ipa": "[bɑɾd͡zɾ]", "it": "alto" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "ցածր", "tr": "ts'atsr", "ipa": "[t͡sʰɑt͡sɾ]", "it": "basso" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "երիտասարդ", "tr": "yeritasard", "ipa": "[jɛɾitɑˈsɑɾd]", "it": "giovane" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "գեղեցիկ", "tr": "geghets'ik", "ipa": "[ɡɛʁɛˈt͡sik]", "it": "bello" }, "note": "Vale per persone e cose: գեղեցիկ քաղաք = una bella città." },
+    { "type": "cloze", "it": "mia sorella è alta", "text": "Քույրս ___ է", "options": ["բարձր", "բարձրը", "բարձրով"], "answer": "բարձր", "speakText": "Քույրս բարձր է" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "գեղեցիկ", "answer": "գեղեցիկ", "it": "bello" },
+    { "type": "listen", "question": "Come la descrive?", "speakText": "Նա երիտասարդ է և գեղեցիկ", "it": "Lei è giovane e bella", "reveal": "Նա երիտասարդ է և գեղեցիկ", "options": ["giovane e bella", "alta e giovane", "bella e alta"], "answer": "giovane e bella" },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["բարձր", "alto"], ["ցածր", "basso"], ["երիտասարդ", "giovane"], ["գեղեցիկ", "bello"]] },
+    { "type": "write", "prompt": "Traduci e scrivi: «lei è bella»", "it": "lei è bella", "answer": "Նա գեղեցիկ է", "extra": true }
+  ]
+}

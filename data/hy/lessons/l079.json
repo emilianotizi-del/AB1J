@@ -1,0 +1,18 @@
+{
+  "id": "l079",
+  "title": "Il più di tutti: il superlativo",
+  "vocab": [
+    { "hy": "ամենամեծ", "tr": "amenamets", "ipa": "[ɑmɛnɑˈmɛt͡s]", "it": "il più grande" },
+    { "hy": "ամենալավ", "tr": "amenalav", "ipa": "[ɑmɛnɑˈlɑv]", "it": "il migliore" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "ամենամեծ", "tr": "amenamets", "ipa": "[ɑmɛnɑˈmɛt͡s]", "it": "il più grande" }, "note": "Il superlativo si forma col prefisso ամենա- attaccato all'aggettivo: ամենա + մեծ = il più grande." },
+    { "type": "teach", "kind": "word", "word": { "hy": "ամենալավ", "tr": "amenalav", "ipa": "[ɑmɛnɑˈlɑv]", "it": "il migliore" }, "note": "ամենա + լավ = il migliore. Հայաստանի ամենալավ սուրճը = il miglior caffè d'Armenia." },
+    { "type": "mcq", "prompt": "Applica la regola: «il più piccolo» (փոքր)?", "options": ["ամենափոքր", "ավելի փոքր", "փոքրամենա"], "answer": "ամենափոքր", "optionsAreHy": true },
+    { "type": "cloze", "it": "l'Aragats è la montagna più alta", "text": "Արագածը ___ լեռն է", "options": ["ամենաբարձր", "ավելի բարձր", "բարձր քան"], "answer": "ամենաբարձր", "speakText": "Արագածը ամենաբարձր լեռն է" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "ամենալավ", "answer": "ամենալավ", "it": "il migliore" },
+    { "type": "listen", "question": "Che cosa dice?", "speakText": "Սա ամենալավ սուրճն է", "it": "Questo è il miglior caffè", "reveal": "Սա ամենալավ սուրճն է", "options": ["il miglior caffè", "un buon caffè", "il caffè più caro"], "answer": "il miglior caffè" },
+    { "type": "cloze", "it": "il libro più interessante", "text": "___ հետաքրքիր գիրքը", "options": ["ամենա", "ավելի", "շատ"], "answer": "ամենա", "speakText": "ամենահետաքրքիր գիրքը", "extra": true },
+    { "type": "write", "prompt": "Traduci e scrivi: «il più grande»", "it": "il più grande", "answer": "ամենամեծ", "extra": true }
+  ]
+}

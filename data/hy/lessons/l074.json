@@ -1,0 +1,20 @@
+{
+  "id": "l074",
+  "title": "Con che cosa: lo strumentale -ով",
+  "vocab": [
+    { "hy": "մեքենայով", "tr": "mek'enayov", "ipa": "[mɛkʰɛnɑˈjɔv]", "it": "in macchina" },
+    { "hy": "ոտքով", "tr": "votk'ov", "ipa": "[vɔtˈkʰɔv]", "it": "a piedi" },
+    { "hy": "մեքենա", "tr": "mek'ena", "ipa": "[mɛkʰɛˈnɑ]", "it": "macchina" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "մեքենա", "tr": "mek'ena", "ipa": "[mɛkʰɛˈnɑ]", "it": "macchina, auto" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "մեքենայով", "tr": "mek'enayov", "ipa": "[mɛkʰɛnɑˈjɔv]", "it": "in macchina" }, "note": "Lo strumentale -ով = «con, per mezzo di». Mezzi di trasporto, strumenti: ավտոբուսով (in autobus), գրիչով (con la penna)." },
+    { "type": "teach", "kind": "word", "word": { "hy": "ոտքով", "tr": "votk'ov", "ipa": "[vɔtˈkʰɔv]", "it": "a piedi" }, "note": "Da ոտք (piede) + -ով: letteralmente «con i piedi»." },
+    { "type": "cloze", "it": "vado al lavoro in macchina", "text": "Աշխատանքի ___ եմ գնում", "options": ["մեքենայով", "մեքենա", "մեքենայի"], "answer": "մեքենայով", "speakText": "Աշխատանքի մեքենայով եմ գնում" },
+    { "type": "cloze", "it": "vado a scuola a piedi", "text": "Դպրոց ___ եմ գնում", "options": ["ոտքով", "ոտք", "ոտքի"], "answer": "ոտքով", "speakText": "Դպրոց ոտքով եմ գնում" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "մեքենայով", "answer": "մեքենայով", "it": "in macchina" },
+    { "type": "listen", "question": "Come si sposta?", "speakText": "Ես ոտքով եմ գնում", "it": "Vado a piedi", "reveal": "Ես ոտքով եմ գնում", "options": ["a piedi", "in macchina", "in autobus"], "answer": "a piedi" },
+    { "type": "mcq", "prompt": "«In autobus» (ավտոբուս + ov):", "options": ["ավտոբուսով", "ավտոբուսից", "ավտոբուսի"], "answer": "ավտոբուսով", "optionsAreHy": true, "extra": true },
+    { "type": "write", "prompt": "Traduci e scrivi: «a piedi»", "it": "a piedi", "answer": "ոտքով", "extra": true }
+  ]
+}

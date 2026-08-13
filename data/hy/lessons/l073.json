@@ -1,0 +1,19 @@
+{
+  "id": "l073",
+  "title": "Da dove: l'ablativo -ից",
+  "vocab": [
+    { "hy": "որտեղից", "tr": "vorteghits'", "ipa": "[vɔɾtɛˈʁit͡sʰ]", "it": "da dove" },
+    { "hy": "Իտալիայից", "tr": "Italiayits'", "ipa": "[itɑliɑˈjit͡sʰ]", "it": "dall'Italia" }
+  ],
+  "steps": [
+    { "type": "notice", "icon": "📍", "title": "Tre casi in un modulo", "text": "L'A1 ti ha dato genitivo (-ի) e dativo (-ին). Ora chiudiamo il sistema con tre casi che indicano DA DOVE (-ից), CON CHE COSA (-ով) e IN QUALE LUOGO (-ում). Una lezione per ciascuno." },
+    { "type": "teach", "kind": "word", "word": { "hy": "որտեղից", "tr": "vorteghits'", "ipa": "[vɔɾtɛˈʁit͡sʰ]", "it": "da dove" }, "note": "L'ablativo -ից = «da, provenienza». Որտեղի՞ց ես = di dove sei? (letteralmente «da dove sei»)." },
+    { "type": "teach", "kind": "word", "word": { "hy": "Իտալիայից", "tr": "Italiayits'", "ipa": "[itɑliɑˈjit͡sʰ]", "it": "dall'Italia" }, "note": "Իտալիա + -ից (con -յ- dopo vocale): Ես Իտալիայից եմ = sono dall'Italia." },
+    { "type": "cloze", "it": "di dove sei?", "text": "Որտեղի՞ց ___", "options": ["ես", "եմ", "է"], "answer": "ես", "speakText": "Որտեղի՞ց ես" },
+    { "type": "cloze", "it": "sono dall'Italia", "text": "Ես ___ եմ", "options": ["Իտալիայից", "Իտալիա", "Իտալիայի"], "answer": "Իտալիայից", "speakText": "Ես Իտալիայից եմ" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "որտեղից", "answer": "որտեղից", "it": "da dove" },
+    { "type": "listen", "question": "Che cosa chiede?", "speakText": "Որտեղի՞ց ես", "it": "Di dove sei?", "reveal": "Որտեղի՞ց ես", "options": ["di dove sei?", "dove sei?", "dove vai?"], "answer": "di dove sei?" },
+    { "type": "cloze", "it": "vengo da casa", "text": "Ես տ___ եմ գալիս", "options": ["անից", "ունից", "ան"], "answer": "անից", "speakText": "Ես տանից եմ գալիս", "extra": true },
+    { "type": "write", "prompt": "Traduci e scrivi: «dall'Italia»", "it": "dall'Italia", "answer": "Իտալիայից", "extra": true }
+  ]
+}

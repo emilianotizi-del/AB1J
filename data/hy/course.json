@@ -666,6 +666,90 @@
           "letters": []
         }
       ]
+    },
+    {
+      "id": "m16",
+      "title": "Tutti i casi",
+      "level": "A2",
+      "lessons": [
+        {
+          "id": "l073",
+          "title": "Da dove: l'ablativo -ից",
+          "subtitle": "Provenienza",
+          "glyph": "ից",
+          "letters": []
+        },
+        {
+          "id": "l074",
+          "title": "Con che cosa: lo strumentale -ով",
+          "subtitle": "Mezzi e strumenti",
+          "glyph": "ով",
+          "letters": []
+        },
+        {
+          "id": "l075",
+          "title": "In quale luogo: il locativo -ում",
+          "subtitle": "Stato in luogo",
+          "glyph": "ում",
+          "letters": []
+        },
+        {
+          "id": "l076",
+          "title": "Provenienza e presentazioni",
+          "subtitle": "Որտեղի՞ց ես",
+          "glyph": "🌍",
+          "letters": []
+        },
+        {
+          "id": "l077",
+          "title": "Verifica del modulo",
+          "subtitle": "Quiz del modulo",
+          "glyph": "✓",
+          "letters": []
+        }
+      ]
+    },
+    {
+      "id": "m17",
+      "title": "Comparativi e descrizioni",
+      "level": "A2",
+      "lessons": [
+        {
+          "id": "l078",
+          "title": "Più e meno: il comparativo",
+          "subtitle": "ավելի … քան",
+          "glyph": "⚖",
+          "letters": []
+        },
+        {
+          "id": "l079",
+          "title": "Il più di tutti: il superlativo",
+          "subtitle": "ամենա-",
+          "glyph": "🏆",
+          "letters": []
+        },
+        {
+          "id": "l080",
+          "title": "Com'è fatta una persona",
+          "subtitle": "Descrivere aspetto e età",
+          "glyph": "🧑",
+          "letters": []
+        },
+        {
+          "id": "l081",
+          "title": "Cultura: Yerevan la rosa",
+          "subtitle": "La città di tufo rosa",
+          "glyph": "🌸",
+          "letters": []
+        },
+        {
+          "id": "l082",
+          "title": "Verifica del modulo",
+          "subtitle": "Quiz del modulo",
+          "glyph": "✓",
+          "letters": []
+        }
+      ]
     }
   ]
 }
