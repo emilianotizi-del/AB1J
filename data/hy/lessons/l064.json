@@ -1,0 +1,27 @@
+{
+  "id": "l064",
+  "title": "Facevo, stavo facendo",
+  "vocab": [
+    { "hy": "էի", "tr": "ei", "ipa": "[ɛi]", "it": "ero" },
+    { "hy": "էիր", "tr": "eir", "ipa": "[ɛiɾ]", "it": "eri" },
+    { "hy": "էր", "tr": "er", "ipa": "[ɛɾ]", "it": "era" }
+  ],
+  "steps": [
+    { "type": "notice", "icon": "🔁", "title": "Due passati diversi", "text": "L'italiano distingue «ho fatto» (azione conclusa) da «facevo / stavo facendo» (azione in corso o abituale). L'armeno fa lo stesso: l'aoristo (l'hai visto: խմեցի) per il primo, l'IMPERFETTO per il secondo. Questo modulo insegna l'imperfetto." },
+    { "type": "teach", "kind": "word", "word": { "hy": "էի", "tr": "ei", "ipa": "[ɛi]", "it": "ero" }, "note": "Il verbo essere al passato: էի, էիր, էր, էինք, էիք, էին. La base di tutto l'imperfetto." },
+    { "type": "teach", "kind": "word", "word": { "hy": "խմում էի", "tr": "khmum ei", "ipa": "[χəˈmum ɛi]", "it": "bevevo / stavo bevendo" }, "note": "Formula: participio in -ում + essere al passato. Come il presente (խմում եմ), ma con եմ→էի." },
+    { "type": "conjugate", "prompt": "L'imperfetto di խմել: խմում + essere al passato", "stem": "խմում", "rows": [
+      { "label": "ես", "answer": "էի" },
+      { "label": "դու", "answer": "էիր" },
+      { "label": "նա", "answer": "էր" },
+      { "label": "մենք", "answer": "էինք" },
+      { "label": "դուք", "answer": "էիք" },
+      { "label": "նրանք", "answer": "էին" }
+    ]},
+    { "type": "cloze", "it": "da bambino bevevo molto latte", "text": "Երբ փոքր էի, շատ կաթ ___ խմում", "options": ["էի", "էիր", "եմ"], "answer": "էի", "speakText": "Երբ փոքր էի, շատ կաթ էի խմում" },
+    { "type": "listen", "question": "Aoristo o imperfetto? Ascolta", "speakText": "Ես հայերեն էի սովորում", "it": "Studiavo armeno (imperfetto)", "reveal": "Ես հայերեն էի սովորում", "options": ["studiavo (in corso)", "ho studiato (concluso)"], "answer": "studiavo (in corso)" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "խմում էի", "answer": "խմում էի", "it": "bevevo" },
+    { "type": "cloze", "it": "loro parlavano armeno", "text": "Նրանք հայերեն ___ խոսում", "options": ["էին", "էինք", "էիք"], "answer": "էին", "speakText": "Նրանք հայերեն էին խոսում", "extra": true },
+    { "type": "write", "prompt": "Traduci e scrivi: «ero»", "it": "ero", "answer": "էի", "extra": true }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "l068",
+  "title": "Verifica del modulo",
+  "vocab": [],
+  "steps": [
+    { "type": "conjugate", "prompt": "L'imperfetto di խոսել (խոսում + essere al passato)", "stem": "խոսում", "rows": [
+      { "label": "ես", "answer": "էի" },
+      { "label": "դու", "answer": "էիր" },
+      { "label": "նա", "answer": "էր" },
+      { "label": "մենք", "answer": "էինք" },
+      { "label": "դուք", "answer": "էիք" },
+      { "label": "նրանք", "answer": "էին" }
+    ]},
+    { "type": "listen", "question": "Aoristo o imperfetto?", "speakText": "Ես հայերեն էի սովորում", "it": "Studiavo armeno", "reveal": "Ես հայերեն էի սովորում", "options": ["studiavo (in corso)", "ho studiato (concluso)"], "answer": "studiavo (in corso)" },
+    { "type": "cloze", "it": "avevo un cane", "text": "Ես շուն ___", "options": ["ունեի", "ունեմ", "ունեին"], "answer": "ունեի", "speakText": "Ես շուն ունեի" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "անձրև", "answer": "անձրև", "it": "pioggia" },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["ամառ", "estate"], ["ձմեռ", "inverno"], ["եղանակ", "tempo"], ["լեռ", "montagna"]] },
+    { "type": "mcq", "prompt": "La capitale dell'Armenia:", "options": ["Երևան", "Արագած", "Հայաստան"], "answer": "Երևան", "optionsAreHy": true },
+    { "type": "write", "prompt": "Traduci e scrivi: «volevo»", "it": "volevo", "answer": "ուզում էի", "hint": "verbo volere all'imperfetto" },
+    { "type": "cloze", "it": "d'inverno c'era neve", "text": "Ձմռանը ձյուն ___", "options": ["էր", "է", "եմ"], "answer": "էր", "speakText": "Ձմռանը ձյուն էր", "extra": true },
+    { "type": "listen", "question": "Ascolta e verifica", "speakText": "Այսօր արև է", "it": "Oggi c'è il sole", "reveal": "Այսօր արև է", "extra": true }
+  ]
+}

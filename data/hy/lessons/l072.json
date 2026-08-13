@@ -1,0 +1,22 @@
+{
+  "id": "l072",
+  "title": "Verifica del modulo",
+  "vocab": [],
+  "steps": [
+    { "type": "conjugate", "prompt": "Il futuro di անել (fare)", "rows": [
+      { "label": "ես", "answer": "կանեմ" },
+      { "label": "դու", "answer": "կանես" },
+      { "label": "նա", "answer": "կանի" },
+      { "label": "մենք", "answer": "կանենք" },
+      { "label": "դուք", "answer": "կանեք" },
+      { "label": "նրանք", "answer": "կանեն" }
+    ]},
+    { "type": "cloze", "it": "la settimana prossima andrò a Yerevan", "text": "Մյուս շաբաթ Երևան ___", "options": ["կգնամ", "գնացի", "գնում եմ"], "answer": "կգնամ", "speakText": "Մյուս շաբաթ Երևան կգնամ" },
+    { "type": "listen", "question": "Presente, passato o futuro?", "speakText": "Վաղը ես կաշխատեմ", "it": "Domani lavorerò", "reveal": "Վաղը ես կաշխատեմ", "options": ["futuro", "presente", "passato"], "answer": "futuro" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "հանդիպում", "answer": "հանդիպում", "it": "appuntamento" },
+    { "type": "cloze", "it": "una mela rossa", "text": "___ խնձոր", "options": ["կարմիր", "կարմիրը", "կապույտ"], "answer": "կարմիր", "speakText": "կարմիր խնձոր" },
+    { "type": "match", "prompt": "Abbina colore e italiano", "pairs": [["կարմիր", "rosso"], ["սև", "nero"], ["սպիտակ", "bianco"], ["կապույտ", "blu"]] },
+    { "type": "write", "prompt": "Traduci e scrivi: «cosa farai domani?»", "it": "cosa farai domani?", "answer": "Վաղը ի՞նչ կանես", "hint": "domani + cosa + farai" },
+    { "type": "listen", "question": "Che cosa propone?", "speakText": "Սուրճ կխմե՞նք միասին", "it": "Prendiamo un caffè insieme?", "reveal": "Սուրճ կխմե՞նք միասին", "options": ["un caffè insieme", "andare a Yerevan", "un appuntamento di lavoro"], "answer": "un caffè insieme", "extra": true }
+  ]
+}

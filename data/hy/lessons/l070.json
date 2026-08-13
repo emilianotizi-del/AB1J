@@ -1,0 +1,25 @@
+{
+  "id": "l070",
+  "title": "Progetti e appuntamenti",
+  "vocab": [
+    { "hy": "հանդիպում", "tr": "handipum", "ipa": "[hɑndiˈpum]", "it": "incontro, appuntamento" },
+    { "hy": "շաբաթ", "tr": "shabat'", "ipa": "[ʃɑˈbɑtʰ]", "it": "settimana; sabato" },
+    { "hy": "մյուս", "tr": "myus", "ipa": "[mjus]", "it": "prossimo, altro" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "մյուս շաբաթ", "tr": "myus shabat'", "ipa": "[mjus ʃɑˈbɑtʰ]", "it": "la settimana prossima" }, "note": "մյուս = il prossimo/l'altro. Attenzione: շաբաթ è sia «sabato» sia «settimana», il contesto decide." },
+    { "type": "teach", "kind": "word", "word": { "hy": "հանդիպում", "tr": "handipum", "ipa": "[hɑndiˈpum]", "it": "incontro, appuntamento" }, "note": "Da հանդիպել (incontrarsi). Վաղը հանդիպում ունեմ = domani ho un appuntamento." },
+    { "type": "cloze", "it": "la settimana prossima andrò a Yerevan", "text": "Մյուս շաբաթ Երևան ___", "options": ["կգնամ", "գնացի", "գնում եմ"], "answer": "կգնամ", "speakText": "Մյուս շաբաթ Երևան կգնամ" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "հանդիպում", "answer": "հանդիպում", "it": "appuntamento" },
+    { "type": "dialog", "title": "Prendere un appuntamento", "lines": [
+      { "who": "A", "hy": "Վաղը ազա՞տ ես։", "tr": "vaghə aza՞t es", "ipa": "[ˈvɑʁə ɑˈzɑt ɛs]", "it": "Domani sei libero?" },
+      { "who": "B", "hy": "Այո։ Ի՞նչ ես ուզում։", "tr": "ayo. inch es uzum", "ipa": "[ɑˈjɔ int͡ʃʰ ɛs uˈzum]", "it": "Sì. Cosa vuoi?" },
+      { "who": "A", "hy": "Սուրճ կխմե՞նք միասին։", "tr": "surch kkhmenk' miasin", "ipa": "[suɾt͡ʃ kəχˈmɛnkʰ miɑˈsin]", "it": "Prendiamo un caffè insieme?" },
+      { "who": "B", "hy": "Հաճույքով։ Ժամը վեցին։", "tr": "hachuyk'ov. zhamə vets'in", "ipa": "[hɑt͡ʃuˈjkʰɔv ˈʒɑmə vɛˈt͡sʰin]", "it": "Volentieri. Alle sei." }
+    ]},
+    { "type": "mcq", "prompt": "A che ora si vedono?", "options": ["alle sei", "alle sette", "domani mattina"], "answer": "alle sei" },
+    { "type": "listen", "question": "Che cosa propone?", "speakText": "Սուրճ կխմե՞նք միասին", "it": "Prendiamo un caffè insieme?", "reveal": "Սուրճ կխմե՞նք միասին", "options": ["prendere un caffè insieme", "andare al lavoro", "vedersi la settimana prossima"], "answer": "prendere un caffè insieme" },
+    { "type": "write", "prompt": "Traduci e scrivi: «domani sei libero?»", "it": "domani sei libero?", "answer": "Վաղը ազատ ես", "hint": "domani + libero + sei", "extra": true },
+    { "type": "cloze", "it": "prenderemo un caffè insieme", "text": "Սուրճ ___ միասին", "options": ["կխմենք", "խմեցինք", "խմում ենք"], "answer": "կխմենք", "speakText": "Սուրճ կխմենք միասին", "extra": true }
+  ]
+}

@@ -559,7 +559,6 @@
       "id": "m13",
       "title": "Il passato, sul serio",
       "level": "A2",
-      "dev_unlock": true,
       "lessons": [
         {
           "id": "l060",
@@ -586,6 +585,83 @@
           "id": "l063",
           "title": "Verifica del modulo",
           "subtitle": "Quiz: passato, scrittura, ascolto",
+          "glyph": "✓",
+          "letters": []
+        }
+      ]
+    },
+    {
+      "id": "m14",
+      "title": "L'imperfetto",
+      "level": "A2",
+      "lessons": [
+        {
+          "id": "l064",
+          "title": "Facevo, stavo facendo",
+          "subtitle": "L'azione in corso nel passato",
+          "glyph": "էի",
+          "letters": []
+        },
+        {
+          "id": "l065",
+          "title": "Com'era: descrivere il passato",
+          "subtitle": "ունեի, գիտեի, ուզում էի",
+          "glyph": "🕰",
+          "letters": []
+        },
+        {
+          "id": "l066",
+          "title": "Il tempo e le stagioni",
+          "subtitle": "եղանակ, ամառ, ձմեռ",
+          "glyph": "🌦",
+          "letters": []
+        },
+        {
+          "id": "l067",
+          "title": "Cultura: la terra d'Armenia",
+          "subtitle": "Հայաստան, Երևան, Արագած",
+          "glyph": "🏔",
+          "letters": []
+        },
+        {
+          "id": "l068",
+          "title": "Verifica del modulo",
+          "subtitle": "Quiz del modulo",
+          "glyph": "✓",
+          "letters": []
+        }
+      ]
+    },
+    {
+      "id": "m15",
+      "title": "Il futuro",
+      "level": "A2",
+      "lessons": [
+        {
+          "id": "l069",
+          "title": "Domani: il futuro",
+          "subtitle": "La կ- del futuro",
+          "glyph": "կ",
+          "letters": []
+        },
+        {
+          "id": "l070",
+          "title": "Progetti e appuntamenti",
+          "subtitle": "Prendere un appuntamento",
+          "glyph": "📅",
+          "letters": []
+        },
+        {
+          "id": "l071",
+          "title": "Vestiti e colori",
+          "subtitle": "կարմիր, սև, սպիտակ, կապույտ",
+          "glyph": "🎨",
+          "letters": []
+        },
+        {
+          "id": "l072",
+          "title": "Verifica del modulo",
+          "subtitle": "Quiz del modulo",
           "glyph": "✓",
           "letters": []
         }

@@ -1,0 +1,20 @@
+{
+  "id": "l065",
+  "title": "Com'era: descrivere il passato",
+  "vocab": [
+    { "hy": "ուզում էի", "tr": "uzum ei", "ipa": "[uˈzum ɛi]", "it": "volevo" },
+    { "hy": "գիտեի", "tr": "gitei", "ipa": "[ɡiˈtɛi]", "it": "sapevo" },
+    { "hy": "ունեի", "tr": "unei", "ipa": "[uˈnɛi]", "it": "avevo" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "ունեի", "tr": "unei", "ipa": "[uˈnɛi]", "it": "avevo" }, "note": "I verbi speciali ունեմ e գիտեմ (senza -ում) all'imperfetto attaccano direttamente: ունեի, գիտեի." },
+    { "type": "teach", "kind": "word", "word": { "hy": "գիտեի", "tr": "gitei", "ipa": "[ɡiˈtɛi]", "it": "sapevo" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "ուզում էի", "tr": "uzum ei", "ipa": "[uˈzum ɛi]", "it": "volevo" }, "note": "Utilissimo per la cortesia: Ես ուզում էի... = «vorrei...» (più gentile del presente)." },
+    { "type": "cloze", "it": "avevo un cane", "text": "Ես շուն ___", "options": ["ունեի", "ունեմ", "ունեիր"], "answer": "ունեի", "speakText": "Ես շուն ունեի" },
+    { "type": "cloze", "it": "non sapevo", "text": "Ես չ___", "options": ["գիտեի", "գիտեմ", "ունեի"], "answer": "գիտեի", "speakText": "Ես չգիտեի" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "ուզում էի", "answer": "ուզում էի", "it": "volevo" },
+    { "type": "listen", "question": "Che cosa significa?", "speakText": "Ես ուզում էի սուրճ", "it": "Volevo un caffè", "reveal": "Ես ուզում էի սուրճ", "options": ["volevo un caffè", "voglio un caffè", "ho voluto un caffè"], "answer": "volevo un caffè" },
+    { "type": "cloze", "it": "sapevo l'armeno", "text": "Ես հայերեն ___", "options": ["գիտեի", "գիտեմ", "գիտեիր"], "answer": "գիտեի", "speakText": "Ես հայերեն գիտեի", "extra": true },
+    { "type": "write", "prompt": "Traduci e scrivi: «avevo»", "it": "avevo", "answer": "ունեի", "extra": true }
+  ]
+}

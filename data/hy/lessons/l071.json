@@ -1,0 +1,23 @@
+{
+  "id": "l071",
+  "title": "Vestiti e colori",
+  "vocab": [
+    { "hy": "հագուստ", "tr": "hagust", "ipa": "[hɑˈɡust]", "it": "vestito, abbigliamento" },
+    { "hy": "կարմիր", "tr": "karmir", "ipa": "[kɑɾˈmiɾ]", "it": "rosso" },
+    { "hy": "սև", "tr": "sev", "ipa": "[sɛv]", "it": "nero" },
+    { "hy": "սպիտակ", "tr": "spitak", "ipa": "[spiˈtɑk]", "it": "bianco" },
+    { "hy": "կապույտ", "tr": "kapuyt", "ipa": "[kɑˈpujt]", "it": "blu" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "կարմիր", "tr": "karmir", "ipa": "[kɑɾˈmiɾ]", "it": "rosso" }, "note": "Il colore del melograno (նուռ), simbolo d'Armenia. L'aggettivo va PRIMA del nome: կարմիր խնձոր = mela rossa." },
+    { "type": "teach", "kind": "word", "word": { "hy": "սև", "tr": "sev", "ipa": "[sɛv]", "it": "nero" }, "note": "Come nel Mar Nero, Սև ծով." },
+    { "type": "teach", "kind": "word", "word": { "hy": "սպիտակ", "tr": "spitak", "ipa": "[spiˈtɑk]", "it": "bianco" }, "note": "È anche il nome di una città armena." },
+    { "type": "teach", "kind": "word", "word": { "hy": "կապույտ", "tr": "kapuyt", "ipa": "[kɑˈpujt]", "it": "blu" }, "extra": true },
+    { "type": "teach", "kind": "word", "word": { "hy": "հագուստ", "tr": "hagust", "ipa": "[hɑˈɡust]", "it": "vestito, abbigliamento" } },
+    { "type": "cloze", "it": "una mela rossa", "text": "___ խնձոր", "options": ["կարմիր", "կարմիրը", "խնձոր կարմիր"], "answer": "կարմիր", "speakText": "կարմիր խնձոր" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "սպիտակ", "answer": "սպիտակ", "it": "bianco" },
+    { "type": "listen", "question": "Che colore senti?", "speakText": "կապույտ", "it": "blu", "reveal": "կապույտ", "options": ["blu", "rosso", "nero"], "answer": "blu" },
+    { "type": "match", "prompt": "Abbina colore e italiano", "pairs": [["կարմիր", "rosso"], ["սև", "nero"], ["սպիտակ", "bianco"], ["կապույտ", "blu"]] },
+    { "type": "write", "prompt": "Traduci e scrivi: «rosso»", "it": "rosso", "answer": "կարմիր", "extra": true }
+  ]
+}

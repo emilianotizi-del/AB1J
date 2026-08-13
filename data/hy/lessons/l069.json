@@ -1,0 +1,26 @@
+{
+  "id": "l069",
+  "title": "Domani: il futuro",
+  "vocab": [
+    { "hy": "կգնամ", "tr": "kgnam", "ipa": "[kəɡˈnɑm]", "it": "andrò" },
+    { "hy": "կանեմ", "tr": "kanem", "ipa": "[kɑˈnɛm]", "it": "farò" }
+  ],
+  "steps": [
+    { "type": "notice", "icon": "▶️", "title": "Il futuro in una lettera", "text": "Il futuro armeno si forma con una sola aggiunta: la կ- davanti al verbo. Semplice e regolare. Questo modulo te lo insegna con i progetti e gli appuntamenti." },
+    { "type": "teach", "kind": "word", "word": { "hy": "կգնամ", "tr": "kgnam", "ipa": "[kəɡˈnɑm]", "it": "andrò" }, "note": "կ- + una forma del verbo: կգնամ (andrò), կգնաս (andrai), կգնա (andrà). Vaghə es inch kanes? = domani cosa farai?" },
+    { "type": "teach", "kind": "word", "word": { "hy": "կանեմ", "tr": "kanem", "ipa": "[kɑˈnɛm]", "it": "farò" } },
+    { "type": "conjugate", "prompt": "Il futuro di գնալ (andare)", "rows": [
+      { "label": "ես", "answer": "կգնամ" },
+      { "label": "դու", "answer": "կգնաս" },
+      { "label": "նա", "answer": "կգնա" },
+      { "label": "մենք", "answer": "կգնանք" },
+      { "label": "դուք", "answer": "կգնաք" },
+      { "label": "նրանք", "answer": "կգնան" }
+    ]},
+    { "type": "cloze", "it": "domani andrò al mercato", "text": "Վաղը շուկա ___", "options": ["կգնամ", "գնացի", "գնում եմ"], "answer": "կգնամ", "speakText": "Վաղը շուկա կգնամ" },
+    { "type": "listen", "question": "Presente, passato o futuro?", "speakText": "Վաղը ես կաշխատեմ", "it": "Domani lavorerò", "reveal": "Վաղը ես կաշխատեմ", "options": ["futuro (lavorerò)", "presente (lavoro)", "passato (lavoravo)"], "answer": "futuro (lavorerò)" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "կանեմ", "answer": "կանեմ", "it": "farò" },
+    { "type": "cloze", "it": "cosa farai domani?", "text": "Վաղը ի՞նչ ___", "options": ["կանես", "կանեմ", "արեցիր"], "answer": "կանես", "speakText": "Վաղը ի՞նչ կանես", "extra": true },
+    { "type": "write", "prompt": "Traduci e scrivi: «andrò»", "it": "andrò", "answer": "կգնամ", "extra": true }
+  ]
+}

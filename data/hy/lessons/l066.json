@@ -1,0 +1,25 @@
+{
+  "id": "l066",
+  "title": "Il tempo e le stagioni",
+  "vocab": [
+    { "hy": "եղանակ", "tr": "yeghanak", "ipa": "[jɛʁɑˈnɑk]", "it": "tempo (meteo)" },
+    { "hy": "անձրև", "tr": "andzrev", "ipa": "[ɑnˈd͡zɾɛv]", "it": "pioggia" },
+    { "hy": "ձյուն", "tr": "dzyun", "ipa": "[d͡zjun]", "it": "neve" },
+    { "hy": "արև", "tr": "arev", "ipa": "[ɑˈɾɛv]", "it": "sole" },
+    { "hy": "ամառ", "tr": "amaṙ", "ipa": "[ɑˈmɑr]", "it": "estate" },
+    { "hy": "ձմեռ", "tr": "dzmeṙ", "ipa": "[d͡zəˈmɛr]", "it": "inverno" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "եղանակ", "tr": "yeghanak", "ipa": "[jɛʁɑˈnɑk]", "it": "tempo (meteo)" }, "note": "Ի՞նչ եղանակ է = che tempo fa?" },
+    { "type": "teach", "kind": "word", "word": { "hy": "անձրև", "tr": "andzrev", "ipa": "[ɑnˈd͡zɾɛv]", "it": "pioggia" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "արև", "tr": "arev", "ipa": "[ɑˈɾɛv]", "it": "sole" }, "note": "La stessa radice di արևմուտք (ovest, «dove cala il sole») — ma anche il nome più diffuso in Armenia." },
+    { "type": "teach", "kind": "word", "word": { "hy": "ամառ", "tr": "amaṙ", "ipa": "[ɑˈmɑr]", "it": "estate" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "ձմեռ", "tr": "dzmeṙ", "ipa": "[d͡zəˈmɛr]", "it": "inverno" }, "note": "Da qui Ձմեռ պապ = «Nonno Inverno», il Babbo Natale armeno." },
+    { "type": "teach", "kind": "word", "word": { "hy": "ձյուն", "tr": "dzyun", "ipa": "[d͡zjun]", "it": "neve" }, "extra": true },
+    { "type": "cloze", "it": "d'inverno nevicava... (c'era neve)", "text": "Ձմռանը ձյուն ___", "options": ["էր", "է", "եմ"], "answer": "էր", "speakText": "Ձմռանը ձյուն էր" },
+    { "type": "listen", "question": "Che tempo descrive?", "speakText": "Այսօր արև է", "it": "Oggi c'è il sole", "reveal": "Այսօր արև է", "options": ["c'è il sole", "piove", "nevica"], "answer": "c'è il sole" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "անձրև", "answer": "անձրև", "it": "pioggia" },
+    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["ամառ", "estate"], ["ձմեռ", "inverno"], ["արև", "sole"], ["ձյուն", "neve"]] },
+    { "type": "mcq", "prompt": "«Che tempo fa?»", "options": ["Ի՞նչ եղանակ է", "Ի՞նչ ես անում", "Ո՞ր եղանակ"], "answer": "Ի՞նչ եղանակ է", "optionsAreHy": true, "extra": true }
+  ]
+}
