@@ -1,0 +1,18 @@
+{
+  "id": "l083",
+  "title": "Che: la parola որ",
+  "vocab": [
+    { "hy": "որ", "tr": "vor", "ipa": "[vɔɾ]", "it": "che" },
+    { "hy": "կարծում եմ", "tr": "kartsum em", "ipa": "[kɑɾˈt͡sum ɛm]", "it": "penso" }
+  ],
+  "steps": [
+    { "type": "notice", "icon": "🔗", "title": "Frasi che si legano", "text": "Finora hai fatto frasi singole. Questo modulo insegna a UNIRLE: որ (che), որովհետև (perché), եթե (se), բայց (ma). È il salto che trasforma parole in discorso." },
+    { "type": "teach", "kind": "word", "word": { "hy": "կարծում եմ", "tr": "kartsum em", "ipa": "[kɑɾˈt͡sum ɛm]", "it": "penso, credo" }, "note": "Da կարծել (pensare). Introduce un'opinione: Կարծում եմ, որ… = penso che…" },
+    { "type": "teach", "kind": "word", "word": { "hy": "որ", "tr": "vor", "ipa": "[vɔɾ]", "it": "che (congiunzione)" }, "note": "Lega due frasi. In armeno di solito c'è una virgola prima di որ: Կարծում եմ, որ նա լավ է = penso che lui stia bene." },
+    { "type": "cloze", "it": "penso che lui stia bene", "text": "Կարծում եմ, ___ նա լավ է", "options": ["որ", "և", "բայց"], "answer": "որ", "speakText": "Կարծում եմ, որ նա լավ է" },
+    { "type": "cloze", "it": "so che vivi a Yerevan", "text": "Գիտեմ, ___ Երևանում ես ապրում", "options": ["որ", "քան", "եթե"], "answer": "որ", "speakText": "Գիտեմ, որ Երևանում ես ապրում" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "կարծում եմ", "answer": "կարծում եմ", "it": "penso" },
+    { "type": "listen", "question": "Che cosa dice?", "speakText": "Կարծում եմ, որ վաղը անձրև կգա", "it": "Penso che domani pioverà", "reveal": "Կարծում եմ, որ վաղը անձրև կգա", "options": ["penso che domani pioverà", "domani non piove", "ieri è piovuto"], "answer": "penso che domani pioverà" },
+    { "type": "write", "prompt": "Traduci e scrivi: «penso che»", "it": "penso che", "answer": "կարծում եմ, որ", "extra": true }
+  ]
+}

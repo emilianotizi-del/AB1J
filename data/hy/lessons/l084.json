@@ -1,0 +1,21 @@
+{
+  "id": "l084",
+  "title": "Perché, ma, se",
+  "vocab": [
+    { "hy": "որովհետև", "tr": "vorovhetev", "ipa": "[vɔɾɔvhɛˈtɛv]", "it": "perché" },
+    { "hy": "բայց", "tr": "bayts'", "ipa": "[bɑjt͡sʰ]", "it": "ma" },
+    { "hy": "եթե", "tr": "yet'e", "ipa": "[jɛˈtʰɛ]", "it": "se" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "որովհետև", "tr": "vorovhetev", "ipa": "[vɔɾɔvhɛˈtɛv]", "it": "perché" }, "note": "Risponde a Ինչու՞ (perché?). Դպրոց չգնացի, որովհետև հիվանդ էի = non sono andato a scuola perché ero malato." },
+    { "type": "teach", "kind": "word", "word": { "hy": "բայց", "tr": "bayts'", "ipa": "[bɑjt͡sʰ]", "it": "ma" }, "note": "L'hai già incontrato: Իտալիայից եմ, բայց Երևանում եմ ապրում." },
+    { "type": "teach", "kind": "word", "word": { "hy": "եթե", "tr": "yet'e", "ipa": "[jɛˈtʰɛ]", "it": "se" }, "note": "Introduce una condizione: Եթե անձրև գա, տանը կմնամ = se piove, resterò a casa." },
+    { "type": "cloze", "it": "voglio dormire perché sono stanco", "text": "Ուզում եմ քնել, ___ հոգնած եմ", "options": ["որովհետև", "բայց", "եթե"], "answer": "որովհետև", "speakText": "Ուզում եմ քնել, որովհետև հոգնած եմ" },
+    { "type": "cloze", "it": "voglio venire, ma non posso", "text": "Ուզում եմ գալ, ___ չեմ կարող", "options": ["բայց", "որ", "եթե"], "answer": "բայց", "speakText": "Ուզում եմ գալ, բայց չեմ կարող" },
+    { "type": "cloze", "it": "se piove, resto a casa", "text": "___ անձրև գա, տանը կմնամ", "options": ["Եթե", "Որ", "Բայց"], "answer": "Եթե", "speakText": "Եթե անձրև գա, տանը կմնամ" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "որովհետև", "answer": "որովհետև", "it": "perché" },
+    { "type": "listen", "question": "Quale connettivo senti?", "speakText": "Ուզում եմ գալ, բայց չեմ կարող", "it": "Voglio venire, ma non posso", "reveal": "Ուզում եմ գալ, բայց չեմ կարող", "options": ["ma (bayts')", "perché", "se"], "answer": "ma (bayts')" },
+    { "type": "write", "prompt": "Traduci e scrivi: «se»", "it": "se", "answer": "եթե", "extra": true },
+    { "type": "teach", "kind": "word", "word": { "hy": "հոգնած", "tr": "hognats", "ipa": "[hɔɡˈnɑt͡s]", "it": "stanco" }, "extra": true }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "l085",
+  "title": "Lavoro e studio",
+  "vocab": [
+    { "hy": "աշխատանք", "tr": "ashkhatank'", "ipa": "[ɑʃχɑˈtɑnkʰ]", "it": "lavoro" },
+    { "hy": "համալսարան", "tr": "hamalsaran", "ipa": "[hɑmɑlsɑˈɾɑn]", "it": "università" },
+    { "hy": "սովորել", "tr": "sovorel", "ipa": "[sɔvɔˈɾɛl]", "it": "studiare, imparare" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "աշխատանք", "tr": "ashkhatank'", "ipa": "[ɑʃχɑˈtɑnkʰ]", "it": "lavoro" }, "note": "Da աշխատել (lavorare). Աշխատանքի եմ գնում = vado al lavoro." },
+    { "type": "teach", "kind": "word", "word": { "hy": "համալսարան", "tr": "hamalsaran", "ipa": "[hɑmɑlsɑˈɾɑn]", "it": "università" } },
+    { "type": "dialog", "title": "Di cosa ti occupi?", "lines": [
+      { "who": "A", "hy": "Որտե՞ղ ես աշխատում։", "tr": "vortegh es ashkhatum", "ipa": "[vɔɾˈtɛʁ ɛs ɑʃχɑˈtum]", "it": "Dove lavori?" },
+      { "who": "B", "hy": "Չեմ աշխատում, ուսանող եմ։", "tr": "chem ashkhatum, usanogh em", "ipa": "[t͡ʃʰɛm ɑʃχɑˈtum usɑˈnɔʁ ɛm]", "it": "Non lavoro, sono studente." },
+      { "who": "A", "hy": "Ի՞նչ ես սովորում։", "tr": "inch es sovorum", "ipa": "[int͡ʃʰ ɛs sɔvɔˈɾum]", "it": "Cosa studi?" },
+      { "who": "B", "hy": "Բժշկություն, որովհետև ուզում եմ բժիշկ դառնալ։", "tr": "bzhshkut'yun, vorovhetev uzum em bzhishk daṙnal", "ipa": "[bəʒʃkutʰˈjun vɔɾɔvhɛˈtɛv uˈzum ɛm bəˈʒiʃk dɑrˈnɑl]", "it": "Medicina, perché voglio diventare medico." }
+    ]},
+    { "type": "mcq", "prompt": "Cosa fa B?", "options": ["studia medicina", "lavora come medico", "insegna all'università"], "answer": "studia medicina" },
+    { "type": "mcq", "prompt": "Perché studia medicina?", "options": ["vuole diventare medico", "perché è facile", "per i genitori"], "answer": "vuole diventare medico" },
+    { "type": "listen", "question": "Ascolta e verifica", "speakText": "Չեմ աշխատում, ուսանող եմ", "it": "Non lavoro, sono studente", "reveal": "Չեմ աշխատում, ուսանող եմ" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "աշխատանք", "answer": "աշխատանք", "it": "lavoro" },
+    { "type": "teach", "kind": "word", "word": { "hy": "ուսանող", "tr": "usanogh", "ipa": "[usɑˈnɔʁ]", "it": "studente" }, "extra": true },
+    { "type": "write", "prompt": "Traduci e scrivi: «dove lavori?»", "it": "dove lavori?", "answer": "Որտե՞ղ ես աշխատում", "extra": true }
+  ]
+}

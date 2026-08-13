@@ -1,0 +1,15 @@
+{
+  "id": "l093",
+  "title": "Ripasso: casi e frasi",
+  "vocab": [],
+  "steps": [
+    { "type": "cloze", "it": "sono dall'Italia", "text": "Ես ___ եմ", "options": ["Իտալիայից", "Իտալիայում", "Իտալիայով"], "answer": "Իտալիայից", "speakText": "Ես Իտալիայից եմ" },
+    { "type": "cloze", "it": "vado in macchina", "text": "___ եմ գնում", "options": ["Մեքենայով", "Մեքենայից", "Մեքենայում"], "answer": "Մեքենայով", "speakText": "Մեքենայով եմ գնում" },
+    { "type": "cloze", "it": "vivo a Yerevan", "text": "Ես ___ եմ ապրում", "options": ["Երևանում", "Երևանից", "Երևանով"], "answer": "Երևանում", "speakText": "Ես Երևանում եմ ապրում" },
+    { "type": "cloze", "it": "penso che domani pioverà", "text": "Կարծում եմ, ___ վաղը անձրև կգա", "options": ["որ", "որովհետև", "եթե"], "answer": "որ", "speakText": "Կարծում եմ, որ վաղը անձրև կգա" },
+    { "type": "cloze", "it": "voglio venire ma non posso", "text": "Ուզում եմ գալ, ___ չեմ կարող", "options": ["բայց", "որ", "եթե"], "answer": "բայց", "speakText": "Ուզում եմ գալ, բայց չեմ կարող" },
+    { "type": "listen", "question": "Ascolta e verifica", "speakText": "Եթե անձրև գա, տանը կմնամ", "it": "Se piove, resterò a casa", "reveal": "Եթե անձրև գա, տանը կմնամ" },
+    { "type": "write", "prompt": "Traduci e scrivi: «vivo a Yerevan»", "it": "vivo a Yerevan", "answer": "Ես Երևանում եմ ապրում", "hint": "io + a Yerevan + vivo" },
+    { "type": "cloze", "it": "Yerevan è più grande di Gyumri", "text": "Երևանը ավելի մեծ է ___ Գյումրին", "options": ["քան", "ավելի", "ամենա"], "answer": "քան", "speakText": "Երևանը ավելի մեծ է քան Գյումրին" }
+  ]
+}

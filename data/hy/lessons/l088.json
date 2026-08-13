@@ -1,0 +1,18 @@
+{
+  "id": "l088",
+  "title": "Ordini: fai, non fare",
+  "vocab": [
+    { "hy": "մի՛", "tr": "mi", "ipa": "[mi]", "it": "non (imperativo)" },
+    { "hy": "գնացե՛ք", "tr": "gnats'ek'", "ipa": "[ɡənɑˈt͡sʰɛkʰ]", "it": "andate!" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "գնացե՛ք", "tr": "gnats'ek'", "ipa": "[ɡənɑˈt͡sʰɛkʰ]", "it": "andate! (plurale/formale)" }, "note": "L'imperativo plurale aggiunge -ք: գնա՛ (vai) → գնացե՛ք (andate). Si usa anche col «Lei» di cortesia." },
+    { "type": "teach", "kind": "word", "word": { "hy": "մի՛", "tr": "mi", "ipa": "[mi]", "it": "non (per i divieti)" }, "note": "Il divieto: մի՛ + imperativo. Մի՛ գնա = non andare! Մի՛ խոսիր = non parlare!" },
+    { "type": "cloze", "it": "non andare!", "text": "___ գնա", "options": ["Մի՛", "Չ", "Ոչ"], "answer": "Մի՛", "speakText": "Մի՛ գնա" },
+    { "type": "mcq", "prompt": "«Venite!» (plurale di արի՛):", "options": ["եկե՛ք", "արի՛ք", "գնացե՛ք"], "answer": "եկե՛ք", "optionsAreHy": true },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "մի՛ գնա", "answer": "մի՛ գնա", "it": "non andare" },
+    { "type": "listen", "question": "Ordine o divieto?", "speakText": "Մի՛ խոսիր", "it": "Non parlare!", "reveal": "Մի՛ խոսիր", "options": ["divieto (non parlare)", "ordine (parla)", "domanda"], "answer": "divieto (non parlare)" },
+    { "type": "cloze", "it": "venite qui!", "text": "___ այստեղ", "options": ["Եկե՛ք", "Արի՛", "Գնացե՛ք"], "answer": "Եկե՛ք", "speakText": "Եկե՛ք այստեղ", "extra": true },
+    { "type": "write", "prompt": "Traduci e scrivi: «non parlare!»", "it": "non parlare!", "answer": "մի՛ խոսիր", "extra": true }
+  ]
+}

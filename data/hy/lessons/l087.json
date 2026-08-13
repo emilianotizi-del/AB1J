@@ -1,0 +1,23 @@
+{
+  "id": "l087",
+  "title": "Al telefono",
+  "vocab": [
+    { "hy": "ալո", "tr": "alo", "ipa": "[ɑˈlɔ]", "it": "pronto (al telefono)" },
+    { "hy": "զանգել", "tr": "zangel", "ipa": "[zɑnˈɡɛl]", "it": "chiamare, telefonare" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "ալո", "tr": "alo", "ipa": "[ɑˈlɔ]", "it": "pronto (al telefono)" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "զանգել", "tr": "zangel", "ipa": "[zɑnˈɡɛl]", "it": "chiamare, telefonare" }, "note": "Վաղը կզանգեմ = domani (ti) chiamerò." },
+    { "type": "dialog", "title": "Una telefonata", "lines": [
+      { "who": "A", "hy": "Ալո, բարև։ Դավիթը տա՞նն է։", "tr": "alo, barev. Davit'ə ta՞nn e", "ipa": "[ɑˈlɔ bɑˈɾɛv dɑˈvitʰə tɑnn ɛ]", "it": "Pronto, ciao! Davide è a casa?" },
+      { "who": "B", "hy": "Ոչ, նա աշխատանքի է։", "tr": "voch, na ashkhatank'i e", "ipa": "[vɔt͡ʃʰ nɑ ɑʃχɑˈtɑnkʰi ɛ]", "it": "No, è al lavoro." },
+      { "who": "A", "hy": "Ե՞րբ կգա։", "tr": "ye՞rb kga", "ipa": "[jɛɾb kəˈɡɑ]", "it": "Quando torna?" },
+      { "who": "B", "hy": "Երեկոյան։ Կզանգե՞ս նորից։", "tr": "yerekoyan. kzange՞s norits'", "ipa": "[jɛɾɛkɔˈjɑn kəzɑnˈɡɛs nɔˈɾit͡sʰ]", "it": "Stasera. Richiami più tardi?" }
+    ]},
+    { "type": "teach", "kind": "word", "word": { "hy": "երբ", "tr": "yerb", "ipa": "[jɛɾb]", "it": "quando" }, "note": "Ե՞րբ = quando? (domanda). Come parola non interrogativa lega frasi: quando... allora." },
+    { "type": "mcq", "prompt": "Dov'è Davide?", "options": ["al lavoro", "a casa", "a scuola"], "answer": "al lavoro" },
+    { "type": "listen", "question": "Che cosa chiede?", "speakText": "Ե՞րբ կգա", "it": "Quando torna?", "reveal": "Ե՞րբ կգա", "options": ["quando torna?", "dove va?", "chi è?"], "answer": "quando torna?" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "զանգել", "answer": "զանգել", "it": "chiamare" },
+    { "type": "write", "prompt": "Traduci e scrivi: «quando torna?»", "it": "quando torna?", "answer": "Ե՞րբ կգա", "extra": true }
+  ]
+}

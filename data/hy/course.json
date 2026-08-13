@@ -750,6 +750,111 @@
           "letters": []
         }
       ]
+    },
+    {
+      "id": "m18",
+      "title": "Connettivi e frasi complesse",
+      "level": "A2",
+      "lessons": [
+        {
+          "id": "l083",
+          "title": "Che: la parola որ",
+          "subtitle": "Legare le frasi",
+          "glyph": "որ",
+          "letters": []
+        },
+        {
+          "id": "l084",
+          "title": "Perché, ma, se",
+          "subtitle": "որովհետև · բայց · եթե",
+          "glyph": "🔗",
+          "letters": []
+        },
+        {
+          "id": "l085",
+          "title": "Lavoro e studio",
+          "subtitle": "Աշխատանք, համալսարան",
+          "glyph": "💼",
+          "letters": []
+        },
+        {
+          "id": "l086",
+          "title": "Verifica del modulo",
+          "subtitle": "Quiz del modulo",
+          "glyph": "✓",
+          "letters": []
+        }
+      ]
+    },
+    {
+      "id": "m19",
+      "title": "Vita pratica",
+      "level": "A2",
+      "lessons": [
+        {
+          "id": "l087",
+          "title": "Al telefono",
+          "subtitle": "Ալո, զանգել",
+          "glyph": "📞",
+          "letters": []
+        },
+        {
+          "id": "l088",
+          "title": "Ordini: fai, non fare",
+          "subtitle": "Imperativo plurale e divieto մի՛",
+          "glyph": "✋",
+          "letters": []
+        },
+        {
+          "id": "l089",
+          "title": "Dal medico",
+          "subtitle": "Ցավ, հիվանդ, գլուխ",
+          "glyph": "⚕",
+          "letters": []
+        },
+        {
+          "id": "l090",
+          "title": "Cultura: ospiti e tavola",
+          "subtitle": "Հյուր, կենաց, թամադա",
+          "glyph": "🍷",
+          "letters": []
+        },
+        {
+          "id": "l091",
+          "title": "Verifica del modulo",
+          "subtitle": "Quiz del modulo",
+          "glyph": "✓",
+          "letters": []
+        }
+      ]
+    },
+    {
+      "id": "m20",
+      "title": "Ripasso ed esame A2",
+      "level": "A2",
+      "lessons": [
+        {
+          "id": "l092",
+          "title": "Ripasso: i tempi verbali",
+          "subtitle": "Passato, imperfetto, futuro",
+          "glyph": "🎯",
+          "letters": []
+        },
+        {
+          "id": "l093",
+          "title": "Ripasso: casi e frasi",
+          "subtitle": "Casi e connettivi",
+          "glyph": "🎯",
+          "letters": []
+        },
+        {
+          "id": "l094",
+          "title": "Esame A2",
+          "subtitle": "20 prove · soglia 80%",
+          "glyph": "🎓",
+          "letters": []
+        }
+      ]
     }
   ]
 }

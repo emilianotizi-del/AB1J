@@ -1,0 +1,38 @@
+{
+  "id": "l094",
+  "title": "Esame A2",
+  "exam": true,
+  "passScore": 80,
+  "doneText": "Livello A2 superato! Կեցցե՛ս",
+  "vocab": [],
+  "steps": [
+    { "type": "notice", "icon": "🎓", "title": "Esame A2", "text": "Venti prove su tutto il livello: passato, imperfetto, futuro, casi, comparativi, connettivi. Include scrittura e ascolto. Soglia: 80%. Հաջողությու՛ն։" },
+    { "type": "conjugate", "prompt": "Il passato completo di խմել", "rows": [
+      { "label": "ես", "answer": "խմեցի" },
+      { "label": "դու", "answer": "խմեցիր" },
+      { "label": "նա", "answer": "խմեց" },
+      { "label": "մենք", "answer": "խմեցինք" },
+      { "label": "դուք", "answer": "խմեցիք" },
+      { "label": "նրանք", "answer": "խմեցին" }
+    ]},
+    { "type": "cloze", "it": "da bambino bevevo latte", "text": "Երբ փոքր էի, կաթ ___ խմում", "options": ["էի", "կ", "եմ"], "answer": "էի", "speakText": "Երբ փոքր էի, կաթ էի խմում" },
+    { "type": "cloze", "it": "domani andrò al mercato", "text": "Վաղը շուկա ___", "options": ["կգնամ", "գնացի", "գնում էի"], "answer": "կգնամ", "speakText": "Վաղը շուկա կգնամ" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "ասաց", "answer": "ասաց", "it": "ha detto" },
+    { "type": "listen", "question": "Quale tempo?", "speakText": "Ես հայերեն կսովորեմ", "it": "Studierò armeno", "reveal": "Ես հայերեն կսովորեմ", "options": ["futuro", "passato", "imperfetto"], "answer": "futuro" },
+    { "type": "cloze", "it": "sono dall'Italia", "text": "Ես ___ եմ", "options": ["Իտալիայից", "Իտալիայում", "Իտալիայով"], "answer": "Իտալիայից", "speakText": "Ես Իտալիայից եմ" },
+    { "type": "cloze", "it": "vivo in città", "text": "Ես ___ եմ ապրում", "options": ["քաղաքում", "քաղաքից", "քաղաքով"], "answer": "քաղաքում", "speakText": "Ես քաղաքում եմ ապրում" },
+    { "type": "cloze", "it": "vado a piedi", "text": "___ եմ գնում", "options": ["Ոտքով", "Ոտքից", "Ոտքում"], "answer": "Ոտքով", "speakText": "Ոտքով եմ գնում" },
+    { "type": "cloze", "it": "penso che lui stia bene", "text": "Կարծում եմ, ___ նա լավ է", "options": ["որ", "որովհետև", "բայց"], "answer": "որ", "speakText": "Կարծում եմ, որ նա լավ է" },
+    { "type": "cloze", "it": "se piove resto a casa", "text": "___ անձրև գա, տանը կմնամ", "options": ["Եթե", "Որ", "Քան"], "answer": "Եթե", "speakText": "Եթե անձրև գա, տանը կմնամ" },
+    { "type": "write", "prompt": "Traduci e scrivi: «di dove sei?»", "it": "di dove sei?", "answer": "Որտեղի՞ց ես", "hint": "da dove + sei" },
+    { "type": "listen", "question": "Che cosa fa male?", "speakText": "Գլուխս ցավում է", "it": "Mi fa male la testa", "reveal": "Գլուխս ցավում է", "options": ["la testa", "la pancia", "la gola"], "answer": "la testa" },
+    { "type": "cloze", "it": "Yerevan è più grande di Gyumri", "text": "Երևանը ավելի մեծ է ___ Գյումրին", "options": ["քան", "ավելի", "ամենա"], "answer": "քան", "speakText": "Երևանը ավելի մեծ է քան Գյումրին" },
+    { "type": "mcq", "prompt": "«Il migliore» (լավ):", "options": ["ամենալավ", "ավելի լավ", "լավ քան"], "answer": "ամենալավ", "optionsAreHy": true },
+    { "type": "match", "prompt": "Abbina connettivo e senso", "pairs": [["որ", "che"], ["որովհետև", "perché"], ["բայց", "ma"], ["եթե", "se"]] },
+    { "type": "write", "prompt": "Traduci e scrivi: «non andare!»", "it": "non andare!", "answer": "մի՛ գնա", "hint": "divieto + vai" },
+    { "type": "listen", "question": "Ascolta e verifica", "speakText": "Վաղը կզանգեմ", "it": "Domani chiamerò", "reveal": "Վաղը կզանգեմ" },
+    { "type": "cloze", "it": "loro sono andati al mercato", "text": "Նրանք շուկա ___", "options": ["գնացին", "գնացինք", "գնաց"], "answer": "գնացին", "speakText": "Նրանք շուկա գնացին" },
+    { "type": "write", "prompt": "Traduci e scrivi: «studio armeno»", "it": "studio armeno", "answer": "Հայերեն եմ սովորում" },
+    { "type": "cloze", "it": "cosa è successo?", "text": "Ի՞նչ ___", "options": ["եղավ", "ասաց", "տվեց"], "answer": "եղավ", "speakText": "Ի՞նչ եղավ" }
+  ]
+}

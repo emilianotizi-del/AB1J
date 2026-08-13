@@ -3,7 +3,7 @@
 Documento di riferimento per la struttura didattica del corso.
 Ogni nuovo modulo deve rispettare questo piano; le deviazioni vanno registrate qui.
 
-Stato: aggiornato al 12/07/2026 · Moduli pubblicati: 1–12 · LIVELLO A1 COMPLETO
+Stato: aggiornato al 12/07/2026 · Moduli pubblicati: 1–20 · LIVELLI A1 e A2 COMPLETI
 
 ---
 
@@ -50,6 +50,14 @@ Stato: aggiornato al 12/07/2026 · Moduli pubblicati: 1–12 · LIVELLO A1 COMPL
 | 10 | La città | l045–l049 | — | որտեղ; articolo -ն pre-vocalico; postposizioni + -ի; imperativo sing. | 14 |
 | 11 | Genitivo e dativo | l050–l054 | — | gen. -ի/-յի (irr. տան); dat. -ին; oggetto animato -ին; տալիս/գալիս | 15 |
 | 12 | Il primo passato — ed esame A1 | l055–l059 | — | aoristo sing. -եցի/-ացի; irregolari եկա/տվեցի; էր; ESAME A1 (soglia 80%) | 6 |
+| 13 | Il passato, sul serio | l060–l063 | — | aoristo completo (6 pers.); irregolari ասաց/եղավ/տվեց | 7 |
+| 14 | L'imperfetto | l064–l068 | — | -ում էի; ունեի/գիտեի; meteo; cultura: Հայաստան | 13 |
+| 15 | Il futuro | l069–l072 | — | futuro կ-; appuntamenti; colori | 12 |
+| 16 | Tutti i casi | l073–l077 | — | ablativo -ից, strumentale -ով, locativo -ում | 12 |
+| 17 | Comparativi e descrizioni | l078–l082 | — | ավելի…քան; ամենա-; aggettivi; cultura: Yerevan | 15 |
+| 18 | Connettivi e frasi complesse | l083–l086 | — | որ, որովհետև, բայց, եթե; lavoro/studio | 11 |
+| 19 | Vita pratica | l087–l091 | — | telefono; imperativo pl./neg. մի՛; dal medico; cultura: ospitalità | 14 |
+| 20 | Ripasso ed esame A2 | l092–l094 | — | consolidamento; ESAME A2 (soglia 80%) | 0 |
 
 ## 4. Piano A1 — moduli 7–12 (da produrre)
 
@@ -101,9 +109,9 @@ debutta nel modulo indicato, poi resta disponibile.
 | `cloze` a tessere — frase con lacuna | m09 | lo strumento principe per casi e coniugazioni |
 | `conjugate` — tabella delle 6 persone da completare | m09 | riusato per ogni tempo verbale nuovo |
 | Esami con soglia di superamento (80%) | m12, m20, m28 | verifica di livello, non semplice quiz |
-| Scrittura digitata (tastiera armena di sistema) | m13 | cloze e dettato senza tessere; su iOS: Impostazioni → Tastiere |
+| Scrittura digitata (tastiera armena INTERNA) | m13 ✅ | esercizio `write`; tastiera a griglia per suono, no dipendenza dal sistema |
 | SRS a frasi e cloze-card; gestione "sanguisughe" | m13 | il mazzo smette di essere solo parole isolate |
-| Ascolto cieco — audio senza testo a schermo | m19 | comprensione orale vera |
+| Ascolto cieco — audio senza testo + versione lenta | m13 ✅ | esercizio `listen`; traccia lenta dedicata (🐢) per iOS |
 | Shadowing — pronuncia a livello di frase | m21 | sull'infrastruttura audio esistente |
 | Produzione scritta libera con auto-confronto | m24 | risposte modello da confrontare; nessuna correzione automatica |
 | `reading` esteso: paragrafi lunghi + glossario a tocco | m27 | testi 300+ parole |

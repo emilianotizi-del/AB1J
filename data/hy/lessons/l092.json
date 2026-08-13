@@ -1,0 +1,21 @@
+{
+  "id": "l092",
+  "title": "Ripasso: i tempi verbali",
+  "vocab": [],
+  "steps": [
+    { "type": "notice", "icon": "🎯", "title": "Verso l'esame A2", "text": "L'A2 ti ha dato tre tempi nuovi (aoristo completo, imperfetto, futuro) e tutti i casi. Questi due ripassi li consolidano; poi l'esame A2, soglia 80%. Rifallo quante volte vuoi." },
+    { "type": "cloze", "it": "ieri sono andato (passato)", "text": "Երեկ ես շուկա ___", "options": ["գնացի", "կգնամ", "գնում էի"], "answer": "գնացի", "speakText": "Երեկ ես շուկա գնացի" },
+    { "type": "cloze", "it": "da bambino andavo (imperfetto)", "text": "Երբ փոքր էի, դպրոց ___ գնում", "options": ["էի", "կ", "եմ"], "answer": "էի", "speakText": "Երբ փոքր էի, դպրոց էի գնում" },
+    { "type": "cloze", "it": "domani andrò (futuro)", "text": "Վաղը շուկա ___", "options": ["կգնամ", "գնացի", "գնում էի"], "answer": "կգնամ", "speakText": "Վաղը շուկա կգնամ" },
+    { "type": "listen", "question": "Quale tempo senti?", "speakText": "Ես հայերեն կսովորեմ", "it": "Studierò armeno", "reveal": "Ես հայերեն կսովորեմ", "options": ["futuro", "passato", "imperfetto"], "answer": "futuro" },
+    { "type": "conjugate", "prompt": "Il passato completo di տեսնել (vedere)", "rows": [
+      { "label": "ես", "answer": "տեսա" },
+      { "label": "դու", "answer": "տեսար" },
+      { "label": "նա", "answer": "տեսավ" },
+      { "label": "մենք", "answer": "տեսանք" },
+      { "label": "դուք", "answer": "տեսաք" },
+      { "label": "նրանք", "answer": "տեսան" }
+    ]},
+    { "type": "write", "prompt": "Traduci e scrivi: «domani andrò»", "it": "domani andrò", "answer": "Վաղը կգնամ" }
+  ]
+}

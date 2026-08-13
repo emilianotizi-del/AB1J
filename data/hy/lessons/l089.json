@@ -1,0 +1,25 @@
+{
+  "id": "l089",
+  "title": "Dal medico",
+  "vocab": [
+    { "hy": "ցավ", "tr": "ts'av", "ipa": "[t͡sʰɑv]", "it": "dolore" },
+    { "hy": "հիվանդ", "tr": "hivand", "ipa": "[hiˈvɑnd]", "it": "malato" },
+    { "hy": "գլուխ", "tr": "glukh", "ipa": "[ɡəˈlux]", "it": "testa" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "հիվանդ", "tr": "hivand", "ipa": "[hiˈvɑnd]", "it": "malato" } },
+    { "type": "teach", "kind": "word", "word": { "hy": "ցավ", "tr": "ts'av", "ipa": "[t͡sʰɑv]", "it": "dolore" }, "note": "Գլխացավ = mal di testa (գլուխ + ցավ). Փորացավ = mal di pancia." },
+    { "type": "teach", "kind": "word", "word": { "hy": "գլուխ", "tr": "glukh", "ipa": "[ɡəˈlux]", "it": "testa" } },
+    { "type": "dialog", "title": "Dal medico", "lines": [
+      { "who": "Բժիշկ", "hy": "Ի՞նչ է ցավում։", "tr": "inch e ts'avum", "ipa": "[int͡ʃʰ ɛ t͡sʰɑˈvum]", "it": "Cosa fa male?" },
+      { "who": "Հիվանդ", "hy": "Գլուխս ցավում է։", "tr": "glukhs ts'avum e", "ipa": "[ɡəˈluxs t͡sʰɑˈvum ɛ]", "it": "Mi fa male la testa." },
+      { "who": "Բժիշկ", "hy": "Ջերմ ունե՞ք։", "tr": "jerm une՞k'", "ipa": "[d͡ʒɛɾm uˈnɛkʰ]", "it": "Ha la febbre?" },
+      { "who": "Հիվանդ", "hy": "Այո, մի քիչ։", "tr": "ayo, mi k'ich", "ipa": "[ɑˈjɔ mi kʰit͡ʃʰ]", "it": "Sì, un po'." }
+    ]},
+    { "type": "mcq", "prompt": "Cosa fa male al paziente?", "options": ["la testa", "la pancia", "la gola"], "answer": "la testa" },
+    { "type": "listen", "question": "Che cosa chiede il medico?", "speakText": "Ի՞նչ է ցավում", "it": "Cosa fa male?", "reveal": "Ի՞նչ է ցավում", "options": ["cosa fa male?", "come stai?", "hai la febbre?"], "answer": "cosa fa male?" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "հիվանդ", "answer": "հիվանդ", "it": "malato" },
+    { "type": "cloze", "it": "mi fa male la testa", "text": "Գլուխս ___ է", "options": ["ցավում", "ցավ", "հիվանդ"], "answer": "ցավում", "speakText": "Գլուխս ցավում է", "extra": true },
+    { "type": "write", "prompt": "Traduci e scrivi: «sono malato»", "it": "sono malato", "answer": "հիվանդ եմ", "extra": true }
+  ]
+}
