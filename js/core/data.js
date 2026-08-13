@@ -15,6 +15,8 @@ const LANG = 'hy';
 export const getCourse   = () => load(`data/${LANG}/course.json`);
 export const getAlphabet = () => load(`data/${LANG}/alphabet.json`);
 export const getLesson   = id => load(`data/${LANG}/lessons/${id}.json`);
+export const getLetterExamples = () => load(`data/${LANG}/letter_examples.json`);
+export const getLetterGloss    = () => load(`data/${LANG}/letter_gloss.json`);
 
 export async function getLetter(glyph) {
   const alpha = await getAlphabet();

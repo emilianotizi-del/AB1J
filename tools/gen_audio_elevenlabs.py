@@ -33,6 +33,13 @@ def collect_texts():
     alpha = json.loads((ROOT / "data/hy/alphabet.json").read_text())
     texts.update(l["lower"] for l in alpha["letters"])
     texts.update(d["lower"] for d in alpha.get("digraphs", []))
+    # Parole-esempio delle schede lettera
+    lex = ROOT / "data/hy/letter_examples.json"
+    if lex.exists():
+        data = json.loads(lex.read_text())
+        for info in data["letters"].values():
+            texts.update(info.get("examples", []))
+            texts.update(info.get("minpair", []))
     course = json.loads((ROOT / "data/hy/course.json").read_text())
     for mod in course["modules"]:
         for les in mod["lessons"]:
