@@ -356,3 +356,17 @@
   font-size: 1.15rem;
 }
 .minpair-chip:active { background: var(--paper); }
+
+/* Ripasso: distinzione cromatica dei due tipi di carta */
+.kind-tag {
+  display: inline-block;
+  font-size: .74rem; font-weight: 700;
+  letter-spacing: .05em; text-transform: uppercase;
+  padding: 4px 10px; border-radius: 999px;
+}
+.kind-read { background: color-mix(in srgb, var(--blue) 15%, transparent); color: var(--blue); }
+.kind-mean { background: color-mix(in srgb, var(--accent) 22%, transparent); color: #9a5a12; }
+
+/* Barra colorata in cima alla carta, per il colpo d'occhio */
+.flashcard.card-read { border-top: 4px solid var(--blue); }
+.flashcard.card-mean { border-top: 4px solid var(--accent); }

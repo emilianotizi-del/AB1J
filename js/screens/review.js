@@ -44,13 +44,13 @@ export function render(mount) {
     holder.innerHTML = '';
 
     let flipped = false;
-    const face = el('div', { class: 'card flashcard' });
+    const face = el('div', { class: 'card flashcard card-' + kind });
 
     function paint() {
       face.innerHTML = '';
       face.append(el('div', {
-        style: 'font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft)'
-      }, KIND_LABEL[kind]));
+        class: 'kind-tag kind-' + kind
+      }, (kind === 'read' ? '🔊 ' : '💬 ') + KIND_LABEL[kind]));
       face.append(el('div', {
         class: 'w-hy hy-display', lang: 'hy',
         style: 'font-size:2.4rem;font-weight:700;margin-top:6px'
