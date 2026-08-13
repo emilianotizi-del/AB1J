@@ -117,10 +117,11 @@ export function render(mount) {
         } catch (e) {
           stopFn = null;
           mic.classList.remove('mic-live');
+          const detail = e.status ? `[${e.status}] ${e.message}` : e.message;
           status.textContent =
-            e.message === 'bad-key' ? 'Chiave API non valida: controlla nelle Opzioni.'
+            e.status === 401 ? 'Chiave non valida o senza permesso Speech-to-Text: ' + e.message
             : e.name === 'NotAllowedError' ? 'Permesso microfono negato: consentilo nelle impostazioni del browser.'
-            : 'Errore di rete o del servizio: riprova.';
+            : 'Errore: ' + detail;
         }
         busy = false;
       });

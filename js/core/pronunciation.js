@@ -117,8 +117,13 @@ export async function transcribeScribe(blob, mime, apiKey) {
     headers: { 'xi-api-key': apiKey },
     body: fd
   });
-  if (res.status === 401) throw new Error('bad-key');
-  if (!res.ok) throw new Error('http-' + res.status);
+  if (!res.ok) {
+    let detail = '';
+    try { const j = await res.json(); detail = j?.detail?.message || j?.detail?.status || JSON.stringify(j).slice(0, 200); } catch {}
+    const err = new Error(detail || ('HTTP ' + res.status));
+    err.status = res.status;
+    throw err;
+  }
   const data = await res.json();
   return data.text || '';
 }

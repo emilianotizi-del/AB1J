@@ -14,7 +14,7 @@ API_KEY = os.environ.get("ELEVENLABS_API_KEY")
 if not API_KEY:
     sys.exit("ERRORE: il secret ELEVENLABS_API_KEY non è impostato nel repository "
              "(Settings → Secrets and variables → Actions).")
-VOICE_ID = os.environ.get("ELEVENLABS_VOICE_ID") or "JBFqnCBsd6RMkjVDRZzb"  # voce dell'account; override via variabile di repo
+VOICE_ID = os.environ.get("ELEVENLABS_VOICE_ID") or "ErXwobaYiN019PkySvjV"  # Antoni (maschile); override via variabile di repo
 MODELS = ["eleven_v3"]  # SOLO v3: l'armeno è supportato solo qui; un ripiego su v2
                         # produce pronunce inaffidabili con durata plausibile (peggio di un errore)
 FORCE = os.environ.get("FORCE") == "1"
