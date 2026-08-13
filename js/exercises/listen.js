@@ -16,8 +16,8 @@ export function render(step, mount, ctx) {
   const controls = el('div', { style: 'display:flex;gap:10px;justify-content:center;margin:18px 0' },
     el('button', { class: 'btn-audio', style: 'width:64px;height:64px;font-size:1.7rem',
       'aria-label': 'Ascolta', onclick: () => speak(step.speakText) }, '🔊'),
-    el('button', { class: 'btn-audio', style: 'width:52px;height:52px;font-size:.95rem',
-      'aria-label': 'Rallenta', onclick: () => speak(step.speakText, { rate: 0.6 }) }, '0.6×'));
+    el('button', { class: 'btn-slow', 'aria-label': 'Ascolta lentamente',
+      onclick: () => speak(step.speakText, { slow: true }) }, '🐢 Lento'));
   card.append(controls);
   speak(step.speakText);
 

@@ -415,3 +415,13 @@
   border: 1px dashed var(--accent);
   padding: 6px 10px; border-radius: 8px; margin: 4px 0 10px;
 }
+
+/* Tasto "lento" nell'ascolto cieco */
+.btn-slow {
+  min-height: 52px; padding: 0 18px;
+  border: 1.5px solid var(--blue); border-radius: 26px;
+  background: var(--surface); color: var(--blue);
+  font-size: .95rem; font-weight: 600; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.btn-slow:active { background: var(--blue); color: #fff; }

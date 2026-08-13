@@ -74,12 +74,16 @@ function speakTTS(text, rate = 0.85) {
 export async function speak(text, opts = {}) {
   const rate = opts.rate || 1;
   const idx = index || await loadIndex();
-  const file = idx[text];
+  // Ascolto cieco: se richiesto "slow" e c'è una traccia lenta dedicata, usala
+  // (rallentamento vero, indipendente dai limiti di playbackRate su iOS).
+  let key = text;
+  if (opts.slow && idx[text + '::slow']) key = text + '::slow';
+  const file = idx[key];
   if (file) {
     try {
       if (player) player.pause();
       player = new Audio(AUDIO_BASE + file);
-      player.playbackRate = rate;      // audio pre-registrato: rallentabile
+      player.playbackRate = (opts.slow && key.endsWith('::slow')) ? 1 : rate;
       await player.play();
       return true;
     } catch { /* riproduzione negata o file mancante: si passa alla TTS */ }

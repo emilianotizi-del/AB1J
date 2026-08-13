@@ -40,6 +40,12 @@ def collect_texts():
         for info in data["letters"].values():
             texts.update(info.get("examples", []))
             texts.update(info.get("minpair", []))
+    # Varianti lente per l'ascolto cieco: chiave "<testo>::slow"
+    for les_file in sorted((ROOT / "data/hy/lessons").glob("*.json")):
+        L = json.loads(les_file.read_text())
+        for st in L.get("steps", []):
+            if st.get("type") == "listen" and st.get("speakText"):
+                texts.add(st["speakText"] + "::slow")
     course = json.loads((ROOT / "data/hy/course.json").read_text())
     for mod in course["modules"]:
         for les in mod["lessons"]:
@@ -67,6 +73,8 @@ OVERRIDE = {
 SPECIAL = {"ւ": "վը"}  # hyun: da sola non è pronunciabile, il suono è [v]
 
 def speak_variants(text):
+    if text.endswith("::slow"):
+        return [text]   # gestito in _tts_once
     """Varianti da provare in ordine: la prima che produce audio vince.
     Le lettere singole spesso restituiscono audio vuoto: per le consonanti si
     aggiunge la vocale neutra ը (è la pronuncia didattica standard: b→bə),
@@ -136,7 +144,7 @@ def _valid(audio, text):
     """L'audio è accettabile solo se la durata è proporzionata al testo.
     ElevenLabs talvolta restituisce un blob degenere (~0.24 s) identico
     per richieste diverse: questo controllo lo intercetta."""
-    clean = re.sub(r"[՞՜՛։,.\s]", "", text)
+    clean = re.sub(r"[՞՜՛։,.\s]", "", text.replace("::slow", ""))
     min_dur = max(0.35, 0.07 * len(clean))
     with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as tmp:
         tmp.write(audio)
@@ -150,6 +158,12 @@ def _valid(audio, text):
     finally:
         os.unlink(path)
     return dur >= min_dur
+
+def _clean_key(text):
+    """Rimuove il suffisso ::slow, restituendo (testo_reale, is_slow)."""
+    if text.endswith("::slow"):
+        return text[:-6], True
+    return text, False
 
 def _tts_once(text, errs):
     for model in MODELS:
