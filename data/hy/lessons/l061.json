@@ -1,0 +1,21 @@
+{
+  "id": "l061",
+  "title": "Verbi irregolari al passato",
+  "vocab": [
+    { "hy": "ասաց", "tr": "asats'", "ipa": "[ɑˈsɑt͡sʰ]", "it": "ha detto" },
+    { "hy": "եղավ", "tr": "yeghav", "ipa": "[jɛˈʁɑv]", "it": "è stato, è successo" },
+    { "hy": "տվեց", "tr": "tvets'", "ipa": "[təˈvɛt͡sʰ]", "it": "ha dato" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word", "word": { "hy": "ասաց", "tr": "asats'", "ipa": "[ɑˈsɑt͡sʰ]", "it": "ha detto" }, "note": "Da ասել (dire). Irregolare ma frequentissimo: Նա ասաց = lui ha detto. Ci servirà per il discorso indiretto." },
+    { "type": "teach", "kind": "word", "word": { "hy": "եղավ", "tr": "yeghav", "ipa": "[jɛˈʁɑv]", "it": "è stato, è successo" }, "note": "Il passato di լինել (essere/diventare). Ի՞նչ եղավ = cosa è successo?" },
+    { "type": "teach", "kind": "word", "word": { "hy": "տվեց", "tr": "tvets'", "ipa": "[təˈvɛt͡sʰ]", "it": "ha dato" }, "note": "Da տալ (dare), già visto: տվեցի, տվեցիր, տվեց." },
+    { "type": "match", "prompt": "Abbina presente e passato", "pairs": [["ասում է", "ասաց"], ["տալիս է", "տվեց"], ["լինում է", "եղավ"]] },
+    { "type": "cloze", "it": "cosa è successo?", "text": "Ի՞նչ ___", "options": ["եղավ", "ասաց", "տվեց"], "answer": "եղավ", "speakText": "Ի՞նչ եղավ" },
+    { "type": "cloze", "it": "la mamma ha detto: bene", "text": "Մաման ___ լավ", "options": ["ասաց", "եղավ", "տվեց"], "answer": "ասաց", "speakText": "Մաման ասաց լավ" },
+    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "ասաց", "answer": "ասաց", "it": "ha detto" },
+    { "type": "listen", "question": "Che cosa significa?", "speakText": "Ի՞նչ եղավ", "it": "Cosa è successo?", "reveal": "Ի՞նչ եղավ", "options": ["cosa è successo?", "cosa fai?", "cosa vuoi?"], "answer": "cosa è successo?" },
+    { "type": "write", "prompt": "Traduci e scrivi: «ha dato»", "it": "ha dato", "answer": "տվեց", "hint": "da տալ", "extra": true },
+    { "type": "cloze", "it": "Anna ha dato il pane a Davide", "text": "Աննան Դավիթին հաց ___", "options": ["տվեց", "ասաց", "եղավ"], "answer": "տվեց", "speakText": "Աննան Դավիթին հաց տվեց", "extra": true }
+  ]
+}

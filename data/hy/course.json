@@ -554,6 +554,42 @@
           "letters": []
         }
       ]
+    },
+    {
+      "id": "m13",
+      "title": "Il passato, sul serio",
+      "level": "A2",
+      "dev_unlock": true,
+      "lessons": [
+        {
+          "id": "l060",
+          "title": "Il passato: tutte le persone",
+          "subtitle": "Le sei persone dell'aoristo",
+          "glyph": "ցինք",
+          "letters": []
+        },
+        {
+          "id": "l061",
+          "title": "Verbi irregolari al passato",
+          "subtitle": "ասաց, եղավ, տվեց",
+          "glyph": "⚡",
+          "letters": []
+        },
+        {
+          "id": "l062",
+          "title": "Racconta la tua giornata",
+          "subtitle": "Il primo racconto esteso",
+          "glyph": "📖",
+          "letters": []
+        },
+        {
+          "id": "l063",
+          "title": "Verifica del modulo",
+          "subtitle": "Quiz: passato, scrittura, ascolto",
+          "glyph": "✓",
+          "letters": []
+        }
+      ]
     }
   ]
 }

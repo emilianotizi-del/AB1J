@@ -58,7 +58,7 @@ function toast(msg) {
   setTimeout(() => t.remove(), 6000);
 }
 
-function speakTTS(text) {
+function speakTTS(text, rate = 0.85) {
   if (!('speechSynthesis' in window)) return false;
   if (!hyVoice) pickVoice();
   if (!hyVoice) return false;
@@ -66,23 +66,25 @@ function speakTTS(text) {
   const u = new SpeechSynthesisUtterance(text);
   u.lang = 'hy-AM';
   u.voice = hyVoice;
-  u.rate = 0.85;
+  u.rate = rate;
   speechSynthesis.speak(u);
   return true;
 }
 
-export async function speak(text) {
+export async function speak(text, opts = {}) {
+  const rate = opts.rate || 1;
   const idx = index || await loadIndex();
   const file = idx[text];
   if (file) {
     try {
       if (player) player.pause();
       player = new Audio(AUDIO_BASE + file);
+      player.playbackRate = rate;      // audio pre-registrato: rallentabile
       await player.play();
       return true;
     } catch { /* riproduzione negata o file mancante: si passa alla TTS */ }
   }
-  if (speakTTS(text)) return true;
+  if (speakTTS(text, 0.85 * rate)) return true;
   if (!warned) { warned = true; toast('🔇 ' + voiceHelp()); }
   return false;
 }

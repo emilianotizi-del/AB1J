@@ -16,7 +16,7 @@ const EXEMPT = new Set(['l005']);   // lezioni che insegnano frasi come blocchi
 const lowerOf = {}; alpha.letters.forEach(l => { lowerOf[l.upper] = l.lower; });
 (alpha.digraphs || []).forEach(l => { lowerOf[l.upper] = l.lower; });
 const allGlyphs = new Set(Object.values(lowerOf).concat(Object.keys(lowerOf)));
-const types = new Set(['teach', 'mcq', 'match', 'trace', 'dictation', 'order', 'dialog', 'reading', 'notice', 'cloze', 'conjugate']);
+const types = new Set(['teach', 'mcq', 'match', 'trace', 'dictation', 'order', 'dialog', 'reading', 'notice', 'cloze', 'conjugate', 'write', 'listen']);
 
 let errors = 0;
 const err = m => { console.log('✗', m); errors++; };
@@ -69,6 +69,15 @@ for (const mod of course.modules) {
         if (!s.text.includes('___')) err(`${les.id} passo ${i}: cloze senza ___`);
         if (!s.options.includes(s.answer)) err(`${les.id} passo ${i}: answer non tra le options`);
         check(s.text.replace('___', s.answer), `passo ${i} (cloze)`);
+      }
+      if (s.type === 'write') {
+        if (!s.answer) err(`${les.id} passo ${i}: write senza answer`);
+        else check(s.answer, `passo ${i} (write)`);
+        if (s.speakText && !audioIdx[s.speakText]) noAudio.add(s.speakText);
+      }
+      if (s.type === 'listen') {
+        if (!s.speakText) err(`${les.id} passo ${i}: listen senza speakText`);
+        else { check(s.speakText, `passo ${i} (listen)`); if (!audioIdx[s.speakText]) noAudio.add(s.speakText); }
       }
       if (s.type === 'conjugate') {
         if (!Array.isArray(s.rows) || s.rows.length < 2) err(`${les.id} passo ${i}: conjugate con meno di 2 righe`);

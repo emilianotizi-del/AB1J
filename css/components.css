@@ -370,3 +370,48 @@
 /* Barra colorata in cima alla carta, per il colpo d'occhio */
 .flashcard.card-read { border-top: 4px solid var(--blue); }
 .flashcard.card-mean { border-top: 4px solid var(--accent); }
+
+/* Tastiera armena interna */
+.hy-keyboard { margin-top: 14px; display: flex; flex-direction: column; gap: 6px; }
+.kb-row { display: flex; gap: 5px; justify-content: center; }
+.kb-key {
+  flex: 1; min-width: 0; min-height: 44px;
+  border: 1px solid var(--line); border-radius: 8px;
+  background: var(--surface); color: var(--ink);
+  font-size: 1.15rem; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  padding: 0 2px;
+}
+.kb-key:active { background: var(--blue); color: #fff; transform: translateY(1px); }
+.kb-space { flex: 4; font-size: .85rem; color: var(--ink-soft); }
+.kb-back { flex: 1.5; font-size: 1.2rem; }
+
+/* Display di scrittura */
+.write-display {
+  min-height: 56px; margin-top: 14px; padding: 12px 14px;
+  border: 1.5px solid var(--line); border-radius: 12px;
+  background: var(--paper); font-size: 1.6rem; text-align: center;
+  display: flex; align-items: center; justify-content: center; gap: 1px;
+}
+.write-display.write-ok { border-color: var(--ok); background: var(--ok-bg); }
+.write-display.write-err { border-color: var(--err); background: var(--err-bg); }
+.write-caret {
+  display: inline-block; width: 2px; height: 1.5rem; background: var(--blue);
+  animation: caret-blink 1s step-end infinite;
+}
+@keyframes caret-blink { 50% { opacity: 0; } }
+.write-hint { text-align: center; color: var(--ink-soft); font-size: .85rem; margin-top: 8px; }
+
+/* Ascolto cieco */
+.listen-reveal {
+  margin-top: 16px; padding: 14px; border-radius: 12px;
+  background: color-mix(in srgb, var(--blue) 8%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--blue) 25%, transparent);
+}
+
+.dev-badge {
+  font-size: .8rem; color: var(--accent-ink, #9a5a12);
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
+  border: 1px dashed var(--accent);
+  padding: 6px 10px; border-radius: 8px; margin: 4px 0 10px;
+}
