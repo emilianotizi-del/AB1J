@@ -61,6 +61,54 @@
       }
     },
     {
+      "type": "cloze",
+      "it": "albero → alberi (una sillaba)",
+      "text": "ծառ → ծառ___",
+      "options": [
+        "եր",
+        "ներ"
+      ],
+      "answer": "եր",
+      "speakText": "ծառեր"
+    },
+    {
+      "type": "cloze",
+      "it": "mela → mele (più sillabe)",
+      "text": "խնձոր → խնձոր___",
+      "options": [
+        "ներ",
+        "եր"
+      ],
+      "answer": "ներ",
+      "speakText": "խնձորներ"
+    },
+    {
+      "type": "cloze",
+      "it": "giorno → giorni",
+      "text": "օր → օր___",
+      "options": [
+        "եր",
+        "ներ"
+      ],
+      "answer": "եր",
+      "speakText": "օրեր"
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi il plurale di տարի (anno)",
+      "it": "anni",
+      "answer": "տարիներ",
+      "hint": "più sillabe → -ներ"
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi il plurale di ժամ (ora)",
+      "it": "ore",
+      "answer": "ժամեր",
+      "hint": "una sillaba → -եր",
+      "extra": true
+    },
+    {
       "type": "mcq",
       "prompt": "«ժամ» (ora) ha una sillaba. Il plurale è:",
       "options": [

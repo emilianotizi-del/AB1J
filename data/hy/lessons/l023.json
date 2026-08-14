@@ -52,6 +52,55 @@
       "note": "La tua prima frase completa: soggetto + aggettivo + է."
     },
     {
+      "type": "cloze",
+      "it": "l'acqua (finisce per consonante)",
+      "text": "ջուր___",
+      "options": [
+        "ը",
+        "ն"
+      ],
+      "answer": "ը",
+      "speakText": "ջուրը"
+    },
+    {
+      "type": "cloze",
+      "it": "il cavallo (finisce per vocale)",
+      "text": "ձի___",
+      "options": [
+        "ն",
+        "ը"
+      ],
+      "answer": "ն",
+      "speakText": "ձին"
+    },
+    {
+      "type": "write",
+      "prompt": "Aggiungi l'articolo a տուն (casa)",
+      "it": "la casa",
+      "answer": "տունը",
+      "hint": "consonante → -ը"
+    },
+    {
+      "type": "listen",
+      "question": "Con o senza articolo?",
+      "speakText": "Ծովը մեծ է",
+      "it": "Il mare è grande",
+      "reveal": "Ծովը մեծ է",
+      "options": [
+        "il mare (con articolo)",
+        "un mare (senza)"
+      ],
+      "answer": "il mare (con articolo)"
+    },
+    {
+      "type": "write",
+      "prompt": "Aggiungi l'articolo a ձի (cavallo)",
+      "it": "il cavallo",
+      "answer": "ձին",
+      "hint": "vocale → -ն",
+      "extra": true
+    },
+    {
       "type": "mcq",
       "prompt": "«ջուր» finisce per consonante. «L'acqua» è:",
       "options": [

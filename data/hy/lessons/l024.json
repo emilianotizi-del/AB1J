@@ -2,22 +2,203 @@
   "id": "l024",
   "title": "Il presente: sto facendo",
   "vocab": [
-    { "hy": "սովորել", "tr": "sovorel", "ipa": "[sɔvɔˈɾɛl]", "it": "imparare, studiare" },
-    { "hy": "խմել", "tr": "khmel", "ipa": "[χəˈmɛl]", "it": "bere" },
-    { "hy": "ուտել", "tr": "utel", "ipa": "[uˈtɛl]", "it": "mangiare" },
-    { "hy": "Ես հայերեն եմ սովորում", "tr": "yes hayeren em sovorum", "ipa": "[jɛs hɑjɛˈɾɛn ɛm sɔvɔˈɾum]", "it": "sto imparando l'armeno" }
+    {
+      "hy": "սովորել",
+      "tr": "sovorel",
+      "ipa": "[sɔvɔˈɾɛl]",
+      "it": "imparare, studiare"
+    },
+    {
+      "hy": "խմել",
+      "tr": "khmel",
+      "ipa": "[χəˈmɛl]",
+      "it": "bere"
+    },
+    {
+      "hy": "ուտել",
+      "tr": "utel",
+      "ipa": "[uˈtɛl]",
+      "it": "mangiare"
+    },
+    {
+      "hy": "Ես հայերեն եմ սովորում",
+      "tr": "yes hayeren em sovorum",
+      "ipa": "[jɛs hɑjɛˈɾɛn ɛm sɔvɔˈɾum]",
+      "it": "sto imparando l'armeno"
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "word", "word": { "hy": "սովորել", "tr": "sovorel", "ipa": "[sɔvɔˈɾɛl]", "it": "imparare, studiare" }, "note": "Gli infiniti finiscono in -ել o -ալ (come գնալ)." },
-    { "type": "teach", "kind": "word", "word": { "hy": "սովորում եմ", "tr": "sovorum em", "ipa": "[sɔvɔˈɾum ɛm]", "it": "imparo / sto imparando" }, "note": "Il presente si costruisce così: radice + -ում + il verbo essere (եմ, ես, է…)." },
-    { "type": "teach", "kind": "word", "word": { "hy": "Ես հայերեն եմ սովորում", "tr": "yes hayeren em sovorum", "ipa": "[jɛs hɑjɛˈɾɛn ɛm sɔvɔˈɾum]", "it": "sto imparando l'armeno" }, "note": "Attenzione all'ordine: եմ si aggancia alla parola in evidenza (հայերեն), non al verbo." },
-    { "type": "teach", "kind": "word", "word": { "hy": "խմել", "tr": "khmel", "ipa": "[χəˈmɛl]", "it": "bere" } },
-    { "type": "teach", "kind": "word", "word": { "hy": "ուտել", "tr": "utel", "ipa": "[uˈtɛl]", "it": "mangiare" }, "extra": true },
-    { "type": "mcq", "prompt": "«խմել» al presente (io):", "options": ["խմում եմ", "խմել եմ", "խմեր եմ"], "answer": "խմում եմ", "optionsAreHy": true },
-    { "type": "order", "it": "sto imparando l'armeno", "tokens": ["Ես", "հայերեն", "եմ", "սովորում"], "speakText": "Ես հայերեն եմ սովորում" },
-    { "type": "order", "it": "sto bevendo acqua", "tokens": ["Ես", "ջուր", "եմ", "խմում"], "speakText": "Ես ջուր եմ խմում" },
-    { "type": "mcq", "prompt": "«Tu vai a casa» (գնալ → գնում):", "options": ["Դու տուն ես գնում", "Դու տուն եմ գնում", "Դու գնում տուն ես"], "answer": "Դու տուն ես գնում", "optionsAreHy": true },
-    { "type": "order", "it": "tu vai a casa", "tokens": ["Դու", "տուն", "ես", "գնում"], "speakText": "Դու տուն ես գնում", "extra": true },
-    { "type": "mcq", "prompt": "Il presente armeno si forma con:", "options": ["radice + -ում + essere", "radice + -ել", "essere + infinito"], "answer": "radice + -ում + essere" }
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "սովորել",
+        "tr": "sovorel",
+        "ipa": "[sɔvɔˈɾɛl]",
+        "it": "imparare, studiare"
+      },
+      "note": "Gli infiniti finiscono in -ել o -ալ (come գնալ)."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "սովորում եմ",
+        "tr": "sovorum em",
+        "ipa": "[sɔvɔˈɾum ɛm]",
+        "it": "imparo / sto imparando"
+      },
+      "note": "Il presente si costruisce così: radice + -ում + il verbo essere (եմ, ես, է…)."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "Ես հայերեն եմ սովորում",
+        "tr": "yes hayeren em sovorum",
+        "ipa": "[jɛs hɑjɛˈɾɛn ɛm sɔvɔˈɾum]",
+        "it": "sto imparando l'armeno"
+      },
+      "note": "Attenzione all'ordine: եմ si aggancia alla parola in evidenza (հայերեն), non al verbo."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "խմել",
+        "tr": "khmel",
+        "ipa": "[χəˈmɛl]",
+        "it": "bere"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ուտել",
+        "tr": "utel",
+        "ipa": "[uˈtɛl]",
+        "it": "mangiare"
+      },
+      "extra": true
+    },
+    {
+      "type": "cloze",
+      "it": "sto imparando l'armeno",
+      "text": "Ես հայերեն ___ սովորում",
+      "options": [
+        "եմ",
+        "ես",
+        "է"
+      ],
+      "answer": "եմ",
+      "speakText": "Ես հայերեն եմ սովորում"
+    },
+    {
+      "type": "cloze",
+      "it": "lei sta bevendo acqua",
+      "text": "Նա ջուր ___ խմում",
+      "options": [
+        "է",
+        "եմ",
+        "ես"
+      ],
+      "answer": "է",
+      "speakText": "Նա ջուր է խմում"
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi il presente di խմել (io bevo)",
+      "it": "bevo",
+      "answer": "խմում եմ",
+      "hint": "radice + -ում + եմ"
+    },
+    {
+      "type": "listen",
+      "question": "Chi sta parlando?",
+      "speakText": "Ես հայերեն եմ սովորում",
+      "it": "Sto imparando l'armeno",
+      "reveal": "Ես հայերեն եմ սովորում",
+      "options": [
+        "io (եմ)",
+        "tu (ես)",
+        "lui/lei (է)"
+      ],
+      "answer": "io (եմ)"
+    },
+    {
+      "type": "write",
+      "prompt": "Traduci e scrivi: «sto mangiando pane»",
+      "it": "sto mangiando pane",
+      "answer": "Հաց եմ ուտում",
+      "hint": "pane + եմ + mangiando",
+      "extra": true
+    },
+    {
+      "type": "mcq",
+      "prompt": "«խմել» al presente (io):",
+      "options": [
+        "խմում եմ",
+        "խմել եմ",
+        "խմեր եմ"
+      ],
+      "answer": "խմում եմ",
+      "optionsAreHy": true
+    },
+    {
+      "type": "order",
+      "it": "sto imparando l'armeno",
+      "tokens": [
+        "Ես",
+        "հայերեն",
+        "եմ",
+        "սովորում"
+      ],
+      "speakText": "Ես հայերեն եմ սովորում"
+    },
+    {
+      "type": "order",
+      "it": "sto bevendo acqua",
+      "tokens": [
+        "Ես",
+        "ջուր",
+        "եմ",
+        "խմում"
+      ],
+      "speakText": "Ես ջուր եմ խմում"
+    },
+    {
+      "type": "mcq",
+      "prompt": "«Tu vai a casa» (գնալ → գնում):",
+      "options": [
+        "Դու տուն ես գնում",
+        "Դու տուն եմ գնում",
+        "Դու գնում տուն ես"
+      ],
+      "answer": "Դու տուն ես գնում",
+      "optionsAreHy": true
+    },
+    {
+      "type": "order",
+      "it": "tu vai a casa",
+      "tokens": [
+        "Դու",
+        "տուն",
+        "ես",
+        "գնում"
+      ],
+      "speakText": "Դու տուն ես գնում",
+      "extra": true
+    },
+    {
+      "type": "mcq",
+      "prompt": "Il presente armeno si forma con:",
+      "options": [
+        "radice + -ում + essere",
+        "radice + -ել",
+        "essere + infinito"
+      ],
+      "answer": "radice + -ում + essere"
+    }
   ]
 }

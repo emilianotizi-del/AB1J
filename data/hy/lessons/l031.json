@@ -121,6 +121,26 @@
       "extra": true
     },
     {
+      "type": "listen",
+      "question": "Che giorno senti?",
+      "speakText": "երկուշաբթի",
+      "it": "lunedì",
+      "reveal": "երկուշաբթի",
+      "options": [
+        "lunedì",
+        "martedì",
+        "domenica"
+      ],
+      "answer": "lunedì"
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi ciò che senti",
+      "speakText": "շաբաթ",
+      "answer": "շաբաթ",
+      "it": "sabato"
+    },
+    {
       "type": "mcq",
       "prompt": "«Quarto giorno dal sabato»: quale giorno è չորեքշաբթի?",
       "options": [
