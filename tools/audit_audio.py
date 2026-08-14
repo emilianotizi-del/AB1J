@@ -22,7 +22,13 @@ for t, f in idx.items():
         except ValueError:
             pass
     clean = re.sub(r"[՞՜՛։,.\s]", "", t)
-    floor = 0.28 if len(clean) <= 1 else MIN_ABS
+    # Parole cortissime: una traccia sotto ~0.5s è quasi sempre tronca/muta.
+    if len(clean) <= 1:
+        floor = 0.30
+    elif len(clean) <= 4:
+        floor = 0.55
+    else:
+        floor = MIN_ABS
     if dur < max(floor, PER_CHAR * len(clean)):
         bad.append((t, f, dur))
 
