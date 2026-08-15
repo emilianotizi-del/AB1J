@@ -82,7 +82,8 @@ export async function render(mount, params) {
             `${lesson.vocab.length} parole aggiunte al ripasso`)
         : null,
       el('div', { style: 'margin-top:24px;display:grid;gap:10px' },
-        el('a', { class: 'btn btn-block', href: '#/home' }, 'Torna al corso'),
+        el('a', { class: 'btn btn-block', href: '#/home',
+          onclick: () => { try { sessionStorage.setItem('scrollToNext', '1'); } catch {} } }, 'Torna al corso'),
         el('a', { class: 'btn btn-secondary btn-block', href: '#/review' }, 'Vai al ripasso'))));
     bar.firstChild.style.width = '100%';
   }

@@ -34,6 +34,21 @@ export async function render(mount) {
       : el('div', { style: 'margin-top:14px;font-weight:600' }, '🎓 Corso completato!'));
   mount.append(hero);
 
+  // Scroll automatico alla prossima lezione SOLO se si arriva da un completamento.
+  let shouldScroll = false;
+  try { shouldScroll = sessionStorage.getItem('scrollToNext') === '1'; sessionStorage.removeItem('scrollToNext'); } catch {}
+  if (shouldScroll && nextLesson) {
+    requestAnimationFrame(() => {
+      const anchor = document.getElementById('next-lesson-anchor');
+      if (anchor) {
+        // Lascio un po' di contesto sopra: scrollo il modulo, non incollo in cima
+        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        anchor.classList.add('lesson-highlight');
+        setTimeout(() => anchor.classList.remove('lesson-highlight'), 1600);
+      }
+    });
+  }
+
   mount.append(el('a', {
     class: 'card', href: '#/pronounce',
     style: 'display:flex;align-items:center;gap:12px;margin-bottom:6px;padding:12px 16px'
@@ -57,7 +72,8 @@ export async function render(mount) {
 
       const item = el(available ? 'a' : 'div', {
         class: 'lesson-item' + (available ? '' : ' locked'),
-        ...(available ? { href: '#/lesson/' + les.id } : {})
+        ...(available ? { href: '#/lesson/' + les.id } : {}),
+        ...(nextLesson && les.id === nextLesson.id ? { id: 'next-lesson-anchor' } : {})
       },
         el('div', { class: 'l-glyph', lang: 'hy' }, les.glyph || '·'),
         el('div', { class: 'l-meta' },

@@ -425,3 +425,12 @@
   display: inline-flex; align-items: center; gap: 6px;
 }
 .btn-slow:active { background: var(--blue); color: #fff; }
+
+/* Evidenziazione temporanea della prossima lezione dopo un completamento */
+.lesson-highlight {
+  animation: lesson-flash 1.6s ease-out;
+}
+@keyframes lesson-flash {
+  0%, 100% { background: transparent; }
+  25% { background: color-mix(in srgb, var(--accent) 22%, transparent); }
+}
