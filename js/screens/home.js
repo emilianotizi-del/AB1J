@@ -34,20 +34,6 @@ export async function render(mount) {
       : el('div', { style: 'margin-top:14px;font-weight:600' }, '🎓 Corso completato!'));
   mount.append(hero);
 
-  // Scroll automatico alla prossima lezione SOLO se si arriva da un completamento.
-  let shouldScroll = false;
-  try { shouldScroll = sessionStorage.getItem('scrollToNext') === '1'; sessionStorage.removeItem('scrollToNext'); } catch {}
-  if (shouldScroll && nextLesson) {
-    requestAnimationFrame(() => {
-      const anchor = document.getElementById('next-lesson-anchor');
-      if (anchor) {
-        // Lascio un po' di contesto sopra: scrollo il modulo, non incollo in cima
-        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        anchor.classList.add('lesson-highlight');
-        setTimeout(() => anchor.classList.remove('lesson-highlight'), 1600);
-      }
-    });
-  }
 
   mount.append(el('a', {
     class: 'card', href: '#/pronounce',
@@ -82,5 +68,19 @@ export async function render(mount) {
         el('div', { class: 'l-state', 'aria-hidden': 'true' }, isDone ? '✅' : available ? '▶️' : '🔒'));
       mount.append(item);
     }
+  }
+
+  // Scroll alla prossima lezione SOLO dopo un completamento (DOM ormai montato).
+  let shouldScroll = false;
+  try { shouldScroll = sessionStorage.getItem('scrollToNext') === '1'; sessionStorage.removeItem('scrollToNext'); } catch {}
+  if (shouldScroll && nextLesson) {
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      const anchor = document.getElementById('next-lesson-anchor');
+      if (anchor) {
+        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        anchor.classList.add('lesson-highlight');
+        setTimeout(() => anchor.classList.remove('lesson-highlight'), 1600);
+      }
+    }));
   }
 }
