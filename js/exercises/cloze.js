@@ -6,7 +6,7 @@ import { speak } from '../core/audio.js';
 export function render(step, mount, ctx) {
   const card = el('div', { class: 'card' });
   card.append(el('h2', { style: 'text-align:center' }, 'Completa la frase'));
-  if (step.it) card.append(el('p', { style: 'text-align:center;color:var(--ink-soft);margin-top:6px' }, `«${step.it}»`));
+  if (step.it) card.append(el('p', { class: 'w-it-prompt', style: 'text-align:center;color:var(--ink-soft);margin-top:6px' }, `«${step.it}»`));
 
   const gap = el('span', { class: 'cloze-gap' }, '‒‒‒');
   const [before, after] = step.text.split('___');

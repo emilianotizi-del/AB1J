@@ -11,7 +11,9 @@ export async function render(step, mount, ctx) {
       el('div', { class: 'big-glyph', lang: 'hy' }, L.upper),
       el('div', { class: 'glyph-pair', lang: 'hy' }, `${L.upper} ${L.lower}`),
       el('div', { class: 'letter-name' }, `«${L.name}»`),
-      el('div', { class: 'letter-sound' }, `suono ${L.ipa} · traslitterazione “${L.tr}”`)
+      el('div', { class: 'letter-sound' },
+        el('span', { class: 'w-ipa' }, `suono ${L.ipa}`),
+        el('span', { class: 'w-tr' }, ` · traslitterazione “${L.tr}”`))
     );
     if (L.note) card.append(el('p', { class: 'teach-note' }, L.note));
     card.append(el('div', { style: 'margin-top:14px' },

@@ -28,7 +28,7 @@ export function render(step, mount, ctx) {
     revealBox.innerHTML = '';
     revealBox.append(el('div', { class: 'listen-reveal' },
       el('div', { class: 'hy', lang: 'hy', style: 'font-size:1.4rem;font-weight:700' }, step.reveal || step.speakText),
-      step.it ? el('div', { style: 'color:var(--ink-soft);margin-top:6px' }, step.it) : null));
+      step.it ? el('div', { class: 'w-it', style: 'color:var(--ink-soft);margin-top:6px' }, step.it) : null));
     mount.append(el('div', { class: 'lesson-footer' },
       el('button', { class: 'btn btn-block', onclick: () => ctx.onDone(ok) }, 'Avanti')));
   }

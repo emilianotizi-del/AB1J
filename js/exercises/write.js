@@ -20,7 +20,7 @@ export function render(step, mount, ctx) {
         'aria-label': 'Riascolta', onclick: () => speak(step.speakText) }, '🔊')));
     speak(step.speakText);
   }
-  if (step.it) card.append(el('p', { style: 'text-align:center;color:var(--ink-soft)' }, `«${step.it}»`));
+  if (step.it) card.append(el('p', { class: 'w-it-prompt', style: 'text-align:center;color:var(--ink-soft)' }, `«${step.it}»`));
 
   const display = el('div', { class: 'write-display hy', lang: 'hy' });
   const caret = el('span', { class: 'write-caret' }, '');

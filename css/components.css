@@ -55,7 +55,8 @@
 .word-block .w-tr { color: var(--accent-ink); font-weight: 600; margin-top: 2px; }
 .word-block .w-ipa { color: var(--ink-soft); font-size: .9rem; }
 .word-block .w-it { margin-top: 8px; font-size: 1.05rem; }
-[data-hide-tr="1"] .w-tr, [data-hide-ipa="1"] .w-ipa { display: none; }
+[data-hide-tr="1"] .w-tr, [data-hide-tr="1"] .a-tr, [data-hide-ipa="1"] .w-ipa { display: none; }
+[data-hide-it="1"] .w-it, [data-hide-it="1"] .dlg-it, [data-hide-it="1"] .task-it { display: none; }
 
 /* Griglia opzioni esercizi */
 .options { display: grid; gap: 10px; margin-top: 16px; }

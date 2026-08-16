@@ -30,7 +30,7 @@ export function render(step, mount, ctx) {
       card.append(el('button', { class: 'task-phrase', onclick: () => speak(p.hy) },
         el('div', {},
           el('span', { class: 'hy', lang: 'hy', style: 'font-weight:600;font-size:1.1rem' }, p.hy),
-          el('span', { style: 'margin-left:8px;color:var(--ink-soft)' }, p.it)),
+          el('span', { class: 'task-it', style: 'margin-left:8px;color:var(--ink-soft)' }, p.it)),
         el('span', { style: 'opacity:.5' }, '🔊')));
     }
     card.append(el('button', { class: 'btn btn-block', style: 'margin-top:16px',
@@ -52,7 +52,7 @@ export function render(step, mount, ctx) {
         el('div', { class: 'hy', lang: 'hy', style: 'font-size:1.15rem' }, t.npc.hy),
         el('button', { class: 'btn-audio', style: 'margin-top:6px;width:40px;height:40px;font-size:1rem',
           'aria-label': 'Ascolta', onclick: () => speak(t.npc.hy) }, '🔊'),
-        el('div', { style: 'color:var(--ink-soft);font-size:.85rem;margin-top:4px' }, t.npc.it)));
+        el('div', { class: 'task-it', style: 'color:var(--ink-soft);font-size:.85rem;margin-top:4px' }, t.npc.it)));
     card.append(npc);
     speak(t.npc.hy);
 
@@ -72,7 +72,7 @@ export function render(step, mount, ctx) {
             opts.after(el('div', { class: 'task-npc task-npc-reply' },
               el('div', { class: 'task-npc-av' }, '🧑‍🌾'),
               el('div', {}, el('div', { class: 'hy', lang: 'hy' }, o.reply.hy),
-                el('div', { style: 'color:var(--ink-soft);font-size:.85rem' }, o.reply.it))));
+                el('div', { class: 'task-it', style: 'color:var(--ink-soft);font-size:.85rem' }, o.reply.it))));
             speak(o.reply.hy);
           }
           card.append(el('button', { class: 'btn btn-block', style: 'margin-top:14px', onclick: () => {

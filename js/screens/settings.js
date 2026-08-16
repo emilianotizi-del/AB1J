@@ -26,6 +26,7 @@ export function render(mount) {
     el('label', { class: 'switch' }, themeInput, el('span', { class: 'knob' }))));
 
   card.append(toggle('Mostra traslitterazione', 'showTr'));
+  card.append(toggle('Mostra traduzione italiana', 'showIt'));
   card.append(toggle('Mostra IPA', 'showIpa'));
 
   // Durata lezione

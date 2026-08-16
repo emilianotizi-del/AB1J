@@ -8,7 +8,7 @@ export function render(step, mount, ctx) {
   const card = el('div', { class: 'card' });
   card.append(
     el('h2', { style: 'text-align:center' }, 'Componi la frase'),
-    el('p', { style: 'text-align:center;color:var(--ink-soft);margin-top:6px' }, `«${step.it}»`));
+    el('p', { class: 'w-it-prompt', style: 'text-align:center;color:var(--ink-soft);margin-top:6px' }, `«${step.it}»`));
   if (step.speakText) {
     card.append(el('div', { style: 'text-align:center;margin-top:10px' },
       el('button', { class: 'btn-audio', 'aria-label': 'Ascolta', onclick: () => speak(step.speakText) }, '🔊')));
