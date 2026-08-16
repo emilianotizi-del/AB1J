@@ -500,3 +500,12 @@
 .flashcard .hy-keyboard { margin-top: 12px; }
 .flashcard .kb-key { min-height: 38px; font-size: 1.05rem; }
 .flashcard .write-display { min-height: 44px; font-size: 1.4rem; margin-top: 10px; }
+
+/* Campo di scrittura produzione (usa la tastiera di sistema) */
+.prod-input {
+  width: 100%; margin-top: 12px; padding: 12px 14px;
+  border: 1.5px solid var(--blue); border-radius: 12px;
+  background: var(--paper); font-size: 1.6rem; text-align: center;
+  color: var(--ink); box-sizing: border-box;
+}
+.prod-input:focus { outline: none; border-color: var(--accent); }

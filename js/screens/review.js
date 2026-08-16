@@ -4,7 +4,6 @@
 import { el, vibrate } from '../utils/dom.js';
 import { dueCards, grade, deckSize } from '../core/srs.js';
 import { speak } from '../core/audio.js';
-import { makeKeyboard } from '../core/keyboard.js';
 
 const KIND_LABEL = { read: 'Come si legge?', mean: 'Che cosa significa?', prod: 'Come si dice in armeno?' };
 
@@ -73,23 +72,22 @@ export function render(mount) {
       if (!flipped) {
         if (kind === 'prod') {
           face.append(el('p', { style: 'color:var(--ink-soft);font-size:.9rem;margin-top:14px' },
-            'Scrivi in armeno, poi tocca «Verifica».'));
-          // Campo di scrittura + tastiera armena interna (layout iOS)
-          const display = el('div', { class: 'write-display hy', lang: 'hy', style: 'font-size:1.5rem' });
-          const caret = el('span', { class: 'write-caret' }, '');
-          const paint = () => { display.textContent = prodText; display.append(caret); };
-          paint();
-          const kb = makeKeyboard(
-            ch => { prodText += ch; paint(); },
-            () => { prodText = prodText.slice(0, -1); paint(); }
-          );
-          // Evito che toccare display/tastiera giri la carta
-          const stop = e => e.stopPropagation();
-          display.addEventListener('click', stop);
-          kb.addEventListener('click', stop);
+            'Scrivi in armeno con la tua tastiera, poi tocca «Verifica».'));
+          // Vero campo di testo: apre la tastiera di sistema (quella armena di iPhone).
+          const input = el('input', {
+            type: 'text', lang: 'hy', inputmode: 'text', autocapitalize: 'off',
+            autocorrect: 'off', spellcheck: 'false',
+            class: 'prod-input hy', placeholder: '…', value: prodText
+          });
+          input.addEventListener('click', e => e.stopPropagation());
+          input.addEventListener('input', () => { prodText = input.value; });
+          // Invio da tastiera = verifica
+          input.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); prodText = input.value; flip(); } });
           const checkBtn = el('button', { class: 'btn btn-block', style: 'margin-top:12px',
-            onclick: e => { e.stopPropagation(); flip(); } }, 'Verifica');
-          face.append(display, kb, checkBtn);
+            onclick: e => { e.stopPropagation(); prodText = input.value; flip(); } }, 'Verifica');
+          face.append(input, checkBtn);
+          // Metto il focus per far comparire subito la tastiera
+          setTimeout(() => input.focus(), 50);
         } else {
           // Sul fronte della carta di significato l'audio è un indizio lecito;
           // su quella di lettura rivelerebbe la risposta.
