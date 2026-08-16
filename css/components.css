@@ -513,3 +513,12 @@
 /* Evidenziazione lettera per lettera nella verifica produzione */
 .ch-ok  { color: var(--ok, #3a8); }
 .ch-bad { color: var(--err, #c44); text-decoration: underline; text-decoration-color: var(--err, #c44); }
+
+/* Sigla del modulo sulla card missione (M8a, M8b…) */
+.mission-code {
+  flex-shrink: 0; min-width: 42px; text-align: center;
+  font-weight: 800; font-size: .85rem; color: var(--accent-ink, #9a5a12);
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
+  padding: 4px 6px; border-radius: 8px; font-variant-numeric: tabular-nums;
+}
+.mission-card.locked .mission-code { opacity: .7; }
