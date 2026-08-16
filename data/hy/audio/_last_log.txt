@@ -1,5 +1,11 @@
 Nota: impossibile leggere il credito (HTTP 401).
-w606.mp3 ← Երևանն ավելի մեծ է [eleven_v3] (7541 B)
-w607.mp3 ← Երևանն ավելի մեծ է քան Գյումրին [eleven_v3] (10049 B)
+w608.mp3 ← Բարև ձեզ։ Ի՞նչ եք ուզում։ [eleven_v3] (9736 B)
+w609.mp3 ← Հինգ հարյուր դրամ։ [eleven_v3] (6914 B)
+w610.mp3 ← Հրամմեցեք, ձեր խնձորը։ [eleven_v3] (11094 B)
+w611.mp3 ← Հրամմեցեք։ [eleven_v3] (3989 B)
+w612.mp3 ← Մեկ կիլո խնձոր [eleven_v3] (5974 B)
+w613.mp3 ← Շատ լավ։ Քանի՞ կիլո։ [eleven_v3] (8482 B)
+w614.mp3 ← Ցտեսություն, բարի օր։ [eleven_v3] (11094 B)
+w615.mp3 ← Քանի՞ կիլո։ [eleven_v3] (4302 B)
 
-2 tracce generate/aggiornate, 606 totali
+8 tracce generate/aggiornate, 614 totali
