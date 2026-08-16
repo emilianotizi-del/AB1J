@@ -4,7 +4,7 @@
   },
   "_last_run": {
     "models": {
-      "eleven_v3": 3
+      "eleven_v3": 2
     },
     "error_samples": [],
     "skipped": []
@@ -1816,6 +1816,12 @@
     "model": "eleven_v3"
   },
   "w105.mp3": {
+    "model": "eleven_v3"
+  },
+  "w606.mp3": {
+    "model": "eleven_v3"
+  },
+  "w607.mp3": {
     "model": "eleven_v3"
   }
 }
