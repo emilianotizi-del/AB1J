@@ -1,6 +1,6 @@
 // Service worker: app shell in cache all'installazione, contenuti e font in
 // cache runtime (stale-while-revalidate). Incrementare VERSION a ogni release.
-const VERSION = 'ab1j-v27';
+const VERSION = 'ab1j-v28';
 const SHELL = [
   './',
   './index.html',
@@ -57,6 +57,28 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET') return;
+
+  const url = new URL(e.request.url);
+  // Codice e dati (JS, JSON, CSS): RETE PRIMA, cache come riserva offline.
+  // Così un deploy nuovo arriva subito, senza restare bloccati su versioni vecchie.
+  const isCodeOrData = /\.(js|json|css)$/.test(url.pathname);
+
+  if (isCodeOrData) {
+    e.respondWith(
+      fetch(e.request)
+        .then(res => {
+          if (res.ok) {
+            const copy = res.clone();
+            caches.open(VERSION).then(c => c.put(e.request, copy));
+          }
+          return res;
+        })
+        .catch(() => caches.match(e.request))
+    );
+    return;
+  }
+
+  // Tutto il resto (audio, immagini, font): CACHE PRIMA (stabile, pesante).
   e.respondWith(
     caches.match(e.request).then(cached => {
       const fetched = fetch(e.request)
