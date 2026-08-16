@@ -1,0 +1,131 @@
+{
+  "id": "mission_phone",
+  "title": "Una telefonata",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "info_gap",
+      "goal": "Telefoni a un amico, ma risponde qualcun altro.",
+      "pretask": {
+        "intro": "Chiami Davit, ma risponde sua sorella. Chiedi di lui.",
+        "phrases": [
+          {
+            "hy": "Ալո, Դավիթը տա՞նն է",
+            "tr": "alo, Davit'ə tann e",
+            "it": "Pronto, c'è Davit?"
+          },
+          {
+            "hy": "Ե՞րբ կգա",
+            "tr": "yerb kga",
+            "it": "Quando torna?"
+          },
+          {
+            "hy": "Կզանգեմ ավելի ուշ",
+            "tr": "kzangem aveli ush",
+            "it": "Richiamerò più tardi"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Chiami: chiedi se c'è Davit.",
+          "options": [
+            {
+              "hy": "Ալո, բարև։ Դավիթը տա՞նն է։",
+              "it": "Pronto, ciao. C'è Davit?",
+              "ok": true,
+              "reply": {
+                "hy": "Ոչ, նա աշխատանքի է։",
+                "it": "No, è al lavoro."
+              }
+            },
+            {
+              "hy": "Ի՞նչ արժե։",
+              "it": "Quanto costa?",
+              "ok": false
+            },
+            {
+              "hy": "Ցտեսություն։",
+              "it": "Arrivederci.",
+              "ok": false
+            }
+          ],
+          "studentFirst": true
+        },
+        {
+          "prompt": "Non c'è: chiedi quando torna.",
+          "options": [
+            {
+              "hy": "Ե՞րբ կգա։",
+              "it": "Quando torna?",
+              "ok": true,
+              "reply": {
+                "hy": "Երեկոյան։ Ինչ-որ բան փոխանցե՞մ։",
+                "it": "Stasera. Vuole che gli riferisca qualcosa?"
+              }
+            },
+            {
+              "hy": "Կարմիր։",
+              "it": "Rosso.",
+              "ok": false
+            },
+            {
+              "hy": "Ես բժիշկ եմ։",
+              "it": "Sono un medico.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Նա աշխատանքի է։",
+            "tr": "na ashkhatank'i e",
+            "it": "È al lavoro."
+          },
+          "repair": {
+            "hy": "Ներողություն, կրկնե՞ք։",
+            "tr": "neroghut'yun, krkne՞k'",
+            "it": "Scusi, può ripetere?"
+          }
+        },
+        {
+          "prompt": "Di' che richiamerai più tardi.",
+          "options": [
+            {
+              "hy": "Շնորհակալություն, կզանգեմ ավելի ուշ։",
+              "it": "Grazie, richiamerò più tardi.",
+              "ok": true,
+              "reply": {
+                "hy": "Լավ, ցտեսություն։",
+                "it": "Va bene, arrivederci."
+              }
+            },
+            {
+              "hy": "Ժամը հինգն է։",
+              "it": "Sono le cinque.",
+              "ok": false
+            },
+            {
+              "hy": "Ոտքով։",
+              "it": "A piedi.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ինչ-որ բան փոխանցե՞մ։",
+            "tr": "inch-vor ban p'okhants'em",
+            "it": "Vuole che gli riferisca?"
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "«Ալո» e «տա՞նն է» (pronto / è a casa?): l'apertura tipica di una telefonata.",
+          "«կգա» (verrà/tornerà) e «կզանգեմ» (richiamerò): il futuro nella conversazione telefonica.",
+          "Hai gestito l'imprevisto (risponde un'altra persona) senza bloccarti: adattamento reale.",
+          "Hai avuto l'iniziativa dell'intera chiamata."
+        ]
+      }
+    }
+  ]
+}

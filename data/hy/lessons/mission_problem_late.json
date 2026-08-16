@@ -1,0 +1,131 @@
+{
+  "id": "mission_problem_late",
+  "title": "Sono in ritardo",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "problem",
+      "goal": "Sei in ritardo a un appuntamento: avvisa e scusati.",
+      "pretask": {
+        "intro": "Dovevi vedere un amico alle sei, ma farai tardi. Chiami per avvisare.",
+        "phrases": [
+          {
+            "hy": "Ուշանում եմ",
+            "tr": "ushanum em",
+            "it": "Sono in ritardo"
+          },
+          {
+            "hy": "Ներողություն",
+            "tr": "neroghut'yun",
+            "it": "Scusa"
+          },
+          {
+            "hy": "Տասը րոպեից կգամ",
+            "tr": "tasə ropeits' kgam",
+            "it": "Arrivo tra dieci minuti"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Chiami: avvisa che sei in ritardo.",
+          "options": [
+            {
+              "hy": "Բարև, ներողություն, ուշանում եմ։",
+              "it": "Ciao, scusa, sono in ritardo.",
+              "ok": true,
+              "reply": {
+                "hy": "Ոչինչ։ Շա՞տ ուշ։",
+                "it": "Non fa niente. Molto tardi?"
+              }
+            },
+            {
+              "hy": "Ի՞նչ արժե։",
+              "it": "Quanto costa?",
+              "ok": false
+            },
+            {
+              "hy": "Ցտեսություն։",
+              "it": "Arrivederci.",
+              "ok": false
+            }
+          ],
+          "studentFirst": true
+        },
+        {
+          "prompt": "Di' quanto tardi: dieci minuti.",
+          "options": [
+            {
+              "hy": "Ոչ, տասը րոպեից կգամ։",
+              "it": "No, arrivo tra dieci minuti.",
+              "ok": true,
+              "reply": {
+                "hy": "Լավ, սպասում եմ։",
+                "it": "Ok, ti aspetto."
+              }
+            },
+            {
+              "hy": "Երեկ։",
+              "it": "Ieri.",
+              "ok": false
+            },
+            {
+              "hy": "Կարմիր։",
+              "it": "Rosso.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Շա՞տ ուշ։",
+            "tr": "shat ush",
+            "it": "Molto tardi?"
+          },
+          "repair": {
+            "hy": "Ներողություն, չհասկացա։",
+            "tr": "neroghut'yun, chhaskats'a",
+            "it": "Scusa, non ho capito."
+          }
+        },
+        {
+          "prompt": "Ringrazia per la pazienza.",
+          "options": [
+            {
+              "hy": "Շնորհակալություն, որ սպասում ես։",
+              "it": "Grazie che aspetti.",
+              "ok": true,
+              "reply": {
+                "hy": "Խնդիր չկա, կտեսնվենք։",
+                "it": "Nessun problema, ci vediamo."
+              }
+            },
+            {
+              "hy": "Մի՛ գնա։",
+              "it": "Non andare!",
+              "ok": false
+            },
+            {
+              "hy": "Ջուր։",
+              "it": "Acqua.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Սպասում եմ։",
+            "tr": "spasum em",
+            "it": "Ti aspetto."
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "«ուշանում եմ» (sono in ritardo): riconoscere e comunicare un problema con onestà.",
+          "«տասը րոպեից» (tra dieci minuti): l'ablativo di tempo per dire «tra quanto».",
+          "«Ոչինչ» / «Խնդիր չկա» (non fa niente / nessun problema): il registro che ripara la situazione.",
+          "Scusarsi e quantificare il ritardo è problem solving: spieghi, l'altro accetta, si trova la soluzione."
+        ]
+      }
+    }
+  ]
+}

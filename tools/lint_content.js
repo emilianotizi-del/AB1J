@@ -97,5 +97,24 @@ for (const mod of course.modules) {
 }
 console.log(`\nLettere insegnate: ${taught.size} (digramma incluso)`);
 console.log(`Testi senza audio (li genererà l'Action): ${noAudio.size}`);
+
+// Controllo missioni task-based: caratteri latini nei campi armeni
+const missionFiles = fs.readdirSync('data/hy/lessons').filter(f => f.startsWith('mission_'));
+for (const mf of missionFiles) {
+  const M = JSON.parse(fs.readFileSync(`data/hy/lessons/${mf}`));
+  const hyFields = [];
+  for (const st of M.steps || []) {
+    for (const ph of (st.pretask?.phrases || [])) hyFields.push(ph.hy);
+    for (const t of (st.turns || [])) {
+      if (t.npc?.hy) hyFields.push(t.npc.hy);
+      if (t.repair?.hy) hyFields.push(t.repair.hy);
+      for (const o of (t.options || [])) { if (o.hy) hyFields.push(o.hy); if (o.reply?.hy) hyFields.push(o.reply.hy); }
+    }
+  }
+  for (const h of hyFields) {
+    if (/[a-zA-Z]/.test(h)) err(`${mf}: carattere latino nel testo armeno → "${h}"`);
+  }
+}
+
 console.log(errors ? errors + ' ERRORI' : 'Coerenza OK');
 process.exit(errors ? 1 : 0);

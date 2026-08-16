@@ -1,0 +1,131 @@
+{
+  "id": "mission_station",
+  "title": "Alla fermata",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "info_gap",
+      "goal": "Alla fermata, scopri quale autobus va in centro.",
+      "pretask": {
+        "intro": "Sei a una fermata. Non sai quale autobus prendere.",
+        "phrases": [
+          {
+            "hy": "Ո՞ր ավտոբուսը",
+            "tr": "vor avtobusə",
+            "it": "Quale autobus?"
+          },
+          {
+            "hy": "Կենտրոն է գնում",
+            "tr": "kentron e gnum",
+            "it": "Va in centro"
+          },
+          {
+            "hy": "Շնորհակալություն",
+            "tr": "shnorhakalut'yun",
+            "it": "Grazie"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Ferma qualcuno e chiedi quale autobus va in centro.",
+          "options": [
+            {
+              "hy": "Ներողություն, ո՞ր ավտոբուսը կենտրոն է գնում։",
+              "it": "Scusi, quale autobus va in centro?",
+              "ok": true,
+              "reply": {
+                "hy": "Հինգ համարը։",
+                "it": "Il numero cinque."
+              }
+            },
+            {
+              "hy": "Ի՞նչ արժե։",
+              "it": "Quanto costa?",
+              "ok": false
+            },
+            {
+              "hy": "Բարև, ես Էմիլիանոն եմ։",
+              "it": "Ciao, sono Emiliano.",
+              "ok": false
+            }
+          ],
+          "studentFirst": true
+        },
+        {
+          "prompt": "Non hai capito bene il numero: chiedi conferma.",
+          "options": [
+            {
+              "hy": "Հի՞նգ համարը։",
+              "it": "Il numero cinque?",
+              "ok": true,
+              "reply": {
+                "hy": "Այո, հինգը։ Ահա գալիս է։",
+                "it": "Sì, il cinque. Eccolo che arriva."
+              }
+            },
+            {
+              "hy": "Շնորհակալություն, ցտեսություն։",
+              "it": "Grazie, arrivederci.",
+              "ok": false
+            },
+            {
+              "hy": "Ես տանն եմ։",
+              "it": "Sono a casa.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Հինգ համարը։",
+            "tr": "hing hamarə",
+            "it": "Il numero cinque."
+          },
+          "repair": {
+            "hy": "Ներողություն, չհասկացա։",
+            "tr": "neroghut'yun, chhaskats'a",
+            "it": "Scusa, non ho capito."
+          }
+        },
+        {
+          "prompt": "Ringrazia.",
+          "options": [
+            {
+              "hy": "Շնորհակալություն։",
+              "it": "Grazie.",
+              "ok": true,
+              "reply": {
+                "hy": "Չարժե։",
+                "it": "Prego."
+              }
+            },
+            {
+              "hy": "Ի՞նչ եղանակ է։",
+              "it": "Che tempo fa?",
+              "ok": false
+            },
+            {
+              "hy": "Կարմիր։",
+              "it": "Rosso.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ահա, գալիս է։",
+            "tr": "aha, galis e",
+            "it": "Ecco, sta arrivando."
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "«ո՞ր» (quale): la domanda che colma l'information gap.",
+          "Hai chiesto CONFERMA del numero invece di rischiare l'autobus sbagliato: strategia comunicativa vera.",
+          "«Չարժե» (prego / non c'è di che): la risposta cortese al grazie.",
+          "Hai preso l'iniziativa fermando un passante."
+        ]
+      }
+    }
+  ]
+}

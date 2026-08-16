@@ -1,0 +1,131 @@
+{
+  "id": "mission_ticket",
+  "title": "Comprare un biglietto",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "transaction",
+      "goal": "Compra un biglietto dell'autobus per Gyumri.",
+      "pretask": {
+        "intro": "Sei alla biglietteria. Vuoi un biglietto per Gyumri.",
+        "phrases": [
+          {
+            "hy": "Մեկ տոմս Գյումրի",
+            "tr": "mek toms Gyumri",
+            "it": "Un biglietto per Gyumri"
+          },
+          {
+            "hy": "Ե՞րբ է մեկնում",
+            "tr": "yerb e meknum",
+            "it": "Quando parte?"
+          },
+          {
+            "hy": "Որքա՞ն է",
+            "tr": "vork'an e",
+            "it": "Quant'è?"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Sei tu a iniziare: chiedi un biglietto per Gyumri.",
+          "options": [
+            {
+              "hy": "Մեկ տոմս Գյումրի, խնդրում եմ։",
+              "it": "Un biglietto per Gyumri, per favore.",
+              "ok": true,
+              "reply": {
+                "hy": "Ե՞րբ եք ուզում մեկնել։",
+                "it": "Quando vuole partire?"
+              }
+            },
+            {
+              "hy": "Ի՞նչ ես անում։",
+              "it": "Cosa fai?",
+              "ok": false
+            },
+            {
+              "hy": "Ցտեսություն։",
+              "it": "Arrivederci.",
+              "ok": false
+            }
+          ],
+          "studentFirst": true
+        },
+        {
+          "prompt": "Di' che vuoi partire domani.",
+          "options": [
+            {
+              "hy": "Վաղը, խնդրում եմ։",
+              "it": "Domani, per favore.",
+              "ok": true,
+              "reply": {
+                "hy": "Առավոտյան ժամը ի՞նչ։",
+                "it": "La mattina a che ora?"
+              }
+            },
+            {
+              "hy": "Երեկ։",
+              "it": "Ieri.",
+              "ok": false
+            },
+            {
+              "hy": "Ոտքով։",
+              "it": "A piedi.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ե՞րբ եք ուզում մեկնել։",
+            "tr": "yerb ek' uzum meknel",
+            "it": "Quando vuole partire?"
+          },
+          "repair": {
+            "hy": "Ներողություն, կրկնե՞ք։",
+            "tr": "neroghut'yun, krkne՞k'",
+            "it": "Scusi, può ripetere?"
+          }
+        },
+        {
+          "prompt": "Chiedi il prezzo.",
+          "options": [
+            {
+              "hy": "Որքա՞ն է։",
+              "it": "Quant'è?",
+              "ok": true,
+              "reply": {
+                "hy": "Երեք հազար դրամ։",
+                "it": "Tremila dram."
+              }
+            },
+            {
+              "hy": "Կապույտ։",
+              "it": "Blu.",
+              "ok": false
+            },
+            {
+              "hy": "Ես Իտալիայից եմ։",
+              "it": "Sono dall'Italia.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Առավոտյան ժամը ինը։",
+            "tr": "aravotyan zhamə inə",
+            "it": "La mattina alle nove."
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "«մեկնել» (partire) e «ե՞րբ» (quando): il lessico del viaggio.",
+          "Hai gestito la domanda di ritorno sull'orario: capire e precisare.",
+          "Hai avuto l'iniziativa aprendo la richiesta.",
+          "L'ora e il futuro insieme per organizzare uno spostamento reale."
+        ]
+      }
+    }
+  ]
+}

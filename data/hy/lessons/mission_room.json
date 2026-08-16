@@ -1,0 +1,131 @@
+{
+  "id": "mission_room",
+  "title": "Chiedere di una stanza",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "info_gap",
+      "goal": "Chiedi informazioni su una stanza in affitto.",
+      "pretask": {
+        "intro": "Cerchi una stanza. Chiami e fai qualche domanda.",
+        "phrases": [
+          {
+            "hy": "Սենյակ ունե՞ք",
+            "tr": "senyak unek'",
+            "it": "Avete una stanza?"
+          },
+          {
+            "hy": "Որքա՞ն է վարձը",
+            "tr": "vork'an e vardzə",
+            "it": "Quant'è l'affitto?"
+          },
+          {
+            "hy": "Կարելի՞ է տեսնել",
+            "tr": "kareli e tesnel",
+            "it": "Si può vedere?"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Sei tu a chiamare: chiedi se hanno una stanza.",
+          "options": [
+            {
+              "hy": "Բարև, սենյակ ունե՞ք։",
+              "it": "Salve, avete una stanza?",
+              "ok": true,
+              "reply": {
+                "hy": "Այո, ունենք։ Մեկ անձի՞ համար։",
+                "it": "Sì, ne abbiamo. Per una persona?"
+              }
+            },
+            {
+              "hy": "Ի՞նչ արժե խնձորը։",
+              "it": "Quanto costa la mela?",
+              "ok": false
+            },
+            {
+              "hy": "Ցտեսություն։",
+              "it": "Arrivederci.",
+              "ok": false
+            }
+          ],
+          "studentFirst": true
+        },
+        {
+          "prompt": "Di' che è per te solo. Poi chiedi il prezzo.",
+          "options": [
+            {
+              "hy": "Այո, մեկ անձի։ Որքա՞ն է վարձը։",
+              "it": "Sì, per una persona. Quant'è l'affitto?",
+              "ok": true,
+              "reply": {
+                "hy": "Ամսական հարյուր հազար դրամ։",
+                "it": "Centomila dram al mese."
+              }
+            },
+            {
+              "hy": "Ես բժիշկ եմ։",
+              "it": "Sono un medico.",
+              "ok": false
+            },
+            {
+              "hy": "Ոտքով։",
+              "it": "A piedi.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Մեկ անձի՞ համար։",
+            "tr": "mek andzi hamar",
+            "it": "Per una persona?"
+          },
+          "repair": {
+            "hy": "Ներողություն, կրկնե՞ք։",
+            "tr": "neroghut'yun, krkne՞k'",
+            "it": "Scusi, può ripetere?"
+          }
+        },
+        {
+          "prompt": "Chiedi se puoi vederla.",
+          "options": [
+            {
+              "hy": "Կարելի՞ է տեսնել։",
+              "it": "Si può vedere?",
+              "ok": true,
+              "reply": {
+                "hy": "Իհարկե։ Վաղը կարո՞ղ եք։",
+                "it": "Certo. Domani può?"
+              }
+            },
+            {
+              "hy": "Կարմիր։",
+              "it": "Rosso.",
+              "ok": false
+            },
+            {
+              "hy": "Ժամը հինգն է։",
+              "it": "Sono le cinque.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ամսական հարյուր հազար դրամ։",
+            "tr": "amsakan haryur hazar dram",
+            "it": "Centomila al mese."
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "«ունե՞ք» (avete?) apre la richiesta di informazioni.",
+          "«վարձ» (affitto), «սենյակ» (stanza): il lessico essenziale, senza addentrarsi in contratti.",
+          "«Կարելի՞ է» (si può?): chiedere il permesso in modo cortese.",
+          "Hai colmato l'information gap con domande mirate, una alla volta."
+        ]
+      }
+    }
+  ]
+}

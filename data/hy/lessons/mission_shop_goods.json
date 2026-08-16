@@ -1,0 +1,131 @@
+{
+  "id": "mission_shop_goods",
+  "title": "In un negozio",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "transaction",
+      "goal": "Cerchi una maglietta blu della tua taglia.",
+      "pretask": {
+        "intro": "In un negozio di vestiti. Cerchi una maglietta blu.",
+        "phrases": [
+          {
+            "hy": "Շապիկ ունե՞ք",
+            "tr": "shapik unek'",
+            "it": "Avete magliette?"
+          },
+          {
+            "hy": "Կապույտ, խնդրում եմ",
+            "tr": "kapuyt, khndrum em",
+            "it": "Blu, per favore"
+          },
+          {
+            "hy": "Իմ չափսը",
+            "tr": "im chap'sə",
+            "it": "La mia taglia"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Sei tu a chiedere: cerchi una maglietta.",
+          "options": [
+            {
+              "hy": "Բարև, շապիկ ունե՞ք։",
+              "it": "Ciao, avete magliette?",
+              "ok": true,
+              "reply": {
+                "hy": "Այո։ Ի՞նչ գույն։",
+                "it": "Sì. Che colore?"
+              }
+            },
+            {
+              "hy": "Ի՞նչ եղանակ է։",
+              "it": "Che tempo fa?",
+              "ok": false
+            },
+            {
+              "hy": "Ցտեսություն։",
+              "it": "Arrivederci.",
+              "ok": false
+            }
+          ],
+          "studentFirst": true
+        },
+        {
+          "prompt": "Di' che la vuoi blu.",
+          "options": [
+            {
+              "hy": "Կապույտ, խնդրում եմ։",
+              "it": "Blu, per favore.",
+              "ok": true,
+              "reply": {
+                "hy": "Ի՞նչ չափս։",
+                "it": "Che taglia?"
+              }
+            },
+            {
+              "hy": "Ես Իտալիայից եմ։",
+              "it": "Sono dall'Italia.",
+              "ok": false
+            },
+            {
+              "hy": "Ոտքով։",
+              "it": "A piedi.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ի՞նչ գույն։",
+            "tr": "inch guyn",
+            "it": "Che colore?"
+          },
+          "repair": {
+            "hy": "Ներողություն, կրկնե՞ք։",
+            "tr": "neroghut'yun, krkne՞k'",
+            "it": "Scusi, può ripetere?"
+          }
+        },
+        {
+          "prompt": "Non sai la taglia armena: chiedi di provarla.",
+          "options": [
+            {
+              "hy": "Չգիտեմ չափսս։ Կարելի՞ է չափել։",
+              "it": "Non so la mia taglia. Posso provarla?",
+              "ok": true,
+              "reply": {
+                "hy": "Իհարկե, ահա։",
+                "it": "Certo, ecco."
+              }
+            },
+            {
+              "hy": "Կարմիր խնձոր։",
+              "it": "Mela rossa.",
+              "ok": false
+            },
+            {
+              "hy": "Ժամը հինգն է։",
+              "it": "Sono le cinque.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ի՞նչ չափս։",
+            "tr": "inch chap's",
+            "it": "Che taglia?"
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "«ունե՞ք» + prodotto: chiedere disponibilità in un negozio non alimentare.",
+          "Colore e taglia («գույն», «չափս»): dettagli concreti dell'acquisto.",
+          "«Չգիտեմ» (non lo so): ammettere di non sapere è una mossa comunicativa, non una debolezza.",
+          "Hai gestito una catena di domande del commesso (colore? taglia?) mantenendo il filo."
+        ]
+      }
+    }
+  ]
+}

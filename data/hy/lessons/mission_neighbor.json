@@ -1,0 +1,131 @@
+{
+  "id": "mission_neighbor",
+  "title": "Dal vicino",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "social",
+      "goal": "Presentati al nuovo vicino di casa.",
+      "pretask": {
+        "intro": "Ti sei appena trasferito. Bussi alla porta del vicino per conoscerlo.",
+        "phrases": [
+          {
+            "hy": "Ես նոր հարևանն եմ",
+            "tr": "yes nor harevann em",
+            "it": "Sono il nuovo vicino"
+          },
+          {
+            "hy": "Հաճելի է ծանոթանալ",
+            "tr": "hacheli e tsanot'anal",
+            "it": "Piacere di conoscerla"
+          },
+          {
+            "hy": "Ինչ-որ բան պետք լինի՝ ասեք",
+            "tr": "inch-vor ban petk' lini, asek'",
+            "it": "Se serve qualcosa, mi dica"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Bussi: presentati come il nuovo vicino.",
+          "options": [
+            {
+              "hy": "Բարև ձեզ, ես նոր հարևանն եմ։",
+              "it": "Salve, sono il nuovo vicino.",
+              "ok": true,
+              "reply": {
+                "hy": "Ա՜, բարի եկաք։ Ես Սուրենն եմ։",
+                "it": "Ah, benvenuto! Io sono Suren."
+              }
+            },
+            {
+              "hy": "Ի՞նչ արժե։",
+              "it": "Quanto costa?",
+              "ok": false
+            },
+            {
+              "hy": "Հաշիվը, խնդրում եմ։",
+              "it": "Il conto, per favore.",
+              "ok": false
+            }
+          ],
+          "studentFirst": true
+        },
+        {
+          "prompt": "Ricambia il saluto e di' che sei contento di conoscerlo.",
+          "options": [
+            {
+              "hy": "Հաճելի է ծանոթանալ, Սուրեն։",
+              "it": "Piacere di conoscerla, Suren.",
+              "ok": true,
+              "reply": {
+                "hy": "Փոխադարձ։ Բարի եկաք թաղ։",
+                "it": "Ricambiato. Benvenuto nel quartiere."
+              }
+            },
+            {
+              "hy": "Ես տանն եմ։",
+              "it": "Sono a casa.",
+              "ok": false
+            },
+            {
+              "hy": "Կապույտ։",
+              "it": "Blu.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ես Սուրենն եմ։",
+            "tr": "yes Surenn em",
+            "it": "Io sono Suren."
+          },
+          "repair": {
+            "hy": "Ներողություն, չհասկացա։",
+            "tr": "neroghut'yun, chhaskats'a",
+            "it": "Scusa, non ho capito."
+          }
+        },
+        {
+          "prompt": "Offri disponibilità (reciprocità) e congedati.",
+          "options": [
+            {
+              "hy": "Ինչ-որ բան պետք լինի՝ ասեք։",
+              "it": "Se serve qualcosa, mi dica.",
+              "ok": true,
+              "reply": {
+                "hy": "Շնորհակալ եմ, նույնպես։",
+                "it": "Grazie, altrettanto."
+              }
+            },
+            {
+              "hy": "Մի՛ գնա։",
+              "it": "Non andare!",
+              "ok": false
+            },
+            {
+              "hy": "Ջուր, խնդրում եմ։",
+              "it": "Acqua, per favore.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Բարի եկաք թաղ։",
+            "tr": "bari yekak' t'agh",
+            "it": "Benvenuto nel quartiere."
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "«հարևան» (vicino): apri un rapporto sociale di prossimità.",
+          "«բարի եկաք» (benvenuto): una formula di accoglienza che sentirai spesso.",
+          "La reciprocità dell'offerta di aiuto crea legame: fondamentale nella cultura del vicinato armena.",
+          "Hai preso l'iniziativa bussando e presentandoti."
+        ]
+      }
+    }
+  ]
+}

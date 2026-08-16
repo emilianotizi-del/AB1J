@@ -1,0 +1,131 @@
+{
+  "id": "mission_help",
+  "title": "Chiedere aiuto",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "problem",
+      "goal": "Hai un piccolo problema per strada: chiedi aiuto a qualcuno.",
+      "pretask": {
+        "intro": "Hai perso il portafoglio. Fermi qualcuno e chiedi aiuto.",
+        "phrases": [
+          {
+            "hy": "Օգնեք, խնդրում եմ",
+            "tr": "ognek', khndrum em",
+            "it": "Mi aiuti, per favore"
+          },
+          {
+            "hy": "Դրամապանակս կորավ",
+            "tr": "dramapanaks korav",
+            "it": "Ho perso il portafoglio"
+          },
+          {
+            "hy": "Ի՞նչ անեմ",
+            "tr": "inch anem",
+            "it": "Cosa faccio?"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Ferma qualcuno e chiedi aiuto.",
+          "options": [
+            {
+              "hy": "Ներողություն, օգնեք, խնդրում եմ։",
+              "it": "Scusi, mi aiuti, per favore.",
+              "ok": true,
+              "reply": {
+                "hy": "Իհարկե։ Ի՞նչ է պատահել։",
+                "it": "Certo. Cos'è successo?"
+              }
+            },
+            {
+              "hy": "Ի՞նչ արժե։",
+              "it": "Quanto costa?",
+              "ok": false
+            },
+            {
+              "hy": "Ցտեսություն։",
+              "it": "Arrivederci.",
+              "ok": false
+            }
+          ],
+          "studentFirst": true
+        },
+        {
+          "prompt": "Spiega: hai perso il portafoglio.",
+          "options": [
+            {
+              "hy": "Դրամապանակս կորավ։",
+              "it": "Ho perso il portafoglio.",
+              "ok": true,
+              "reply": {
+                "hy": "Մի՛ անհանգստացեք։ Ոստիկանություն կա մոտակայքում։",
+                "it": "Non si preoccupi. C'è una polizia qui vicino."
+              }
+            },
+            {
+              "hy": "Ես բժիշկ եմ։",
+              "it": "Sono un medico.",
+              "ok": false
+            },
+            {
+              "hy": "Կարմիր։",
+              "it": "Rosso.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ի՞նչ է պատահել։",
+            "tr": "inch e patahel",
+            "it": "Cos'è successo?"
+          },
+          "repair": {
+            "hy": "Ներողություն, չհասկացա։",
+            "tr": "neroghut'yun, chhaskats'a",
+            "it": "Scusa, non ho capito."
+          }
+        },
+        {
+          "prompt": "Chiedi dov'è e ringrazia.",
+          "options": [
+            {
+              "hy": "Որտե՞ղ է։ Շնորհակալություն։",
+              "it": "Dov'è? Grazie.",
+              "ok": true,
+              "reply": {
+                "hy": "Այնտեղ, ուղիղ։ Հաջողություն։",
+                "it": "Là, dritto. Buona fortuna."
+              }
+            },
+            {
+              "hy": "Ջուր, խնդրում եմ։",
+              "it": "Acqua, per favore.",
+              "ok": false
+            },
+            {
+              "hy": "Ժամը հինգն է։",
+              "it": "Sono le cinque.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ոստիկանություն կա մոտակայքում։",
+            "tr": "vostikanut'yun ka motakayk'um",
+            "it": "C'è una polizia qui vicino."
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "«Օգնեք» (mi aiuti): l'imperativo di cortesia per chiedere aiuto in una difficoltà.",
+          "«կորավ» (è andato perso): l'aoristo per un evento appena accaduto.",
+          "«Մի՛ անհանգստացեք» (non si preoccupi): capire una rassicurazione altrui.",
+          "Sapersi far aiutare in un imprevisto è competenza A2 concreta: non serve parlare bene, serve farsi capire."
+        ]
+      }
+    }
+  ]
+}

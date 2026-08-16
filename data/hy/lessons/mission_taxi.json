@@ -1,0 +1,131 @@
+{
+  "id": "mission_taxi",
+  "title": "Prendere un taxi",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "transaction",
+      "goal": "Prendi un taxi e fatti portare in centro.",
+      "pretask": {
+        "intro": "Fermi un taxi. Devi dire dove vuoi andare e chiedere il prezzo.",
+        "phrases": [
+          {
+            "hy": "Կենտրոն, խնդրում եմ",
+            "tr": "kentron, khndrum em",
+            "it": "In centro, per favore"
+          },
+          {
+            "hy": "Որքա՞ն կարժենա",
+            "tr": "vork'an karzhena",
+            "it": "Quanto verrà a costare?"
+          },
+          {
+            "hy": "Այստեղ լավ է",
+            "tr": "aystegh lav e",
+            "it": "Qui va bene"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Sei tu a salire: di' dove vuoi andare.",
+          "options": [
+            {
+              "hy": "Բարև, կենտրոն, խնդրում եմ։",
+              "it": "Ciao, in centro, per favore.",
+              "ok": true,
+              "reply": {
+                "hy": "Կենտրո՞ն։ Լավ, նստեք։",
+                "it": "In centro? Bene, salga."
+              }
+            },
+            {
+              "hy": "Ի՞նչ եղանակ է։",
+              "it": "Che tempo fa?",
+              "ok": false
+            },
+            {
+              "hy": "Ցտեսություն։",
+              "it": "Arrivederci.",
+              "ok": false
+            }
+          ],
+          "studentFirst": true
+        },
+        {
+          "prompt": "Chiedi quanto costerà.",
+          "options": [
+            {
+              "hy": "Որքա՞ն կարժենա։",
+              "it": "Quanto costerà?",
+              "ok": true,
+              "reply": {
+                "hy": "Երկու հազար դրամ։",
+                "it": "Duemila dram."
+              }
+            },
+            {
+              "hy": "Ես բժիշկ եմ։",
+              "it": "Sono un medico.",
+              "ok": false
+            },
+            {
+              "hy": "Կարմիր։",
+              "it": "Rosso.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Նստեք, խնդրում եմ։",
+            "tr": "nstek', khndrum em",
+            "it": "Salga, prego."
+          },
+          "repair": {
+            "hy": "Ներողություն, կրկնե՞ք։",
+            "tr": "neroghut'yun, krkne՞k'",
+            "it": "Scusi, può ripetere?"
+          }
+        },
+        {
+          "prompt": "Siete arrivati: di' che qui va bene e ringrazia.",
+          "options": [
+            {
+              "hy": "Այստեղ լավ է։ Շնորհակալություն։",
+              "it": "Qui va bene. Grazie.",
+              "ok": true,
+              "reply": {
+                "hy": "Բարի օր։",
+                "it": "Buona giornata."
+              }
+            },
+            {
+              "hy": "Մի՛ գնա։",
+              "it": "Non andare!",
+              "ok": false
+            },
+            {
+              "hy": "Ջուր, խնդրում եմ։",
+              "it": "Acqua, per favore.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Հասանք։ Երկու հազար դրամ։",
+            "tr": "hasank'. yerku hazar dram",
+            "it": "Siamo arrivati. Duemila dram."
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "«կարժենա» (costerà): il futuro con կ- applicato a una domanda pratica.",
+          "Il locativo «կենտրոն» (in centro) come destinazione.",
+          "Hai avuto l'iniziativa salendo e dettando la destinazione.",
+          "Chiedere il prezzo PRIMA evita sorprese: una mossa pragmatica utile."
+        ]
+      }
+    }
+  ]
+}
