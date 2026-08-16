@@ -509,3 +509,7 @@
   color: var(--ink); box-sizing: border-box;
 }
 .prod-input:focus { outline: none; border-color: var(--accent); }
+
+/* Evidenziazione lettera per lettera nella verifica produzione */
+.ch-ok  { color: var(--ok, #3a8); }
+.ch-bad { color: var(--err, #c44); text-decoration: underline; text-decoration-color: var(--err, #c44); }

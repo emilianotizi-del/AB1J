@@ -1,6 +1,6 @@
 // Service worker: app shell in cache all'installazione, contenuti e font in
 // cache runtime (stale-while-revalidate). Incrementare VERSION a ogni release.
-const VERSION = 'ab1j-v37';
+const VERSION = 'ab1j-v38';
 const SHELL = [
   './',
   './index.html',

@@ -112,12 +112,26 @@ export function render(mount) {
         const clean = x => String(x).trim().replace(/[։.,՞՜՛?!]/g, '').replace(/\s+/g, ' ').toLowerCase();
         const wrote = prodText.trim();
         const ok = wrote && clean(wrote) === clean(card.hy);
-        if (wrote) {
-          face.append(el('div', { class: 'feedback ' + (ok ? 'ok' : 'err'), style: 'margin-top:8px' },
-            ok ? '✓ Esatto!' : '✗ Hai scritto: ' + wrote));
+        if (wrote && !ok) {
+          // Evidenzio lettera per lettera: verde se combacia con la risposta, rossa se no.
+          // Confronto le stringhe "pulite" per allineare le posizioni, ma mostro i caratteri scritti.
+          const target = clean(card.hy);
+          const typed = clean(wrote);
+          const box = el('div', { class: 'feedback err', style: 'margin-top:8px' });
+          box.append(el('span', {}, '✗ Hai scritto: '));
+          const chars = el('span', { class: 'hy', lang: 'hy', style: 'font-weight:700' });
+          for (let i = 0; i < typed.length; i++) {
+            const good = typed[i] === target[i];
+            chars.append(el('span', { class: good ? 'ch-ok' : 'ch-bad' }, typed[i]));
+          }
+          box.append(chars);
+          face.append(box);
+        } else if (wrote && ok) {
+          face.append(el('div', { class: 'feedback ok', style: 'margin-top:8px' }, '✓ Esatto!'));
         }
+        // Risposta corretta nello STESSO font dell'input (sans), non serif, per confrontare bene
         face.append(
-          el('div', { class: 'w-hy hy-display', lang: 'hy', style: 'font-size:2rem;font-weight:700;margin-top:10px' }, card.hy),
+          el('div', { class: 'w-hy hy', lang: 'hy', style: 'font-family:var(--font-hy);font-size:2rem;font-weight:700;margin-top:10px' }, card.hy),
           el('div', { class: 'w-tr', style: 'margin-top:6px' }, card.tr),
           el('button', {
             class: 'btn-audio', style: 'margin-top:12px', 'aria-label': 'Ascolta',
