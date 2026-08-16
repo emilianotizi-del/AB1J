@@ -1,27 +1,22 @@
-// Tastiera armena su schermo, lettere raggruppate per famiglia di suono.
-// Non dipende dalla tastiera di sistema (che su iOS va installata a mano).
-// Uso: makeKeyboard(onInsert, onBackspace) → elemento DOM da montare.
+// Tastiera armena su schermo, layout allineato a quello di iOS (fonetico standard).
+// Le prime 3 righe replicano la disposizione della tastiera armena di iPhone;
+// la 4ª riga raccoglie le lettere che su iOS stanno nel livello shift/long-press,
+// così sono tutte raggiungibili senza cambiare livello.
 import { el } from '../utils/dom.js';
 
-// Righe raggruppate per affinità fonetica: vocali, poi consonanti per luogo/modo,
-// con le confondibili vicine così l'occhio impara a distinguerle.
 const ROWS = [
-  ['ա', 'ե', 'է', 'ը', 'ի', 'ո', 'օ', 'ու'],
-  ['բ', 'պ', 'փ', 'դ', 'տ', 'թ', 'գ', 'կ', 'ք'],
-  ['ձ', 'ծ', 'ց', 'ջ', 'ճ', 'չ', 'զ', 'ս', 'ց'],
-  ['մ', 'ն', 'լ', 'ր', 'ռ', 'յ', 'վ', 'ֆ'],
-  ['հ', 'խ', 'ղ', 'շ', 'ժ', 'ց', 'և']
+  ['ք', 'ո', 'ե', 'ռ', 'տ', 'ը', 'ւ', 'ի', 'օ', 'պ'],
+  ['ա', 'ս', 'դ', 'ֆ', 'գ', 'հ', 'յ', 'կ', 'լ', 'թ'],
+  ['զ', 'ղ', 'ց', 'վ', 'բ', 'ն', 'մ', 'շ', 'ջ'],
+  ['է', 'ր', 'ժ', 'խ', 'ծ', 'ձ', 'ճ', 'չ', 'փ', 'և']
 ];
-// Nota: "ու" è il digramma; lo trattiamo come tasto singolo.
+// "ու" (digramma) si compone con ո + ւ, entrambi presenti.
 
 export function makeKeyboard(onInsert, onBackspace) {
   const kb = el('div', { class: 'hy-keyboard' });
-  const seen = new Set();
   for (const row of ROWS) {
     const r = el('div', { class: 'kb-row' });
     for (const ch of row) {
-      if (seen.has(ch)) continue;      // evita doppioni tra righe
-      seen.add(ch);
       r.append(el('button', {
         class: 'kb-key hy', lang: 'hy', type: 'button',
         onclick: () => onInsert(ch)
@@ -29,7 +24,6 @@ export function makeKeyboard(onInsert, onBackspace) {
     }
     kb.append(r);
   }
-  // Riga funzioni: spazio + cancella
   kb.append(el('div', { class: 'kb-row' },
     el('button', { class: 'kb-key kb-space', type: 'button', onclick: () => onInsert(' ') }, 'spazio'),
     el('button', { class: 'kb-key kb-back', type: 'button', onclick: onBackspace }, '⌫')));

@@ -4,6 +4,7 @@
 import { el, vibrate } from '../utils/dom.js';
 import { dueCards, grade, deckSize } from '../core/srs.js';
 import { speak } from '../core/audio.js';
+import { makeKeyboard } from '../core/keyboard.js';
 
 const KIND_LABEL = { read: 'Come si legge?', mean: 'Che cosa significa?', prod: 'Come si dice in armeno?' };
 
@@ -44,7 +45,15 @@ export function render(mount) {
     holder.innerHTML = '';
 
     let flipped = false;
+    let prodText = '';
     const face = el('div', { class: 'card flashcard card-' + kind });
+    function flip() {
+      if (flipped) return;
+      flipped = true;
+      paint();
+      grades.hidden = false;
+      if (kind === 'read' || kind === 'prod') speak(card.hy);
+    }
 
     function paint() {
       face.innerHTML = '';
@@ -64,17 +73,34 @@ export function render(mount) {
       if (!flipped) {
         if (kind === 'prod') {
           face.append(el('p', { style: 'color:var(--ink-soft);font-size:.9rem;margin-top:14px' },
-            'Dillo o scrivilo in armeno, poi tocca per verificare.'));
+            'Scrivi in armeno, poi tocca «Verifica».'));
+          // Campo di scrittura + tastiera armena interna (layout iOS)
+          const display = el('div', { class: 'write-display hy', lang: 'hy', style: 'font-size:1.5rem' });
+          const caret = el('span', { class: 'write-caret' }, '');
+          const paint = () => { display.textContent = prodText; display.append(caret); };
+          paint();
+          const kb = makeKeyboard(
+            ch => { prodText += ch; paint(); },
+            () => { prodText = prodText.slice(0, -1); paint(); }
+          );
+          // Evito che toccare display/tastiera giri la carta
+          const stop = e => e.stopPropagation();
+          display.addEventListener('click', stop);
+          kb.addEventListener('click', stop);
+          const checkBtn = el('button', { class: 'btn btn-block', style: 'margin-top:12px',
+            onclick: e => { e.stopPropagation(); flip(); } }, 'Verifica');
+          face.append(display, kb, checkBtn);
+        } else {
+          // Sul fronte della carta di significato l'audio è un indizio lecito;
+          // su quella di lettura rivelerebbe la risposta.
+          if (kind === 'mean') {
+            face.append(el('button', {
+              class: 'btn-audio', style: 'margin-top:12px', 'aria-label': 'Ascolta',
+              onclick: e => { e.stopPropagation(); speak(card.hy); }
+            }, '🔊'));
+          }
+          face.append(el('p', { style: 'color:var(--ink-soft);font-size:.85rem;margin-top:14px' }, 'Tocca per girare'));
         }
-        // Sul fronte della carta di significato l'audio è un indizio lecito;
-        // su quella di lettura rivelerebbe la risposta.
-        if (kind === 'mean') {
-          face.append(el('button', {
-            class: 'btn-audio', style: 'margin-top:12px', 'aria-label': 'Ascolta',
-            onclick: e => { e.stopPropagation(); speak(card.hy); }
-          }, '🔊'));
-        }
-        face.append(el('p', { style: 'color:var(--ink-soft);font-size:.85rem;margin-top:14px' }, 'Tocca per girare'));
       } else if (kind === 'read') {
         face.append(
           el('div', { class: 'w-tr', style: 'margin-top:10px;font-size:1.2rem' }, card.tr),
@@ -84,7 +110,14 @@ export function render(mount) {
             onclick: e => { e.stopPropagation(); speak(card.hy); }
           }, '🔊'));
       } else if (kind === 'prod') {
-        // Rivela la forma armena da produrre, con lettura e audio per confronto
+        // Confronto indulgente (punteggiatura/spazi) tra ciò che hai scritto e la risposta
+        const clean = x => String(x).trim().replace(/[։.,՞՜՛?!]/g, '').replace(/\s+/g, ' ').toLowerCase();
+        const wrote = prodText.trim();
+        const ok = wrote && clean(wrote) === clean(card.hy);
+        if (wrote) {
+          face.append(el('div', { class: 'feedback ' + (ok ? 'ok' : 'err'), style: 'margin-top:8px' },
+            ok ? '✓ Esatto!' : '✗ Hai scritto: ' + wrote));
+        }
         face.append(
           el('div', { class: 'w-hy hy-display', lang: 'hy', style: 'font-size:2rem;font-weight:700;margin-top:10px' }, card.hy),
           el('div', { class: 'w-tr', style: 'margin-top:6px' }, card.tr),
@@ -98,11 +131,8 @@ export function render(mount) {
     }
     paint();
     face.addEventListener('click', () => {
-      if (flipped) return;
-      flipped = true;
-      paint();
-      grades.hidden = false;
-      if (kind === 'read' || kind === 'prod') speak(card.hy);
+      if (kind === 'prod') return;   // la carta prod si gira col bottone «Verifica»
+      flip();
     });
 
     const grades = el('div', { class: 'grade-row', hidden: '' });

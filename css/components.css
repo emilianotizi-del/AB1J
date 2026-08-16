@@ -495,3 +495,8 @@
   padding: 6px 10px; border-radius: 8px; text-align: right; max-width: 45%;
 }
 .screen-title { margin-bottom: 4px; }
+
+/* Tastiera nel ripasso (carta produzione): tasti più compatti per stare nello schermo */
+.flashcard .hy-keyboard { margin-top: 12px; }
+.flashcard .kb-key { min-height: 38px; font-size: 1.05rem; }
+.flashcard .write-display { min-height: 44px; font-size: 1.4rem; margin-top: 10px; }
