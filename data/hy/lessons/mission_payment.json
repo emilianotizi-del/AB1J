@@ -1,0 +1,42 @@
+{
+  "id": "mission_payment", "title": "Pagare e il resto", "vocab": [],
+  "steps": [{
+    "type": "task", "archetype": "problem",
+    "goal": "Paghi, ma c'è un problema con il resto: risolvilo.",
+    "pretask": { "intro": "Hai comprato qualcosa. Paghi con una banconota grande, ma il resto non torna.",
+      "phrases": [
+        { "hy": "Որքա՞ն է", "tr": "vork'an e", "it": "Quant'è?" },
+        { "hy": "Մանրը ճիշտ չէ", "tr": "manrə chisht che", "it": "Il resto non è giusto" },
+        { "hy": "Ներողություն", "tr": "neroghut'yun", "it": "Mi scusi" }
+      ] },
+    "turns": [
+      { "npc": { "hy": "Հինգ հարյուր դրամ։", "tr": "hing haryur dram", "it": "Cinquecento dram." },
+        "prompt": "Paghi con mille: il commerciante ti dà poco resto. Segnala il problema con garbo.",
+        "repair": { "hy": "Ներողություն, կրկնե՞ք։", "tr": "neroghut'yun, krkne՞k'", "it": "Scusi, può ripetere?" },
+        "options": [
+          { "hy": "Ներողություն, մանրը ճիշտ չէ։", "it": "Mi scusi, il resto non è giusto.", "ok": true,
+            "reply": { "hy": "Օ՜, ներողություն։ Դուք իրավացի եք։", "it": "Oh, scusi! Ha ragione." } },
+          { "hy": "Շնորհակալություն, ցտեսություն։", "it": "Grazie, arrivederci.", "ok": false },
+          { "hy": "Ես Իտալիայից եմ։", "it": "Sono dall'Italia.", "ok": false } ] },
+      { "npc": { "hy": "Դուք հազար տվեցիք, ճի՞շտ է։", "tr": "duk' hazar tvets'ik', chisht e", "it": "Lei ha dato mille, giusto?" },
+        "prompt": "Conferma: sì, mille.",
+        "options": [
+          { "hy": "Այո, հազար։", "it": "Sì, mille.", "ok": true,
+            "reply": { "hy": "Ուրեմն հինգ հարյուր մանր։ Ահա։", "it": "Allora cinquecento di resto. Ecco." } },
+          { "hy": "Ոչ, ջուր։", "it": "No, acqua.", "ok": false },
+          { "hy": "Ժամը հինգն է։", "it": "Sono le cinque.", "ok": false } ] },
+      { "npc": { "hy": "Ահա ձեր մանրը։ Ներողություն։", "tr": "aha dzer manrə. neroghut'yun", "it": "Ecco il suo resto. Mi scusi." },
+        "prompt": "Accetta con garbo e congedati.",
+        "options": [
+          { "hy": "Ոչինչ։ Շնորհակալություն։", "it": "Non fa niente. Grazie.", "ok": true,
+            "reply": { "hy": "Բարի օր։", "it": "Buona giornata." } },
+          { "hy": "Ի՞նչ արժե։", "it": "Quanto costa?", "ok": false },
+          { "hy": "Մի՛ գնա։", "it": "Non andare!", "ok": false } ] }
+    ],
+    "debrief": { "title": "Cosa hai usato", "points": [
+      "Questo è un PROBLEM SOLVING: qualcosa non va, tu lo spieghi con calma, l'altro propone la soluzione, tu accetti.",
+      "«ճիշտ չէ» (non è giusto) segnala il problema senza aggredire: la cortesia risolve più della protesta.",
+      "«Ոչինչ» (non fa niente) chiude con garbo dopo le scuse dell'altro: mantiene il rapporto sereno.",
+      "Hai usato i numeri e il passato (տվեցիք = avete dato) in una situazione dove sbagliare conta davvero." ] }
+  }]
+}

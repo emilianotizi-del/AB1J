@@ -1,0 +1,41 @@
+{
+  "id": "mission_grocery", "title": "Al negozio di alimentari", "vocab": [],
+  "steps": [{
+    "type": "task", "archetype": "transaction",
+    "goal": "Compra pane e formaggio al negozio.",
+    "pretask": { "intro": "Entri in un piccolo negozio di alimentari. Ti serve del pane e del formaggio.",
+      "phrases": [
+        { "hy": "Հաց ունե՞ք", "tr": "hats' unek'", "it": "Avete del pane?" },
+        { "hy": "Պանիր, խնդրում եմ", "tr": "panir, khndrum em", "it": "Del formaggio, per favore" },
+        { "hy": "Այսքանը", "tr": "ays k'anə", "it": "Basta così" }
+      ] },
+    "turns": [
+      { "studentFirst": true, "prompt": "Sei tu a iniziare: chiedi se hanno del pane.",
+        "options": [
+          { "hy": "Բարև, հաց ունե՞ք։", "it": "Ciao, avete del pane?", "ok": true,
+            "reply": { "hy": "Այո, թարմ հաց։ Ուրիշ բա՞ն։", "it": "Sì, pane fresco. Altro?" } },
+          { "hy": "Ժամը քանի՞սն է։", "it": "Che ore sono?", "ok": false },
+          { "hy": "Ցտեսություն։", "it": "Arrivederci.", "ok": false } ] },
+      { "npc": { "hy": "Ուրիշ բա՞ն։", "tr": "urish ban", "it": "Altro?" },
+        "prompt": "Chiedi anche del formaggio.",
+        "repair": { "hy": "Ներողություն, կրկնե՞ք։", "tr": "neroghut'yun, krkne՞k'", "it": "Scusi, può ripetere?" },
+        "options": [
+          { "hy": "Այո, պանիր, խնդրում եմ։", "it": "Sì, del formaggio per favore.", "ok": true,
+            "reply": { "hy": "Հրամմեցեք։ Ուրիշ բա՞ն։", "it": "Ecco. Altro?" } },
+          { "hy": "Ես Իտալիայից եմ։", "it": "Sono dall'Italia.", "ok": false },
+          { "hy": "Ոտքով եմ գնում։", "it": "Vado a piedi.", "ok": false } ] },
+      { "npc": { "hy": "Ուրիշ բա՞ն։", "tr": "urish ban", "it": "Altro?" },
+        "prompt": "Di' che basta così.",
+        "options": [
+          { "hy": "Ոչ, այսքանը։ Շնորհակալություն։", "it": "No, basta così. Grazie.", "ok": true,
+            "reply": { "hy": "Ութ հարյուր դրամ։", "it": "Ottocento dram." } },
+          { "hy": "Այո, ավելի։", "it": "Sì, di più.", "ok": false },
+          { "hy": "Ի՞նչ եղանակ է։", "it": "Che tempo fa?", "ok": false } ] }
+    ],
+    "debrief": { "title": "Cosa hai usato", "points": [
+      "«ունե՞ք» (avete?) è il verbo avere alla forma di cortesia: la chiave per chiedere un prodotto.",
+      "«Ուրիշ բա՞ն» (altro?) è la domanda che sentirai in ogni negozio: imparala a riconoscerla al volo.",
+      "Hai chiuso l'acquisto con «այսքանը» (basta così): un segnale pragmatico che conclude la transazione.",
+      "Sei stato tu ad aprire e a gestire il ritmo dell'acquisto." ] }
+  }]
+}

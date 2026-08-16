@@ -1,0 +1,41 @@
+{
+  "id": "mission_invite", "title": "Invitare qualcuno", "vocab": [],
+  "steps": [{
+    "type": "task", "archetype": "negotiation",
+    "goal": "Invita un amico a prendere un caffè: trovate insieme quando.",
+    "pretask": { "intro": "Vuoi vedere il tuo amico. Proponigli qualcosa e mettetevi d'accordo sull'orario.",
+      "phrases": [
+        { "hy": "Սուրճ խմե՞նք", "tr": "surch khmenk'", "it": "Prendiamo un caffè?" },
+        { "hy": "Ե՞րբ", "tr": "yerb", "it": "Quando?" },
+        { "hy": "Լավ, պայմանավորվեցինք", "tr": "lav, paymanavorvets'ink'", "it": "Ok, d'accordo" }
+      ] },
+    "turns": [
+      { "studentFirst": true, "prompt": "Proponi di prendere un caffè insieme.",
+        "options": [
+          { "hy": "Սուրճ խմե՞նք միասին։", "it": "Prendiamo un caffè insieme?", "ok": true,
+            "reply": { "hy": "Հաճույքով։ Ե՞րբ։", "it": "Volentieri. Quando?" } },
+          { "hy": "Ի՞նչ արժե։", "it": "Quanto costa?", "ok": false },
+          { "hy": "Ցտեսություն։", "it": "Arrivederci.", "ok": false } ] },
+      { "npc": { "hy": "Հաճույքով։ Ե՞րբ։", "tr": "hachuykov. yerb", "it": "Volentieri. Quando?" },
+        "prompt": "Proponi domani. (Ma lui avrà un problema...)",
+        "options": [
+          { "hy": "Վաղը՞։", "it": "Domani?", "ok": true,
+            "reply": { "hy": "Վաղը չեմ կարող։ Իսկ մյուս օ՞րը։", "it": "Domani non posso. E dopodomani?" } },
+          { "hy": "Կարմիր։", "it": "Rosso.", "ok": false },
+          { "hy": "Ջուր։", "it": "Acqua.", "ok": false } ] },
+      { "npc": { "hy": "Վաղը չեմ կարող։ Իսկ մյուս օ՞րը։", "tr": "vaghə chem karogh. isk myus orə", "it": "Domani non posso. E dopodomani?" },
+        "prompt": "C'è un problema: accetta l'alternativa che propone.",
+        "repair": { "hy": "Ներողություն, ե՞րբ։", "tr": "neroghut'yun, yerb", "it": "Scusa, quando?" },
+        "options": [
+          { "hy": "Լավ, մյուս օրը։ Ժամը վեցի՞ն։", "it": "Ok, dopodomani. Alle sei?", "ok": true,
+            "reply": { "hy": "Կատարյալ։ Պայմանավորվեցինք։", "it": "Perfetto. D'accordo." } },
+          { "hy": "Ոչ, երեկ։", "it": "No, ieri.", "ok": false },
+          { "hy": "Ես բժիշկ եմ։", "it": "Sono un medico.", "ok": false } ] }
+    ],
+    "debrief": { "title": "Cosa hai usato", "points": [
+      "Questa è una NEGOZIAZIONE: proponi, c'è un ostacolo, arriva un'alternativa, trovate l'accordo.",
+      "«չեմ կարող» (non posso): saper dire e capire un rifiuto è essenziale per accordarsi.",
+      "«մյուս օրը» (l'altro giorno / dopodomani) e «ժամը վեցին» (alle sei): tempo e ora nell'uso reale.",
+      "«Պայմանավորվեցինք» (siamo d'accordo) chiude la negoziazione: un segnale che l'accordo è raggiunto." ] }
+  }]
+}

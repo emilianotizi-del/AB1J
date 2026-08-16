@@ -1,0 +1,42 @@
+{
+  "id": "mission_work", "title": "Di cosa ti occupi", "vocab": [],
+  "steps": [{
+    "type": "task", "archetype": "narrative",
+    "goal": "Racconta cosa fai nella vita: lavoro o studio.",
+    "pretask": { "intro": "Un conoscente ti chiede di cosa ti occupi.",
+      "phrases": [
+        { "hy": "Ես աշխատում եմ", "tr": "yes ashkhatum em", "it": "Lavoro" },
+        { "hy": "Բժիշկ եմ", "tr": "bzhishk em", "it": "Sono un medico" },
+        { "hy": "Ինձ դուր է գալիս", "tr": "indz dur e galis", "it": "Mi piace" }
+      ] },
+    "turns": [
+      { "npc": { "hy": "Ի՞նչ գործ ես անում։", "tr": "inch gorts es anum", "it": "Che lavoro fai?" },
+        "prompt": "Di' che sei un medico.",
+        "repair": { "hy": "Ներողություն, կրկնե՞ք։", "tr": "neroghut'yun, krkne՞k'", "it": "Scusi, può ripetere?" },
+        "options": [
+          { "hy": "Բժիշկ եմ։", "it": "Sono un medico.", "ok": true,
+            "reply": { "hy": "Հետաքրքիր է։ Որտե՞ղ ես աշխատում։", "it": "Interessante. Dove lavori?" } },
+          { "hy": "Ես լավ եմ։", "it": "Sto bene.", "ok": false },
+          { "hy": "Վաղը։", "it": "Domani.", "ok": false } ] },
+      { "npc": { "hy": "Որտե՞ղ ես աշխատում։", "tr": "vortegh es ashkhatum", "it": "Dove lavori?" },
+        "prompt": "Di' che lavori in un ospedale (follow-up).",
+        "options": [
+          { "hy": "Հիվանդանոցում։", "it": "In ospedale.", "ok": true,
+            "reply": { "hy": "Դժվա՞ր է։", "it": "È difficile?" } },
+          { "hy": "Շուկայում գնում եմ։", "it": "Compro al mercato.", "ok": false },
+          { "hy": "Ոտքով։", "it": "A piedi.", "ok": false } ] },
+      { "npc": { "hy": "Դժվա՞ր է։", "tr": "dzhvar e", "it": "È difficile?" },
+        "prompt": "Commenta: è difficile, ma ti piace.",
+        "options": [
+          { "hy": "Դժվար է, բայց ինձ դուր է գալիս։", "it": "È difficile, ma mi piace.", "ok": true,
+            "reply": { "hy": "Ապրե՛ս։", "it": "Bravo!" } },
+          { "hy": "Ոչ, կարմիր է։", "it": "No, è rosso.", "ok": false },
+          { "hy": "Ժամը հինգն է։", "it": "Sono le cinque.", "ok": false } ] }
+    ],
+    "debrief": { "title": "Cosa hai usato", "points": [
+      "«... եմ» per la professione: «Բժիշկ եմ» = sono un medico. Nessun articolo, a differenza dell'italiano.",
+      "Il connettivo «բայց» (ma) per un commento sfumato: difficile, ma piace.",
+      "«ինձ դուր է գալիս» (mi piace): un'espressione idiomatica utilissima per esprimere gusti.",
+      "L'amico ti intervista con follow-up (dove? è difficile?): tu costruisci il racconto pezzo per pezzo." ] }
+  }]
+}

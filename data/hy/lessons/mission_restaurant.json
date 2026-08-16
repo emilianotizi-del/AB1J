@@ -1,0 +1,48 @@
+{
+  "id": "mission_restaurant", "title": "Al ristorante", "vocab": [],
+  "steps": [{
+    "type": "task", "archetype": "transaction",
+    "goal": "Ordina un pranzo al ristorante e poi chiedi il conto.",
+    "pretask": { "intro": "Ti siedi in un ristorante. Il cameriere arriva.",
+      "phrases": [
+        { "hy": "Ի՞նչ ունեք", "tr": "inch unek'", "it": "Cosa avete?" },
+        { "hy": "Սա կուզեմ", "tr": "sa kuzem", "it": "Vorrei questo" },
+        { "hy": "Հաշիվը, խնդրում եմ", "tr": "hashivə, khndrum em", "it": "Il conto, per favore" }
+      ] },
+    "turns": [
+      { "npc": { "hy": "Բարև ձեզ։ Ի՞նչ կուզեք։", "tr": "barev dzez. inch kuzek'", "it": "Buongiorno. Cosa desidera?" },
+        "prompt": "Chiedi cosa hanno.",
+        "repair": { "hy": "Ներողություն, կրկնե՞ք։", "tr": "neroghut'yun, krkne՞k'", "it": "Scusi, può ripetere?" },
+        "options": [
+          { "hy": "Ի՞նչ ունեք։", "it": "Cosa avete?", "ok": true,
+            "reply": { "hy": "Խորոված, ապուր, աղցան։", "it": "Grigliata, zuppa, insalata." } },
+          { "hy": "Ժամը հինգն է։", "it": "Sono le cinque.", "ok": false },
+          { "hy": "Ցտեսություն։", "it": "Arrivederci.", "ok": false } ] },
+      { "npc": { "hy": "Խորոված, ապուր, աղցան։", "tr": "khorovats, apur, aghts'an", "it": "Grigliata, zuppa, insalata." },
+        "prompt": "Ordina la grigliata.",
+        "options": [
+          { "hy": "Խորոված կուզեմ, խնդրում եմ։", "it": "Vorrei la grigliata, per favore.", "ok": true,
+            "reply": { "hy": "Լավ ընտրություն։ Խմելու բա՞ն։", "it": "Buona scelta. Da bere?" } },
+          { "hy": "Ես բժիշկ եմ։", "it": "Sono un medico.", "ok": false },
+          { "hy": "Ոտքով։", "it": "A piedi.", "ok": false } ] },
+      { "npc": { "hy": "Խմելու բա՞ն։", "tr": "khmelu ban", "it": "Da bere?" },
+        "prompt": "Chiedi dell'acqua.",
+        "options": [
+          { "hy": "Ջուր, խնդրում եմ։", "it": "Acqua, per favore.", "ok": true,
+            "reply": { "hy": "Հիմա բերում եմ։", "it": "Arrivo subito." } },
+          { "hy": "Կարմիր։", "it": "Rosso.", "ok": false },
+          { "hy": "Վաղը։", "it": "Domani.", "ok": false } ] },
+      { "studentFirst": true, "prompt": "Hai finito di mangiare: chiedi il conto.",
+        "options": [
+          { "hy": "Հաշիվը, խնդրում եմ։", "it": "Il conto, per favore.", "ok": true,
+            "reply": { "hy": "Երեք հազար դրամ։ Շնորհակալություն։", "it": "Tremila dram. Grazie." } },
+          { "hy": "Ի՞նչ ես անում։", "it": "Cosa fai?", "ok": false },
+          { "hy": "Բարև ձեզ։", "it": "Buongiorno.", "ok": false } ] }
+    ],
+    "debrief": { "title": "Cosa hai usato", "points": [
+      "«կուզեմ» (vorrei) è il futuro-condizionale di cortesia: più garbato di «ուզում եմ» per ordinare.",
+      "Hai gestito due domande a sorpresa (da bere? buona scelta?): capire e reagire, non recitare.",
+      "Hai avuto l'iniziativa alla fine, chiedendo il conto: non hai aspettato che il cameriere lo portasse.",
+      "«խնդրում եմ» in coda a ogni richiesta ti rende cortese in modo naturale." ] }
+  }]
+}

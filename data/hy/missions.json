@@ -1,5 +1,5 @@
 {
-  "note": "Registro delle missioni task-based. 'after' = ultimo modulo che dev'essere completato per sbloccare (sblocco rigido). 'archetype' = struttura conversazionale.",
+  "note": "Registro delle 32 missioni task-based. 'after'=modulo prerequisito (sblocco rigido, minimo sufficiente). 'archetype'=struttura conversazionale (6 tipi). Distribuzione rivista secondo revisione indipendente.",
   "archetypes": {
     "transaction": "Transazione: voglio X → specifico → prezzo → pago",
     "info_gap": "Information gap: mi manca un'info → domando → chiarisco → verifico",
@@ -9,10 +9,293 @@
     "narrative": "Intervista narrativa: domanda → racconto → follow-up → dettaglio → commento"
   },
   "missions": [
-    { "id": "market", "title": "Al mercato", "area": "Cibo e acquisti", "archetype": "transaction", "after": "m08", "icon": "🍎", "hasRepair": false, "studentInitiates": false },
-    { "id": "intro", "title": "Presentarsi", "area": "Persone", "archetype": "social", "after": "m06", "icon": "👋", "hasRepair": true, "studentInitiates": true },
-    { "id": "cafe", "title": "Al bar", "area": "Cibo e acquisti", "archetype": "transaction", "after": "m13", "icon": "☕", "hasRepair": false, "studentInitiates": true },
-    { "id": "directions", "title": "Chiedere la strada", "area": "Orientarsi", "archetype": "info_gap", "after": "m16", "icon": "🧭", "hasRepair": true, "studentInitiates": true },
-    { "id": "yesterday", "title": "Com'è andata ieri", "area": "Tempo libero", "archetype": "narrative", "after": "m18", "icon": "📖", "hasRepair": false, "studentInitiates": false }
+    {
+      "id": "market",
+      "title": "Al mercato",
+      "area": "Cibo e acquisti",
+      "archetype": "transaction",
+      "after": "m08",
+      "icon": "🍎",
+      "studentInitiates": false
+    },
+    {
+      "id": "grocery",
+      "title": "Al negozio di alimentari",
+      "area": "Cibo e acquisti",
+      "archetype": "transaction",
+      "after": "m08",
+      "icon": "🛒",
+      "studentInitiates": true
+    },
+    {
+      "id": "cafe",
+      "title": "Al bar",
+      "area": "Cibo e acquisti",
+      "archetype": "transaction",
+      "after": "m13",
+      "icon": "☕",
+      "studentInitiates": true
+    },
+    {
+      "id": "restaurant",
+      "title": "Al ristorante",
+      "area": "Cibo e acquisti",
+      "archetype": "transaction",
+      "after": "m15",
+      "icon": "🍽",
+      "studentInitiates": true
+    },
+    {
+      "id": "payment",
+      "title": "Pagare e il resto",
+      "area": "Cibo e acquisti",
+      "archetype": "problem",
+      "after": "m13",
+      "icon": "💵",
+      "studentInitiates": false
+    },
+    {
+      "id": "intro",
+      "title": "Presentarsi",
+      "area": "Persone",
+      "archetype": "social",
+      "after": "m06",
+      "icon": "👋",
+      "studentInitiates": true
+    },
+    {
+      "id": "family",
+      "title": "La mia famiglia",
+      "area": "Persone",
+      "archetype": "narrative",
+      "after": "m10",
+      "icon": "👨‍👩‍👧",
+      "studentInitiates": false
+    },
+    {
+      "id": "party",
+      "title": "Conoscersi a una festa",
+      "area": "Persone",
+      "archetype": "social",
+      "after": "m11",
+      "icon": "🎉",
+      "studentInitiates": true
+    },
+    {
+      "id": "work",
+      "title": "Di cosa ti occupi",
+      "area": "Persone",
+      "archetype": "narrative",
+      "after": "m18",
+      "icon": "💼",
+      "studentInitiates": false
+    },
+    {
+      "id": "invite",
+      "title": "Invitare qualcuno",
+      "area": "Persone",
+      "archetype": "negotiation",
+      "after": "m15",
+      "icon": "✉️",
+      "studentInitiates": true
+    },
+    {
+      "id": "directions",
+      "title": "Chiedere la strada",
+      "area": "Orientarsi",
+      "archetype": "info_gap",
+      "after": "m16",
+      "icon": "🧭",
+      "studentInitiates": true
+    },
+    {
+      "id": "taxi",
+      "title": "Prendere un taxi",
+      "area": "Orientarsi",
+      "archetype": "transaction",
+      "after": "m16",
+      "icon": "🚕",
+      "studentInitiates": true
+    },
+    {
+      "id": "ticket",
+      "title": "Comprare un biglietto",
+      "area": "Orientarsi",
+      "archetype": "transaction",
+      "after": "m15",
+      "icon": "🎫",
+      "studentInitiates": true
+    },
+    {
+      "id": "station",
+      "title": "Alla fermata",
+      "area": "Orientarsi",
+      "archetype": "info_gap",
+      "after": "m16",
+      "icon": "🚌",
+      "studentInitiates": true
+    },
+    {
+      "id": "room",
+      "title": "Chiedere di una stanza",
+      "area": "Casa e quotidiano",
+      "archetype": "info_gap",
+      "after": "m16",
+      "icon": "🏠",
+      "studentInitiates": true
+    },
+    {
+      "id": "neighbor",
+      "title": "Dal vicino",
+      "area": "Casa e quotidiano",
+      "archetype": "social",
+      "after": "m11",
+      "icon": "🚪",
+      "studentInitiates": true
+    },
+    {
+      "id": "phone",
+      "title": "Una telefonata",
+      "area": "Casa e quotidiano",
+      "archetype": "info_gap",
+      "after": "m19",
+      "icon": "📞",
+      "studentInitiates": true
+    },
+    {
+      "id": "problem_late",
+      "title": "Sono in ritardo",
+      "area": "Casa e quotidiano",
+      "archetype": "problem",
+      "after": "m18",
+      "icon": "⏰",
+      "studentInitiates": true
+    },
+    {
+      "id": "shop_goods",
+      "title": "In un negozio",
+      "area": "Casa e quotidiano",
+      "archetype": "transaction",
+      "after": "m17",
+      "icon": "👕",
+      "studentInitiates": true
+    },
+    {
+      "id": "appointment",
+      "title": "Appuntamento dal medico",
+      "area": "Salute",
+      "archetype": "transaction",
+      "after": "m15",
+      "icon": "📅",
+      "studentInitiates": true
+    },
+    {
+      "id": "doctor",
+      "title": "Dal medico",
+      "area": "Salute",
+      "archetype": "problem",
+      "after": "m19",
+      "icon": "⚕️",
+      "studentInitiates": false
+    },
+    {
+      "id": "pharmacy",
+      "title": "In farmacia",
+      "area": "Salute",
+      "archetype": "transaction",
+      "after": "m19",
+      "icon": "💊",
+      "studentInitiates": true
+    },
+    {
+      "id": "meetup",
+      "title": "Vediamoci",
+      "area": "Tempo libero",
+      "archetype": "negotiation",
+      "after": "m15",
+      "icon": "🤝",
+      "studentInitiates": true
+    },
+    {
+      "id": "weather",
+      "title": "Che tempo fa",
+      "area": "Tempo libero",
+      "archetype": "social",
+      "after": "m14",
+      "icon": "🌤",
+      "studentInitiates": false
+    },
+    {
+      "id": "describe",
+      "title": "Com'è fatto",
+      "area": "Tempo libero",
+      "archetype": "narrative",
+      "after": "m17",
+      "icon": "🧑",
+      "studentInitiates": false
+    },
+    {
+      "id": "yesterday",
+      "title": "Com'è andata ieri",
+      "area": "Tempo libero",
+      "archetype": "narrative",
+      "after": "m18",
+      "icon": "📖",
+      "studentInitiates": false
+    },
+    {
+      "id": "weekend",
+      "title": "Progetti per il weekend",
+      "area": "Tempo libero",
+      "archetype": "narrative",
+      "after": "m15",
+      "icon": "📆",
+      "studentInitiates": false
+    },
+    {
+      "id": "guest",
+      "title": "Ospite a cena",
+      "area": "Vita sociale armena",
+      "archetype": "social",
+      "after": "m19",
+      "icon": "🍷",
+      "studentInitiates": false
+    },
+    {
+      "id": "compliment",
+      "title": "Fare un complimento",
+      "area": "Vita sociale armena",
+      "archetype": "social",
+      "after": "m17",
+      "icon": "😊",
+      "studentInitiates": true
+    },
+    {
+      "id": "apology",
+      "title": "Scusarsi",
+      "area": "Vita sociale armena",
+      "archetype": "problem",
+      "after": "m13",
+      "icon": "🙇",
+      "studentInitiates": true
+    },
+    {
+      "id": "formal",
+      "title": "Allo sportello",
+      "area": "Vita sociale armena",
+      "archetype": "info_gap",
+      "after": "m18",
+      "icon": "🏛",
+      "studentInitiates": true
+    },
+    {
+      "id": "help",
+      "title": "Chiedere aiuto",
+      "area": "Casa e quotidiano",
+      "archetype": "problem",
+      "after": "m18",
+      "icon": "🆘",
+      "studentInitiates": true
+    }
   ]
 }

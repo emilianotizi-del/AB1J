@@ -1,0 +1,41 @@
+{
+  "id": "mission_party", "title": "Conoscersi a una festa", "vocab": [],
+  "steps": [{
+    "type": "task", "archetype": "social",
+    "goal": "A una festa, fai small talk con un'altra persona.",
+    "pretask": { "intro": "Sei a una festa. Accanto a te c'è qualcuno che non conosci.",
+      "phrases": [
+        { "hy": "Հաճելի երեկո է", "tr": "hacheli yereko e", "it": "Bella serata" },
+        { "hy": "Դու էլ այստե՞ղ ես", "tr": "du el aystegh es", "it": "Anche tu qui?" },
+        { "hy": "Ուրախ եմ ծանոթանալ", "tr": "urakh em tsanot'anal", "it": "Piacere di conoscerti" }
+      ] },
+    "turns": [
+      { "studentFirst": true, "prompt": "Rompi il ghiaccio con un commento sulla serata.",
+        "options": [
+          { "hy": "Հաճելի երեկո է, չէ՞։", "it": "Bella serata, vero?", "ok": true,
+            "reply": { "hy": "Այո, շատ։ Ես Կարենն եմ։", "it": "Sì, molto. Sono Karen." } },
+          { "hy": "Ի՞նչ արժե։", "it": "Quanto costa?", "ok": false },
+          { "hy": "Հաշիվը, խնդրում եմ։", "it": "Il conto, per favore.", "ok": false } ] },
+      { "npc": { "hy": "Ես Կարենն եմ։ Իսկ դու՞։", "tr": "yes Karenn em. isk du", "it": "Sono Karen. E tu?" },
+        "prompt": "Presentati e ricambia il piacere.",
+        "repair": { "hy": "Ներողություն, ինչպե՞ս է անունդ։", "tr": "neroghut'yun, inchpes e anund", "it": "Scusa, come ti chiami?" },
+        "options": [
+          { "hy": "Ես Էմիլիանոն եմ։ Ուրախ եմ ծանոթանալ։", "it": "Sono Emiliano. Piacere di conoscerti.", "ok": true,
+            "reply": { "hy": "Փոխադարձ։ Որտեղի՞ց ես։", "it": "Ricambiato. Di dove sei?" } },
+          { "hy": "Ես տանն եմ։", "it": "Sono a casa.", "ok": false },
+          { "hy": "Ջուր եմ ուզում։", "it": "Voglio dell'acqua.", "ok": false } ] },
+      { "npc": { "hy": "Որտեղի՞ց ես։", "tr": "vorteghits' es", "it": "Di dove sei?" },
+        "prompt": "Rispondi e rilancia con la stessa domanda (reciprocità).",
+        "options": [
+          { "hy": "Իտալիայից։ Իսկ դու՞։", "it": "Dall'Italia. E tu?", "ok": true,
+            "reply": { "hy": "Ես Գյումրիից եմ։", "it": "Io sono di Gyumri." } },
+          { "hy": "Ես բժիշկ եմ։", "it": "Sono un medico.", "ok": false },
+          { "hy": "Կապույտ։", "it": "Blu.", "ok": false } ] }
+    ],
+    "debrief": { "title": "Cosa hai usato", "points": [
+      "Lo SCAMBIO SOCIALE funziona per reciprocità: dopo aver risposto, rilanci («Իսկ դու՞» = e tu?).",
+      "«չէ՞» in coda (vero?) trasforma un'affermazione in un aggancio conversazionale.",
+      "Il small talk non ha uno scopo pratico: serve a creare legame. Anche questa è competenza linguistica.",
+      "Hai aperto tu la conversazione: nella vita sociale reale è spesso necessario." ] }
+  }]
+}

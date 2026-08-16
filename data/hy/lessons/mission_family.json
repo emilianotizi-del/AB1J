@@ -1,0 +1,43 @@
+{
+  "id": "mission_family", "title": "La mia famiglia", "vocab": [],
+  "steps": [{
+    "type": "task", "archetype": "narrative",
+    "goal": "Un'amica ti chiede della tua famiglia: raccontagliela.",
+    "pretask": { "intro": "Ani vuole sapere della tua famiglia.",
+      "phrases": [
+        { "hy": "Ես քույր ունեմ", "tr": "yes k'uyr unem", "it": "Ho una sorella" },
+        { "hy": "Նրա անունը Մարիա է", "tr": "nra anunə Maria e", "it": "Si chiama Maria" },
+        { "hy": "Նա Հռոմում է ապրում", "tr": "na Hṙomum e aprum", "it": "Vive a Roma" }
+      ] },
+    "turns": [
+      { "npc": { "hy": "Քո ընտանիքը մե՞ծ է։", "tr": "k'o əntanik'ə mets e", "it": "La tua famiglia è grande?" },
+        "prompt": "Di' che hai una sorella.",
+        "options": [
+          { "hy": "Ես մեկ քույր ունեմ։", "it": "Ho una sorella.", "ok": true,
+            "reply": { "hy": "Ի՞նչ է նրա անունը։", "it": "Come si chiama?" } },
+          { "hy": "Ես շուն ունեմ։", "it": "Ho un cane.", "ok": true,
+            "reply": { "hy": "Ի՜նչ սիրուն։ Իսկ քույր կամ եղբայր։", "it": "Che carino! E sorelle o fratelli?" } },
+          { "hy": "Ժամը հինգն է։", "it": "Sono le cinque.", "ok": false } ] },
+      { "npc": { "hy": "Ի՞նչ է նրա անունը։", "tr": "inch e nra anunə", "it": "Come si chiama?" },
+        "prompt": "Dì il suo nome (follow-up).",
+        "repair": { "hy": "Ներողություն, չհասկացա։", "tr": "neroghut'yun, chhaskats'a", "it": "Scusa, non ho capito." },
+        "options": [
+          { "hy": "Նրա անունը Մարիա է։", "it": "Si chiama Maria.", "ok": true,
+            "reply": { "hy": "Գեղեցիկ անուն։ Որտե՞ղ է ապրում։", "it": "Bel nome. Dove vive?" } },
+          { "hy": "Ես լավ եմ։", "it": "Sto bene.", "ok": false },
+          { "hy": "Կարմիր։", "it": "Rosso.", "ok": false } ] },
+      { "npc": { "hy": "Որտե՞ղ է ապրում։", "tr": "vortegh e aprum", "it": "Dove vive?" },
+        "prompt": "Aggiungi un dettaglio: vive a Roma.",
+        "options": [
+          { "hy": "Նա Հռոմում է ապրում։", "it": "Vive a Roma.", "ok": true,
+            "reply": { "hy": "Հռոմ՜։ Ես ուզում եմ գնալ։", "it": "Roma! Voglio andarci." } },
+          { "hy": "Նա Հռոմ կգնա։", "it": "Andrà a Roma.", "ok": false },
+          { "hy": "Ոտքով։", "it": "A piedi.", "ok": false } ] }
+    ],
+    "debrief": { "title": "Cosa hai usato", "points": [
+      "«ունեմ» (ho) per la famiglia: «քույր ունեմ» = ho una sorella.",
+      "Il possessivo «նրա» (suo/di lei): «նրա անունը» = il suo nome.",
+      "Il locativo -ում per dire dove vive: «Հռոմում» = a Roma.",
+      "È un'intervista: Ani ti guida con domande a catena (come si chiama? dove vive?), tu aggiungi un pezzo alla volta." ] }
+  }]
+}
