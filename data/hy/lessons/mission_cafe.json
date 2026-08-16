@@ -1,0 +1,60 @@
+{
+  "id": "mission_cafe",
+  "title": "Al bar",
+  "vocab": [],
+  "steps": [{
+    "type": "task",
+    "archetype": "transaction",
+    "goal": "Ordina un caffè al bar e chiedi il conto.",
+    "pretask": {
+      "intro": "Entri in un bar di Yerevan. Devi ordinare e poi pagare.",
+      "phrases": [
+        { "hy": "Մեկ սուրճ, խնդրում եմ", "tr": "mek surch, khndrum em", "it": "Un caffè, per favore" },
+        { "hy": "Հաշիվը, խնդրում եմ", "tr": "hashivə, khndrum em", "it": "Il conto, per favore" },
+        { "hy": "Շնորհակալություն", "tr": "shnorhakalut'yun", "it": "Grazie" }
+      ]
+    },
+    "turns": [
+      {
+        "studentFirst": true,
+        "prompt": "Sei tu a ordinare: chiedi un caffè.",
+        "options": [
+          { "hy": "Մեկ սուրճ, խնդրում եմ։", "it": "Un caffè, per favore.", "ok": true,
+            "reply": { "hy": "Իհարկե։ Սա՞ռը թե՞ տաք։", "it": "Certo. Freddo o caldo?" } },
+          { "hy": "Ժամը քանի՞սն է։", "it": "Che ore sono?", "ok": false },
+          { "hy": "Ցտեսություն։", "it": "Arrivederci.", "ok": false }
+        ]
+      },
+      {
+        "npc": { "hy": "Սա՞ռը թե՞ տաք։", "tr": "saṙə t'e tak'", "it": "Freddo o caldo?" },
+        "prompt": "Dillo caldo.",
+        "repair": { "hy": "Ներողություն, կրկնե՞ք։", "tr": "neroghut'yun, krkne՞k'", "it": "Scusi, può ripetere?" },
+        "options": [
+          { "hy": "Տաք, խնդրում եմ։", "it": "Caldo, per favore.", "ok": true,
+            "reply": { "hy": "Պատրաստ է։ Հինգ հարյուր դրամ։", "it": "Pronto. Cinquecento dram." } },
+          { "hy": "Կարմիր, խնդրում եմ։", "it": "Rosso, per favore.", "ok": false },
+          { "hy": "Ոտքով։", "it": "A piedi.", "ok": false }
+        ]
+      },
+      {
+        "npc": { "hy": "Հրամմեցեք, ձեր սուրճը։", "tr": "hrammets'ek', dzer surchə", "it": "Ecco il suo caffè." },
+        "prompt": "Chiedi il conto.",
+        "options": [
+          { "hy": "Հաշիվը, խնդրում եմ։", "it": "Il conto, per favore.", "ok": true,
+            "reply": { "hy": "Հինգ հարյուր դրամ։ Շնորհակալություն։", "it": "Cinquecento dram. Grazie." } },
+          { "hy": "Ի՞նչ եղանակ է։", "it": "Che tempo fa?", "ok": false },
+          { "hy": "Ես Իտալիայից եմ։", "it": "Sono dall'Italia.", "ok": false }
+        ]
+      }
+    ],
+    "debrief": {
+      "title": "Cosa hai usato",
+      "points": [
+        "«խնդրում եմ» (per favore) rende cortese ogni richiesta: mettilo sempre in coda.",
+        "Hai gestito una scelta che non ti aspettavi («caldo o freddo?»): capire e reagire, non solo recitare frasi imparate.",
+        "«Կրկնե՞ք» (può ripetere?) è la tua rete di sicurezza: usala ogni volta che il ritmo ti sfugge.",
+        "Sei stato tu a iniziare l'ordine e a chiedere il conto: hai avuto l'iniziativa."
+      ]
+    }
+  }]
+}

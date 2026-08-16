@@ -1,0 +1,61 @@
+{
+  "id": "mission_intro",
+  "title": "Presentarsi",
+  "vocab": [],
+  "steps": [{
+    "type": "task",
+    "archetype": "social",
+    "goal": "Conosci qualcuno a una festa: presentati e scopri chi è.",
+    "pretask": {
+      "intro": "Sei a una festa a Yerevan. Una persona ti sorride. Rompi il ghiaccio.",
+      "phrases": [
+        { "hy": "Բարև, ես Էմիլիանոն եմ", "tr": "barev, yes Emilianon em", "it": "Ciao, sono Emiliano" },
+        { "hy": "Իսկ դու՞", "tr": "isk du", "it": "E tu?" },
+        { "hy": "Ուրախ եմ", "tr": "urakh em", "it": "Piacere (sono lieto)" },
+        { "hy": "Որտեղի՞ց ես", "tr": "vorteghits' es", "it": "Di dove sei?" }
+      ]
+    },
+    "turns": [
+      {
+        "studentFirst": true,
+        "prompt": "Sei tu a iniziare: saluta e presentati.",
+        "options": [
+          { "hy": "Բարև, ես Էմիլիանոն եմ։", "it": "Ciao, sono Emiliano.", "ok": true,
+            "reply": { "hy": "Ուրախ եմ։ Ես Անին եմ։", "it": "Piacere. Io sono Ani." } },
+          { "hy": "Ի՞նչ արժե։", "it": "Quanto costa?", "ok": false },
+          { "hy": "Ցտեսություն։", "it": "Arrivederci.", "ok": false }
+        ]
+      },
+      {
+        "npc": { "hy": "Ես Անին եմ։ Որտեղի՞ց ես։", "tr": "yes Anin em. vorteghits' es", "it": "Sono Ani. Di dove sei?" },
+        "prompt": "Rispondi da dove vieni.",
+        "repair": { "hy": "Ներողություն, չհասկացա։", "tr": "neroghut'yun, chhaskats'a", "it": "Scusa, non ho capito." },
+        "options": [
+          { "hy": "Ես Իտալիայից եմ։", "it": "Sono dall'Italia.", "ok": true,
+            "reply": { "hy": "Իտալիա՜։ Շատ գեղեցիկ։", "it": "Italia! Molto bello." } },
+          { "hy": "Ես լավ եմ։", "it": "Sto bene.", "ok": false },
+          { "hy": "Ժամը հինգն է։", "it": "Sono le cinque.", "ok": false }
+        ]
+      },
+      {
+        "npc": { "hy": "Իսկ ի՞նչ ես անում այստեղ։", "tr": "isk inch es anum aystegh", "it": "E cosa fai qui?" },
+        "prompt": "Di' che stai imparando l'armeno.",
+        "options": [
+          { "hy": "Հայերեն եմ սովորում։", "it": "Sto imparando l'armeno.", "ok": true,
+            "reply": { "hy": "Ապրե՛ս։ Շատ լավ ես խոսում։", "it": "Bravo! Parli molto bene." } },
+          { "hy": "Ջուր եմ ուզում։", "it": "Voglio dell'acqua.", "ok": false },
+          { "hy": "Տանն եմ։", "it": "Sono a casa.", "ok": false }
+        ]
+      }
+    ],
+    "debrief": {
+      "title": "Cosa hai usato",
+      "points": [
+        "«ես … եմ» è la struttura per dire chi sei: soggetto + nome + եմ. Ani fa lo stesso: «ես Անին եմ».",
+        "«Որտեղի՞ց ես» usa l'ablativo -ից che hai visto: «da dove». Rispondi con lo stesso caso: «Իտալիայից».",
+        "Hai APERTO tu la conversazione: nella vita reale sei spesso tu a dover rompere il ghiaccio, non solo a rispondere.",
+        "Hai imparato a dire «Չհասկացա» (non ho capito): la frase che ti salva quando il discorso corre troppo."
+      ]
+    }
+  }]
+}

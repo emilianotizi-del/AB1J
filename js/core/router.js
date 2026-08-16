@@ -32,7 +32,7 @@ function resolve() {
 function updateTabs(path) {
   document.querySelectorAll('.tab').forEach(t => {
     const tab = t.dataset.tab;
-    t.classList.toggle('active', path === '/' + tab || path.startsWith('/' + tab + '/'));
+    t.classList.toggle('active', path === '/' + tab || path.startsWith('/' + tab + '/') || (tab === 'missions' && path.startsWith('/mission/')));
   });
 }
 

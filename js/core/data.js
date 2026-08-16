@@ -17,6 +17,7 @@ export const getAlphabet = () => load(`data/${LANG}/alphabet.json`);
 export const getLesson   = id => load(`data/${LANG}/lessons/${id}.json`);
 export const getLetterExamples = () => load(`data/${LANG}/letter_examples.json`);
 export const getLetterGloss    = () => load(`data/${LANG}/letter_gloss.json`);
+export const getMissions       = () => load(`data/${LANG}/missions.json`);
 
 export async function getLetter(glyph) {
   const alpha = await getAlphabet();

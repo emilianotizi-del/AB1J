@@ -1,0 +1,163 @@
+{
+  "id": "mission_market",
+  "title": "Missione: al mercato",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "goal": "Compra delle mele al mercato e scopri quanto costano.",
+      "pretask": {
+        "intro": "Sei al mercato di Yerevan. Vuoi comprare delle mele. Ecco le frasi che ti serviranno.",
+        "phrases": [
+          {
+            "hy": "Բարև ձեզ",
+            "tr": "barev dzez",
+            "it": "Buongiorno (cortese)"
+          },
+          {
+            "hy": "Ի՞նչ արժե",
+            "tr": "inch arzhe",
+            "it": "Quanto costa?"
+          },
+          {
+            "hy": "Մեկ կիլո խնձոր",
+            "tr": "mek kilo khndzor",
+            "it": "Un chilo di mele"
+          },
+          {
+            "hy": "Շնորհակալություն",
+            "tr": "shnorhakalut'yun",
+            "it": "Grazie"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "npc": {
+            "hy": "Բարև ձեզ։ Ի՞նչ եք ուզում։",
+            "tr": "barev dzez. inch ek' uzum",
+            "it": "Buongiorno! Cosa desidera?"
+          },
+          "prompt": "Saluta e di' che vuoi delle mele.",
+          "options": [
+            {
+              "hy": "Բարև ձեզ։ Խնձոր եմ ուզում։",
+              "it": "Buongiorno. Voglio delle mele.",
+              "ok": true,
+              "reply": {
+                "hy": "Շատ լավ։ Քանի՞ կիլո։",
+                "it": "Benissimo. Quanti chili?"
+              }
+            },
+            {
+              "hy": "Շնորհակալություն։",
+              "it": "Grazie.",
+              "ok": false
+            },
+            {
+              "hy": "Ջուր եմ ուզում։",
+              "it": "Voglio dell'acqua.",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "npc": {
+            "hy": "Քանի՞ կիլո։",
+            "tr": "k'ani kilo",
+            "it": "Quanti chili?"
+          },
+          "prompt": "Chiedi un chilo.",
+          "options": [
+            {
+              "hy": "Մեկ կիլո, խնդրում եմ։",
+              "it": "Un chilo, per favore.",
+              "ok": true,
+              "reply": {
+                "hy": "Հրամմեցեք։",
+                "it": "Ecco a lei."
+              }
+            },
+            {
+              "hy": "Ի՞նչ արժե։",
+              "it": "Quanto costa?",
+              "ok": false
+            },
+            {
+              "hy": "Մեկ ջուր։",
+              "it": "Un'acqua.",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "npc": {
+            "hy": "Հրամմեցեք, ձեր խնձորը։",
+            "tr": "hrammets'ek', dzer khndzorə",
+            "it": "Ecco le sue mele."
+          },
+          "prompt": "Chiedi quanto costa.",
+          "options": [
+            {
+              "hy": "Ի՞նչ արժե։",
+              "it": "Quanto costa?",
+              "ok": true,
+              "reply": {
+                "hy": "Հինգ հարյուր դրամ։",
+                "it": "Cinquecento dram."
+              }
+            },
+            {
+              "hy": "Բարև ձեզ։",
+              "it": "Buongiorno.",
+              "ok": false
+            },
+            {
+              "hy": "Քանի՞ կիլո։",
+              "it": "Quanti chili?",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "npc": {
+            "hy": "Հինգ հարյուր դրամ։",
+            "tr": "hing haryur dram",
+            "it": "Cinquecento dram."
+          },
+          "prompt": "Paga e ringrazia (concludi la spesa).",
+          "options": [
+            {
+              "hy": "Շնորհակալություն։ Ցտեսություն։",
+              "it": "Grazie. Arrivederci.",
+              "ok": true,
+              "reply": {
+                "hy": "Ցտեսություն, բարի օր։",
+                "it": "Arrivederci, buona giornata."
+              }
+            },
+            {
+              "hy": "Ի՞նչ արժե։",
+              "it": "Quanto costa?",
+              "ok": false
+            },
+            {
+              "hy": "Ջուր ունե՞ք։",
+              "it": "Ha dell'acqua?",
+              "ok": false
+            }
+          ]
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato (senza accorgertene)",
+        "points": [
+          "Dopo un numero, il nome resta SINGOLARE: «մեկ կիլո», non «կիլոներ». In armeno il numero già indica la quantità.",
+          "«Բարև ձեզ» è il saluto cortese (con ձեզ, «a voi»), più formale di «բարև» tra amici. Al mercato con uno sconosciuto è la scelta giusta.",
+          "«Ի՞նչ արժե» = letteralmente «cosa vale»: la domanda fissa per il prezzo.",
+          "Hai gestito un intero scambio reale: salutare → ordinare → quantificare → pagare. Questa è competenza comunicativa, non solo grammatica."
+        ]
+      }
+    }
+  ]
+}

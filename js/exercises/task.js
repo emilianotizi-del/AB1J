@@ -1,23 +1,29 @@
-// Task-based: una "missione" comunicativa in tre fasi.
+// Task-based: missione comunicativa in 3 fasi (pre-task → interazione → debrief).
+// Novità: iniziativa dello studente, communication repair, replay a scaffolding decrescente.
 // step: {
-//   goal: "Compra due chili di mele e scopri quanto paghi",
-//   pretask: { phrases: [{hy,tr,it,note?}], intro? },
-//   turns: [ { npc:{hy,tr,it}, prompt, options:[{hy,tr,it,ok:bool,reply?}] } ],
+//   goal, archetype?,
+//   pretask: { intro?, phrases:[{hy,tr,it}] },
+//   turns: [ {
+//     npc?: {hy,tr,it},              // battuta dell'interlocutore (assente se inizia lo studente)
+//     studentFirst?: bool,          // true = lo studente apre il turno
+//     prompt,                       // consegna in italiano (cosa fare)
+//     options: [ {hy,tr,it,ok,reply?} ],
+//     repair?: { hy,tr,it }         // battuta di "non ho capito" sempre disponibile (se presente)
+//   } ],
 //   debrief: { title, points:[...] }
 // }
+// scaffolding: ctx.scaffold ∈ {full, light, none} regola quanti aiuti mostrare.
 import { el, shuffle, vibrate } from '../utils/dom.js';
 import { speak } from '../core/audio.js';
 
 export function render(step, mount, ctx) {
-  let phase = 'pre';           // pre → play → done
-  let turnIdx = 0;
-  let stumbles = 0;
+  const scaffold = ctx.scaffold || 'full';   // full = tutti gli aiuti; light = meno; none = minimo
+  let turnIdx = 0, stumbles = 0;
   const wrap = el('div', {});
   mount.append(wrap);
 
-  function header(txt) {
-    return el('div', { class: 'task-goal' }, el('span', { class: 'task-badge' }, '🎯 Missione'), txt);
-  }
+  const header = txt => el('div', { class: 'task-goal' },
+    el('span', { class: 'task-badge' }, '🎯 Missione'), txt);
 
   // ---------- FASE 1: pre-task ----------
   function renderPre() {
@@ -25,42 +31,54 @@ export function render(step, mount, ctx) {
     const card = el('div', { class: 'card' });
     card.append(header(step.goal));
     if (step.pretask.intro) card.append(el('p', { style: 'margin-top:10px;color:var(--ink-soft)' }, step.pretask.intro));
-    card.append(el('div', { style: 'font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);margin:14px 0 8px' }, 'Ti serviranno queste frasi'));
-    for (const p of step.pretask.phrases) {
-      card.append(el('button', { class: 'task-phrase', onclick: () => speak(p.hy) },
-        el('div', {},
-          el('span', { class: 'hy', lang: 'hy', style: 'font-weight:600;font-size:1.1rem' }, p.hy),
-          el('span', { class: 'w-it-teach', style: 'margin-left:8px;color:var(--ink-soft)' }, p.it)),
-        el('span', { style: 'opacity:.5' }, '🔊')));
+
+    // Con scaffolding pieno mostro tutte le frasi-chiave; light = solo armeno+audio; none = salto il pre-task
+    if (scaffold !== 'none') {
+      card.append(el('div', { style: 'font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);margin:14px 0 8px' },
+        scaffold === 'full' ? 'Ti serviranno queste frasi' : 'Ripasso veloce'));
+      for (const p of step.pretask.phrases) {
+        card.append(el('button', { class: 'task-phrase', onclick: () => speak(p.hy) },
+          el('div', {},
+            el('span', { class: 'hy', lang: 'hy', style: 'font-weight:600;font-size:1.1rem' }, p.hy),
+            scaffold === 'full' ? el('span', { class: 'w-it-teach', style: 'margin-left:8px;color:var(--ink-soft)' }, p.it) : null),
+          el('span', { style: 'opacity:.5' }, '🔊')));
+      }
     }
+    const btnText = scaffold === 'none' ? 'Inizia la missione →' : 'Sono pronto →';
     card.append(el('button', { class: 'btn btn-block', style: 'margin-top:16px',
-      onclick: () => { phase = 'play'; renderPlay(); } }, 'Sono pronto →'));
+      onclick: () => renderPlay() }, btnText));
     wrap.append(card);
   }
 
-  // ---------- FASE 2: task interattivo ----------
+  // ---------- FASE 2: interazione ----------
   function renderPlay() {
     wrap.innerHTML = '';
     const card = el('div', { class: 'card' });
     card.append(header(step.goal));
-
     const t = step.turns[turnIdx];
-    // battuta dell'interlocutore (NPC)
-    const npc = el('div', { class: 'task-npc' },
-      el('div', { class: 'task-npc-av' }, '🧑‍🌾'),
-      el('div', {},
-        el('div', { class: 'hy', lang: 'hy', style: 'font-size:1.15rem' }, t.npc.hy),
-        el('button', { class: 'btn-audio', style: 'margin-top:6px;width:40px;height:40px;font-size:1rem',
-          'aria-label': 'Ascolta', onclick: () => speak(t.npc.hy) }, '🔊'),
-        el('div', { class: 'w-it', style: 'color:var(--ink-soft);font-size:.85rem;margin-top:4px' }, t.npc.it)));
-    card.append(npc);
-    speak(t.npc.hy);
 
-    card.append(el('p', { class: 'task-prompt' }, t.prompt));
+    // Se c'è una battuta dell'interlocutore (e non è lo studente ad aprire), la mostro
+    if (t.npc && !t.studentFirst) {
+      const npc = el('div', { class: 'task-npc' },
+        el('div', { class: 'task-npc-av' }, '🧑‍🌾'),
+        el('div', {},
+          el('div', { class: 'hy', lang: 'hy', style: 'font-size:1.15rem' }, t.npc.hy),
+          el('button', { class: 'btn-audio', style: 'margin-top:6px;width:40px;height:40px;font-size:1rem',
+            'aria-label': 'Ascolta', onclick: () => speak(t.npc.hy) }, '🔊'),
+          scaffold !== 'none' && t.npc.it ? el('div', { class: 'w-it', style: 'color:var(--ink-soft);font-size:.85rem;margin-top:4px' }, t.npc.it) : null));
+      card.append(npc);
+      speak(t.npc.hy);
+    }
+
+    // Consegna: cosa deve fare lo studente (specie quando apre lui)
+    card.append(el('p', { class: 'task-prompt' }, (t.studentFirst ? '👉 ' : '') + t.prompt));
 
     const opts = el('div', { style: 'display:grid;gap:10px;margin-top:8px' });
     let answered = false;
-    for (const o of shuffle(t.options)) {
+
+    // Opzioni di risposta (sempre in armeno)
+    const choices = shuffle(t.options.slice());
+    for (const o of choices) {
       const b = el('button', { class: 'task-reply hy', lang: 'hy' }, o.hy);
       b.addEventListener('click', () => {
         if (answered) return;
@@ -72,16 +90,15 @@ export function render(step, mount, ctx) {
             opts.after(el('div', { class: 'task-npc task-npc-reply' },
               el('div', { class: 'task-npc-av' }, '🧑‍🌾'),
               el('div', {}, el('div', { class: 'hy', lang: 'hy' }, o.reply.hy),
-                el('div', { class: 'w-it', style: 'color:var(--ink-soft);font-size:.85rem' }, o.reply.it))));
+                scaffold !== 'none' && o.reply.it ? el('div', { class: 'w-it', style: 'color:var(--ink-soft);font-size:.85rem' }, o.reply.it) : null)));
             speak(o.reply.hy);
           }
           card.append(el('button', { class: 'btn btn-block', style: 'margin-top:14px', onclick: () => {
             turnIdx++;
-            if (turnIdx >= step.turns.length) { phase = 'done'; renderDone(); }
+            if (turnIdx >= step.turns.length) renderDone();
             else renderPlay();
           } }, 'Continua →'));
         } else {
-          // errore: il venditore "non capisce", si riprova (nessuna penalità dura)
           stumbles++;
           b.classList.add('reply-no');
           b.disabled = true;
@@ -93,10 +110,23 @@ export function render(step, mount, ctx) {
       opts.append(b);
     }
     card.append(opts);
+
+    // Communication repair: un pulsante "Non ho capito" sempre disponibile in questo turno
+    if (t.repair) {
+      const rep = el('button', { class: 'task-repair', onclick: () => {
+        speak(t.repair.hy);
+        rep.disabled = true;
+        opts.before(el('div', { class: 'task-npc task-npc-reply' },
+          el('div', { class: 'task-npc-av' }, '🧑‍🌾'),
+          el('div', {}, el('div', { class: 'hy', lang: 'hy' }, t.repair.hy),
+            scaffold !== 'none' && t.repair.it ? el('div', { class: 'w-it', style: 'color:var(--ink-soft);font-size:.85rem' }, t.repair.it) : null)));
+      } }, '🙋 «Չհասկացա» — Non ho capito');
+      card.append(rep);
+    }
     wrap.append(card);
   }
 
-  // ---------- FASE 3: focus on form (la regola, DOPO l'uso) ----------
+  // ---------- FASE 3: debrief ----------
   function renderDone() {
     wrap.innerHTML = '';
     const card = el('div', { class: 'card' });
@@ -104,13 +134,14 @@ export function render(step, mount, ctx) {
       el('h2', { style: 'text-align:center' }, 'Missione compiuta!'),
       el('p', { style: 'text-align:center;color:var(--ink-soft)' },
         stumbles === 0 ? 'Perfetto, senza esitazioni.' : `Ce l'hai fatta (${stumbles} tentativ${stumbles===1?'o':'i'} a vuoto).`));
-    if (step.debrief) {
+    // Il debrief (focus on form) si mostra pieno solo col scaffolding alto; ai livelli alti si accenna
+    if (step.debrief && scaffold !== 'none') {
       card.append(el('div', { class: 'task-debrief' },
         el('div', { style: 'font-weight:700;margin-bottom:8px' }, '💡 ' + step.debrief.title),
         ...step.debrief.points.map(p => el('p', { style: 'margin:6px 0;font-size:.92rem' }, '• ' + p))));
     }
     card.append(el('div', { class: 'lesson-footer' },
-      el('button', { class: 'btn btn-block', onclick: () => ctx.onDone(true) }, 'Fine')));
+      el('button', { class: 'btn btn-block', onclick: () => ctx.onDone(true, stumbles) }, 'Fine')));
     wrap.append(card);
   }
 

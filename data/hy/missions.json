@@ -1,0 +1,18 @@
+{
+  "note": "Registro delle missioni task-based. 'after' = ultimo modulo che dev'essere completato per sbloccare (sblocco rigido). 'archetype' = struttura conversazionale.",
+  "archetypes": {
+    "transaction": "Transazione: voglio X → specifico → prezzo → pago",
+    "info_gap": "Information gap: mi manca un'info → domando → chiarisco → verifico",
+    "problem": "Problem solving: qualcosa non va → spiego → mi propone → accetto/rifiuto",
+    "social": "Scambio sociale: apertura → small talk → reazione → reciprocità → chiusura",
+    "negotiation": "Negoziazione: propongo → problema → alternativa → accordo",
+    "narrative": "Intervista narrativa: domanda → racconto → follow-up → dettaglio → commento"
+  },
+  "missions": [
+    { "id": "market", "title": "Al mercato", "area": "Cibo e acquisti", "archetype": "transaction", "after": "m08", "icon": "🍎", "hasRepair": false, "studentInitiates": false },
+    { "id": "intro", "title": "Presentarsi", "area": "Persone", "archetype": "social", "after": "m06", "icon": "👋", "hasRepair": true, "studentInitiates": true },
+    { "id": "cafe", "title": "Al bar", "area": "Cibo e acquisti", "archetype": "transaction", "after": "m13", "icon": "☕", "hasRepair": false, "studentInitiates": true },
+    { "id": "directions", "title": "Chiedere la strada", "area": "Orientarsi", "archetype": "info_gap", "after": "m16", "icon": "🧭", "hasRepair": true, "studentInitiates": true },
+    { "id": "yesterday", "title": "Com'è andata ieri", "area": "Tempo libero", "archetype": "narrative", "after": "m18", "icon": "📖", "hasRepair": false, "studentInitiates": false }
+  ]
+}

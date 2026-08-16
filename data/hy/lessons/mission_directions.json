@@ -1,0 +1,60 @@
+{
+  "id": "mission_directions",
+  "title": "Chiedere la strada",
+  "vocab": [],
+  "steps": [{
+    "type": "task",
+    "archetype": "info_gap",
+    "goal": "Sei perso: chiedi come arrivare a Piazza della Repubblica.",
+    "pretask": {
+      "intro": "Non trovi la strada. Fermi un passante e chiedi.",
+      "phrases": [
+        { "hy": "Ներողություն", "tr": "neroghut'yun", "it": "Mi scusi" },
+        { "hy": "Որտե՞ղ է Հանրապետության հրապարակը", "tr": "vortegh e Hanrapetut'yan hraparakə", "it": "Dov'è Piazza della Repubblica?" },
+        { "hy": "Հեռու՞ է", "tr": "heṙu e", "it": "È lontano?" }
+      ]
+    },
+    "turns": [
+      {
+        "studentFirst": true,
+        "prompt": "Ferma il passante con cortesia e chiedi dov'è la piazza.",
+        "options": [
+          { "hy": "Ներողություն, որտե՞ղ է հրապարակը։", "it": "Mi scusi, dov'è la piazza?", "ok": true,
+            "reply": { "hy": "Ուղիղ գնացեք, հետո ձախ։", "it": "Vada dritto, poi a sinistra." } },
+          { "hy": "Բարև, ի՞նչ արժե։", "it": "Ciao, quanto costa?", "ok": false },
+          { "hy": "Ես հայերեն եմ սովորում։", "it": "Sto imparando l'armeno.", "ok": false }
+        ]
+      },
+      {
+        "npc": { "hy": "Ուղիղ գնացեք, հետո ձախ։", "tr": "ughigh gnats'ek', heto dzakh", "it": "Vada dritto, poi a sinistra." },
+        "prompt": "Non sei sicuro di aver capito: chiedi di ripetere.",
+        "repair": { "hy": "Ներողություն, կրկնե՞ք։", "tr": "neroghut'yun, krkne՞k'", "it": "Scusi, può ripetere?" },
+        "options": [
+          { "hy": "Ներողություն, կրկնե՞ք։", "it": "Scusi, può ripetere?", "ok": true,
+            "reply": { "hy": "Ուղի՛ղ, հետո ձա՛խ։ Հեռու չէ։", "it": "Dritto, poi a sinistra. Non è lontano." } },
+          { "hy": "Շնորհակալություն, ցտեսություն։", "it": "Grazie, arrivederci.", "ok": false },
+          { "hy": "Այո, տաք է։", "it": "Sì, è caldo.", "ok": false }
+        ]
+      },
+      {
+        "npc": { "hy": "Հեռու չէ, հինգ րոպե։", "tr": "heṙu che, hing rope", "it": "Non è lontano, cinque minuti." },
+        "prompt": "Ringrazia e congedati.",
+        "options": [
+          { "hy": "Շնորհակալություն։ Ցտեսություն։", "it": "Grazie. Arrivederci.", "ok": true,
+            "reply": { "hy": "Բարի ճանապարհ։", "it": "Buon cammino." } },
+          { "hy": "Ի՞նչ ես անում։", "it": "Cosa fai?", "ok": false },
+          { "hy": "Մեկ սուրճ։", "it": "Un caffè.", "ok": false }
+        ]
+      }
+    ],
+    "debrief": {
+      "title": "Cosa hai usato",
+      "points": [
+        "«Որտե՞ղ է…» (dov'è) è la chiave dell'information gap: chiedi ciò che non sai.",
+        "ուղիղ (dritto), ձախ (sinistra), աջ (destra): le direzioni base per orientarti.",
+        "Hai chiesto di RIPETERE quando non hai capito: è così che si sopravvive a una conversazione vera, non facendo finta di aver capito.",
+        "«Հեռու՞ է» (è lontano?) — una domanda breve ti dà un'informazione preziosa."
+      ]
+    }
+  }]
+}

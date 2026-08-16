@@ -1,0 +1,70 @@
+{
+  "id": "mission_yesterday",
+  "title": "Com'è andata ieri",
+  "vocab": [],
+  "steps": [{
+    "type": "task",
+    "archetype": "narrative",
+    "goal": "Un amico ti chiede della tua giornata di ieri: raccontagliela.",
+    "pretask": {
+      "intro": "Il tuo amico Davit è curioso di sapere cos'hai fatto ieri.",
+      "phrases": [
+        { "hy": "Երեկ շուկա գնացի", "tr": "yerek shuka gnats'i", "it": "Ieri sono andato al mercato" },
+        { "hy": "Հետո ընկերներիս հետ ճաշեցի", "tr": "heto ənkerneris het chashets'i", "it": "Poi ho pranzato con i miei amici" },
+        { "hy": "Շատ լավ օր էր", "tr": "shat lav or er", "it": "È stata una bella giornata" }
+      ]
+    },
+    "turns": [
+      {
+        "npc": { "hy": "Բարև։ Ի՞նչ արեցիր երեկ։", "tr": "barev. inch arets'ir yerek", "it": "Ciao! Cosa hai fatto ieri?" },
+        "prompt": "Racconta dove sei andato.",
+        "options": [
+          { "hy": "Երեկ շուկա գնացի։", "it": "Ieri sono andato al mercato.", "ok": true,
+            "reply": { "hy": "Ի՞նչ գնեցիր։", "it": "Cosa hai comprato?" } },
+          { "hy": "Վաղը շուկա կգնամ։", "it": "Domani andrò al mercato.", "ok": false },
+          { "hy": "Շուկա եմ գնում։", "it": "Vado al mercato.", "ok": false }
+        ]
+      },
+      {
+        "npc": { "hy": "Ի՞նչ գնեցիր։", "tr": "inch gnets'ir", "it": "Cosa hai comprato?" },
+        "prompt": "Di' che hai comprato delle mele (follow-up).",
+        "options": [
+          { "hy": "Խնձոր գնեցի։", "it": "Ho comprato delle mele.", "ok": true,
+            "reply": { "hy": "Իսկ հետո՞։", "it": "E poi?" } },
+          { "hy": "Խնձոր կգնեմ։", "it": "Comprerò delle mele.", "ok": false },
+          { "hy": "Խնձոր ունեմ։", "it": "Ho delle mele.", "ok": false }
+        ]
+      },
+      {
+        "npc": { "hy": "Իսկ հետո՞։", "tr": "isk heto", "it": "E poi?" },
+        "prompt": "Aggiungi un dettaglio: poi hai pranzato con gli amici.",
+        "options": [
+          { "hy": "Հետո ընկերներիս հետ ճաշեցի։", "it": "Poi ho pranzato con gli amici.", "ok": true,
+            "reply": { "hy": "Հաճելի՜ օր։", "it": "Che bella giornata!" } },
+          { "hy": "Հետո տանն էի։", "it": "Poi ero a casa.", "ok": true,
+            "reply": { "hy": "Հանգիստ օր, ուրեմն։", "it": "Una giornata tranquilla, allora." } },
+          { "hy": "Ջուր եմ ուզում։", "it": "Voglio dell'acqua.", "ok": false }
+        ]
+      },
+      {
+        "npc": { "hy": "Ուրեմն լավ օր էր։", "tr": "uremn lav or er", "it": "Quindi è stata una bella giornata." },
+        "prompt": "Commenta: sì, è stata una bella giornata.",
+        "options": [
+          { "hy": "Այո, շատ լավ օր էր։", "it": "Sì, è stata una bella giornata.", "ok": true,
+            "reply": { "hy": "Ուրախ եմ քեզ համար։", "it": "Sono contento per te." } },
+          { "hy": "Ոչ, ժամը հինգն է։", "it": "No, sono le cinque.", "ok": false },
+          { "hy": "Վաղը կգնամ։", "it": "Domani andrò.", "ok": false }
+        ]
+      }
+    ],
+    "debrief": {
+      "title": "Cosa hai usato",
+      "points": [
+        "Hai raccontato al PASSATO: գնացի (sono andato), գնեցի (ho comprato), ճաշեցի (ho pranzato). L'aoristo in azione.",
+        "«էր» (era/è stato) descrive com'era la situazione: «լավ օր էր» = è stata una bella giornata.",
+        "հետո (poi) lega gli eventi in un racconto: prima questo, հետո quello.",
+        "Questa è un'INTERVISTA narrativa: l'amico ti guida con domande di follow-up (e poi? cosa?), tu aggiungi dettagli. È così che si racconta davvero."
+      ]
+    }
+  }]
+}

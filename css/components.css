@@ -467,3 +467,31 @@
 /* .w-it-teach = traduzione alla PRESENTAZIONE di una parola: visibile in 'always' e 'teach', non in 'never' */
 [data-it-mode="never"] .w-it-teach { display: none; }
 /* .w-it-prompt = consegna dell'esercizio (cloze/write/order): SEMPRE visibile, non ha regole di hide */
+
+/* Communication repair: "non ho capito" */
+.task-repair {
+  width: 100%; margin-top: 10px; padding: 10px;
+  border: 1px dashed var(--blue); border-radius: 10px;
+  background: transparent; color: var(--blue);
+  font: inherit; font-size: .9rem; cursor: pointer;
+}
+.task-repair:active { background: color-mix(in srgb, var(--blue) 10%, transparent); }
+.task-repair:disabled { opacity: .5; }
+
+/* Schermata Missioni */
+.mission-card {
+  display: flex; align-items: center; gap: 14px;
+  padding: 14px; margin-bottom: 10px;
+  border: 1px solid var(--line); border-radius: 14px; background: var(--surface);
+}
+.mission-card.locked { opacity: .6; }
+.mission-icon { font-size: 2rem; flex-shrink: 0; width: 44px; text-align: center; }
+.mission-meta { flex: 1; }
+.mission-title { font-weight: 700; font-size: 1.05rem; }
+.mission-area { color: var(--ink-soft); font-size: .85rem; margin-top: 2px; }
+.mission-lock-hint {
+  font-size: .78rem; color: var(--accent-ink, #9a5a12);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  padding: 6px 10px; border-radius: 8px; text-align: right; max-width: 45%;
+}
+.screen-title { margin-bottom: 4px; }

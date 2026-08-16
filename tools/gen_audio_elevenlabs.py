@@ -60,6 +60,7 @@ def collect_texts():
                     if t.get("npc", {}).get("hy"): texts.add(t["npc"]["hy"])
                     for o in t.get("options", []):
                         if o.get("reply", {}).get("hy"): texts.add(o["reply"]["hy"])
+                    if t.get("repair", {}).get("hy"): texts.add(t["repair"]["hy"])
     course = json.loads((ROOT / "data/hy/course.json").read_text())
     for mod in course["modules"]:
         for les in mod["lessons"]:
