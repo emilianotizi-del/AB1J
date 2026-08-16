@@ -56,7 +56,6 @@
 .word-block .w-ipa { color: var(--ink-soft); font-size: .9rem; }
 .word-block .w-it { margin-top: 8px; font-size: 1.05rem; }
 [data-hide-tr="1"] .w-tr, [data-hide-ipa="1"] .w-ipa { display: none; }
-[data-hide-it="1"] .w-it, [data-hide-it="1"] .dlg-it, [data-hide-it="1"] .task-it { display: none; }
 
 /* Griglia opzioni esercizi */
 .options { display: grid; gap: 10px; margin-top: 16px; }
@@ -460,3 +459,11 @@
 .task-hint { margin-top:10px; color:var(--ink-soft); font-size:.9rem; text-align:center; }
 .task-debrief { margin-top:16px; padding:14px; border-radius:12px; border:1px solid color-mix(in srgb, var(--accent) 30%, transparent);
   background:color-mix(in srgb, var(--accent) 8%, var(--surface)); text-align:left; }
+
+/* Traduzione italiana — tre stati (data-it-mode: always | teach | never) */
+/* .w-it = aiuto contestuale (dialoghi, letture, battute task, retro schede): visibile solo in 'always' */
+[data-it-mode="teach"] .w-it, [data-it-mode="teach"] .dlg-it,
+[data-it-mode="never"] .w-it, [data-it-mode="never"] .dlg-it { display: none; }
+/* .w-it-teach = traduzione alla PRESENTAZIONE di una parola: visibile in 'always' e 'teach', non in 'never' */
+[data-it-mode="never"] .w-it-teach { display: none; }
+/* .w-it-prompt = consegna dell'esercizio (cloze/write/order): SEMPRE visibile, non ha regole di hide */

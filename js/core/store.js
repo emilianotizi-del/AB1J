@@ -15,7 +15,7 @@ function set(key, value) {
 const DEFAULT_SETTINGS = {
   theme: 'light',        // light | dark
   showTr: true,          // traslitterazione
-  showIt: true,          // traduzione italiana
+  itMode: 'always',      // traduzione IT: 'always' | 'teach' (solo presentazione) | 'never'
   showIpa: true,         // IPA
   duration: 30,          // 30 | 10 minuti
   sttKey: ''             // chiave ElevenLabs per il riconoscimento vocale (solo locale)
@@ -26,7 +26,7 @@ export function applySettings(s = getSettings()) {
   document.documentElement.dataset.theme = s.theme;
   document.documentElement.dataset.hideTr = s.showTr ? '0' : '1';
   document.documentElement.dataset.hideIpa = s.showIpa ? '0' : '1';
-  document.documentElement.dataset.hideIt = s.showIt === false ? '1' : '0';
+  document.documentElement.dataset.itMode = s.itMode || 'always';
 }
 
 /* --- Progresso lezioni --- */

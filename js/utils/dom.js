@@ -38,6 +38,6 @@ export function wordBlock(w, { withIt = true } = {}) {
   b.append(el('div', { class: 'w-hy', lang: 'hy' }, w.hy));
   if (w.tr) b.append(el('div', { class: 'w-tr' }, w.tr));
   if (w.ipa) b.append(el('div', { class: 'w-ipa' }, w.ipa));
-  if (withIt && w.it) b.append(el('div', { class: 'w-it' }, w.it));
+  if (withIt && w.it) b.append(el('div', { class: 'w-it-teach' }, w.it));
   return b;
 }

@@ -26,8 +26,25 @@ export function render(mount) {
     el('label', { class: 'switch' }, themeInput, el('span', { class: 'knob' }))));
 
   card.append(toggle('Mostra traslitterazione', 'showTr'));
-  card.append(toggle('Mostra traduzione italiana', 'showIt'));
   card.append(toggle('Mostra IPA', 'showIpa'));
+
+  // Traduzione italiana — tre stati
+  const itSeg = el('div', { class: 'seg' });
+  const itOptions = [['always', 'Sempre'], ['teach', 'Solo nuove'], ['never', 'Mai']];
+  for (const [val, label] of itOptions) {
+    const b = el('button', { class: (s.itMode || 'always') === val ? 'active' : '' }, label);
+    b.addEventListener('click', () => {
+      s.itMode = val; saveSettings(s);
+      [...itSeg.children].forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+    });
+    itSeg.append(b);
+  }
+  card.append(el('div', { class: 'setting-row', style: 'flex-direction:column;align-items:stretch;gap:8px' },
+    el('span', {}, 'Traduzione italiana'),
+    itSeg,
+    el('span', { style: 'font-size:.8rem;color:var(--ink-soft)' },
+      '«Solo nuove» mostra la traduzione quando una parola viene presentata, e la nasconde negli esercizi.')));
 
   // Durata lezione
   const seg = el('div', { class: 'seg' });
