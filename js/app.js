@@ -25,6 +25,7 @@ route('/stats',       () => stats.render(screen));
 route('/settings',    () => settings.render(screen));
 route('/pronounce',   () => pronounce.render(screen));
 route('/sounds',      () => sounds.render(screen));
+route('/task-demo',   () => lesson.render(screen, { id: 'task_demo' }));
 
 startRouter();
 updateBadge();

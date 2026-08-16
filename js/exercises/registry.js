@@ -19,7 +19,7 @@ import * as task from './task.js';
 const types = { teach, mcq, match, trace, dictation, order, dialog, reading, notice, cloze, conjugate, write, listen, task };
 
 // Tipi che presentano contenuto senza valutare l'utente
-export const UNGRADED = new Set(['teach', 'dialog', 'reading', 'notice']);
+export const UNGRADED = new Set(['teach', 'dialog', 'reading', 'notice', 'task']);
 
 export function renderStep(step, mount, ctx) {
   const mod = types[step.type];
