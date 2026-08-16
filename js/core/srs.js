@@ -25,32 +25,50 @@ export function addCards(items) {
 export function migrateDeck() {
   const deck = getDeck();
   let changed = false;
+
+  // 'due' nel recente passato e sfalsato su ~3 giorni: le carte nuove entrano
+  // subito nel ripasso, mescolate, senza accodarsi tutte in fondo né in blocco.
+  const spread = () => Date.now() - Math.floor(Math.random() * 3 * 24 * 60 * 60 * 1000) - 1;
+
   // 1) Vecchie carte senza kind → read + mean + prod
   for (const [id, c] of Object.entries(deck)) {
-    if (!c.kind) {
+    if (c && typeof c === 'object' && !c.kind && c.hy) {
       delete deck[id];
       for (const kind of ['read', 'mean', 'prod']) {
         const nid = id + ':' + kind[0];
-        deck[nid] = { ...c, id: nid, kind };
+        deck[nid] = { ...c, id: nid, kind, due: kind === 'prod' ? spread() : (c.due || Date.now()) };
       }
       changed = true;
     }
   }
-  // 2) Parole che hanno read+mean ma non ancora la carta prod (produzione IT→HY)
+
+  // 2) Parole con read+mean ma senza la carta prod → creala
   const base = {};
   for (const c of Object.values(deck)) {
-    if (c.kind) {
-      const root = c.id.slice(0, -2);       // toglie ":r"/":m"/":p"
+    if (c && c.kind && c.id) {
+      const root = c.id.slice(0, -2);
       base[root] = base[root] || c;
     }
   }
   for (const [root, c] of Object.entries(base)) {
     const pid = root + ':p';
     if (!deck[pid]) {
-      deck[pid] = { ...c, id: pid, kind: 'prod', ef: 2.5, reps: 0, interval: 0, due: Date.now() };
+      deck[pid] = { ...c, id: pid, kind: 'prod', ef: 2.5, reps: 0, interval: 0, due: spread() };
       changed = true;
     }
   }
+
+  // 3) Correzione una-tantum: le carte prod della PRIMA migrazione erano tutte
+  //    accodate con due=now (mai ripassate, reps 0). Le sfalso perché entrino in circolo.
+  //    Uso un flag nelle impostazioni, non nel mazzo, per non sporcare il deck.
+  if (!localStorage.getItem('ab1j_prod_spread_done')) {
+    for (const c of Object.values(deck)) {
+      if (c && c.kind === 'prod' && c.reps === 0) c.due = spread();
+    }
+    localStorage.setItem('ab1j_prod_spread_done', '1');
+    changed = true;
+  }
+
   if (changed) saveDeck(deck);
 }
 
