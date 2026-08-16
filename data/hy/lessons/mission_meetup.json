@@ -1,0 +1,131 @@
+{
+  "id": "mission_meetup",
+  "title": "Vediamoci",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "negotiation",
+      "goal": "Metti d'accordo con un amico dove e quando vedervi.",
+      "pretask": {
+        "intro": "Volete vedervi ma dovete decidere dove e quando.",
+        "phrases": [
+          {
+            "hy": "Ո՞ւր գնանք",
+            "tr": "ur gnank'",
+            "it": "Dove andiamo?"
+          },
+          {
+            "hy": "Կենտրոնում",
+            "tr": "kentronum",
+            "it": "In centro"
+          },
+          {
+            "hy": "Ժամը վեցին",
+            "tr": "zhamə vetsin",
+            "it": "Alle sei"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Proponi di vedervi. Chiedi dove andare.",
+          "options": [
+            {
+              "hy": "Ո՞ւր գնանք վաղը։",
+              "it": "Dove andiamo domani?",
+              "ok": true,
+              "reply": {
+                "hy": "Չգիտեմ… Սրճարա՞ն։",
+                "it": "Non so... Un caffè?"
+              }
+            },
+            {
+              "hy": "Ի՞նչ արժե։",
+              "it": "Quanto costa?",
+              "ok": false
+            },
+            {
+              "hy": "Ցտեսություն։",
+              "it": "Arrivederci.",
+              "ok": false
+            }
+          ],
+          "studentFirst": true
+        },
+        {
+          "prompt": "Proponi il centro (ma lui avrà da ridire sull'ora).",
+          "options": [
+            {
+              "hy": "Լավ, կենտրոնում։ Ժամը հինգի՞ն։",
+              "it": "Ok, in centro. Alle cinque?",
+              "ok": true,
+              "reply": {
+                "hy": "Հինգին չեմ կարող։ Վեցի՞ն։",
+                "it": "Alle cinque non posso. Alle sei?"
+              }
+            },
+            {
+              "hy": "Երեկ։",
+              "it": "Ieri.",
+              "ok": false
+            },
+            {
+              "hy": "Կարմիր։",
+              "it": "Rosso.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Սրճարա՞ն կենտրոնում։",
+            "tr": "srcharan kentronum",
+            "it": "Un caffè in centro?"
+          },
+          "repair": {
+            "hy": "Ներողություն, չհասկացա։",
+            "tr": "neroghut'yun, chhaskats'a",
+            "it": "Scusa, non ho capito."
+          }
+        },
+        {
+          "prompt": "Accetta l'alternativa: alle sei.",
+          "options": [
+            {
+              "hy": "Լավ, ժամը վեցին։ Պայմանավորվեցինք։",
+              "it": "Ok, alle sei. D'accordo.",
+              "ok": true,
+              "reply": {
+                "hy": "Կտեսնվենք։",
+                "it": "Ci vediamo."
+              }
+            },
+            {
+              "hy": "Ոչ, երեկ։",
+              "it": "No, ieri.",
+              "ok": false
+            },
+            {
+              "hy": "Ջուր։",
+              "it": "Acqua.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Վեցի՞ն։",
+            "tr": "vetsin",
+            "it": "Alle sei?"
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "Negoziazione su DUE variabili (luogo e ora): proponi, si aggiusta, si trova l'accordo.",
+          "«ո՞ւր» (dove, con moto) diverso da «որտե՞ղ» (dove, stato): sfumatura utile.",
+          "«չեմ կարող» + alternativa: così si contratta un orario nella vita vera.",
+          "«Կտեսնվենք» (ci vediamo): la chiusura che sigilla l'accordo."
+        ]
+      }
+    }
+  ]
+}

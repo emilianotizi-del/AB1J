@@ -1,0 +1,131 @@
+{
+  "id": "mission_compliment",
+  "title": "Fare un complimento",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "social",
+      "goal": "Fai un complimento sincero a qualcuno.",
+      "pretask": {
+        "intro": "Vuoi dire a un amico che ha una bella casa.",
+        "phrases": [
+          {
+            "hy": "Ի՜նչ գեղեցիկ տուն",
+            "tr": "inch geghetsik tun",
+            "it": "Che bella casa"
+          },
+          {
+            "hy": "Շատ է դուր գալիս",
+            "tr": "shat e dur galis",
+            "it": "Mi piace molto"
+          },
+          {
+            "hy": "Ապրես",
+            "tr": "apres",
+            "it": "Bravo / complimenti"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Entri a casa sua: fai un complimento.",
+          "options": [
+            {
+              "hy": "Ի՜նչ գեղեցիկ տուն ունես։",
+              "it": "Che bella casa che hai!",
+              "ok": true,
+              "reply": {
+                "hy": "Շնորհակալ եմ, շատ սիրելի է։",
+                "it": "Grazie, sei molto gentile."
+              }
+            },
+            {
+              "hy": "Ի՞նչ արժե։",
+              "it": "Quanto costa?",
+              "ok": false
+            },
+            {
+              "hy": "Ցտեսություն։",
+              "it": "Arrivederci.",
+              "ok": false
+            }
+          ],
+          "studentFirst": true
+        },
+        {
+          "prompt": "Specifica cosa ti piace di più.",
+          "options": [
+            {
+              "hy": "Հյուրասենյակը շատ է դուր գալիս։",
+              "it": "Il soggiorno mi piace molto.",
+              "ok": true,
+              "reply": {
+                "hy": "Ուրախ եմ, որ դուր է գալիս։",
+                "it": "Sono contento che ti piaccia."
+              }
+            },
+            {
+              "hy": "Կապույտ։",
+              "it": "Blu.",
+              "ok": false
+            },
+            {
+              "hy": "Ոտքով։",
+              "it": "A piedi.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Շնորհակալ եմ։",
+            "tr": "shnorhakal em",
+            "it": "Grazie."
+          },
+          "repair": {
+            "hy": "Ներողություն, չհասկացա։",
+            "tr": "neroghut'yun, chhaskats'a",
+            "it": "Scusa, non ho capito."
+          }
+        },
+        {
+          "prompt": "Chiudi con un elogio caloroso.",
+          "options": [
+            {
+              "hy": "Ապրե՛ս, շատ ջերմ տուն է։",
+              "it": "Bravo, è una casa molto accogliente.",
+              "ok": true,
+              "reply": {
+                "hy": "Շնորհակալ եմ սրտանց։",
+                "it": "Grazie di cuore."
+              }
+            },
+            {
+              "hy": "Մի՛ գնա։",
+              "it": "Non andare!",
+              "ok": false
+            },
+            {
+              "hy": "Ջուր։",
+              "it": "Acqua.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ուրախ եմ։",
+            "tr": "urakh em",
+            "it": "Sono contento."
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "«Ի՜նչ + aggettivo» è l'esclamazione del complimento: «Ի՜նչ գեղեցիկ» = che bello.",
+          "«դուր է գալիս» (piace): esprimere apprezzamento in modo naturale.",
+          "«Ապրես» (bravo/complimenti): una parola calorosa, molto armena, per lodare.",
+          "Il complimento ben fatto scioglie i rapporti: competenza sociopragmatica, non solo lessico."
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "id": "mission_guest",
+  "title": "Ospite a cena",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "social",
+      "goal": "Sei ospite a cena da una famiglia armena: comportati bene a tavola.",
+      "pretask": {
+        "intro": "Sei a cena da amici armeni. L'ospitalità è sacra: sai cosa dire?",
+        "phrases": [
+          {
+            "hy": "Շատ համեղ է",
+            "tr": "shat hamegh e",
+            "it": "È buonissimo"
+          },
+          {
+            "hy": "Կենաց",
+            "tr": "kenats'",
+            "it": "Un brindisi / alla salute"
+          },
+          {
+            "hy": "Շնորհակալ եմ հրավերի համար",
+            "tr": "shnorhakal em hraveri hamar",
+            "it": "Grazie per l'invito"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "La padrona di casa ti serve: complimentati per il cibo.",
+          "options": [
+            {
+              "hy": "Շատ համեղ է, շնորհակալություն։",
+              "it": "È buonissimo, grazie.",
+              "ok": true,
+              "reply": {
+                "hy": "Կե՛ր, կե՛ր, դեռ շատ կա։",
+                "it": "Mangia, mangia, ce n'è ancora tanto."
+              }
+            },
+            {
+              "hy": "Ի՞նչ արժե։",
+              "it": "Quanto costa?",
+              "ok": false
+            },
+            {
+              "hy": "Ցտեսություն։",
+              "it": "Arrivederci.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Բարի ախորժակ։ Կե՛ր։",
+            "tr": "bari akhorzhak. ker",
+            "it": "Buon appetito. Mangia!"
+          },
+          "repair": {
+            "hy": "Ներողություն, չհասկացա։",
+            "tr": "neroghut'yun, chhaskats'a",
+            "it": "Scusa, non ho capito."
+          }
+        },
+        {
+          "prompt": "Il capotavola propone un brindisi: unisciti.",
+          "options": [
+            {
+              "hy": "Կենաց ընտանիքի համար։",
+              "it": "Un brindisi per la famiglia.",
+              "ok": true,
+              "reply": {
+                "hy": "Կենա՜ց։ Ապրե՛ս։",
+                "it": "Salute! Bravo."
+              }
+            },
+            {
+              "hy": "Կարմիր։",
+              "it": "Rosso.",
+              "ok": false
+            },
+            {
+              "hy": "Ես բժիշկ եմ։",
+              "it": "Sono un medico.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Հիմա կենաց ասենք։",
+            "tr": "hima kenats' asenk'",
+            "it": "Ora facciamo un brindisi."
+          }
+        },
+        {
+          "prompt": "A fine serata, ringrazia dell'invito.",
+          "options": [
+            {
+              "hy": "Շնորհակալ եմ հրավերի համար։ Ամեն ինչ հիանալի էր։",
+              "it": "Grazie per l'invito. Tutto era splendido.",
+              "ok": true,
+              "reply": {
+                "hy": "Մեր տունը ձեր տունն է։ Նորից եկեք։",
+                "it": "Casa nostra è casa vostra. Tornate."
+              }
+            },
+            {
+              "hy": "Մի՛ գնա։",
+              "it": "Non andare!",
+              "ok": false
+            },
+            {
+              "hy": "Ջուր։",
+              "it": "Acqua.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Հավանե՞ցիր։",
+            "tr": "havanets'ir",
+            "it": "Ti è piaciuto?"
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "A tavola con armeni conta la PRAGMATICA: complimentarsi, accettare l'insistenza a mangiare, brindare.",
+          "«կենաց» (brindisi) è un rito sociale: il capotavola (թամադա) li propone, tutti partecipano.",
+          "«Մեր տունը ձեր տունն է» (casa nostra è casa vostra): l'ospitalità armena in una frase.",
+          "Non è folklore: è saper stare a tavola in modo che gli armeni ti sentano a tuo agio."
+        ]
+      }
+    }
+  ]
+}

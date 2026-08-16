@@ -1,0 +1,131 @@
+{
+  "id": "mission_apology",
+  "title": "Scusarsi",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "problem",
+      "goal": "Hai fatto un piccolo sgarbo: scusati in modo sincero.",
+      "pretask": {
+        "intro": "Hai dimenticato un appuntamento con un amico. Ti scusi.",
+        "phrases": [
+          {
+            "hy": "Ներիր ինձ",
+            "tr": "nerir indz",
+            "it": "Perdonami"
+          },
+          {
+            "hy": "Մոռացա",
+            "tr": "moratsa",
+            "it": "Ho dimenticato"
+          },
+          {
+            "hy": "Իմ մեղքն է",
+            "tr": "im meghkn e",
+            "it": "È colpa mia"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Affronta l'amico: scusati per aver dimenticato.",
+          "options": [
+            {
+              "hy": "Ներիր ինձ, երեկ մոռացա։",
+              "it": "Perdonami, ieri ho dimenticato.",
+              "ok": true,
+              "reply": {
+                "hy": "Անհանգստացա… Ի՞նչ եղավ։",
+                "it": "Ero preoccupato... Cos'è successo?"
+              }
+            },
+            {
+              "hy": "Ի՞նչ արժե։",
+              "it": "Quanto costa?",
+              "ok": false
+            },
+            {
+              "hy": "Ցտեսություն։",
+              "it": "Arrivederci.",
+              "ok": false
+            }
+          ],
+          "studentFirst": true
+        },
+        {
+          "prompt": "Ammetti la responsabilità.",
+          "options": [
+            {
+              "hy": "Իմ մեղքն է, ներողություն։",
+              "it": "È colpa mia, scusa.",
+              "ok": true,
+              "reply": {
+                "hy": "Ոչինչ, պատահում է։",
+                "it": "Non fa niente, capita."
+              }
+            },
+            {
+              "hy": "Կարմիր։",
+              "it": "Rosso.",
+              "ok": false
+            },
+            {
+              "hy": "Ես բժիշկ եմ։",
+              "it": "Sono un medico.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ի՞նչ եղավ։",
+            "tr": "inch yeghav",
+            "it": "Cos'è successo?"
+          },
+          "repair": {
+            "hy": "Ներողություն, չհասկացա։",
+            "tr": "neroghut'yun, chhaskats'a",
+            "it": "Scusa, non ho capito."
+          }
+        },
+        {
+          "prompt": "Proponi di rimediare.",
+          "options": [
+            {
+              "hy": "Վաղը ես կհրավիրեմ սուրճի։",
+              "it": "Domani ti offro un caffè.",
+              "ok": true,
+              "reply": {
+                "hy": "Հաճույքով։ Ամեն ինչ լավ է։",
+                "it": "Volentieri. Va tutto bene."
+              }
+            },
+            {
+              "hy": "Մի՛ գնա։",
+              "it": "Non andare!",
+              "ok": false
+            },
+            {
+              "hy": "Ջուր։",
+              "it": "Acqua.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Պատահում է։",
+            "tr": "patahum e",
+            "it": "Capita."
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "«Ներիր» (perdonami, imperativo informale) e «ներողություն» (scusa): due registri delle scuse.",
+          "«Իմ մեղքն է» (è colpa mia): assumersi la responsabilità apertamente.",
+          "«պատահում է» (capita): capire il perdono dell'altro.",
+          "Scusarsi bene è problem solving relazionale: riconosci, ti assumi la colpa, proponi rimedio."
+        ]
+      }
+    }
+  ]
+}

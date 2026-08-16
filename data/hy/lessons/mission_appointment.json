@@ -1,0 +1,131 @@
+{
+  "id": "mission_appointment",
+  "title": "Appuntamento dal medico",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "transaction",
+      "goal": "Prendi un appuntamento dal medico per domani.",
+      "pretask": {
+        "intro": "Chiami lo studio medico per fissare una visita.",
+        "phrases": [
+          {
+            "hy": "Ուզում եմ գրանցվել",
+            "tr": "uzum em grantsvel",
+            "it": "Vorrei prenotare"
+          },
+          {
+            "hy": "Վաղը հնարավո՞ր է",
+            "tr": "vaghə hnaravor e",
+            "it": "Domani è possibile?"
+          },
+          {
+            "hy": "Ժամը քանիսի՞ն",
+            "tr": "zhamə k'anisin",
+            "it": "A che ora?"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Chiami: di' che vuoi prenotare una visita.",
+          "options": [
+            {
+              "hy": "Բարև, ուզում եմ գրանցվել։",
+              "it": "Salve, vorrei prenotare.",
+              "ok": true,
+              "reply": {
+                "hy": "Իհարկե։ Ե՞րբ եք ուզում։",
+                "it": "Certo. Quando desidera?"
+              }
+            },
+            {
+              "hy": "Ի՞նչ արժե։",
+              "it": "Quanto costa?",
+              "ok": false
+            },
+            {
+              "hy": "Ցտեսություն։",
+              "it": "Arrivederci.",
+              "ok": false
+            }
+          ],
+          "studentFirst": true
+        },
+        {
+          "prompt": "Chiedi se è possibile domani.",
+          "options": [
+            {
+              "hy": "Վաղը հնարավո՞ր է։",
+              "it": "Domani è possibile?",
+              "ok": true,
+              "reply": {
+                "hy": "Այո։ Ժամը տասին։",
+                "it": "Sì. Alle dieci."
+              }
+            },
+            {
+              "hy": "Կարմիր։",
+              "it": "Rosso.",
+              "ok": false
+            },
+            {
+              "hy": "Ես Իտալիայից եմ։",
+              "it": "Sono dall'Italia.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ե՞րբ եք ուզում։",
+            "tr": "yerb ek' uzum",
+            "it": "Quando desidera?"
+          },
+          "repair": {
+            "hy": "Ներողություն, կրկնե՞ք։",
+            "tr": "neroghut'yun, krkne՞k'",
+            "it": "Scusi, può ripetere?"
+          }
+        },
+        {
+          "prompt": "Conferma l'orario e ringrazia.",
+          "options": [
+            {
+              "hy": "Ժամը տասին, լավ։ Շնորհակալություն։",
+              "it": "Alle dieci, bene. Grazie.",
+              "ok": true,
+              "reply": {
+                "hy": "Սպասում ենք ձեզ։",
+                "it": "La aspettiamo."
+              }
+            },
+            {
+              "hy": "Ոտքով։",
+              "it": "A piedi.",
+              "ok": false
+            },
+            {
+              "hy": "Ջուր։",
+              "it": "Acqua.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ժամը տասին։",
+            "tr": "zhamə tasin",
+            "it": "Alle dieci."
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "«գրանցվել» (prenotarsi): il verbo chiave per fissare un appuntamento.",
+          "«հնարավո՞ր է» (è possibile?): un modo cortese di proporre una data.",
+          "L'ora al dativo «ժամը տասին» (alle dieci): l'hai vista, qui la usi davvero.",
+          "Hai avuto l'iniziativa della chiamata e portato a casa un appuntamento fissato."
+        ]
+      }
+    }
+  ]
+}

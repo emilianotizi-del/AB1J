@@ -1,0 +1,131 @@
+{
+  "id": "mission_formal",
+  "title": "Allo sportello",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "info_gap",
+      "goal": "A uno sportello pubblico, chiedi un'informazione con registro formale.",
+      "pretask": {
+        "intro": "Sei a uno sportello (posta, comune). Serve un tono più formale del solito.",
+        "phrases": [
+          {
+            "hy": "Ներեցեք, տեղեկություն կարո՞ղ եմ ստանալ",
+            "tr": "neretsek', teghekut'yun karogh em stanal",
+            "it": "Mi scusi, posso avere un'informazione?"
+          },
+          {
+            "hy": "Ո՞ր պատուհանը",
+            "tr": "vor patuhanə",
+            "it": "Quale sportello?"
+          },
+          {
+            "hy": "Շնորհակալ եմ ձեզ",
+            "tr": "shnorhakal em dzez",
+            "it": "La ringrazio"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Rivolgiti con cortesia formale: chiedi un'informazione.",
+          "options": [
+            {
+              "hy": "Ներեցեք, տեղեկություն կարո՞ղ եմ ստանալ։",
+              "it": "Mi scusi, posso avere un'informazione?",
+              "ok": true,
+              "reply": {
+                "hy": "Իհարկե։ Ի՞նչ է պետք։",
+                "it": "Certo. Di cosa ha bisogno?"
+              }
+            },
+            {
+              "hy": "Բարև, ի՞նչ արժե։",
+              "it": "Ciao, quanto costa?",
+              "ok": false
+            },
+            {
+              "hy": "Ցտեսություն։",
+              "it": "Arrivederci.",
+              "ok": false
+            }
+          ],
+          "studentFirst": true
+        },
+        {
+          "prompt": "Chiedi a quale sportello devi andare.",
+          "options": [
+            {
+              "hy": "Ո՞ր պատուհանը պետք է գնամ։",
+              "it": "A quale sportello devo andare?",
+              "ok": true,
+              "reply": {
+                "hy": "Երրորդ պատուհանը, ձախ կողմում։",
+                "it": "Il terzo sportello, sulla sinistra."
+              }
+            },
+            {
+              "hy": "Կարմիր։",
+              "it": "Rosso.",
+              "ok": false
+            },
+            {
+              "hy": "Ոտքով։",
+              "it": "A piedi.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ի՞նչ է պետք։",
+            "tr": "inch e petk'",
+            "it": "Di cosa ha bisogno?"
+          },
+          "repair": {
+            "hy": "Ներողություն, կրկնե՞ք։",
+            "tr": "neroghut'yun, krkne՞k'",
+            "it": "Scusi, può ripetere?"
+          }
+        },
+        {
+          "prompt": "Ringrazia con registro formale.",
+          "options": [
+            {
+              "hy": "Շնորհակալ եմ ձեզ։",
+              "it": "La ringrazio.",
+              "ok": true,
+              "reply": {
+                "hy": "Խնդրեմ։ Հաջողություն։",
+                "it": "Prego. Buona giornata."
+              }
+            },
+            {
+              "hy": "Մի՛ գնա։",
+              "it": "Non andare!",
+              "ok": false
+            },
+            {
+              "hy": "Ջուր։",
+              "it": "Acqua.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Երրորդ պատուհանը։",
+            "tr": "yerrord patuhanə",
+            "it": "Il terzo sportello."
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "REGISTRO FORMALE: «Ներեցեք» (più formale di «ներողություն»), «ձեզ» (a Lei), «կարո՞ղ եմ» (posso?).",
+          "«տեղեկություն» (informazione), «պատուհան» (sportello): il lessico degli uffici.",
+          "Il «Lei» di cortesia (ձեզ, -եք) segnala rispetto in un contesto istituzionale.",
+          "Saper cambiare registro — dal tu informale al Lei formale — è una competenza A2 che il piano prima non copriva."
+        ]
+      }
+    }
+  ]
+}

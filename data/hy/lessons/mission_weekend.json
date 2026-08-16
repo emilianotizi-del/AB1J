@@ -1,0 +1,135 @@
+{
+  "id": "mission_weekend",
+  "title": "Progetti per il weekend",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "narrative",
+      "goal": "Racconta cosa farai nel weekend.",
+      "pretask": {
+        "intro": "Un amico ti chiede i tuoi piani per il fine settimana.",
+        "phrases": [
+          {
+            "hy": "Շաբաթ օրը",
+            "tr": "shabat' orə",
+            "it": "Sabato"
+          },
+          {
+            "hy": "Ընկերներիս հետ",
+            "tr": "ənkerneris het",
+            "it": "Con gli amici"
+          },
+          {
+            "hy": "Կգնանք լեռ",
+            "tr": "kgnank' leṙ",
+            "it": "Andremo in montagna"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Ti chiede i piani: di' che sabato vedrai gli amici.",
+          "options": [
+            {
+              "hy": "Շաբաթ օրը ընկերներիս հետ կհանդիպեմ։",
+              "it": "Sabato vedrò gli amici.",
+              "ok": true,
+              "reply": {
+                "hy": "Ի՞նչ կանեք։",
+                "it": "Cosa farete?"
+              }
+            },
+            {
+              "hy": "Երեկ գնացի։",
+              "it": "Ieri sono andato.",
+              "ok": false
+            },
+            {
+              "hy": "Ժամը հինգն է։",
+              "it": "Sono le cinque.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ի՞նչ ես անելու հանգստյան օրերին։",
+            "tr": "inch es anelu hangstyan orerin",
+            "it": "Cosa fai nel weekend?"
+          },
+          "repair": {
+            "hy": "Ներողություն, չհասկացա։",
+            "tr": "neroghut'yun, chhaskats'a",
+            "it": "Scusa, non ho capito."
+          }
+        },
+        {
+          "prompt": "Di' cosa farete: andrete in montagna (follow-up).",
+          "options": [
+            {
+              "hy": "Կգնանք լեռ։",
+              "it": "Andremo in montagna.",
+              "ok": true,
+              "reply": {
+                "hy": "Հիանալի՜։ Եղանակը լավ կլինի՞։",
+                "it": "Fantastico! Il tempo sarà bello?"
+              }
+            },
+            {
+              "hy": "Կարմիր։",
+              "it": "Rosso.",
+              "ok": false
+            },
+            {
+              "hy": "Ոտքով։",
+              "it": "A piedi.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ի՞նչ կանեք։",
+            "tr": "inch kanek'",
+            "it": "Cosa farete?"
+          }
+        },
+        {
+          "prompt": "Commenta: speri di sì.",
+          "options": [
+            {
+              "hy": "Հուսով եմ, արև կլինի։",
+              "it": "Spero ci sia il sole.",
+              "ok": true,
+              "reply": {
+                "hy": "Լավ հանգիստ։",
+                "it": "Buon riposo."
+              }
+            },
+            {
+              "hy": "Ոչ, երեկ։",
+              "it": "No, ieri.",
+              "ok": false
+            },
+            {
+              "hy": "Ջուր։",
+              "it": "Acqua.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Եղանակը լավ կլինի՞։",
+            "tr": "yeghanakə lav klini",
+            "it": "Il tempo sarà bello?"
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "Il FUTURO per i progetti: «կհանդիպեմ» (vedrò), «կգնանք» (andremo), «կլինի» (sarà).",
+          "«հանգստյան օրերին» (nel weekend): lessico del tempo libero.",
+          "«Հուսով եմ» (spero): esprimere un desiderio sul futuro.",
+          "Racconto al futuro guidato da follow-up: cosa farete? il tempo sarà bello?"
+        ]
+      }
+    }
+  ]
+}

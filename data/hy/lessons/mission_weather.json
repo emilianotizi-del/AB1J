@@ -1,0 +1,135 @@
+{
+  "id": "mission_weather",
+  "title": "Che tempo fa",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "social",
+      "goal": "Fai due chiacchiere sul tempo con un conoscente.",
+      "pretask": {
+        "intro": "Incontri un conoscente. Si parla del tempo, come si fa.",
+        "phrases": [
+          {
+            "hy": "Ի՞նչ եղանակ է",
+            "tr": "inch yeghanak e",
+            "it": "Che tempo fa?"
+          },
+          {
+            "hy": "Այսօր արև է",
+            "tr": "aysor arev e",
+            "it": "Oggi c'è il sole"
+          },
+          {
+            "hy": "Վաղը անձրև կգա",
+            "tr": "vaghə andzrev kga",
+            "it": "Domani pioverà"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Il conoscente saluta: reagisci e commenta il bel tempo.",
+          "options": [
+            {
+              "hy": "Այո, այսօր արև է, շատ լավ։",
+              "it": "Sì, oggi c'è il sole, bellissimo.",
+              "ok": true,
+              "reply": {
+                "hy": "Ճիշտ ես։ Իսկ վաղը՞։",
+                "it": "Hai ragione. E domani?"
+              }
+            },
+            {
+              "hy": "Ի՞նչ արժե։",
+              "it": "Quanto costa?",
+              "ok": false
+            },
+            {
+              "hy": "Ցտեսություն։",
+              "it": "Arrivederci.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Բարև։ Ի՜նչ լավ եղանակ է։",
+            "tr": "barev. inch lav yeghanak e",
+            "it": "Ciao! Che bel tempo!"
+          },
+          "repair": {
+            "hy": "Ներողություն, չհասկացա։",
+            "tr": "neroghut'yun, chhaskats'a",
+            "it": "Scusa, non ho capito."
+          }
+        },
+        {
+          "prompt": "Dì cosa farà domani: pioverà.",
+          "options": [
+            {
+              "hy": "Վաղը անձրև կգա, ասում են։",
+              "it": "Domani pioverà, dicono.",
+              "ok": true,
+              "reply": {
+                "hy": "Ափսո՜ս։ Հովանոց պետք կլինի։",
+                "it": "Peccato! Servirà l'ombrello."
+              }
+            },
+            {
+              "hy": "Կապույտ։",
+              "it": "Blu.",
+              "ok": false
+            },
+            {
+              "hy": "Ես բժիշկ եմ։",
+              "it": "Sono un medico.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Իսկ վաղը՞։",
+            "tr": "isk vaghə",
+            "it": "E domani?"
+          }
+        },
+        {
+          "prompt": "Chiudi lo scambio con garbo.",
+          "options": [
+            {
+              "hy": "Այո։ Լավ օր, ցտեսություն։",
+              "it": "Sì. Buona giornata, arrivederci.",
+              "ok": true,
+              "reply": {
+                "hy": "Քեզ էլ։ Ցտեսություն։",
+                "it": "Anche a te. Arrivederci."
+              }
+            },
+            {
+              "hy": "Մի՛ գնա։",
+              "it": "Non andare!",
+              "ok": false
+            },
+            {
+              "hy": "Ժամը հինգն է։",
+              "it": "Sono le cinque.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Հովանոց պետք կլինի։",
+            "tr": "hovanots' petk' klini",
+            "it": "Servirà l'ombrello."
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "Il meteo come SMALL TALK: non conta l'informazione, conta il legame sociale che crea.",
+          "«արև» (sole), «անձրև» (pioggia) e il futuro «կգա»: descrivere il tempo di oggi e domani.",
+          "«ասում են» (dicono): riportare un'informazione che non è tua.",
+          "Reagire a un'apertura altrui e chiudere con garbo: il ritmo dello scambio sociale."
+        ]
+      }
+    }
+  ]
+}

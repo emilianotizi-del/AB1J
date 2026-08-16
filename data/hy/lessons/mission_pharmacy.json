@@ -1,0 +1,131 @@
+{
+  "id": "mission_pharmacy",
+  "title": "In farmacia",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "transaction",
+      "goal": "Compra qualcosa per il mal di testa.",
+      "pretask": {
+        "intro": "Entri in farmacia con un mal di testa.",
+        "phrases": [
+          {
+            "hy": "Գլխացավի դեղ ունե՞ք",
+            "tr": "glkhats'avi degh unek'",
+            "it": "Avete qualcosa per il mal di testa?"
+          },
+          {
+            "hy": "Որքա՞ն է",
+            "tr": "vork'an e",
+            "it": "Quant'è?"
+          },
+          {
+            "hy": "Շնորհակալություն",
+            "tr": "shnorhakalut'yun",
+            "it": "Grazie"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Sei tu a chiedere: qualcosa per il mal di testa.",
+          "options": [
+            {
+              "hy": "Բարև, գլխացավի դեղ ունե՞ք։",
+              "it": "Salve, avete qualcosa per il mal di testa?",
+              "ok": true,
+              "reply": {
+                "hy": "Այո։ Ահա։ Օրը երկու անգամ։",
+                "it": "Sì. Ecco. Due volte al giorno."
+              }
+            },
+            {
+              "hy": "Ի՞նչ եղանակ է։",
+              "it": "Che tempo fa?",
+              "ok": false
+            },
+            {
+              "hy": "Ցտեսություն։",
+              "it": "Arrivederci.",
+              "ok": false
+            }
+          ],
+          "studentFirst": true
+        },
+        {
+          "prompt": "Non hai afferrato la posologia: chiedi di ripetere.",
+          "options": [
+            {
+              "hy": "Ներողություն, կրկնե՞ք։",
+              "it": "Scusi, può ripetere?",
+              "ok": true,
+              "reply": {
+                "hy": "Օրը երկու անգամ, ուտելուց հետո։",
+                "it": "Due volte al giorno, dopo i pasti."
+              }
+            },
+            {
+              "hy": "Կարմիր։",
+              "it": "Rosso.",
+              "ok": false
+            },
+            {
+              "hy": "Ես բժիշկ եմ։",
+              "it": "Sono un medico.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Օրը երկու անգամ։",
+            "tr": "orə yerku angam",
+            "it": "Due volte al giorno."
+          },
+          "repair": {
+            "hy": "Ներողություն, կրկնե՞ք։",
+            "tr": "neroghut'yun, krkne՞k'",
+            "it": "Scusi, può ripetere?"
+          }
+        },
+        {
+          "prompt": "Chiedi il prezzo e ringrazia.",
+          "options": [
+            {
+              "hy": "Որքա՞ն է։ Շնորհակալություն։",
+              "it": "Quant'è? Grazie.",
+              "ok": true,
+              "reply": {
+                "hy": "Հազար դրամ։ Առողջություն։",
+                "it": "Mille dram. Salute."
+              }
+            },
+            {
+              "hy": "Ոտքով։",
+              "it": "A piedi.",
+              "ok": false
+            },
+            {
+              "hy": "Ժամը հինգն է։",
+              "it": "Sono le cinque.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ուտելուց հետո։",
+            "tr": "uteluts' heto",
+            "it": "Dopo i pasti."
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "«դեղ» (medicina) e «գլխացավ» (mal di testa, da գլուխ+ցավ): parole composte trasparenti.",
+          "Hai chiesto di ripetere la posologia invece di rischiare: repair al momento giusto.",
+          "«Առողջություն» (salute): il congedo tipico in farmacia.",
+          "Hai gestito una transazione con un'informazione importante da capire bene (quante volte al giorno)."
+        ]
+      }
+    }
+  ]
+}

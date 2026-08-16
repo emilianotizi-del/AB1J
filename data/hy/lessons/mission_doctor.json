@@ -1,0 +1,135 @@
+{
+  "id": "mission_doctor",
+  "title": "Dal medico",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "problem",
+      "goal": "Spiega al medico cosa non va.",
+      "pretask": {
+        "intro": "Sei nello studio. Il medico ti chiede cosa senti.",
+        "phrases": [
+          {
+            "hy": "Գլուխս ցավում է",
+            "tr": "glukhs ts'avum e",
+            "it": "Mi fa male la testa"
+          },
+          {
+            "hy": "Երեկվանից",
+            "tr": "yerekvanits'",
+            "it": "Da ieri"
+          },
+          {
+            "hy": "Ջերմ ունեմ",
+            "tr": "jerm unem",
+            "it": "Ho la febbre"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Il medico chiede cosa c'è: descrivi il tuo malessere.",
+          "options": [
+            {
+              "hy": "Գլուխս ցավում է։",
+              "it": "Mi fa male la testa.",
+              "ok": true,
+              "reply": {
+                "hy": "Ե՞րբվանից։",
+                "it": "Da quando?"
+              }
+            },
+            {
+              "hy": "Ես լավ եմ։",
+              "it": "Sto bene.",
+              "ok": false
+            },
+            {
+              "hy": "Ժամը հինգն է։",
+              "it": "Sono le cinque.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ի՞նչ է ցավում։",
+            "tr": "inch e ts'avum",
+            "it": "Cosa fa male?"
+          },
+          "repair": {
+            "hy": "Ներողություն, կրկնե՞ք։",
+            "tr": "neroghut'yun, krkne՞k'",
+            "it": "Scusi, può ripetere?"
+          }
+        },
+        {
+          "prompt": "Di' da quando: da ieri.",
+          "options": [
+            {
+              "hy": "Երեկվանից։",
+              "it": "Da ieri.",
+              "ok": true,
+              "reply": {
+                "hy": "Ջերմ ունե՞ք։",
+                "it": "Ha la febbre?"
+              }
+            },
+            {
+              "hy": "Կապույտ։",
+              "it": "Blu.",
+              "ok": false
+            },
+            {
+              "hy": "Ոտքով։",
+              "it": "A piedi.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ե՞րբվանից։",
+            "tr": "yerbvanits'",
+            "it": "Da quando?"
+          }
+        },
+        {
+          "prompt": "Rispondi: sì, un po' di febbre.",
+          "options": [
+            {
+              "hy": "Այո, մի քիչ ջերմ ունեմ։",
+              "it": "Sì, ho un po' di febbre.",
+              "ok": true,
+              "reply": {
+                "hy": "Հանգստացեք, դեղ կգրեմ։",
+                "it": "Si riposi, le prescrivo una medicina."
+              }
+            },
+            {
+              "hy": "Ոչ, կարմիր։",
+              "it": "No, rosso.",
+              "ok": false
+            },
+            {
+              "hy": "Մի՛ գնա։",
+              "it": "Non andare!",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ջերմ ունե՞ք։",
+            "tr": "jerm unek'",
+            "it": "Ha la febbre?"
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "«ցավում է» (fa male) col possessivo «գլուխս» (la mia testa): descrivere un sintomo.",
+          "«երեկվանից» (da ieri): l'ablativo -ից per l'origine nel tempo.",
+          "Hai spiegato un problema di salute passo passo: il medico guida, tu precisi.",
+          "«ունեմ» per la febbre: lo stesso verbo avere in un contesto nuovo."
+        ]
+      }
+    }
+  ]
+}

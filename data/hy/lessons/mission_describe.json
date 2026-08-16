@@ -1,0 +1,135 @@
+{
+  "id": "mission_describe",
+  "title": "Com'è fatto",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "task",
+      "archetype": "narrative",
+      "goal": "Descrivi un amico a qualcuno che non lo conosce.",
+      "pretask": {
+        "intro": "Devi far riconoscere un amico a una persona: descrivilo.",
+        "phrases": [
+          {
+            "hy": "Նա բարձր է",
+            "tr": "na bardzr e",
+            "it": "È alto"
+          },
+          {
+            "hy": "Սև մազեր ունի",
+            "tr": "sev mazer uni",
+            "it": "Ha i capelli neri"
+          },
+          {
+            "hy": "Երիտասարդ է",
+            "tr": "yeritasard e",
+            "it": "È giovane"
+          }
+        ]
+      },
+      "turns": [
+        {
+          "prompt": "Ti chiedono com'è: di' che è alto.",
+          "options": [
+            {
+              "hy": "Նա բարձր է։",
+              "it": "È alto.",
+              "ok": true,
+              "reply": {
+                "hy": "Իսկ մազերը՞։",
+                "it": "E i capelli?"
+              }
+            },
+            {
+              "hy": "Ես լավ եմ։",
+              "it": "Sto bene.",
+              "ok": false
+            },
+            {
+              "hy": "Ժամը հինգն է։",
+              "it": "Sono le cinque.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Ինչպիսի՞ն է նա։",
+            "tr": "inchpisin e na",
+            "it": "Com'è fatto?"
+          },
+          "repair": {
+            "hy": "Ներողություն, կրկնե՞ք։",
+            "tr": "neroghut'yun, krkne՞k'",
+            "it": "Scusi, può ripetere?"
+          }
+        },
+        {
+          "prompt": "Descrivi i capelli: neri (follow-up).",
+          "options": [
+            {
+              "hy": "Սև մազեր ունի։",
+              "it": "Ha i capelli neri.",
+              "ok": true,
+              "reply": {
+                "hy": "Երիտասա՞րդ է։",
+                "it": "È giovane?"
+              }
+            },
+            {
+              "hy": "Կարմիր խնձոր։",
+              "it": "Mela rossa.",
+              "ok": false
+            },
+            {
+              "hy": "Ոտքով։",
+              "it": "A piedi.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Իսկ մազերը՞։",
+            "tr": "isk mazerə",
+            "it": "E i capelli?"
+          }
+        },
+        {
+          "prompt": "Aggiungi: sì, giovane e simpatico.",
+          "options": [
+            {
+              "hy": "Այո, երիտասարդ է և շատ հաճելի։",
+              "it": "Sì, è giovane e molto simpatico.",
+              "ok": true,
+              "reply": {
+                "hy": "Հասկացա, կճանաչեմ։",
+                "it": "Ho capito, lo riconoscerò."
+              }
+            },
+            {
+              "hy": "Ոչ, կապույտ։",
+              "it": "No, blu.",
+              "ok": false
+            },
+            {
+              "hy": "Ջուր։",
+              "it": "Acqua.",
+              "ok": false
+            }
+          ],
+          "npc": {
+            "hy": "Երիտասա՞րդ է։",
+            "tr": "yeritasard e",
+            "it": "È giovane?"
+          }
+        }
+      ],
+      "debrief": {
+        "title": "Cosa hai usato",
+        "points": [
+          "Aggettivi per descrivere una persona: «բարձր» (alto), «երիտասարդ» (giovane).",
+          "«մազեր ունի» (ha i capelli): il verbo avere per i tratti fisici.",
+          "Il connettivo «և» (e) per accumulare dettagli: giovane E simpatico.",
+          "È un'intervista: le domande di follow-up (e i capelli? è giovane?) costruiscono il ritratto."
+        ]
+      }
+    }
+  ]
+}
