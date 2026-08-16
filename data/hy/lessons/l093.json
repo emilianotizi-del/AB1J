@@ -10,6 +10,6 @@
     { "type": "cloze", "it": "voglio venire ma non posso", "text": "Ուզում եմ գալ, ___ չեմ կարող", "options": ["բայց", "որ", "եթե"], "answer": "բայց", "speakText": "Ուզում եմ գալ, բայց չեմ կարող" },
     { "type": "listen", "question": "Ascolta e verifica", "speakText": "Եթե անձրև գա, տանը կմնամ", "it": "Se piove, resterò a casa", "reveal": "Եթե անձրև գա, տանը կմնամ" },
     { "type": "write", "prompt": "Traduci e scrivi: «vivo a Yerevan»", "it": "vivo a Yerevan", "answer": "Ես Երևանում եմ ապրում", "hint": "io + a Yerevan + vivo" },
-    { "type": "cloze", "it": "Yerevan è più grande di Gyumri", "text": "Երևանը ավելի մեծ է ___ Գյումրին", "options": ["քան", "ավելի", "ամենա"], "answer": "քան", "speakText": "Երևանը ավելի մեծ է քան Գյումրին" }
+    { "type": "cloze", "it": "Yerevan è più grande di Gyumri", "text": "Երևանն ավելի մեծ է ___ Գյումրին", "options": ["քան", "ավելի", "ամենա"], "answer": "քան", "speakText": "Երևանն ավելի մեծ է քան Գյումրին" }
   ]
 }

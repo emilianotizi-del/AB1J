@@ -7,9 +7,9 @@
     { "hy": "մեծ", "tr": "mets", "ipa": "[mɛt͡s]", "it": "grande" }
   ],
   "steps": [
-    { "type": "teach", "kind": "word", "word": { "hy": "ավելի", "tr": "aveli", "ipa": "[ɑvɛˈli]", "it": "più" }, "note": "Formula del comparativo: ավելի + aggettivo + քան. Yerevan è più grande di Gyumri → Երևանը ավելի մեծ է քան Գյումրին." },
+    { "type": "teach", "kind": "word", "word": { "hy": "ավելի", "tr": "aveli", "ipa": "[ɑvɛˈli]", "it": "più" }, "note": "Formula del comparativo: ավելի + aggettivo + քան. Yerevan è più grande di Gyumri → Երևանն ավելի մեծ է քան Գյումրին." },
     { "type": "teach", "kind": "word", "word": { "hy": "քան", "tr": "k'an", "ipa": "[kʰɑn]", "it": "di, che (nei paragoni)" } },
-    { "type": "cloze", "it": "Yerevan è più grande", "text": "Երևանը ___ մեծ է", "options": ["ավելի", "քան", "շատ"], "answer": "ավելի", "speakText": "Երևանը ավելի մեծ է" },
+    { "type": "cloze", "it": "Yerevan è più grande", "text": "Երևանը ___ մեծ է", "options": ["ավելի", "քան", "շատ"], "answer": "ավելի", "speakText": "Երևանն ավելի մեծ է" },
     { "type": "cloze", "it": "il tè è più caldo del latte", "text": "Թեյն ավելի տաք է ___ կաթը", "options": ["քան", "ավելի", "և"], "answer": "քան", "speakText": "Թեյն ավելի տաք է քան կաթը" },
     { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "ավելի", "answer": "ավելի", "it": "più" },
     { "type": "listen", "question": "Che cosa confronta?", "speakText": "Շունն ավելի մեծ է քան կատուն", "it": "Il cane è più grande del gatto", "reveal": "Շունն ավելի մեծ է քան կատուն", "options": ["il cane è più grande del gatto", "il gatto è più grande del cane", "sono uguali"], "answer": "il cane è più grande del gatto" },

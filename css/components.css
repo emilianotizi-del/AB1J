@@ -434,3 +434,7 @@
   0%, 100% { background: transparent; }
   25% { background: color-mix(in srgb, var(--accent) 22%, transparent); }
 }
+
+/* Carta SRS di produzione (italiano → armeno) */
+.kind-prod { background: color-mix(in srgb, var(--ok, #3a8) 18%, transparent); color: #2a6b52; }
+.flashcard.card-prod { border-top: 4px solid var(--ok, #3a8); }

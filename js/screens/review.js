@@ -5,7 +5,7 @@ import { el, vibrate } from '../utils/dom.js';
 import { dueCards, grade, deckSize } from '../core/srs.js';
 import { speak } from '../core/audio.js';
 
-const KIND_LABEL = { read: 'Come si legge?', mean: 'Che cosa significa?' };
+const KIND_LABEL = { read: 'Come si legge?', mean: 'Che cosa significa?', prod: 'Come si dice in armeno?' };
 
 export function render(mount) {
   mount.innerHTML = '';
@@ -50,12 +50,22 @@ export function render(mount) {
       face.innerHTML = '';
       face.append(el('div', {
         class: 'kind-tag kind-' + kind
-      }, (kind === 'read' ? '🔊 ' : '💬 ') + KIND_LABEL[kind]));
-      face.append(el('div', {
-        class: 'w-hy hy-display', lang: 'hy',
-        style: 'font-size:2.4rem;font-weight:700;margin-top:6px'
-      }, card.hy));
+      }, (kind === 'read' ? '🔊 ' : kind === 'prod' ? '✍️ ' : '💬 ') + KIND_LABEL[kind]));
+      if (kind === 'prod') {
+        face.append(el('div', {
+          style: 'font-size:1.8rem;font-weight:700;margin-top:6px'
+        }, card.it));
+      } else {
+        face.append(el('div', {
+          class: 'w-hy hy-display', lang: 'hy',
+          style: 'font-size:2.4rem;font-weight:700;margin-top:6px'
+        }, card.hy));
+      }
       if (!flipped) {
+        if (kind === 'prod') {
+          face.append(el('p', { style: 'color:var(--ink-soft);font-size:.9rem;margin-top:14px' },
+            'Dillo o scrivilo in armeno, poi tocca per verificare.'));
+        }
         // Sul fronte della carta di significato l'audio è un indizio lecito;
         // su quella di lettura rivelerebbe la risposta.
         if (kind === 'mean') {
@@ -73,6 +83,15 @@ export function render(mount) {
             class: 'btn-audio', style: 'margin-top:12px', 'aria-label': 'Ascolta',
             onclick: e => { e.stopPropagation(); speak(card.hy); }
           }, '🔊'));
+      } else if (kind === 'prod') {
+        // Rivela la forma armena da produrre, con lettura e audio per confronto
+        face.append(
+          el('div', { class: 'w-hy hy-display', lang: 'hy', style: 'font-size:2rem;font-weight:700;margin-top:10px' }, card.hy),
+          el('div', { class: 'w-tr', style: 'margin-top:6px' }, card.tr),
+          el('button', {
+            class: 'btn-audio', style: 'margin-top:12px', 'aria-label': 'Ascolta',
+            onclick: e => { e.stopPropagation(); speak(card.hy); }
+          }, '🔊'));
       } else {
         face.append(el('div', { class: 'w-it', style: 'margin-top:12px;font-size:1.25rem;font-weight:600' }, card.it));
       }
@@ -83,7 +102,7 @@ export function render(mount) {
       flipped = true;
       paint();
       grades.hidden = false;
-      if (kind === 'read') speak(card.hy);
+      if (kind === 'read' || kind === 'prod') speak(card.hy);
     });
 
     const grades = el('div', { class: 'grade-row', hidden: '' });

@@ -10,7 +10,7 @@ export function addCards(items) {
   // programmate separatamente dall'algoritmo.
   const deck = getDeck();
   for (const it of items) {
-    for (const kind of ['read', 'mean']) {
+    for (const kind of ['read', 'mean', 'prod']) {
       const id = it.id + ':' + kind[0];
       if (!deck[id]) {
         deck[id] = { ...it, id, kind, ef: 2.5, reps: 0, interval: 0, due: Date.now() };
@@ -25,13 +25,29 @@ export function addCards(items) {
 export function migrateDeck() {
   const deck = getDeck();
   let changed = false;
+  // 1) Vecchie carte senza kind → read + mean + prod
   for (const [id, c] of Object.entries(deck)) {
     if (!c.kind) {
       delete deck[id];
-      for (const kind of ['read', 'mean']) {
+      for (const kind of ['read', 'mean', 'prod']) {
         const nid = id + ':' + kind[0];
         deck[nid] = { ...c, id: nid, kind };
       }
+      changed = true;
+    }
+  }
+  // 2) Parole che hanno read+mean ma non ancora la carta prod (produzione IT→HY)
+  const base = {};
+  for (const c of Object.values(deck)) {
+    if (c.kind) {
+      const root = c.id.slice(0, -2);       // toglie ":r"/":m"/":p"
+      base[root] = base[root] || c;
+    }
+  }
+  for (const [root, c] of Object.entries(base)) {
+    const pid = root + ':p';
+    if (!deck[pid]) {
+      deck[pid] = { ...c, id: pid, kind: 'prod', ef: 2.5, reps: 0, interval: 0, due: Date.now() };
       changed = true;
     }
   }

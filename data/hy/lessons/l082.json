@@ -3,7 +3,7 @@
   "title": "Verifica del modulo",
   "vocab": [],
   "steps": [
-    { "type": "cloze", "it": "Yerevan è più grande di Gyumri", "text": "Երևանը ավելի մեծ է ___ Գյումրին", "options": ["քան", "ավելի", "ամենա"], "answer": "քան", "speakText": "Երևանը ավելի մեծ է քան Գյումրին" },
+    { "type": "cloze", "it": "Yerevan è più grande di Gyumri", "text": "Երևանն ավելի մեծ է ___ Գյումրին", "options": ["քան", "ավելի", "ամենա"], "answer": "քան", "speakText": "Երևանն ավելի մեծ է քան Գյումրին" },
     { "type": "mcq", "prompt": "«Il più alto» (բարձր):", "options": ["ամենաբարձր", "ավելի բարձր", "բարձր քան"], "answer": "ամենաբարձր", "optionsAreHy": true },
     { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "գեղեցիկ", "answer": "գեղեցիկ", "it": "bello" },
     { "type": "listen", "question": "Come la descrive?", "speakText": "Նա երիտասարդ է և գեղեցիկ", "it": "Lei è giovane e bella", "reveal": "Նա երիտասարդ է և գեղեցիկ", "options": ["giovane e bella", "alta e bassa", "vecchia e bella"], "answer": "giovane e bella" },

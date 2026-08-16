@@ -515,7 +515,7 @@
     },
     {
       "id": "m12",
-      "title": "Il primo passato — ed esame A1",
+      "title": "Il primo passato — e checkpoint A1",
       "level": "A1",
       "lessons": [
         {
@@ -548,8 +548,8 @@
         },
         {
           "id": "l059",
-          "title": "Esame A1",
-          "subtitle": "20 domande · soglia 80%",
+          "title": "Checkpoint A1",
+          "subtitle": "20 prove · soglia 80%",
           "glyph": "🎓",
           "letters": []
         }
@@ -830,7 +830,7 @@
     },
     {
       "id": "m20",
-      "title": "Ripasso ed esame A2",
+      "title": "Ripasso e checkpoint A2",
       "level": "A2",
       "lessons": [
         {
@@ -849,7 +849,7 @@
         },
         {
           "id": "l094",
-          "title": "Esame A2",
+          "title": "Checkpoint A2",
           "subtitle": "20 prove · soglia 80%",
           "glyph": "🎓",
           "letters": []
