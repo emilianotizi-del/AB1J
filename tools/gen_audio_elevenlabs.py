@@ -46,6 +46,20 @@ def collect_texts():
         for st in L.get("steps", []):
             if st.get("type") == "listen" and st.get("speakText"):
                 texts.add(st["speakText"] + "::slow")
+    # Frasi delle missioni task-based (campi npc/pretask/reply), anche fuori dal course
+    for les_file in sorted((ROOT / "data/hy/lessons").glob("*.json")):
+        try:
+            L = json.loads(les_file.read_text())
+        except Exception:
+            continue
+        for st in L.get("steps", []):
+            if st.get("type") == "task":
+                for ph in st.get("pretask", {}).get("phrases", []):
+                    if ph.get("hy"): texts.add(ph["hy"])
+                for t in st.get("turns", []):
+                    if t.get("npc", {}).get("hy"): texts.add(t["npc"]["hy"])
+                    for o in t.get("options", []):
+                        if o.get("reply", {}).get("hy"): texts.add(o["reply"]["hy"])
     course = json.loads((ROOT / "data/hy/course.json").read_text())
     for mod in course["modules"]:
         for les in mod["lessons"]:

@@ -14,8 +14,9 @@ import * as cloze from './cloze.js';
 import * as conjugate from './conjugate.js';
 import * as write from './write.js';
 import * as listen from './listen.js';
+import * as task from './task.js';
 
-const types = { teach, mcq, match, trace, dictation, order, dialog, reading, notice, cloze, conjugate, write, listen };
+const types = { teach, mcq, match, trace, dictation, order, dialog, reading, notice, cloze, conjugate, write, listen, task };
 
 // Tipi che presentano contenuto senza valutare l'utente
 export const UNGRADED = new Set(['teach', 'dialog', 'reading', 'notice']);

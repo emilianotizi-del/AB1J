@@ -116,4 +116,12 @@ export function render(mount) {
   mount.append(el('p', { style: 'margin-top:14px;font-size:.8rem;color:var(--ink-soft)' },
     'L\u2019audio delle parole usa tracce incluse nell\u2019app (voce sintetica, funziona anche offline). ' +
     (hasArmenianVoice() ? 'In più, questo dispositivo ha una voce armena di sistema come riserva.' : '')));
+  // Sezione sperimentale: prototipo task-based (fuori dal percorso normale)
+  const exp = el('div', { class: 'card', style: 'margin-top:16px' },
+    el('h3', {}, '🧪 Prova sperimentale'),
+    el('p', { style: 'color:var(--ink-soft);font-size:.9rem;margin:6px 0 12px' },
+      'Un esempio di lezione «task-based»: una missione al mercato. Non fa parte del corso, è una dimostrazione.'),
+    el('a', { class: 'btn btn-block', href: '#/task-demo' }, 'Prova la missione al mercato'));
+  mount.append(exp);
+
 }
