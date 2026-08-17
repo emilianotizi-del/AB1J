@@ -8,7 +8,7 @@ export function el(tag, attrs = {}, ...children) {
     else node.setAttribute(k, v);
   }
   for (const c of children) {
-    if (c == null) continue;
+    if (c == null || c === false || c === '') continue;
     node.append(c.nodeType ? c : document.createTextNode(c));
   }
   return node;

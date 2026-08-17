@@ -37,8 +37,8 @@ export async function render(mount) {
       const chip = el('button', { class: 'hard-wchip', onclick: () => speak(w.hy) });
       const hy = el('span', { class: 'hy', lang: 'hy' });
       for (const ch of w.hy) hy.append(el('span', ch === e.letter ? { class: 'confuse-mark' } : {}, ch));
-      chip.append(hy, el('span', { class: 'hard-wit' }, w.it),
-        w.src === 'extra' ? el('span', { class: 'hard-extra', title: 'da confermare' }, '·') : null);
+      chip.append(hy, el('span', { class: 'hard-wit' }, w.it));
+      if (w.src === 'extra') chip.append(el('span', { class: 'hard-extra', title: 'da confermare' }, '·'));
       grid.append(chip);
     }
     block.append(grid);
