@@ -1,0 +1,38 @@
+{
+  "groups": [
+    {
+      "name": "Le tre 'ts/dz'",
+      "letters": [
+        "ձ",
+        "ծ",
+        "ց"
+      ],
+      "hint": "ձ=dz (mezzo) · ծ=ts (pizza) · ց=ts' (aspirata)"
+    },
+    {
+      "name": "Le tre 'ch'",
+      "letters": [
+        "ջ",
+        "ճ",
+        "չ"
+      ],
+      "hint": "ջ=j (gelato) · ճ=ch (cena secca) · չ=ch' (cena aspirata)"
+    },
+    {
+      "name": "Le due 'sh/zh'",
+      "letters": [
+        "շ",
+        "ժ"
+      ],
+      "hint": "շ=sh (scena) · ժ=zh (garage)"
+    },
+    {
+      "name": "z e simili",
+      "letters": [
+        "զ",
+        "ձ"
+      ],
+      "hint": "զ=z (rosa) · ձ=dz (mezzo)"
+    }
+  ]
+}

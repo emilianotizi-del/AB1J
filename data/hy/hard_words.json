@@ -1,0 +1,575 @@
+{
+  "note": "Parole per allenare le 8 lettere difficili. src 'corso'=con audio verificato; src 'extra'=parole comuni aggiunte, da confermare con madrelingua.",
+  "letters": [
+    {
+      "letter": "ձ",
+      "words": [
+        {
+          "hy": "անձրև",
+          "it": "pioggia",
+          "src": "corso"
+        },
+        {
+          "hy": "բարձր",
+          "it": "alto",
+          "src": "corso"
+        },
+        {
+          "hy": "խնձոր",
+          "it": "mela",
+          "src": "corso"
+        },
+        {
+          "hy": "խնձորներ",
+          "it": "mele",
+          "src": "corso"
+        },
+        {
+          "hy": "ձի",
+          "it": "cavallo",
+          "src": "corso"
+        },
+        {
+          "hy": "ձմեռ",
+          "it": "inverno",
+          "src": "corso"
+        },
+        {
+          "hy": "ձյուն",
+          "it": "neve",
+          "src": "corso"
+        },
+        {
+          "hy": "ձու",
+          "it": "uovo",
+          "src": "corso"
+        },
+        {
+          "hy": "ձեռք",
+          "it": "mano",
+          "src": "extra"
+        },
+        {
+          "hy": "ձայն",
+          "it": "voce/suono",
+          "src": "extra"
+        },
+        {
+          "hy": "ձև",
+          "it": "forma",
+          "src": "extra"
+        },
+        {
+          "hy": "ձագ",
+          "it": "cucciolo",
+          "src": "extra"
+        },
+        {
+          "hy": "ձիթապտուղ",
+          "it": "oliva",
+          "src": "extra"
+        },
+        {
+          "hy": "ձկնորս",
+          "it": "pescatore",
+          "src": "extra"
+        }
+      ]
+    },
+    {
+      "letter": "ժ",
+      "words": [
+        {
+          "hy": "բժիշկ",
+          "it": "medico",
+          "src": "corso"
+        },
+        {
+          "hy": "ժամ",
+          "it": "ora",
+          "src": "corso"
+        },
+        {
+          "hy": "ժամանակ",
+          "it": "tempo",
+          "src": "corso"
+        },
+        {
+          "hy": "ժպիտ",
+          "it": "sorriso",
+          "src": "extra"
+        },
+        {
+          "hy": "ժողովուրդ",
+          "it": "popolo",
+          "src": "extra"
+        },
+        {
+          "hy": "ժամացույց",
+          "it": "orologio",
+          "src": "extra"
+        },
+        {
+          "hy": "ժանյակ",
+          "it": "merletto",
+          "src": "extra"
+        },
+        {
+          "hy": "նժույգ",
+          "it": "destriero",
+          "src": "extra"
+        },
+        {
+          "hy": "կաժ",
+          "it": "cesto",
+          "src": "extra"
+        },
+        {
+          "hy": "աժդահա",
+          "it": "gigante",
+          "src": "extra"
+        }
+      ]
+    },
+    {
+      "letter": "ջ",
+      "words": [
+        {
+          "hy": "մեջ",
+          "it": "dentro, in",
+          "src": "corso"
+        },
+        {
+          "hy": "ջուր",
+          "it": "acqua",
+          "src": "corso"
+        },
+        {
+          "hy": "ջերմ",
+          "it": "caldo/febbre",
+          "src": "extra"
+        },
+        {
+          "hy": "ջահել",
+          "it": "giovane",
+          "src": "extra"
+        },
+        {
+          "hy": "ջնջել",
+          "it": "cancellare",
+          "src": "extra"
+        },
+        {
+          "hy": "ջարդել",
+          "it": "rompere",
+          "src": "extra"
+        },
+        {
+          "hy": "առաջ",
+          "it": "avanti/prima",
+          "src": "extra"
+        },
+        {
+          "hy": "միջոց",
+          "it": "mezzo",
+          "src": "extra"
+        },
+        {
+          "hy": "էջ",
+          "it": "pagina",
+          "src": "extra"
+        },
+        {
+          "hy": "գինջ",
+          "it": "coriandolo",
+          "src": "extra"
+        }
+      ]
+    },
+    {
+      "letter": "չ",
+      "words": [
+        {
+          "hy": "Ոչ",
+          "it": "no",
+          "src": "corso"
+        },
+        {
+          "hy": "ինչ",
+          "it": "cosa, che",
+          "src": "corso"
+        },
+        {
+          "hy": "ուսուցիչ",
+          "it": "insegnante",
+          "src": "corso"
+        },
+        {
+          "hy": "չորեքշաբթի",
+          "it": "mercoledì",
+          "src": "corso"
+        },
+        {
+          "hy": "չորս",
+          "it": "quattro",
+          "src": "corso"
+        },
+        {
+          "hy": "չամիչ",
+          "it": "uvetta",
+          "src": "extra"
+        },
+        {
+          "hy": "չիր",
+          "it": "frutta secca",
+          "src": "extra"
+        },
+        {
+          "hy": "չար",
+          "it": "cattivo",
+          "src": "extra"
+        },
+        {
+          "hy": "չոր",
+          "it": "secco",
+          "src": "extra"
+        },
+        {
+          "hy": "չափ",
+          "it": "misura",
+          "src": "extra"
+        },
+        {
+          "hy": "չեմ",
+          "it": "non sono",
+          "src": "extra"
+        },
+        {
+          "hy": "չկա",
+          "it": "non c'è",
+          "src": "extra"
+        },
+        {
+          "hy": "ինչու",
+          "it": "perché",
+          "src": "extra"
+        },
+        {
+          "hy": "ոչինչ",
+          "it": "niente",
+          "src": "extra"
+        }
+      ]
+    },
+    {
+      "letter": "ճ",
+      "words": [
+        {
+          "hy": "ճաշ",
+          "it": "pranzo",
+          "src": "corso"
+        },
+        {
+          "hy": "ճիշտ",
+          "it": "giusto, corretto",
+          "src": "corso"
+        },
+        {
+          "hy": "սուրճ",
+          "it": "caffè",
+          "src": "corso"
+        },
+        {
+          "hy": "ճանապարհ",
+          "it": "strada",
+          "src": "extra"
+        },
+        {
+          "hy": "ճաշակ",
+          "it": "gusto",
+          "src": "extra"
+        },
+        {
+          "hy": "ճշմարտություն",
+          "it": "verità",
+          "src": "extra"
+        },
+        {
+          "hy": "ճնճղուկ",
+          "it": "passero",
+          "src": "extra"
+        },
+        {
+          "hy": "ճռռալ",
+          "it": "cigolare",
+          "src": "extra"
+        },
+        {
+          "hy": "ճակատ",
+          "it": "fronte",
+          "src": "extra"
+        },
+        {
+          "hy": "ճամբար",
+          "it": "campo/colonia",
+          "src": "extra"
+        },
+        {
+          "hy": "ճերմակ",
+          "it": "bianco",
+          "src": "extra"
+        }
+      ]
+    },
+    {
+      "letter": "զ",
+      "words": [
+        {
+          "hy": "զանգ",
+          "it": "campana; chiamata",
+          "src": "corso"
+        },
+        {
+          "hy": "զանգել",
+          "it": "chiamare, telefonare",
+          "src": "corso"
+        },
+        {
+          "hy": "ուզել",
+          "it": "volere",
+          "src": "corso"
+        },
+        {
+          "hy": "զբոսանք",
+          "it": "passeggiata",
+          "src": "extra"
+        },
+        {
+          "hy": "զգույշ",
+          "it": "attento",
+          "src": "extra"
+        },
+        {
+          "hy": "զգեստ",
+          "it": "abito",
+          "src": "extra"
+        },
+        {
+          "hy": "զարմանալ",
+          "it": "stupirsi",
+          "src": "extra"
+        },
+        {
+          "hy": "զվարճ",
+          "it": "divertente",
+          "src": "extra"
+        },
+        {
+          "hy": "զենք",
+          "it": "arma",
+          "src": "extra"
+        },
+        {
+          "hy": "զարդ",
+          "it": "ornamento",
+          "src": "extra"
+        },
+        {
+          "hy": "զոհ",
+          "it": "vittima",
+          "src": "extra"
+        }
+      ]
+    },
+    {
+      "letter": "ծ",
+      "words": [
+        {
+          "hy": "ամենամեծ",
+          "it": "il più grande",
+          "src": "corso"
+        },
+        {
+          "hy": "գործ",
+          "it": "lavoro",
+          "src": "corso"
+        },
+        {
+          "hy": "ծառ",
+          "it": "albero",
+          "src": "corso"
+        },
+        {
+          "hy": "ծառեր",
+          "it": "alberi",
+          "src": "corso"
+        },
+        {
+          "hy": "ծիրան",
+          "it": "albicocca",
+          "src": "corso"
+        },
+        {
+          "hy": "ծնվել",
+          "it": "nascere",
+          "src": "corso"
+        },
+        {
+          "hy": "ծով",
+          "it": "mare",
+          "src": "corso"
+        },
+        {
+          "hy": "մեծ",
+          "it": "grande",
+          "src": "corso"
+        },
+        {
+          "hy": "ցածր",
+          "it": "basso",
+          "src": "corso"
+        },
+        {
+          "hy": "ծաղիկ",
+          "it": "fiore",
+          "src": "extra"
+        },
+        {
+          "hy": "ծնունդ",
+          "it": "nascita/compleanno",
+          "src": "extra"
+        },
+        {
+          "hy": "ծիծաղ",
+          "it": "risata",
+          "src": "extra"
+        },
+        {
+          "hy": "ծանր",
+          "it": "pesante",
+          "src": "extra"
+        },
+        {
+          "hy": "ծխել",
+          "it": "fumare",
+          "src": "extra"
+        },
+        {
+          "hy": "ծաղկել",
+          "it": "fiorire",
+          "src": "extra"
+        },
+        {
+          "hy": "ծեր",
+          "it": "vecchio",
+          "src": "extra"
+        }
+      ]
+    },
+    {
+      "letter": "շ",
+      "words": [
+        {
+          "hy": "աշխատանք",
+          "it": "lavoro",
+          "src": "corso"
+        },
+        {
+          "hy": "աշխատել",
+          "it": "lavorare",
+          "src": "corso"
+        },
+        {
+          "hy": "բժիշկ",
+          "it": "medico",
+          "src": "corso"
+        },
+        {
+          "hy": "գիշեր",
+          "it": "notte",
+          "src": "corso"
+        },
+        {
+          "hy": "երեքշաբթի",
+          "it": "martedì",
+          "src": "corso"
+        },
+        {
+          "hy": "երկուշաբթի",
+          "it": "lunedì",
+          "src": "corso"
+        },
+        {
+          "hy": "հինգշաբթի",
+          "it": "giovedì",
+          "src": "corso"
+        },
+        {
+          "hy": "ճաշ",
+          "it": "pranzo",
+          "src": "corso"
+        },
+        {
+          "hy": "ճիշտ",
+          "it": "giusto, corretto",
+          "src": "corso"
+        },
+        {
+          "hy": "շաբաթ",
+          "it": "sabato",
+          "src": "corso"
+        },
+        {
+          "hy": "շատ",
+          "it": "molto",
+          "src": "corso"
+        },
+        {
+          "hy": "շուկա",
+          "it": "mercato",
+          "src": "corso"
+        },
+        {
+          "hy": "չորեքշաբթի",
+          "it": "mercoledì",
+          "src": "corso"
+        },
+        {
+          "hy": "շուն",
+          "it": "cane",
+          "src": "extra"
+        },
+        {
+          "hy": "շապիկ",
+          "it": "maglietta",
+          "src": "extra"
+        },
+        {
+          "hy": "շնորհակալ",
+          "it": "grato",
+          "src": "extra"
+        },
+        {
+          "hy": "շաքար",
+          "it": "zucchero",
+          "src": "extra"
+        },
+        {
+          "hy": "շտապ",
+          "it": "fretta",
+          "src": "extra"
+        },
+        {
+          "hy": "շող",
+          "it": "raggio",
+          "src": "extra"
+        },
+        {
+          "hy": "շնչել",
+          "it": "respirare",
+          "src": "extra"
+        }
+      ]
+    }
+  ]
+}

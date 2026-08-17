@@ -69,6 +69,15 @@ def collect_texts():
         for c in hard.get("cards", []):
             if c.get("word"): texts.add(c["word"])
 
+    # Parole per le "lettere difficili" (liste ampie per lettera)
+    hw_path = ROOT / "data/hy/hard_words.json"
+    if hw_path.exists():
+        hw = json.loads(hw_path.read_text())
+        for e in hw.get("letters", []):
+            for w in e.get("words", []):
+                if w.get("hy"): texts.add(w["hy"])
+
+
     course = json.loads((ROOT / "data/hy/course.json").read_text())
     for mod in course["modules"]:
         for les in mod["lessons"]:

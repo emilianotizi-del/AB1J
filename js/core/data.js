@@ -19,6 +19,8 @@ export const getLetterExamples = () => load(`data/${LANG}/letter_examples.json`)
 export const getLetterGloss    = () => load(`data/${LANG}/letter_gloss.json`);
 export const getMissions       = () => load(`data/${LANG}/missions.json`);
 export const getHardLetters    = () => load(`data/${LANG}/hard_letters.json`);
+export const getConfusableGroups    = () => load(`data/${LANG}/confusable_groups.json`);
+export const getHardWords    = () => load(`data/${LANG}/hard_words.json`);
 
 export async function getLetter(glyph) {
   const alpha = await getAlphabet();

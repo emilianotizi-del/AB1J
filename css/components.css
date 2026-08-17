@@ -548,3 +548,29 @@
 .hard-block { margin-top:10px; font-size:.9rem; line-height:1.45; }
 .hard-tag { font-weight:700; }
 .hard-tag.accent { color:var(--accent); }
+
+/* Esercizio confondibili */
+.confuse-group { display:block; width:100%; text-align:left; margin-bottom:12px; padding:16px;
+  border:1px solid var(--line); border-radius:14px; background:var(--surface); cursor:pointer; font:inherit; color:inherit; }
+.confuse-letters { font-size:1.8rem; font-weight:700; color:var(--accent); letter-spacing:.1em; }
+.confuse-name { font-weight:700; margin-top:4px; }
+.confuse-hint { color:var(--ink-soft); font-size:.82rem; margin-top:4px; }
+.confuse-progress { text-align:center; color:var(--ink-soft); font-size:.85rem; margin-bottom:10px; }
+.confuse-q { text-align:center; font-weight:600; }
+.confuse-big { text-align:center; font-size:4rem; font-weight:700; color:var(--accent); margin:10px 0; }
+.confuse-opts { display:flex; gap:10px; justify-content:center; margin-top:14px; flex-wrap:wrap; }
+.confuse-opt { min-width:64px; padding:16px 20px; font-size:1.5rem; font-weight:700;
+  border:1.5px solid var(--line); border-radius:12px; background:var(--surface); color:var(--ink); cursor:pointer; }
+.confuse-opt.opt-ok { border-color:var(--ok,#3a8); background:var(--ok-bg,#eafaf3); color:#2a6b52; }
+.confuse-opt.opt-no { border-color:var(--err,#c44); background:var(--err-bg,#fdeeee); color:#a33; }
+.confuse-reveal { text-align:center; margin-top:16px; padding-top:14px; border-top:1px solid var(--line); }
+.confuse-mark { color:var(--accent); font-weight:900; text-decoration:underline; text-decoration-thickness:2px; }
+
+/* Parole nelle schede lettere difficili */
+.hard-words { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+.hard-wchip { display:inline-flex; align-items:center; gap:6px; padding:8px 10px;
+  border:1px solid var(--line); border-radius:10px; background:var(--paper); cursor:pointer; font:inherit;
+  font-size:1.05rem; }
+.hard-wit { color:var(--ink-soft); font-size:.78rem; }
+.hard-extra { color:var(--accent-soft,#e9a23b); font-weight:900; }
+.btn-ghost-line { background:transparent; border:1.5px solid var(--line); color:var(--ink); }
