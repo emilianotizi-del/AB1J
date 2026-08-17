@@ -46,7 +46,10 @@ export async function render(mount) {
 
   let unlocked = true; // la prima lezione non completata è disponibile, le successive bloccate
   for (const mod of course.modules) {
-    mount.append(el('h2', { class: 'module-title' }, mod.title, el('small', {}, mod.level)));
+    const modCode = 'M' + (parseInt(String(mod.id).replace(/\D/g, ''), 10) || '');
+    mount.append(el('h2', { class: 'module-title' },
+      el('span', { class: 'module-code' }, modCode),
+      mod.title, el('small', {}, mod.level)));
     // Sblocco temporaneo di collaudo: un modulo marcato dev_unlock è accessibile
     // per i test anche se i precedenti non sono completi. Rimuovere a validazione.
     const devUnlock = mod.dev_unlock === true;

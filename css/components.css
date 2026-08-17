@@ -522,3 +522,12 @@
   padding: 4px 6px; border-radius: 8px; font-variant-numeric: tabular-nums;
 }
 .mission-card.locked .mission-code { opacity: .7; }
+
+/* Sigla del modulo nel titolo del corso (M1, M2…) */
+.module-code {
+  display: inline-block; margin-right: 8px;
+  font-weight: 800; font-size: .75em; color: var(--accent-ink, #9a5a12);
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
+  padding: 2px 8px; border-radius: 7px; vertical-align: middle;
+  font-variant-numeric: tabular-nums;
+}
