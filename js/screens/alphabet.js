@@ -28,8 +28,12 @@ export async function render(mount) {
       `39 lettere · ${known.size} apprese. Le altre si sbloccano avanzando nel corso, ma puoi già esplorarle.`));
 
   mount.append(el('a', {
-    class: 'btn btn-block', href: '#/sounds', style: 'margin-bottom:14px'
+    class: 'btn btn-block', href: '#/sounds', style: 'margin-bottom:10px'
   }, '🔊 Allena i suoni'));
+
+  mount.append(el('a', {
+    class: 'btn btn-block btn-accent', href: '#/hard-letters', style: 'margin-bottom:14px'
+  }, '🎯 Lettere difficili (suoni composti)'));
 
   const grid = el('div', { class: 'alpha-grid' });
   for (const L of alpha.letters) {

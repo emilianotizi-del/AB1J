@@ -1,0 +1,93 @@
+{
+  "note": "Schede mnemoniche per le 8 lettere difficili (suoni composti / confondibili)",
+  "cards": [
+    {
+      "upper": "Զ",
+      "lower": "զ",
+      "ipa": "[z]",
+      "tr": "z",
+      "italian": "z di 'rosa' (z sonora, come un'ape: zzz)",
+      "word": "զանգ",
+      "meaning": "campana/squillo",
+      "hookForm": "La զ ha una pancia tonda come una campana che vibra: zzz.",
+      "hookCase": "Ձ e Զ si somigliano: la Ձ ha un gancio in più sotto (dz = z 'rinforzata')."
+    },
+    {
+      "upper": "Ժ",
+      "lower": "ժ",
+      "ipa": "[ʒ]",
+      "tr": "zh",
+      "italian": "j del francese 'jour', come la g di 'garage'",
+      "word": "ժամ",
+      "meaning": "ora",
+      "hookForm": "La ժ minuscola ha tre punte come le lancette dell'orologio: è l'ora, ժամ.",
+      "hookCase": "Ժ maiuscola è più squadrata, ma tieni il gancio dell'orologio per entrambe."
+    },
+    {
+      "upper": "Ծ",
+      "lower": "ծ",
+      "ipa": "[t͡s]",
+      "tr": "ts",
+      "italian": "z di 'pizza' (ts sordo, secco)",
+      "word": "ծաղիկ",
+      "meaning": "fiore",
+      "hookForm": "La ծ ha un ricciolo come un bocciolo che si apre: il fiore fa 'ts'.",
+      "hookCase": "Ծ/ծ: la coppia più simile tra loro delle tre 'ts/dz'. Il ricciolo c'è in entrambe."
+    },
+    {
+      "upper": "Ձ",
+      "lower": "ձ",
+      "ipa": "[d͡z]",
+      "tr": "dz",
+      "italian": "come 'zz' di 'mezzo' (dz sonoro)",
+      "word": "ձուկ",
+      "meaning": "pesce",
+      "hookForm": "La ձ ha una coda che guizza come un pesce nell'acqua: dz.",
+      "hookCase": "Ձ maiuscola sembra un '2' rovesciato; la minuscola ha la coda-pesce. Suono: dz."
+    },
+    {
+      "upper": "Ճ",
+      "lower": "ճ",
+      "ipa": "[t͡ʃ]",
+      "tr": "ch",
+      "italian": "c di 'cena' ma secca, senza aria (tʃ)",
+      "word": "ճաշ",
+      "meaning": "pranzo",
+      "hookForm": "La ճ ha una 'bocca' aperta a sinistra: apri la bocca per il pranzo, ճաշ.",
+      "hookCase": "Ճ/ճ molto simili tra loro. Distinguila da Ջ/ջ: la ճ è 'secca', la ջ è 'sonora'."
+    },
+    {
+      "upper": "Շ",
+      "lower": "շ",
+      "ipa": "[ʃ]",
+      "tr": "sh",
+      "italian": "sc di 'scena' (sh, come 'zitto!': shhh)",
+      "word": "շուն",
+      "meaning": "cane",
+      "hookForm": "La շ ha tre gobbe morbide: shhh, come far stare zitto il cane.",
+      "hookCase": "Շ maiuscola è più angolosa, la minuscola più morbida: stesso 'shhh'."
+    },
+    {
+      "upper": "Չ",
+      "lower": "չ",
+      "ipa": "[t͡ʃʰ]",
+      "tr": "ch'",
+      "italian": "c di 'cena' ma con uno sbuffo d'aria dopo (tʃʰ)",
+      "word": "չամիչ",
+      "meaning": "uvetta",
+      "hookForm": "La չ è come la ճ ma con la coda lunga giù: quella coda è lo sbuffo d'aria (ch').",
+      "hookCase": "Չ/չ: guarda la coda lunga verso il basso, è il segno dell'aspirazione."
+    },
+    {
+      "upper": "Ջ",
+      "lower": "ջ",
+      "ipa": "[d͡ʒ]",
+      "tr": "j",
+      "italian": "g di 'gelato' (dʒ sonoro)",
+      "word": "ջուր",
+      "meaning": "acqua",
+      "hookForm": "La ջ ha una coda che scende come l'acqua che cola: ջուր, dʒ.",
+      "hookCase": "Ջ/ջ simili tra loro. È la versione 'sonora' (gelato) della ճ 'secca' (cena)."
+    }
+  ]
+}

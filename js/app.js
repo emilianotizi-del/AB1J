@@ -11,6 +11,7 @@ import * as pronounce from './screens/pronounce.js';
 import * as sounds from './screens/sounds.js';
 import * as missions from './screens/missions.js';
 import * as missionPlay from './screens/mission_play.js';
+import * as hardLetters from './screens/hard_letters.js';
 import { migrateDeck } from './core/srs.js';
 import { updateBadge } from './screens/review.js';
 
@@ -27,6 +28,7 @@ route('/stats',       () => stats.render(screen));
 route('/settings',    () => settings.render(screen));
 route('/pronounce',   () => pronounce.render(screen));
 route('/sounds',      () => sounds.render(screen));
+route('/hard-letters',() => hardLetters.render(screen));
 route('/missions',    () => missions.render(screen));
  route('/mission/:id', p  => missionPlay.render(screen, p));
 

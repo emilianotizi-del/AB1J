@@ -531,3 +531,20 @@
   padding: 2px 8px; border-radius: 7px; vertical-align: middle;
   font-variant-numeric: tabular-nums;
 }
+
+/* Schermata "Lettere difficili" */
+.hard-card { border:1px solid var(--line); border-radius:14px; background:var(--surface); padding:14px; margin-bottom:12px; }
+.hard-top { display:flex; gap:14px; align-items:flex-start; }
+.hard-glyphs { display:flex; gap:10px; background:var(--paper); border-radius:10px; padding:10px 12px; flex-shrink:0; }
+.hard-upper, .hard-lower { font-size:2.4rem; font-weight:700; color:var(--accent); line-height:1; text-align:center; }
+.hard-glabel { font-size:.6rem; color:var(--ink-soft); text-align:center; margin-top:4px; letter-spacing:.03em; }
+.hard-info { flex:1; }
+.hard-sound { font-weight:700; font-size:1.15rem; }
+.hard-ipa { color:var(--ink-soft); font-size:.85rem; margin-top:2px; }
+.hard-word { display:inline-flex; align-items:center; gap:4px; margin-top:8px; padding:6px 10px;
+  border:1px solid var(--line); border-radius:9px; background:var(--paper); cursor:pointer; font:inherit;
+  font-size:1.1rem; color:var(--accent-ink,#9a5a12); }
+.hard-meaning { color:var(--ink-soft); font-size:.85rem; }
+.hard-block { margin-top:10px; font-size:.9rem; line-height:1.45; }
+.hard-tag { font-weight:700; }
+.hard-tag.accent { color:var(--accent); }

@@ -61,6 +61,14 @@ def collect_texts():
                     for o in t.get("options", []):
                         if o.get("reply", {}).get("hy"): texts.add(o["reply"]["hy"])
                     if t.get("repair", {}).get("hy"): texts.add(t["repair"]["hy"])
+
+    # Parole-ancora delle "lettere difficili"
+    hard_path = ROOT / "data/hy/hard_letters.json"
+    if hard_path.exists():
+        hard = json.loads(hard_path.read_text())
+        for c in hard.get("cards", []):
+            if c.get("word"): texts.add(c["word"])
+
     course = json.loads((ROOT / "data/hy/course.json").read_text())
     for mod in course["modules"]:
         for les in mod["lessons"]:
