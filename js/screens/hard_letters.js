@@ -18,7 +18,9 @@ export async function render(mount) {
   mount.append(el('a', { class: 'btn btn-block btn-accent', href: '#/confusable', style: 'margin-bottom:18px' },
     '🎯 Allena le confondibili'));
 
+  const STUDY = 'ձժջչճզծշ';   // le 8 lettere che l'utente studia (ց è solo distrattore nell'esercizio)
   for (const e of hard.letters) {
+    if (!STUDY.includes(e.letter)) continue;
     const L = info[e.letter] || {};
     const block = el('div', { class: 'hard-card' });
     block.append(el('div', { class: 'hard-top' },

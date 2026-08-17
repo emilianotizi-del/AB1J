@@ -570,6 +570,81 @@
           "src": "extra"
         }
       ]
+    },
+    {
+      "letter": "ց",
+      "words": [
+        {
+          "hy": "հաց",
+          "it": "pane",
+          "src": "corso"
+        },
+        {
+          "hy": "վեց",
+          "it": "sei",
+          "src": "corso"
+        },
+        {
+          "hy": "ցավ",
+          "it": "dolore",
+          "src": "corso"
+        },
+        {
+          "hy": "ցածր",
+          "it": "basso",
+          "src": "corso"
+        },
+        {
+          "hy": "դպրոց",
+          "it": "scuola",
+          "src": "corso"
+        },
+        {
+          "hy": "խոհանոց",
+          "it": "cucina",
+          "src": "corso"
+        },
+        {
+          "hy": "փողոց",
+          "it": "strada, via",
+          "src": "corso"
+        },
+        {
+          "hy": "գեղեցիկ",
+          "it": "bello",
+          "src": "corso"
+        },
+        {
+          "hy": "ուսուցիչ",
+          "it": "insegnante",
+          "src": "corso"
+        },
+        {
+          "hy": "բայց",
+          "it": "ma",
+          "src": "corso"
+        },
+        {
+          "hy": "կենաց",
+          "it": "brindisi",
+          "src": "corso"
+        },
+        {
+          "hy": "իտալացի",
+          "it": "italiano/a (persona)",
+          "src": "corso"
+        },
+        {
+          "hy": "ասաց",
+          "it": "ha detto",
+          "src": "corso"
+        },
+        {
+          "hy": "որտեղից",
+          "it": "da dove",
+          "src": "corso"
+        }
+      ]
     }
   ]
 }
