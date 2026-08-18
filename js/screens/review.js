@@ -138,7 +138,9 @@ export function render(mount) {
             onclick: e => { e.stopPropagation(); speak(card.hy); }
           }, '🔊'));
       } else {
-        face.append(el('div', { class: 'w-it', style: 'margin-top:12px;font-size:1.25rem;font-weight:600' }, card.it));
+        // La traduzione qui è LA RISPOSTA della carta, non un aiuto: sempre visibile,
+        // indipendente dal setting "Traduzione italiana".
+        face.append(el('div', { class: 'w-it-answer', style: 'margin-top:12px;font-size:1.25rem;font-weight:600' }, card.it));
       }
     }
     paint();
