@@ -1,18 +1,11 @@
 Nota: impossibile leggere il credito (HTTP 401).
-w968.mp3 ← արդեն [eleven_v3] (6601 B)
-w969.mp3 ← դեպի [eleven_v3] (3048 B)
-w970.mp3 ← դուրս [eleven_v3] (5243 B)
-w971.mp3 ← երբեք [eleven_v3] (5974 B)
-w972.mp3 ← զբաղված [eleven_v3] (8482 B)
-w973.mp3 ← թողնել [eleven_v3] (6287 B)
-w974.mp3 ← կանգնել [eleven_v3] (6287 B)
-w975.mp3 ← կարողանալ [eleven_v3] (9109 B)
-w976.mp3 ← հարցնել [eleven_v3] (6914 B)
-w977.mp3 ← հենց [eleven_v3] (4616 B)
-w978.mp3 ← մասին [eleven_v3] (6601 B)
-w979.mp3 ← մինչև [eleven_v3] (9109 B)
-w980.mp3 ← միտք [eleven_v3] (6601 B)
-w981.mp3 ← ուժ [eleven_v3] (6287 B)
-w982.mp3 ← պատասխան [eleven_v3] (9109 B)
+w983.mp3 ← առանց [eleven_v3] (6914 B)
+w984.mp3 ← զգալ [eleven_v3] (5974 B)
+w985.mp3 ← թե [eleven_v3] (3362 B)
+w986.mp3 ← իսկ [eleven_v3] (4616 B)
+w987.mp3 ← կողմ [eleven_v3] (5556 B)
+w988.mp3 ← նույն [eleven_v3] (3675 B)
+w989.mp3 ← պատասխանել [eleven_v3] (3989 B)
+w990.mp3 ← տակ [eleven_v3] (5974 B)
 
-15 tracce generate/aggiornate, 981 totali
+8 tracce generate/aggiornate, 989 totali
