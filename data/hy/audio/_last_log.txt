@@ -1,11 +1,19 @@
 Nota: impossibile leggere il credito (HTTP 401).
-w983.mp3 ← առանց [eleven_v3] (6914 B)
-w984.mp3 ← զգալ [eleven_v3] (5974 B)
-w985.mp3 ← թե [eleven_v3] (3362 B)
-w986.mp3 ← իսկ [eleven_v3] (4616 B)
-w987.mp3 ← կողմ [eleven_v3] (5556 B)
-w988.mp3 ← նույն [eleven_v3] (3675 B)
-w989.mp3 ← պատասխանել [eleven_v3] (3989 B)
-w990.mp3 ← տակ [eleven_v3] (5974 B)
+w991.mp3 ← այլ [eleven_v3] (5556 B)
+w992.mp3 ← բարձրանալ [eleven_v3] (8795 B)
+w993.mp3 ← բացել [eleven_v3] (6287 B)
+w994.mp3 ← իմանալ [eleven_v3] (7855 B)
+w995.mp3 ← իջնել [eleven_v3] (9422 B)
+w996.mp3 ← հիշել [eleven_v3] (5974 B)
+w997.mp3 ← մոտենալ [eleven_v3] (8482 B)
+w998.mp3 ← մտածել [eleven_v3] (5974 B)
+w999.mp3 ← շարունակել [eleven_v3] (9109 B)
+w1000.mp3 ← որոշել [eleven_v3] (7855 B)
+w1001.mp3 ← պահել [eleven_v3] (6914 B)
+w1002.mp3 ← պատմել [eleven_v3] (5556 B)
+w1003.mp3 ← սակայն [eleven_v3] (3989 B)
+w1004.mp3 ← վախենալ [eleven_v3] (7855 B)
+w1005.mp3 ← վերցնել [eleven_v3] (6601 B)
+w1006.mp3 ← փորձել [eleven_v3] (4929 B)
 
-8 tracce generate/aggiornate, 989 totali
+16 tracce generate/aggiornate, 1005 totali
