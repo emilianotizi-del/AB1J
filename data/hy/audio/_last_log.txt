@@ -1,14 +1,15 @@
 Nota: impossibile leggere il credito (HTTP 401).
-w939.mp3 ← բերել [eleven_v3] (5974 B)
-w940.mp3 ← գտնել [eleven_v3] (6287 B)
-w941.mp3 ← դա [eleven_v3] (4616 B)
-w942.mp3 ← դեպք [eleven_v3] (4929 B)
-w943.mp3 ← ինչպես [eleven_v3] (7855 B)
-w944.mp3 ← կյանք [eleven_v3] (6914 B)
-w945.mp3 ← հաճախ [eleven_v3] (8168 B)
-w946.mp3 ← մտնել [eleven_v3] (6287 B)
-w947.mp3 ← նաև [eleven_v3] (5556 B)
-w948.mp3 ← պատրաստ [eleven_v3] (7855 B)
-w949.mp3 ← վերջ [eleven_v3] (4302 B)
+w950.mp3 ← ազատ [eleven_v3] (6287 B)
+w951.mp3 ← աղջիկ [eleven_v3] (5974 B)
+w952.mp3 ← աշխարհ [eleven_v3] (5243 B)
+w953.mp3 ← բոլոր [eleven_v3] (6287 B)
+w954.mp3 ← դնել [eleven_v3] (5556 B)
+w955.mp3 ← լսել [eleven_v3] (5243 B)
+w956.mp3 ← հեշտ [eleven_v3] (6287 B)
+w957.mp3 ← հետաքրքիր [eleven_v3] (9736 B)
+w958.mp3 ← միայն [eleven_v3] (5556 B)
+w959.mp3 ← նստել [eleven_v3] (5974 B)
+w960.mp3 ← չափազանց [eleven_v3] (8168 B)
+w961.mp3 ← պատճառ [eleven_v3] (8795 B)
 
-11 tracce generate/aggiornate, 948 totali
+12 tracce generate/aggiornate, 960 totali
