@@ -1,0 +1,110 @@
+{
+  "id": "reading_l071",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Կարմիր հագուստը",
+      "text": "Երևանում մի աղջիկ նստեց իմ մոտ։ Նա կարմիր հագուստ ուներ։ Այդ կարմիրը չափազանց լավն էր։ Ես ուզում էի խոսել, բայց չգիտեի ինչ ասել։ Ես նստեցի նրա մոտ։ Նա ինձ նայեց ու ասաց. «Դուք իտալացի եք»։ Ես ասացի. «Այո, բայց հայերեն եմ սովորում»։ Աղջիկը ուրախ եղավ։ Նա ասաց. «Հայերենը հեշտ չէ, բայց դուք լավ եք խոսում»։ Մենք խոսեցինք ու խոսեցինք։ Ես չափազանց ուրախ էի։ Հիմա, երբ ես կարմիր հագուստ եմ տեսնում, ես այդ աղջկան եմ տեսնում։ Դա հեշտ օր էր, ու աղջիկը լավն էր։",
+      "it": "A Yerevan una ragazza si è seduta vicino a me. Aveva un vestito rosso. Quel rosso era straordinariamente bello. Volevo parlare, ma non sapevo cosa dire. Mi sono seduto vicino a lei. Mi ha guardato e ha detto: «Lei è italiano?». Ho detto: «Sì, ma sto imparando l'armeno». La ragazza è stata contenta. Ha detto: «L'armeno non è facile, ma lei parla bene». Abbiamo parlato e parlato. Ero straordinariamente contento. Adesso, quando vedo un vestito rosso, rivedo quella ragazza. È stato un giorno facile, e la ragazza era gentile.",
+      "qLang": "it",
+      "newWords": [
+        {
+          "hy": "աղջիկ",
+          "tr": "aghjik",
+          "ipa": "[ɑʁˈdʒik]",
+          "it": "ragazza"
+        },
+        {
+          "hy": "նստել",
+          "tr": "nstel",
+          "ipa": "[nəsˈtɛl]",
+          "it": "sedersi"
+        },
+        {
+          "hy": "չափազանց",
+          "tr": "ch'ap'azants'",
+          "ipa": "[tʃʰɑpʰɑˈzɑntsʰ]",
+          "it": "troppo, estremamente"
+        },
+        {
+          "hy": "հեշտ",
+          "tr": "hesht",
+          "ipa": "[hɛʃt]",
+          "it": "facile"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Che cosa indossava la ragazza?",
+          "options": [
+            {
+              "text": "Un vestito rosso",
+              "ok": true
+            },
+            {
+              "text": "Un vestito nero",
+              "ok": false
+            },
+            {
+              "text": "Un vestito bianco",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa gli ha chiesto?",
+          "options": [
+            {
+              "text": "Se è italiano",
+              "ok": true
+            },
+            {
+              "text": "Dove abita",
+              "ok": false
+            },
+            {
+              "text": "Che ora è",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa ha detto dell'armeno?",
+          "options": [
+            {
+              "text": "Che non è facile, ma lui parla bene",
+              "ok": true
+            },
+            {
+              "text": "Che è molto facile",
+              "ok": false
+            },
+            {
+              "text": "Che lui parla male",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa rivede adesso davanti a un vestito rosso?",
+          "options": [
+            {
+              "text": "Quella ragazza",
+              "ok": true
+            },
+            {
+              "text": "La sua città",
+              "ok": false
+            },
+            {
+              "text": "Sua sorella",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

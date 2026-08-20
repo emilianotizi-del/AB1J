@@ -445,6 +445,33 @@
       "after": "l066",
       "icon": "📖",
       "qLang": "it"
+    },
+    {
+      "id": "reading_l068",
+      "kind": "reading",
+      "title": "Il posto più bello del mondo",
+      "area": "Letture",
+      "after": "l068",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l070",
+      "kind": "reading",
+      "title": "Il motivo interessante",
+      "area": "Letture",
+      "after": "l070",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l071",
+      "kind": "reading",
+      "title": "Il vestito rosso",
+      "area": "Letture",
+      "after": "l071",
+      "icon": "📖",
+      "qLang": "it"
     }
   ]
 }

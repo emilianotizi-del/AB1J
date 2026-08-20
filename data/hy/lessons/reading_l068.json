@@ -1,0 +1,110 @@
+{
+  "id": "reading_l068",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Աշխարհի ամենալավ տեղը",
+      "text": "Իմ ընկերս Երևանից է։ Երեկ ես նրա հետ խոսեցի ու լսեցի մի հին բան։ Նա ասաց. «Կովկասում շատ լեռներ կան, բայց Արագածը ամենալավն է»։ Ես լսում էի. աշխարհը մեծ է, ու ես միայն փոքր մասն եմ գիտեմ։ Իմ ընկերս ասաց նաև. «Երևանը հին քաղաք է։ Այնտեղ ամեն փողոց հին է»։ Հիմա ես գիտեմ. աշխարհում շատ լավ տեղեր կան։ Բայց մարդ միայն մի տեղ ունի, որտեղ նա ազատ է։ Իմ ընկերոջ համար այդ ազատ տեղը Երևանն է։",
+      "it": "Il mio amico è di Yerevan. Ieri ho parlato con lui e ho sentito una cosa antica. Ha detto: «Nel Caucaso ci sono molte montagne, ma l'Aragats è la più bella». Ascoltavo: il mondo è grande, e io ne conosco solo una piccola parte. Il mio amico ha detto anche: «Yerevan è una città antica. Là ogni strada è antica». Adesso lo so: nel mondo ci sono molti bei posti. Ma una persona ha un solo posto dove è libera. Per il mio amico quel posto libero è Yerevan.",
+      "qLang": "it",
+      "newWords": [
+        {
+          "hy": "աշխարհ",
+          "tr": "ashkharh",
+          "ipa": "[ɑʃˈχɑɾh]",
+          "it": "mondo"
+        },
+        {
+          "hy": "միայն",
+          "tr": "miayn",
+          "ipa": "[miˈɑjn]",
+          "it": "solo, soltanto"
+        },
+        {
+          "hy": "լսել",
+          "tr": "lsel",
+          "ipa": "[ləˈsɛl]",
+          "it": "ascoltare, sentire"
+        },
+        {
+          "hy": "ազատ",
+          "tr": "azat",
+          "ipa": "[ɑˈzɑt]",
+          "it": "libero"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Di dov'è l'amico?",
+          "options": [
+            {
+              "text": "Di Yerevan",
+              "ok": true
+            },
+            {
+              "text": "Dell'Italia",
+              "ok": false
+            },
+            {
+              "text": "Non si dice",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Qual è secondo lui la montagna più bella?",
+          "options": [
+            {
+              "text": "L'Aragats",
+              "ok": true
+            },
+            {
+              "text": "L'Ararat",
+              "ok": false
+            },
+            {
+              "text": "Non lo dice",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa dice di Yerevan?",
+          "options": [
+            {
+              "text": "Che è antica e ogni strada è antica",
+              "ok": true
+            },
+            {
+              "text": "Che è nuova e grande",
+              "ok": false
+            },
+            {
+              "text": "Che è piccola",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Qual è la conclusione di chi racconta?",
+          "options": [
+            {
+              "text": "Ognuno ha un solo posto dove è libero",
+              "ok": true
+            },
+            {
+              "text": "Il mondo è piccolo",
+              "ok": false
+            },
+            {
+              "text": "Bisogna viaggiare molto",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
