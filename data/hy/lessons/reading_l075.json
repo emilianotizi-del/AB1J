@@ -1,0 +1,110 @@
+{
+  "id": "reading_l075",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Ուրիշ ճանապարհով",
+      "text": "Ամեն առավոտ ես ավտոբուսով եմ գնում աշխատանքի։ Ավտոբուսը էժան է ու արագ։ Բայց երեկ ես ուրիշ բան արեցի. ես ոտքով գնացի քաղաքով։ Փողոցում ես տեսա մի երեխա, ապա ուրիշ երեխաներ։ Երեխաները դպրոց էին գնում ու խոսում էին բարձր ձայնով։ Մի խանութում ես տեսա հին գրքեր։ Դրանք էժան էին։ Ես մի գիրք առա ու գրեցի իմ անունը գրքում։ Ես ուշ հասա աշխատանքի, բայց ուրախ էի։ Հիմա ես գիտեմ. ուրիշ ճանապարհով նույն քաղաքը ուրիշ քաղաք է դառնում։",
+      "it": "Ogni mattina vado al lavoro in autobus. L'autobus è economico e veloce. Ma ieri ho fatto una cosa diversa: sono andato a piedi attraverso la città. Per la strada ho visto un bambino, poi altri bambini. Andavano a scuola e parlavano ad alta voce. In un negozio ho visto dei libri vecchi. Erano economici. Ho preso un libro e ci ho scritto il mio nome. Sono arrivato tardi al lavoro, ma ero contento. Adesso lo so: per una strada diversa la stessa città diventa un'altra città.",
+      "qLang": "it",
+      "newWords": [
+        {
+          "hy": "ուրիշ",
+          "tr": "urish",
+          "ipa": "[uˈɾiʃ]",
+          "it": "altro, diverso"
+        },
+        {
+          "hy": "գրել",
+          "tr": "grel",
+          "ipa": "[gəˈɾɛl]",
+          "it": "scrivere"
+        },
+        {
+          "hy": "էժան",
+          "tr": "ezhan",
+          "ipa": "[ɛˈʒɑn]",
+          "it": "economico, a buon mercato"
+        },
+        {
+          "hy": "երեխա",
+          "tr": "yerekha",
+          "ipa": "[jɛɾɛˈχɑ]",
+          "it": "bambino"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Come va di solito al lavoro?",
+          "options": [
+            {
+              "text": "In autobus",
+              "ok": true
+            },
+            {
+              "text": "A piedi",
+              "ok": false
+            },
+            {
+              "text": "In macchina",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa ha fatto ieri di diverso?",
+          "options": [
+            {
+              "text": "È andato a piedi",
+              "ok": true
+            },
+            {
+              "text": "È rimasto a casa",
+              "ok": false
+            },
+            {
+              "text": "Ha preso la macchina",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa ha comprato nel negozio?",
+          "options": [
+            {
+              "text": "Un libro vecchio",
+              "ok": true
+            },
+            {
+              "text": "Del pane",
+              "ok": false
+            },
+            {
+              "text": "Un quaderno nuovo",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Qual è la sua conclusione?",
+          "options": [
+            {
+              "text": "Per una strada diversa la città sembra un'altra",
+              "ok": true
+            },
+            {
+              "text": "L'autobus è meglio",
+              "ok": false
+            },
+            {
+              "text": "Bisogna alzarsi presto",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

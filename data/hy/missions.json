@@ -472,6 +472,24 @@
       "after": "l071",
       "icon": "📖",
       "qLang": "it"
+    },
+    {
+      "id": "reading_l073",
+      "kind": "reading",
+      "title": "La voce al telefono",
+      "area": "Letture",
+      "after": "l073",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l075",
+      "kind": "reading",
+      "title": "Per un altra strada",
+      "area": "Letture",
+      "after": "l075",
+      "icon": "📖",
+      "qLang": "it"
     }
   ]
 }
