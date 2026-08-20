@@ -1,0 +1,110 @@
+{
+  "id": "reading_l080",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Իմ միտքը",
+      "text": "Երեկ մի երիտասարդ մարդ հարցրեց ինձ. «Ինչու՞ եք հայերեն սովորում»։ Նա հարցրեց նաև իմ ընտանիքի մասին։ Դա լավ հարց էր։ Ես երբեք այդ մասին այդպես չէի խոսել։ Իմ միտքը այս էր. «Իմ ընտանիքի համար»։ Բայց դա մի փոքր պատասխան էր։ Ես հարցրի ինքս ինձ ու հասկացա. ես ուզում եմ հասկանալ մարդկանց, ու ամեն նոր բան նոր միտք է բերում։ Այդ երիտասարդը ասաց. «Ես երբեք այդ մասին չեմ հարցրել, բայց հիմա կհարցնեմ»։ Ամենահետաքրքիր հարցերը այն հարցերն են, որոնք մենք երբեք չենք տալիս։ Այդ միտքը ինձ մնաց։",
+      "it": "Ieri un giovane mi ha chiesto: «Perché studia armeno?». Mi ha chiesto anche della mia famiglia. Era una bella domanda. Non ne avevo mai parlato in quel modo. Il mio pensiero è stato questo: «Per la mia famiglia». Ma era una risposta piccola. Ho chiesto a me stesso e ho capito: voglio capire le persone, e ogni cosa nuova porta un pensiero nuovo. Quel giovane ha detto: «Non l'ho mai chiesto, ma adesso lo chiederò». Le domande più interessanti sono quelle che non facciamo mai. Quel pensiero mi è rimasto.",
+      "qLang": "it",
+      "newWords": [
+        {
+          "hy": "միտք",
+          "tr": "mitk'",
+          "ipa": "[mitkʰ]",
+          "it": "pensiero, idea"
+        },
+        {
+          "hy": "երբեք",
+          "tr": "yerbek'",
+          "ipa": "[jɛɾˈbɛkʰ]",
+          "it": "mai"
+        },
+        {
+          "hy": "հարցնել",
+          "tr": "harts'nel",
+          "ipa": "[hɑɾtsʰˈnɛl]",
+          "it": "chiedere"
+        },
+        {
+          "hy": "մասին",
+          "tr": "masin",
+          "ipa": "[mɑˈsin]",
+          "it": "riguardo a, su (dopo il genitivo)"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Che cosa gli ha chiesto il giovane?",
+          "options": [
+            {
+              "text": "Perché studia armeno",
+              "ok": true
+            },
+            {
+              "text": "Da dove viene",
+              "ok": false
+            },
+            {
+              "text": "Dove lavora",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Qual è stato il suo primo pensiero?",
+          "options": [
+            {
+              "text": "Che studia per la sua famiglia",
+              "ok": true
+            },
+            {
+              "text": "Che studia per lavoro",
+              "ok": false
+            },
+            {
+              "text": "Che non lo sa",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa ha capito?",
+          "options": [
+            {
+              "text": "Che vuole capire le persone",
+              "ok": true
+            },
+            {
+              "text": "Che l'armeno è difficile",
+              "ok": false
+            },
+            {
+              "text": "Che deve studiare di più",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Qual è la conclusione?",
+          "options": [
+            {
+              "text": "Le domande più interessanti sono quelle a cui non pensiamo mai",
+              "ok": true
+            },
+            {
+              "text": "Non bisogna fare domande",
+              "ok": false
+            },
+            {
+              "text": "Le lingue sono tutte uguali",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

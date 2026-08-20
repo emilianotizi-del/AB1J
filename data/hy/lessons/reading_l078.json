@@ -1,0 +1,110 @@
+{
+  "id": "reading_l078",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Ճանապարհը մինչև Գյումրի",
+      "text": "Այս շաբաթ մենք գնացինք Գյումրի։ Ճանապարհը մեծ էր՝ մինչև երեք ժամ։ Ավտոբուսը կանգնեց մի փոքր տեղում։ Այնտեղ մենք կանգնեցինք ու նայեցինք։ Այնտեղ ավելի տաք էր, քան Երևանում։ Մենք տեսանք սարերը ու ճանապարհը սարերի մեջ։ Երբ մենք արդեն ավտոբուսում էինք, իմ ընկերս ասաց. «Ես արդեն ուզում եմ նորից գալ»։ Ճանապարհը մինչև Գյումրի ավելի լավն է, քան Գյումրին ինքը՝ այդպես ասաց նա։ Ես գիտեմ. նա ճիշտ էր։ Ամեն ճանապարհ մի փոքր կյանք է։",
+      "it": "Questa settimana siamo andati a Gyumri. La strada era lunga: fino a tre ore. L'autobus si è fermato in un posto piccolo. Lì ci siamo fermati e abbiamo guardato. Là era più caldo che a Yerevan. Abbiamo visto le montagne e la strada tra le montagne. Quando eravamo già sull'autobus, il mio amico ha detto: «Voglio già tornarci». La strada fino a Gyumri è più bella di Gyumri stessa: così ha detto lui. Lo so: aveva ragione. Ogni strada è una piccola vita.",
+      "qLang": "it",
+      "newWords": [
+        {
+          "hy": "ճանապարհ",
+          "tr": "chanaparh",
+          "ipa": "[tʃɑnɑˈpɑɾh]",
+          "it": "strada, cammino"
+        },
+        {
+          "hy": "մինչև",
+          "tr": "minch'ev",
+          "ipa": "[mintʃʰˈɛv]",
+          "it": "fino a"
+        },
+        {
+          "hy": "կանգնել",
+          "tr": "kangnel",
+          "ipa": "[kɑngˈnɛl]",
+          "it": "fermarsi, stare in piedi"
+        },
+        {
+          "hy": "արդեն",
+          "tr": "arden",
+          "ipa": "[ɑɾˈdɛn]",
+          "it": "già"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Dove sono andati?",
+          "options": [
+            {
+              "text": "A Gyumri",
+              "ok": true
+            },
+            {
+              "text": "A Yerevan",
+              "ok": false
+            },
+            {
+              "text": "Al mare",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Quanto è durato il viaggio?",
+          "options": [
+            {
+              "text": "Fino a tre ore",
+              "ok": true
+            },
+            {
+              "text": "Un'ora",
+              "ok": false
+            },
+            {
+              "text": "Tutto il giorno",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Com'era l'aria là?",
+          "options": [
+            {
+              "text": "Più calda che a Yerevan",
+              "ok": true
+            },
+            {
+              "text": "Più fredda",
+              "ok": false
+            },
+            {
+              "text": "Uguale",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa ha detto l'amico?",
+          "options": [
+            {
+              "text": "Che la strada è più bella di Gyumri stessa",
+              "ok": true
+            },
+            {
+              "text": "Che non ci tornerà",
+              "ok": false
+            },
+            {
+              "text": "Che è stato troppo lungo",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -490,6 +490,42 @@
       "after": "l075",
       "icon": "📖",
       "qLang": "it"
+    },
+    {
+      "id": "reading_l077",
+      "kind": "reading",
+      "title": "Poche forze",
+      "area": "Letture",
+      "after": "l077",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l078",
+      "kind": "reading",
+      "title": "La strada fino a Gyumri",
+      "area": "Letture",
+      "after": "l078",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l080",
+      "kind": "reading",
+      "title": "Il mio pensiero",
+      "area": "Letture",
+      "after": "l080",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l082",
+      "kind": "reading",
+      "title": "Proprio quella risposta",
+      "area": "Letture",
+      "after": "l082",
+      "icon": "📖",
+      "qLang": "it"
     }
   ]
 }
