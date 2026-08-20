@@ -1,0 +1,110 @@
+{
+  "id": "reading_l092",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Որոշեցի մնալ",
+      "text": "Մեկ տարի ես որոշեցի սովորել հայերեն։ Այն ժամանակ ես վախենում էի խոսել։ Ես պահում էի իմ խոսքերը ինձ մոտ ու քիչ էի խոսում։ Այս ամիս ես գնացի Հայաստան։ Երբ ես իջա ինքնաթիռից, ես նորից վախեցա։ Ես դանդաղ իջա։ Սակայն մի մարդ եկավ ու հարցրեց. «Ամեն բան լավ է»։ Ես պատասխանեցի հայերեն։ Նա ինձ հասկացավ։ Հենց այդ ժամանակ ես որոշեցի. ես չեմ վախենա։ Ես պահեցի այդ որոշումը մինչև այսօր։ Մեկ տարի ես միայն մի քանի խոսք գիտեի։ Հիմա ես կարող եմ խոսել իմ կյանքի մասին։",
+      "it": "Un anno fa ho deciso di studiare l'armeno. All'epoca avevo paura di parlare. Tenevo le mie parole per me e parlavo poco. Questo mese sono andato in Armenia. Quando sono sceso dall'aereo, ho avuto di nuovo paura. Sono sceso lentamente. Però una persona è venuta e ha chiesto: «Va tutto bene?». Ho risposto in armeno. Mi ha capito. Proprio in quel momento ho deciso: non avrò paura. Ho mantenuto quella decisione fino a oggi. Un anno fa conoscevo solo qualche parola. Adesso posso parlare della mia vita.",
+      "qLang": "it",
+      "newWords": [
+        {
+          "hy": "որոշել",
+          "tr": "voroshel",
+          "ipa": "[voɾoˈʃɛl]",
+          "it": "decidere"
+        },
+        {
+          "hy": "պահել",
+          "tr": "pahel",
+          "ipa": "[pɑˈhɛl]",
+          "it": "tenere, conservare"
+        },
+        {
+          "hy": "վախենալ",
+          "tr": "vakhenal",
+          "ipa": "[vɑχɛˈnɑl]",
+          "it": "avere paura"
+        },
+        {
+          "hy": "իջնել",
+          "tr": "ijnel",
+          "ipa": "[idʒˈnɛl]",
+          "it": "scendere"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Che cosa ha deciso un anno fa?",
+          "options": [
+            {
+              "text": "Di studiare l'armeno",
+              "ok": true
+            },
+            {
+              "text": "Di andare in Armenia",
+              "ok": false
+            },
+            {
+              "text": "Di cambiare lavoro",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa provava all'inizio?",
+          "options": [
+            {
+              "text": "Paura di parlare",
+              "ok": true
+            },
+            {
+              "text": "Noia",
+              "ok": false
+            },
+            {
+              "text": "Stanchezza",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa è successo all'aeroporto?",
+          "options": [
+            {
+              "text": "Una persona gli ha chiesto se andava tutto bene",
+              "ok": true
+            },
+            {
+              "text": "Ha perso la valigia",
+              "ok": false
+            },
+            {
+              "text": "Nessuno gli ha parlato",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa sa fare adesso?",
+          "options": [
+            {
+              "text": "Parlare della sua vita",
+              "ok": true
+            },
+            {
+              "text": "Solo poche parole",
+              "ok": false
+            },
+            {
+              "text": "Leggere i giornali",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

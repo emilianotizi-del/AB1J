@@ -1,0 +1,110 @@
+{
+  "id": "reading_l087",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Այլ միտք",
+      "text": "Երեկ երեկոյան իմ հեռախոսը զանգեց։ Ես իմացա, որ իմ ընկերս հիվանդ է։ Առաջին միտքս այս էր. «Ես վաղը կզանգեմ»։ Սակայն ապա ես այլ բան մտածեցի։ Ես մտածեցի. «Իսկ եթե ես հիվանդ եմ»։ Ու ես գնացի նրա մոտ նույն երեկոյան։ Նա ուրախ էր։ Մենք թեյ խմեցինք ու խոսեցինք։ Նա ասաց, որ բժիշկը լավն էր։ Երբ ես տուն եկա, ես իմացա մի այլ բան. լավ միտքը այն է, որ քեզ ոտքի է բարձրացնում, ոչ թե այն, որ սեղանին է մնում։ Սակայն այդ միտքը ինձ մոտ եկավ միայն ճանապարհին։",
+      "it": "Ieri sera il mio telefono ha squillato. Ho saputo che il mio amico è malato. Il mio primo pensiero è stato questo: «Domani lo chiamo». Però poi ho pensato un'altra cosa. Ho pensato: «E se il malato fossi io?». E sono andato da lui la sera stessa. Era contento. Abbiamo bevuto il tè e abbiamo parlato. Ha detto che il medico era bravo. Quando sono tornato a casa, ho saputo un'altra cosa: il buon pensiero è quello che ti mette in piedi, non quello che resta sul tavolo. Però quel pensiero mi è venuto solo per strada.",
+      "qLang": "it",
+      "newWords": [
+        {
+          "hy": "իմանալ",
+          "tr": "imanal",
+          "ipa": "[imɑˈnɑl]",
+          "it": "sapere, venire a sapere"
+        },
+        {
+          "hy": "այլ",
+          "tr": "ayl",
+          "ipa": "[ɑjl]",
+          "it": "altro"
+        },
+        {
+          "hy": "սակայն",
+          "tr": "sakayn",
+          "ipa": "[sɑˈkɑjn]",
+          "it": "però, tuttavia"
+        },
+        {
+          "hy": "մտածել",
+          "tr": "mtatsel",
+          "ipa": "[mətɑˈtsɛl]",
+          "it": "pensare"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Che cosa ha saputo al telefono?",
+          "options": [
+            {
+              "text": "Che il suo amico è malato",
+              "ok": true
+            },
+            {
+              "text": "Che deve lavorare",
+              "ok": false
+            },
+            {
+              "text": "Che l'amico parte",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Qual era il suo primo pensiero?",
+          "options": [
+            {
+              "text": "Di chiamarlo il giorno dopo",
+              "ok": true
+            },
+            {
+              "text": "Di andarci subito",
+              "ok": false
+            },
+            {
+              "text": "Di chiamare il medico",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa ha fatto invece?",
+          "options": [
+            {
+              "text": "È andato da lui la sera stessa",
+              "ok": true
+            },
+            {
+              "text": "Ha aspettato una settimana",
+              "ok": false
+            },
+            {
+              "text": "Ha scritto un messaggio",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Qual è la conclusione?",
+          "options": [
+            {
+              "text": "Il buon pensiero è quello che ti fa alzare",
+              "ok": true
+            },
+            {
+              "text": "Bisogna riposare quando si è stanchi",
+              "ok": false
+            },
+            {
+              "text": "I medici sono importanti",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

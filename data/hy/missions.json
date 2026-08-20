@@ -544,6 +544,42 @@
       "after": "l083",
       "icon": "📖",
       "qLang": "it"
+    },
+    {
+      "id": "reading_l087",
+      "kind": "reading",
+      "title": "Un altro pensiero",
+      "area": "Letture",
+      "after": "l087",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l089",
+      "kind": "reading",
+      "title": "Sono salito e ho aperto",
+      "area": "Letture",
+      "after": "l089",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l090",
+      "kind": "reading",
+      "title": "Il tamada ha raccontato",
+      "area": "Letture",
+      "after": "l090",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l092",
+      "kind": "reading",
+      "title": "Ho deciso di restare",
+      "area": "Letture",
+      "after": "l092",
+      "icon": "📖",
+      "qLang": "it"
     }
   ]
 }

@@ -1,0 +1,110 @@
+{
+  "id": "reading_l090",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Թամադան պատմեց",
+      "text": "Այս շաբաթ ես հյուր էի մի հայկական ընտանիքի մոտ։ Սեղանը մեծ էր ու շատ ուտելիք կար։ Թամադան կանգնեց ու սկսեց մի կենաց։ Նա պատմեց իր հայրիկի մասին։ Ապա նա շարունակեց ու պատմեց Հայաստանի մասին։ Բոլորը լսում էին։ Ես փորձեցի հասկանալ ամեն բան, սակայն դա դժվար էր։ Թամադան մոտեցավ ինձ ու ասաց. «Դու հասկացար»։ Ես ասացի. «Ես փորձում եմ»։ Նա ծիծաղեց ու շարունակեց ավելի դանդաղ։ Հենց այդպես ես հասկացա ամեն բան։ Հայկական սեղանի մոտ ամեն անգամ մի մարդ մոտենում է ու քեզ տեղ է տալիս։ Այդպես մոտենում է ամեն ընտանիք։",
+      "it": "Questa settimana ero ospite da una famiglia armena. La tavola era grande e c'era molto cibo. Il tamada si è alzato e ha cominciato un brindisi. Ha raccontato di suo padre. Poi ha continuato e ha raccontato dell'Armenia. Tutti ascoltavano. Ho provato a capire tutto, però era difficile. Il tamada si è avvicinato a me e ha detto: «Tu capisci». Ho detto: «Ci provo». Ha riso e ha continuato più lentamente. Proprio così ho capito tutto. A una tavola armena ogni volta una persona si avvicina e ti fa posto. Così si avvicina ogni famiglia.",
+      "qLang": "it",
+      "newWords": [
+        {
+          "hy": "պատմել",
+          "tr": "patmel",
+          "ipa": "[pɑtˈmɛl]",
+          "it": "raccontare"
+        },
+        {
+          "hy": "շարունակել",
+          "tr": "sharunakel",
+          "ipa": "[ʃɑɾunɑˈkɛl]",
+          "it": "continuare"
+        },
+        {
+          "hy": "մոտենալ",
+          "tr": "motenal",
+          "ipa": "[motɛˈnɑl]",
+          "it": "avvicinarsi"
+        },
+        {
+          "hy": "փորձել",
+          "tr": "p'vordzel",
+          "ipa": "[pʰoɾˈdzɛl]",
+          "it": "provare, tentare"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Dov'era la settimana scorsa?",
+          "options": [
+            {
+              "text": "Ospite da una famiglia armena",
+              "ok": true
+            },
+            {
+              "text": "Al ristorante",
+              "ok": false
+            },
+            {
+              "text": "A casa sua",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Di che cosa ha parlato il tamada?",
+          "options": [
+            {
+              "text": "Di suo padre e dell'Armenia",
+              "ok": true
+            },
+            {
+              "text": "Del cibo",
+              "ok": false
+            },
+            {
+              "text": "Del lavoro",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa ha fatto quando il tamada gli si è avvicinato?",
+          "options": [
+            {
+              "text": "Ha detto che ci prova",
+              "ok": true
+            },
+            {
+              "text": "Non ha risposto",
+              "ok": false
+            },
+            {
+              "text": "È andato via",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Qual è la conclusione?",
+          "options": [
+            {
+              "text": "A una tavola armena qualcuno si avvicina e ti fa posto",
+              "ok": true
+            },
+            {
+              "text": "I brindisi sono troppo lunghi",
+              "ok": false
+            },
+            {
+              "text": "Bisogna parlare armeno perfettamente",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,1056 +1,551 @@
 [
  {
-  "after": "l051",
   "rid": "reading_l051",
-  "old": "reading_l028",
+  "after": "l051",
   "words": [
    {
     "hy": "ու",
-    "it": "e (colloquiale)",
-    "cat": "funzionali",
-    "rank": 5,
-    "cop": 1.371,
-    "stato": "promozione",
-    "min": 51
-   },
-   {
-    "hy": "մնալ",
-    "it": "restare",
-    "cat": "verbi",
-    "rank": 71,
-    "cop": 0.177,
-    "stato": "promozione",
-    "min": 51
-   },
-   {
-    "hy": "նման",
-    "it": "simile",
-    "cat": "avv_agg",
-    "rank": 80,
-    "cop": 0.152,
-    "stato": "nuova",
-    "min": 51
+    "it": "e (nel parlato, al posto di և)"
    },
    {
     "hy": "մարդ",
-    "it": "persona",
-    "cat": "nomi",
-    "rank": 31,
-    "cop": 0.374,
-    "stato": "nuova",
-    "min": 51
+    "it": "persona, uomo"
+   },
+   {
+    "hy": "նման",
+    "it": "simile"
+   },
+   {
+    "hy": "մնալ",
+    "it": "restare, rimanere"
    }
   ]
  },
  {
-  "after": "l053",
   "rid": "reading_l053",
-  "old": "reading_l035",
+  "after": "l053",
   "words": [
    {
-    "hy": "էլ",
-    "it": "anche, pure",
-    "cat": "funzionali",
-    "rank": 9,
-    "cop": 0.752,
-    "stato": "promozione",
-    "min": 51
+    "hy": "տեղ",
+    "it": "posto, luogo"
    },
    {
-    "hy": "դառնալ",
-    "it": "diventare",
-    "cat": "verbi",
-    "rank": 73,
-    "cop": 0.173,
-    "stato": "promozione",
-    "min": 51
+    "hy": "էլ",
+    "it": "anche, pure (segue la parola)"
    },
    {
     "hy": "իհարկե",
-    "it": "certo",
-    "cat": "avv_agg",
-    "rank": 268,
-    "cop": 0.054,
-    "stato": "promozione",
-    "min": 51
+    "it": "certo, naturalmente"
    },
    {
-    "hy": "տեղ",
-    "it": "posto",
-    "cat": "nomi",
-    "rank": 56,
-    "cop": 0.228,
-    "stato": "nuova",
-    "min": 51
+    "hy": "դառնալ",
+    "it": "diventare"
    }
   ]
  },
  {
-  "after": "l054",
   "rid": "reading_l054",
-  "old": "reading_l038",
+  "after": "l054",
   "words": [
    {
     "hy": "այդ",
-    "it": "codesto",
-    "cat": "funzionali",
-    "rank": 10,
-    "cop": 0.745,
-    "stato": "nuova",
-    "min": 51
-   },
-   {
-    "hy": "սկսել",
-    "it": "cominciare",
-    "cat": "verbi",
-    "rank": 94,
-    "cop": 0.136,
-    "stato": "nuova",
-    "min": 51
-   },
-   {
-    "hy": "կարևոր",
-    "it": "importante",
-    "cat": "avv_agg",
-    "rank": 295,
-    "cop": 0.0,
-    "stato": "nuova",
-    "min": 51
+    "it": "quel, quello (vicino a chi ascolta)"
    },
    {
     "hy": "հարց",
-    "it": "domanda, questione",
-    "cat": "nomi",
-    "rank": 65,
-    "cop": 0.2,
-    "stato": "nuova",
-    "min": 51
+    "it": "domanda, questione"
+   },
+   {
+    "hy": "կարևոր",
+    "it": "importante"
+   },
+   {
+    "hy": "սկսել",
+    "it": "cominciare"
    }
   ]
  },
  {
-  "after": "l056",
   "rid": "reading_l056",
-  "old": "reading_l040",
+  "after": "l056",
   "words": [
    {
-    "hy": "այս",
-    "it": "questo",
-    "cat": "funzionali",
-    "rank": 20,
-    "cop": 0.49,
-    "stato": "promozione",
-    "min": 51
+    "hy": "երկիր",
+    "it": "paese, terra"
    },
    {
-    "hy": "ստանալ",
-    "it": "ricevere",
-    "cat": "verbi",
-    "rank": 102,
-    "cop": 0.123,
-    "stato": "promozione",
-    "min": 51
+    "hy": "այս",
+    "it": "questo (vicino a chi parla)"
    },
    {
     "hy": "գուցե",
-    "it": "forse",
-    "cat": "avv_agg",
-    "rank": 336,
-    "cop": 0.044,
-    "stato": "nuova",
-    "min": 51
+    "it": "forse"
    },
    {
-    "hy": "երկիր",
-    "it": "paese",
-    "cat": "nomi",
-    "rank": 66,
-    "cop": 0.195,
-    "stato": "promozione",
-    "min": 51
+    "hy": "ստանալ",
+    "it": "ricevere"
    }
   ]
  },
  {
-  "after": "l058",
   "rid": "reading_l058",
-  "old": "reading_l042",
+  "after": "l058",
   "words": [
    {
     "hy": "այն",
-    "it": "quello",
-    "cat": "funzionali",
-    "rank": 22,
-    "cop": 0.482,
-    "stato": "promozione",
-    "min": 51
-   },
-   {
-    "hy": "անցնել",
-    "it": "passare",
-    "cat": "verbi",
-    "rank": 103,
-    "cop": 0.122,
-    "stato": "nuova",
-    "min": 51
-   },
-   {
-    "hy": "բավական",
-    "it": "abbastanza",
-    "cat": "avv_agg",
-    "rank": 339,
-    "cop": 0.044,
-    "stato": "nuova",
-    "min": 51
+    "it": "quello (lontano)"
    },
    {
     "hy": "ձեռք",
-    "it": "mano",
-    "cat": "nomi",
-    "rank": 75,
-    "cop": 0.168,
-    "stato": "promozione",
-    "min": 51
+    "it": "mano"
+   },
+   {
+    "hy": "բավական",
+    "it": "abbastanza, basta"
+   },
+   {
+    "hy": "անցնել",
+    "it": "passare"
    }
   ]
  },
  {
-  "after": "l060",
   "rid": "reading_l060",
+  "after": "l060",
   "words": [
    {
     "hy": "խոսք",
-    "it": "parola",
-    "cat": "nomi",
-    "rank": 83,
-    "cop": 0.148,
-    "stato": "nuova",
-    "min": 51
-   },
-   {
-    "hy": "ապա",
-    "it": "poi",
-    "cat": "avv_agg",
-    "rank": 104,
-    "cop": 0.121,
-    "stato": "nuova",
-    "min": 51
-   },
-   {
-    "hy": "նայել",
-    "it": "guardare",
-    "cat": "verbi",
-    "rank": 88,
-    "cop": 0.142,
-    "stato": "nuova",
-    "min": 51
+    "it": "parola, discorso"
    },
    {
     "hy": "համար",
-    "it": "per (postp.)",
-    "cat": "funzionali",
-    "rank": 17,
-    "cop": 0.586,
-    "stato": "promozione",
-    "min": 51
+    "it": "per (dopo il genitivo/dativo)"
+   },
+   {
+    "hy": "նայել",
+    "it": "guardare"
+   },
+   {
+    "hy": "ապա",
+    "it": "poi, in seguito"
    }
   ]
  },
  {
-  "after": "l061",
   "rid": "reading_l061",
+  "after": "l061",
   "words": [
    {
     "hy": "հետ",
-    "it": "con (postp.)",
-    "cat": "funzionali",
-    "rank": 21,
-    "cop": 0.485,
-    "stato": "promozione",
-    "min": 51
+    "it": "con (dopo il genitivo)"
    },
    {
     "hy": "հասնել",
-    "it": "arrivare",
-    "cat": "verbi",
-    "rank": 106,
-    "cop": 0.118,
-    "stato": "promozione",
-    "min": 51
+    "it": "arrivare"
    },
    {
     "hy": "դեռ",
-    "it": "ancora",
-    "cat": "avv_agg",
-    "rank": 109,
-    "cop": 0.115,
-    "stato": "promozione",
-    "min": 51
+    "it": "ancora, tuttora"
    },
    {
     "hy": "աչք",
-    "it": "occhio",
-    "cat": "nomi",
-    "rank": 86,
-    "cop": 0.145,
-    "stato": "nuova",
-    "min": 51
+    "it": "occhio"
    }
   ]
  },
  {
-  "after": "l063",
   "rid": "reading_l063",
+  "after": "l063",
   "words": [
    {
     "hy": "դեպք",
-    "it": "caso, evento",
-    "cat": "nomi",
-    "rank": 90,
-    "cop": 0.139,
-    "stato": "nuova",
-    "min": 51
-   },
-   {
-    "hy": "հաճախ",
-    "it": "spesso",
-    "cat": "avv_agg",
-    "rank": 387,
-    "cop": 0.038,
-    "stato": "nuova",
-    "min": 51
-   },
-   {
-    "hy": "գտնել",
-    "it": "trovare",
-    "cat": "verbi",
-    "rank": 107,
-    "cop": 0.116,
-    "stato": "nuova",
-    "min": 51
+    "it": "caso, fatto, episodio"
    },
    {
     "hy": "դա",
-    "it": "ciò, questo",
-    "cat": "funzionali",
-    "rank": 25,
-    "cop": 0.457,
-    "stato": "nuova",
-    "min": 51
+    "it": "ciò, questa cosa"
+   },
+   {
+    "hy": "գտնել",
+    "it": "trovare"
+   },
+   {
+    "hy": "հաճախ",
+    "it": "spesso"
    }
   ]
  },
  {
-  "after": "l065",
   "rid": "reading_l065",
+  "after": "l065",
   "words": [
    {
+    "hy": "կյանք",
+    "it": "vita"
+   },
+   {
     "hy": "նաև",
-    "it": "anche, inoltre",
-    "cat": "funzionali",
-    "rank": 36,
-    "cop": 0.0,
-    "stato": "nuova",
-    "min": 51
+    "it": "anche, inoltre"
    },
    {
     "hy": "մտնել",
-    "it": "entrare",
-    "cat": "verbi",
-    "rank": 110,
-    "cop": 0.115,
-    "stato": "nuova",
-    "min": 51
+    "it": "entrare"
    },
    {
     "hy": "դժվար",
-    "it": "difficile",
-    "cat": "avv_agg",
-    "rank": 407,
-    "cop": 0.037,
-    "stato": "promozione",
-    "min": 51
-   },
-   {
-    "hy": "կյանք",
-    "it": "vita",
-    "cat": "nomi",
-    "rank": 92,
-    "cop": 0.138,
-    "stato": "nuova",
-    "min": 51
+    "it": "difficile"
    }
   ]
  },
  {
-  "after": "l066",
   "rid": "reading_l066",
+  "after": "l066",
   "words": [
    {
     "hy": "վերջ",
-    "it": "fine",
-    "cat": "nomi",
-    "rank": 100,
-    "cop": 0.125,
-    "stato": "nuova",
-    "min": 51
-   },
-   {
-    "hy": "պատրաստ",
-    "it": "pronto",
-    "cat": "avv_agg",
-    "rank": 448,
-    "cop": 0.033,
-    "stato": "promozione",
-    "min": 51
-   },
-   {
-    "hy": "բերել",
-    "it": "portare",
-    "cat": "verbi",
-    "rank": 113,
-    "cop": 0.112,
-    "stato": "promozione",
-    "min": 51
+    "it": "fine"
    },
    {
     "hy": "ինչպես",
-    "it": "come",
-    "cat": "funzionali",
-    "rank": 37,
-    "cop": 0.301,
-    "stato": "nuova",
-    "min": 51
+    "it": "come"
+   },
+   {
+    "hy": "բերել",
+    "it": "portare"
+   },
+   {
+    "hy": "պատրաստ",
+    "it": "pronto"
    }
   ]
  },
  {
-  "after": "l068",
   "rid": "reading_l068",
+  "after": "l068",
   "words": [
    {
+    "hy": "աշխարհ",
+    "it": "mondo"
+   },
+   {
     "hy": "միայն",
-    "it": "solo",
-    "cat": "funzionali",
-    "rank": 46,
-    "cop": 0.264,
-    "stato": "nuova",
-    "min": 51
+    "it": "solo, soltanto"
    },
    {
     "hy": "լսել",
-    "it": "ascoltare, sentire",
-    "cat": "verbi",
-    "rank": 122,
-    "cop": 0.106,
-    "stato": "nuova",
-    "min": 51
+    "it": "ascoltare, sentire"
    },
    {
     "hy": "ազատ",
-    "it": "libero",
-    "cat": "avv_agg",
-    "rank": 729,
-    "cop": 0.02,
-    "stato": "promozione",
-    "min": 51
-   },
-   {
-    "hy": "աշխարհ",
-    "it": "mondo",
-    "cat": "nomi",
-    "rank": 101,
-    "cop": 0.124,
-    "stato": "nuova",
-    "min": 51
+    "it": "libero"
    }
   ]
  },
  {
-  "after": "l070",
   "rid": "reading_l070",
+  "after": "l070",
   "words": [
    {
     "hy": "պատճառ",
-    "it": "motivo",
-    "cat": "nomi",
-    "rank": 129,
-    "cop": 0.102,
-    "stato": "nuova",
-    "min": 51
+    "it": "motivo, causa"
    },
    {
     "hy": "հետաքրքիր",
-    "it": "interessante",
-    "cat": "avv_agg",
-    "rank": 782,
-    "cop": 0.019,
-    "stato": "promozione",
-    "min": 51
+    "it": "interessante"
    },
    {
     "hy": "դնել",
-    "it": "mettere",
-    "cat": "verbi",
-    "rank": 139,
-    "cop": 0.098,
-    "stato": "nuova",
-    "min": 51
+    "it": "mettere"
    },
    {
     "hy": "բոլոր",
-    "it": "tutti",
-    "cat": "funzionali",
-    "rank": 48,
-    "cop": 0.263,
-    "stato": "nuova",
-    "min": 51
+    "it": "tutti"
    }
   ]
  },
  {
-  "after": "l071",
   "rid": "reading_l071",
+  "after": "l071",
   "words": [
    {
-    "hy": "ամեն",
-    "it": "ogni",
-    "cat": "funzionali",
-    "rank": 51,
-    "cop": 0.247,
-    "stato": "promozione",
-    "min": 51
+    "hy": "աղջիկ",
+    "it": "ragazza"
    },
    {
     "hy": "նստել",
-    "it": "sedersi",
-    "cat": "verbi",
-    "rank": 147,
-    "cop": 0.095,
-    "stato": "promozione",
-    "min": 51
+    "it": "sedersi"
    },
    {
     "hy": "չափազանց",
-    "it": "troppo",
-    "cat": "avv_agg",
-    "rank": 968,
-    "cop": 0.015,
-    "stato": "nuova",
-    "min": 51
+    "it": "troppo, estremamente"
    },
    {
-    "hy": "աղջիկ",
-    "it": "ragazza",
-    "cat": "nomi",
-    "rank": 136,
-    "cop": 0.099,
-    "stato": "nuova",
-    "min": 51
+    "hy": "ամեն",
+    "it": "ogni, ciascuno"
    }
   ]
  },
  {
-  "after": "l073",
   "rid": "reading_l073",
+  "after": "l073",
   "words": [
    {
     "hy": "ձայն",
-    "it": "voce",
-    "cat": "nomi",
-    "rank": 159,
-    "cop": 0.09,
-    "stato": "promozione",
-    "min": 51
-   },
-   {
-    "hy": "հեշտ",
-    "it": "facile",
-    "cat": "avv_agg",
-    "rank": 995,
-    "cop": 0.014,
-    "stato": "promozione",
-    "min": 51
-   },
-   {
-    "hy": "հասկանալ",
-    "it": "capire",
-    "cat": "verbi",
-    "rank": 153,
-    "cop": 0.093,
-    "stato": "promozione",
-    "min": 51
+    "it": "voce, suono"
    },
    {
     "hy": "ինչու",
-    "it": "perché?",
-    "cat": "funzionali",
-    "rank": 116,
-    "cop": 0.11,
-    "stato": "promozione",
-    "min": 51
+    "it": "perché (domanda)"
+   },
+   {
+    "hy": "հասկանալ",
+    "it": "capire"
+   },
+   {
+    "hy": "հեշտ",
+    "it": "facile"
    }
   ]
  },
  {
-  "after": "l075",
   "rid": "reading_l075",
+  "after": "l075",
   "words": [
    {
     "hy": "ուրիշ",
-    "it": "un altro",
-    "cat": "funzionali",
-    "rank": 123,
-    "cop": 0.105,
-    "stato": "promozione",
-    "min": 51
+    "it": "altro, diverso"
    },
    {
     "hy": "գրել",
-    "it": "scrivere",
-    "cat": "verbi",
-    "rank": 167,
-    "cop": 0.084,
-    "stato": "promozione",
-    "min": 51
+    "it": "scrivere"
    },
    {
     "hy": "էժան",
-    "it": "economico",
-    "cat": "avv_agg",
-    "rank": 2424,
-    "cop": 0.004,
-    "stato": "nuova",
-    "min": 51
+    "it": "economico, a buon mercato"
    },
    {
     "hy": "երեխա",
-    "it": "bambino",
-    "cat": "nomi",
-    "rank": 161,
-    "cop": 0.089,
-    "stato": "nuova",
-    "min": 51
+    "it": "bambino"
    }
   ]
  },
  {
-  "after": "l077",
   "rid": "reading_l077",
+  "after": "l077",
   "words": [
    {
     "hy": "ուժ",
-    "it": "forza",
-    "cat": "nomi",
-    "rank": 164,
-    "cop": 0.086,
-    "stato": "nuova",
-    "min": 51
+    "it": "forza, energia"
    },
    {
     "hy": "զբաղված",
-    "it": "occupato",
-    "cat": "avv_agg",
-    "rank": null,
-    "cop": 0.0,
-    "stato": "nuova",
-    "min": 51
+    "it": "occupato, impegnato"
    },
    {
     "hy": "կարողանալ",
-    "it": "potere, riuscire",
-    "cat": "verbi",
-    "rank": 171,
-    "cop": 0.083,
-    "stato": "nuova",
-    "min": 51
+    "it": "potere, riuscire"
    },
    {
     "hy": "դուրս",
-    "it": "fuori",
-    "cat": "funzionali",
-    "rank": 148,
-    "cop": 0.095,
-    "stato": "nuova",
-    "min": 51
+    "it": "fuori"
    }
   ]
  },
  {
-  "after": "l078",
   "rid": "reading_l078",
+  "after": "l078",
   "words": [
    {
+    "hy": "ճանապարհ",
+    "it": "strada, cammino"
+   },
+   {
     "hy": "մինչև",
-    "it": "fino a",
-    "cat": "funzionali",
-    "rank": 77,
-    "cop": 0.0,
-    "stato": "nuova",
-    "min": 73
+    "it": "fino a"
    },
    {
     "hy": "կանգնել",
-    "it": "fermarsi",
-    "cat": "verbi",
-    "rank": 174,
-    "cop": 0.082,
-    "stato": "nuova",
-    "min": 51
+    "it": "fermarsi, stare in piedi"
    },
    {
     "hy": "արդեն",
-    "it": "già",
-    "cat": "avv_agg",
-    "rank": 142,
-    "cop": 0.097,
-    "stato": "nuova",
-    "min": 55
-   },
-   {
-    "hy": "ճանապարհ",
-    "it": "strada",
-    "cat": "nomi",
-    "rank": 181,
-    "cop": 0.08,
-    "stato": "promozione",
-    "min": 51
+    "it": "già"
    }
   ]
  },
  {
-  "after": "l080",
   "rid": "reading_l080",
+  "after": "l080",
   "words": [
    {
     "hy": "միտք",
-    "it": "pensiero, idea",
-    "cat": "nomi",
-    "rank": 190,
-    "cop": 0.076,
-    "stato": "nuova",
-    "min": 51
+    "it": "pensiero, idea"
    },
    {
     "hy": "երբեք",
-    "it": "mai",
-    "cat": "avv_agg",
-    "rank": 362,
-    "cop": 0.041,
-    "stato": "nuova",
-    "min": 55
+    "it": "mai"
    },
    {
     "hy": "հարցնել",
-    "it": "chiedere",
-    "cat": "verbi",
-    "rank": 176,
-    "cop": 0.081,
-    "stato": "nuova",
-    "min": 51
+    "it": "chiedere"
    },
    {
     "hy": "մասին",
-    "it": "riguardo a",
-    "cat": "funzionali",
-    "rank": 81,
-    "cop": 0.151,
-    "stato": "nuova",
-    "min": 73
+    "it": "riguardo a, su (dopo il genitivo)"
    }
   ]
  },
  {
-  "after": "l082",
   "rid": "reading_l082",
+  "after": "l082",
   "words": [
    {
-    "hy": "դեպի",
-    "it": "verso",
-    "cat": "funzionali",
-    "rank": 125,
-    "cop": 0.105,
-    "stato": "nuova",
-    "min": 73
-   },
-   {
-    "hy": "թողնել",
-    "it": "lasciare",
-    "cat": "verbi",
-    "rank": 178,
-    "cop": 0.081,
-    "stato": "nuova",
-    "min": 51
+    "hy": "պատասխան",
+    "it": "risposta"
    },
    {
     "hy": "հենց",
-    "it": "proprio",
-    "cat": "avv_agg",
-    "rank": 117,
-    "cop": 0.109,
-    "stato": "nuova",
-    "min": 60
+    "it": "proprio, esattamente"
    },
    {
-    "hy": "պատասխան",
-    "it": "risposta",
-    "cat": "nomi",
-    "rank": 280,
-    "cop": 0.052,
-    "stato": "nuova",
-    "min": 51
+    "hy": "դեպի",
+    "it": "verso"
+   },
+   {
+    "hy": "թողնել",
+    "it": "lasciare"
    }
   ]
  },
  {
-  "after": "l083",
   "rid": "reading_l083",
+  "after": "l083",
   "words": [
    {
     "hy": "կողմ",
-    "it": "lato, parte",
-    "cat": "nomi",
-    "rank": 61,
-    "cop": 0.208,
-    "stato": "promozione",
-    "min": 75
+    "it": "lato, parte"
    },
    {
     "hy": "նույն",
-    "it": "stesso",
-    "cat": "avv_agg",
-    "rank": 121,
-    "cop": 0.107,
-    "stato": "nuova",
-    "min": 78
-   },
-   {
-    "hy": "պատասխանել",
-    "it": "rispondere",
-    "cat": "verbi",
-    "rank": 189,
-    "cop": 0.076,
-    "stato": "nuova",
-    "min": 51
+    "it": "stesso, medesimo"
    },
    {
     "hy": "առանց",
-    "it": "senza",
-    "cat": "funzionali",
-    "rank": 135,
-    "cop": 0.099,
-    "stato": "nuova",
-    "min": 73
+    "it": "senza"
+   },
+   {
+    "hy": "պատասխանել",
+    "it": "rispondere"
    }
   ]
  },
  {
-  "after": "l085",
   "rid": "reading_l085",
+  "after": "l085",
   "words": [
    {
-    "hy": "տակ",
-    "it": "sotto",
-    "cat": "funzionali",
-    "rank": 105,
-    "cop": 0.12,
-    "stato": "nuova",
-    "min": 75
-   },
-   {
     "hy": "զգալ",
-    "it": "sentirsi",
-    "cat": "verbi",
-    "rank": 210,
-    "cop": 0.068,
-    "stato": "nuova",
-    "min": 51
-   },
-   {
-    "hy": "թե",
-    "it": "se; oppure",
-    "cat": "funzionali",
-    "rank": 11,
-    "cop": 0.696,
-    "stato": "promozione",
-    "min": 83
+    "it": "sentire, provare"
    },
    {
     "hy": "իսկ",
-    "it": "invece, e",
-    "cat": "funzionali",
-    "rank": 27,
-    "cop": 0.452,
-    "stato": "promozione",
-    "min": 83
+    "it": "invece, mentre"
+   },
+   {
+    "hy": "տակ",
+    "it": "sotto (dopo il genitivo)"
+   },
+   {
+    "hy": "թե",
+    "it": "se, che (dopo verbi di sapere/dire)"
    }
   ]
  },
  {
-  "after": "l087",
   "rid": "reading_l087",
+  "after": "l087",
   "words": [
    {
     "hy": "իմանալ",
-    "it": "sapere",
-    "cat": "verbi",
-    "rank": 232,
-    "cop": 0.062,
-    "stato": "nuova",
-    "min": 51
+    "it": "sapere, venire a sapere"
    },
    {
     "hy": "այլ",
-    "it": "altro; ma",
-    "cat": "funzionali",
-    "rank": 50,
-    "cop": 0.247,
-    "stato": "nuova",
-    "min": 84
+    "it": "altro"
    },
    {
     "hy": "սակայն",
-    "it": "però",
-    "cat": "funzionali",
-    "rank": 74,
-    "cop": 0.169,
-    "stato": "nuova",
-    "min": 84
+    "it": "però, tuttavia"
    },
    {
     "hy": "մտածել",
-    "it": "pensare",
-    "cat": "verbi",
-    "rank": 241,
-    "cop": 0.06,
-    "stato": "nuova",
-    "min": 51
+    "it": "pensare"
    }
   ]
  },
  {
-  "after": "l089",
   "rid": "reading_l089",
+  "after": "l089",
   "words": [
    {
     "hy": "վերցնել",
-    "it": "prendere",
-    "cat": "verbi",
-    "rank": 253,
-    "cop": 0.057,
-    "stato": "nuova",
-    "min": 51
+    "it": "prendere"
    },
    {
     "hy": "հիշել",
-    "it": "ricordare",
-    "cat": "verbi",
-    "rank": 265,
-    "cop": 0.055,
-    "stato": "nuova",
-    "min": 51
+    "it": "ricordare"
    },
    {
     "hy": "բացել",
-    "it": "aprire",
-    "cat": "verbi",
-    "rank": 267,
-    "cop": 0.055,
-    "stato": "nuova",
-    "min": 51
+    "it": "aprire"
    },
    {
     "hy": "բարձրանալ",
-    "it": "salire",
-    "cat": "verbi",
-    "rank": 273,
-    "cop": 0.053,
-    "stato": "nuova",
-    "min": 51
+    "it": "salire"
    }
   ]
  },
  {
-  "after": "l090",
   "rid": "reading_l090",
+  "after": "l090",
   "words": [
    {
+    "hy": "պատմել",
+    "it": "raccontare"
+   },
+   {
     "hy": "շարունակել",
-    "it": "continuare",
-    "cat": "verbi",
-    "rank": 275,
-    "cop": 0.053,
-    "stato": "nuova",
-    "min": 51
+    "it": "continuare"
    },
    {
     "hy": "մոտենալ",
-    "it": "avvicinarsi",
-    "cat": "verbi",
-    "rank": 287,
-    "cop": 0.05,
-    "stato": "nuova",
-    "min": 51
+    "it": "avvicinarsi"
    },
    {
     "hy": "փորձել",
-    "it": "provare",
-    "cat": "verbi",
-    "rank": 306,
-    "cop": 0.048,
-    "stato": "nuova",
-    "min": 51
-   },
-   {
-    "hy": "պատմել",
-    "it": "raccontare",
-    "cat": "verbi",
-    "rank": 309,
-    "cop": 0.047,
-    "stato": "nuova",
-    "min": 51
+    "it": "provare, tentare"
    }
   ]
  },
  {
-  "after": "l092",
   "rid": "reading_l092",
+  "after": "l092",
   "words": [
    {
-    "hy": "պահել",
-    "it": "tenere",
-    "cat": "verbi",
-    "rank": 314,
-    "cop": 0.047,
-    "stato": "nuova",
-    "min": 51
+    "hy": "որոշել",
+    "it": "decidere"
    },
    {
-    "hy": "որոշել",
-    "it": "decidere",
-    "cat": "verbi",
-    "rank": 334,
-    "cop": 0.044,
-    "stato": "nuova",
-    "min": 51
+    "hy": "պահել",
+    "it": "tenere, conservare"
    },
    {
     "hy": "վախենալ",
-    "it": "avere paura",
-    "cat": "verbi",
-    "rank": 479,
-    "cop": 0.031,
-    "stato": "nuova",
-    "min": 51
+    "it": "avere paura"
    },
    {
     "hy": "իջնել",
-    "it": "scendere",
-    "cat": "verbi",
-    "rank": 480,
-    "cop": 0.031,
-    "stato": "nuova",
-    "min": 51
+    "it": "scendere"
    }
   ]
  }
