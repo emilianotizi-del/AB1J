@@ -1,15 +1,9 @@
 Nota: impossibile leggere il credito (HTTP 401).
-w950.mp3 ← ազատ [eleven_v3] (6287 B)
-w951.mp3 ← աղջիկ [eleven_v3] (5974 B)
-w952.mp3 ← աշխարհ [eleven_v3] (5243 B)
-w953.mp3 ← բոլոր [eleven_v3] (6287 B)
-w954.mp3 ← դնել [eleven_v3] (5556 B)
-w955.mp3 ← լսել [eleven_v3] (5243 B)
-w956.mp3 ← հեշտ [eleven_v3] (6287 B)
-w957.mp3 ← հետաքրքիր [eleven_v3] (9736 B)
-w958.mp3 ← միայն [eleven_v3] (5556 B)
-w959.mp3 ← նստել [eleven_v3] (5974 B)
-w960.mp3 ← չափազանց [eleven_v3] (8168 B)
-w961.mp3 ← պատճառ [eleven_v3] (8795 B)
+w962.mp3 ← ամեն [eleven_v3] (5556 B)
+w963.mp3 ← գրել [eleven_v3] (6914 B)
+w964.mp3 ← երեխա [eleven_v3] (7228 B)
+w965.mp3 ← էժան [eleven_v3] (7541 B)
+w966.mp3 ← հասկանալ [eleven_v3] (6914 B)
+w967.mp3 ← ուրիշ [eleven_v3] (4929 B)
 
-12 tracce generate/aggiornate, 960 totali
+6 tracce generate/aggiornate, 966 totali
