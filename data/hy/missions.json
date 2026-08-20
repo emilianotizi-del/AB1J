@@ -355,6 +355,15 @@
       "after": "l048",
       "icon": "📖",
       "qLang": "hy"
+    },
+    {
+      "id": "reading_l028",
+      "kind": "reading",
+      "title": "Davit e la mia famiglia",
+      "area": "Letture",
+      "after": "l028",
+      "icon": "📖",
+      "qLang": "it"
     }
   ]
 }

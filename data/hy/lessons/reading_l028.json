@@ -1,0 +1,110 @@
+{
+  "id": "reading_l028",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Դավիթը ու իմ ընտանիքը",
+      "text": "Իմ անունը Դավիթ է։ Ես հայ եմ։ Իմ ընտանիքը փոքր է։ Իմ տունը նոր է։ Իմ հայրը ու իմ մայրը լավ մարդ են։ Իմ տատը լավ մարդ է։ Իմ քույրը ու իմ մայրը շատ նման են։ Իմ հայրը ու իմ եղբայրը նման են։ Հիմա իմ հայրը ու իմ մայրը գնում են։ Իմ քույրը տուն է մնում։ Իմ տատը տուն է մնում։ Ես հաց եմ ուտում ու ջուր եմ խմում։ Իմ քույրը խնձոր է ուտում։ Ես հայերեն եմ սովորում։ Իմ օրը լավ է։",
+      "it": "Il mio nome è Davit. Sono armeno. La mia famiglia è piccola. La mia casa è nuova. Mio padre e mia madre sono brave persone. Mia nonna è una brava persona. Mia sorella e mia madre sono molto simili. Mio padre e mio fratello sono simili. Adesso mio padre e mia madre vanno via. Mia sorella resta a casa. Mia nonna resta a casa. Io mangio pane e bevo acqua. Mia sorella mangia una mela. Io studio armeno. La mia giornata è bella.",
+      "qLang": "it",
+      "newWords": [
+        {
+          "hy": "ու",
+          "tr": "u",
+          "ipa": "[u]",
+          "it": "e (nel parlato, al posto di և)"
+        },
+        {
+          "hy": "մարդ",
+          "tr": "mard",
+          "ipa": "[mɑɾd]",
+          "it": "persona, uomo"
+        },
+        {
+          "hy": "նման",
+          "tr": "nman",
+          "ipa": "[nəˈmɑn]",
+          "it": "simile"
+        },
+        {
+          "hy": "մնալ",
+          "tr": "mnal",
+          "ipa": "[məˈnɑl]",
+          "it": "restare, rimanere"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Com'è la famiglia di Davit?",
+          "options": [
+            {
+              "text": "Piccola",
+              "ok": true
+            },
+            {
+              "text": "Grande",
+              "ok": false
+            },
+            {
+              "text": "Nuova",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Chi è simile a sua madre?",
+          "options": [
+            {
+              "text": "Sua sorella",
+              "ok": true
+            },
+            {
+              "text": "Suo fratello",
+              "ok": false
+            },
+            {
+              "text": "Sua nonna",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Chi resta a casa?",
+          "options": [
+            {
+              "text": "Sua sorella e sua nonna",
+              "ok": true
+            },
+            {
+              "text": "Suo padre e sua madre",
+              "ok": false
+            },
+            {
+              "text": "Solo Davit",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Cosa mangia la sorella?",
+          "options": [
+            {
+              "text": "Una mela",
+              "ok": true
+            },
+            {
+              "text": "Del pane",
+              "ok": false
+            },
+            {
+              "text": "Beve acqua",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
