@@ -526,6 +526,24 @@
       "after": "l082",
       "icon": "📖",
       "qLang": "it"
+    },
+    {
+      "id": "reading_l085",
+      "kind": "reading",
+      "title": "E io che cosa sento",
+      "area": "Letture",
+      "after": "l085",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l083",
+      "kind": "reading",
+      "title": "Lo stesso lato",
+      "area": "Letture",
+      "after": "l083",
+      "icon": "📖",
+      "qLang": "it"
     }
   ]
 }

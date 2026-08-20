@@ -1,0 +1,110 @@
+{
+  "id": "reading_l085",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Իսկ ես ի՞նչ եմ զգում",
+      "text": "Երեկ անձրև էր։ Ես կանգնեցի մի ծառի տակ։ Իմ մոտ կանգնեց մի աղջիկ։ Նա հարցրեց. «Դուք գիտեք, թե երբ կգնա անձրևը»։ Ես ասացի. «Չեմ գիտի, բայց ծառի տակ լավ է»։ Նա ծիծաղեց։ Մենք խոսեցինք համալսարանի մասին։ Նա ուսանող է, իսկ ես աշխատում եմ։ Ես զգացի, որ այդ ժամանակը կարևոր էր։ Իսկ նա՝ գուցե ոչ։ Երբ անձրևը գնաց, աղջիկը էլ գնաց։ Ես մնացի ծառի տակ ու զգացի մի նոր բան. Իսկ ես ի՞նչ եմ զգում։ լավ է կանգնել ու նայել, երբ գիտես, թե ինչու ես այնտեղ։",
+      "it": "Ieri pioveva. Mi sono fermato sotto un albero. Vicino a me si è fermata una ragazza. Ha chiesto: «Lei sa quando se ne andrà la pioggia?». Ho detto: «Non lo so, ma sotto l'albero si sta bene». Lei ha riso. Abbiamo parlato dell'università. Lei è studentessa, mentre io lavoro. Ho sentito che quel momento era importante. Lei invece forse no. Io invece volevo parlare. Quando la pioggia se n'è andata, anche la ragazza è andata via. Sono rimasto sotto l'albero e ho sentito una cosa nuova. E io che cosa sento? è bello fermarsi e guardare, quando sai perché sei lì.",
+      "qLang": "it",
+      "newWords": [
+        {
+          "hy": "զգալ",
+          "tr": "zgal",
+          "ipa": "[zəˈgɑl]",
+          "it": "sentire, provare"
+        },
+        {
+          "hy": "իսկ",
+          "tr": "isk",
+          "ipa": "[isk]",
+          "it": "invece, mentre"
+        },
+        {
+          "hy": "տակ",
+          "tr": "tak",
+          "ipa": "[tɑk]",
+          "it": "sotto (dopo il genitivo)"
+        },
+        {
+          "hy": "թե",
+          "tr": "t'e",
+          "ipa": "[tʰɛ]",
+          "it": "se, che (dopo verbi di sapere/dire)"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Dove si è fermato?",
+          "options": [
+            {
+              "text": "Sotto un albero",
+              "ok": true
+            },
+            {
+              "text": "In un negozio",
+              "ok": false
+            },
+            {
+              "text": "Alla fermata",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa ha chiesto la ragazza?",
+          "options": [
+            {
+              "text": "Quando sarebbe finita la pioggia",
+              "ok": true
+            },
+            {
+              "text": "Che ora era",
+              "ok": false
+            },
+            {
+              "text": "Dove abitava",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che differenza c'è tra loro due?",
+          "options": [
+            {
+              "text": "Lei studia, lui lavora",
+              "ok": true
+            },
+            {
+              "text": "Lei lavora, lui studia",
+              "ok": false
+            },
+            {
+              "text": "Studiano insieme",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa ha capito alla fine?",
+          "options": [
+            {
+              "text": "Che è bello fermarsi quando sai perché sei lì",
+              "ok": true
+            },
+            {
+              "text": "Che la pioggia è noiosa",
+              "ok": false
+            },
+            {
+              "text": "Che doveva andare via prima",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
