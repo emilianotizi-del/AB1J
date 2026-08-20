@@ -1,0 +1,110 @@
+{
+  "id": "reading_l040",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Իմ երկիրը",
+      "text": "Ես իտալացի եմ։ Իմ երկիրը Իտալիան է։ Հիմա ես հայերեն եմ սովորում։ Հայաստանը փոքր երկիր է։ Այս երկիրը շատ լավն է։ Այսօր ես մի բան եմ ստանում. «Դու Հայաստան ես գնում այս տարի»։ Գուցե այո, գուցե ոչ։ Իմ ընտանիքը ասում է. «Գուցե այս տարի»։ Ես մի լավ բան եմ ստանում իմ մայրից. «Այս երկիրը լավ երկիր է»։ Ես ուրախ եմ։ Այս երկիրը իմն է, այն երկիրը էլ իմն է դառնում։",
+      "it": "Sono italiano. Il mio paese è l'Italia. Adesso studio armeno. L'Armenia è un paese piccolo. Questo paese è molto bello. Oggi ricevo una domanda: «Vai in Armenia quest'anno?». Forse sì, forse no. La mia famiglia dice: «Forse quest'anno». Ricevo una risposta da mia madre: «Questo paese è un bel paese». Sono contento. Questo paese è mio, e anche quel paese sta diventando mio.",
+      "qLang": "it",
+      "newWords": [
+        {
+          "hy": "երկիր",
+          "tr": "yerkir",
+          "ipa": "[jɛɾˈkiɾ]",
+          "it": "paese, terra"
+        },
+        {
+          "hy": "այս",
+          "tr": "ays",
+          "ipa": "[ɑjs]",
+          "it": "questo (vicino a chi parla)"
+        },
+        {
+          "hy": "գուցե",
+          "tr": "guts'e",
+          "ipa": "[guˈtsʰɛ]",
+          "it": "forse"
+        },
+        {
+          "hy": "ստանալ",
+          "tr": "stanal",
+          "ipa": "[stɑˈnɑl]",
+          "it": "ricevere"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Di dov'è chi racconta?",
+          "options": [
+            {
+              "text": "Dell'Italia",
+              "ok": true
+            },
+            {
+              "text": "Dall'Armenia",
+              "ok": false
+            },
+            {
+              "text": "Non si dice",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa riceve oggi?",
+          "options": [
+            {
+              "text": "Una proposta di andare in Armenia",
+              "ok": true
+            },
+            {
+              "text": "Dei soldi",
+              "ok": false
+            },
+            {
+              "text": "Un libro",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa risponde la famiglia?",
+          "options": [
+            {
+              "text": "Forse quest'anno",
+              "ok": true
+            },
+            {
+              "text": "Sicuramente mai",
+              "ok": false
+            },
+            {
+              "text": "L'anno scorso",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Da chi riceve una bella parola?",
+          "options": [
+            {
+              "text": "Da sua madre",
+              "ok": true
+            },
+            {
+              "text": "Da suo padre",
+              "ok": false
+            },
+            {
+              "text": "Da sua sorella",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "reading_l042",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Այն օրը",
+      "text": "Այն օրը ես շատ բան եմ անում։ Ես թեյ եմ խմում ու պանիր եմ ուտում։ Ես հայերեն եմ սովորում։ Ես գիտեմ շատ նոր բան։ Իմ հայրը մեծ ձեռք ունի։ Ես փոքր ձեռք ունեմ։ Իմ հայրը ասում է. «Այն ձեռքը փոքր է, այս ձեռքը մեծ է, ու երկուսն էլ լավ ձեռք են»։ Ժամանակը անցնում է։ Այն ժամը անցնում է, այս ժամը էլ անցնում է։ Ես ուզում եմ շատ բան անել։ Այսօր ժամանակը բավական է։ Այն օրը լավ օր է։ Հիմա ես գիտեմ. բավական ժամանակ ունեմ։",
+      "it": "Quel giorno faccio molte cose. Bevo tè e mangio formaggio. Studio armeno. So molte cose nuove. Mio padre ha una mano grande. Io ho una mano piccola. Mio padre dice: «Quella mano è piccola, questa mano è grande, e tutte e due sono buone mani». Il tempo passa. Quell'ora passa, e anche questa ora passa. Voglio fare molte cose. Oggi il tempo è abbastanza. Quel giorno è una bella giornata. Adesso lo so: ho abbastanza tempo.",
+      "qLang": "it",
+      "newWords": [
+        {
+          "hy": "այն",
+          "tr": "ayn",
+          "ipa": "[ɑjn]",
+          "it": "quello (lontano)"
+        },
+        {
+          "hy": "ձեռք",
+          "tr": "dzeṙk'",
+          "ipa": "[dzɛrkʰ]",
+          "it": "mano"
+        },
+        {
+          "hy": "բավական",
+          "tr": "bavakan",
+          "ipa": "[bɑvɑˈkɑn]",
+          "it": "abbastanza, basta"
+        },
+        {
+          "hy": "անցնել",
+          "tr": "ants'nel",
+          "ipa": "[ɑntsʰˈnɛl]",
+          "it": "passare"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Che cosa beve chi racconta?",
+          "options": [
+            {
+              "text": "Tè",
+              "ok": true
+            },
+            {
+              "text": "Caffè",
+              "ok": false
+            },
+            {
+              "text": "Acqua",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Com'è la mano di suo padre?",
+          "options": [
+            {
+              "text": "Grande",
+              "ok": true
+            },
+            {
+              "text": "Piccola",
+              "ok": false
+            },
+            {
+              "text": "Non si dice",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa dice del tempo alla fine?",
+          "options": [
+            {
+              "text": "Che ne ha abbastanza",
+              "ok": true
+            },
+            {
+              "text": "Che non ne ha",
+              "ok": false
+            },
+            {
+              "text": "Che passa lentamente",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Com'è quel giorno per lui?",
+          "options": [
+            {
+              "text": "Una bella giornata",
+              "ok": true
+            },
+            {
+              "text": "Una giornata difficile",
+              "ok": false
+            },
+            {
+              "text": "Una giornata triste",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

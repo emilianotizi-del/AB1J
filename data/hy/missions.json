@@ -364,6 +364,42 @@
       "after": "l028",
       "icon": "📖",
       "qLang": "it"
+    },
+    {
+      "id": "reading_l035",
+      "kind": "reading",
+      "title": "Il posto nuovo",
+      "area": "Letture",
+      "after": "l035",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l038",
+      "kind": "reading",
+      "title": "La domanda importante",
+      "area": "Letture",
+      "after": "l038",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l040",
+      "kind": "reading",
+      "title": "Il mio paese",
+      "area": "Letture",
+      "after": "l040",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l042",
+      "kind": "reading",
+      "title": "Quel giorno",
+      "area": "Letture",
+      "after": "l042",
+      "icon": "📖",
+      "qLang": "it"
     }
   ]
 }
