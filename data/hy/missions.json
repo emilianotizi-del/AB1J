@@ -418,6 +418,33 @@
       "after": "l061",
       "icon": "📖",
       "qLang": "it"
+    },
+    {
+      "id": "reading_l063",
+      "kind": "reading",
+      "title": "Il fatto al mercato",
+      "area": "Letture",
+      "after": "l063",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l065",
+      "kind": "reading",
+      "title": "La mia vita in quegli anni",
+      "area": "Letture",
+      "after": "l065",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l066",
+      "kind": "reading",
+      "title": "La fine dell inverno",
+      "area": "Letture",
+      "after": "l066",
+      "icon": "📖",
+      "qLang": "it"
     }
   ]
 }

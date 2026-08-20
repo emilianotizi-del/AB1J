@@ -1,0 +1,110 @@
+{
+  "id": "reading_l063",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Այն դեպքը շուկայում",
+      "text": "Երեկ ինձ հետ մի դեպք եղավ։ Առավոտյան ես շուտ արթնացա ու սուրճ խմեցի։ Հետո ես շուկա գնացի։ Ամեն շաբաթ ես շուկա եմ գնում։ Իմ փողը սեղանի մոտ մնաց։ Դա դժվար դեպք էր։ Բայց մի կին եկավ ու ասաց. «Դա ձեր փողն է»։ Նա գտավ իմ փողը ու ինձ տվեց։ Ես ուրախ էի. ես գտա իմ փողը։ Ես շատ ուրախ էի։ Դա լավ դեպք էր։ Հիմա ես հաճախ եմ գնում այդ շուկան։ Ես հաճախ եմ խոսում այդ դեպքի մասին։",
+      "it": "Ieri mi è successo un fatto. La mattina mi sono svegliato presto e ho bevuto un caffè. Poi sono andato al mercato. Ogni settimana vado al mercato. I miei soldi sono rimasti vicino a un tavolo. È stato un fatto spiacevole. Ma è arrivata una donna e ha detto: «Questi sono i suoi soldi». Ha trovato i miei soldi e me li ha dati. Ero contento: avevo ritrovato i miei soldi. Ero molto contento. È stato un bel fatto. Adesso vado spesso a quel mercato. Parlo spesso di quel fatto.",
+      "qLang": "it",
+      "newWords": [
+        {
+          "hy": "դեպք",
+          "tr": "depk'",
+          "ipa": "[dɛpkʰ]",
+          "it": "caso, fatto, episodio"
+        },
+        {
+          "hy": "դա",
+          "tr": "da",
+          "ipa": "[dɑ]",
+          "it": "ciò, questa cosa"
+        },
+        {
+          "hy": "գտնել",
+          "tr": "gtnel",
+          "ipa": "[gətəˈnɛl]",
+          "it": "trovare"
+        },
+        {
+          "hy": "հաճախ",
+          "tr": "hachakh",
+          "ipa": "[hɑˈtʃɑχ]",
+          "it": "spesso"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Che cosa ha fatto la mattina?",
+          "options": [
+            {
+              "text": "Si è svegliato presto e ha bevuto un caffè",
+              "ok": true
+            },
+            {
+              "text": "È rimasto a casa",
+              "ok": false
+            },
+            {
+              "text": "È andato a scuola",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa è successo ai suoi soldi?",
+          "options": [
+            {
+              "text": "Sono rimasti vicino a un tavolo",
+              "ok": true
+            },
+            {
+              "text": "Li ha spesi tutti",
+              "ok": false
+            },
+            {
+              "text": "Erano a casa",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa ha fatto la donna?",
+          "options": [
+            {
+              "text": "Ha trovato i soldi e glieli ha dati",
+              "ok": true
+            },
+            {
+              "text": "Gli ha dato del pane",
+              "ok": false
+            },
+            {
+              "text": "È andata via",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa fa adesso spesso?",
+          "options": [
+            {
+              "text": "Va a quel mercato e parla di quel fatto",
+              "ok": true
+            },
+            {
+              "text": "Beve caffè al mercato",
+              "ok": false
+            },
+            {
+              "text": "Cerca quella donna",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

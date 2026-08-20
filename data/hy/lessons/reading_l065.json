@@ -1,0 +1,110 @@
+{
+  "id": "reading_l065",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Իմ կյանքը այն տարիներին",
+      "text": "Երբ ես փոքր էի, իմ կյանքը լավ էր։ Ես շուն ունեի։ Նա մեծ էր ու շատ լավ։ Ամեն առավոտ ես դպրոց էի մտնում ու ընկերներիս հետ էի խոսում։ Ես դեռ չգիտեի. կյանքը դժվար բան էլ է։ Հետո ես աշխատել սկսեցի։ Աշխատանքը դժվար էր, բայց նաև լավ էր։ Հիմա ես հաճախ եմ խոսում այն տարիների մասին։ Երբ ես դպրոց եմ մտնում, ես նաև այն օրերն եմ տեսնում։ Իմ կյանքը հիմա նոր է, բայց նաև լավ է։",
+      "it": "Quando ero piccolo, la mia vita era bella. Avevo un cane. Era grande e molto buono. Ogni mattina entravo a scuola e parlavo con i miei amici. Non sapevo ancora che la vita è anche una cosa difficile. Poi ho cominciato a lavorare. Il lavoro era difficile, ma anche bello. Adesso parlo spesso di quegli anni. Quando entro a scuola, rivedo anche quei giorni. La mia vita adesso è nuova, ma è anche bella.",
+      "qLang": "it",
+      "newWords": [
+        {
+          "hy": "կյանք",
+          "tr": "kyank'",
+          "ipa": "[kjɑnkʰ]",
+          "it": "vita"
+        },
+        {
+          "hy": "նաև",
+          "tr": "nayev",
+          "ipa": "[nɑˈjɛv]",
+          "it": "anche, inoltre"
+        },
+        {
+          "hy": "մտնել",
+          "tr": "mtnel",
+          "ipa": "[mətəˈnɛl]",
+          "it": "entrare"
+        },
+        {
+          "hy": "դժվար",
+          "tr": "dzhvar",
+          "ipa": "[dəʒˈvɑɾ]",
+          "it": "difficile"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Che animale aveva da piccolo?",
+          "options": [
+            {
+              "text": "Un cane grande",
+              "ok": true
+            },
+            {
+              "text": "Un cavallo",
+              "ok": false
+            },
+            {
+              "text": "Un gatto nero",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa faceva ogni mattina?",
+          "options": [
+            {
+              "text": "Entrava a scuola e parlava con gli amici",
+              "ok": true
+            },
+            {
+              "text": "Andava al mercato",
+              "ok": false
+            },
+            {
+              "text": "Lavorava",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Com'era il lavoro?",
+          "options": [
+            {
+              "text": "Difficile ma bello",
+              "ok": true
+            },
+            {
+              "text": "Facile",
+              "ok": false
+            },
+            {
+              "text": "Noioso",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Com'è la sua vita adesso?",
+          "options": [
+            {
+              "text": "Nuova, ma bella",
+              "ok": true
+            },
+            {
+              "text": "Uguale a prima",
+              "ok": false
+            },
+            {
+              "text": "Molto difficile",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

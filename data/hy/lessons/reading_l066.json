@@ -1,0 +1,110 @@
+{
+  "id": "reading_l066",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Ձմռան վերջը",
+      "text": "Ձմեռը դժվար էր։ Ամեն օր ձյուն էր գալիս։ Բայց հիմա ձմռան վերջն է։ Արևը եկավ ու եղանակը լավ դարձավ։ Իմ մայրը ինձ ասաց. «Ինչպես ես»։ Ես ասացի. «Ես պատրաստ եմ ամառին»։ Երեկ իմ հայրը տուն բերեց ծաղիկներ։ Դա ձմռան վերջն էր։ Ես պատրաստ էի գնալ ու նայել արևին։ Ինչպես ամեն տարի, ես ուրախ եմ։ Ամառը գալիս է ու արև է բերում։ Ձմռան վերջը ամենալավ ժամանակն է։",
+      "it": "L'inverno è stato difficile. Ogni giorno nevicava. Ma adesso è la fine dell'inverno. È arrivato il sole e il tempo è diventato bello. Mia madre mi ha detto: «Come stai?». Ho detto: «Sono pronto per l'estate». Ieri mio padre ha portato a casa dei fiori. Era la fine dell'inverno. Ero pronto ad andare a guardare il sole. Come ogni anno, sono contento. L'estate arriva e porta il sole. La fine dell'inverno è il momento più bello.",
+      "qLang": "it",
+      "newWords": [
+        {
+          "hy": "վերջ",
+          "tr": "verj",
+          "ipa": "[vɛɾtʃ]",
+          "it": "fine"
+        },
+        {
+          "hy": "ինչպես",
+          "tr": "inch'pes",
+          "ipa": "[intʃʰˈpɛs]",
+          "it": "come"
+        },
+        {
+          "hy": "բերել",
+          "tr": "berel",
+          "ipa": "[bɛˈɾɛl]",
+          "it": "portare"
+        },
+        {
+          "hy": "պատրաստ",
+          "tr": "patrast",
+          "ipa": "[pɑtˈɾɑst]",
+          "it": "pronto"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Com'è stato l'inverno?",
+          "options": [
+            {
+              "text": "Lungo, con neve e senza sole",
+              "ok": true
+            },
+            {
+              "text": "Corto e caldo",
+              "ok": false
+            },
+            {
+              "text": "Piovoso",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa ha portato a casa il padre?",
+          "options": [
+            {
+              "text": "Dei fiori",
+              "ok": true
+            },
+            {
+              "text": "Del pane",
+              "ok": false
+            },
+            {
+              "text": "Un libro",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Per che cosa si sente pronto?",
+          "options": [
+            {
+              "text": "Per l'estate",
+              "ok": true
+            },
+            {
+              "text": "Per l'inverno",
+              "ok": false
+            },
+            {
+              "text": "Per il lavoro",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cos'è per lui la fine dell'inverno?",
+          "options": [
+            {
+              "text": "Il momento più bello",
+              "ok": true
+            },
+            {
+              "text": "Un momento triste",
+              "ok": false
+            },
+            {
+              "text": "Un momento difficile",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
