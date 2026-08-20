@@ -1,0 +1,110 @@
+{
+  "id": "reading_l060",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Ուսուցիչը ու գիրքը",
+      "text": "Երեկ ես դպրոց գնացի։ Իմ ուսուցիչը սեղանի մոտ էր։ Ես նայեցի ուսուցչին։ Նա խոսեց ինձ հետ ու մի կարևոր խոսք խոսեց։ Այդ խոսքը այս էր. «Սովորելը քեզ համար է»։ Ապա ես մի գիրք ստացա։ Այդ գիրքը ինձ համար էր։ Ես նայեցի գրքին ու ուրախ։ Ապա ես տուն գնացի ու իմ մոր հետ խոսեցի։ Հիմա ես գիտեմ. մի լավ խոսք կարևոր բան է։ Ես այդ խոսքը շատ եմ սիրում։",
+      "it": "Ieri sono andato a scuola. Il mio insegnante era vicino al tavolo. Ho guardato l'insegnante. Ha parlato con me e ha detto una parola importante. Quella parola era così: «Studiare è per te». Poi ho ricevuto un libro. Quel libro era per me. Ho guardato il libro, contento. Poi sono tornato a casa e ho parlato con mia madre. Adesso lo so: una buona parola è una cosa importante. Quella parola mi piace molto.",
+      "qLang": "it",
+      "newWords": [
+        {
+          "hy": "խոսք",
+          "tr": "khosk'",
+          "ipa": "[χoskʰ]",
+          "it": "parola, discorso"
+        },
+        {
+          "hy": "համար",
+          "tr": "hamar",
+          "ipa": "[hɑˈmɑɾ]",
+          "it": "per (dopo il genitivo/dativo)"
+        },
+        {
+          "hy": "նայել",
+          "tr": "nayel",
+          "ipa": "[nɑˈjɛl]",
+          "it": "guardare"
+        },
+        {
+          "hy": "ապա",
+          "tr": "apa",
+          "ipa": "[ɑˈpɑ]",
+          "it": "poi, in seguito"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Dov'era l'insegnante?",
+          "options": [
+            {
+              "text": "Vicino al tavolo",
+              "ok": true
+            },
+            {
+              "text": "Vicino alla porta",
+              "ok": false
+            },
+            {
+              "text": "In cucina",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa ha detto l'insegnante?",
+          "options": [
+            {
+              "text": "Che studiare è per te stesso",
+              "ok": true
+            },
+            {
+              "text": "Che la scuola è difficile",
+              "ok": false
+            },
+            {
+              "text": "Che deve tornare a casa",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa ha ricevuto?",
+          "options": [
+            {
+              "text": "Un libro",
+              "ok": true
+            },
+            {
+              "text": "Del pane",
+              "ok": false
+            },
+            {
+              "text": "Dei soldi",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Con chi ha parlato tornato a casa?",
+          "options": [
+            {
+              "text": "Con sua madre",
+              "ok": true
+            },
+            {
+              "text": "Con suo padre",
+              "ok": false
+            },
+            {
+              "text": "Con nessuno",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

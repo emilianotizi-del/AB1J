@@ -357,47 +357,65 @@
       "qLang": "hy"
     },
     {
-      "id": "reading_l028",
+      "id": "reading_l051",
       "kind": "reading",
       "title": "Davit e la mia famiglia",
       "area": "Letture",
-      "after": "l028",
+      "after": "l051",
       "icon": "📖",
       "qLang": "it"
     },
     {
-      "id": "reading_l035",
+      "id": "reading_l053",
       "kind": "reading",
       "title": "Il posto nuovo",
       "area": "Letture",
-      "after": "l035",
+      "after": "l053",
       "icon": "📖",
       "qLang": "it"
     },
     {
-      "id": "reading_l038",
+      "id": "reading_l054",
       "kind": "reading",
       "title": "La domanda importante",
       "area": "Letture",
-      "after": "l038",
+      "after": "l054",
       "icon": "📖",
       "qLang": "it"
     },
     {
-      "id": "reading_l040",
+      "id": "reading_l056",
       "kind": "reading",
       "title": "Il mio paese",
       "area": "Letture",
-      "after": "l040",
+      "after": "l056",
       "icon": "📖",
       "qLang": "it"
     },
     {
-      "id": "reading_l042",
+      "id": "reading_l058",
       "kind": "reading",
       "title": "Quel giorno",
       "area": "Letture",
-      "after": "l042",
+      "after": "l058",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l060",
+      "kind": "reading",
+      "title": "L'insegnante e il libro",
+      "area": "Letture",
+      "after": "l060",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l061",
+      "kind": "reading",
+      "title": "Il mercato era ancora chiuso",
+      "area": "Letture",
+      "after": "l061",
       "icon": "📖",
       "qLang": "it"
     }

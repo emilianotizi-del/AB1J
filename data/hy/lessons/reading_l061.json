@@ -1,0 +1,110 @@
+{
+  "id": "reading_l061",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Շուկան դեռ փակ էր",
+      "text": "Այսօր ես իմ ընկերոջս հետ խոսեցի։ Նա ասաց. երեկ շուկա գնաց։ Նա ասաց. «Ես հասա, բայց դեռ վաղ էր»։ Շուկան դեռ փակ էր։ Իմ ընկերս մի ժամ մնաց ու նայեց մարդկանց։ Մի կին եկավ իր երեխայի հետ։ Երեխայի աչքերը մեծ էին ու սև։ Ապա շուկան բացվեց։ Իմ ընկերս հաց ու պանիր առավ ու տուն գնաց։ Նա ասաց. «Ես դեռ ուզում եմ գնալ այնտեղ»։ Ես էլ ուզում եմ նրա հետ գնալ։",
+      "it": "Oggi ho parlato con il mio amico. Ha detto che ieri è andato al mercato. Ha detto: «Sono arrivato, ma era ancora presto». Il mercato era ancora chiuso. Il mio amico è rimasto un'ora e ha guardato la gente. È arrivata una donna con il suo bambino. Gli occhi del bambino erano grandi e neri. Poi il mercato ha aperto. Il mio amico ha preso pane e formaggio ed è tornato a casa. Ha detto: «Voglio ancora andare là». Anch'io voglio andarci con lui.",
+      "qLang": "it",
+      "newWords": [
+        {
+          "hy": "հետ",
+          "tr": "het",
+          "ipa": "[hɛt]",
+          "it": "con (dopo il genitivo)"
+        },
+        {
+          "hy": "հասնել",
+          "tr": "hasnel",
+          "ipa": "[hɑsˈnɛl]",
+          "it": "arrivare"
+        },
+        {
+          "hy": "դեռ",
+          "tr": "deṙ",
+          "ipa": "[dɛr]",
+          "it": "ancora, tuttora"
+        },
+        {
+          "hy": "աչք",
+          "tr": "ach'k'",
+          "ipa": "[ɑtʃʰkʰ]",
+          "it": "occhio"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Dove è andato l'amico ieri?",
+          "options": [
+            {
+              "text": "Al mercato",
+              "ok": true
+            },
+            {
+              "text": "A scuola",
+              "ok": false
+            },
+            {
+              "text": "Dal medico",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Perché ha aspettato?",
+          "options": [
+            {
+              "text": "Il mercato era ancora chiuso",
+              "ok": true
+            },
+            {
+              "text": "Non aveva soldi",
+              "ok": false
+            },
+            {
+              "text": "Era stanco",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Com'erano gli occhi del bambino?",
+          "options": [
+            {
+              "text": "Grandi e neri",
+              "ok": true
+            },
+            {
+              "text": "Piccoli e chiari",
+              "ok": false
+            },
+            {
+              "text": "Non si dice",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa ha comprato l'amico?",
+          "options": [
+            {
+              "text": "Pane e formaggio",
+              "ok": true
+            },
+            {
+              "text": "Mele e vino",
+              "ok": false
+            },
+            {
+              "text": "Un libro",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
