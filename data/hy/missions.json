@@ -346,6 +346,15 @@
       "after": "l050",
       "icon": "📖",
       "qLang": "hy"
+    },
+    {
+      "id": "reading_l048",
+      "kind": "reading",
+      "title": "La famiglia di Aram (prova HY)",
+      "area": "Letture",
+      "after": "l048",
+      "icon": "📖",
+      "qLang": "hy"
     }
   ]
 }
