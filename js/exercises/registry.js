@@ -15,11 +15,12 @@ import * as conjugate from './conjugate.js';
 import * as write from './write.js';
 import * as listen from './listen.js';
 import * as task from './task.js';
+import * as reading_test from './reading_test.js';
 
-const types = { teach, mcq, match, trace, dictation, order, dialog, reading, notice, cloze, conjugate, write, listen, task };
+const types = { teach, mcq, match, trace, dictation, order, dialog, reading, notice, cloze, conjugate, write, listen, task, reading_test };
 
 // Tipi che presentano contenuto senza valutare l'utente
-export const UNGRADED = new Set(['teach', 'dialog', 'reading', 'notice', 'task']);
+export const UNGRADED = new Set(['teach', 'dialog', 'reading', 'notice', 'task', 'reading_test']);
 
 export function renderStep(step, mount, ctx) {
   const mod = types[step.type];

@@ -9,8 +9,10 @@ export async function render(mount, params) {
   const meta = data.missions.find(m => m.id === params.id);
   if (!meta) { navigate('/missions'); return; }
 
-  // Contenuto della missione: file lesson dedicato mission_<id>.json con un solo step 'task'
-  const lesson = await getLesson('mission_' + meta.id);
+  const isReading = meta.kind === 'reading';
+  // Le letture hanno file reading_<id>.json (l'id è già "reading_lNNN");
+  // i task hanno file mission_<id>.json.
+  const lesson = await getLesson(isReading ? meta.id : 'mission_' + meta.id);
   mount.innerHTML = '';
 
   const doneKey = 'ab1j_mission_' + meta.id;
@@ -41,8 +43,8 @@ export async function render(mount, params) {
     window.scrollTo({ top: 0 });
   }
 
-  // Se già giocata, offro i livelli; altrimenti parto guidato
-  if (played) {
+  // Le letture non hanno livelli di scaffolding: partono dirette.
+  if (played && !isReading) {
     area.append(el('div', { class: 'card' },
       el('h2', { style: 'text-align:center' }, meta.icon + ' ' + meta.title),
       el('p', { style: 'text-align:center;color:var(--ink-soft);margin:8px 0 16px' },

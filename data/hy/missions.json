@@ -16,7 +16,8 @@
       "archetype": "transaction",
       "after": "m08",
       "icon": "🍎",
-      "studentInitiates": false
+      "studentInitiates": false,
+      "kind": "task"
     },
     {
       "id": "grocery",
@@ -25,7 +26,8 @@
       "archetype": "transaction",
       "after": "m08",
       "icon": "🛒",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "cafe",
@@ -34,7 +36,8 @@
       "archetype": "transaction",
       "after": "m13",
       "icon": "☕",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "restaurant",
@@ -43,7 +46,8 @@
       "archetype": "transaction",
       "after": "m15",
       "icon": "🍽",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "payment",
@@ -52,7 +56,8 @@
       "archetype": "problem",
       "after": "m13",
       "icon": "💵",
-      "studentInitiates": false
+      "studentInitiates": false,
+      "kind": "task"
     },
     {
       "id": "intro",
@@ -61,7 +66,8 @@
       "archetype": "social",
       "after": "m06",
       "icon": "👋",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "family",
@@ -70,7 +76,8 @@
       "archetype": "narrative",
       "after": "m10",
       "icon": "👨‍👩‍👧",
-      "studentInitiates": false
+      "studentInitiates": false,
+      "kind": "task"
     },
     {
       "id": "party",
@@ -79,7 +86,8 @@
       "archetype": "social",
       "after": "m11",
       "icon": "🎉",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "work",
@@ -88,7 +96,8 @@
       "archetype": "narrative",
       "after": "m18",
       "icon": "💼",
-      "studentInitiates": false
+      "studentInitiates": false,
+      "kind": "task"
     },
     {
       "id": "invite",
@@ -97,7 +106,8 @@
       "archetype": "negotiation",
       "after": "m15",
       "icon": "✉️",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "directions",
@@ -106,7 +116,8 @@
       "archetype": "info_gap",
       "after": "m16",
       "icon": "🧭",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "taxi",
@@ -115,7 +126,8 @@
       "archetype": "transaction",
       "after": "m16",
       "icon": "🚕",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "ticket",
@@ -124,7 +136,8 @@
       "archetype": "transaction",
       "after": "m15",
       "icon": "🎫",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "station",
@@ -133,7 +146,8 @@
       "archetype": "info_gap",
       "after": "m16",
       "icon": "🚌",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "room",
@@ -142,7 +156,8 @@
       "archetype": "info_gap",
       "after": "m16",
       "icon": "🏠",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "neighbor",
@@ -151,7 +166,8 @@
       "archetype": "social",
       "after": "m11",
       "icon": "🚪",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "phone",
@@ -160,7 +176,8 @@
       "archetype": "info_gap",
       "after": "m19",
       "icon": "📞",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "problem_late",
@@ -169,7 +186,8 @@
       "archetype": "problem",
       "after": "m18",
       "icon": "⏰",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "shop_goods",
@@ -178,7 +196,8 @@
       "archetype": "transaction",
       "after": "m17",
       "icon": "👕",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "appointment",
@@ -187,7 +206,8 @@
       "archetype": "transaction",
       "after": "m15",
       "icon": "📅",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "doctor",
@@ -196,7 +216,8 @@
       "archetype": "problem",
       "after": "m19",
       "icon": "⚕️",
-      "studentInitiates": false
+      "studentInitiates": false,
+      "kind": "task"
     },
     {
       "id": "pharmacy",
@@ -205,7 +226,8 @@
       "archetype": "transaction",
       "after": "m19",
       "icon": "💊",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "meetup",
@@ -214,7 +236,8 @@
       "archetype": "negotiation",
       "after": "m15",
       "icon": "🤝",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "weather",
@@ -223,7 +246,8 @@
       "archetype": "social",
       "after": "m14",
       "icon": "🌤",
-      "studentInitiates": false
+      "studentInitiates": false,
+      "kind": "task"
     },
     {
       "id": "describe",
@@ -232,7 +256,8 @@
       "archetype": "narrative",
       "after": "m17",
       "icon": "🧑",
-      "studentInitiates": false
+      "studentInitiates": false,
+      "kind": "task"
     },
     {
       "id": "yesterday",
@@ -241,7 +266,8 @@
       "archetype": "narrative",
       "after": "m18",
       "icon": "📖",
-      "studentInitiates": false
+      "studentInitiates": false,
+      "kind": "task"
     },
     {
       "id": "weekend",
@@ -250,7 +276,8 @@
       "archetype": "narrative",
       "after": "m15",
       "icon": "📆",
-      "studentInitiates": false
+      "studentInitiates": false,
+      "kind": "task"
     },
     {
       "id": "guest",
@@ -259,7 +286,8 @@
       "archetype": "social",
       "after": "m19",
       "icon": "🍷",
-      "studentInitiates": false
+      "studentInitiates": false,
+      "kind": "task"
     },
     {
       "id": "compliment",
@@ -268,7 +296,8 @@
       "archetype": "social",
       "after": "m17",
       "icon": "😊",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "apology",
@@ -277,7 +306,8 @@
       "archetype": "problem",
       "after": "m13",
       "icon": "🙇",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "formal",
@@ -286,7 +316,8 @@
       "archetype": "info_gap",
       "after": "m18",
       "icon": "🏛",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
     },
     {
       "id": "help",
@@ -295,7 +326,26 @@
       "archetype": "problem",
       "after": "m18",
       "icon": "🆘",
-      "studentInitiates": true
+      "studentInitiates": true,
+      "kind": "task"
+    },
+    {
+      "id": "reading_l020",
+      "kind": "reading",
+      "title": "Anna e la famiglia",
+      "area": "Letture",
+      "after": "l020",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l050",
+      "kind": "reading",
+      "title": "La giornata di Davit",
+      "area": "Letture",
+      "after": "l050",
+      "icon": "📖",
+      "qLang": "hy"
     }
   ]
 }
