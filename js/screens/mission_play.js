@@ -2,6 +2,7 @@
 import { el } from '../utils/dom.js';
 import { getMissions, getLesson } from '../core/data.js';
 import { renderStep } from '../exercises/registry.js';
+import { addCards } from '../core/srs.js';
 import { navigate } from '../core/router.js';
 
 export async function render(mount, params) {
@@ -36,6 +37,10 @@ export async function render(mount, params) {
           const best = prev === null ? stumbles : Math.min(parseInt(prev, 10), stumbles);
           localStorage.setItem(doneKey, String(best));
         } catch {}
+        // Le letture con parole nuove le versano nel ripasso (come una lezione)
+        if (isReading && lesson.steps[0].newWords?.length) {
+          addCards(lesson.steps[0].newWords.map(w => ({ id: meta.id + ':' + w.hy, ...w })));
+        }
         navigate('/missions');
       }
     };

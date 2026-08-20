@@ -18,6 +18,19 @@ export function render(step, mount, ctx) {
     if (step.title) card.append(el('h2', { class: 'reading-title hy', lang: 'hy' }, step.title));
     // Testo armeno, ariose per la lettura
     card.append(el('div', { class: 'reading-text hy', lang: 'hy' }, step.text));
+    // Parole nuove: consultabili se non le deduci dal contesto (ma chiuse di default)
+    if (step.newWords?.length) {
+      const help = el('details', { class: 'reading-recall', style: 'margin-top:12px' },
+        el('summary', {}, 'Parole nuove (prova prima a indovinarle)'));
+      const list = el('div', { style: 'margin-top:8px' });
+      for (const w of step.newWords) {
+        list.append(el('div', { class: 'reading-nw' },
+          el('span', { class: 'hy', lang: 'hy', style: 'font-weight:700' }, w.hy),
+          el('span', { style: 'color:var(--ink-soft)' }, ' — ' + w.it)));
+      }
+      help.append(list);
+      card.append(help);
+    }
     card.append(el('button', { class: 'btn btn-block', style: 'margin-top:16px',
       onclick: () => { phase = 'test'; renderTest(); } }, 'Ho letto → domande'));
     wrap.append(card);
@@ -74,7 +87,20 @@ export function render(step, mount, ctx) {
         el('div', { style: 'font-size:2.4rem' }, pass ? '🏆' : '💪'),
         el('h2', {}, `${correct} / ${step.questions.length}`),
         el('p', { style: 'color:var(--ink-soft)' }, pass ? 'Hai capito il testo!' : 'Rileggi con calma e riprova.'));
-      // Dopo il test mostro la traduzione del testo, come rinforzo
+      // Riepilogo parole nuove (che finiscono nel ripasso)
+      if (step.newWords?.length) {
+        const box = el('div', { class: 'reading-newwords' },
+          el('div', { style: 'font-weight:700;margin-bottom:8px' }, '📚 Parole nuove di questa lettura'));
+        for (const w of step.newWords) {
+          box.append(el('div', { class: 'reading-nw' },
+            el('span', { class: 'hy', lang: 'hy', style: 'font-weight:700' }, w.hy),
+            el('span', { style: 'color:var(--ink-soft)' }, ' — ' + w.it)));
+        }
+        box.append(el('div', { style: 'font-size:.82rem;color:var(--ink-soft);margin-top:8px' },
+          'Le trovi da ora nel Ripasso.'));
+        card.append(box);
+      }
+      // Traduzione completa del testo, come rinforzo
       if (step.it) {
         card.append(el('details', { class: 'reading-recall', style: 'margin-top:14px;text-align:left' },
           el('summary', {}, 'Vedi la traduzione'),

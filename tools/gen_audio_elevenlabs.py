@@ -70,6 +70,17 @@ def collect_texts():
             if c.get("word"): texts.add(c["word"])
 
     # Parole per le "lettere difficili" (liste ampie per lettera)
+
+    # Parole nuove delle letture (reading_test) → vanno nel ripasso, servono audio
+    for les_file in sorted((ROOT / "data/hy/lessons").glob("reading_*.json")):
+        try:
+            RL = json.loads(les_file.read_text())
+        except Exception:
+            continue
+        for st in RL.get("steps", []):
+            for w in st.get("newWords", []):
+                if w.get("hy"): texts.add(w["hy"])
+
     hw_path = ROOT / "data/hy/hard_words.json"
     if hw_path.exists():
         hw = json.loads(hw_path.read_text())

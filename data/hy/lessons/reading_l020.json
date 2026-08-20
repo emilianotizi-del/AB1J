@@ -3,26 +3,32 @@
   "steps": [{
     "type": "reading_test",
     "title": "Աննան և ընտանիքը",
-    "text": "Բարև։ Ես Աննան եմ։ Ես Երևանից եմ։ Իմ ընտանիքը մեծ է։ Ես ունեմ մեկ քույր և երկու եղբայր։ Իմ քրոջ անունը Մարիա է։ Մարիան ուսանող է։ Իմ եղբայրները փոքր են։ Մենք ապրում ենք Երևանում։ Ես սիրում եմ իմ ընտանիքը։",
-    "it": "Ciao. Io sono Anna. Sono di Yerevan. La mia famiglia è grande. Ho una sorella e due fratelli. Mia sorella si chiama Maria. Maria è una studentessa. I miei fratelli sono piccoli. Viviamo a Yerevan. Amo la mia famiglia.",
+    "text": "Բարև։ Ես Աննան եմ։ Ես Երևանից եմ։ Իմ ընտանիքը մեծ է։ Ես ունեմ մեկ քույր և երկու եղբայր։ Իմ քրոջ անունը Մարիա է։ Մարիան բարձրահասակ է և շատ գեղեցիկ։ Իմ եղբայրները փոքր են և ուրախ։ Մենք ապրում ենք մեծ քաղաքում։ Ես երջանիկ եմ։",
+    "it": "Ciao. Io sono Anna. Sono di Yerevan. La mia famiglia è grande. Ho una sorella e due fratelli. Mia sorella si chiama Maria. Maria è alta e molto bella. I miei fratelli sono piccoli e allegri. Viviamo in una grande città. Sono felice.",
     "qLang": "it",
+    "newWords": [
+      { "hy": "բարձրահասակ", "tr": "bardzrahasak", "ipa": "[bɑɾdzɾɑhɑˈsɑk]", "it": "alto (di statura)" },
+      { "hy": "գեղեցիկ", "tr": "geghets'ik", "ipa": "[ɡɛʁɛˈtsʰik]", "it": "bello" },
+      { "hy": "ուրախ", "tr": "urakh", "ipa": "[uˈɾɑχ]", "it": "allegro, contento" },
+      { "hy": "երջանիկ", "tr": "yerjanik", "ipa": "[jɛɾdʒɑˈnik]", "it": "felice" }
+    ],
     "questions": [
       { "q": "Di dov'è Anna?", "options": [
         { "text": "Di Yerevan", "ok": true },
         { "text": "Di Gyumri", "ok": false },
         { "text": "Di Roma", "ok": false } ] },
-      { "q": "Quanti fratelli ha Anna?", "options": [
-        { "text": "Due", "ok": true },
-        { "text": "Uno", "ok": false },
-        { "text": "Tre", "ok": false } ] },
-      { "q": "Come si chiama sua sorella?", "options": [
-        { "text": "Maria", "ok": true },
-        { "text": "Anna", "ok": false },
-        { "text": "Ani", "ok": false } ] },
-      { "q": "Cosa fa Maria?", "options": [
-        { "text": "È una studentessa", "ok": true },
-        { "text": "È un medico", "ok": false },
-        { "text": "È un'insegnante", "ok": false } ] }
+      { "q": "Com'è Maria?", "options": [
+        { "text": "Alta e bella", "ok": true },
+        { "text": "Piccola e allegra", "ok": false },
+        { "text": "Studentessa", "ok": false } ] },
+      { "q": "Come sono i fratelli?", "options": [
+        { "text": "Piccoli e allegri", "ok": true },
+        { "text": "Alti e belli", "ok": false },
+        { "text": "Grandi e felici", "ok": false } ] },
+      { "q": "Come si sente Anna?", "options": [
+        { "text": "Felice", "ok": true },
+        { "text": "Triste", "ok": false },
+        { "text": "Stanca", "ok": false } ] }
     ]
   }]
 }

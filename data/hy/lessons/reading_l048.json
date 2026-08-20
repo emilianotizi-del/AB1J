@@ -1,84 +1,34 @@
 {
-  "id": "reading_l048",
-  "title": "Lettura",
-  "vocab": [],
-  "steps": [
-    {
-      "type": "reading_test",
-      "title": "Իմ ընտանիքը",
-      "text": "Բարև։ Իմ անունը Արամ է։ Ես հայ եմ։ Իմ ընտանիքը մեծ է։ Ես ունեմ մայր, հայր, մեկ քույր և մեկ եղբայր։ Իմ հայրը մեծ է, իմ եղբայրը փոքր է։ Մենք ունենք նոր տուն։ Տան մեջ կա շատ ջուր, հաց և պանիր։ Իմ ընտանիքը շատ լավ է։",
-      "it": "Ciao. Il mio nome è Aram. Sono armeno. La mia famiglia è grande. Ho una madre, un padre, una sorella e un fratello. Mio padre è grande, mio fratello è piccolo. Abbiamo una casa nuova. In casa c'è molta acqua, pane e formaggio. La mia famiglia è molto buona.",
-      "qLang": "hy",
-      "questions": [
-        {
-          "q": "Ի՞նչ է Արամի անունը։",
-          "options": [
-            {
-              "text": "Արամ",
-              "ok": true
-            },
-            {
-              "text": "Հայր",
-              "ok": false
-            },
-            {
-              "text": "Քույր",
-              "ok": false
-            }
-          ]
-        },
-        {
-          "q": "Քանի՞ քույր ունի Արամը։",
-          "options": [
-            {
-              "text": "Մեկ",
-              "ok": true
-            },
-            {
-              "text": "Երկու",
-              "ok": false
-            },
-            {
-              "text": "Երեք",
-              "ok": false
-            }
-          ]
-        },
-        {
-          "q": "Մեծ է իմ հա՞յրը թե՞ եղբայրը։",
-          "options": [
-            {
-              "text": "Հայրը",
-              "ok": true
-            },
-            {
-              "text": "Եղբայրը",
-              "ok": false
-            },
-            {
-              "text": "Քույրը",
-              "ok": false
-            }
-          ]
-        },
-        {
-          "q": "Ի՞նչ կա տան մեջ։",
-          "options": [
-            {
-              "text": "Ջուր, հաց և պանիր",
-              "ok": true
-            },
-            {
-              "text": "Ձի և ծառ",
-              "ok": false
-            },
-            {
-              "text": "Սուրճ և թեյ",
-              "ok": false
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  "id": "reading_l048", "title": "Lettura", "vocab": [],
+  "steps": [{
+    "type": "reading_test",
+    "title": "Իմ ընտանիքը",
+    "text": "Բարև։ Իմ անունը Արամ է։ Ես հայ եմ և ապրում եմ Երևանում։ Իմ ընտանիքը մեծ է։ Ես ունեմ մայր, հայր, մեկ քույր և մեկ եղբայր։ Իմ քույրը ուսանող է։ Իմ եղբայրը փոքր է և սիրում է խաղալ։ Մենք ունենք նոր տուն։ Տան մեջ կա շատ լույս։ Իմ ընտանիքը շատ լավ է։",
+    "it": "Ciao. Il mio nome è Aram. Sono armeno e vivo a Yerevan. La mia famiglia è grande. Ho una madre, un padre, una sorella e un fratello. Mia sorella è studentessa. Mio fratello è piccolo e ama giocare. Abbiamo una casa nuova. In casa c'è molta luce. La mia famiglia è molto buona.",
+    "qLang": "hy",
+    "newWords": [
+      { "hy": "ապրում", "tr": "aprum", "ipa": "[ɑpˈrum]", "it": "vivo/abito (abitare)" },
+      { "hy": "ուսանող", "tr": "usanogh", "ipa": "[usɑˈnoʁ]", "it": "studente (universitario)" },
+      { "hy": "խաղալ", "tr": "khaghal", "ipa": "[χɑˈʁɑl]", "it": "giocare" },
+      { "hy": "լույս", "tr": "luys", "ipa": "[lujs]", "it": "luce" }
+    ],
+    "questions": [
+      { "q": "Որտե՞ղ է ապրում Արամը։", "options": [
+        { "text": "Երևանում", "ok": true },
+        { "text": "Հռոմում", "ok": false },
+        { "text": "Դպրոցում", "ok": false } ] },
+      { "q": "Ի՞նչ է Արամի քույրը։", "options": [
+        { "text": "Ուսանող", "ok": true },
+        { "text": "Մայր", "ok": false },
+        { "text": "Բժիշկ", "ok": false } ] },
+      { "q": "Ի՞նչ է սիրում եղբայրը։", "options": [
+        { "text": "Խաղալ", "ok": true },
+        { "text": "Կարդալ", "ok": false },
+        { "text": "Երգել", "ok": false } ] },
+      { "q": "Ի՞նչ կա տան մեջ։", "options": [
+        { "text": "Շատ լույս", "ok": true },
+        { "text": "Շատ ջուր", "ok": false },
+        { "text": "Շատ ձի", "ok": false } ] }
+    ]
+  }]
 }

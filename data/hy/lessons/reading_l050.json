@@ -3,25 +3,31 @@
   "steps": [{
     "type": "reading_test",
     "title": "Դավիթի օրը",
-    "text": "Դավիթը առավոտյան վաղ արթնանում է։ Նա նախաճաշում է և գնում աշխատանքի։ Դավիթը բժիշկ է և աշխատում է հիվանդանոցում։ Կեսօրին նա ճաշում է ընկերների հետ։ Երեկոյան Դավիթը տուն է գալիս և հանգստանում։ Նա սիրում է կարդալ գրքեր։ Գիշերը նա շուտ է քնում։",
-    "it": "Davit si sveglia presto la mattina. Fa colazione e va al lavoro. Davit è un medico e lavora in ospedale. A mezzogiorno pranza con gli amici. La sera Davit torna a casa e si riposa. Gli piace leggere libri. La notte va a dormire presto.",
+    "text": "Դավիթը առավոտյան վաղ արթնանում է։ Նա նախաճաշում է և գնում աշխատանքի։ Դավիթը բժիշկ է և աշխատում է հիվանդանոցում։ Նրա աշխատանքը դժվար է, բայց նա ուրախ է։ Կեսօրին նա ճաշում է ընկերների հետ։ Երեկոյան Դավիթը տուն է գալիս և հանգստանում։ Նա սիրում է կարդալ գրքեր։",
+    "it": "Davit si sveglia presto la mattina. Fa colazione e va al lavoro. Davit è un medico e lavora in ospedale. Il suo lavoro è difficile, ma lui è contento. A mezzogiorno pranza con gli amici. La sera Davit torna a casa e si riposa. Gli piace leggere libri.",
     "qLang": "hy",
+    "newWords": [
+      { "hy": "աշխատանք", "tr": "ashkhatank'", "ipa": "[ɑʃχɑˈtɑnkʰ]", "it": "lavoro" },
+      { "hy": "դժվար", "tr": "dzhvar", "ipa": "[dəʒˈvɑɾ]", "it": "difficile" },
+      { "hy": "հանգստանալ", "tr": "hangstanal", "ipa": "[hɑnɡstɑˈnɑl]", "it": "riposarsi" },
+      { "hy": "գիրք", "tr": "girk'", "ipa": "[ɡiɾkʰ]", "it": "libro" }
+    ],
     "questions": [
       { "q": "Ի՞նչ գործ ունի Դավիթը։", "options": [
         { "text": "Բժիշկ է", "ok": true },
         { "text": "Ուսուցիչ է", "ok": false },
         { "text": "Ուսանող է", "ok": false } ] },
-      { "q": "Որտե՞ղ է աշխատում Դավիթը։", "options": [
-        { "text": "Հիվանդանոցում", "ok": true },
-        { "text": "Դպրոցում", "ok": false },
-        { "text": "Խանութում", "ok": false } ] },
+      { "q": "Ինչպիսի՞ն է նրա աշխատանքը։", "options": [
+        { "text": "Դժվար", "ok": true },
+        { "text": "Հեշտ", "ok": false },
+        { "text": "Կարճ", "ok": false } ] },
       { "q": "Ո՞ւմ հետ է ճաշում կեսօրին։", "options": [
         { "text": "Ընկերների հետ", "ok": true },
         { "text": "Ընտանիքի հետ", "ok": false },
         { "text": "Մենակ", "ok": false } ] },
-      { "q": "Ի՞նչ է սիրում անել Դավիթը։", "options": [
+      { "q": "Ի՞նչ է սիրում անել Դավիթը երեկոյան։", "options": [
         { "text": "Կարդալ գրքեր", "ok": true },
-        { "text": "Երգել", "ok": false },
+        { "text": "Խաղալ", "ok": false },
         { "text": "Վազել", "ok": false } ] }
     ]
   }]
