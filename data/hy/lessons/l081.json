@@ -2,22 +2,119 @@
   "id": "l081",
   "title": "Cultura: Yerevan la rosa",
   "vocab": [
-    { "hy": "վարդագույն", "tr": "vardaguyn", "ipa": "[vɑɾdɑˈɡujn]", "it": "rosa (colore)" },
-    { "hy": "հրապարակ", "tr": "hraparak", "ipa": "[hɾɑpɑˈɾɑk]", "it": "piazza" }
+    {
+      "hy": "վարդագույն",
+      "tr": "vardaguyn",
+      "ipa": "[vɑɾdɑˈɡujn]",
+      "it": "rosa (colore)"
+    },
+    {
+      "hy": "հրապարակ",
+      "tr": "hraparak",
+      "ipa": "[hɾɑpɑˈɾɑk]",
+      "it": "piazza"
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "word", "word": { "hy": "վարդագույն", "tr": "vardaguyn", "ipa": "[vɑɾdɑˈɡujn]", "it": "rosa (colore)" }, "note": "Da վարդ (rosa, il fiore) + գույն (colore). Yerevan è «la città rosa» per il tufo con cui è costruita." },
-    { "type": "teach", "kind": "word", "word": { "hy": "հրապարակ", "tr": "hraparak", "ipa": "[hɾɑpɑˈɾɑk]", "it": "piazza" } },
-    { "type": "reading", "title": "Վարդագույն քաղաքը", "sentences": [
-      { "hy": "Երևանը կոչվում է վարդագույն քաղաք։", "tr": "Yerevanə kochvum e vardaguyn k'aghak'", "it": "Yerevan è chiamata la città rosa." },
-      { "hy": "Շենքերը կառուցված են վարդագույն քարից։", "tr": "shenk'erə kaṙuts'vats en vardaguyn k'arits'", "it": "Gli edifici sono costruiti con pietra rosa." },
-      { "hy": "Քաղaքի կենտրոնում կա մեծ հրապարակ։", "tr": "k'aghak'i kentronum ka mets hraparak", "it": "Nel centro della città c'è una grande piazza." },
-      { "hy": "Այն Հանրապետության հրապարակն է։", "tr": "ayn Hanrapetut'yan hraparakn e", "it": "È Piazza della Repubblica." }
-    ]},
-    { "type": "mcq", "prompt": "Perché Yerevan è «rosa»?", "options": ["è costruita in pietra rosa", "ha molti fiori", "per i tramonti"], "answer": "è costruita in pietra rosa" },
-    { "type": "mcq", "prompt": "Cosa c'è nel centro?", "options": ["una grande piazza", "una montagna", "un mercato"], "answer": "una grande piazza" },
-    { "type": "listen", "question": "Ascolta e verifica", "speakText": "Երևանը կոչվում է վարդագույն քաղաք", "it": "Yerevan è chiamata la città rosa", "reveal": "Երևանը կոչվում է վարդագույն քաղաք" },
-    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "հրապարակ", "answer": "հրապարակ", "it": "piazza" },
-    { "type": "write", "prompt": "Traduci e scrivi: «città rosa»", "it": "città rosa", "answer": "վարդագույն քաղաք", "extra": true }
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "վարդագույն",
+        "tr": "vardaguyn",
+        "ipa": "[vɑɾdɑˈɡujn]",
+        "it": "rosa (colore)"
+      },
+      "note": "Da վարդ (rosa, il fiore) + գույն (colore). Yerevan è «la città rosa» per il tufo con cui è costruita."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "հրապարակ",
+        "tr": "hraparak",
+        "ipa": "[hɾɑpɑˈɾɑk]",
+        "it": "piazza"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "այնքան",
+        "tr": "aynk'an",
+        "ipa": "[ɑjnˈkʰɑn]",
+        "it": "tanto, così tanto"
+      },
+      "note": "Parola utile da riconoscere nella lettura: non è richiesta in produzione.",
+      "extra": true
+    },
+    {
+      "type": "reading",
+      "title": "Վարդագույն քաղաքը",
+      "sentences": [
+        {
+          "hy": "Երևանը կոչվում է վարդագույն քաղաք։",
+          "tr": "Yerevanə kochvum e vardaguyn k'aghak'",
+          "it": "Yerevan è chiamata la città rosa."
+        },
+        {
+          "hy": "Շենքերը կառուցված են վարդագույն քարից։",
+          "tr": "shenk'erə kaṙuts'vats en vardaguyn k'arits'",
+          "it": "Gli edifici sono costruiti con pietra rosa."
+        },
+        {
+          "hy": "Քաղaքի կենտրոնում կա մեծ հրապարակ։",
+          "tr": "k'aghak'i kentronum ka mets hraparak",
+          "it": "Nel centro della città c'è una grande piazza."
+        },
+        {
+          "hy": "Այն Հանրապետության հրապարակն է։",
+          "tr": "ayn Hanrapetut'yan hraparakn e",
+          "it": "È Piazza della Repubblica."
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Perché Yerevan è «rosa»?",
+      "options": [
+        "è costruita in pietra rosa",
+        "ha molti fiori",
+        "per i tramonti"
+      ],
+      "answer": "è costruita in pietra rosa"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Cosa c'è nel centro?",
+      "options": [
+        "una grande piazza",
+        "una montagna",
+        "un mercato"
+      ],
+      "answer": "una grande piazza"
+    },
+    {
+      "type": "listen",
+      "question": "Ascolta e verifica",
+      "speakText": "Երևանը կոչվում է վարդագույն քաղաք",
+      "it": "Yerevan è chiamata la città rosa",
+      "reveal": "Երևանը կոչվում է վարդագույն քաղաք"
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi ciò che senti",
+      "speakText": "հրապարակ",
+      "answer": "հրապարակ",
+      "it": "piazza"
+    },
+    {
+      "type": "write",
+      "prompt": "Traduci e scrivi: «città rosa»",
+      "it": "città rosa",
+      "answer": "վարդագույն քաղաք",
+      "extra": true
+    }
   ]
 }

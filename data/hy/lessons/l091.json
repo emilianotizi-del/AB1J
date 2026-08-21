@@ -3,13 +3,114 @@
   "title": "Verifica del modulo",
   "vocab": [],
   "steps": [
-    { "type": "cloze", "it": "non andare!", "text": "___ գնա", "options": ["Մի՛", "Չ", "Ոչ"], "answer": "Մի՛", "speakText": "Մի՛ գնա" },
-    { "type": "mcq", "prompt": "«Venite!» (plurale):", "options": ["եկե՛ք", "արի՛", "եկա"], "answer": "եկե՛ք", "optionsAreHy": true },
-    { "type": "listen", "question": "Che cosa chiede il medico?", "speakText": "Ի՞նչ է ցավում", "it": "Cosa fa male?", "reveal": "Ի՞նչ է ցավում", "options": ["cosa fa male?", "come stai?", "che ore sono?"], "answer": "cosa fa male?" },
-    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "զանգել", "answer": "զանգել", "it": "chiamare" },
-    { "type": "cloze", "it": "mi fa male la testa", "text": "Գլուխս ___ է", "options": ["ցավում", "ցավ", "հիվանդ"], "answer": "ցավում", "speakText": "Գլուխս ցավում է" },
-    { "type": "match", "prompt": "Abbina armeno e italiano", "pairs": [["հիվանդ", "malato"], ["ցավ", "dolore"], ["հյուր", "ospite"], ["զանգել", "chiamare"]] },
-    { "type": "write", "prompt": "Traduci e scrivi: «quando torna?»", "it": "quando torna?", "answer": "Ե՞րբ կգա" },
-    { "type": "listen", "question": "Ordine o divieto?", "speakText": "Մի՛ խոսիր", "it": "Non parlare!", "reveal": "Մի՛ խոսիր", "options": ["divieto", "ordine", "domanda"], "answer": "divieto", "extra": true }
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "կատարել",
+        "tr": "katarel",
+        "ipa": "[kɑtɑˈɾɛl]",
+        "it": "compiere, svolgere"
+      },
+      "note": "Parola utile da riconoscere nella lettura: non è richiesta in produzione.",
+      "extra": true
+    },
+    {
+      "type": "cloze",
+      "it": "non andare!",
+      "text": "___ գնա",
+      "options": [
+        "Մի՛",
+        "Չ",
+        "Ոչ"
+      ],
+      "answer": "Մի՛",
+      "speakText": "Մի՛ գնա"
+    },
+    {
+      "type": "mcq",
+      "prompt": "«Venite!» (plurale):",
+      "options": [
+        "եկե՛ք",
+        "արի՛",
+        "եկա"
+      ],
+      "answer": "եկե՛ք",
+      "optionsAreHy": true
+    },
+    {
+      "type": "listen",
+      "question": "Che cosa chiede il medico?",
+      "speakText": "Ի՞նչ է ցավում",
+      "it": "Cosa fa male?",
+      "reveal": "Ի՞նչ է ցավում",
+      "options": [
+        "cosa fa male?",
+        "come stai?",
+        "che ore sono?"
+      ],
+      "answer": "cosa fa male?"
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi ciò che senti",
+      "speakText": "զանգել",
+      "answer": "զանգել",
+      "it": "chiamare"
+    },
+    {
+      "type": "cloze",
+      "it": "mi fa male la testa",
+      "text": "Գլուխս ___ է",
+      "options": [
+        "ցավում",
+        "ցավ",
+        "հիվանդ"
+      ],
+      "answer": "ցավում",
+      "speakText": "Գլուխս ցավում է"
+    },
+    {
+      "type": "match",
+      "prompt": "Abbina armeno e italiano",
+      "pairs": [
+        [
+          "հիվանդ",
+          "malato"
+        ],
+        [
+          "ցավ",
+          "dolore"
+        ],
+        [
+          "հյուր",
+          "ospite"
+        ],
+        [
+          "զանգել",
+          "chiamare"
+        ]
+      ]
+    },
+    {
+      "type": "write",
+      "prompt": "Traduci e scrivi: «quando torna?»",
+      "it": "quando torna?",
+      "answer": "Ե՞րբ կգա"
+    },
+    {
+      "type": "listen",
+      "question": "Ordine o divieto?",
+      "speakText": "Մի՛ խոսիր",
+      "it": "Non parlare!",
+      "reveal": "Մի՛ խոսիր",
+      "options": [
+        "divieto",
+        "ordine",
+        "domanda"
+      ],
+      "answer": "divieto",
+      "extra": true
+    }
   ]
 }

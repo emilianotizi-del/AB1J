@@ -2,24 +2,141 @@
   "id": "l067",
   "title": "Cultura: la terra d'Armenia",
   "vocab": [
-    { "hy": "լեռ", "tr": "leṙ", "ipa": "[lɛr]", "it": "montagna" },
-    { "hy": "Հայաստան", "tr": "Hayastan", "ipa": "[hɑjɑsˈtɑn]", "it": "Armenia" }
+    {
+      "hy": "լեռ",
+      "tr": "leṙ",
+      "ipa": "[lɛr]",
+      "it": "montagna"
+    },
+    {
+      "hy": "Հայաստան",
+      "tr": "Hayastan",
+      "ipa": "[hɑjɑsˈtɑn]",
+      "it": "Armenia"
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "word", "word": { "hy": "Հայաստան", "tr": "Hayastan", "ipa": "[hɑjɑsˈtɑn]", "it": "Armenia" }, "note": "Il nome del Paese: Հայ (armeno) + -աստան (terra di), come tanti nomi della regione." },
-    { "type": "teach", "kind": "word", "word": { "hy": "լեռ", "tr": "leṙ", "ipa": "[lɛr]", "it": "montagna" }, "note": "L'Armenia è un altopiano di montagne: la parola ricorre ovunque." },
-    { "type": "reading", "title": "Հայաստանը", "sentences": [
-      { "hy": "Հայաստանը փոքր երկիր է Կովկասում։", "tr": "Hayastanə p'vok'r yerkir e Kovkasum", "it": "L'Armenia è un piccolo Paese del Caucaso." },
-      { "hy": "Այնտեղ շատ լեռներ կան։", "tr": "ayntegh shat leṙner kan", "it": "Lì ci sono molte montagne." },
-      { "hy": "Ամենաբարձր լեռը Արագածն է։", "tr": "amenabardzr leṙə Aragatsn e", "it": "La montagna più alta è l'Aragats." },
-      { "hy": "Մայրաքաղաքը Երևանն է։", "tr": "mayrak'aghak'ə Yerevann e", "it": "La capitale è Yerevan." },
-      { "hy": "Երևանը շատ հին քաղաք է։", "tr": "Yerevanə shat hin k'aghak' e", "it": "Yerevan è una città molto antica." }
-    ]},
-    { "type": "teach", "kind": "word", "word": { "hy": "կան", "tr": "kan", "ipa": "[kɑn]", "it": "ci sono" }, "note": "կա = c'è, կան = ci sono. Utilissimo: Այստեղ խանութ կա՞ = c'è un negozio qui?" },
-    { "type": "mcq", "prompt": "Qual è la capitale dell'Armenia?", "options": ["Yerevan", "Aragats", "Kovkas"], "answer": "Yerevan" },
-    { "type": "mcq", "prompt": "Che cos'è l'Aragats?", "options": ["la montagna più alta", "la capitale", "un fiume"], "answer": "la montagna più alta" },
-    { "type": "cloze", "it": "c'è un negozio qui?", "text": "Այստեղ խանութ ___", "options": ["կա՞", "կան", "է"], "answer": "կա՞", "speakText": "Այստեղ խանութ կա՞" },
-    { "type": "listen", "question": "Ascolta e verifica", "speakText": "Մայրաքաղաքը Երևանն է", "it": "La capitale è Yerevan", "reveal": "Մայրաքաղաքը Երևանն է" },
-    { "type": "write", "prompt": "Traduci e scrivi: «Armenia»", "it": "Armenia", "answer": "Հայաստան", "extra": true }
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "Հայաստան",
+        "tr": "Hayastan",
+        "ipa": "[hɑjɑsˈtɑn]",
+        "it": "Armenia"
+      },
+      "note": "Il nome del Paese: Հայ (armeno) + -աստան (terra di), come tanti nomi della regione."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "լեռ",
+        "tr": "leṙ",
+        "ipa": "[lɛr]",
+        "it": "montagna"
+      },
+      "note": "L'Armenia è un altopiano di montagne: la parola ricorre ovunque."
+    },
+    {
+      "type": "reading",
+      "title": "Հայաստանը",
+      "sentences": [
+        {
+          "hy": "Հայաստանը փոքր երկիր է Կովկասում։",
+          "tr": "Hayastanə p'vok'r yerkir e Kovkasum",
+          "it": "L'Armenia è un piccolo Paese del Caucaso."
+        },
+        {
+          "hy": "Այնտեղ շատ լեռներ կան։",
+          "tr": "ayntegh shat leṙner kan",
+          "it": "Lì ci sono molte montagne."
+        },
+        {
+          "hy": "Ամենաբարձր լեռը Արագածն է։",
+          "tr": "amenabardzr leṙə Aragatsn e",
+          "it": "La montagna più alta è l'Aragats."
+        },
+        {
+          "hy": "Մայրաքաղաքը Երևանն է։",
+          "tr": "mayrak'aghak'ə Yerevann e",
+          "it": "La capitale è Yerevan."
+        },
+        {
+          "hy": "Երևանը շատ հին քաղաք է։",
+          "tr": "Yerevanə shat hin k'aghak' e",
+          "it": "Yerevan è una città molto antica."
+        }
+      ]
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "կան",
+        "tr": "kan",
+        "ipa": "[kɑn]",
+        "it": "ci sono"
+      },
+      "note": "կա = c'è, կան = ci sono. Utilissimo: Այստեղ խանութ կա՞ = c'è un negozio qui?"
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "գյուղ",
+        "tr": "gyugh",
+        "ipa": "[gjuʁ]",
+        "it": "villaggio"
+      },
+      "note": "Parola utile da riconoscere nella lettura: non è richiesta in produzione.",
+      "extra": true
+    },
+    {
+      "type": "mcq",
+      "prompt": "Qual è la capitale dell'Armenia?",
+      "options": [
+        "Yerevan",
+        "Aragats",
+        "Kovkas"
+      ],
+      "answer": "Yerevan"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Che cos'è l'Aragats?",
+      "options": [
+        "la montagna più alta",
+        "la capitale",
+        "un fiume"
+      ],
+      "answer": "la montagna più alta"
+    },
+    {
+      "type": "cloze",
+      "it": "c'è un negozio qui?",
+      "text": "Այստեղ խանութ ___",
+      "options": [
+        "կա՞",
+        "կան",
+        "է"
+      ],
+      "answer": "կա՞",
+      "speakText": "Այստեղ խանութ կա՞"
+    },
+    {
+      "type": "listen",
+      "question": "Ascolta e verifica",
+      "speakText": "Մայրաքաղաքը Երևանն է",
+      "it": "La capitale è Yerevan",
+      "reveal": "Մայրաքաղաքը Երևանն է"
+    },
+    {
+      "type": "write",
+      "prompt": "Traduci e scrivi: «Armenia»",
+      "it": "Armenia",
+      "answer": "Հայաստան",
+      "extra": true
+    }
   ]
 }

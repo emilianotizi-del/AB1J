@@ -2,24 +2,138 @@
   "id": "l062",
   "title": "Racconta la tua giornata",
   "vocab": [
-    { "hy": "առավոտյան", "tr": "aṙavotyan", "ipa": "[ɑrɑvɔtˈjɑn]", "it": "di mattina" },
-    { "hy": "հետո", "tr": "heto", "ipa": "[hɛˈtɔ]", "it": "poi, dopo" }
+    {
+      "hy": "առավոտյան",
+      "tr": "aṙavotyan",
+      "ipa": "[ɑrɑvɔtˈjɑn]",
+      "it": "di mattina"
+    },
+    {
+      "hy": "հետո",
+      "tr": "heto",
+      "ipa": "[hɛˈtɔ]",
+      "it": "poi, dopo"
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "word", "word": { "hy": "առավոտյան", "tr": "aṙavotyan", "ipa": "[ɑrɑvɔtˈjɑn]", "it": "di mattina" }, "note": "Da առավոտ (mattina) + -յան = «di mattina, al mattino»." },
-    { "type": "teach", "kind": "word", "word": { "hy": "հետո", "tr": "heto", "ipa": "[hɛˈtɔ]", "it": "poi, dopo" }, "note": "Il connettore del racconto: prima questo, հետո quello." },
-    { "type": "reading", "title": "Երեկվա իմ օրը", "sentences": [
-      { "hy": "Երեկ առավոտյան ես շուտ արթնացա։", "tr": "yerek aṙavotyan yes shut art'nats'a", "it": "Ieri mattina mi sono svegliato presto." },
-      { "hy": "Սուրճ խմեցի և հաց կերա։", "tr": "surch khmets'i yev hats' kera", "it": "Ho bevuto un caffè e mangiato del pane." },
-      { "hy": "Հետո աշխատանքի գնացի։", "tr": "heto ashkhatank'i gnats'i", "it": "Poi sono andato al lavoro." },
-      { "hy": "Երեկոյան ընկերներիս հետ ճաշեցի։", "tr": "yerekoyan ənkerneris het chashets'i", "it": "La sera ho pranzato con i miei amici." },
-      { "hy": "Օրը շատ լավն էր։", "tr": "orə shat lavn er", "it": "È stata una bella giornata." }
-    ]},
-    { "type": "mcq", "prompt": "Quando si è svegliato?", "options": ["presto, di mattina", "tardi, di sera", "a mezzogiorno"], "answer": "presto, di mattina" },
-    { "type": "mcq", "prompt": "Con chi ha cenato... anzi, pranzato la sera?", "options": ["con gli amici", "con la mamma", "da solo"], "answer": "con gli amici" },
-    { "type": "listen", "question": "Ascolta (solo audio): poi verifica", "speakText": "Հետո աշխատանքի գնացի", "it": "Poi sono andato al lavoro", "reveal": "Հետո աշխատանքի գնացի" },
-    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "առավոտյան", "answer": "առավոտյան", "it": "di mattina" },
-    { "type": "cloze", "it": "poi sono andato al mercato", "text": "___ շուկա գնացի", "options": ["Հետո", "Առավոտյան", "Երեկ"], "answer": "Հետո", "speakText": "Հետո շուկա գնացի" },
-    { "type": "write", "prompt": "Traduci e scrivi: «ho bevuto un caffè»", "it": "ho bevuto un caffè", "answer": "սուրճ խմեցի", "hint": "caffè + ho bevuto", "extra": true }
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "առավոտյան",
+        "tr": "aṙavotyan",
+        "ipa": "[ɑrɑvɔtˈjɑn]",
+        "it": "di mattina"
+      },
+      "note": "Da առավոտ (mattina) + -յան = «di mattina, al mattino»."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "հետո",
+        "tr": "heto",
+        "ipa": "[hɛˈtɔ]",
+        "it": "poi, dopo"
+      },
+      "note": "Il connettore del racconto: prima questo, հետո quello."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "պատմություն",
+        "tr": "patmut'yun",
+        "ipa": "[pɑtmutʰˈjun]",
+        "it": "storia, racconto"
+      },
+      "note": "Parola utile da riconoscere nella lettura: non è richiesta in produzione.",
+      "extra": true
+    },
+    {
+      "type": "reading",
+      "title": "Երեկվա իմ օրը",
+      "sentences": [
+        {
+          "hy": "Երեկ առավոտյան ես շուտ արթնացա։",
+          "tr": "yerek aṙavotyan yes shut art'nats'a",
+          "it": "Ieri mattina mi sono svegliato presto."
+        },
+        {
+          "hy": "Սուրճ խմեցի և հաց կերա։",
+          "tr": "surch khmets'i yev hats' kera",
+          "it": "Ho bevuto un caffè e mangiato del pane."
+        },
+        {
+          "hy": "Հետո աշխատանքի գնացի։",
+          "tr": "heto ashkhatank'i gnats'i",
+          "it": "Poi sono andato al lavoro."
+        },
+        {
+          "hy": "Երեկոյան ընկերներիս հետ ճաշեցի։",
+          "tr": "yerekoyan ənkerneris het chashets'i",
+          "it": "La sera ho pranzato con i miei amici."
+        },
+        {
+          "hy": "Օրը շատ լավն էր։",
+          "tr": "orə shat lavn er",
+          "it": "È stata una bella giornata."
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Quando si è svegliato?",
+      "options": [
+        "presto, di mattina",
+        "tardi, di sera",
+        "a mezzogiorno"
+      ],
+      "answer": "presto, di mattina"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Con chi ha cenato... anzi, pranzato la sera?",
+      "options": [
+        "con gli amici",
+        "con la mamma",
+        "da solo"
+      ],
+      "answer": "con gli amici"
+    },
+    {
+      "type": "listen",
+      "question": "Ascolta (solo audio): poi verifica",
+      "speakText": "Հետո աշխատանքի գնացի",
+      "it": "Poi sono andato al lavoro",
+      "reveal": "Հետո աշխատանքի գնացի"
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi ciò che senti",
+      "speakText": "առավոտյան",
+      "answer": "առավոտյան",
+      "it": "di mattina"
+    },
+    {
+      "type": "cloze",
+      "it": "poi sono andato al mercato",
+      "text": "___ շուկա գնացի",
+      "options": [
+        "Հետո",
+        "Առավոտյան",
+        "Երեկ"
+      ],
+      "answer": "Հետո",
+      "speakText": "Հետո շուկա գնացի"
+    },
+    {
+      "type": "write",
+      "prompt": "Traduci e scrivi: «ho bevuto un caffè»",
+      "it": "ho bevuto un caffè",
+      "answer": "սուրճ խմեցի",
+      "hint": "caffè + ho bevuto",
+      "extra": true
+    }
   ]
 }

@@ -3,13 +3,110 @@
   "title": "Verifica del modulo",
   "vocab": [],
   "steps": [
-    { "type": "cloze", "it": "penso che lui stia bene", "text": "Կարծում եմ, ___ նա լավ է", "options": ["որ", "որովհետև", "բայց"], "answer": "որ", "speakText": "Կարծում եմ, որ նա լավ է" },
-    { "type": "cloze", "it": "voglio dormire perché sono stanco", "text": "Ուզում եմ քնել, ___ հոգնած եմ", "options": ["որովհետև", "որ", "եթե"], "answer": "որովհետև", "speakText": "Ուզում եմ քնել, որովհետև հոգնած եմ" },
-    { "type": "cloze", "it": "se piove, resto a casa", "text": "___ անձրև գա, տանը կմնամ", "options": ["Եթե", "Որ", "Քան"], "answer": "Եթե", "speakText": "Եթե անձրև գա, տանը կմնամ" },
-    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "որովհետև", "answer": "որովհետև", "it": "perché" },
-    { "type": "listen", "question": "Quale connettivo?", "speakText": "Ուզում եմ գալ, բայց չեմ կարող", "it": "Voglio venire ma non posso", "reveal": "Ուզում եմ գալ, բայց չեմ կարող", "options": ["ma", "perché", "che"], "answer": "ma" },
-    { "type": "match", "prompt": "Abbina connettivo e senso", "pairs": [["որ", "che"], ["որովհետև", "perché"], ["բայց", "ma"], ["եթե", "se"]] },
-    { "type": "write", "prompt": "Traduci e scrivi: «cosa studi?»", "it": "cosa studi?", "answer": "Ի՞նչ ես սովորում", "hint": "cosa + studi" },
-    { "type": "listen", "question": "Ascolta e verifica", "speakText": "Չեմ աշխատում, ուսանող եմ", "it": "Non lavoro, sono studente", "reveal": "Չեմ աշխատում, ուսանող եմ", "extra": true }
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "սիրտ",
+        "tr": "sirt",
+        "ipa": "[siɾt]",
+        "it": "cuore"
+      },
+      "note": "Parola utile da riconoscere nella lettura: non è richiesta in produzione.",
+      "extra": true
+    },
+    {
+      "type": "cloze",
+      "it": "penso che lui stia bene",
+      "text": "Կարծում եմ, ___ նա լավ է",
+      "options": [
+        "որ",
+        "որովհետև",
+        "բայց"
+      ],
+      "answer": "որ",
+      "speakText": "Կարծում եմ, որ նա լավ է"
+    },
+    {
+      "type": "cloze",
+      "it": "voglio dormire perché sono stanco",
+      "text": "Ուզում եմ քնել, ___ հոգնած եմ",
+      "options": [
+        "որովհետև",
+        "որ",
+        "եթե"
+      ],
+      "answer": "որովհետև",
+      "speakText": "Ուզում եմ քնել, որովհետև հոգնած եմ"
+    },
+    {
+      "type": "cloze",
+      "it": "se piove, resto a casa",
+      "text": "___ անձրև գա, տանը կմնամ",
+      "options": [
+        "Եթե",
+        "Որ",
+        "Քան"
+      ],
+      "answer": "Եթե",
+      "speakText": "Եթե անձրև գա, տանը կմնամ"
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi ciò che senti",
+      "speakText": "որովհետև",
+      "answer": "որովհետև",
+      "it": "perché"
+    },
+    {
+      "type": "listen",
+      "question": "Quale connettivo?",
+      "speakText": "Ուզում եմ գալ, բայց չեմ կարող",
+      "it": "Voglio venire ma non posso",
+      "reveal": "Ուզում եմ գալ, բայց չեմ կարող",
+      "options": [
+        "ma",
+        "perché",
+        "che"
+      ],
+      "answer": "ma"
+    },
+    {
+      "type": "match",
+      "prompt": "Abbina connettivo e senso",
+      "pairs": [
+        [
+          "որ",
+          "che"
+        ],
+        [
+          "որովհետև",
+          "perché"
+        ],
+        [
+          "բայց",
+          "ma"
+        ],
+        [
+          "եթե",
+          "se"
+        ]
+      ]
+    },
+    {
+      "type": "write",
+      "prompt": "Traduci e scrivi: «cosa studi?»",
+      "it": "cosa studi?",
+      "answer": "Ի՞նչ ես սովորում",
+      "hint": "cosa + studi"
+    },
+    {
+      "type": "listen",
+      "question": "Ascolta e verifica",
+      "speakText": "Չեմ աշխատում, ուսանող եմ",
+      "it": "Non lavoro, sono studente",
+      "reveal": "Չեմ աշխատում, ուսանող եմ",
+      "extra": true
+    }
   ]
 }

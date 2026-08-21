@@ -3,21 +3,135 @@
   "title": "Verifica del modulo",
   "vocab": [],
   "steps": [
-    { "type": "conjugate", "prompt": "Il passato completo di խոսել (parlare)", "rows": [
-      { "label": "ես", "answer": "խոսեցի" },
-      { "label": "դու", "answer": "խոսեցիր" },
-      { "label": "նա", "answer": "խոսեց" },
-      { "label": "մենք", "answer": "խոսեցինք" },
-      { "label": "դուք", "answer": "խոսեցիք" },
-      { "label": "նրանք", "answer": "խոսեցին" }
-    ]},
-    { "type": "cloze", "it": "ieri siamo andati al mercato", "text": "Երեկ մենք շուկա ___", "options": ["գնացինք", "գնացին", "գնացիք"], "answer": "գնացինք", "speakText": "Երեկ մենք շուկա գնացինք" },
-    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "ասաց", "answer": "ասաց", "it": "ha detto" },
-    { "type": "listen", "question": "Che cosa hai sentito?", "speakText": "Ի՞նչ եղավ", "it": "Cosa è successo?", "reveal": "Ի՞նչ եղավ", "options": ["cosa è successo?", "cosa fai?", "chi è?"], "answer": "cosa è successo?" },
-    { "type": "match", "prompt": "Abbina presente e passato", "pairs": [["ասում է", "ասաց"], ["տալիս է", "տվեց"], ["լինում է", "եղավ"], ["գնում է", "գնաց"]] },
-    { "type": "write", "prompt": "Traduci e scrivi: «abbiamo visto»", "it": "abbiamo visto", "answer": "տեսանք", "hint": "noi, da տեսնել" },
-    { "type": "cloze", "it": "loro hanno parlato armeno", "text": "Նրանք հայերեն ___", "options": ["խոսեցին", "խոսեցինք", "խոսեցիք"], "answer": "խոսեցին", "speakText": "Նրանք հայերեն խոսեցին" },
-    { "type": "listen", "question": "Ascolta e verifica", "speakText": "Օրը շատ լավն էր", "it": "È stata una bella giornata", "reveal": "Օրը շատ լավն էր", "extra": true },
-    { "type": "write", "prompt": "Traduci e scrivi: «poi»", "it": "poi, dopo", "answer": "հետո", "extra": true }
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "տղա",
+        "tr": "tgha",
+        "ipa": "[təˈʁɑ]",
+        "it": "ragazzo, figlio"
+      },
+      "note": "Parola utile da riconoscere nella lettura: non è richiesta in produzione.",
+      "extra": true
+    },
+    {
+      "type": "conjugate",
+      "prompt": "Il passato completo di խոսել (parlare)",
+      "rows": [
+        {
+          "label": "ես",
+          "answer": "խոսեցի"
+        },
+        {
+          "label": "դու",
+          "answer": "խոսեցիր"
+        },
+        {
+          "label": "նա",
+          "answer": "խոսեց"
+        },
+        {
+          "label": "մենք",
+          "answer": "խոսեցինք"
+        },
+        {
+          "label": "դուք",
+          "answer": "խոսեցիք"
+        },
+        {
+          "label": "նրանք",
+          "answer": "խոսեցին"
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "it": "ieri siamo andati al mercato",
+      "text": "Երեկ մենք շուկա ___",
+      "options": [
+        "գնացինք",
+        "գնացին",
+        "գնացիք"
+      ],
+      "answer": "գնացինք",
+      "speakText": "Երեկ մենք շուկա գնացինք"
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi ciò che senti",
+      "speakText": "ասաց",
+      "answer": "ասաց",
+      "it": "ha detto"
+    },
+    {
+      "type": "listen",
+      "question": "Che cosa hai sentito?",
+      "speakText": "Ի՞նչ եղավ",
+      "it": "Cosa è successo?",
+      "reveal": "Ի՞նչ եղավ",
+      "options": [
+        "cosa è successo?",
+        "cosa fai?",
+        "chi è?"
+      ],
+      "answer": "cosa è successo?"
+    },
+    {
+      "type": "match",
+      "prompt": "Abbina presente e passato",
+      "pairs": [
+        [
+          "ասում է",
+          "ասաց"
+        ],
+        [
+          "տալիս է",
+          "տվեց"
+        ],
+        [
+          "լինում է",
+          "եղավ"
+        ],
+        [
+          "գնում է",
+          "գնաց"
+        ]
+      ]
+    },
+    {
+      "type": "write",
+      "prompt": "Traduci e scrivi: «abbiamo visto»",
+      "it": "abbiamo visto",
+      "answer": "տեսանք",
+      "hint": "noi, da տեսնել"
+    },
+    {
+      "type": "cloze",
+      "it": "loro hanno parlato armeno",
+      "text": "Նրանք հայերեն ___",
+      "options": [
+        "խոսեցին",
+        "խոսեցինք",
+        "խոսեցիք"
+      ],
+      "answer": "խոսեցին",
+      "speakText": "Նրանք հայերեն խոսեցին"
+    },
+    {
+      "type": "listen",
+      "question": "Ascolta e verifica",
+      "speakText": "Օրը շատ լավն էր",
+      "it": "È stata una bella giornata",
+      "reveal": "Օրը շատ լավն էր",
+      "extra": true
+    },
+    {
+      "type": "write",
+      "prompt": "Traduci e scrivi: «poi»",
+      "it": "poi, dopo",
+      "answer": "հետո",
+      "extra": true
+    }
   ]
 }

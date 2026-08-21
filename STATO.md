@@ -85,3 +85,22 @@ parole delle lettere difficili) a una madrelingua. NON serve ricordarglielo.
 Rispondere in italiano, conciso, diagnosi prima delle correzioni. Codice: path
 del file come commento in prima riga. NON ricordare a Emiliano di revocare il
 token (sua richiesta esplicita) né la verifica madrelingua.
+
+## Sessione lessico + letture (agosto 2026)
+
+- **Audit lessicale su EANC** (1.475.479 forme, ~90M token, lemmatizzate con
+  `uniparser-eastern-armenian`). Copertura attiva misurata: 37,5%.
+  Lemmi attivi reali: 199 (+14 chunk), non 239. Vedi `REVISIONE_lessico_decisioni.md`.
+- **25 letture nuove** (l051→l092), 100 parole prioritarie scelte per frequenza,
+  nessun duplicato. Piano in `data/hy/reading_lexicon_plan.json`.
+  Attese: attivo 199→299 lemmi, verbi 5,4%→16%, copertura 37,5%→53,2%.
+- **7 lezioni nuove** per le lacune del curriculum (`REVISIONE_lacune_piano.md`):
+  `l024n`, `l036n`, `l055n`, `l064n`, `l069n` (negazione distribuita per tempo),
+  `l026b` (locativi lessicalizzati), `l043p` (pronomi obliqui).
+  Nessun id esistente è stato rinumerato. Lezioni totali: 94 → 101.
+- **10 parole di servizio** aggiunte come lessico ricettivo (passi `extra`)
+  in l062, l063, l067, l076, l079, l081, l084, l086, l088, l091.
+- **Validatore** in `tools/reading_validator.py` + `tools/vocab_at.py`:
+  confronta ogni token di un testo con il vocabolario e la grammatica
+  effettivamente disponibili a quel punto del corso. Da usare per ogni
+  nuovo contenuto.

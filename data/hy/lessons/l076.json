@@ -2,21 +2,119 @@
   "id": "l076",
   "title": "Provenienza e presentazioni",
   "vocab": [
-    { "hy": "ապրում եմ", "tr": "aprum em", "ipa": "[ɑpˈɾum ɛm]", "it": "vivo, abito" },
-    { "hy": "ծնվել", "tr": "tsnvel", "ipa": "[t͡sənˈvɛl]", "it": "nascere" }
+    {
+      "hy": "ապրում եմ",
+      "tr": "aprum em",
+      "ipa": "[ɑpˈɾum ɛm]",
+      "it": "vivo, abito"
+    },
+    {
+      "hy": "ծնվել",
+      "tr": "tsnvel",
+      "ipa": "[t͡sənˈvɛl]",
+      "it": "nascere"
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "word", "word": { "hy": "ծնվել", "tr": "tsnvel", "ipa": "[t͡sənˈvɛl]", "it": "nascere" }, "note": "Ես ծնվել եմ Հռոմում = sono nato a Roma. (ծնվել եմ = «sono nato», tempo perfetto, che vedremo meglio al B1)." },
-    { "type": "dialog", "title": "Fare conoscenza", "lines": [
-      { "who": "A", "hy": "Բարև։ Որտեղի՞ց ես։", "tr": "barev. vorteghi՞ts' es", "ipa": "[bɑˈɾɛv vɔɾtɛˈʁit͡sʰ ɛs]", "it": "Ciao! Di dove sei?" },
-      { "who": "B", "hy": "Ես Իտալիայից եմ, բայց Երևանում եմ ապրում։", "tr": "yes Italiayits' em, bayts' Yerevanum em aprum", "ipa": "[jɛs itɑliɑˈjit͡sʰ ɛm bɑjt͡sʰ jɛɾɛvɑˈnum ɛm ɑpˈɾum]", "it": "Sono dall'Italia, ma vivo a Yerevan." },
-      { "who": "A", "hy": "Ի՞նչ ես անում այստեղ։", "tr": "inch es anum aystegh", "ipa": "[int͡ʃʰ ɛs ɑˈnum ɑjsˈtɛʁ]", "it": "Cosa fai qui?" },
-      { "who": "B", "hy": "Հայերեն եմ սովորում։", "tr": "hayeren em sovorum", "ipa": "[hɑjɛˈɾɛn ɛm sɔvɔˈɾum]", "it": "Studio armeno." }
-    ]},
-    { "type": "mcq", "prompt": "Da dove viene e dove vive?", "options": ["dall'Italia, vive a Yerevan", "dall'Armenia, vive a Roma", "da Yerevan, vive in Italia"], "answer": "dall'Italia, vive a Yerevan" },
-    { "type": "listen", "question": "Ascolta e verifica", "speakText": "Ես Իտալիայից եմ, բայց Երևանում եմ ապրում", "it": "Sono dall'Italia, ma vivo a Yerevan", "reveal": "Ես Իտալիայից եմ, բայց Երևանում եմ ապրում" },
-    { "type": "write", "prompt": "Traduci e scrivi: «di dove sei?»", "it": "di dove sei?", "answer": "Որտեղի՞ց ես", "hint": "da dove + sei" },
-    { "type": "cloze", "it": "vivo a Yerevan", "text": "Ես Երևանում եմ ___", "options": ["ապրում", "ապրել", "գնում"], "answer": "ապրում", "speakText": "Ես Երևանում եմ ապրում" },
-    { "type": "write", "prompt": "Traduci e scrivi: «studio armeno»", "it": "studio armeno", "answer": "Հայերեն եմ սովորում", "extra": true }
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ծնվել",
+        "tr": "tsnvel",
+        "ipa": "[t͡sənˈvɛl]",
+        "it": "nascere"
+      },
+      "note": "Ես ծնվել եմ Հռոմում = sono nato a Roma. (ծնվել եմ = «sono nato», tempo perfetto, che vedremo meglio al B1)."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ամբողջ",
+        "tr": "amboghj",
+        "ipa": "[ɑmˈboʁdʒ]",
+        "it": "intero, tutto"
+      },
+      "note": "Parola utile da riconoscere nella lettura: non è richiesta in produzione.",
+      "extra": true
+    },
+    {
+      "type": "dialog",
+      "title": "Fare conoscenza",
+      "lines": [
+        {
+          "who": "A",
+          "hy": "Բարև։ Որտեղի՞ց ես։",
+          "tr": "barev. vorteghi՞ts' es",
+          "ipa": "[bɑˈɾɛv vɔɾtɛˈʁit͡sʰ ɛs]",
+          "it": "Ciao! Di dove sei?"
+        },
+        {
+          "who": "B",
+          "hy": "Ես Իտալիայից եմ, բայց Երևանում եմ ապրում։",
+          "tr": "yes Italiayits' em, bayts' Yerevanum em aprum",
+          "ipa": "[jɛs itɑliɑˈjit͡sʰ ɛm bɑjt͡sʰ jɛɾɛvɑˈnum ɛm ɑpˈɾum]",
+          "it": "Sono dall'Italia, ma vivo a Yerevan."
+        },
+        {
+          "who": "A",
+          "hy": "Ի՞նչ ես անում այստեղ։",
+          "tr": "inch es anum aystegh",
+          "ipa": "[int͡ʃʰ ɛs ɑˈnum ɑjsˈtɛʁ]",
+          "it": "Cosa fai qui?"
+        },
+        {
+          "who": "B",
+          "hy": "Հայերեն եմ սովորում։",
+          "tr": "hayeren em sovorum",
+          "ipa": "[hɑjɛˈɾɛn ɛm sɔvɔˈɾum]",
+          "it": "Studio armeno."
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Da dove viene e dove vive?",
+      "options": [
+        "dall'Italia, vive a Yerevan",
+        "dall'Armenia, vive a Roma",
+        "da Yerevan, vive in Italia"
+      ],
+      "answer": "dall'Italia, vive a Yerevan"
+    },
+    {
+      "type": "listen",
+      "question": "Ascolta e verifica",
+      "speakText": "Ես Իտալիայից եմ, բայց Երևանում եմ ապրում",
+      "it": "Sono dall'Italia, ma vivo a Yerevan",
+      "reveal": "Ես Իտալիայից եմ, բայց Երևանում եմ ապրում"
+    },
+    {
+      "type": "write",
+      "prompt": "Traduci e scrivi: «di dove sei?»",
+      "it": "di dove sei?",
+      "answer": "Որտեղի՞ց ես",
+      "hint": "da dove + sei"
+    },
+    {
+      "type": "cloze",
+      "it": "vivo a Yerevan",
+      "text": "Ես Երևանում եմ ___",
+      "options": [
+        "ապրում",
+        "ապրել",
+        "գնում"
+      ],
+      "answer": "ապրում",
+      "speakText": "Ես Երևանում եմ ապրում"
+    },
+    {
+      "type": "write",
+      "prompt": "Traduci e scrivi: «studio armeno»",
+      "it": "studio armeno",
+      "answer": "Հայերեն եմ սովորում",
+      "extra": true
+    }
   ]
 }
