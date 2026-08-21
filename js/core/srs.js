@@ -3,6 +3,16 @@
 import { getDeck, saveDeck, recordEvent } from './store.js';
 
 const DAY = 86400000;
+const HOUR = 3600000;
+
+// Le tre carte di una parola nuova non devono uscire nella stessa sessione:
+// vedere «come si legge», poi «che cosa significa», poi «scrivila» a distanza di
+// pochi secondi non misura la memoria, misura l'eco di ciò che hai appena letto.
+// Sfalso l'ingresso: prima il riconoscimento, molto dopo la produzione.
+const FIRST_DUE = { read: 0, mean: 1 * DAY, prod: 3 * DAY };
+// Jitter: evita che tutte le parole di una lezione tornino nello stesso istante
+// e quindi nello stesso ordine in cui sono state imparate.
+const jitter = () => Math.floor(Math.random() * 8 * HOUR);
 
 export function addCards(items) {
   // items: [{ id, hy, tr, ipa, it }]
@@ -13,7 +23,8 @@ export function addCards(items) {
     for (const kind of ['read', 'mean', 'prod']) {
       const id = it.id + ':' + kind[0];
       if (!deck[id]) {
-        deck[id] = { ...it, id, kind, ef: 2.5, reps: 0, interval: 0, due: Date.now() };
+        deck[id] = { ...it, id, kind, ef: 2.5, reps: 0, interval: 0,
+                     due: Date.now() + FIRST_DUE[kind] + jitter() };
       }
     }
   }
@@ -69,13 +80,65 @@ export function migrateDeck() {
     changed = true;
   }
 
+  // 4) Correzione una-tantum: le carte mai ripassate (reps 0) di una stessa
+  //    parola erano tutte scadute nello stesso istante, quindi uscivano in fila
+  //    (leggi → traduci → scrivi). Le sfalso secondo FIRST_DUE, senza toccare
+  //    nulla di ciò che è già stato ripassato almeno una volta.
+  if (!localStorage.getItem('ab1j_kind_stagger_done')) {
+    for (const c of Object.values(deck)) {
+      if (c && c.reps === 0 && c.kind && FIRST_DUE[c.kind] != null) {
+        c.due = Date.now() + FIRST_DUE[c.kind] + jitter();
+      }
+    }
+    localStorage.setItem('ab1j_kind_stagger_done', '1');
+    changed = true;
+  }
+
   if (changed) saveDeck(deck);
 }
 
+// Radice di una carta: 'l024n:չեմ:r' → 'l024n:չեմ' (la parola), 'l024n' (la lezione).
+const rootOf   = c => String(c.id).slice(0, -2);
+const lessonOf = c => String(c.id).split(':')[0];
+
+function shuffled(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Allontana le carte che si aiutano a vicenda: due carte della stessa parola,
+// o due parole imparate nella stessa lezione (spesso dello stesso campo
+// semantico: «qui»/«lì»), non devono capitare una dopo l'altra.
+function spaceOut(cards) {
+  const out = [];
+  const pending = cards.slice();
+  while (pending.length) {
+    const prev = out[out.length - 1];
+    let pick = 0;
+    if (prev) {
+      const clashes = c => rootOf(c) === rootOf(prev) ||
+                           (lessonOf(c) === lessonOf(prev) && pending.length > 2);
+      // Cerco la prima carta che non fa attrito; se sono tutte "vicine",
+      // tengo l'ordine originale invece di rimescolare all'infinito.
+      const found = pending.findIndex(c => !clashes(c));
+      if (found > -1) pick = found;
+    }
+    out.push(pending.splice(pick, 1)[0]);
+  }
+  return out;
+}
+
 export function dueCards(now = Date.now()) {
-  return Object.values(getDeck())
-    .filter(c => c.due <= now)
-    .sort((a, b) => a.due - b.due);
+  const due = Object.values(getDeck()).filter(c => c.due <= now);
+  // Priorità a chi è più in ritardo, ma a scaglioni di un giorno: dentro lo
+  // stesso scaglione l'ordine è casuale, non quello di inserimento.
+  const lateness = c => Math.floor((now - c.due) / DAY);
+  const ordered = shuffled(due).sort((a, b) => lateness(b) - lateness(a));
+  return spaceOut(ordered);
 }
 
 export function deckSize() { return Object.keys(getDeck()).length; }
