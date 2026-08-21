@@ -1,0 +1,85 @@
+{
+  "id": "reading_l044",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Ի՞նչ գիտենք",
+      "text": "Երեկ իմ քույրը ինձ մի բան ասաց։ Նա ասաց. «Ես հայերեն գիտեմ»։ Ես ասացի. «Դու հայերեն գիտե՞ս»։ Նա ասաց. «Ես տասը բան գիտեմ»։ Նա ասաց հայերեն. «Բարև ձեզ։ Ինչպե՞ս եք»։ Ես տեսա. նա ճիշտ է։ Ես ուզում եմ հայերեն սովորել իմ քրոջ ու իմ եղբոր համար։ Հիմա մենք գիտենք. հայերենը լավ բան է։ Իմ քույրը ինձ մի բան տվեց։ Ես նրան շնորհակալություն ասացի։",
+      "it": "Ieri mia sorella mi ha detto una cosa. Ha detto: «So l'armeno». Ho detto: «Tu sai l'armeno?». Ha detto: «So dieci cose». Ha detto in armeno: «Salve. Come sta?». Ho visto: ha ragione. Voglio studiare armeno per mia sorella e mio fratello. Adesso sappiamo: l'armeno è una bella cosa. Mia sorella mi ha dato una cosa. Le ho detto grazie.",
+      "qLang": "it",
+      "newWords": [],
+      "questions": [
+        {
+          "q": "Che cosa ha detto sua sorella?",
+          "options": [
+            {
+              "text": "Che sa l'armeno",
+              "ok": true
+            },
+            {
+              "text": "Che vuole studiare",
+              "ok": false
+            },
+            {
+              "text": "Che è stanca",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa ha detto in armeno?",
+          "options": [
+            {
+              "text": "Un saluto formale",
+              "ok": true
+            },
+            {
+              "text": "I numeri",
+              "ok": false
+            },
+            {
+              "text": "Il suo nome",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa vuole chi racconta?",
+          "options": [
+            {
+              "text": "Studiare armeno per i fratelli",
+              "ok": true
+            },
+            {
+              "text": "Che lei smetta",
+              "ok": false
+            },
+            {
+              "text": "Un libro nuovo",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa ha fatto la sorella alla fine?",
+          "options": [
+            {
+              "text": "Gli ha dato una cosa",
+              "ok": true
+            },
+            {
+              "text": "È andata via",
+              "ok": false
+            },
+            {
+              "text": "Ha detto grazie",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

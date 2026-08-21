@@ -1,0 +1,85 @@
+{
+  "id": "reading_l039",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Ի՞նչ արժե",
+      "text": "Այսօր ես հաց ու պանիր ունեմ։ Կաթ չունեմ։ «Ի՞նչ արժե կաթը»։ «Հարյուր դրամ»։ Ես կաթ եմ ուտում ու թեյ եմ խմում։ Ես սուրճ չեմ խմում։ Ես ձու ունեմ՝ երկու ձու։ Միս չունեմ։ Ես հինգ հարյուր դրամ ունեմ։ Շատ չէ։ «Շնորհակալություն»։ «Խնդրեմ», ասաց կինը։ Հիմա ես տանը եմ։ Իմ ճաշը լավ ճաշ է։",
+      "it": "Oggi ho pane e formaggio. Non ho latte. «Quanto costa il latte?». «Cento dram». Prendo il latte e bevo il tè. Non bevo caffè. Ho delle uova: due uova. Non ho carne. Ho cinquecento dram. Non è molto. «Grazie». «Prego», ha detto la donna. Adesso sono a casa. Il mio pranzo è un buon pranzo.",
+      "qLang": "it",
+      "newWords": [],
+      "questions": [
+        {
+          "q": "Che cosa non ha?",
+          "options": [
+            {
+              "text": "Il latte",
+              "ok": true
+            },
+            {
+              "text": "Il pane",
+              "ok": false
+            },
+            {
+              "text": "Il formaggio",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Quanto costa il latte?",
+          "options": [
+            {
+              "text": "Cento dram",
+              "ok": true
+            },
+            {
+              "text": "Cinquecento dram",
+              "ok": false
+            },
+            {
+              "text": "Cinquanta dram",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa beve?",
+          "options": [
+            {
+              "text": "Il tè",
+              "ok": true
+            },
+            {
+              "text": "Il caffè",
+              "ok": false
+            },
+            {
+              "text": "L'acqua",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Quanti soldi ha?",
+          "options": [
+            {
+              "text": "Cinquecento dram",
+              "ok": true
+            },
+            {
+              "text": "Cento dram",
+              "ok": false
+            },
+            {
+              "text": "Non ha soldi",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

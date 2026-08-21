@@ -1,0 +1,85 @@
+{
+  "id": "reading_l025",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Իմ ընտանիքը",
+      "text": "Բարև։ Իմ անունը Աննա է։ Ես իտալացի եմ։ Ես հայերեն եմ սովորում։ Հայերենը նոր բան է։ Իմ ընտանիքը մեծ չէ։ Իմ հայրը, իմ մայրը, իմ քույրը ու ես։ Իմ քույրը փոքր է։ Նա ջուր է խմում ու խնձոր է ուտում։ Ես ջուր չեմ խմում։ Ես ճաշ եմ ուտում։ Իմ հայրը հայ չէ։ Իմ մայրը հայ չէ։ Մենք հայերեն ենք սովորում։ Իմ օրը լավ է։ Շնորհակալություն։",
+      "it": "Ciao. Il mio nome è Anna. Sono italiana. Sto imparando l'armeno. L'armeno è una cosa nuova. La mia famiglia non è grande: mio padre, mia madre, mia sorella e io. Mia sorella è piccola. Beve acqua e mangia una mela. Io non bevo acqua. Mangio il pranzo. Mio padre non è armeno. Mia madre non è armena. Noi stiamo imparando l'armeno. La mia giornata è bella. Grazie.",
+      "qLang": "it",
+      "newWords": [],
+      "questions": [
+        {
+          "q": "Di dov'è Anna?",
+          "options": [
+            {
+              "text": "È italiana",
+              "ok": true
+            },
+            {
+              "text": "È armena",
+              "ok": false
+            },
+            {
+              "text": "Non si dice",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Com'è la sua famiglia?",
+          "options": [
+            {
+              "text": "Non è grande",
+              "ok": true
+            },
+            {
+              "text": "È molto grande",
+              "ok": false
+            },
+            {
+              "text": "Vive in Armenia",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa mangia sua sorella?",
+          "options": [
+            {
+              "text": "Una mela",
+              "ok": true
+            },
+            {
+              "text": "Del pane",
+              "ok": false
+            },
+            {
+              "text": "Il pranzo",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Anna beve acqua?",
+          "options": [
+            {
+              "text": "No",
+              "ok": true
+            },
+            {
+              "text": "Sì",
+              "ok": false
+            },
+            {
+              "text": "Solo la mattina",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

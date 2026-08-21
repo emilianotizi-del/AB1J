@@ -14,15 +14,16 @@ def stems(fs):
 
 def validate(after, text, extra):
     """extra = forme lecite in più (parole nuove e loro flessioni)"""
-    known = set(forms(after))
+    known = {w.lower() for w in forms(after)}
     kstem = stems(known)
-    ex = set(extra)
+    ex = {e.lower() for e in extra}
     PROPER = {'Հայաստան','Հայաստանը','Հայաստանի','Հայաստանից','Հայաստանում','Իտալիա','Իտալիան',
               'Իտալիայից','Իտալիայում','Երևան','Երևանը','Երևանում','Անի','Անին','Անիից','Արամ','Արամը',
               'Անուշ','Անուշը','Դավիթ','Դավիթը','Աննա','Աննան','Սարո','Սարոն','Նարե','Նարեն'}
     ex |= PROPER
     bad = []
-    for t in re.findall(r'[\u0561-\u0587\u0531-\u0556]+', text):
+    for t0 in re.findall(r'[\u0561-\u0587\u0531-\u0556]+', text):
+        t = t0.lower()
         if t in known or t in ex:
             continue
         s = re.sub(SUFF, '', t)
@@ -30,7 +31,7 @@ def validate(after, text, extra):
                 or t.lower() in ex or re.sub(SUFF,'',t.lower()) in ex
                 or re.sub(SUFF,'',t.lower()) in kstem):
             continue
-        bad.append(t)
+        bad.append(t0)
     return sorted(set(bad))
 
 def build(rid, after, title, text, it, newWords, questions, qLang='it', allow=()):

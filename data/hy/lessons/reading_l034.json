@@ -1,0 +1,85 @@
+{
+  "id": "reading_l034",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Իմ շաբաթը",
+      "text": "Երկուշաբթի ժամը յոթն է, ու ես գնում եմ։ Երեքշաբթի ես հայերեն եմ սովորում։ Ժամը հինգն է։ Չորեքշաբթի ես տանը եմ։ Ես ֆիլմ ունեմ։ Հինգշաբթի ես տանը եմ։ Հինգշաբթին լավ օր է։ Ուրբաթ իմ ընտանիքը տանը է։ Մենք ճաշ ենք ուտում ու շատ ենք խոսում։ Շաբաթ ու կիրակի ես տանը եմ։ Ես չեմ գնում։ Իմ շաբաթը լավ շաբաթ է։",
+      "it": "Lunedì sono le sette, e vado. Martedì studio armeno. Sono le cinque. Mercoledì sono a casa. Ho un film. Giovedì sono a casa. Il giovedì è un bel giorno. Venerdì la mia famiglia è a casa. Mangiamo insieme e parliamo molto. Sabato e domenica sono a casa. Non esco. La mia settimana è una bella settimana.",
+      "qLang": "it",
+      "newWords": [],
+      "questions": [
+        {
+          "q": "Che cosa fa martedì?",
+          "options": [
+            {
+              "text": "Studia armeno",
+              "ok": true
+            },
+            {
+              "text": "Lavora",
+              "ok": false
+            },
+            {
+              "text": "Riposa",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che giorno resta a casa?",
+          "options": [
+            {
+              "text": "Giovedì",
+              "ok": true
+            },
+            {
+              "text": "Lunedì",
+              "ok": false
+            },
+            {
+              "text": "Martedì",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa succede venerdì?",
+          "options": [
+            {
+              "text": "La famiglia è a casa e mangiano insieme",
+              "ok": true
+            },
+            {
+              "text": "Va al mercato",
+              "ok": false
+            },
+            {
+              "text": "Studia",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa fa nel fine settimana?",
+          "options": [
+            {
+              "text": "Sta a casa e non esce",
+              "ok": true
+            },
+            {
+              "text": "Va al mercato",
+              "ok": false
+            },
+            {
+              "text": "Studia armeno",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "reading_l029",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Տանը",
+      "text": "Ես Դավիթ եմ։ Հիմա ես տանը եմ։ Իմ տունը փոքր է ու լավ է։ Իմ մայրը տանը է։ Նա ճաշ է անում։ Իմ հայրը տանը չէ։ Նա հիմա տանը չէ, նա քաղաքում է։ Իմ քույրը դպրոցում է։ Նա հայերեն է սովորում դպրոցում։ Ես ջուր եմ խմում։ Ես ուրախ եմ։ Հիմա մենք ճաշ ենք ուտում։ Տանը լավ է։ Իմ տունը լավ տուն է։",
+      "it": "Sono Davit. Adesso sono a casa. La mia casa è piccola ed è bella. Mia madre è a casa. Sta preparando il pranzo. Mio padre non è a casa. Adesso non è a casa, è in città. Mia sorella è a scuola. A scuola studia armeno. Io bevo acqua. Sono contento. Adesso mangiamo il pranzo. A casa si sta bene. La mia casa è una bella casa.",
+      "qLang": "it",
+      "newWords": [],
+      "questions": [
+        {
+          "q": "Dov'è Davit?",
+          "options": [
+            {
+              "text": "A casa",
+              "ok": true
+            },
+            {
+              "text": "A scuola",
+              "ok": false
+            },
+            {
+              "text": "Al lavoro",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa fa sua madre?",
+          "options": [
+            {
+              "text": "Prepara il pranzo",
+              "ok": true
+            },
+            {
+              "text": "Lavora",
+              "ok": false
+            },
+            {
+              "text": "Guarda un film",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Dov'è suo padre?",
+          "options": [
+            {
+              "text": "In città, non a casa",
+              "ok": true
+            },
+            {
+              "text": "È a casa",
+              "ok": false
+            },
+            {
+              "text": "È a scuola",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa fa sua sorella a scuola?",
+          "options": [
+            {
+              "text": "Studia armeno",
+              "ok": true
+            },
+            {
+              "text": "Mangia",
+              "ok": false
+            },
+            {
+              "text": "Guarda un film",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

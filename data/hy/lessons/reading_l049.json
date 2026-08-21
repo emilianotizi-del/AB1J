@@ -1,0 +1,85 @@
+{
+  "id": "reading_l049",
+  "title": "Lettura",
+  "vocab": [],
+  "steps": [
+    {
+      "type": "reading_test",
+      "title": "Իմ քաղաքը",
+      "text": "Ես Հռոմում եմ ապրում։ Իմ քաղաքը մեծ քաղաք է։ Իմ տան մոտ մի շուկա կա։ Այնտեղ ես հաց ու պանիր եմ գնում։ Շուկայի մոտ մի խանութ կա։ Այնտեղ շատ արժե։ Ես այնտեղ չեմ գնում։ Իմ տան մոտ մի ծառ կա։ Ծառի մոտ ես նստում եմ։ Իմ քույրը դպրոցում է։ Իմ եղբայրը ուսանող է։ Ես իմ քաղաքը սիրում եմ։ Ես ուզում եմ տեսնել Երևանը։ Երևանում ես հայերեն եմ ուզում խոսել։ Այնտեղ հայերեն են խոսում։",
+      "it": "Vivo a Roma. La mia città è una città grande. Vicino a casa mia c'è un mercato. Lì compro pane e formaggio. Vicino al mercato c'è un negozio. Lì costa molto. Io non ci vado. Vicino a casa mia c'è un albero. Vicino all'albero mi siedo. Mia sorella è a scuola. Mio fratello è studente. Amo la mia città. Voglio vedere Yerevan. A Yerevan voglio parlare armeno. Là parlano armeno.",
+      "qLang": "it",
+      "newWords": [],
+      "questions": [
+        {
+          "q": "Dove vive chi racconta?",
+          "options": [
+            {
+              "text": "A Roma",
+              "ok": true
+            },
+            {
+              "text": "A Yerevan",
+              "ok": false
+            },
+            {
+              "text": "In un villaggio",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Perché non va nel negozio?",
+          "options": [
+            {
+              "text": "Perché lì tutto costa molto",
+              "ok": true
+            },
+            {
+              "text": "Perché è lontano",
+              "ok": false
+            },
+            {
+              "text": "Perché è chiuso",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa fa vicino all'albero?",
+          "options": [
+            {
+              "text": "Si siede",
+              "ok": true
+            },
+            {
+              "text": "Gioca",
+              "ok": false
+            },
+            {
+              "text": "Studia",
+              "ok": false
+            }
+          ]
+        },
+        {
+          "q": "Che cosa vuole fare?",
+          "options": [
+            {
+              "text": "Vedere Yerevan",
+              "ok": true
+            },
+            {
+              "text": "Cambiare città",
+              "ok": false
+            },
+            {
+              "text": "Aprire un negozio",
+              "ok": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

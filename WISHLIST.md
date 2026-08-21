@@ -70,12 +70,10 @@ ingresso delle parole nell'SRS, sblocco dei prerequisiti.
 divergono dice «0 senza audio» mentre le tracce mancano — è successo davvero.
 Deve verificare l'esistenza dei `.mp3`.
 
-### 3. Letture per la prima metà del corso
-Le 25 letture stanno tutte da l051 in poi: scelta deliberata (prima non c'è
-grammatica sufficiente), ma lascia 50 lezioni senza testi. Dopo le 7 lezioni
-nuove — soprattutto la negazione a l024n — lo spazio scrivibile si è allargato.
-Valutare 6-8 letture brevi per m05-m11, con parole già note (nessun nuovo slot
-SRS): servono a leggere, non ad ampliare.
+### 3. ~~Letture per la prima metà del corso~~ — FATTO (21/08/2026)
+6 letture di solo ripasso in m05-m10 (l025, l029, l034, l039, l044, l049):
+`newWords` vuoto, nessuno slot SRS consumato, 52-73 parole ciascuna.
+Servono a leggere, non ad ampliare. Letture totali: 34.
 
 ### 4. Più produzione attiva in A1
 Chiudere le unità con un compito in cui la risposta non è visibile a schermo

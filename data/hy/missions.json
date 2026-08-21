@@ -580,6 +580,60 @@
       "after": "l092",
       "icon": "📖",
       "qLang": "it"
+    },
+    {
+      "id": "reading_l025",
+      "kind": "reading",
+      "title": "La mia famiglia",
+      "area": "Letture",
+      "after": "l025",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l029",
+      "kind": "reading",
+      "title": "A casa",
+      "area": "Letture",
+      "after": "l029",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l034",
+      "kind": "reading",
+      "title": "La mia settimana",
+      "area": "Letture",
+      "after": "l034",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l039",
+      "kind": "reading",
+      "title": "Quanto costa",
+      "area": "Letture",
+      "after": "l039",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l044",
+      "kind": "reading",
+      "title": "Che cosa sappiamo",
+      "area": "Letture",
+      "after": "l044",
+      "icon": "📖",
+      "qLang": "it"
+    },
+    {
+      "id": "reading_l049",
+      "kind": "reading",
+      "title": "La mia città",
+      "area": "Letture",
+      "after": "l049",
+      "icon": "📖",
+      "qLang": "it"
     }
   ]
 }
