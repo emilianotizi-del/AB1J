@@ -39,18 +39,6 @@
       "note": "ամենա + լավ = il migliore. Հայաստանի ամենալավ սուրճը = il miglior caffè d'Armenia."
     },
     {
-      "type": "teach",
-      "kind": "word",
-      "word": {
-        "hy": "այդպես",
-        "tr": "aydpes",
-        "ipa": "[ɑjdˈpɛs]",
-        "it": "così, in quel modo"
-      },
-      "note": "Parola utile da riconoscere nella lettura: non è richiesta in produzione.",
-      "extra": true
-    },
-    {
       "type": "mcq",
       "prompt": "Applica la regola: «il più piccolo» (փոքր)?",
       "options": [

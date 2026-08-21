@@ -39,18 +39,6 @@
       "note": "Il connettore del racconto: prima questo, հետո quello."
     },
     {
-      "type": "teach",
-      "kind": "word",
-      "word": {
-        "hy": "պատմություն",
-        "tr": "patmut'yun",
-        "ipa": "[pɑtmutʰˈjun]",
-        "it": "storia, racconto"
-      },
-      "note": "Parola utile da riconoscere nella lettura: non è richiesta in produzione.",
-      "extra": true
-    },
-    {
       "type": "reading",
       "title": "Երեկվա իմ օրը",
       "sentences": [

@@ -28,18 +28,6 @@
       "note": "Ես ծնվել եմ Հռոմում = sono nato a Roma. (ծնվել եմ = «sono nato», tempo perfetto, che vedremo meglio al B1)."
     },
     {
-      "type": "teach",
-      "kind": "word",
-      "word": {
-        "hy": "ամբողջ",
-        "tr": "amboghj",
-        "ipa": "[ɑmˈboʁdʒ]",
-        "it": "intero, tutto"
-      },
-      "note": "Parola utile da riconoscere nella lettura: non è richiesta in produzione.",
-      "extra": true
-    },
-    {
       "type": "dialog",
       "title": "Fare conoscenza",
       "lines": [

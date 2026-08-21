@@ -128,18 +128,6 @@
         "it": "stanco"
       },
       "extra": true
-    },
-    {
-      "type": "teach",
-      "kind": "word",
-      "word": {
-        "hy": "որպես",
-        "tr": "vorpes",
-        "ipa": "[voɾˈpɛs]",
-        "it": "come, in qualità di"
-      },
-      "note": "Parola utile da riconoscere nella lettura: non è richiesta in produzione.",
-      "extra": true
     }
   ]
 }

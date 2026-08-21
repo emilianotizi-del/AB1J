@@ -60,6 +60,18 @@
       "note": "Primo genitivo irregolare: տուն → տան. Le parole più antiche hanno forme proprie."
     },
     {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "այնքան",
+        "tr": "aynk'an",
+        "ipa": "[ɑjnˈkʰɑn]",
+        "it": "tanto, così tanto"
+      },
+      "note": "Parola utile da riconoscere nella lettura: non è richiesta in produzione.",
+      "extra": true
+    },
+    {
       "type": "cloze",
       "it": "la casa di Davide è grande",
       "text": "___ տունը մեծ է",

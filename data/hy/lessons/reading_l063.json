@@ -6,8 +6,8 @@
     {
       "type": "reading_test",
       "title": "Այն դեպքը շուկայում",
-      "text": "Երեկ ինձ հետ մի դեպք եղավ։ Առավոտյան ես շուտ արթնացա ու սուրճ խմեցի։ Հետո ես շուկա գնացի։ Ամեն շաբաթ ես շուկա եմ գնում։ Իմ փողը սեղանի մոտ մնաց։ Դա դժվար դեպք էր։ Բայց մի կին եկավ ու ասաց. «Դա ձեր փողն է»։ Նա գտավ իմ փողը ու ինձ տվեց։ Ես ուրախ էի. ես գտա իմ փողը։ Ես շատ ուրախ էի։ Դա լավ դեպք էր։ Հիմա ես հաճախ եմ գնում այդ շուկան։ Ես հաճախ եմ խոսում այդ դեպքի մասին։",
-      "it": "Ieri mi è successo un fatto. La mattina mi sono svegliato presto e ho bevuto un caffè. Poi sono andato al mercato. Ogni settimana vado al mercato. I miei soldi sono rimasti vicino a un tavolo. È stato un fatto spiacevole. Ma è arrivata una donna e ha detto: «Questi sono i suoi soldi». Ha trovato i miei soldi e me li ha dati. Ero contento: avevo ritrovato i miei soldi. Ero molto contento. È stato un bel fatto. Adesso vado spesso a quel mercato. Parlo spesso di quel fatto.",
+      "text": "Երեկ ինձ հետ մի դեպք եղավ։ Առավոտյան ես շուտ արթնացա ու սուրճ խմեցի։ Հետո ես շուկա գնացի։ Ամեն շաբաթ ես շուկա եմ գնում։ Շուկայում ես իմ փողը չգտա։ Ես ամեն տեղ նայեցի, բայց փողը չկար։ Դա դժվար դեպք էր։ Բայց մի կին եկավ ու ասաց. «Դա ձեր փողն է»։ Նա գտավ իմ փողը ու ինձ տվեց։ Ես չգիտեի ինչ ասել։ Ես շատ ուրախ էի։ Դա լավ դեպք էր։ Հիմա ես հաճախ եմ գնում այդ շուկան։ Ես հաճախ եմ խոսում այդ դեպքի մասին։",
+      "it": "Ieri mi è successo un fatto. La mattina mi sono svegliato presto e ho bevuto un caffè. Poi sono andato al mercato. Ogni settimana vado al mercato. Al mercato non trovavo i miei soldi. Ho guardato dappertutto, ma i soldi non c'erano. È stato un fatto spiacevole. Ma è arrivata una donna e ha detto: «Questi sono i suoi soldi». Ha trovato i miei soldi e me li ha dati. Non sapevo cosa dire. Ero molto contento. È stato un bel fatto. Adesso vado spesso a quel mercato. Parlo spesso di quel fatto.",
       "qLang": "it",
       "newWords": [
         {
@@ -54,18 +54,18 @@
           ]
         },
         {
-          "q": "Che cosa è successo ai suoi soldi?",
+          "q": "Che cosa è successo al mercato?",
           "options": [
             {
-              "text": "Sono rimasti vicino a un tavolo",
+              "text": "Non trovava i suoi soldi",
               "ok": true
             },
             {
-              "text": "Li ha spesi tutti",
+              "text": "Ha perso le chiavi",
               "ok": false
             },
             {
-              "text": "Erano a casa",
+              "text": "Ha incontrato un amico",
               "ok": false
             }
           ]
