@@ -5,12 +5,31 @@
 //   o come singole parole);
 // - risposte MCQ tra le opzioni, senza duplicati; abbinamenti non ambigui;
 // - distrattori del dettato validi e non già presenti nella parola;
-// - segnalazione dei testi senza traccia audio (li genererà l'Action).
+// - segnalazione dei testi senza traccia audio (li genererà l'Action);
+// - coerenza fra indice audio e file mp3 realmente presenti su disco.
 const fs = require('fs');
 const alpha = JSON.parse(fs.readFileSync('data/hy/alphabet.json'));
 const course = JSON.parse(fs.readFileSync('data/hy/course.json'));
-const audioIdx = fs.existsSync('data/hy/audio/index.json')
-  ? JSON.parse(fs.readFileSync('data/hy/audio/index.json')) : {};
+const AUDIO_DIR = 'data/hy/audio';
+const audioIdx = fs.existsSync(`${AUDIO_DIR}/index.json`)
+  ? JSON.parse(fs.readFileSync(`${AUDIO_DIR}/index.json`)) : {};
+// Una traccia esiste davvero solo se è nell'indice E il file è su disco.
+// Controllare solo l'indice ha già prodotto un falso "tutto a posto" mentre
+// mancavano 76 mp3 (quota TTS esaurita, voci rimaste nell'indice).
+const audioFiles = fs.existsSync(AUDIO_DIR)
+  ? new Set(fs.readdirSync(AUDIO_DIR).filter(f => f.endsWith('.mp3'))) : new Set();
+const hasAudio = txt => {
+  const f = audioIdx[txt];
+  return !!f && audioFiles.has(f);
+};
+// Voci dell'indice che puntano a file inesistenti: incoerenza da segnalare.
+const orphanIdx = Object.entries(audioIdx)
+  .filter(([k, v]) => k !== '_engine' && typeof v === 'string' && !audioFiles.has(v))
+  .map(([k]) => k);
+// File su disco che nessuna voce dell'indice referenzia: spazio sprecato.
+const referenced = new Set(Object.entries(audioIdx)
+  .filter(([k]) => k !== '_engine').map(([, v]) => v));
+const orphanFiles = [...audioFiles].filter(f => !referenced.has(f));
 const EXEMPT = new Set(['l005']);   // lezioni che insegnano frasi come blocchi
 
 const lowerOf = {}; alpha.letters.forEach(l => { lowerOf[l.upper] = l.lower; });
@@ -73,19 +92,19 @@ for (const mod of course.modules) {
       if (s.type === 'write') {
         if (!s.answer) err(`${les.id} passo ${i}: write senza answer`);
         else check(s.answer, `passo ${i} (write)`);
-        if (s.speakText && !audioIdx[s.speakText]) noAudio.add(s.speakText);
+        if (s.speakText && !hasAudio(s.speakText)) noAudio.add(s.speakText);
       }
       if (s.type === 'listen') {
         if (!s.speakText) err(`${les.id} passo ${i}: listen senza speakText`);
-        else { check(s.speakText, `passo ${i} (listen)`); if (!audioIdx[s.speakText]) noAudio.add(s.speakText); }
+        else { check(s.speakText, `passo ${i} (listen)`); if (!hasAudio(s.speakText)) noAudio.add(s.speakText); }
       }
       if (s.type === 'conjugate') {
         if (!Array.isArray(s.rows) || s.rows.length < 2) err(`${les.id} passo ${i}: conjugate con meno di 2 righe`);
         if (new Set((s.rows || []).map(r => r.answer)).size !== (s.rows || []).length) err(`${les.id} passo ${i}: forme duplicate (slot ambigui)`);
       }
-      if (s.speakText && !audioIdx[s.speakText]) noAudio.add(s.speakText);
-      for (const l of s.lines || []) { check(l.hy, `passo ${i} (dialogo)`); if (!audioIdx[l.hy]) noAudio.add(l.hy); }
-      for (const x of s.sentences || []) { check(x.hy, `passo ${i} (lettura)`); if (!audioIdx[x.hy]) noAudio.add(x.hy); }
+      if (s.speakText && !hasAudio(s.speakText)) noAudio.add(s.speakText);
+      for (const l of s.lines || []) { check(l.hy, `passo ${i} (dialogo)`); if (!hasAudio(l.hy)) noAudio.add(l.hy); }
+      for (const x of s.sentences || []) { check(x.hy, `passo ${i} (lettura)`); if (!hasAudio(x.hy)) noAudio.add(x.hy); }
     });
     if (exempt) for (const w of L.vocab || []) {
       chunks.add(w.hy.toLowerCase());
@@ -96,7 +115,16 @@ for (const mod of course.modules) {
   }
 }
 console.log(`\nLettere insegnate: ${taught.size} (digramma incluso)`);
+console.log(`Tracce audio: ${audioFiles.size} file su disco, ${Object.keys(audioIdx).length - 1} voci in indice`);
 console.log(`Testi senza audio (li genererà l'Action): ${noAudio.size}`);
+if (orphanIdx.length) {
+  err(`indice audio: ${orphanIdx.length} voci puntano a file inesistenti ` +
+      `(es. ${orphanIdx.slice(0, 3).map(k => JSON.stringify(k)).join(', ')})`);
+}
+if (orphanFiles.length) {
+  console.log(`⚠ ${orphanFiles.length} file mp3 non referenziati dall'indice ` +
+    `(es. ${orphanFiles.slice(0, 3).join(', ')})`);
+}
 
 // Controllo missioni task-based: caratteri latini nei campi armeni
 const missionFiles = fs.readdirSync('data/hy/lessons').filter(f => f.startsWith('mission_'));

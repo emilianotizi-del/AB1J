@@ -65,10 +65,12 @@ stati aperti nell'app**. Prima di aggiungere altro: percorrere l024n, l043p,
 una lettura iniziale (l051) e una finale (l092), verificare rendering, domande,
 ingresso delle parole nell'SRS, sblocco dei prerequisiti.
 
-### 2. Linter: controllare i file, non l'indice
-`tools/lint_content.js` conta le voci di `index.json`. Se indice e disco
-divergono dice «0 senza audio» mentre le tracce mancano — è successo davvero.
-Deve verificare l'esistenza dei `.mp3`.
+### 2. ~~Linter: controllare i file, non l'indice~~ — FATTO (21/08/2026)
+`tools/lint_content.js` ora verifica che ogni traccia sia **nell'indice E su
+disco** (`hasAudio()`). In più segnala come errore le voci d'indice che puntano
+a file inesistenti (exit code 1) e come avviso i file mp3 non referenziati.
+Il report stampa entrambi i conteggi, così una divergenza è visibile a colpo
+d'occhio invece di essere mascherata.
 
 ### 3. ~~Letture per la prima metà del corso~~ — FATTO (21/08/2026)
 6 letture brevi in m05-m10 (l025, l029, l034, l039, l044, l049), 52-80 parole
