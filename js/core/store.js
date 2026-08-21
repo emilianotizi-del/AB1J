@@ -37,6 +37,17 @@ export function markCompleted(lessonId) {
   touchActivity();
 }
 
+/* --- Lettura estensiva: quante volte ho cercato una parola --- */
+// Conta le consultazioni per forma, cumulative su tutte le letture. Serve a
+// promuovere nell'SRS solo le parole che si sono rivelate davvero necessarie.
+export function getTapCounts() { return get('rxTaps', {}); }
+export function bumpTap(word) {
+  const t = getTapCounts();
+  t[word] = (t[word] || 0) + 1;
+  set('rxTaps', t);
+  return t[word];
+}
+
 /* --- Mazzo SRS --- */
 export function getDeck() { return get('deck', {}); }        // { cardId: card }
 export function saveDeck(deck) { set('deck', deck); }

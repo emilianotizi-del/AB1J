@@ -634,6 +634,15 @@
       "after": "l049",
       "icon": "📖",
       "qLang": "it"
+    },
+    {
+      "id": "reading_ext_01",
+      "kind": "reading",
+      "title": "Il villaggio di mio nonno",
+      "area": "Letture",
+      "after": "l092",
+      "icon": "📖",
+      "qLang": "it"
     }
   ]
 }

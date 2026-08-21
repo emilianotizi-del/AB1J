@@ -608,3 +608,51 @@
 .reading-nw:last-child { border-bottom:none; }
 .reading-newwords { margin-top:16px; padding:14px; border-radius:12px; text-align:left;
   background: color-mix(in srgb, var(--blue) 7%, var(--surface)); border:1px solid color-mix(in srgb, var(--blue) 20%, transparent); }
+
+/* ---------- Lettura estensiva (glossa a tocco) ---------- */
+.rx-help {
+  font-size: .9rem;
+  color: var(--ink-soft);
+  margin: 4px 0 12px;
+}
+.rx-text { line-height: 2.1; }
+/* Le parole consultabili non sono evidenziate: evidenziarle direbbe in anticipo
+   quali sono "difficili", e la lettura diventerebbe una caccia al link. */
+.rx-word {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0 1px;
+  -webkit-tap-highlight-color: transparent;
+}
+.rx-word.is-seen {
+  border-bottom: 2px dotted color-mix(in srgb, var(--accent, #58a) 55%, transparent);
+}
+.rx-word.is-open {
+  background: color-mix(in srgb, var(--accent, #58a) 20%, transparent);
+}
+.rx-sheet {
+  position: sticky;
+  bottom: 0;
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--card-2, #f4f4f7);
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+}
+.rx-sheet-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+.rx-say { width: 40px; height: 40px; font-size: 1.05rem; flex: none; }
+.rx-sheet-it { margin-top: 2px; color: var(--ink-soft); }
+.rx-progress { margin-top: 8px; font-size: .85rem; color: var(--ink-soft); }
+.rx-promoted {
+  margin-top: 8px;
+  font-size: .85rem;
+  font-weight: 600;
+  color: #2a6b52;
+}
