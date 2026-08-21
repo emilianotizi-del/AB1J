@@ -244,12 +244,17 @@ def main():
     changed = 0
     for text in sorted(collect_texts()):
         file = index.get(text)
-        if not file:
+        # Il nome si assegna subito, ma la voce entra nell'indice SOLO dopo che
+        # il file è stato scritto davvero: se la generazione fallisce (quota
+        # esaurita, errore API) l'indice resterebbe altrimenti pieno di
+        # riferimenti a mp3 inesistenti, e l'app tenterebbe caricamenti a vuoto.
+        new_entry = file is None
+        if new_entry:
             n += 1
             file = f"w{n:03d}.mp3"
-            index[text] = file
         path = AUDIO / file
         if path.exists() and not FORCE and path.stat().st_size > 0 and index.get("_engine") == "elevenlabs":
+            index[text] = file      # file già presente: la voce è valida
             continue
         try:
             audio, model = tts(text)
@@ -258,6 +263,7 @@ def main():
             SKIPPED.append(text)
             continue
         path.write_bytes(audio)
+        index[text] = file          # ← solo ora la voce è affidabile
         meta = json.loads(META.read_text()) if META.exists() else {}
         meta[file] = {"model": model}
         meta["_last_run"] = {"models": MODEL_COUNTS, "error_samples": ERR_SAMPLES, "skipped": SKIPPED}

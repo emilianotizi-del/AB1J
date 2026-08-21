@@ -643,6 +643,15 @@
       "after": "l092",
       "icon": "📖",
       "qLang": "it"
+    },
+    {
+      "id": "reading_ext_l059",
+      "kind": "reading",
+      "title": "Mattina di pioggia",
+      "area": "Letture",
+      "after": "l059",
+      "icon": "📖",
+      "qLang": "it"
     }
   ]
 }
