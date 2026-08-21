@@ -139,6 +139,13 @@
       ],
       "answer": "-ի dopo consonante, -յի dopo vocale",
       "extra": true
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi: «la casa di mio padre»",
+      "it": "la casa di mio padre",
+      "answer": "Իմ հոր տունը",
+      "hint": "il posseduto segue chi possiede, che va al genitivo"
     }
   ]
 }

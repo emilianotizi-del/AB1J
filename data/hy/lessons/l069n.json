@@ -169,7 +169,7 @@
       "prompt": "Scrivi: «non andrò»",
       "it": "non andrò",
       "answer": "Չեմ գնա",
-      "hint": "չեմ + գնա, senza կ-"
+      "hint": "al futuro negativo la կ- sparisce"
     },
     {
       "type": "listen",

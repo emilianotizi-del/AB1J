@@ -130,6 +130,13 @@
       ],
       "answer": "-իս (տալիս, գալիս)",
       "extra": true
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi: «gli ho dato l'acqua»",
+      "it": "gli ho dato l'acqua",
+      "answer": "Ես նրան ջուր տվեցի",
+      "hint": "chi riceve va alla forma obliqua, prima del verbo"
     }
   ]
 }

@@ -79,9 +79,15 @@ frequenza sia grammaticalmente semplici a quel punto del corso:
 `տղա` (165), `քիչ` (137), `անգամ` (63), `գիրք` (324), `ընկեր` (220), `գյուղ` (175).
 Il resto è consolidamento. Letture totali: 34 · parole SRS totali: 106.
 
-### 4. Più produzione attiva in A1
-Chiudere le unità con un compito in cui la risposta non è visibile a schermo
-(`write` senza tessere). Scaffolding mcq/match/order *prima*, produzione *dopo*.
+### 4. ~~Più produzione attiva in A1~~ — FATTO (21/08/2026)
+Delle 64 lezioni A1, 21 non avevano **nessun** passo di produzione e 61 non
+chiudevano con uno. Aggiunto un `write` finale alle 16 lezioni che ne erano
+prive (l001-l005 escluse: usano `trace`, che è già produzione grafica).
+Ora senza produzione scritta restano solo le 5 dell'alfabeto.
+
+Corretti anche **8 `hint` che contenevano la risposta in armeno** (tutti nelle
+lezioni create il 21/08 più l060): «Չեմ ուտում» aveva come aiuto «չեմ + ուտում»,
+cioè la risposta. Gli hint ora descrivono la regola, non la soluzione.
 
 ### 5. Lettura estensiva con glossa a tocco — la leva del B1
 Misurato sull'EANC: la copertura all'80% richiede **872 lemmi**, ~570 più di

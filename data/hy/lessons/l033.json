@@ -182,6 +182,13 @@
       ],
       "answer": "alle cinque",
       "extra": true
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi: «sono le cinque»",
+      "it": "sono le cinque",
+      "answer": "Ժամը հինգն է",
+      "hint": "«l'ora» + il numero con l'articolo + è"
     }
   ]
 }

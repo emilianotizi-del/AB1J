@@ -144,6 +144,13 @@
       ],
       "answer": "il soggetto è plurale (madre e padre)",
       "extra": true
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi: «la mia famiglia è grande»",
+      "it": "la mia famiglia è grande",
+      "answer": "Իմ ընտանիքը մեծ է",
+      "hint": "possessivo + nome con articolo + aggettivo + եմ alla terza persona"
     }
   ]
 }

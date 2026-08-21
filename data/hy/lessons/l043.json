@@ -121,6 +121,13 @@
       ],
       "answer": "possessivi attaccati in fondo (mio, tuo)",
       "extra": true
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi: «mia madre»",
+      "it": "mia madre",
+      "answer": "մայրս",
+      "hint": "il possessivo di prima persona è un suffisso, non una parola"
     }
   ]
 }

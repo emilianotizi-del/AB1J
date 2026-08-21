@@ -171,6 +171,13 @@
       "answer": "ծառի վրա",
       "optionsAreHy": true,
       "extra": true
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi: «l'acqua è sul tavolo»",
+      "it": "l'acqua è sul tavolo",
+      "answer": "Ջուրը սեղանի վրա է",
+      "hint": "genitivo del luogo + postposizione + è"
     }
   ]
 }

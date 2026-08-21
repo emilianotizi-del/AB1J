@@ -209,7 +209,7 @@
       "prompt": "Scrivi: «non sto mangiando»",
       "it": "non sto mangiando",
       "answer": "Չեմ ուտում",
-      "hint": "չեմ + ուտում"
+      "hint": "la negazione va PRIMA del verbo in -ում"
     },
     {
       "type": "listen",

@@ -2,43 +2,160 @@
   "id": "l026b",
   "title": "Dove sono: տանը, քաղաքում",
   "vocab": [
-    { "hy": "տանը", "tr": "tanə", "ipa": "[tɑˈnə]", "it": "a casa (stato in luogo)" },
-    { "hy": "քաղաքում", "tr": "k'aghak'um", "ipa": "[kʰɑʁɑˈkʰum]", "it": "in città" },
-    { "hy": "դպրոցում", "tr": "dprots'um", "ipa": "[dpəɾoˈtsʰum]", "it": "a scuola" },
-    { "hy": "շուկայում", "tr": "shukayum", "ipa": "[ʃukɑˈjum]", "it": "al mercato" }
+    {
+      "hy": "տանը",
+      "tr": "tanə",
+      "ipa": "[tɑˈnə]",
+      "it": "a casa (stato in luogo)"
+    },
+    {
+      "hy": "քաղաքում",
+      "tr": "k'aghak'um",
+      "ipa": "[kʰɑʁɑˈkʰum]",
+      "it": "in città"
+    },
+    {
+      "hy": "դպրոցում",
+      "tr": "dprots'um",
+      "ipa": "[dpəɾoˈtsʰum]",
+      "it": "a scuola"
+    },
+    {
+      "hy": "շուկայում",
+      "tr": "shukayum",
+      "ipa": "[ʃukɑˈjum]",
+      "it": "al mercato"
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "տանը", "tr": "tanə", "ipa": "[tɑˈnə]", "it": "a casa (stare)" },
-      "note": "Impara queste quattro forme come blocchi, senza regola: la regola completa arriva più avanti nel corso. Servono da subito." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "Ես տանը եմ", "tr": "yes tanə em", "ipa": "[jɛs tɑˈnə ɛm]", "it": "sono a casa" },
-      "note": "Attenzione alla differenza: «տուն եմ գնում» = vado a casa (movimento), «տանը եմ» = sono a casa (stato)." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "քաղաքում", "tr": "k'aghak'um", "ipa": "[kʰɑʁɑˈkʰum]", "it": "in città" },
-      "note": "Quasi tutte queste forme finiscono in -ում. տանը è l'eccezione da ricordare." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "դպրոցում", "tr": "dprots'um", "ipa": "[dpəɾoˈtsʰum]", "it": "a scuola" } },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "շուկայում", "tr": "shukayum", "ipa": "[ʃukɑˈjum]", "it": "al mercato" }, "extra": true },
-    { "type": "cloze", "it": "sono a casa",
-      "text": "Ես ___ եմ", "options": ["տանը", "տուն", "տունը"], "answer": "տանը",
-      "speakText": "Ես տանը եմ" },
-    { "type": "mcq", "prompt": "«vado a casa» (movimento):",
-      "options": ["Տուն եմ գնում", "Տանը եմ գնում", "Տանը եմ"],
-      "answer": "Տուն եմ գնում", "optionsAreHy": true },
-    { "type": "cloze", "it": "lui è a scuola",
-      "text": "Նա ___ է", "options": ["դպրոցում", "դպրոց", "դպրոցը"], "answer": "դպրոցում",
-      "speakText": "Նա դպրոցում է" },
-    { "type": "order", "it": "sono in città",
-      "tokens": ["Ես", "քաղաքում", "եմ"], "speakText": "Ես քաղաքում եմ" },
-    { "type": "write", "prompt": "Scrivi: «sono a casa»",
-      "it": "sono a casa", "answer": "Ես տանը եմ", "hint": "ես + տանը + եմ" },
-    { "type": "listen", "question": "Dov'è?",
-      "speakText": "Նա շուկայում է", "it": "È al mercato", "reveal": "Նա շուկայում է",
-      "options": ["al mercato", "a casa", "a scuola"], "answer": "al mercato" },
-    { "type": "mcq", "prompt": "Qual è l'eccezione da ricordare?",
-      "options": ["տանը (non «տունում»)", "քաղաքում", "դպրոցում"],
-      "answer": "տանը (non «տունում»)" }
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "տանը",
+        "tr": "tanə",
+        "ipa": "[tɑˈnə]",
+        "it": "a casa (stare)"
+      },
+      "note": "Impara queste quattro forme come blocchi, senza regola: la regola completa arriva più avanti nel corso. Servono da subito."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "Ես տանը եմ",
+        "tr": "yes tanə em",
+        "ipa": "[jɛs tɑˈnə ɛm]",
+        "it": "sono a casa"
+      },
+      "note": "Attenzione alla differenza: «տուն եմ գնում» = vado a casa (movimento), «տանը եմ» = sono a casa (stato)."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "քաղաքում",
+        "tr": "k'aghak'um",
+        "ipa": "[kʰɑʁɑˈkʰum]",
+        "it": "in città"
+      },
+      "note": "Quasi tutte queste forme finiscono in -ում. տանը è l'eccezione da ricordare."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "դպրոցում",
+        "tr": "dprots'um",
+        "ipa": "[dpəɾoˈtsʰum]",
+        "it": "a scuola"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "շուկայում",
+        "tr": "shukayum",
+        "ipa": "[ʃukɑˈjum]",
+        "it": "al mercato"
+      },
+      "extra": true
+    },
+    {
+      "type": "cloze",
+      "it": "sono a casa",
+      "text": "Ես ___ եմ",
+      "options": [
+        "տանը",
+        "տուն",
+        "տունը"
+      ],
+      "answer": "տանը",
+      "speakText": "Ես տանը եմ"
+    },
+    {
+      "type": "mcq",
+      "prompt": "«vado a casa» (movimento):",
+      "options": [
+        "Տուն եմ գնում",
+        "Տանը եմ գնում",
+        "Տանը եմ"
+      ],
+      "answer": "Տուն եմ գնում",
+      "optionsAreHy": true
+    },
+    {
+      "type": "cloze",
+      "it": "lui è a scuola",
+      "text": "Նա ___ է",
+      "options": [
+        "դպրոցում",
+        "դպրոց",
+        "դպրոցը"
+      ],
+      "answer": "դպրոցում",
+      "speakText": "Նա դպրոցում է"
+    },
+    {
+      "type": "order",
+      "it": "sono in città",
+      "tokens": [
+        "Ես",
+        "քաղաքում",
+        "եմ"
+      ],
+      "speakText": "Ես քաղաքում եմ"
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi: «sono a casa»",
+      "it": "sono a casa",
+      "answer": "Ես տանը եմ",
+      "hint": "stato in luogo, non movimento: la forma con -ը"
+    },
+    {
+      "type": "listen",
+      "question": "Dov'è?",
+      "speakText": "Նա շուկայում է",
+      "it": "È al mercato",
+      "reveal": "Նա շուկայում է",
+      "options": [
+        "al mercato",
+        "a casa",
+        "a scuola"
+      ],
+      "answer": "al mercato"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Qual è l'eccezione da ricordare?",
+      "options": [
+        "տանը (non «տունում»)",
+        "քաղաքում",
+        "դպրոցում"
+      ],
+      "answer": "տանը (non «տունում»)"
+    }
   ]
 }

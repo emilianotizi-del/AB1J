@@ -151,6 +151,13 @@
         ]
       ],
       "extra": true
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi: «il mercato è là»",
+      "it": "il mercato è là",
+      "answer": "Շուկան այնտեղ է",
+      "hint": "nome con articolo + avverbio di luogo lontano + è"
     }
   ]
 }

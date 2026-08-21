@@ -177,7 +177,7 @@
       "prompt": "Scrivi: «non era grande»",
       "it": "non era grande",
       "answer": "Մեծ չէր",
-      "hint": "մեծ + չէր"
+      "hint": "imperfetto negativo di «essere», terza persona"
     },
     {
       "type": "listen",

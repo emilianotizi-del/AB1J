@@ -172,7 +172,7 @@
       "prompt": "Scrivi: «me lo ha dato»",
       "it": "me lo ha dato",
       "answer": "Նա ինձ տվեց",
-      "hint": "նա + ինձ + տվեց"
+      "hint": "chi dà è soggetto, chi riceve va alla forma obliqua"
     },
     {
       "type": "listen",

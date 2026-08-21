@@ -180,7 +180,7 @@
       "prompt": "Scrivi: «non ho pane»",
       "it": "non ho pane",
       "answer": "Հաց չունեմ",
-      "hint": "հաց + չունեմ"
+      "hint": "la չ- si attacca al verbo «avere», non a եմ"
     },
     {
       "type": "listen",

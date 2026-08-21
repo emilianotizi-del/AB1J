@@ -2,26 +2,140 @@
   "id": "l060",
   "title": "Il passato: tutte le persone",
   "vocab": [
-    { "hy": "գնացինք", "tr": "gnats'ink'", "ipa": "[ɡənɑˈt͡sʰinkʰ]", "it": "siamo andati" },
-    { "hy": "տեսանք", "tr": "tesank'", "ipa": "[tɛˈsɑnkʰ]", "it": "abbiamo visto" }
+    {
+      "hy": "գնացինք",
+      "tr": "gnats'ink'",
+      "ipa": "[ɡənɑˈt͡sʰinkʰ]",
+      "it": "siamo andati"
+    },
+    {
+      "hy": "տեսանք",
+      "tr": "tesank'",
+      "ipa": "[tɛˈsɑnkʰ]",
+      "it": "abbiamo visto"
+    }
   ],
   "steps": [
-    { "type": "notice", "icon": "🔁", "title": "Ripasso lampo (A1)", "text": "Nell'A1 hai visto il passato di tre persone: -եցի (io), -եցիր (tu), -եց (lui/lei). Es. խմեցի = ho bevuto. Ora completiamo le altre tre: noi, voi, loro. Se non hai fatto l'A1, ti basta sapere questo per procedere." },
-    { "type": "teach", "kind": "word", "word": { "hy": "խմեցինք", "tr": "khmets'ink'", "ipa": "[χəmɛˈt͡sʰinkʰ]", "it": "abbiamo bevuto" }, "note": "Le tre persone plurali: -եցինք (noi), -եցիք (voi), -եցին (loro). Stesso schema del presente, ma sull'aoristo." },
-    { "type": "conjugate", "prompt": "Il passato completo di խմել (bere)", "rows": [
-      { "label": "ես", "answer": "խմեցի" },
-      { "label": "դու", "answer": "խմեցիր" },
-      { "label": "նա", "answer": "խմեց" },
-      { "label": "մենք", "answer": "խմեցինք" },
-      { "label": "դուք", "answer": "խմեցիք" },
-      { "label": "նրանք", "answer": "խմեցին" }
-    ], "note": "Sei persone: la tabella completa del passato regolare." },
-    { "type": "cloze", "it": "ieri siamo andati al mercato", "text": "Երեկ մենք շուկա ___", "options": ["գնացինք", "գնացին", "գնացիր"], "answer": "գնացինք", "speakText": "Երեկ մենք շուկա գնացինք" },
-    { "type": "cloze", "it": "loro hanno parlato armeno", "text": "Նրանք հայերեն ___", "options": ["խոսեցին", "խոսեցինք", "խոսեց"], "answer": "խոսեցին", "speakText": "Նրանք հայերեն խոսեցին" },
-    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "տեսանք", "answer": "տեսանք", "it": "abbiamo visto", "hint": "verbo վ-ol tipo: տեսնել → տեսանք" },
-    { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "գնացինք", "answer": "գնացինք", "it": "siamo andati" },
-    { "type": "listen", "question": "Che cosa hai sentito?", "speakText": "Երեկ մենք շուկա գնացինք", "it": "Ieri siamo andati al mercato", "reveal": "Երեկ մենք շուկա գնացինք", "options": ["siamo andati al mercato", "andiamo al mercato", "andremo al mercato"], "answer": "siamo andati al mercato" },
-    { "type": "cloze", "it": "voi avete bevuto il tè", "text": "Դուք թեյ ___", "options": ["խմեցիք", "խմեցինք", "խմեցին"], "answer": "խմեցիք", "speakText": "Դուք թեյ խմեցիք", "extra": true },
-    { "type": "write", "prompt": "Traduci e scrivi: «abbiamo bevuto»", "it": "abbiamo bevuto", "answer": "խմեցինք", "hint": "noi = -եցինք", "extra": true }
+    {
+      "type": "notice",
+      "icon": "🔁",
+      "title": "Ripasso lampo (A1)",
+      "text": "Nell'A1 hai visto il passato di tre persone: -եցի (io), -եցիր (tu), -եց (lui/lei). Es. խմեցի = ho bevuto. Ora completiamo le altre tre: noi, voi, loro. Se non hai fatto l'A1, ti basta sapere questo per procedere."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "խմեցինք",
+        "tr": "khmets'ink'",
+        "ipa": "[χəmɛˈt͡sʰinkʰ]",
+        "it": "abbiamo bevuto"
+      },
+      "note": "Le tre persone plurali: -եցինք (noi), -եցիք (voi), -եցին (loro). Stesso schema del presente, ma sull'aoristo."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "Il passato completo di խմել (bere)",
+      "rows": [
+        {
+          "label": "ես",
+          "answer": "խմեցի"
+        },
+        {
+          "label": "դու",
+          "answer": "խմեցիր"
+        },
+        {
+          "label": "նա",
+          "answer": "խմեց"
+        },
+        {
+          "label": "մենք",
+          "answer": "խմեցինք"
+        },
+        {
+          "label": "դուք",
+          "answer": "խմեցիք"
+        },
+        {
+          "label": "նրանք",
+          "answer": "խմեցին"
+        }
+      ],
+      "note": "Sei persone: la tabella completa del passato regolare."
+    },
+    {
+      "type": "cloze",
+      "it": "ieri siamo andati al mercato",
+      "text": "Երեկ մենք շուկա ___",
+      "options": [
+        "գնացինք",
+        "գնացին",
+        "գնացիր"
+      ],
+      "answer": "գնացինք",
+      "speakText": "Երեկ մենք շուկա գնացինք"
+    },
+    {
+      "type": "cloze",
+      "it": "loro hanno parlato armeno",
+      "text": "Նրանք հայերեն ___",
+      "options": [
+        "խոսեցին",
+        "խոսեցինք",
+        "խոսեց"
+      ],
+      "answer": "խոսեցին",
+      "speakText": "Նրանք հայերեն խոսեցին"
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi ciò che senti",
+      "speakText": "տեսանք",
+      "answer": "տեսանք",
+      "it": "abbiamo visto",
+      "hint": "passato di «vedere», prima persona plurale"
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi ciò che senti",
+      "speakText": "գնացինք",
+      "answer": "գնացինք",
+      "it": "siamo andati"
+    },
+    {
+      "type": "listen",
+      "question": "Che cosa hai sentito?",
+      "speakText": "Երեկ մենք շուկա գնացինք",
+      "it": "Ieri siamo andati al mercato",
+      "reveal": "Երեկ մենք շուկա գնացինք",
+      "options": [
+        "siamo andati al mercato",
+        "andiamo al mercato",
+        "andremo al mercato"
+      ],
+      "answer": "siamo andati al mercato"
+    },
+    {
+      "type": "cloze",
+      "it": "voi avete bevuto il tè",
+      "text": "Դուք թեյ ___",
+      "options": [
+        "խմեցիք",
+        "խմեցինք",
+        "խմեցին"
+      ],
+      "answer": "խմեցիք",
+      "speakText": "Դուք թեյ խմեցիք",
+      "extra": true
+    },
+    {
+      "type": "write",
+      "prompt": "Traduci e scrivi: «abbiamo bevuto»",
+      "it": "abbiamo bevuto",
+      "answer": "խմեցինք",
+      "hint": "noi = -եցինք",
+      "extra": true
+    }
   ]
 }
