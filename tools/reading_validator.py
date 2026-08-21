@@ -6,6 +6,24 @@ from vocab_at import forms
 R = __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.abspath(__file__)),'..')+'/'
 SUFF = r'(ը|ն|ս|դ|ի|ից|ով|ում|ին|ներ|ները|ներին|երը|եր)$'
 
+# Punteggiatura armena che si scrive DENTRO la parola, non dopo:
+#   ՞ interrogativo (Ի՞նչ), ՛ enfasi/imperativo (Գնա՛), ՜ esclamativo (Ի՜նչ).
+# Vanno rimossi prima di confrontare il token col vocabolario, altrimenti
+# «Ո՞վ» viene spezzato in «Ո» + «վ» e risulta sconosciuto.
+# ։ (punto fermo) e ՝ (virgola) stanno invece fuori dalla parola: non toccarli qui.
+INTRAWORD = '\u055E\u055B\u055C'          # ՞ ՛ ՜
+LETTERS   = '\u0561-\u0587\u0531-\u0556'  # minuscole + maiuscole
+TOKEN_RE  = re.compile(f'[{LETTERS}{INTRAWORD}]+')
+
+def tokens(text):
+    """Parole armene, con la punteggiatura intra-parola rimossa."""
+    out = []
+    for raw in TOKEN_RE.findall(text):
+        clean = re.sub(f'[{INTRAWORD}]', '', raw)
+        if clean:
+            out.append((raw, clean))
+    return out
+
 def stems(fs):
     out = set(fs)
     for w in fs:
@@ -22,8 +40,8 @@ def validate(after, text, extra):
               'Անուշ','Անուշը','Դավիթ','Դավիթը','Աննա','Աննան','Սարո','Սարոն','Նարե','Նարեն'}
     ex |= PROPER
     bad = []
-    for t0 in re.findall(r'[\u0561-\u0587\u0531-\u0556]+', text):
-        t = t0.lower()
+    for t0, tclean in tokens(text):
+        t = tclean.lower()
         if t in known or t in ex:
             continue
         s = re.sub(SUFF, '', t)

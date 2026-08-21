@@ -82,3 +82,26 @@ Non dice cosa manca **rispetto a ciò che serve per costruire un testo**.
 Le lacune qui sopra sono emerse solo scrivendo: sono la prova che l'audit
 lessicale e la produzione di materiale sono due controlli diversi e
 complementari, e che nessuno dei due sostituisce l'altro.
+
+---
+
+## 6. Nota tecnica: la punteggiatura armena sta DENTRO la parola
+
+Scoperto costruendo le letture. Tre segni si scrivono all'interno della parola,
+non dopo:
+
+| segno | nome | esempio |
+|---|---|---|
+| `՞` U+055E | interrogativo | `Ո՞վ`, `Ի՞նչ`, `Ե՞րբ` |
+| `՛` U+055B | enfasi / imperativo | `Գնա՛`, `Եկե՛ք` |
+| `՜` U+055C | esclamativo | `Ի՜նչ`, `Ափսո՜ս` |
+
+Nel corpus attuale: 344 occorrenze intra-parola dell'interrogativo, 38 dell'enfasi,
+9 dell'esclamativo. Invece `։` (punto fermo, 1387 occorrenze) e `՝` (virgola)
+stanno **fuori** dalla parola e si comportano come in italiano.
+
+**Conseguenza per gli strumenti**: qualunque tokenizzatore che consideri parola
+una sequenza di sole lettere spezza `Ո՞վ` in `Ո` + `վ`. Il risultato è doppio:
+la parola vera non viene riconosciuta, e due frammenti inesistenti entrano nel
+vocabolario. Corretto in `tools/reading_validator.py` e `tools/vocab_at.py`
+(costante `INTRAWORD`); `tools/lint_content.js` lo gestiva già.
