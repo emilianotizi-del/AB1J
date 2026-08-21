@@ -110,10 +110,14 @@ Testo, IPA, traslitterazione, naturalezza, audio. **NB**: una madrelingua ha
 già segnalato che sono in corso semplificazioni nella lingua → usare fonti
 aggiornate.
 
-### 8. Regole vs euristiche
-Il plurale «una sillaba → -եր / più sillabe → -ներ» è un'euristica con
-eccezioni, non una legge. Segnalarle dove esistono, per non doverle
-disimparare al B1.
+### 8. ~~Regole vs euristiche~~ — FATTO (21/08/2026)
+Regola del plurale verificata sui 423 nomi più frequenti dell'EANC: 89% se si
+contano le vocali scritte, **97% se si contano le sillabe pronunciate**. Il
+difetto non era la regola ma il conteggio: lo ə epentetico dei gruppi
+consonantici iniziali (դըպ-րոց, տը-ղա) non si scrive. `l022` ora lo spiega,
+elenca le eccezioni vere (մատ, լեռ, ձեռ) e non presenta più la regola come
+legge. Chiarita anche `l051` (il presente in -իս vale per tre verbi; le forme
+come խոսելիս sono un'altra costruzione).
 
 ### 9. Corpus orale per tarare il B1
 Tutte le misure di copertura vengono dall'EANC, che è **scritto e letterario

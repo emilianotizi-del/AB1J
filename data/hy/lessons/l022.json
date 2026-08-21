@@ -26,7 +26,7 @@
         "it": "albero → alberi",
         "speak": "ծառեր"
       },
-      "note": "La regola del plurale: le parole di UNA sillaba aggiungono -եր."
+      "note": "La regola del plurale: una sillaba → -եր, più di una → -ներ. Ma le sillabe sono quelle che si PRONUNCIANO, non le vocali scritte."
     },
     {
       "type": "teach",
@@ -38,7 +38,7 @@
         "it": "mela → mele",
         "speak": "խնձորներ"
       },
-      "note": "Le parole di DUE O PIÙ sillabe aggiungono -ներ."
+      "note": "խնձոր si pronuncia խըն-ձոր: due sillabe, quindi -ներ. Vale anche per դպրոց (դըպ-րոց) e տղա (տը-ղա), che sembrano corte ma nel parlato hanno una vocale in più fra le consonanti."
     },
     {
       "type": "teach",
@@ -59,6 +59,12 @@
         "ipa": "[tɑɾiˈnɛɾ]",
         "it": "anni"
       }
+    },
+    {
+      "type": "notice",
+      "title": "La sillaba che non si scrive",
+      "text": "In armeno, quando una parola comincia con due consonanti, nel parlato si inserisce una vocale breve ə che non si scrive:\n\n• դպրոց → դըպ-րոց (2 sillabe) → դպրոցներ\n• տղա → տը-ղա (2 sillabe) → տղաներ\n• գրող → գը-րող (2 sillabe) → գրողներ\n\nPer scegliere fra -եր e -ներ conta le sillabe che senti, non le vocali che vedi. Attenzione però: se la seconda lettera è յ non c'è nessuna vocale in più (գյուղ = գյուղ, una sillaba → գյուղեր).",
+      "icon": "🔎"
     },
     {
       "type": "cloze",
@@ -190,13 +196,19 @@
     },
     {
       "type": "mcq",
-      "prompt": "Regola generale del plurale:",
+      "prompt": "Nella grande maggioranza dei casi il plurale segue questa tendenza:",
       "options": [
-        "1 sillaba → -եր, di più → -ներ",
-        "1 sillaba → -ներ, di più → -եր",
+        "1 sillaba parlata → -եր, di più → -ներ",
+        "1 sillaba parlata → -ներ, di più → -եր",
         "sempre -եր"
       ],
-      "answer": "1 sillaba → -եր, di più → -ներ"
+      "answer": "1 sillaba parlata → -եր, di più → -ներ"
+    },
+    {
+      "type": "notice",
+      "title": "Le eccezioni",
+      "text": "Verificata sui nomi più frequenti dell'armeno, la regola funziona nel 97% dei casi. Il 3% va imparato a memoria. Le più comuni:\n\n• մատ (dito) → մատներ, non «մատեր»\n• լեռ (montagna) → լեռներ\n• ձեռ (mano, colloquiale) → ձեռներ — ma ձեռք → ձեռքեր, regolare\n\nNon è una legge fisica: è una tendenza molto forte. Quando una parola nuova ti suona strana al plurale, fidati di come l'hai sentita.",
+      "icon": "⚠️"
     }
   ]
 }

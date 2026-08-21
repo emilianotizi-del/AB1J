@@ -105,3 +105,29 @@ una sequenza di sole lettere spezza `Ո՞վ` in `Ո` + `վ`. Il risultato è dop
 la parola vera non viene riconosciuta, e due frammenti inesistenti entrano nel
 vocabolario. Corretto in `tools/reading_validator.py` e `tools/vocab_at.py`
 (costante `INTRAWORD`); `tools/lint_content.js` lo gestiva già.
+
+---
+
+## 7. Regole vs euristiche: il plurale (verificato sul corpus)
+
+La regola «una sillaba → -եր, più di una → -ներ» è stata testata sui 423 nomi
+più frequenti dell'EANC che hanno un plurale attestato (≥50 occorrenze).
+
+| conteggio delle sillabe | regola rispettata |
+|---|---|
+| contando le **vocali scritte** | 89% |
+| contando le **sillabe pronunciate** (con lo ə epentetico) | **97%** |
+
+**Il problema non era la regola, era il conteggio.** In armeno un gruppo di due
+consonanti iniziali sviluppa nel parlato una vocale breve ə che non si scrive:
+`դպրոց` = դըպ-րոց, `տղա` = տը-ղա, `գրող` = գը-րող, `խնձոր` = խըն-ձոր.
+Chi conta le vocali sulla pagina li giudica monosillabici e sbaglia il plurale
+di otto parole comuni. Eccezione all'eccezione: se la seconda lettera è `յ`
+non c'è nessuno ə (`գյուղ` = una sillaba → գյուղեր).
+
+**Eccezioni vere** (monosillabi che prendono -ներ): `մատ` → մատներ,
+`լեռ` → լեռներ, `ձեռ` → ձեռներ (ma `ձեռք` → ձեռքեր, regolare).
+
+Applicato in `l022`: la nota parla di sillabe pronunciate, due passi `notice`
+spiegano lo ə nascosto e le eccezioni, e la domanda finale non dice più
+«regola generale» ma «nella grande maggioranza dei casi».
