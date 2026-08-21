@@ -1,5 +1,65 @@
 [
  {
+  "rid": "reading_l025",
+  "after": "l025",
+  "words": [
+   {
+    "hy": "տղա",
+    "it": "ragazzo, figlio"
+   }
+  ]
+ },
+ {
+  "rid": "reading_l029",
+  "after": "l029",
+  "words": [
+   {
+    "hy": "քիչ",
+    "it": "poco"
+   }
+  ]
+ },
+ {
+  "rid": "reading_l034",
+  "after": "l034",
+  "words": [
+   {
+    "hy": "անգամ",
+    "it": "volta"
+   }
+  ]
+ },
+ {
+  "rid": "reading_l039",
+  "after": "l039",
+  "words": [
+   {
+    "hy": "գիրք",
+    "it": "libro"
+   }
+  ]
+ },
+ {
+  "rid": "reading_l044",
+  "after": "l044",
+  "words": [
+   {
+    "hy": "ընկեր",
+    "it": "amico, compagno"
+   }
+  ]
+ },
+ {
+  "rid": "reading_l049",
+  "after": "l049",
+  "words": [
+   {
+    "hy": "գյուղ",
+    "it": "villaggio"
+   }
+  ]
+ },
+ {
   "rid": "reading_l051",
   "after": "l051",
   "words": [

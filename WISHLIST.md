@@ -71,9 +71,11 @@ divergono dice «0 senza audio» mentre le tracce mancano — è successo davver
 Deve verificare l'esistenza dei `.mp3`.
 
 ### 3. ~~Letture per la prima metà del corso~~ — FATTO (21/08/2026)
-6 letture di solo ripasso in m05-m10 (l025, l029, l034, l039, l044, l049):
-`newWords` vuoto, nessuno slot SRS consumato, 52-73 parole ciascuna.
-Servono a leggere, non ad ampliare. Letture totali: 34.
+6 letture brevi in m05-m10 (l025, l029, l034, l039, l044, l049), 52-80 parole
+ciascuna. **Una sola parola nuova per lettura**, scelta tra quelle sia ad alta
+frequenza sia grammaticalmente semplici a quel punto del corso:
+`տղա` (165), `քիչ` (137), `անգամ` (63), `գիրք` (324), `ընկեր` (220), `գյուղ` (175).
+Il resto è consolidamento. Letture totali: 34 · parole SRS totali: 106.
 
 ### 4. Più produzione attiva in A1
 Chiudere le unità con un compito in cui la risposta non è visibile a schermo

@@ -6,10 +6,17 @@
     {
       "type": "reading_test",
       "title": "Ի՞նչ արժե",
-      "text": "Այսօր ես հաց ու պանիր ունեմ։ Կաթ չունեմ։ «Ի՞նչ արժե կաթը»։ «Հարյուր դրամ»։ Ես կաթ եմ ուտում ու թեյ եմ խմում։ Ես սուրճ չեմ խմում։ Ես ձու ունեմ՝ երկու ձու։ Միս չունեմ։ Ես հինգ հարյուր դրամ ունեմ։ Շատ չէ։ «Շնորհակալություն»։ «Խնդրեմ», ասաց կինը։ Հիմա ես տանը եմ։ Իմ ճաշը լավ ճաշ է։",
-      "it": "Oggi ho pane e formaggio. Non ho latte. «Quanto costa il latte?». «Cento dram». Prendo il latte e bevo il tè. Non bevo caffè. Ho delle uova: due uova. Non ho carne. Ho cinquecento dram. Non è molto. «Grazie». «Prego», ha detto la donna. Adesso sono a casa. Il mio pranzo è un buon pranzo.",
+      "text": "Այսօր ես հաց ու պանիր ունեմ։ Կաթ չունեմ։ «Ի՞նչ արժե կաթը»։ «Հարյուր դրամ»։ Ես կաթ եմ ուտում ու թեյ եմ խմում։ Ես սուրճ չեմ խմում։ Ես ձու ունեմ՝ երկու ձու։ Միս չունեմ։ Ես հինգ հարյուր դրամ ունեմ։ Շատ չէ։ Ես մի գիրք էլ ունեմ։ Այդ գիրքը հայերեն գիրք է։ «Շնորհակալություն»։ «Խնդրեմ», ասաց կինը։ Հիմա ես տանը եմ։ Իմ ճաշը լավ ճաշ է։",
+      "it": "Oggi ho pane e formaggio. Non ho latte. «Quanto costa il latte?». «Cento dram». Prendo il latte e bevo il tè. Non bevo caffè. Ho delle uova: due uova. Non ho carne. Ho cinquecento dram. Non è molto. Ho anche un libro. Quel libro è un libro armeno. «Grazie». «Prego», ha detto la donna. Adesso sono a casa. Il mio pranzo è un buon pranzo.",
       "qLang": "it",
-      "newWords": [],
+      "newWords": [
+        {
+          "hy": "գիրք",
+          "tr": "girk'",
+          "ipa": "[giɾkʰ]",
+          "it": "libro"
+        }
+      ],
       "questions": [
         {
           "q": "Che cosa non ha?",

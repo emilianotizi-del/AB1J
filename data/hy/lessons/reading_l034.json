@@ -6,10 +6,17 @@
     {
       "type": "reading_test",
       "title": "Իմ շաբաթը",
-      "text": "Երկուշաբթի ժամը յոթն է, ու ես գնում եմ։ Երեքշաբթի ես հայերեն եմ սովորում։ Ժամը հինգն է։ Չորեքշաբթի ես տանը եմ։ Ես ֆիլմ ունեմ։ Հինգշաբթի ես տանը եմ։ Հինգշաբթին լավ օր է։ Ուրբաթ իմ ընտանիքը տանը է։ Մենք ճաշ ենք ուտում ու շատ ենք խոսում։ Շաբաթ ու կիրակի ես տանը եմ։ Ես չեմ գնում։ Իմ շաբաթը լավ շաբաթ է։",
-      "it": "Lunedì sono le sette, e vado. Martedì studio armeno. Sono le cinque. Mercoledì sono a casa. Ho un film. Giovedì sono a casa. Il giovedì è un bel giorno. Venerdì la mia famiglia è a casa. Mangiamo insieme e parliamo molto. Sabato e domenica sono a casa. Non esco. La mia settimana è una bella settimana.",
+      "text": "Երկուշաբթի ժամը յոթն է, ու ես գնում եմ։ Երեքշաբթի ես հայերեն եմ սովորում։ Ժամը հինգն է։ Ես շաբաթը երկու անգամ եմ սովորում։ Չորեքշաբթի ես տանը եմ։ Ես ֆիլմ ունեմ։ Հինգշաբթի ես տանը եմ։ Հինգշաբթին լավ օր է։ Ուրբաթ իմ ընտանիքը տանը է։ Մենք ճաշ ենք ուտում ու շատ ենք խոսում։ Շաբաթ ու կիրակի ես տանը եմ։ Ես չեմ գնում։ Ամեն անգամ իմ շաբաթը լավ շաբաթ է։",
+      "it": "Lunedì sono le sette, e vado. Martedì studio armeno. Sono le cinque. Studio due volte a settimana. Mercoledì sono a casa. Ho un film. Giovedì sono a casa. Il giovedì è un bel giorno. Venerdì la mia famiglia è a casa. Mangiamo insieme e parliamo molto. Sabato e domenica sono a casa. Non esco. Ogni volta la mia settimana è una bella settimana.",
       "qLang": "it",
-      "newWords": [],
+      "newWords": [
+        {
+          "hy": "անգամ",
+          "tr": "angam",
+          "ipa": "[ɑnˈgɑm]",
+          "it": "volta"
+        }
+      ],
       "questions": [
         {
           "q": "Che cosa fa martedì?",

@@ -4,18 +4,6 @@
   "vocab": [],
   "steps": [
     {
-      "type": "teach",
-      "kind": "word",
-      "word": {
-        "hy": "տղա",
-        "tr": "tgha",
-        "ipa": "[təˈʁɑ]",
-        "it": "ragazzo, figlio"
-      },
-      "note": "Parola utile da riconoscere nella lettura: non è richiesta in produzione.",
-      "extra": true
-    },
-    {
       "type": "conjugate",
       "prompt": "Il passato completo di խոսել (parlare)",
       "rows": [

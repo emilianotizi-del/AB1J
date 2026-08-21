@@ -6,10 +6,17 @@
     {
       "type": "reading_test",
       "title": "Իմ քաղաքը",
-      "text": "Ես Հռոմում եմ ապրում։ Իմ քաղաքը մեծ քաղաք է։ Իմ տան մոտ մի շուկա կա։ Այնտեղ ես հաց ու պանիր եմ գնում։ Շուկայի մոտ մի խանութ կա։ Այնտեղ շատ արժե։ Ես այնտեղ չեմ գնում։ Իմ տան մոտ մի ծառ կա։ Ծառի մոտ ես նստում եմ։ Իմ քույրը դպրոցում է։ Իմ եղբայրը ուսանող է։ Ես իմ քաղաքը սիրում եմ։ Ես ուզում եմ տեսնել Երևանը։ Երևանում ես հայերեն եմ ուզում խոսել։ Այնտեղ հայերեն են խոսում։",
-      "it": "Vivo a Roma. La mia città è una città grande. Vicino a casa mia c'è un mercato. Lì compro pane e formaggio. Vicino al mercato c'è un negozio. Lì costa molto. Io non ci vado. Vicino a casa mia c'è un albero. Vicino all'albero mi siedo. Mia sorella è a scuola. Mio fratello è studente. Amo la mia città. Voglio vedere Yerevan. A Yerevan voglio parlare armeno. Là parlano armeno.",
+      "text": "Ես Հռոմում եմ ապրում։ Իմ քաղաքը մեծ քաղաք է։ Իմ տան մոտ մի շուկա կա։ Այնտեղ ես հաց ու պանիր եմ գնում։ Շուկայի մոտ մի խանութ կա։ Այնտեղ շատ արժե։ Ես այնտեղ չեմ գնում։ Իմ տան մոտ մի ծառ կա։ Ծառի մոտ ես նստում եմ։ Իմ քույրը դպրոցում է։ Իմ եղբայրը ուսանող է։ Ես իմ քաղաքը սիրում եմ։ Բայց ես գյուղ էլ եմ սիրում։ Հայաստանում շատ գյուղ կա։ Ես ուզում եմ տեսնել Երևանը։ Երևանում ես հայերեն եմ ուզում խոսել։ Այնտեղ հայերեն են խոսում։",
+      "it": "Vivo a Roma. La mia città è una città grande. Vicino a casa mia c'è un mercato. Lì compro pane e formaggio. Vicino al mercato c'è un negozio. Lì costa molto. Io non ci vado. Vicino a casa mia c'è un albero. Vicino all'albero mi siedo. Mia sorella è a scuola. Mio fratello è studente. Amo la mia città. Ma amo anche i villaggi. In Armenia ci sono molti villaggi. Voglio vedere Yerevan. A Yerevan voglio parlare armeno. Là parlano armeno.",
       "qLang": "it",
-      "newWords": [],
+      "newWords": [
+        {
+          "hy": "գյուղ",
+          "tr": "gyugh",
+          "ipa": "[gjuʁ]",
+          "it": "villaggio"
+        }
+      ],
       "questions": [
         {
           "q": "Dove vive chi racconta?",

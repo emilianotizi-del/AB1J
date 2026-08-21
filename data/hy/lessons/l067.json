@@ -81,18 +81,6 @@
       "note": "կա = c'è, կան = ci sono. Utilissimo: Այստեղ խանութ կա՞ = c'è un negozio qui?"
     },
     {
-      "type": "teach",
-      "kind": "word",
-      "word": {
-        "hy": "գյուղ",
-        "tr": "gyugh",
-        "ipa": "[gjuʁ]",
-        "it": "villaggio"
-      },
-      "note": "Parola utile da riconoscere nella lettura: non è richiesta in produzione.",
-      "extra": true
-    },
-    {
       "type": "mcq",
       "prompt": "Qual è la capitale dell'Armenia?",
       "options": [
