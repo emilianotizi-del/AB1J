@@ -99,3 +99,31 @@ dall'approccio comunicativo, lasciando scegliere allo studente.
 - Valutare più avanti una seconda voce audio (variabile già predisposta nella
   pipeline).
 - Corsivo manoscritto nel tracciamento (oggi solo forme a stampa).
+
+## ⏳ In attesa — audio: 76 tracce da rigenerare
+
+**Stato**: la quota ElevenLabs si è esaurita durante il run del 21/08/2026
+(`quota_exceeded`, 0 crediti su 10.000). 76 testi non hanno traccia audio.
+
+Le 76 voci corrispondenti sono state **rimosse da `data/hy/audio/index.json`**
+per evitare richieste di rete verso file inesistenti, e conservate in
+`data/hy/audio/_pending.json`.
+
+**Da fare al rinnovo dei crediti** (mensile):
+1. GitHub → Actions → «Genera audio (ElevenLabs)» → Run workflow.
+   L'Action rilegge le lezioni e rigenera da sé tutto ciò che manca:
+   non serve reimportare `_pending.json`, che è solo una traccia di controllo.
+2. Verificare con `node tools/lint_content.js` che «Testi senza audio» sia 0.
+3. Cancellare `data/hy/audio/_pending.json`.
+
+**Costo stimato**: ~500 crediti sui 10.000 mensili.
+
+**Cosa riguarda**: quasi tutte le 7 lezioni nuove (negazione `l024n`, `l036n`,
+`l055n`, `l064n`, `l069n`; locativi `l026b`; pronomi obliqui `l043p`) e le
+10 parole di servizio ricettive. Fino ad allora l'icona 🔊 resta visibile ma
+non produce suono su iOS, che non ha voce armena di sistema.
+
+**Nota tecnica**: `tools/lint_content.js` verifica l'indice, non i file su
+disco. Con l'indice ripulito i due valori coincidono, ma se in futuro l'indice
+tornasse a divergere dai file il linter direbbe «0 senza audio» pur mancando
+le tracce. Vale la pena farlo controllare i file veri.
