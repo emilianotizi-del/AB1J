@@ -111,7 +111,10 @@ for (const mod of course.modules) {
       w.hy.toLowerCase().split(' ').forEach(t => chunks.add(t));
     }
     const core = L.steps.filter(x => !x.extra).length;
-    console.log(`✓ ${les.id}: ${L.steps.length} passi (${core} core), ${(L.vocab || []).length} parole`);
+    const gram = (L.vocab || []).filter(w => w.grammar).length;
+    const lex = (L.vocab || []).length - gram;
+    console.log(`✓ ${les.id}: ${L.steps.length} passi (${core} core), ${lex} parole` +
+      (gram ? ` + ${gram} carte di grammatica` : ''));
   }
 }
 console.log(`\nLettere insegnate: ${taught.size} (digramma incluso)`);

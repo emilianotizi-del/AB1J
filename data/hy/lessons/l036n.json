@@ -2,41 +2,208 @@
   "id": "l036n",
   "title": "Non ho: la negazione di ունեմ",
   "vocab": [
-    { "hy": "չունեմ", "tr": "ch'unem", "ipa": "[tʃʰuˈnɛm]", "it": "non ho" },
-    { "hy": "չունի", "tr": "ch'uni", "ipa": "[tʃʰuˈni]", "it": "non ha" },
-    { "hy": "չունենք", "tr": "ch'unenk'", "ipa": "[tʃʰuˈnɛnkʰ]", "it": "non abbiamo" }
+    {
+      "hy": "չունեմ",
+      "tr": "ch'unem",
+      "ipa": "[tʃʰuˈnɛm]",
+      "it": "non ho",
+      "grammar": true
+    },
+    {
+      "hy": "չունես",
+      "tr": "ch'unes",
+      "ipa": "[tʃʰuˈnɛs]",
+      "it": "non hai",
+      "grammar": true
+    },
+    {
+      "hy": "չունի",
+      "tr": "ch'uni",
+      "ipa": "[tʃʰuˈni]",
+      "it": "non ha",
+      "grammar": true
+    },
+    {
+      "hy": "չունենք",
+      "tr": "ch'unenk'",
+      "ipa": "[tʃʰuˈnɛnkʰ]",
+      "it": "non abbiamo",
+      "grammar": true
+    },
+    {
+      "hy": "չունեք",
+      "tr": "ch'unek'",
+      "ipa": "[tʃʰuˈnɛkʰ]",
+      "it": "non avete",
+      "grammar": true
+    },
+    {
+      "hy": "չունեն",
+      "tr": "ch'unen",
+      "ipa": "[tʃʰuˈnɛn]",
+      "it": "non hanno",
+      "grammar": true
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "չունեմ", "tr": "ch'unem", "ipa": "[tʃʰuˈnɛm]", "it": "non ho" },
-      "note": "Stessa regola di prima: չ- davanti. ունեմ → չունեմ. Qui la չ- si attacca al verbo, non a եմ." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "չունես", "tr": "ch'unes", "ipa": "[tʃʰuˈnɛs]", "it": "non hai" } },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "չունի", "tr": "ch'uni", "ipa": "[tʃʰuˈni]", "it": "non ha" } },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "Ես փող չունեմ", "tr": "yes p'vogh ch'unem", "ipa": "[jɛs pʰoʁ tʃʰuˈnɛm]", "it": "non ho soldi" },
-      "note": "Frase utilissima al mercato — e onesta." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "չունենք", "tr": "ch'unenk'", "ipa": "[tʃʰuˈnɛnkʰ]", "it": "non abbiamo" }, "extra": true },
-    { "type": "cloze", "it": "non ho soldi",
-      "text": "Ես փող ___", "options": ["չունեմ", "չունես", "չունի"], "answer": "չունեմ",
-      "speakText": "Ես փող չունեմ" },
-    { "type": "cloze", "it": "lei non ha una casa",
-      "text": "Նա տուն ___", "options": ["չունի", "չունեմ", "չունենք"], "answer": "չունի",
-      "speakText": "Նա տուն չունի" },
-    { "type": "mcq", "prompt": "«non abbiamo tempo»:",
-      "options": ["Մենք ժամանակ չունենք", "Մենք ժամանակ չունեմ", "Մենք չժամանակ ունենք"],
-      "answer": "Մենք ժամանակ չունենք", "optionsAreHy": true },
-    { "type": "order", "it": "non ho tempo",
-      "tokens": ["Ես", "ժամանակ", "չունեմ"], "speakText": "Ես ժամանակ չունեմ" },
-    { "type": "write", "prompt": "Scrivi: «non ho pane»",
-      "it": "non ho pane", "answer": "Հաց չունեմ", "hint": "հաց + չունեմ" },
-    { "type": "listen", "question": "Che cosa dice?",
-      "speakText": "Ես ջուր չունեմ", "it": "Non ho acqua", "reveal": "Ես ջուր չունեմ",
-      "options": ["non ho acqua", "ho acqua", "voglio acqua"], "answer": "non ho acqua" },
-    { "type": "mcq", "prompt": "Come si nega ունեմ?",
-      "options": ["չ- davanti al verbo: չունեմ", "չեմ + ունեմ", "ունեմ + չէ"],
-      "answer": "չ- davanti al verbo: չունեմ" }
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "չունեմ",
+        "tr": "ch'unem",
+        "ipa": "[tʃʰuˈnɛm]",
+        "it": "non ho"
+      },
+      "note": "Stessa regola di prima: չ- davanti. ունեմ → չունեմ. Qui la չ- si attacca al verbo, non a եմ."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "չունես",
+        "tr": "ch'unes",
+        "ipa": "[tʃʰuˈnɛs]",
+        "it": "non hai"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "չունի",
+        "tr": "ch'uni",
+        "ipa": "[tʃʰuˈni]",
+        "it": "non ha"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "Ես փող չունեմ",
+        "tr": "yes p'vogh ch'unem",
+        "ipa": "[jɛs pʰoʁ tʃʰuˈnɛm]",
+        "it": "non ho soldi"
+      },
+      "note": "Frase utilissima al mercato — e onesta."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "չունենք",
+        "tr": "ch'unenk'",
+        "ipa": "[tʃʰuˈnɛnkʰ]",
+        "it": "non abbiamo"
+      },
+      "extra": true
+    },
+    {
+      "type": "conjugate",
+      "prompt": "Il negativo di ունեմ «avere»",
+      "rows": [
+        {
+          "label": "ես",
+          "answer": "չունեմ"
+        },
+        {
+          "label": "դու",
+          "answer": "չունես"
+        },
+        {
+          "label": "նա",
+          "answer": "չունի"
+        },
+        {
+          "label": "մենք",
+          "answer": "չունենք"
+        },
+        {
+          "label": "դուք",
+          "answer": "չունեք"
+        },
+        {
+          "label": "նրանք",
+          "answer": "չունեն"
+        }
+      ],
+      "note": "Il negativo di ունեմ: la չ- si attacca al verbo, non a եմ."
+    },
+    {
+      "type": "cloze",
+      "it": "non ho soldi",
+      "text": "Ես փող ___",
+      "options": [
+        "չունեմ",
+        "չունես",
+        "չունի"
+      ],
+      "answer": "չունեմ",
+      "speakText": "Ես փող չունեմ"
+    },
+    {
+      "type": "cloze",
+      "it": "lei non ha una casa",
+      "text": "Նա տուն ___",
+      "options": [
+        "չունի",
+        "չունեմ",
+        "չունենք"
+      ],
+      "answer": "չունի",
+      "speakText": "Նա տուն չունի"
+    },
+    {
+      "type": "mcq",
+      "prompt": "«non abbiamo tempo»:",
+      "options": [
+        "Մենք ժամանակ չունենք",
+        "Մենք ժամանակ չունեմ",
+        "Մենք չժամանակ ունենք"
+      ],
+      "answer": "Մենք ժամանակ չունենք",
+      "optionsAreHy": true
+    },
+    {
+      "type": "order",
+      "it": "non ho tempo",
+      "tokens": [
+        "Ես",
+        "ժամանակ",
+        "չունեմ"
+      ],
+      "speakText": "Ես ժամանակ չունեմ"
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi: «non ho pane»",
+      "it": "non ho pane",
+      "answer": "Հաց չունեմ",
+      "hint": "հաց + չունեմ"
+    },
+    {
+      "type": "listen",
+      "question": "Che cosa dice?",
+      "speakText": "Ես ջուր չունեմ",
+      "it": "Non ho acqua",
+      "reveal": "Ես ջուր չունեմ",
+      "options": [
+        "non ho acqua",
+        "ho acqua",
+        "voglio acqua"
+      ],
+      "answer": "non ho acqua"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Come si nega ունեմ?",
+      "options": [
+        "չ- davanti al verbo: չունեմ",
+        "չեմ + ունեմ",
+        "ունեմ + չէ"
+      ],
+      "answer": "չ- davanti al verbo: չունեմ"
+    }
   ]
 }

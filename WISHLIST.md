@@ -91,9 +91,13 @@ nell'SRS ma sono toccabili per la traduzione, e vengono promosse al ripasso
 solo dopo N tocchi — promozione guidata dal comportamento, non decisa a priori.
 Riusa `reading_test`. È l'intervento con il maggior ritorno verso il B1.
 
-### 6. Carte di grammatica per i paradigmi
-`չի`, `չեմ`, `նրան`, `որը`, `իրենց`: nell'SRS come carte di grammatica, fuori
-dal conteggio delle 100 parole. Decisione già presa, non ancora implementata.
+### 6. ~~Carte di grammatica per i paradigmi~~ — FATTO (21/08/2026)
+36 forme marcate `grammar: true` nel `vocab` di l024n, l036n, l055n, l064n,
+l069n, l043p → 108 carte nel mazzo (read/mean/prod), fuori dal conteggio delle
+parole di lessico. Paradigmi completati (il presente negativo aveva 4 persone
+su 6), glosse disambiguate per la direzione IT→HY, e un passo `conjugate` per
+lezione così ogni forma è insegnata prima di essere chiesta.
+Etichetta «📐 Grammatica» nel ripasso; il linter riporta i due conteggi separati.
 
 ### 7. Verifica madrelingua del corpus
 Testo, IPA, traslitterazione, naturalezza, audio. **NB**: una madrelingua ha

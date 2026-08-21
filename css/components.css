@@ -439,6 +439,14 @@
 .kind-prod { background: color-mix(in srgb, var(--ok, #3a8) 18%, transparent); color: #2a6b52; }
 .flashcard.card-prod { border-top: 4px solid var(--ok, #3a8); }
 
+/* Carte di grammatica (paradigmi): etichetta neutra accanto a quella del tipo,
+   così si riconosce a colpo d'occhio che è una forma e non una parola nuova. */
+.kind-grammar {
+  background: color-mix(in srgb, var(--ink) 10%, transparent);
+  color: var(--ink-soft);
+  margin-left: 6px;
+}
+
 /* Task-based: missione comunicativa */
 .task-goal { display:flex; flex-direction:column; gap:6px; font-size:1.15rem; font-weight:700; line-height:1.3; }
 .task-badge { align-self:flex-start; font-size:.72rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase;

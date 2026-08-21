@@ -2,49 +2,200 @@
   "id": "l043p",
   "title": "Me, te, gli: i pronomi ai casi",
   "vocab": [
-    { "hy": "ինձ", "tr": "indz", "ipa": "[indz]", "it": "me, a me" },
-    { "hy": "քեզ", "tr": "k'ez", "ipa": "[kʰɛz]", "it": "te, a te" },
-    { "hy": "նրան", "tr": "nran", "ipa": "[nəˈɾɑn]", "it": "lui/lei, a lui/lei" },
-    { "hy": "մեզ", "tr": "mez", "ipa": "[mɛz]", "it": "noi, a noi" },
-    { "hy": "նրանց", "tr": "nrants'", "ipa": "[nəˈɾɑntsʰ]", "it": "loro, a loro" }
+    {
+      "hy": "ինձ",
+      "tr": "indz",
+      "ipa": "[indz]",
+      "it": "me, a me",
+      "grammar": true
+    },
+    {
+      "hy": "քեզ",
+      "tr": "k'ez",
+      "ipa": "[kʰɛz]",
+      "it": "te, a te",
+      "grammar": true
+    },
+    {
+      "hy": "նրան",
+      "tr": "nran",
+      "ipa": "[nəˈɾɑn]",
+      "it": "lui/lei, a lui/lei",
+      "grammar": true
+    },
+    {
+      "hy": "մեզ",
+      "tr": "mez",
+      "ipa": "[mɛz]",
+      "it": "noi, a noi",
+      "grammar": true
+    },
+    {
+      "hy": "ձեզ",
+      "tr": "dzez",
+      "ipa": "[dzɛz]",
+      "it": "voi, a voi (anche formale)",
+      "grammar": true
+    },
+    {
+      "hy": "նրանց",
+      "tr": "nrants'",
+      "ipa": "[nəˈɾɑntsʰ]",
+      "it": "loro, a loro",
+      "grammar": true
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "ինձ", "tr": "indz", "ipa": "[indz]", "it": "me, a me" },
-      "note": "In armeno «io» ha due forme: ես quando fa l'azione, ինձ quando la subisce o la riceve. Come in italiano: io / me." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "քեզ", "tr": "k'ez", "ipa": "[kʰɛz]", "it": "te, a te" },
-      "note": "դու → քեզ. La coppia da imparare insieme." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "նրան", "tr": "nran", "ipa": "[nəˈɾɑn]", "it": "lui/lei, a lui/lei" },
-      "note": "նա → նրան. Una sola forma per maschile e femminile: l'armeno non distingue il genere." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "Նա ինձ տվեց", "tr": "na indz tvets'", "ipa": "[nɑ indz təˈvɛtsʰ]", "it": "me lo ha dato" },
-      "note": "Confronta: «Ես տվեցի» (io ho dato) / «Նա ինձ տվեց» (lui ha dato a me)." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "մեզ", "tr": "mez", "ipa": "[mɛz]", "it": "noi, a noi" } },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "ձեզ", "tr": "dzez", "ipa": "[dzɛz]", "it": "voi, a voi (anche formale)" },
-      "note": "La stessa forma del «Բարև ձեզ» che già conosci: letteralmente «saluto a voi»." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "նրանց", "tr": "nrants'", "ipa": "[nəˈɾɑntsʰ]", "it": "loro, a loro" }, "extra": true },
-    { "type": "cloze", "it": "mi ha detto",
-      "text": "Նա ___ ասաց", "options": ["ինձ", "ես", "իմ"], "answer": "ինձ",
-      "speakText": "Նա ինձ ասաց" },
-    { "type": "cloze", "it": "ti ho visto",
-      "text": "Ես ___ տեսա", "options": ["քեզ", "դու", "քո"], "answer": "քեզ",
-      "speakText": "Ես քեզ տեսա" },
-    { "type": "mcq", "prompt": "«gli ho parlato»:",
-      "options": ["Ես նրան ասացի", "Ես նա ասացի", "Ես իր ասացի"],
-      "answer": "Ես նրան ասացի", "optionsAreHy": true },
-    { "type": "order", "it": "lui mi ha guardato",
-      "tokens": ["Նա", "ինձ", "նայեց"], "speakText": "Նա ինձ նայեց" },
-    { "type": "write", "prompt": "Scrivi: «me lo ha dato»",
-      "it": "me lo ha dato", "answer": "Նա ինձ տվեց", "hint": "նա + ինձ + տվեց" },
-    { "type": "listen", "question": "A chi ha parlato?",
-      "speakText": "Նա մեզ ասաց", "it": "Ce l'ha detto", "reveal": "Նա մեզ ասաց",
-      "options": ["a noi", "a me", "a loro"], "answer": "a noi" },
-    { "type": "mcq", "prompt": "Qual è la forma di ես quando riceve l'azione?",
-      "options": ["ինձ", "իմ", "ես"], "answer": "ինձ" }
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ինձ",
+        "tr": "indz",
+        "ipa": "[indz]",
+        "it": "me, a me"
+      },
+      "note": "In armeno «io» ha due forme: ես quando fa l'azione, ինձ quando la subisce o la riceve. Come in italiano: io / me."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "քեզ",
+        "tr": "k'ez",
+        "ipa": "[kʰɛz]",
+        "it": "te, a te"
+      },
+      "note": "դու → քեզ. La coppia da imparare insieme."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "նրան",
+        "tr": "nran",
+        "ipa": "[nəˈɾɑn]",
+        "it": "lui/lei, a lui/lei"
+      },
+      "note": "նա → նրան. Una sola forma per maschile e femminile: l'armeno non distingue il genere."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "Նա ինձ տվեց",
+        "tr": "na indz tvets'",
+        "ipa": "[nɑ indz təˈvɛtsʰ]",
+        "it": "me lo ha dato"
+      },
+      "note": "Confronta: «Ես տվեցի» (io ho dato) / «Նա ինձ տվեց» (lui ha dato a me)."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "մեզ",
+        "tr": "mez",
+        "ipa": "[mɛz]",
+        "it": "noi, a noi"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "ձեզ",
+        "tr": "dzez",
+        "ipa": "[dzɛz]",
+        "it": "voi, a voi (anche formale)"
+      },
+      "note": "La stessa forma del «Բարև ձեզ» che già conosci: letteralmente «saluto a voi»."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "նրանց",
+        "tr": "nrants'",
+        "ipa": "[nəˈɾɑntsʰ]",
+        "it": "loro, a loro"
+      },
+      "extra": true
+    },
+    {
+      "type": "cloze",
+      "it": "mi ha detto",
+      "text": "Նա ___ ասաց",
+      "options": [
+        "ինձ",
+        "ես",
+        "իմ"
+      ],
+      "answer": "ինձ",
+      "speakText": "Նա ինձ ասաց"
+    },
+    {
+      "type": "cloze",
+      "it": "ti ho visto",
+      "text": "Ես ___ տեսա",
+      "options": [
+        "քեզ",
+        "դու",
+        "քո"
+      ],
+      "answer": "քեզ",
+      "speakText": "Ես քեզ տեսա"
+    },
+    {
+      "type": "mcq",
+      "prompt": "«gli ho parlato»:",
+      "options": [
+        "Ես նրան ասացի",
+        "Ես նա ասացի",
+        "Ես իր ասացի"
+      ],
+      "answer": "Ես նրան ասացի",
+      "optionsAreHy": true
+    },
+    {
+      "type": "order",
+      "it": "lui mi ha guardato",
+      "tokens": [
+        "Նա",
+        "ինձ",
+        "նայեց"
+      ],
+      "speakText": "Նա ինձ նայեց"
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi: «me lo ha dato»",
+      "it": "me lo ha dato",
+      "answer": "Նա ինձ տվեց",
+      "hint": "նա + ինձ + տվեց"
+    },
+    {
+      "type": "listen",
+      "question": "A chi ha parlato?",
+      "speakText": "Նա մեզ ասաց",
+      "it": "Ce l'ha detto",
+      "reveal": "Նա մեզ ասաց",
+      "options": [
+        "a noi",
+        "a me",
+        "a loro"
+      ],
+      "answer": "a noi"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Qual è la forma di ես quando riceve l'azione?",
+      "options": [
+        "ինձ",
+        "իմ",
+        "ես"
+      ],
+      "answer": "ինձ"
+    }
   ]
 }

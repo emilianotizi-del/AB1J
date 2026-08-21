@@ -6,6 +6,10 @@ import { dueCards, grade, deckSize } from '../core/srs.js';
 import { speak } from '../core/audio.js';
 
 const KIND_LABEL = { read: 'Come si legge?', mean: 'Che cosa significa?', prod: 'Come si dice in armeno?' };
+// Le carte di grammatica (paradigmi: negazione, pronomi obliqui) si distinguono
+// da quelle di lessico: stessa meccanica, etichetta diversa, così è chiaro che
+// si sta ripassando una forma e non una parola nuova.
+const GRAMMAR_TAG = '📐 Grammatica';
 
 export function render(mount) {
   mount.innerHTML = '';
@@ -59,6 +63,9 @@ export function render(mount) {
       face.append(el('div', {
         class: 'kind-tag kind-' + kind
       }, (kind === 'read' ? '🔊 ' : kind === 'prod' ? '✍️ ' : '💬 ') + KIND_LABEL[kind]));
+      if (card.grammar) {
+        face.append(el('div', { class: 'kind-tag kind-grammar' }, GRAMMAR_TAG));
+      }
       if (kind === 'prod') {
         face.append(el('div', {
           style: 'font-size:1.8rem;font-weight:700;margin-top:6px'

@@ -2,44 +2,205 @@
   "id": "l064n",
   "title": "Non era così: la negazione all'imperfetto",
   "vocab": [
-    { "hy": "չէի", "tr": "ch'ei", "ipa": "[tʃʰɛi]", "it": "non ero / non (io, imperfetto)" },
-    { "hy": "չէր", "tr": "ch'er", "ipa": "[tʃʰɛɾ]", "it": "non era" },
-    { "hy": "չէին", "tr": "ch'ein", "ipa": "[tʃʰɛin]", "it": "non erano" }
+    {
+      "hy": "չէի",
+      "tr": "ch'ei",
+      "ipa": "[tʃʰɛi]",
+      "it": "non ero / non… (io, imperfetto)",
+      "grammar": true
+    },
+    {
+      "hy": "չէիր",
+      "tr": "ch'eir",
+      "ipa": "[tʃʰɛiɾ]",
+      "it": "non eri (tu, imperfetto)",
+      "grammar": true
+    },
+    {
+      "hy": "չէր",
+      "tr": "ch'er",
+      "ipa": "[tʃʰɛɾ]",
+      "it": "non era (lui/lei, imperfetto)",
+      "grammar": true
+    },
+    {
+      "hy": "չէինք",
+      "tr": "ch'eink'",
+      "ipa": "[tʃʰɛinkʰ]",
+      "it": "non eravamo (noi, imperfetto)",
+      "grammar": true
+    },
+    {
+      "hy": "չէին",
+      "tr": "ch'ein",
+      "ipa": "[tʃʰɛin]",
+      "it": "non erano (loro, imperfetto)",
+      "grammar": true
+    },
+    {
+      "hy": "չգիտեի",
+      "tr": "ch'giteyi",
+      "ipa": "[tʃʰgitɛˈji]",
+      "it": "non sapevo (io)",
+      "grammar": true
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "չէի", "tr": "ch'ei", "ipa": "[tʃʰɛi]", "it": "non ero" },
-      "note": "էի → չէի. La regola non cambia mai: չ- davanti." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "չէր", "tr": "ch'er", "ipa": "[tʃʰɛɾ]", "it": "non era" },
-      "note": "էր → չէր. È la forma che userai di più: serve per descrivere com'era (o non era) qualcosa." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "Շուկան բաց չէր", "tr": "shukan bats' ch'er", "ipa": "[ʃuˈkɑn bɑtsʰ tʃʰɛɾ]", "it": "il mercato non era aperto" } },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "Ես չէի խոսում", "tr": "yes ch'ei khosum", "ipa": "[jɛs tʃʰɛi χoˈsum]", "it": "non parlavo" },
-      "note": "Come al presente: չէի va prima del verbo in -ում." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "չգիտեի", "tr": "ch'giteyi", "ipa": "[tʃʰgitɛˈji]", "it": "non sapevo" },
-      "note": "գիտեի → չգիտեի. Con գիտեմ la չ- si attacca al verbo.", "extra": true },
-    { "type": "cloze", "it": "il mercato non era aperto",
-      "text": "Շուկան բաց ___", "options": ["չէր", "չէի", "չէին"], "answer": "չէր",
-      "speakText": "Շուկան բաց չէր" },
-    { "type": "cloze", "it": "non sapevo",
-      "text": "Ես ___", "options": ["չգիտեի", "չգիտեմ", "գիտեի չեմ"], "answer": "չգիտեի",
-      "speakText": "Ես չգիտեի" },
-    { "type": "mcq", "prompt": "«non stavo lavorando»:",
-      "options": ["Ես չէի աշխատում", "Ես աշխատում չէի", "Ես չաշխատում էի"],
-      "answer": "Ես չէի աշխատում", "optionsAreHy": true },
-    { "type": "order", "it": "non era facile",
-      "tokens": ["Հեշտ", "չէր"], "speakText": "Հեշտ չէր" },
-    { "type": "write", "prompt": "Scrivi: «non era grande»",
-      "it": "non era grande", "answer": "Մեծ չէր", "hint": "մեծ + չէր" },
-    { "type": "listen", "question": "Che cosa dice?",
-      "speakText": "Այն օրը լավ չէր", "it": "Quel giorno non era bello",
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "չէի",
+        "tr": "ch'ei",
+        "ipa": "[tʃʰɛi]",
+        "it": "non ero"
+      },
+      "note": "էի → չէի. La regola non cambia mai: չ- davanti."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "չէր",
+        "tr": "ch'er",
+        "ipa": "[tʃʰɛɾ]",
+        "it": "non era"
+      },
+      "note": "էր → չէր. È la forma che userai di più: serve per descrivere com'era (o non era) qualcosa."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "Շուկան բաց չէր",
+        "tr": "shukan bats' ch'er",
+        "ipa": "[ʃuˈkɑn bɑtsʰ tʃʰɛɾ]",
+        "it": "il mercato non era aperto"
+      }
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "Ես չէի խոսում",
+        "tr": "yes ch'ei khosum",
+        "ipa": "[jɛs tʃʰɛi χoˈsum]",
+        "it": "non parlavo"
+      },
+      "note": "Come al presente: չէի va prima del verbo in -ում."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "չգիտեի",
+        "tr": "ch'giteyi",
+        "ipa": "[tʃʰgitɛˈji]",
+        "it": "non sapevo"
+      },
+      "note": "գիտեի → չգիտեի. Con գիտեմ la չ- si attacca al verbo.",
+      "extra": true
+    },
+    {
+      "type": "conjugate",
+      "prompt": "L'imperfetto negativo di «essere»",
+      "rows": [
+        {
+          "label": "ես",
+          "answer": "չէի"
+        },
+        {
+          "label": "դու",
+          "answer": "չէիր"
+        },
+        {
+          "label": "նա",
+          "answer": "չէր"
+        },
+        {
+          "label": "մենք",
+          "answer": "չէինք"
+        },
+        {
+          "label": "նրանք",
+          "answer": "չէին"
+        }
+      ],
+      "note": "L'imperfetto negativo: էի → չէի, էր → չէր."
+    },
+    {
+      "type": "cloze",
+      "it": "il mercato non era aperto",
+      "text": "Շուկան բաց ___",
+      "options": [
+        "չէր",
+        "չէի",
+        "չէին"
+      ],
+      "answer": "չէր",
+      "speakText": "Շուկան բաց չէր"
+    },
+    {
+      "type": "cloze",
+      "it": "non sapevo",
+      "text": "Ես ___",
+      "options": [
+        "չգիտեի",
+        "չգիտեմ",
+        "գիտեի չեմ"
+      ],
+      "answer": "չգիտեի",
+      "speakText": "Ես չգիտեի"
+    },
+    {
+      "type": "mcq",
+      "prompt": "«non stavo lavorando»:",
+      "options": [
+        "Ես չէի աշխատում",
+        "Ես աշխատում չէի",
+        "Ես չաշխատում էի"
+      ],
+      "answer": "Ես չէի աշխատում",
+      "optionsAreHy": true
+    },
+    {
+      "type": "order",
+      "it": "non era facile",
+      "tokens": [
+        "Հեշտ",
+        "չէր"
+      ],
+      "speakText": "Հեշտ չէր"
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi: «non era grande»",
+      "it": "non era grande",
+      "answer": "Մեծ չէր",
+      "hint": "մեծ + չէր"
+    },
+    {
+      "type": "listen",
+      "question": "Che cosa dice?",
+      "speakText": "Այն օրը լավ չէր",
+      "it": "Quel giorno non era bello",
       "reveal": "Այն օրը լավ չէր",
-      "options": ["quel giorno non era bello", "quel giorno era bello", "oggi non è bello"],
-      "answer": "quel giorno non era bello" },
-    { "type": "mcq", "prompt": "Come si nega էր?",
-      "options": ["չէր", "չեմ էր", "էր չէ"], "answer": "չէր" }
+      "options": [
+        "quel giorno non era bello",
+        "quel giorno era bello",
+        "oggi non è bello"
+      ],
+      "answer": "quel giorno non era bello"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Come si nega էր?",
+      "options": [
+        "չէր",
+        "չեմ էր",
+        "էր չէ"
+      ],
+      "answer": "չէր"
+    }
   ]
 }

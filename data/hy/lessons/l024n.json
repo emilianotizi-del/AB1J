@@ -2,52 +2,247 @@
   "id": "l024n",
   "title": "Dire di no: la negazione al presente",
   "vocab": [
-    { "hy": "չեմ", "tr": "ch'em", "ipa": "[tʃʰɛm]", "it": "non sono / non (io)" },
-    { "hy": "չէ", "tr": "ch'e", "ipa": "[tʃʰɛ]", "it": "non è" },
-    { "hy": "չեն", "tr": "ch'en", "ipa": "[tʃʰɛn]", "it": "non sono (loro)" },
-    { "hy": "չկա", "tr": "ch'ka", "ipa": "[tʃʰˈkɑ]", "it": "non c'è" }
+    {
+      "hy": "չեմ",
+      "tr": "ch'em",
+      "ipa": "[tʃʰɛm]",
+      "it": "non sono / non… (io)",
+      "grammar": true
+    },
+    {
+      "hy": "չես",
+      "tr": "ch'es",
+      "ipa": "[tʃʰɛs]",
+      "it": "non sei / non… (tu)",
+      "grammar": true
+    },
+    {
+      "hy": "չէ",
+      "tr": "ch'e",
+      "ipa": "[tʃʰɛ]",
+      "it": "non è (predicato)",
+      "grammar": true
+    },
+    {
+      "hy": "չի",
+      "tr": "ch'i",
+      "ipa": "[tʃʰi]",
+      "it": "non… (lui/lei, col verbo)",
+      "grammar": true
+    },
+    {
+      "hy": "չենք",
+      "tr": "ch'enk'",
+      "ipa": "[tʃʰɛnkʰ]",
+      "it": "non siamo / non… (noi)",
+      "grammar": true
+    },
+    {
+      "hy": "չեք",
+      "tr": "ch'ek'",
+      "ipa": "[tʃʰɛkʰ]",
+      "it": "non siete / non… (voi)",
+      "grammar": true
+    },
+    {
+      "hy": "չեն",
+      "tr": "ch'en",
+      "ipa": "[tʃʰɛn]",
+      "it": "non sono / non… (loro)",
+      "grammar": true
+    },
+    {
+      "hy": "չկա",
+      "tr": "ch'ka",
+      "ipa": "[tʃʰˈkɑ]",
+      "it": "non c'è",
+      "grammar": true
+    }
   ],
   "steps": [
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "չեմ", "tr": "ch'em", "ipa": "[tʃʰɛm]", "it": "non sono / non (io)" },
-      "note": "La negazione armena è semplicissima: si mette չ- davanti al verbo essere. եմ → չեմ." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "չես", "tr": "ch'es", "ipa": "[tʃʰɛs]", "it": "non sei / non (tu)" },
-      "note": "Stessa regola per tutte le persone: ես → չես." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "չէ", "tr": "ch'e", "ipa": "[tʃʰɛ]", "it": "non è" },
-      "note": "Attenzione: է → չէ, con է lungo. È l'unica forma che cambia un po'." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "Ես հայ չեմ", "tr": "yes hay ch'em", "ipa": "[jɛs hɑj tʃʰɛm]", "it": "non sono armeno" },
-      "note": "Nella frase negativa il verbo essere va subito dopo la parola negata." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "Ես հայերեն չեմ խոսում", "tr": "yes hayeren ch'em khosum", "ipa": "[jɛs hɑjɛˈɾɛn tʃʰɛm χoˈsum]", "it": "non parlo armeno" },
-      "note": "Con il presente in -ում: չեմ va PRIMA del verbo, non dopo. Confronta: խոսում եմ → չեմ խոսում." },
-    { "type": "teach", "kind": "word",
-      "word": { "hy": "չկա", "tr": "ch'ka", "ipa": "[tʃʰˈkɑ]", "it": "non c'è" },
-      "note": "կա = c'è, չկա = non c'è. Utilissima ogni giorno.", "extra": true },
-    { "type": "cloze", "it": "non sono armeno",
-      "text": "Ես հայ ___", "options": ["չեմ", "չես", "չէ"], "answer": "չեմ",
-      "speakText": "Ես հայ չեմ" },
-    { "type": "cloze", "it": "lui non è italiano",
-      "text": "Նա իտալացի ___", "options": ["չէ", "չեմ", "չես"], "answer": "չէ",
-      "speakText": "Նա իտալացի չէ" },
-    { "type": "mcq", "prompt": "«non sto bevendo acqua»:",
-      "options": ["Ես ջուր չեմ խմում", "Ես ջուր խմում չեմ", "Ես չջուր եմ խմում"],
-      "answer": "Ես ջուր չեմ խմում", "optionsAreHy": true },
-    { "type": "order", "it": "non parlo armeno",
-      "tokens": ["Ես", "հայերեն", "չեմ", "խոսում"],
-      "speakText": "Ես հայերեն չեմ խոսում" },
-    { "type": "write", "prompt": "Scrivi: «non sto mangiando»",
-      "it": "non sto mangiando", "answer": "Չեմ ուտում", "hint": "չեմ + ուտում" },
-    { "type": "listen", "question": "Che cosa dice?",
-      "speakText": "Նա տուն չէ գնում", "it": "Lui non va a casa",
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "չեմ",
+        "tr": "ch'em",
+        "ipa": "[tʃʰɛm]",
+        "it": "non sono / non (io)"
+      },
+      "note": "La negazione armena è semplicissima: si mette չ- davanti al verbo essere. եմ → չեմ."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "չես",
+        "tr": "ch'es",
+        "ipa": "[tʃʰɛs]",
+        "it": "non sei / non (tu)"
+      },
+      "note": "Stessa regola per tutte le persone: ես → չես."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "չէ",
+        "tr": "ch'e",
+        "ipa": "[tʃʰɛ]",
+        "it": "non è"
+      },
+      "note": "Attenzione: է → չէ, con է lungo. È l'unica forma che cambia un po'."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "Ես հայ չեմ",
+        "tr": "yes hay ch'em",
+        "ipa": "[jɛs hɑj tʃʰɛm]",
+        "it": "non sono armeno"
+      },
+      "note": "Nella frase negativa il verbo essere va subito dopo la parola negata."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "Ես հայերեն չեմ խոսում",
+        "tr": "yes hayeren ch'em khosum",
+        "ipa": "[jɛs hɑjɛˈɾɛn tʃʰɛm χoˈsum]",
+        "it": "non parlo armeno"
+      },
+      "note": "Con il presente in -ում: չեմ va PRIMA del verbo, non dopo. Confronta: խոսում եմ → չեմ խոսում."
+    },
+    {
+      "type": "teach",
+      "kind": "word",
+      "word": {
+        "hy": "չկա",
+        "tr": "ch'ka",
+        "ipa": "[tʃʰˈkɑ]",
+        "it": "non c'è"
+      },
+      "note": "կա = c'è, չկա = non c'è. Utilissima ogni giorno.",
+      "extra": true
+    },
+    {
+      "type": "conjugate",
+      "prompt": "Il presente negativo di «essere»",
+      "rows": [
+        {
+          "label": "ես",
+          "answer": "չեմ"
+        },
+        {
+          "label": "դու",
+          "answer": "չես"
+        },
+        {
+          "label": "նա",
+          "answer": "չէ"
+        },
+        {
+          "label": "մենք",
+          "answer": "չենք"
+        },
+        {
+          "label": "դուք",
+          "answer": "չեք"
+        },
+        {
+          "label": "նրանք",
+          "answer": "չեն"
+        }
+      ],
+      "note": "Il negativo di եմ per tutte le persone. Attenzione a նա: չէ regge un predicato («Նա հայ չէ»), չի accompagna un verbo («Նա չի գա»)."
+    },
+    {
+      "type": "cloze",
+      "it": "non sono armeno",
+      "text": "Ես հայ ___",
+      "options": [
+        "չեմ",
+        "չես",
+        "չէ"
+      ],
+      "answer": "չեմ",
+      "speakText": "Ես հայ չեմ"
+    },
+    {
+      "type": "cloze",
+      "it": "lui non è italiano",
+      "text": "Նա իտալացի ___",
+      "options": [
+        "չէ",
+        "չեմ",
+        "չես"
+      ],
+      "answer": "չէ",
+      "speakText": "Նա իտալացի չէ"
+    },
+    {
+      "type": "mcq",
+      "prompt": "«non sto bevendo acqua»:",
+      "options": [
+        "Ես ջուր չեմ խմում",
+        "Ես ջուր խմում չեմ",
+        "Ես չջուր եմ խմում"
+      ],
+      "answer": "Ես ջուր չեմ խմում",
+      "optionsAreHy": true
+    },
+    {
+      "type": "order",
+      "it": "non parlo armeno",
+      "tokens": [
+        "Ես",
+        "հայերեն",
+        "չեմ",
+        "խոսում"
+      ],
+      "speakText": "Ես հայերեն չեմ խոսում"
+    },
+    {
+      "type": "write",
+      "prompt": "Scrivi: «non sto mangiando»",
+      "it": "non sto mangiando",
+      "answer": "Չեմ ուտում",
+      "hint": "չեմ + ուտում"
+    },
+    {
+      "type": "listen",
+      "question": "Che cosa dice?",
+      "speakText": "Նա տուն չէ գնում",
+      "it": "Lui non va a casa",
       "reveal": "Նա տուն չէ գնում",
-      "options": ["non va a casa", "va a casa", "è a casa"], "answer": "non va a casa" },
-    { "type": "order", "it": "non c'è pane",
-      "tokens": ["Հաց", "չկա"], "speakText": "Հաց չկա", "extra": true },
-    { "type": "mcq", "prompt": "Dove va չեմ con il presente in -ում?",
-      "options": ["Prima del verbo", "Dopo il verbo", "Alla fine della frase"],
-      "answer": "Prima del verbo" }
+      "options": [
+        "non va a casa",
+        "va a casa",
+        "è a casa"
+      ],
+      "answer": "non va a casa"
+    },
+    {
+      "type": "order",
+      "it": "non c'è pane",
+      "tokens": [
+        "Հաց",
+        "չկա"
+      ],
+      "speakText": "Հաց չկա",
+      "extra": true
+    },
+    {
+      "type": "mcq",
+      "prompt": "Dove va չեմ con il presente in -ում?",
+      "options": [
+        "Prima del verbo",
+        "Dopo il verbo",
+        "Alla fine della frase"
+      ],
+      "answer": "Prima del verbo"
+    }
   ]
 }
