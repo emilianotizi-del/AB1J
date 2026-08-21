@@ -1,129 +1,136 @@
 # AB1J — Wishlist
 
-Idee e miglioramenti futuri per AB1J. Non sono impegni: è un parcheggio ordinato
-di cose emerse durante lo sviluppo e dalla **revisione indipendente** (ChatGPT,
-richiesta da Emiliano). Contesto importante: **AB1J è un'app a uso personale.**
-Molte critiche del revisore erano tarate su un corso pubblico con pretese di
-certificazione CEFR — pertinenti *se e quando* l'app verrà diffusa, meno
-urgenti finché resta personale. Qui sotto sono separate di conseguenza.
+Parcheggio ordinato di idee e miglioramenti. Non sono impegni.
 
-Ultimo aggiornamento: revisione indipendente ricevuta e triage completato.
+**Contesto**: AB1J è un'app a uso personale ed è l'unica fonte di armeno di
+Emiliano. Molte critiche della revisione indipendente (ChatGPT) erano tarate su
+un corso pubblico con pretese CEFR: pertinenti *se e quando* l'app verrà
+diffusa, meno urgenti finché resta personale. Sotto sono separate di conseguenza.
 
----
-
-## Fatto in risposta alla revisione
-
-- **SRS inverso (produzione IT→armeno).** Aggiunta una terza carta per ogni
-  parola: l'italiano davanti, si deve produrre l'armeno (rivelato dopo, con
-  audio). Prima le carte partivano entrambe dall'armeno → si allenava solo
-  riconoscimento. *Era la critica a più alto rendimento e l'abbiamo recepita.*
-- **Correzione linguistica: articolo pre-vocalico.** «Երևանը ավելի…» →
-  «Երևանն ավելի…» (l'articolo è -ն davanti a vocale, regola che il corso stesso
-  insegna in l046: era un'incoerenza interna). Corretto in l078/l082/l093/l094.
-- **Rinomina esami → "checkpoint".** Gli "esami A1/A2" ora sono "Checkpoint
-  AB1J A1/A2": non sono valutazioni CEFR certificanti e non devono dichiararsi
-  tali. Restano utili come verifica interna con soglia.
-- **Verifica dell'ora «Ժամը հինգն անց կես է».** Il revisore la dava per errata;
-  la verifica su fonte specializzata di armeno l'ha **confermata corretta**.
-  Nessuna modifica. (Lezione: i giudizi linguistici puntuali di un LLM vanno
-  sempre verificati — anche i più sicuri possono sbagliare.)
-
-## Backup progressi — già presente
-
-- Export/import del progresso in file JSON esiste già (Opzioni → Dati). Il
-  rischio "cancello i dati del browser e perdo tutto" è quindi già mitigato.
-  *Nota: valutare un promemoria periodico a fare il backup.*
+**Stato al 21/08/2026**: 101 lezioni in 20 moduli · 32 missioni task-based ·
+28 letture · SRS a tre tipi di carta · copertura lessicale attiva 37,5%,
+attesa 53,2% a fine percorso.
 
 ---
 
-## Da valutare — miglioramenti a costo medio, utili anche per uso personale
+## Fatto
 
-- **Più produzione attiva in A1.** Ogni unità potrebbe chiudersi con un piccolo
-  compito in cui la risposta non è già visibile a schermo (es. un `write` senza
-  tessere). Scaffolding mcq/match/order va bene *prima*, produzione *dopo*.
-- **Lessico ricettivo nelle letture.** Separare vocabolario attivo (piccolo,
-  consolidato nell'SRS) da vocabolario passivo (più ampio, incontrato in letture
-  e dialoghi senza entrare nel mazzo). Per Emiliano conta di più perché **l'app
-  è la sua unica fonte di armeno** — l'ambiente linguistico non deve essere
-  troppo povero.
-- **Regole grammaticali: distinguere euristica da regola assoluta.** Es. il
-  plurale "una sillaba → -եր / più sillabe → -ներ" è un'euristica didattica con
-  eccezioni, non una legge. Segnalare le eccezioni frequenti dove esistono, per
-  non doverle "disimparare" al B1.
-- **Verifica madrelingua del corpus.** Una revisione umana di testo, IPA,
-  traslitterazione, naturalezza e audio delle 244 voci. NB: una madrelingua ha
-  già segnalato a Emiliano che sono **in corso modifiche/semplificazioni nella
-  lingua** → tenerne conto e usare fonti aggiornate.
-
-## Da valutare — solo se un giorno l'app verrà diffusa pubblicamente
-
-Queste erano critiche "ALTA" del revisore, ma presuppongono un corso pubblico
-con pretese CEFR. Restano in lista, con quella condizione esplicita:
-
-- **Approccio task-based / can-do.** Riorganizzare (o affiancare) l'impianto
-  grammaticale-progressivo con unità costruite attorno a funzioni comunicative
-  ("ordinare", "chiedere il prezzo", "prendere un appuntamento"). *Possibile
-  forma: un'app separata o una sezione dedicata di AB1J, non una riscrittura
-  dell'esistente.* → vedi sotto, "Idea: modalità task".
-- **Assessment CEFR reale.** Test separati per reading/listening/writing/
-  speaking con rubriche, invece del checkpoint a punteggio unico.
-- **Voci reali / audit fonologico.** Una sola voce sintetica come unico modello
-  fonologico è un limite; per un pubblico servirebbero parlanti madrelingua e
-  varietà di voci/velocità.
-- **Pragmatica.** Registro, cortesia, formule convenzionali, come si dice una
-  cosa *davvero* (non solo in modo grammaticale). Indispensabile verso il B1.
-- **Prosodia.** Accento, ritmo, intonazione (domanda vs affermazione): l'IPA
-  delle singole parole non basta.
-- **Accessibilità (WCAG).** Navigazione da tastiera, screen reader, contrasto,
-  target touch, alternative a canvas/drag-and-drop, `prefers-reduced-motion`.
-- **Chiave API nel browser.** Oggi è BYOK sperimetrata al dispositivo e
-  dichiarata sperimentale: accettabile per uso personale. Per un pubblico,
-  valutare un proxy serverless con credenziali lato server e rate limiting.
+- **SRS inverso (produzione IT→armeno)**, con input di sistema e diff carattere
+  per carattere. *Era la critica a più alto rendimento della revisione.*
+- **Approccio task-based / can-do** — 32 missioni, sei archetipi conversazionali
+  (transaction, social, info_gap, problem, negotiation, narrative), iniziativa
+  dello studente, riparazione comunicativa («🙋 Չhaskaca»), replay a
+  scaffolding decrescente. *Era in wishlist come ipotesi: è in produzione.*
+- **Articolo pre-vocalico** corretto in l078/l082/l093/l094 (`Երևանն ավելի`).
+- **Esami rinominati «checkpoint»**: non sono valutazioni CEFR certificanti.
+- **Export/import del progresso** in JSON (Opzioni → Dati).
+- **Audit lessicale su corpus reale (EANC, ~90M token)** e 25 letture costruite
+  su 100 parole scelte per frequenza. Vedi `REVISIONE_lessico_decisioni.md`.
+- **7 lezioni per le lacune del curriculum**: negazione distribuita per tempo
+  verbale, locativi lessicalizzati, pronomi obliqui.
+  Vedi `REVISIONE_lacune_piano.md`.
+- **Validatore di sequenza** (`tools/reading_validator.py`): confronta ogni
+  token con vocabolario e grammatica disponibili a quel punto del corso.
+- **Verifica dell'ora «Ժամը հինգն անց կես է»**: il revisore la dava per errata,
+  la verifica su fonte specializzata l'ha confermata **corretta**.
+  *Lezione: i giudizi linguistici puntuali di un LLM vanno sempre verificati.*
 
 ---
 
-## Idea: modalità task (app o sezione separata)
+## Bloccato — in attesa di condizioni esterne
 
-Spunto dalla revisione: un percorso parallelo, orientato all'azione, dove
-l'unità non è la regola grammaticale ma il compito comunicativo. Esempio di
-task: "al mercato" = chiedi il prezzo → capisci la risposta → ordina a peso →
-paga → ringrazia. La grammatica entra dentro il task, non prima. Terrebbe
-separato l'approccio strutturale (AB1J attuale, che a Emiliano va bene così)
-dall'approccio comunicativo, lasciando scegliere allo studente.
-
----
-
-## Note tecniche minori
-
-- Promemoria periodico per il backup del progresso.
-- Valutare più avanti una seconda voce audio (variabile già predisposta nella
-  pipeline).
-- Corsivo manoscritto nel tracciamento (oggi solo forme a stampa).
-
-## ⏳ In attesa — audio: 76 tracce da rigenerare
-
-**Stato**: la quota ElevenLabs si è esaurita durante il run del 21/08/2026
-(`quota_exceeded`, 0 crediti su 10.000). 76 testi non hanno traccia audio.
-
-Le 76 voci corrispondenti sono state **rimosse da `data/hy/audio/index.json`**
-per evitare richieste di rete verso file inesistenti, e conservate in
+### Audio: 76 tracce da rigenerare
+Quota ElevenLabs esaurita nel run del 21/08/2026 (`quota_exceeded`, 0 crediti
+su 10.000). Le 76 voci sono state rimosse da `data/hy/audio/index.json` per
+evitare richieste verso file inesistenti, e conservate in
 `data/hy/audio/_pending.json`.
 
-**Da fare al rinnovo dei crediti** (mensile):
+**Al rinnovo dei crediti** (mensile):
 1. GitHub → Actions → «Genera audio (ElevenLabs)» → Run workflow.
-   L'Action rilegge le lezioni e rigenera da sé tutto ciò che manca:
-   non serve reimportare `_pending.json`, che è solo una traccia di controllo.
-2. Verificare con `node tools/lint_content.js` che «Testi senza audio» sia 0.
-3. Cancellare `data/hy/audio/_pending.json`.
+   L'Action rigenera da sé: non serve reimportare `_pending.json`.
+2. `node tools/lint_content.js` → «Testi senza audio» deve essere 0.
+3. Cancellare `_pending.json`.
 
-**Costo stimato**: ~500 crediti sui 10.000 mensili.
+Costo stimato ~500 crediti. Riguarda quasi tutte le 7 lezioni nuove e le 10
+parole di servizio. Fino ad allora l'icona altoparlante resta visibile ma muta
+su iOS, che non ha voce armena di sistema.
 
-**Cosa riguarda**: quasi tutte le 7 lezioni nuove (negazione `l024n`, `l036n`,
-`l055n`, `l064n`, `l069n`; locativi `l026b`; pronomi obliqui `l043p`) e le
-10 parole di servizio ricettive. Fino ad allora l'icona 🔊 resta visibile ma
-non produce suono su iOS, che non ha voce armena di sistema.
+---
 
-**Nota tecnica**: `tools/lint_content.js` verifica l'indice, non i file su
-disco. Con l'indice ripulito i due valori coincidono, ma se in futuro l'indice
-tornasse a divergere dai file il linter direbbe «0 senza audio» pur mancando
-le tracce. Vale la pena farlo controllare i file veri.
+## Da fare — ordine consigliato
+
+### 1. Collaudo sul telefono di quanto prodotto
+33 file di contenuto nuovi (25 letture + 7 lezioni + 1 piano) non sono **mai
+stati aperti nell'app**. Prima di aggiungere altro: percorrere l024n, l043p,
+una lettura iniziale (l051) e una finale (l092), verificare rendering, domande,
+ingresso delle parole nell'SRS, sblocco dei prerequisiti.
+
+### 2. Linter: controllare i file, non l'indice
+`tools/lint_content.js` conta le voci di `index.json`. Se indice e disco
+divergono dice «0 senza audio» mentre le tracce mancano — è successo davvero.
+Deve verificare l'esistenza dei `.mp3`.
+
+### 3. Letture per la prima metà del corso
+Le 25 letture stanno tutte da l051 in poi: scelta deliberata (prima non c'è
+grammatica sufficiente), ma lascia 50 lezioni senza testi. Dopo le 7 lezioni
+nuove — soprattutto la negazione a l024n — lo spazio scrivibile si è allargato.
+Valutare 6-8 letture brevi per m05-m11, con parole già note (nessun nuovo slot
+SRS): servono a leggere, non ad ampliare.
+
+### 4. Più produzione attiva in A1
+Chiudere le unità con un compito in cui la risposta non è visibile a schermo
+(`write` senza tessere). Scaffolding mcq/match/order *prima*, produzione *dopo*.
+
+### 5. Lettura estensiva con glossa a tocco — la leva del B1
+Misurato sull'EANC: la copertura all'80% richiede **872 lemmi**, ~570 più di
+quelli previsti a fine A2. Come flashcard è insostenibile.
+Meccanismo proposto: testi lunghi dove le parole nuove **non** entrano
+nell'SRS ma sono toccabili per la traduzione, e vengono promosse al ripasso
+solo dopo N tocchi — promozione guidata dal comportamento, non decisa a priori.
+Riusa `reading_test`. È l'intervento con il maggior ritorno verso il B1.
+
+### 6. Carte di grammatica per i paradigmi
+`չի`, `չեմ`, `նրան`, `որը`, `իրենց`: nell'SRS come carte di grammatica, fuori
+dal conteggio delle 100 parole. Decisione già presa, non ancora implementata.
+
+### 7. Verifica madrelingua del corpus
+Testo, IPA, traslitterazione, naturalezza, audio. **NB**: una madrelingua ha
+già segnalato che sono in corso semplificazioni nella lingua → usare fonti
+aggiornate.
+
+### 8. Regole vs euristiche
+Il plurale «una sillaba → -եր / più sillabe → -ներ» è un'euristica con
+eccezioni, non una legge. Segnalarle dove esistono, per non doverle
+disimparare al B1.
+
+### 9. Corpus orale per tarare il B1
+Tutte le misure di copertura vengono dall'EANC, che è **scritto e letterario
+dal metà-Ottocento**. Per un B1 orientato al parlato la curva è probabilmente
+più favorevole, ma non lo sappiamo. Prima di fissare obiettivi B1 numerici
+converrebbe cercare un corpus parlato di armeno orientale.
+
+### 10. Minori
+- Promemoria periodico per il backup del progresso.
+- Seconda voce audio (variabile già predisposta nella pipeline).
+- Corsivo manoscritto nel tracciamento (oggi solo forme a stampa).
+
+---
+
+## Solo se l'app verrà diffusa pubblicamente
+
+Critiche «ALTA» della revisione che presuppongono un corso pubblico con
+pretese CEFR:
+
+- **Assessment CEFR reale**: test separati per reading/listening/writing/
+  speaking con rubriche, invece del checkpoint a punteggio unico.
+- **Voci reali / audit fonologico**: una sola voce sintetica come unico modello
+  è un limite; servirebbero parlanti madrelingua e varietà di voci e velocità.
+- **Pragmatica**: registro, cortesia, formule convenzionali — come si dice una
+  cosa *davvero*, non solo in modo grammaticale. Indispensabile verso il B1.
+- **Prosodia**: accento, ritmo, intonazione (domanda vs affermazione).
+  L'IPA delle singole parole non basta.
+- **Accessibilità (WCAG)**: tastiera, screen reader, contrasto, target touch,
+  alternative a canvas e drag-and-drop, `prefers-reduced-motion`.
+- **Chiave API nel browser**: oggi BYOK confinata al dispositivo e dichiarata
+  sperimentale, accettabile per uso personale. Per un pubblico servirebbe un
+  proxy serverless con credenziali lato server e rate limiting.
