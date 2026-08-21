@@ -260,6 +260,13 @@
           "letters": []
         },
         {
+          "id": "l024n",
+          "title": "Dire di no: la negazione",
+          "subtitle": "չեմ, չես, չէ + չկա",
+          "glyph": "չ",
+          "letters": []
+        },
+        {
           "id": "l025",
           "title": "Verifica del modulo",
           "subtitle": "Quiz: tutto il modulo in 10 domande",
@@ -278,6 +285,13 @@
           "title": "Dialogo: il primo incontro",
           "subtitle": "Բարև ձեզ, ինչպե՞ս ես",
           "glyph": "💬",
+          "letters": []
+        },
+        {
+          "id": "l026b",
+          "title": "Dove sono: տանը, քաղաքում",
+          "subtitle": "Le forme di luogo, come blocchi",
+          "glyph": "ում",
           "letters": []
         },
         {
@@ -365,6 +379,13 @@
           "letters": []
         },
         {
+          "id": "l036n",
+          "title": "Non ho: չունեմ",
+          "subtitle": "La negazione di ունեմ",
+          "glyph": "չու",
+          "letters": []
+        },
+        {
           "id": "l037",
           "title": "I numeri fino a 100 — e i dram",
           "subtitle": "Le decine in -սուն",
@@ -418,6 +439,13 @@
           "title": "Mio e tuo in una lettera: -ս e -դ",
           "subtitle": "Անունս Աննա է",
           "glyph": "ս",
+          "letters": []
+        },
+        {
+          "id": "l043p",
+          "title": "Me, te, gli: i pronomi ai casi",
+          "subtitle": "ինձ, քեզ, նրան, մեզ, ձեզ",
+          "glyph": "ինձ",
           "letters": []
         },
         {
@@ -526,6 +554,13 @@
           "letters": []
         },
         {
+          "id": "l055n",
+          "title": "Non l'ho fatto: negazione al passato",
+          "subtitle": "չգնացի, չտեսա",
+          "glyph": "չգ",
+          "letters": []
+        },
+        {
           "id": "l056",
           "title": "Andai, venni, diedi",
           "subtitle": "գնացի, եկա, տվեցի",
@@ -603,6 +638,13 @@
           "letters": []
         },
         {
+          "id": "l064n",
+          "title": "Non era così: negazione all'imperfetto",
+          "subtitle": "չէի, չէր",
+          "glyph": "չէր",
+          "letters": []
+        },
+        {
           "id": "l065",
           "title": "Com'era: descrivere il passato",
           "subtitle": "ունեի, գիտեի, ուզում էի",
@@ -642,6 +684,13 @@
           "title": "Domani: il futuro",
           "subtitle": "La կ- del futuro",
           "glyph": "կ",
+          "letters": []
+        },
+        {
+          "id": "l069n",
+          "title": "Non lo farò: negazione al futuro",
+          "subtitle": "La կ- che sparisce",
+          "glyph": "չեմ",
           "letters": []
         },
         {

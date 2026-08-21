@@ -1,0 +1,43 @@
+{
+  "id": "l069n",
+  "title": "Non lo farò: la negazione al futuro",
+  "vocab": [
+    { "hy": "չեմ գնա", "tr": "ch'em gna", "ipa": "[tʃʰɛm gəˈnɑ]", "it": "non andrò" },
+    { "hy": "չի գա", "tr": "ch'i ga", "ipa": "[tʃʰi gɑ]", "it": "non verrà" },
+    { "hy": "չենք անի", "tr": "ch'enk' ani", "ipa": "[tʃʰɛnkʰ ɑˈni]", "it": "non faremo" }
+  ],
+  "steps": [
+    { "type": "teach", "kind": "word",
+      "word": { "hy": "չեմ գնա", "tr": "ch'em gna", "ipa": "[tʃʰɛm gəˈnɑ]", "it": "non andrò" },
+      "note": "Qui c'è una sorpresa: al futuro negativo la կ- SPARISCE. կգնամ (andrò) → չեմ գնա. Non si dice mai չկգնամ." },
+    { "type": "teach", "kind": "word",
+      "word": { "hy": "չի գա", "tr": "ch'i ga", "ipa": "[tʃʰi gɑ]", "it": "non verrà" },
+      "note": "կգա → չի գա. Sempre: չ + essere, poi il verbo nudo senza կ-." },
+    { "type": "teach", "kind": "word",
+      "word": { "hy": "չեմ անի", "tr": "ch'em ani", "ipa": "[tʃʰɛm ɑˈni]", "it": "non farò" } },
+    { "type": "teach", "kind": "word",
+      "word": { "hy": "Ես վաղը չեմ աշխատի", "tr": "yes vaghə ch'em ashkhati", "ipa": "[jɛs vɑˈʁə tʃʰɛm ɑʃχɑˈti]", "it": "domani non lavorerò" } },
+    { "type": "teach", "kind": "word",
+      "word": { "hy": "չենք գնա", "tr": "ch'enk' gna", "ipa": "[tʃʰɛnkʰ gəˈnɑ]", "it": "non andremo" }, "extra": true },
+    { "type": "cloze", "it": "domani non andrò",
+      "text": "Վաղը ես ___ գնա", "options": ["չեմ", "չի", "չենք"], "answer": "չեմ",
+      "speakText": "Վաղը ես չեմ գնա" },
+    { "type": "cloze", "it": "lui non verrà",
+      "text": "Նա ___ գա", "options": ["չի", "չեմ", "չեն"], "answer": "չի",
+      "speakText": "Նա չի գա" },
+    { "type": "mcq", "prompt": "«non lavorerò»:",
+      "options": ["Չեմ աշխատի", "Չկաշխատեմ", "Կաշխատեմ չեմ"],
+      "answer": "Չեմ աշխատի", "optionsAreHy": true },
+    { "type": "order", "it": "domani non verrò",
+      "tokens": ["Վաղը", "չեմ", "գա"], "speakText": "Վաղը չեմ գա" },
+    { "type": "write", "prompt": "Scrivi: «non andrò»",
+      "it": "non andrò", "answer": "Չեմ գնա", "hint": "չեմ + գնա, senza կ-" },
+    { "type": "listen", "question": "Che cosa dice?",
+      "speakText": "Նա վաղը չի գա", "it": "Domani lui non verrà",
+      "reveal": "Նա վաղը չի գա",
+      "options": ["domani non verrà", "domani verrà", "ieri non è venuto"],
+      "answer": "domani non verrà" },
+    { "type": "mcq", "prompt": "Che cosa succede alla կ- del futuro nella negazione?",
+      "options": ["Sparisce", "Resta al suo posto", "Si raddoppia"], "answer": "Sparisce" }
+  ]
+}
