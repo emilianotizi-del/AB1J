@@ -3,7 +3,7 @@
   "steps": [{
     "type": "reading_test",
     "title": "Դավիթի օրը",
-    "text": "Դավիթը առավոտյան վաղ արթնանում է։ Նա նախաճաշում է և գնում աշխատանքի։ Դավիթը բժիշկ է և աշխատում է հիվանդանոցում։ Նրա աշխատանքը դժվար է, բայց նա ուրախ է։ Կեսօրին նա ճաշում է ընկերների հետ։ Երեկոյան Դավիթը տուն է գալիս և հանգստանում։ Նա սիրում է կարդալ գրքեր։",
+    "text": "Դավիթն առավոտյան վաղ արթնանում է։ Նա նախաճաշում է և գնում աշխատանքի։ Դավիթը բժիշկ է և աշխատում է հիվանդանոցում։ Նրա աշխատանքը դժվար է, բայց նա ուրախ է։ Կեսօրին նա ճաշում է ընկերների հետ։ Երեկոյան Դավիթը տուն է գալիս և հանգստանում։ Նա սիրում է կարդալ գրքեր։",
     "it": "Davit si sveglia presto la mattina. Fa colazione e va al lavoro. Davit è un medico e lavora in ospedale. Il suo lavoro è difficile, ma lui è contento. A mezzogiorno pranza con gli amici. La sera Davit torna a casa e si riposa. Gli piace leggere libri.",
     "qLang": "hy",
     "newWords": [
@@ -25,7 +25,7 @@
         { "text": "Ընկերների հետ", "ok": true },
         { "text": "Ընտանիքի հետ", "ok": false },
         { "text": "Մենակ", "ok": false } ] },
-      { "q": "Ի՞նչ է սիրում անել Դավիթը երեկոյան։", "options": [
+      { "q": "Ի՞նչ է սիրում անել Դավիթն երեկոյան։", "options": [
         { "text": "Կարդալ գրքեր", "ok": true },
         { "text": "Խաղալ", "ok": false },
         { "text": "Վազել", "ok": false } ] }

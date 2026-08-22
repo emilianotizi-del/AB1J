@@ -131,3 +131,26 @@ non c'è nessuno ə (`գյուղ` = una sillaba → գյուղեր).
 Applicato in `l022`: la nota parla di sillabe pronunciate, due passi `notice`
 spiegano lo ə nascosto e le eccezioni, e la domanda finale non dice più
 «regola generale» ma «nella grande maggioranza dei casi».
+
+---
+
+## 8. Articolo determinato davanti a vocale (verificato con madrelingua)
+
+L'articolo `-ը` diventa `-ն` quando la parola **successiva** inizia per vocale.
+Segnalato da un madrelingua su «Ես Դավիթ եմ։ Հիմա ես տանը եմ։», che conteneva
+due violazioni nella stessa riga.
+
+**Si applica** (corretti 96 casi in tutto il corpus):
+- davanti alla copula: `Ես տանն եմ`, `Իմ տունն է` — la regola è obbligatoria;
+- davanti a `ու`: `հայրն ու մայրը`;
+- davanti a vocale in genere: `Արագածն ամենալավն է` (entrambe accettabili,
+  ma questa è la forma preferita);
+- **nomi propri come predicato**: `Ես Դավիթն եմ`, non `Ես Դավիթ եմ`.
+  Se il nome finisce per vocale l'articolo è `-ն` comunque: `Ես Աննան եմ`.
+
+**Non si applica**:
+- `վաղը` — è un avverbio lessicalizzato, non un nome con articolo;
+- davanti a numerale: `Ժամը երկուսն է`, `Օրը երկու անգամ`;
+- davanti a `և`, che inizia per [j], consonante: `մայրը և հայրը`.
+
+Controllo automatico in `tools/check_article.js`.

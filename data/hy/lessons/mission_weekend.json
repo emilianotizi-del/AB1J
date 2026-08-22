@@ -32,7 +32,7 @@
           "prompt": "Ti chiede i piani: di' che sabato vedrai gli amici.",
           "options": [
             {
-              "hy": "Շաբաթ օրը ընկերներիս հետ կհանդիպեմ։",
+              "hy": "Շաբաթ օրն ընկերներիս հետ կհանդիպեմ։",
               "it": "Sabato vedrò gli amici.",
               "ok": true,
               "reply": {

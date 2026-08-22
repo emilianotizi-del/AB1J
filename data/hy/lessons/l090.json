@@ -12,7 +12,7 @@
       { "hy": "Հայերը շատ են սիրում հյուր ընդունել։", "tr": "hayerə shat en sirum hyur əndunel", "it": "Gli armeni amano molto ricevere ospiti." },
       { "hy": "Սեղանին միշտ շատ ուտելիք կա։", "tr": "seghanin misht shat utelik' ka", "it": "A tavola c'è sempre molto cibo." },
       { "hy": "Թամադան առաջարկում է կենացներ։", "tr": "t'amadan aṙajarkum e kenats'ner", "it": "Il tamada propone i brindisi." },
-      { "hy": "Առաջին կենացը ընտանիքի համար է։", "tr": "aṙajin kenats'ə əntanik'i hamar e", "it": "Il primo brindisi è per la famiglia." }
+      { "hy": "Առաջին կենացն ընտանիքի համար է։", "tr": "aṙajin kenats'ə əntanik'i hamar e", "it": "Il primo brindisi è per la famiglia." }
     ]},
     { "type": "mcq", "prompt": "Chi propone i brindisi?", "options": ["il tamada", "l'ospite", "il più giovane"], "answer": "il tamada" },
     { "type": "mcq", "prompt": "A chi è dedicato il primo brindisi?", "options": ["alla famiglia", "agli amici", "al Paese"], "answer": "alla famiglia" },
