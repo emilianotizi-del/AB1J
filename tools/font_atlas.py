@@ -37,6 +37,20 @@ KEY = {n: 'f%d' % i for i, n in enumerate(FONTS)}
 LETTERS = [(chr(u), chr(u + 0x30)) for u in range(0x531, 0x557)]  # maiuscola, minuscola
 LOWER = [l for _, l in LETTERS]
 
+# Come suona per un lettore italiano. Volutamente approssimativo e breve:
+# la trascrizione precisa sta nel corso, qui serve solo a orientarsi leggendo.
+SUONA = {
+ 'ա': 'a', 'բ': 'b', 'գ': 'g di gatto', 'դ': 'd', 'ե': 'e; a inizio parola ie',
+ 'զ': 's di rosa', 'է': 'e aperta', 'ը': 'e appena accennata', 'թ': 't soffiata',
+ 'ժ': 'j di jour', 'ի': 'i', 'լ': 'l', 'խ': 'ch tedesca di Bach', 'ծ': 'z di zio',
+ 'կ': 'c di casa', 'հ': 'h aspirata', 'ձ': 'z di zona', 'ղ': 'r francese',
+ 'ճ': 'c di cielo', 'մ': 'm', 'յ': 'i di ieri', 'ն': 'n', 'շ': 'sc di scena',
+ 'ո': 'o; a inizio parola vo', 'չ': 'c soffiata di cena', 'պ': 'p', 'ջ': 'g di gelo',
+ 'ռ': 'r arrotata', 'ս': 's di sasso', 'վ': 'v', 'տ': 't', 'ր': 'r dolce',
+ 'ց': 'z soffiata di zio', 'ւ': 'u (solo in ու)', 'փ': 'p soffiata', 'ք': 'c soffiata',
+ 'օ': 'o', 'ֆ': 'f',
+}
+
 # ---------- misura della confondibilità ----------
 S = 48
 def _resolve(fn):
@@ -132,6 +146,7 @@ def build_html():
     .pair td {{ padding: 2mm 0; }}
     .num {{ font-size: 7.5pt; color: #888; }}
     .wtab td {{ text-align: left; padding: 1.6mm 2mm; }}
+    td.suona {{ font-size: 7.5pt; color: #666; text-align: left; width: 30mm; }}
     .wit {{ font-size: 8pt; color: #777; }}
     .page-break {{ page-break-before: always; }}
     """
@@ -203,11 +218,13 @@ def build_html():
 
     # --- 3. alfabeto completo
     H.append("<div class='page-break'></div><h2>4. L'alfabeto completo</h2>")
-    H.append("<table><tr><th></th>" + ''.join(f"<th>{n}</th>" for n in FONTS) + "</tr>")
+    H.append("<table><tr><th></th><th style='text-align:left'>suona</th>" +
+             ''.join(f"<th>{n}</th>" for n in FONTS) + "</tr>")
     for up, lo in LETTERS:
         cells = ''.join(
             f"<td class='big' style=\"font-family:'{k}'\">{up}&nbsp;{lo}</td>" for k in KEY.values())
-        H.append(f"<tr><td class='lat'>{lo}</td>{cells}</tr>")
+        H.append(f"<tr><td class='lat' style=\"font-family:'{KEY['GHEA Grapalat']}'\">{lo}</td>"
+                 f"<td class='suona'>{SUONA.get(lo, '')}</td>{cells}</tr>")
     H.append("</table>")
 
     # --- 4. parole del corso
