@@ -6,6 +6,17 @@
 // }
 import { el, shuffle, vibrate } from '../utils/dom.js';
 
+// Il punto fermo armeno è ։ (U+0589). Il «.» nei nostri testi introduce il
+// discorso diretto («Նա ասաց. «...»») e non chiude la frase: non va usato per dividere.
+function splitHy(t) {
+  return t.split(/(?<=։)\s+/).map(x => x.trim()).filter(Boolean);
+}
+// In italiano divido dopo . ! ? eventualmente seguiti da virgolette di chiusura,
+// così «Quanto costa?». resta una frase sola.
+function splitIt(t) {
+  return t.split(/(?<=[.!?]["»']?)\s+/).map(x => x.trim()).filter(Boolean);
+}
+
 export function render(step, mount, ctx) {
   let phase = 'read';
   const wrap = el('div', {});
@@ -100,11 +111,27 @@ export function render(step, mount, ctx) {
           'Le trovi da ora nel Ripasso.'));
         card.append(box);
       }
-      // Traduzione completa del testo, come rinforzo
+      // Testo originale + traduzione, appaiati frase per frase: dopo le domande
+      // serve poter confrontare, non solo rileggere l'italiano.
       if (step.it) {
+        const box = el('div', { style: 'margin-top:8px' });
+        const hy = splitHy(step.text);
+        const it = splitIt(step.it);
+        if (hy.length === it.length && hy.length > 1) {
+          for (let i = 0; i < hy.length; i++) {
+            box.append(el('div', { class: 'bilingual-row' },
+              el('div', { class: 'hy', lang: 'hy' }, hy[i]),
+              el('div', { class: 'bilingual-it' }, it[i])));
+          }
+        } else {
+          // Se le frasi non si corrispondono una a una, meglio due blocchi
+          // che un allineamento sbagliato.
+          box.append(
+            el('p', { class: 'hy', lang: 'hy', style: 'line-height:1.9' }, step.text),
+            el('p', { class: 'bilingual-it', style: 'margin-top:10px' }, step.it));
+        }
         card.append(el('details', { class: 'reading-recall', style: 'margin-top:14px;text-align:left' },
-          el('summary', {}, 'Vedi la traduzione'),
-          el('div', { style: 'margin-top:8px;line-height:1.6' }, step.it)));
+          el('summary', {}, 'Testo e traduzione'), box));
       }
       card.append(el('div', { class: 'lesson-footer' },
         el('button', { class: 'btn btn-block', onclick: () => ctx.onDone(true, pass ? 0 : 1) }, 'Fine')));

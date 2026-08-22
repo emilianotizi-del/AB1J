@@ -656,3 +656,17 @@
   font-weight: 600;
   color: #2a6b52;
 }
+
+/* ---------- Testo e traduzione appaiati (fine lettura) ---------- */
+.bilingual-row {
+  padding: 8px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--ink) 8%, transparent);
+}
+.bilingual-row:last-child { border-bottom: none; }
+.bilingual-row .hy { line-height: 1.6; }
+.bilingual-it {
+  color: var(--ink-soft);
+  font-size: .92rem;
+  margin-top: 2px;
+  line-height: 1.5;
+}
