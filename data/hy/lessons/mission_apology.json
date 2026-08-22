@@ -91,7 +91,7 @@
           "prompt": "Proponi di rimediare.",
           "options": [
             {
-              "hy": "Վաղը ես կհրավիրեմ սուրճի։",
+              "hy": "Վաղն ես կհրավիրեմ սուրճի։",
               "it": "Domani ti offro un caffè.",
               "ok": true,
               "reply": {

@@ -43,12 +43,12 @@
       "type": "teach",
       "kind": "word",
       "word": {
-        "hy": "Ես տանը եմ",
+        "hy": "Ես տանն եմ",
         "tr": "yes tanə em",
         "ipa": "[jɛs tɑˈnə ɛm]",
         "it": "sono a casa"
       },
-      "note": "Attenzione alla differenza: «տուն եմ գնում» = vado a casa (movimento), «տանը եմ» = sono a casa (stato)."
+      "note": "Attenzione: «տանը» diventa «տանն» davanti a parola che inizia per vocale. եմ, ես, է, են cominciano tutte per vocale, quindi: Ես տանն եմ, Նա տանն է. Ma: Ես տանը չեմ (չ- è consonante)."
     },
     {
       "type": "teach",
@@ -92,15 +92,15 @@
         "տունը"
       ],
       "answer": "տանը",
-      "speakText": "Ես տանը եմ"
+      "speakText": "Ես տանն եմ"
     },
     {
       "type": "mcq",
       "prompt": "«vado a casa» (movimento):",
       "options": [
         "Տուն եմ գնում",
-        "Տանը եմ գնում",
-        "Տանը եմ"
+        "Տանն եմ գնում",
+        "Տանն եմ"
       ],
       "answer": "Տուն եմ գնում",
       "optionsAreHy": true
@@ -131,7 +131,7 @@
       "type": "write",
       "prompt": "Scrivi: «sono a casa»",
       "it": "sono a casa",
-      "answer": "Ես տանը եմ",
+      "answer": "Ես տանն եմ",
       "hint": "stato in luogo, non movimento: la forma con -ը"
     },
     {

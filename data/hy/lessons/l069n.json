@@ -122,14 +122,14 @@
     {
       "type": "cloze",
       "it": "domani non andrò",
-      "text": "Վաղը ես ___ գնա",
+      "text": "Վաղն ես ___ գնա",
       "options": [
         "չեմ",
         "չի",
         "չենք"
       ],
       "answer": "չեմ",
-      "speakText": "Վաղը ես չեմ գնա"
+      "speakText": "Վաղն ես չեմ գնա"
     },
     {
       "type": "cloze",

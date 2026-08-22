@@ -12,7 +12,7 @@
       { "label": "նրանք", "answer": "կանեն" }
     ]},
     { "type": "cloze", "it": "la settimana prossima andrò a Yerevan", "text": "Մյուս շաբաթ Երևան ___", "options": ["կգնամ", "գնացի", "գնում եմ"], "answer": "կգնամ", "speakText": "Մյուս շաբաթ Երևան կգնամ" },
-    { "type": "listen", "question": "Presente, passato o futuro?", "speakText": "Վաղը ես կաշխատեմ", "it": "Domani lavorerò", "reveal": "Վաղը ես կաշխատեմ", "options": ["futuro", "presente", "passato"], "answer": "futuro" },
+    { "type": "listen", "question": "Presente, passato o futuro?", "speakText": "Վաղն ես կաշխատեմ", "it": "Domani lavorerò", "reveal": "Վաղն ես կաշխատեմ", "options": ["futuro", "presente", "passato"], "answer": "futuro" },
     { "type": "write", "prompt": "Scrivi ciò che senti", "speakText": "հանդիպում", "answer": "հանդիպում", "it": "appuntamento" },
     { "type": "cloze", "it": "una mela rossa", "text": "___ խնձոր", "options": ["կարմիր", "կարմիրը", "կապույտ"], "answer": "կարմիր", "speakText": "կարմիր խնձոր" },
     { "type": "match", "prompt": "Abbina colore e italiano", "pairs": [["կարմիր", "rosso"], ["սև", "nero"], ["սպիտակ", "bianco"], ["կապույտ", "blu"]] },
