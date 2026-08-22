@@ -33,6 +33,14 @@ const files = [
 const violazioni = [];
 const daVerificare = [];
 
+// Nome proprio come predicato: prende l'articolo. «Ես Դավիթն եմ», non «Ես Դավիթ եմ».
+// Se finisce per vocale l'articolo è -ն comunque (Աննա → Աննան);
+// se finisce per consonante, davanti a copula vocalica diventa -ն lo stesso.
+const NOMI = ['Դավիթ', 'Աննա', 'Անուշ', 'Անի', 'Կարեն', 'Սուրեն', 'Արամ', 'Էմիլիանո', 'Նարե', 'Սարո'];
+const nomiRe = new RegExp(
+  `(Ես|Դու|Նա|Սա)\\s+(${NOMI.join('|')})\\s+(${COPULA.join('|')})(?![${LET}])`, 'g');
+const nomiSenzaArticolo = [];
+
 for (const f of files) {
   if (!fs.existsSync(f)) continue;
   const txt = fs.readFileSync(f, 'utf8');
@@ -42,6 +50,17 @@ for (const f of files) {
     if (COPULA.includes(m[2])) continue;
     daVerificare.push(`${nome}: ${m[1]}ը ${m[2]}`);
   }
+  for (const m of txt.matchAll(nomiRe)) {
+    nomiSenzaArticolo.push(`${nome}: ${m[1]} ${m[2]} ${m[3]} → ${m[1]} ${m[2]}ն ${m[3]}`);
+  }
+}
+
+if (nomiSenzaArticolo.length) {
+  console.log(`✗ ${nomiSenzaArticolo.length} nomi propri senza articolo come predicato:`);
+  for (const v of nomiSenzaArticolo) console.log('   ' + v);
+  violazioni.push(...nomiSenzaArticolo);
+} else {
+  console.log('Nomi propri come predicato: tutti con articolo ✓');
 }
 
 if (violazioni.length) {
