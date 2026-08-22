@@ -15,18 +15,23 @@ from weasyprint import HTML
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
-FDIR = Path('/home/claude/fontpdf')
+# I font stanno nel repo: lo strumento è riproducibile senza scaricare nulla.
+FDIR = HERE / 'fonts'
+_SYS = {'DejaVuSans.ttf': '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'}
 
+# I primi cinque sono i caratteri realmente usati in Armenia (insegne, libri,
+# documenti). Gli ultimi tre sono quelli che incontri su schermo fuori dall'Armenia.
 FONTS = {
+    'GHEA Grapalat': 'GHEAGrpalatReg.otf',
+    'GHEA Grapalat corsivo': 'GHEAGrapalatRit.otf',
+    'Arian AMU': 'arnamu.ttf',
+    'Arian AMU corsivo': 'arnamu_italic.ttf',
+    'Mk Parz': 'Mk_Parz_U.ttf',
     'Noto Sans Armenian': 'NotoSansArmenian-Regular.ttf',
     'Noto Serif Armenian': 'NotoSerifArmenian-Regular.ttf',
     'DejaVu Sans': 'DejaVuSans.ttf',
-    'DejaVu Serif': 'DejaVuSerif.ttf',
-    'FreeSans': 'FreeSans.ttf',
-    'FreeSerif': 'FreeSerif.ttf',
-    'FreeSerif corsivo': 'FreeSerifItalic.ttf',
-    'DejaVu Sans Mono': 'DejaVuSansMono.ttf',
 }
+AUTENTICI = ['GHEA Grapalat', 'Arian AMU', 'Mk Parz']
 KEY = {n: 'f%d' % i for i, n in enumerate(FONTS)}
 
 LETTERS = [(chr(u), chr(u + 0x30)) for u in range(0x531, 0x557)]  # maiuscola, minuscola
@@ -34,8 +39,12 @@ LOWER = [l for _, l in LETTERS]
 
 # ---------- misura della confondibilità ----------
 S = 48
+def _resolve(fn):
+    p = FDIR / fn
+    return p if p.exists() else Path(_SYS.get(str(fn), str(p)))
+
 def bitmap(ch, path):
-    f = ImageFont.truetype(str(path), 40)
+    f = ImageFont.truetype(str(_resolve(Path(path).name)), 40)
     img = Image.new('L', (S, S), 255)
     d = ImageDraw.Draw(img)
     bb = d.textbbox((0, 0), ch, font=f)
@@ -63,6 +72,28 @@ def confusable():
                      'peggiore': max(d, key=d.get), 'migliore': min(d, key=d.get)})
     return rows
 
+# ---------- lettere armene che sembrano latine ----------
+import string as _string
+def lookalike(fn, soglia=0.85):
+    """Per ogni lettera armena, la lettera latina più simile in quel font."""
+    out = {}
+    lat = {L: bitmap(L, FDIR / fn) for L in _string.ascii_letters}
+    for u in range(0x561, 0x587):
+        ch = chr(u)
+        a = bitmap(ch, FDIR / fn)
+        if a is None:
+            continue
+        best = (0.0, '')
+        for L, b in lat.items():
+            if b is None:
+                continue
+            s = iou(a, b)
+            if s > best[0]:
+                best = (s, L)
+        if best[0] >= soglia:
+            out[ch] = best
+    return out
+
 # ---------- vocabolario del corso ----------
 def vocab():
     out = []
@@ -80,7 +111,7 @@ def build_html():
     words = vocab()
 
     faces = '\n'.join(
-        f"@font-face {{ font-family: '{k}'; src: url('file://{FDIR / fn}'); }}"
+        f"@font-face {{ font-family: '{k}'; src: url('file://{_resolve(fn)}'); }}"
         for (n, fn), k in zip(FONTS.items(), KEY.values()))
 
     css = f"""
@@ -110,15 +141,40 @@ def build_html():
     H.append("<p class='lead'>Le stesse lettere, in otto caratteri diversi. Serve a leggere insegne, "
              "libri e schermi fuori dall'app, dove il font non è quello a cui sei abituato. "
              "L'ordine non è alfabetico ma per rischio: prima ciò che si confonde davvero.</p>")
-    H.append("<div class='warn'>I caratteri qui sono quelli disponibili in licenza aperta "
-             "(Noto, DejaVu, Free). Mancano i font armeni più diffusi in Armenia — GHEA Grapalat, "
-             "Arian AMU, Mk_Parz — che coprono un'altra fetta della variazione reale.<br><br>"
-             "Escluso <b>FreeMono</b>: disegna cinque lettere armene identiche a lettere latine "
-             "(ս come u, տ come s, ց come g, ք come f, օ come o). Se ti capita di incontrarlo, "
-             "sappi che è il font a mentire, non i tuoi occhi.</div>")
+    H.append("<div class='warn'>I primi cinque caratteri — GHEA Grapalat, Arian AMU, Mk Parz — "
+             "sono quelli realmente usati in Armenia su insegne, libri e documenti. "
+             "Gli ultimi tre sono quelli che incontri su schermo fuori dall'Armenia.<br><br>"
+             "Nota: <b>FreeMono</b> è stato escluso perché disegna տ come una «s» latina e "
+             "ք come una «f» — due forme che nessun font armeno autentico usa.</div>")
+
+    # --- 0. false amiche latine
+    laa = [lookalike(FONTS[n]) for n in AUTENTICI]
+    comuni = sorted({c for c in laa[0] if any(c in x for x in laa[1:])},
+                    key=lambda c: -laa[0][c][0])
+    H.append("<h2>1. Lettere armene che sembrano latine</h2>")
+    H.append("<p class='lead'>È la trappola più insidiosa per chi legge dall'italiano: "
+             "queste lettere sono <b>identiche o quasi</b> a lettere latine, ma si leggono "
+             "in tutt'altro modo. Misurato sui caratteri realmente usati in Armenia.</p>")
+    H.append("<table><tr><th>armena</th><th>si legge</th><th>sembra</th>" +
+             ''.join(f"<th>{n}</th>" for n in FONTS) + "</tr>")
+    SUONO = {'հ': 'h', 'ո': 'vo- / -o-', 'ս': 's', 'օ': 'o', 'ց': "ts'", 'գ': 'g',
+             'ի': 'i', 'տ': 't', 'ք': "k'", 'ր': 'r', 'բ': 'b', 'լ': 'l', 'ն': 'n'}
+    for ch in comuni:
+        lat_ch = laa[0][ch][1]
+        cells = ''.join(f"<td class='big' style=\"font-family:'{k}'\">{ch}</td>" for k in KEY.values())
+        H.append(f"<tr><td class='big' style=\"font-family:'{KEY['GHEA Grapalat']}'\">{ch}</td>"
+                 f"<td class='num'>[{SUONO.get(ch,'?')}]</td>"
+                 f"<td class='num'>latina «{lat_ch}»</td>{cells}</tr>")
+    H.append("</table>")
+    g = KEY['GHEA Grapalat']
+    H.append(f"<div class='warn'>Due esempi dal corso. "
+             f"<span style=\"font-family:'{g}';font-size:14pt\">ոչ</span> («no») sembra "
+             f"cominciare per «n», ma si legge <i>voch'</i>: la ո a inizio parola vale <i>vo</i>. "
+             f"<span style=\"font-family:'{g}';font-size:14pt\">օր</span> («giorno») sembra "
+             f"«op», ma è <i>or</i>: quella che pare una «p» è una <i>r</i>.</div>")
 
     # --- 1. coppie confondibili
-    H.append("<h2>1. Lettere che si confondono fra loro</h2>")
+    H.append("<div class='page-break'></div><h2>2. Lettere che si confondono fra loro</h2>")
     H.append("<p class='lead'>Misurato sovrapponendo i glifi: 1,00 = identici. "
              "«Peggio in» è il font in cui la coppia è più difficile da distinguere.</p>")
     H.append("<table class='pair'><tr><th></th>" +
@@ -132,7 +188,7 @@ def build_html():
     H.append("</table>")
 
     # --- 2. coppie che dipendono dal font
-    H.append("<h2>2. Coppie che dipendono dal carattere</h2>")
+    H.append("<h2>3. Coppie che dipendono dal carattere</h2>")
     H.append("<p class='lead'>Distinguibili in un font, quasi identiche in un altro. "
              "Sono le più insidiose: l'occhio impara la forma sbagliata e poi non riconosce l'altra.</p>")
     H.append("<table class='pair'><tr><th></th>" +
@@ -146,7 +202,7 @@ def build_html():
     H.append("</table>")
 
     # --- 3. alfabeto completo
-    H.append("<div class='page-break'></div><h2>3. L'alfabeto completo</h2>")
+    H.append("<div class='page-break'></div><h2>4. L'alfabeto completo</h2>")
     H.append("<table><tr><th></th>" + ''.join(f"<th>{n}</th>" for n in FONTS) + "</tr>")
     for up, lo in LETTERS:
         cells = ''.join(
@@ -155,10 +211,10 @@ def build_html():
     H.append("</table>")
 
     # --- 4. parole del corso
-    H.append("<div class='page-break'></div><h2>4. Le parole del corso</h2>")
+    H.append("<div class='page-break'></div><h2>5. Le parole del corso</h2>")
     H.append("<p class='lead'>Tutte le voci del vocabolario, in quattro caratteri scelti perché "
              "massimamente diversi fra loro: bastone, graziato, corsivo, monospaziato.</p>")
-    quattro = ['Noto Sans Armenian', 'FreeSerif', 'FreeSerif corsivo', 'DejaVu Sans Mono']
+    quattro = ['GHEA Grapalat', 'Arian AMU corsivo', 'Mk Parz', 'Noto Sans Armenian']
     H.append("<table class='wtab'><tr>" +
              ''.join(f"<th style='text-align:left'>{n}</th>" for n in quattro) +
              "<th style='text-align:left'>italiano</th></tr>")
