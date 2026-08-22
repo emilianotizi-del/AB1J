@@ -1,0 +1,179 @@
+#!/usr/bin/env python3
+# tools/font_atlas.py — atlante dei font armeni: come cambiano le lettere
+#
+# Produce un PDF che serve a leggere l'armeno "in giro", dove i font non sono
+# quelli dell'app. Non è un catalogo tipografico: è ordinato per rischio di
+# lettura, misurato rasterizzando i glifi e confrontandoli fra loro.
+#
+# Uso: python3 tools/font_atlas.py [output.pdf]
+
+import json, itertools, sys, os
+from pathlib import Path
+import numpy as np
+from PIL import Image, ImageDraw, ImageFont
+from weasyprint import HTML
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+FDIR = Path('/home/claude/fontpdf')
+
+FONTS = {
+    'Noto Sans Armenian': 'NotoSansArmenian-Regular.ttf',
+    'Noto Serif Armenian': 'NotoSerifArmenian-Regular.ttf',
+    'DejaVu Sans': 'DejaVuSans.ttf',
+    'DejaVu Serif': 'DejaVuSerif.ttf',
+    'FreeSans': 'FreeSans.ttf',
+    'FreeSerif': 'FreeSerif.ttf',
+    'FreeSerif corsivo': 'FreeSerifItalic.ttf',
+    'DejaVu Sans Mono': 'DejaVuSansMono.ttf',
+}
+KEY = {n: 'f%d' % i for i, n in enumerate(FONTS)}
+
+LETTERS = [(chr(u), chr(u + 0x30)) for u in range(0x531, 0x557)]  # maiuscola, minuscola
+LOWER = [l for _, l in LETTERS]
+
+# ---------- misura della confondibilità ----------
+S = 48
+def bitmap(ch, path):
+    f = ImageFont.truetype(str(path), 40)
+    img = Image.new('L', (S, S), 255)
+    d = ImageDraw.Draw(img)
+    bb = d.textbbox((0, 0), ch, font=f)
+    w, h = bb[2] - bb[0], bb[3] - bb[1]
+    if w <= 0 or h <= 0:
+        return None
+    d.text(((S - w) / 2 - bb[0], (S - h) / 2 - bb[1]), ch, font=f, fill=0)
+    return ((255 - np.asarray(img, dtype=float)) > 100).astype(bool)
+
+def iou(a, b):
+    u = np.logical_or(a, b).sum()
+    return float(np.logical_and(a, b).sum() / u) if u else 0.0
+
+def confusable():
+    per_pair = {}
+    for name, fn in FONTS.items():
+        B = {c: bitmap(c, FDIR / fn) for c in LOWER}
+        B = {k: v for k, v in B.items() if v is not None}
+        for a, b in itertools.combinations(sorted(B), 2):
+            per_pair.setdefault((a, b), {})[name] = iou(B[a], B[b])
+    rows = []
+    for (a, b), d in per_pair.items():
+        mx = max(d.values()); mn = min(d.values())
+        rows.append({'a': a, 'b': b, 'max': mx, 'min': mn,
+                     'peggiore': max(d, key=d.get), 'migliore': min(d, key=d.get)})
+    return rows
+
+# ---------- vocabolario del corso ----------
+def vocab():
+    out = []
+    for line in open(ROOT / 'vocab_full.txt', encoding='utf-8'):
+        if '=' in line:
+            hy, it = line.split('=', 1)
+            out.append((hy.strip(), it.strip()))
+    return out
+
+# ---------- HTML ----------
+def build_html():
+    rows = confusable()
+    rischio = sorted(rows, key=lambda r: -r['max'])[:14]
+    dipende = sorted(rows, key=lambda r: -(r['max'] - r['min']))[:12]
+    words = vocab()
+
+    faces = '\n'.join(
+        f"@font-face {{ font-family: '{k}'; src: url('file://{FDIR / fn}'); }}"
+        for (n, fn), k in zip(FONTS.items(), KEY.values()))
+
+    css = f"""
+    {faces}
+    @page {{ size: A4; margin: 14mm 12mm; @bottom-center {{
+        content: counter(page); font-family: sans-serif; font-size: 8pt; color: #999; }} }}
+    body {{ font-family: 'Helvetica', sans-serif; font-size: 9.5pt; color: #222; }}
+    h1 {{ font-size: 20pt; margin: 0 0 2mm; }}
+    h2 {{ font-size: 13pt; margin: 7mm 0 2mm; border-bottom: 1px solid #ccc; padding-bottom: 1mm; }}
+    p.lead {{ color: #555; margin: 0 0 4mm; }}
+    table {{ border-collapse: collapse; width: 100%; }}
+    th {{ font-size: 7pt; color: #666; font-weight: normal; text-align: center;
+          padding: 1mm 0; border-bottom: 1px solid #ddd; }}
+    td {{ text-align: center; padding: 1.2mm 0; border-bottom: 1px solid #f0f0f0; }}
+    td.lat {{ font-size: 8pt; color: #888; width: 12mm; text-align: left; }}
+    .big {{ font-size: 17pt; line-height: 1.1; }}
+    .warn {{ background: #fff8e6; border-left: 3px solid #e0b400; padding: 2mm 3mm; margin: 3mm 0; }}
+    .pair td {{ padding: 2mm 0; }}
+    .num {{ font-size: 7.5pt; color: #888; }}
+    .wtab td {{ text-align: left; padding: 1.6mm 2mm; }}
+    .wit {{ font-size: 8pt; color: #777; }}
+    .page-break {{ page-break-before: always; }}
+    """
+
+    H = [f"<html><head><meta charset='utf-8'><style>{css}</style></head><body>"]
+    H.append("<h1>Come cambia l'armeno secondo il font</h1>")
+    H.append("<p class='lead'>Le stesse lettere, in otto caratteri diversi. Serve a leggere insegne, "
+             "libri e schermi fuori dall'app, dove il font non è quello a cui sei abituato. "
+             "L'ordine non è alfabetico ma per rischio: prima ciò che si confonde davvero.</p>")
+    H.append("<div class='warn'>I caratteri qui sono quelli disponibili in licenza aperta "
+             "(Noto, DejaVu, Free). Mancano i font armeni più diffusi in Armenia — GHEA Grapalat, "
+             "Arian AMU, Mk_Parz — che coprono un'altra fetta della variazione reale.<br><br>"
+             "Escluso <b>FreeMono</b>: disegna cinque lettere armene identiche a lettere latine "
+             "(ս come u, տ come s, ց come g, ք come f, օ come o). Se ti capita di incontrarlo, "
+             "sappi che è il font a mentire, non i tuoi occhi.</div>")
+
+    # --- 1. coppie confondibili
+    H.append("<h2>1. Lettere che si confondono fra loro</h2>")
+    H.append("<p class='lead'>Misurato sovrapponendo i glifi: 1,00 = identici. "
+             "«Peggio in» è il font in cui la coppia è più difficile da distinguere.</p>")
+    H.append("<table class='pair'><tr><th></th>" +
+             ''.join(f"<th>{n}</th>" for n in FONTS) + "<th>peggio in</th></tr>")
+    for r in rischio:
+        cells = ''.join(
+            f"<td class='big' style=\"font-family:'{k}'\">{r['a']}&nbsp;{r['b']}</td>"
+            for k in KEY.values())
+        H.append(f"<tr><td class='lat'>{r['max']:.2f}</td>{cells}"
+                 f"<td class='num'>{r['peggiore']}</td></tr>")
+    H.append("</table>")
+
+    # --- 2. coppie che dipendono dal font
+    H.append("<h2>2. Coppie che dipendono dal carattere</h2>")
+    H.append("<p class='lead'>Distinguibili in un font, quasi identiche in un altro. "
+             "Sono le più insidiose: l'occhio impara la forma sbagliata e poi non riconosce l'altra.</p>")
+    H.append("<table class='pair'><tr><th></th>" +
+             ''.join(f"<th>{n}</th>" for n in FONTS) + "<th>da → a</th></tr>")
+    for r in dipende:
+        cells = ''.join(
+            f"<td class='big' style=\"font-family:'{k}'\">{r['a']}&nbsp;{r['b']}</td>"
+            for k in KEY.values())
+        H.append(f"<tr><td class='lat'>{r['a']}/{r['b']}</td>{cells}"
+                 f"<td class='num'>{r['min']:.2f} → {r['max']:.2f}</td></tr>")
+    H.append("</table>")
+
+    # --- 3. alfabeto completo
+    H.append("<div class='page-break'></div><h2>3. L'alfabeto completo</h2>")
+    H.append("<table><tr><th></th>" + ''.join(f"<th>{n}</th>" for n in FONTS) + "</tr>")
+    for up, lo in LETTERS:
+        cells = ''.join(
+            f"<td class='big' style=\"font-family:'{k}'\">{up}&nbsp;{lo}</td>" for k in KEY.values())
+        H.append(f"<tr><td class='lat'>{lo}</td>{cells}</tr>")
+    H.append("</table>")
+
+    # --- 4. parole del corso
+    H.append("<div class='page-break'></div><h2>4. Le parole del corso</h2>")
+    H.append("<p class='lead'>Tutte le voci del vocabolario, in quattro caratteri scelti perché "
+             "massimamente diversi fra loro: bastone, graziato, corsivo, monospaziato.</p>")
+    quattro = ['Noto Sans Armenian', 'FreeSerif', 'FreeSerif corsivo', 'DejaVu Sans Mono']
+    H.append("<table class='wtab'><tr>" +
+             ''.join(f"<th style='text-align:left'>{n}</th>" for n in quattro) +
+             "<th style='text-align:left'>italiano</th></tr>")
+    for hy, it in words:
+        cells = ''.join(
+            f"<td style=\"font-family:'{KEY[n]}';font-size:13pt\">{hy}</td>" for n in quattro)
+        H.append(f"<tr>{cells}<td class='wit'>{it}</td></tr>")
+    H.append("</table>")
+
+    H.append("</body></html>")
+    return '\n'.join(H)
+
+
+if __name__ == '__main__':
+    out = sys.argv[1] if len(sys.argv) > 1 else '/mnt/user-data/outputs/AB1J_font_armeni.pdf'
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    HTML(string=build_html()).write_pdf(out)
+    print('scritto:', out)
